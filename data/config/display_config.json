@@ -1,0 +1,167 @@
+{
+  "card_order": [
+    "rating_personality",
+    "reviewness",
+    "runtime_profile",
+    "country_passport"
+  ],
+  "cards_section": {
+    "eyebrow": "SYNTHÈSE",
+    "title": "En bref…",
+    "confidence_labels": {
+      "high": "FIABLE",
+      "medium": "MOYEN",
+      "low": "FAIBLE"
+    }
+  },
+  "archetypes": {
+    "demanding_explorer": {
+      "name": "The Demanding Explorer",
+      "subtitle": "Exacting taste, wide horizons.",
+      "one_liner": "You wander far from the obvious picks, but you make every star work for it."
+    },
+    "cult_romantic": {
+      "name": "The Cult Romantic",
+      "subtitle": "Big feelings for films with a devoted pulse.",
+      "one_liner": "Your profile tilts toward movies people do not just watch, but attach to."
+    },
+    "deep_cut_hunter": {
+      "name": "The Deep-Cut Hunter",
+      "subtitle": "Always digging below the surface.",
+      "one_liner": "Your taste profile favors films with smaller audiences and sharper discoveries."
+    },
+    "balanced_cinephile": {
+      "name": "The Balanced Cinephile",
+      "subtitle": "A steady, well-rounded film diet.",
+      "one_liner": "Your profile balances crowd favorites, personal taste, and broad curiosity."
+    }
+  },
+  "cards": {
+    "rating_personality": {
+      "title_variants": {
+        "below": "Sévère",
+        "close": "Juste",
+        "above": "Indulgent",
+        "no_data": "Notation"
+      },
+      "description_templates": {
+        "no_data": "Pas assez de notes comparables pour calculer l’écart à la moyenne.",
+        "close": "Tu notes quasiment comme la moyenne Letterboxd.",
+        "below": "Tu notes environ {abs_rating_gap} étoile(s) en dessous de la moyenne Letterboxd.",
+        "above": "Tu notes environ {abs_rating_gap} étoile(s) au-dessus de la moyenne Letterboxd."
+      }
+    },
+    "niche_profile": {
+      "title": "Niche profile",
+      "label": "Niche index",
+      "description": "Higher means your socially matched films are watched by smaller audiences."
+    },
+    "cult_profile": {
+      "title": "Cult profile",
+      "label": "Cult index",
+      "description": "Based on how often watchers become fans across your Megabank-matched films."
+    },
+    "reviewness": {
+      "title": "Reviewer",
+      "description_templates": {
+        "rarely": "Tu commentes rarement tes films vus.",
+        "occasionally": "Tu commentes occasionnellement tes films vus.",
+        "often": "Tu commentes souvent tes films vus."
+      }
+    },
+    "runtime_profile": {
+      "title": "Durée moyenne",
+      "description_template": "Les films que tu as vus durent en moyenne {duration_formatted}."
+    },
+    "genre_dna": {
+      "title": "Genre DNA",
+      "label_template": "{dominant_genre_share} of genre tags",
+      "description_template": "Your profile spans {genre_diversity_count} genres."
+    },
+    "country_passport": {
+      "title": "Chauvin",
+      "description_template": "{country_article_name} {country_verb} {dominant_country_share} des occurrences de pays de production de tes films vus."
+    },
+    "director_recurrence": {
+      "title": "Director recurrence",
+      "label_template": "{repeat_count} films",
+      "description": "Repeat directors show which filmmakers keep pulling you back."
+    }
+  },
+  "highlights": {
+    "eyebrow": "HIGHLIGHTS",
+    "title": "Toi, en 5 films et 1 réal",
+    "labels": {
+      "most_niche": "Le plus niche",
+      "most_mainstream": "Le plus mainstream",
+      "most_cult": "Le plus culte",
+      "longest": "Le plus long",
+      "shortest": "Le plus court",
+      "most_repeated_director": "Ton réalisateur récurrent"
+    }
+  },
+  "recommendations": {
+    "eyebrow": "RECOMMANDATIONS",
+    "title": "Trois recos pour la suite, à voir ou revoir",
+    "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
+    "unavailable_text": "Recommandations indisponibles pour ce profil.",
+    "slot_labels": {
+      "safe_pick": "Le choix sûr",
+      "deep_cut": "Le détour",
+      "wild_card": "Le pari"
+    },
+    "slot_descriptions": {
+      "safe_pick": "Un film populaire proche de tes genres préférés.",
+      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
+      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+    }
+  },
+  "data_sources": {
+    "social": "{count} films avec données sociales",
+    "rating_comparable": "{count} films comparables avec moyenne Letterboxd",
+    "runtime": "{count} films avec durée confirmée",
+    "metadata": "{count} films avec métadonnées confirmées",
+    "rss": "{count} films depuis le RSS Letterboxd"
+  },
+  "radar": {
+    "title": "Profil radar",
+    "subtitle": "Quatre axes pour situer ton rapport récent aux films : mainstreamness, oldness, staminess et reviewness.",
+    "axes": {
+      "mainstreamness": {
+        "label": "Popularité",
+        "levels": {
+          "4": {
+            "title": "Iencli assumé",
+            "one_liner": "Ton profil assume les films très visibles sans perdre son relief."
+          }
+        }
+      },
+      "oldness": {
+        "label": "Époque",
+        "levels": {
+          "2": {
+            "title": "Entre deux époques",
+            "one_liner": "Tu circules entre cinéma récent et détours plus anciens."
+          }
+        }
+      },
+      "endurance": {
+        "label": "Durée",
+        "levels": {}
+      },
+      "reviewness": {
+        "label": "Trace écrite",
+        "levels": {
+          "4": {
+            "title": "Plume ponctuelle",
+            "one_liner": "Tu écris souvent, surtout quand le film appelle une trace."
+          }
+        }
+      }
+    }
+  },
+  "warnings": {
+    "low_social_coverage": "Social stats are based only on films present in the Megabank.",
+    "manual_metadata_validation": "Some films are waiting for manual metadata validation."
+  }
+}

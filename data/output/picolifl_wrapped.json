@@ -1,0 +1,2331 @@
+{
+  "user": "picolifl",
+  "rss_url": "https://letterboxd.com/picolifl/rss/",
+  "generated_at": "2026-07-01T22:57:58.331830Z",
+  "films": [
+    {
+      "rss_title": "De Gaulle: Résistance, 2026 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/de-gaulle-resistance/",
+      "letterboxd_slug": "de-gaulle-resistance",
+      "watched_at": "Thu, 2 Jul 2026 00:02:42 +1200",
+      "logged_at_raw": "Thu, 2 Jul 2026 00:02:42 +1200",
+      "logged_at_iso": "2026-07-01T12:02:42+00:00",
+      "logged_hour": 12,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/5/1/0/0/0/1051000-de-gaulle-tilting-iron-0-600-0-900-crop.jpg?v=74935413b3",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/5/1/0/0/0/1051000-de-gaulle-tilting-iron-0-600-0-900-crop.jpg?v=74935413b3",
+      "user_rating": 3.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 100,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "De Gaulle: Résistance",
+      "directors": [
+        "Antonin Baudry"
+      ],
+      "genres": [
+        "History",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Belgium",
+        "United States of America"
+      ],
+      "original_language": "fr",
+      "runtime": 160,
+      "tmdb_id": 1165366,
+      "director_source": "tmdb_details_cache",
+      "director": "Antonin Baudry"
+    },
+    {
+      "rss_title": "Jim Queen, 2026 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/jim-queen/",
+      "letterboxd_slug": "jim-queen",
+      "watched_at": "Tue, 30 Jun 2026 05:56:04 +1200",
+      "logged_at_raw": "Tue, 30 Jun 2026 05:56:04 +1200",
+      "logged_at_iso": "2026-06-29T17:56:04+00:00",
+      "logged_hour": 17,
+      "logged_minute": 56,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "user_rating": 3.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 154,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Jim Queen and the Quest for Chloroqueer",
+      "directors": [
+        "Marco Nguyen",
+        "Nicolas Athané"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "Belgium"
+      ],
+      "original_language": "fr",
+      "runtime": 85,
+      "tmdb_id": 1061798,
+      "director_source": "tmdb_details_cache",
+      "director": "Marco Nguyen"
+    },
+    {
+      "rss_title": "Inception, 2010 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/inception/",
+      "letterboxd_slug": "inception",
+      "watched_at": "Tue, 30 Jun 2026 00:18:19 +1200",
+      "logged_at_raw": "Tue, 30 Jun 2026 00:18:19 +1200",
+      "logged_at_iso": "2026-06-29T12:18:19+00:00",
+      "logged_hour": 12,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "user_rating": 4.0,
+      "year": 2010,
+      "has_review": true,
+      "review_word_count": 30,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Inception",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 148.0,
+      "average_rating": 4.21,
+      "watches": 4326850,
+      "likes": 1723554,
+      "fans": 79000,
+      "total_ratings": 2822912,
+      "director": "Christopher Nolan",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Inside Llewyn Davis, 2013 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/inside-llewyn-davis/",
+      "letterboxd_slug": "inside-llewyn-davis",
+      "watched_at": "Thu, 18 Jun 2026 21:29:06 +1200",
+      "logged_at_raw": "Thu, 18 Jun 2026 21:29:06 +1200",
+      "logged_at_iso": "2026-06-18T09:29:06+00:00",
+      "logged_hour": 9,
+      "logged_minute": 29,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/3/3/6/7/73367-inside-llewyn-davis-0-600-0-900-crop.jpg?v=df06f071fa",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/3/3/6/7/73367-inside-llewyn-davis-0-600-0-900-crop.jpg?v=df06f071fa",
+      "user_rating": 4.0,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 14,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Inside Llewyn Davis",
+      "directors": [
+        "Joel Coen",
+        "Ethan Coen"
+      ],
+      "genres": [
+        "Drama",
+        "Music"
+      ],
+      "countries": [
+        "France",
+        "UK"
+      ],
+      "original_language": "English",
+      "runtime": 104.0,
+      "average_rating": null,
+      "watches": 470813,
+      "likes": 148076,
+      "fans": 8100,
+      "total_ratings": 322029,
+      "director": "Joel Coen",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Now You See Me, 2013 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/now-you-see-me/",
+      "letterboxd_slug": "now-you-see-me",
+      "watched_at": "Fri, 12 Jun 2026 23:30:07 +1200",
+      "logged_at_raw": "Fri, 12 Jun 2026 23:30:07 +1200",
+      "logged_at_iso": "2026-06-12T11:30:07+00:00",
+      "logged_hour": 11,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/10/vk/qc/6e/1NybAlflbmRXMIr9WoYxtlt1b6m-0-600-0-900-crop.jpg?v=ecf9142ef2",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/10/vk/qc/6e/1NybAlflbmRXMIr9WoYxtlt1b6m-0-600-0-900-crop.jpg?v=ecf9142ef2",
+      "user_rating": 3.0,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 230,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Now You See Me",
+      "directors": [
+        "Louis Leterrier"
+      ],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "USA",
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 116.0,
+      "average_rating": 3.38,
+      "watches": 1473019,
+      "likes": 274174,
+      "fans": 5600,
+      "total_ratings": 800900,
+      "director": "Louis Leterrier",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Favourite, 2018 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/the-favourite/",
+      "letterboxd_slug": "the-favourite",
+      "watched_at": "Thu, 11 Jun 2026 11:27:28 +1200",
+      "logged_at_raw": "Thu, 11 Jun 2026 11:27:28 +1200",
+      "logged_at_iso": "2026-06-10T23:27:28+00:00",
+      "logged_hour": 23,
+      "logged_minute": 27,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/1/0/7/0/5/310705-the-favourite-0-600-0-900-crop.jpg?v=c5488e37ef",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/1/0/7/0/5/310705-the-favourite-0-600-0-900-crop.jpg?v=c5488e37ef",
+      "user_rating": 3.5,
+      "year": 2018,
+      "has_review": true,
+      "review_word_count": 274,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Favourite",
+      "directors": [
+        "Yorgos Lanthimos"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Comedy",
+        "History"
+      ],
+      "countries": [
+        "Ireland",
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 120.0,
+      "average_rating": null,
+      "watches": 1088447,
+      "likes": 342182,
+      "fans": 7700,
+      "total_ratings": 780792,
+      "director": "Yorgos Lanthimos",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Burn After Reading, 2008 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/burn-after-reading/",
+      "letterboxd_slug": "burn-after-reading",
+      "watched_at": "Wed, 10 Jun 2026 09:41:13 +1200",
+      "logged_at_raw": "Wed, 10 Jun 2026 09:41:13 +1200",
+      "logged_at_iso": "2026-06-09T21:41:13+00:00",
+      "logged_hour": 21,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/0/5/4/49054-burn-after-reading-0-600-0-900-crop.jpg?v=1a29d1c090",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/0/5/4/49054-burn-after-reading-0-600-0-900-crop.jpg?v=1a29d1c090",
+      "user_rating": 3.5,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 6,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Burn After Reading",
+      "directors": [
+        "Ethan Coen",
+        "Joel Coen"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA",
+        "UK",
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 96.0,
+      "average_rating": 3.62,
+      "watches": 608531,
+      "likes": 142936,
+      "fans": 1800,
+      "total_ratings": 390452,
+      "director": "Ethan Coen",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Sully, 2016 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/sully/",
+      "letterboxd_slug": "sully",
+      "watched_at": "Tue, 9 Jun 2026 23:06:05 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 23:06:05 +1200",
+      "logged_at_iso": "2026-06-09T11:06:05+00:00",
+      "logged_hour": 11,
+      "logged_minute": 6,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/0/1/0/4/0/301040-sully-0-600-0-900-crop.jpg?v=d60925feaa",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/0/1/0/4/0/301040-sully-0-600-0-900-crop.jpg?v=d60925feaa",
+      "user_rating": 3.0,
+      "year": 2016,
+      "has_review": true,
+      "review_word_count": 16,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Sully",
+      "directors": [
+        "Clint Eastwood"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 96,
+      "tmdb_id": 363676,
+      "director_source": "tmdb_details_cache",
+      "director": "Clint Eastwood"
+    },
+    {
+      "rss_title": "Obsession, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/obsession-2025/",
+      "letterboxd_slug": "obsession-2025",
+      "watched_at": "Tue, 9 Jun 2026 09:50:49 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 09:50:49 +1200",
+      "logged_at_iso": "2026-06-08T21:50:49+00:00",
+      "logged_hour": 21,
+      "logged_minute": 50,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 114,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Obsession",
+      "directors": [
+        "Curry Barker"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "US"
+      ],
+      "original_language": "en",
+      "runtime": 109,
+      "tmdb_id": null,
+      "director": "Curry Barker",
+      "director_source": "supplemental"
+    },
+    {
+      "rss_title": "Persepolis, 2007 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/persepolis/",
+      "letterboxd_slug": "persepolis",
+      "watched_at": "Mon, 8 Jun 2026 23:35:00 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 23:35:00 +1200",
+      "logged_at_iso": "2026-06-08T11:35:00+00:00",
+      "logged_hour": 11,
+      "logged_minute": 35,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/28/um/1t/jq/dYvyF1RlNokAd1N7Nek0vDpYsV6-0-600-0-900-crop.jpg?v=fc5d71c744",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/28/um/1t/jq/dYvyF1RlNokAd1N7Nek0vDpYsV6-0-600-0-900-crop.jpg?v=fc5d71c744",
+      "user_rating": 4.0,
+      "year": 2007,
+      "has_review": true,
+      "review_word_count": 26,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Persepolis",
+      "directors": [
+        "Vincent Paronnaud",
+        "Marjane Satrapi"
+      ],
+      "genres": [
+        "Animation",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "USA"
+      ],
+      "original_language": "French",
+      "runtime": 95.0,
+      "average_rating": 4.19,
+      "watches": 283700,
+      "likes": 90091,
+      "fans": 2800,
+      "total_ratings": 171186,
+      "director": "Vincent Paronnaud",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Summer of 85, 2020 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/summer-of-85/",
+      "letterboxd_slug": "summer-of-85",
+      "watched_at": "Mon, 8 Jun 2026 05:46:19 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 05:46:19 +1200",
+      "logged_at_iso": "2026-06-07T17:46:19+00:00",
+      "logged_hour": 17,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/8/4/9/9/5/584995-summer-of-85-0-600-0-900-crop.jpg?v=1023e749ca",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/8/4/9/9/5/584995-summer-of-85-0-600-0-900-crop.jpg?v=1023e749ca",
+      "user_rating": 2.5,
+      "year": 2020,
+      "has_review": true,
+      "review_word_count": 10,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Summer of 85",
+      "directors": [
+        "François Ozon"
+      ],
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "countries": [
+        "Belgium",
+        "France"
+      ],
+      "original_language": "French",
+      "runtime": 101.0,
+      "average_rating": 3.48,
+      "watches": 129992,
+      "likes": 38962,
+      "fans": 2100,
+      "total_ratings": 103265,
+      "director": "François Ozon",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "TRENTE, 2026 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/trente/",
+      "letterboxd_slug": "trente",
+      "watched_at": "Mon, 8 Jun 2026 04:41:56 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 04:41:56 +1200",
+      "logged_at_iso": "2026-06-07T16:41:56+00:00",
+      "logged_hour": 16,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "user_rating": 2.5,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "TRENTE",
+      "directors": [
+        "Sébastien Frit",
+        "Jeremie Levypon"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "countries": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1687834,
+      "director_source": "tmdb_details_cache",
+      "director": "Sébastien Frit"
+    },
+    {
+      "rss_title": "The Great Arch, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/the-great-arch-2025/",
+      "letterboxd_slug": "the-great-arch-2025",
+      "watched_at": "Sun, 31 May 2026 22:45:25 +1200",
+      "logged_at_raw": "Sun, 31 May 2026 22:45:25 +1200",
+      "logged_at_iso": "2026-05-31T10:45:25+00:00",
+      "logged_hour": 10,
+      "logged_minute": 45,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/7/3/4/8/6/1173486-the-great-arch-2025-0-600-0-900-crop.jpg?v=b25e202783",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/7/3/4/8/6/1173486-the-great-arch-2025-0-600-0-900-crop.jpg?v=b25e202783",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 150,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Great Arch",
+      "directors": [
+        "Stéphane Demoustier"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "France",
+        "Denmark"
+      ],
+      "original_language": "fr",
+      "runtime": 104,
+      "tmdb_id": 1290424,
+      "director_source": "tmdb_details_cache",
+      "director": "Stéphane Demoustier"
+    },
+    {
+      "rss_title": "Sibyl, 2019 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/sibyl/",
+      "letterboxd_slug": "sibyl",
+      "watched_at": "Sat, 30 May 2026 23:23:01 +1200",
+      "logged_at_raw": "Sat, 30 May 2026 23:23:01 +1200",
+      "logged_at_iso": "2026-05-30T11:23:01+00:00",
+      "logged_hour": 11,
+      "logged_minute": 23,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/8/8/3/2/5/488325-sibyl-0-600-0-900-crop.jpg?v=f472347cbf",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/8/8/3/2/5/488325-sibyl-0-600-0-900-crop.jpg?v=f472347cbf",
+      "user_rating": 2.5,
+      "year": 2019,
+      "has_review": true,
+      "review_word_count": 134,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Sibyl",
+      "directors": [
+        "Justine Triet"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "Belgium",
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 101,
+      "tmdb_id": 559401,
+      "director_source": "tmdb_details_cache",
+      "director": "Justine Triet"
+    },
+    {
+      "rss_title": "Half Man, 2026 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/half-man/",
+      "letterboxd_slug": "half-man",
+      "watched_at": "Sat, 30 May 2026 09:20:38 +1200",
+      "logged_at_raw": "Sat, 30 May 2026 09:20:38 +1200",
+      "logged_at_iso": "2026-05-29T21:20:38+00:00",
+      "logged_hour": 21,
+      "logged_minute": 20,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/2/8/8/8/8/1528888-half-man-0-600-0-900-crop.jpg?v=ac7d328197",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/2/8/8/8/8/1528888-half-man-0-600-0-900-crop.jpg?v=ac7d328197",
+      "user_rating": 4.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 128,
+      "matched": false,
+      "source": "missing",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "I'm Still Here, 2024 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/im-still-here-2024/",
+      "letterboxd_slug": "im-still-here-2024",
+      "watched_at": "Thu, 21 May 2026 10:45:02 +1200",
+      "logged_at_raw": "Thu, 21 May 2026 10:45:02 +1200",
+      "logged_at_iso": "2026-05-20T22:45:02+00:00",
+      "logged_hour": 22,
+      "logged_minute": 45,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/0/1/6/7/1/901671-im-still-here-2024-0-600-0-900-crop.jpg?v=62be7ea503",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/0/1/6/7/1/901671-im-still-here-2024-0-600-0-900-crop.jpg?v=62be7ea503",
+      "user_rating": 3.5,
+      "year": 2024,
+      "has_review": true,
+      "review_word_count": 24,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "I'm Still Here",
+      "directors": [
+        "Walter Salles"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "Brazil",
+        "France"
+      ],
+      "original_language": "pt",
+      "runtime": 138,
+      "tmdb_id": 1000837,
+      "director_source": "tmdb_details_cache",
+      "director": "Walter Salles"
+    },
+    {
+      "rss_title": "Declaration of War, 2011 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/declaration-of-war/",
+      "letterboxd_slug": "declaration-of-war",
+      "watched_at": "Thu, 21 May 2026 10:03:08 +1200",
+      "logged_at_raw": "Thu, 21 May 2026 10:03:08 +1200",
+      "logged_at_iso": "2026-05-20T22:03:08+00:00",
+      "logged_hour": 22,
+      "logged_minute": 3,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/9/7/7/2/59772-declaration-of-war-0-600-0-900-crop.jpg?v=9484b872d7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/9/7/7/2/59772-declaration-of-war-0-600-0-900-crop.jpg?v=9484b872d7",
+      "user_rating": 3.0,
+      "year": 2011,
+      "has_review": true,
+      "review_word_count": 20,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Declaration of War",
+      "directors": [
+        "Valérie Donzelli"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 100,
+      "tmdb_id": 73562,
+      "director_source": "tmdb_details_cache",
+      "director": "Valérie Donzelli"
+    },
+    {
+      "rss_title": "Sirāt, 2025 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/sirat-2025/",
+      "letterboxd_slug": "sirat-2025",
+      "watched_at": "Wed, 20 May 2026 22:36:39 +1200",
+      "logged_at_raw": "Wed, 20 May 2026 22:36:39 +1200",
+      "logged_at_iso": "2026-05-20T10:36:39+00:00",
+      "logged_hour": 10,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/3/7/7/7/7/1037777-sirat-2025-0-600-0-900-crop.jpg?v=1660cb1f29",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/3/7/7/7/7/1037777-sirat-2025-0-600-0-900-crop.jpg?v=1660cb1f29",
+      "user_rating": 3.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 134,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Sirāt",
+      "directors": [
+        "Oliver Laxe"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "Spain",
+        "France"
+      ],
+      "original_language": "es",
+      "runtime": 115,
+      "tmdb_id": 1151272,
+      "director_source": "tmdb_details_cache",
+      "director": "Oliver Laxe"
+    },
+    {
+      "rss_title": "Decision to Leave, 2022 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/decision-to-leave/",
+      "letterboxd_slug": "decision-to-leave",
+      "watched_at": "Tue, 19 May 2026 23:19:35 +1200",
+      "logged_at_raw": "Tue, 19 May 2026 23:19:35 +1200",
+      "logged_at_iso": "2026-05-19T11:19:35+00:00",
+      "logged_hour": 11,
+      "logged_minute": 19,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/2/9/3/2/0/629320-decision-to-leave-0-600-0-900-crop.jpg?v=30eaeaf481",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/2/9/3/2/0/629320-decision-to-leave-0-600-0-900-crop.jpg?v=30eaeaf481",
+      "user_rating": 3.0,
+      "year": 2022,
+      "has_review": true,
+      "review_word_count": 106,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Decision to Leave",
+      "directors": [
+        "Park Chan-wook"
+      ],
+      "genres": [
+        "Mystery",
+        "Romance",
+        "Thriller"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "Korean",
+      "runtime": 138.0,
+      "average_rating": 3.97,
+      "watches": 398097,
+      "likes": 126715,
+      "fans": 4900,
+      "total_ratings": 317284,
+      "director": "Park Chan-wook",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Hateful Eight, 2015 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/the-hateful-eight/",
+      "letterboxd_slug": "the-hateful-eight",
+      "watched_at": "Mon, 18 May 2026 22:08:13 +1200",
+      "logged_at_raw": "Mon, 18 May 2026 22:08:13 +1200",
+      "logged_at_iso": "2026-05-18T10:08:13+00:00",
+      "logged_hour": 10,
+      "logged_minute": 8,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/9/7/0/1/2/197012-the-hateful-eight-0-600-0-900-crop.jpg?v=0428be5b84",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/9/7/0/1/2/197012-the-hateful-eight-0-600-0-900-crop.jpg?v=0428be5b84",
+      "user_rating": 4.0,
+      "year": 2015,
+      "has_review": true,
+      "review_word_count": 90,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Hateful Eight",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Mystery",
+        "Western",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 188.0,
+      "average_rating": 3.98,
+      "watches": 1413435,
+      "likes": 429917,
+      "fans": 11000,
+      "total_ratings": 951359,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Synecdoche, New York, 2008 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/synecdoche-new-york/",
+      "letterboxd_slug": "synecdoche-new-york",
+      "watched_at": "Sat, 16 May 2026 09:22:04 +1200",
+      "logged_at_raw": "Sat, 16 May 2026 09:22:04 +1200",
+      "logged_at_iso": "2026-05-15T21:22:04+00:00",
+      "logged_hour": 21,
+      "logged_minute": 22,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/z9/j9/kx/ve/l3r5MgeN0UUySPbf6aWeUyKGdb2-0-600-0-900-crop.jpg?v=0185077fb6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/z9/j9/kx/ve/l3r5MgeN0UUySPbf6aWeUyKGdb2-0-600-0-900-crop.jpg?v=0185077fb6",
+      "user_rating": 2.5,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 94,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Synecdoche, New York",
+      "directors": [
+        "Charlie Kaufman"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 124.0,
+      "average_rating": 4.18,
+      "watches": 326214,
+      "likes": 110449,
+      "fans": 13000,
+      "total_ratings": 224147,
+      "director": "Charlie Kaufman",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "It Was Just an Accident, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/it-was-just-an-accident/",
+      "letterboxd_slug": "it-was-just-an-accident",
+      "watched_at": "Wed, 13 May 2026 22:43:31 +1200",
+      "logged_at_raw": "Wed, 13 May 2026 22:43:31 +1200",
+      "logged_at_iso": "2026-05-13T10:43:31+00:00",
+      "logged_hour": 10,
+      "logged_minute": 43,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/3/3/4/9/8/1333498-it-was-just-an-accident-0-600-0-900-crop.jpg?v=d1e92cf746",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/3/3/4/9/8/1333498-it-was-just-an-accident-0-600-0-900-crop.jpg?v=d1e92cf746",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 42,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "It Was Just an Accident",
+      "directors": [
+        "Jafar Panahi"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
+      "countries": [
+        "Iran",
+        "France",
+        "Luxembourg"
+      ],
+      "original_language": "fr",
+      "runtime": 104,
+      "tmdb_id": 1456349,
+      "director_source": "tmdb_details_cache",
+      "director": "Jafar Panahi"
+    },
+    {
+      "rss_title": "DTF St. Louis, 2026 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/dtf-st-louis/",
+      "letterboxd_slug": "dtf-st-louis",
+      "watched_at": "Wed, 6 May 2026 09:56:45 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 09:56:45 +1200",
+      "logged_at_iso": "2026-05-05T21:56:45+00:00",
+      "logged_hour": 21,
+      "logged_minute": 56,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/1/0/8/0/8/1510808-dtf-st-louis-0-600-0-900-crop.jpg?v=139044d7f9",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/1/0/8/0/8/1510808-dtf-st-louis-0-600-0-900-crop.jpg?v=139044d7f9",
+      "user_rating": 3.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 78,
+      "matched": false,
+      "source": "missing",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Children of Men, 2006 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/children-of-men/",
+      "letterboxd_slug": "children-of-men",
+      "watched_at": "Wed, 6 May 2026 09:51:22 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 09:51:22 +1200",
+      "logged_at_iso": "2026-05-05T21:51:22+00:00",
+      "logged_hour": 21,
+      "logged_minute": 51,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ju/ac/6a/yi/lg7s7U1FQtB4VbLzvFUSgDX0frZ-0-600-0-900-crop.jpg?v=e4053ab6bf",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ju/ac/6a/yi/lg7s7U1FQtB4VbLzvFUSgDX0frZ-0-600-0-900-crop.jpg?v=e4053ab6bf",
+      "user_rating": 2.5,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Children of Men",
+      "directors": [
+        "Alfonso Cuarón"
+      ],
+      "genres": [
+        "Action",
+        "Drama",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 109.0,
+      "average_rating": null,
+      "watches": 861751,
+      "likes": 293167,
+      "fans": 18000,
+      "total_ratings": 584939,
+      "director": "Alfonso Cuarón",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Joyeux Noel, 2005 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/joyeux-noel/",
+      "letterboxd_slug": "joyeux-noel",
+      "watched_at": "Tue, 5 May 2026 10:54:38 +1200",
+      "logged_at_raw": "Tue, 5 May 2026 10:54:38 +1200",
+      "logged_at_iso": "2026-05-04T22:54:38+00:00",
+      "logged_hour": 22,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/0/9/2/45092-merry-christmas-0-600-0-900-crop.jpg?v=5d489c725a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/0/9/2/45092-merry-christmas-0-600-0-900-crop.jpg?v=5d489c725a",
+      "user_rating": 3.5,
+      "year": 2005,
+      "has_review": true,
+      "review_word_count": 26,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Joyeux Noel",
+      "directors": [
+        "Christian Carion"
+      ],
+      "genres": [
+        "Drama",
+        "War",
+        "Romance",
+        "History"
+      ],
+      "countries": [
+        "Belgium",
+        "France",
+        "Germany",
+        "Romania",
+        "United Kingdom"
+      ],
+      "original_language": "fr",
+      "runtime": 116,
+      "tmdb_id": 11661,
+      "director_source": "tmdb_details_cache",
+      "director": "Christian Carion"
+    },
+    {
+      "rss_title": "Goliath, 2022 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/goliath-2022/",
+      "letterboxd_slug": "goliath-2022",
+      "watched_at": "Mon, 4 May 2026 09:41:30 +1200",
+      "logged_at_raw": "Mon, 4 May 2026 09:41:30 +1200",
+      "logged_at_iso": "2026-05-03T21:41:30+00:00",
+      "logged_hour": 21,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/9/6/2/5/2/796252-goliath-0-600-0-900-crop.jpg?v=0d710122f0",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/9/6/2/5/2/796252-goliath-0-600-0-900-crop.jpg?v=0d710122f0",
+      "user_rating": 3.0,
+      "year": 2022,
+      "has_review": true,
+      "review_word_count": 74,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Goliath",
+      "directors": [
+        "Frédéric Tellier"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama"
+      ],
+      "countries": [
+        "Belgium",
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 121,
+      "tmdb_id": 884971,
+      "director_source": "tmdb_details_cache",
+      "director": "Frédéric Tellier"
+    },
+    {
+      "rss_title": "Vanilla Sky, 2001 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/vanilla-sky/",
+      "letterboxd_slug": "vanilla-sky",
+      "watched_at": "Fri, 1 May 2026 21:54:14 +1200",
+      "logged_at_raw": "Fri, 1 May 2026 21:54:14 +1200",
+      "logged_at_iso": "2026-05-01T09:54:14+00:00",
+      "logged_hour": 9,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/7/0/2/50702-vanilla-sky-0-600-0-900-crop.jpg?v=fbd4b97e55",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/7/0/2/50702-vanilla-sky-0-600-0-900-crop.jpg?v=fbd4b97e55",
+      "user_rating": 4.5,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 192,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Vanilla Sky",
+      "directors": [
+        "Cameron Crowe"
+      ],
+      "genres": [
+        "Fantasy",
+        "Thriller",
+        "Drama",
+        "Romance",
+        "Science Fiction",
+        "Mystery"
+      ],
+      "countries": [
+        "USA",
+        "Spain"
+      ],
+      "original_language": "English",
+      "runtime": 136.0,
+      "average_rating": 3.45,
+      "watches": 359257,
+      "likes": 71649,
+      "fans": 3300,
+      "total_ratings": 214708,
+      "director": "Cameron Crowe",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Omar Killed Me, 2011 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/omar-killed-me/",
+      "letterboxd_slug": "omar-killed-me",
+      "watched_at": "Wed, 29 Apr 2026 10:14:03 +1200",
+      "logged_at_raw": "Wed, 29 Apr 2026 10:14:03 +1200",
+      "logged_at_iso": "2026-04-28T22:14:03+00:00",
+      "logged_hour": 22,
+      "logged_minute": 14,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/3/0/3/3/53033-omar-killed-me-0-600-0-900-crop.jpg?v=215ee10a38",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/3/0/3/3/53033-omar-killed-me-0-600-0-900-crop.jpg?v=215ee10a38",
+      "user_rating": 3.5,
+      "year": 2011,
+      "has_review": true,
+      "review_word_count": 10,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Omar Killed Me",
+      "directors": [
+        "Roschdy Zem"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "France",
+        "Morocco"
+      ],
+      "original_language": "fr",
+      "runtime": 85,
+      "tmdb_id": 68178,
+      "director_source": "tmdb_details_cache",
+      "director": "Roschdy Zem"
+    },
+    {
+      "rss_title": "Life Is Beautiful, 1997 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/life-is-beautiful/",
+      "letterboxd_slug": "life-is-beautiful",
+      "watched_at": "Tue, 28 Apr 2026 08:11:21 +1200",
+      "logged_at_raw": "Tue, 28 Apr 2026 08:11:21 +1200",
+      "logged_at_iso": "2026-04-27T20:11:21+00:00",
+      "logged_hour": 20,
+      "logged_minute": 11,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/8/7/51487-life-is-beautiful-0-600-0-900-crop.jpg?v=90ed0e667e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/8/7/51487-life-is-beautiful-0-600-0-900-crop.jpg?v=90ed0e667e",
+      "user_rating": 5.0,
+      "year": 1997,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Life Is Beautiful",
+      "directors": [
+        "Roberto Benigni"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "Italy"
+      ],
+      "original_language": "it",
+      "runtime": 116,
+      "tmdb_id": 637,
+      "director_source": "tmdb_details_cache",
+      "director": "Roberto Benigni"
+    },
+    {
+      "rss_title": "Train to Busan, 2016 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/train-to-busan/",
+      "letterboxd_slug": "train-to-busan",
+      "watched_at": "Sun, 26 Apr 2026 22:18:38 +1200",
+      "logged_at_raw": "Sun, 26 Apr 2026 22:18:38 +1200",
+      "logged_at_iso": "2026-04-26T10:18:38+00:00",
+      "logged_hour": 10,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/3/0/9/1/2/330912-train-to-busan-0-600-0-900-crop.jpg?v=c85e151cfe",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/3/0/9/1/2/330912-train-to-busan-0-600-0-900-crop.jpg?v=c85e151cfe",
+      "user_rating": 3.5,
+      "year": 2016,
+      "has_review": true,
+      "review_word_count": 10,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Train to Busan",
+      "directors": [
+        "Yeon Sang-ho"
+      ],
+      "genres": [
+        "Thriller",
+        "Adventure",
+        "Horror",
+        "Action"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "Korean",
+      "runtime": 118.0,
+      "average_rating": 3.97,
+      "watches": 1187166,
+      "likes": 372402,
+      "fans": 7800,
+      "total_ratings": 824375,
+      "director": "Yeon Sang-ho",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "In Bruges, 2008 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/in-bruges/1/",
+      "letterboxd_slug": "in-bruges",
+      "watched_at": "Sun, 26 Apr 2026 22:17:19 +1200",
+      "logged_at_raw": "Sun, 26 Apr 2026 22:17:19 +1200",
+      "logged_at_iso": "2026-04-26T10:17:19+00:00",
+      "logged_hour": 10,
+      "logged_minute": 17,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/8/0/9/47809-in-bruges-0-600-0-900-crop.jpg?v=616745d99a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/8/0/9/47809-in-bruges-0-600-0-900-crop.jpg?v=616745d99a",
+      "user_rating": 4.5,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 6,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "In Bruges",
+      "directors": [
+        "Martin McDonagh"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Crime"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 108.0,
+      "average_rating": null,
+      "watches": 720993,
+      "likes": 232623,
+      "fans": 14000,
+      "total_ratings": 498228,
+      "director": "Martin McDonagh",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "How to Make Millions Before Grandma Dies, 2024 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/how-to-make-millions-before-grandma-dies/",
+      "letterboxd_slug": "how-to-make-millions-before-grandma-dies",
+      "watched_at": "Wed, 22 Apr 2026 21:51:55 +1200",
+      "logged_at_raw": "Wed, 22 Apr 2026 21:51:55 +1200",
+      "logged_at_iso": "2026-04-22T09:51:55+00:00",
+      "logged_hour": 9,
+      "logged_minute": 51,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/9/5/2/7/4/995274-how-to-make-millions-before-grandma-dies-0-600-0-900-crop.jpg?v=29304d20aa",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/9/5/2/7/4/995274-how-to-make-millions-before-grandma-dies-0-600-0-900-crop.jpg?v=29304d20aa",
+      "user_rating": 4.0,
+      "year": 2024,
+      "has_review": true,
+      "review_word_count": 108,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "How to Make Millions Before Grandma Dies",
+      "directors": [
+        "Pat Boonnitipat"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "Thailand"
+      ],
+      "original_language": "th",
+      "runtime": 126,
+      "tmdb_id": 1103621,
+      "director_source": "tmdb_details_cache",
+      "director": "Pat Boonnitipat"
+    },
+    {
+      "rss_title": "Kinds of Kindness, 2024 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/kinds-of-kindness/",
+      "letterboxd_slug": "kinds-of-kindness",
+      "watched_at": "Mon, 20 Apr 2026 09:42:28 +1200",
+      "logged_at_raw": "Mon, 20 Apr 2026 09:42:28 +1200",
+      "logged_at_iso": "2026-04-19T21:42:28+00:00",
+      "logged_hour": 21,
+      "logged_minute": 42,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/2/8/2/6/1/928261-kinds-of-kindness-0-600-0-900-crop.jpg?v=719ff64e2b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/2/8/2/6/1/928261-kinds-of-kindness-0-600-0-900-crop.jpg?v=719ff64e2b",
+      "user_rating": 3.0,
+      "year": 2024,
+      "has_review": true,
+      "review_word_count": 6,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Kinds of Kindness",
+      "directors": [
+        "Yorgos Lanthimos"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Horror"
+      ],
+      "countries": [
+        "Ireland",
+        "United Kingdom",
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 164,
+      "tmdb_id": 1029955,
+      "director_source": "tmdb_details_cache",
+      "director": "Yorgos Lanthimos"
+    },
+    {
+      "rss_title": "Her, 2013 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/her/",
+      "letterboxd_slug": "her",
+      "watched_at": "Wed, 15 Apr 2026 08:32:02 +1200",
+      "logged_at_raw": "Wed, 15 Apr 2026 08:32:02 +1200",
+      "logged_at_iso": "2026-04-14T20:32:02+00:00",
+      "logged_hour": 20,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/au/nb/i6/lq/fsoTLnUXEUTNuVCBxAJMY0HPPd-0-600-0-900-crop.jpg?v=16789732be",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/au/nb/i6/lq/fsoTLnUXEUTNuVCBxAJMY0HPPd-0-600-0-900-crop.jpg?v=16789732be",
+      "user_rating": 4.5,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 72,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Her",
+      "directors": [
+        "Spike Jonze"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 126.0,
+      "average_rating": 3.99,
+      "watches": 2498989,
+      "likes": 893819,
+      "fans": 40000,
+      "total_ratings": 1708905,
+      "director": "Spike Jonze",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Hamnet, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/hamnet/",
+      "letterboxd_slug": "hamnet",
+      "watched_at": "Mon, 13 Apr 2026 09:05:12 +1200",
+      "logged_at_raw": "Mon, 13 Apr 2026 09:05:12 +1200",
+      "logged_at_iso": "2026-04-12T21:05:12+00:00",
+      "logged_hour": 21,
+      "logged_minute": 5,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/7/2/2/3/2/772232-hamnet-0-600-0-900-crop.jpg?v=631489314d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/7/2/2/3/2/772232-hamnet-0-600-0-900-crop.jpg?v=631489314d",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 40,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Hamnet",
+      "directors": [
+        "Chloé Zhao"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "History"
+      ],
+      "countries": [
+        "United Kingdom",
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 125,
+      "tmdb_id": 858024,
+      "director_source": "tmdb_details_cache",
+      "director": "Chloé Zhao"
+    },
+    {
+      "rss_title": "The Drama, 2026 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/the-drama/",
+      "letterboxd_slug": "the-drama",
+      "watched_at": "Thu, 9 Apr 2026 07:50:35 +1200",
+      "logged_at_raw": "Thu, 9 Apr 2026 07:50:35 +1200",
+      "logged_at_iso": "2026-04-08T19:50:35+00:00",
+      "logged_hour": 19,
+      "logged_minute": 50,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/5/4/9/4/1205494-the-drama-0-600-0-900-crop.jpg?v=2320acafd5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/5/4/9/4/1205494-the-drama-0-600-0-900-crop.jpg?v=2320acafd5",
+      "user_rating": 4.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 84,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Drama",
+      "directors": [
+        "Kristoffer Borgli"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 105,
+      "tmdb_id": 1325734,
+      "director_source": "tmdb_details_cache",
+      "director": "Kristoffer Borgli"
+    },
+    {
+      "rss_title": "Blue Is the Warmest Color, 2013",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/blue-is-the-warmest-color/",
+      "letterboxd_slug": "blue-is-the-warmest-color",
+      "watched_at": "Mon, 6 Apr 2026 02:20:15 +1200",
+      "logged_at_raw": "Mon, 6 Apr 2026 02:20:15 +1200",
+      "logged_at_iso": "2026-04-05T14:20:15+00:00",
+      "logged_hour": 14,
+      "logged_minute": 20,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/4/5/7/6/114576-blue-is-the-warmest-color-0-600-0-900-crop.jpg?v=039edf9ea6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/4/5/7/6/114576-blue-is-the-warmest-color-0-600-0-900-crop.jpg?v=039edf9ea6",
+      "user_rating": null,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 24,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Blue Is the Warmest Color",
+      "directors": [
+        "Abdellatif Kechiche"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "Belgium",
+        "France",
+        "Spain"
+      ],
+      "original_language": "French",
+      "runtime": 180.0,
+      "average_rating": 3.24,
+      "watches": 518305,
+      "likes": 85346,
+      "fans": 1700,
+      "total_ratings": 289116,
+      "director": "Abdellatif Kechiche",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Hiroshima Mon Amour, 1959 - ★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/hiroshima-mon-amour/",
+      "letterboxd_slug": "hiroshima-mon-amour",
+      "watched_at": "Sat, 4 Apr 2026 00:52:35 +1300",
+      "logged_at_raw": "Sat, 4 Apr 2026 00:52:35 +1300",
+      "logged_at_iso": "2026-04-03T11:52:35+00:00",
+      "logged_hour": 11,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/d4/0z/wv/pr/xmW3o49z7iExUsren4R4QyN890H-0-600-0-900-crop.jpg?v=03127fc33b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/d4/0z/wv/pr/xmW3o49z7iExUsren4R4QyN890H-0-600-0-900-crop.jpg?v=03127fc33b",
+      "user_rating": 2.0,
+      "year": 1959,
+      "has_review": true,
+      "review_word_count": 26,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Hiroshima Mon Amour",
+      "directors": [
+        "Alain Resnais"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "History"
+      ],
+      "countries": [
+        "France",
+        "Japan"
+      ],
+      "original_language": "French",
+      "runtime": 92.0,
+      "average_rating": 4.17,
+      "watches": 164994,
+      "likes": 54812,
+      "fans": 3300,
+      "total_ratings": 110376,
+      "director": "Alain Resnais",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Departed, 2006 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/the-departed/1/",
+      "letterboxd_slug": "the-departed",
+      "watched_at": "Wed, 1 Apr 2026 17:54:21 +1300",
+      "logged_at_raw": "Wed, 1 Apr 2026 17:54:21 +1300",
+      "logged_at_iso": "2026-04-01T04:54:21+00:00",
+      "logged_hour": 4,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/jr/th/pu/pb/laefkgrfa3oKwvBtWTBtf2suiI4-0-600-0-900-crop.jpg?v=f5d8231026",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/jr/th/pu/pb/laefkgrfa3oKwvBtWTBtf2suiI4-0-600-0-900-crop.jpg?v=f5d8231026",
+      "user_rating": 4.5,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 56,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Departed",
+      "directors": [
+        "Martin Scorsese"
+      ],
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
+      "countries": [
+        "Hong Kong",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 151.0,
+      "average_rating": 4.32,
+      "watches": 1600172,
+      "likes": 534971,
+      "fans": 24000,
+      "total_ratings": 1095719,
+      "director": "Martin Scorsese",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Speech, 2020 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/the-speech-2020-1/",
+      "letterboxd_slug": "the-speech-2020-1",
+      "watched_at": "Wed, 1 Apr 2026 17:53:20 +1300",
+      "logged_at_raw": "Wed, 1 Apr 2026 17:53:20 +1300",
+      "logged_at_iso": "2026-04-01T04:53:20+00:00",
+      "logged_hour": 4,
+      "logged_minute": 53,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/3/5/2/3/7/635237-the-speech-0-600-0-900-crop.jpg?v=49776ab9be",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/3/5/2/3/7/635237-the-speech-0-600-0-900-crop.jpg?v=49776ab9be",
+      "user_rating": 3.0,
+      "year": 2020,
+      "has_review": true,
+      "review_word_count": 86,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Speech",
+      "directors": [
+        "Haohao Yan"
+      ],
+      "genres": [],
+      "countries": [],
+      "original_language": "zh",
+      "runtime": 25,
+      "tmdb_id": 745457,
+      "director_source": "tmdb_details_cache",
+      "director": "Haohao Yan"
+    },
+    {
+      "rss_title": "Radiostars, 2012 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/radiostars/1/",
+      "letterboxd_slug": "radiostars",
+      "watched_at": "Tue, 31 Mar 2026 09:29:10 +1300",
+      "logged_at_raw": "Tue, 31 Mar 2026 09:29:10 +1300",
+      "logged_at_iso": "2026-03-30T20:29:10+00:00",
+      "logged_hour": 20,
+      "logged_minute": 29,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/2/2/3/9/82239-radiostars-0-600-0-900-crop.jpg?v=238f55b62d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/2/2/3/9/82239-radiostars-0-600-0-900-crop.jpg?v=238f55b62d",
+      "user_rating": 2.5,
+      "year": 2012,
+      "has_review": true,
+      "review_word_count": 16,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Radiostars",
+      "directors": [
+        "Romain Lévy"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 100,
+      "tmdb_id": 100830,
+      "director_source": "tmdb_details_cache",
+      "director": "Romain Lévy"
+    },
+    {
+      "rss_title": "Little Amélie or the Character of Rain, 2025 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/little-amelie-or-the-character-of-rain/",
+      "letterboxd_slug": "little-amelie-or-the-character-of-rain",
+      "watched_at": "Tue, 31 Mar 2026 05:53:42 +1300",
+      "logged_at_raw": "Tue, 31 Mar 2026 05:53:42 +1300",
+      "logged_at_iso": "2026-03-30T16:53:42+00:00",
+      "logged_hour": 16,
+      "logged_minute": 53,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/0/6/2/9/8/606298-little-amelie-or-the-character-of-rain-0-600-0-900-crop.jpg?v=4440475e1e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/0/6/2/9/8/606298-little-amelie-or-the-character-of-rain-0-600-0-900-crop.jpg?v=4440475e1e",
+      "user_rating": 3.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 86,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Little Amélie or the Character of Rain",
+      "directors": [
+        "Maïlys Vallade",
+        "Liane-cho Han"
+      ],
+      "genres": [
+        "Animation",
+        "Drama",
+        "Family"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 77,
+      "tmdb_id": 682012,
+      "director_source": "tmdb_details_cache",
+      "director": "Maïlys Vallade"
+    },
+    {
+      "rss_title": "Tell No One, 2006 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/tell-no-one/",
+      "letterboxd_slug": "tell-no-one",
+      "watched_at": "Tue, 31 Mar 2026 05:52:18 +1300",
+      "logged_at_raw": "Tue, 31 Mar 2026 05:52:18 +1300",
+      "logged_at_iso": "2026-03-30T16:52:18+00:00",
+      "logged_hour": 16,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/8/8/9/45889-tell-no-one-0-600-0-900-crop.jpg?v=35aa6bab26",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/8/8/9/45889-tell-no-one-0-600-0-900-crop.jpg?v=35aa6bab26",
+      "user_rating": 3.0,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 24,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Tell No One",
+      "directors": [
+        "Guillaume Canet"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 131,
+      "tmdb_id": 10795,
+      "director_source": "tmdb_details_cache",
+      "director": "Guillaume Canet"
+    },
+    {
+      "rss_title": "Paris, Texas, 1984 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/paris-texas/",
+      "letterboxd_slug": "paris-texas",
+      "watched_at": "Sat, 28 Mar 2026 22:34:07 +1300",
+      "logged_at_raw": "Sat, 28 Mar 2026 22:34:07 +1300",
+      "logged_at_iso": "2026-03-28T09:34:07+00:00",
+      "logged_hour": 9,
+      "logged_minute": 34,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
+      "user_rating": 4.5,
+      "year": 1984,
+      "has_review": true,
+      "review_word_count": 284,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Paris, Texas",
+      "directors": [
+        "Wim Wenders"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "UK",
+        "Germany",
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 145.0,
+      "average_rating": 4.39,
+      "watches": 607896,
+      "likes": 263368,
+      "fans": 40000,
+      "total_ratings": 460464,
+      "director": "Wim Wenders",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "All About My Mother, 1999 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/all-about-my-mother/",
+      "letterboxd_slug": "all-about-my-mother",
+      "watched_at": "Sat, 28 Mar 2026 02:44:16 +1300",
+      "logged_at_raw": "Sat, 28 Mar 2026 02:44:16 +1300",
+      "logged_at_iso": "2026-03-27T13:44:16+00:00",
+      "logged_hour": 13,
+      "logged_minute": 44,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/b3/fr/od/2f/jopVQl2gYGPeSfEfDX9ZktlG0In-0-600-0-900-crop.jpg?v=355ee6a895",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/b3/fr/od/2f/jopVQl2gYGPeSfEfDX9ZktlG0In-0-600-0-900-crop.jpg?v=355ee6a895",
+      "user_rating": 4.0,
+      "year": 1999,
+      "has_review": true,
+      "review_word_count": 6,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "All About My Mother",
+      "directors": [
+        "Pedro Almodóvar"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "Spain",
+        "France"
+      ],
+      "original_language": "Spanish",
+      "runtime": 101.0,
+      "average_rating": 4.17,
+      "watches": 294814,
+      "likes": 107150,
+      "fans": 8900,
+      "total_ratings": 207475,
+      "director": "Pedro Almodóvar",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Conclave, 2024 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/conclave/",
+      "letterboxd_slug": "conclave",
+      "watched_at": "Thu, 26 Mar 2026 08:46:16 +1300",
+      "logged_at_raw": "Thu, 26 Mar 2026 08:46:16 +1300",
+      "logged_at_iso": "2026-03-25T19:46:16+00:00",
+      "logged_hour": 19,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/7/7/2/5/3/877253-conclave-0-600-0-900-crop.jpg?v=f9cbf50dec",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/7/7/2/5/3/877253-conclave-0-600-0-900-crop.jpg?v=f9cbf50dec",
+      "user_rating": 3.5,
+      "year": 2024,
+      "has_review": true,
+      "review_word_count": 146,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Conclave",
+      "directors": [
+        "Edward Berger"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 120.0,
+      "average_rating": 3.91,
+      "watches": 1208925,
+      "likes": 396964,
+      "fans": 4500,
+      "total_ratings": 1076607,
+      "director": "Edward Berger",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Dallas Buyers Club, 2013 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/dallas-buyers-club/",
+      "letterboxd_slug": "dallas-buyers-club",
+      "watched_at": "Wed, 25 Mar 2026 03:41:57 +1300",
+      "logged_at_raw": "Wed, 25 Mar 2026 03:41:57 +1300",
+      "logged_at_iso": "2026-03-24T14:41:57+00:00",
+      "logged_hour": 14,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/4/6/0/5/114605-dallas-buyers-club-0-600-0-900-crop.jpg?v=f1a830ac72",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/4/6/0/5/114605-dallas-buyers-club-0-600-0-900-crop.jpg?v=f1a830ac72",
+      "user_rating": 3.5,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 176,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Dallas Buyers Club",
+      "directors": [
+        "Jean-Marc Vallée"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 117,
+      "tmdb_id": 152532,
+      "director_source": "tmdb_details_cache",
+      "director": "Jean-Marc Vallée"
+    },
+    {
+      "rss_title": "Nino, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/nino-2025/",
+      "letterboxd_slug": "nino-2025",
+      "watched_at": "Mon, 23 Mar 2026 04:02:36 +1300",
+      "logged_at_raw": "Mon, 23 Mar 2026 04:02:36 +1300",
+      "logged_at_iso": "2026-03-22T15:02:36+00:00",
+      "logged_hour": 15,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/4/5/2/0/1194520-nino-2025-0-600-0-900-crop.jpg?v=2ed3471258",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/4/5/2/0/1194520-nino-2025-0-600-0-900-crop.jpg?v=2ed3471258",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 44,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Nino",
+      "directors": [
+        "Pauline Loquès"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 96,
+      "tmdb_id": 1313229,
+      "director_source": "tmdb_details_cache",
+      "director": "Pauline Loquès"
+    },
+    {
+      "rss_title": "A Clockwork Orange, 1971 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/a-clockwork-orange/",
+      "letterboxd_slug": "a-clockwork-orange",
+      "watched_at": "Sun, 22 Mar 2026 01:41:44 +1300",
+      "logged_at_raw": "Sun, 22 Mar 2026 01:41:44 +1300",
+      "logged_at_iso": "2026-03-21T12:41:44+00:00",
+      "logged_hour": 12,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/6/7/51867-a-clockwork-orange-0-600-0-900-crop.jpg?v=d6d5407b50",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/6/7/51867-a-clockwork-orange-0-600-0-900-crop.jpg?v=d6d5407b50",
+      "user_rating": 3.0,
+      "year": 1971,
+      "has_review": true,
+      "review_word_count": 44,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "A Clockwork Orange",
+      "directors": [
+        "Stanley Kubrick"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Crime"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "original_language": "English",
+      "runtime": 137.0,
+      "average_rating": null,
+      "watches": 1677487,
+      "likes": 548712,
+      "fans": 39000,
+      "total_ratings": 1079482,
+      "director": "Stanley Kubrick",
+      "director_source": "megabank"
+    }
+  ],
+  "profile_summary": {
+    "films_analyzed": 49,
+    "megabank_social_count": 22,
+    "supplemental_confirmed_count": 25,
+    "supplemental_review_count": 0,
+    "supplemental_rejected_count": 0,
+    "missing_count": 2,
+    "social_coverage": 0.4489795918367347,
+    "metadata_coverage_confirmed": 0.9591836734693877,
+    "metadata_coverage_potential": 0.9591836734693877,
+    "total_analyzed": 49,
+    "matched_count": 22,
+    "absent_count": 27,
+    "coverage": 0.4489795918367347,
+    "user_average_rating": 3.4895833333333335,
+    "community_average_rating": 3.918823529411765,
+    "average_difference": -0.42924019607843134,
+    "runtime_average": 125.13636363636364,
+    "watches_mean": 1009993.0454545454,
+    "watches_median": 664762.0,
+    "likes_mean": 331001.7727272727,
+    "fans_mean": 15477.272727272728,
+    "top_genres": [
+      [
+        "Drama",
+        37
+      ],
+      [
+        "Thriller",
+        13
+      ],
+      [
+        "History",
+        9
+      ],
+      [
+        "Comedy",
+        9
+      ],
+      [
+        "Romance",
+        9
+      ],
+      [
+        "Crime",
+        6
+      ],
+      [
+        "Mystery",
+        6
+      ],
+      [
+        "Science Fiction",
+        5
+      ],
+      [
+        "Animation",
+        3
+      ],
+      [
+        "Action",
+        3
+      ]
+    ],
+    "top_countries": [
+      [
+        "France",
+        25
+      ],
+      [
+        "USA",
+        20
+      ],
+      [
+        "UK",
+        12
+      ],
+      [
+        "Belgium",
+        7
+      ],
+      [
+        "Spain",
+        4
+      ],
+      [
+        "Ireland",
+        2
+      ],
+      [
+        "South Korea",
+        2
+      ],
+      [
+        "Germany",
+        2
+      ],
+      [
+        "Denmark",
+        1
+      ],
+      [
+        "Brazil",
+        1
+      ]
+    ],
+    "top_languages": [
+      [
+        "English",
+        21
+      ],
+      [
+        "French",
+        18
+      ],
+      [
+        "Spanish",
+        2
+      ],
+      [
+        "Korean",
+        2
+      ],
+      [
+        "pt",
+        1
+      ],
+      [
+        "Italian",
+        1
+      ],
+      [
+        "th",
+        1
+      ],
+      [
+        "zh",
+        1
+      ]
+    ],
+    "top_directors": [
+      [
+        "Joel Coen",
+        2
+      ],
+      [
+        "Ethan Coen",
+        2
+      ],
+      [
+        "Christopher Nolan",
+        1
+      ],
+      [
+        "Louis Leterrier",
+        1
+      ],
+      [
+        "Yorgos Lanthimos",
+        1
+      ],
+      [
+        "Curry Barker",
+        1
+      ],
+      [
+        "Vincent Paronnaud",
+        1
+      ],
+      [
+        "Marjane Satrapi",
+        1
+      ],
+      [
+        "François Ozon",
+        1
+      ],
+      [
+        "Park Chan-wook",
+        1
+      ]
+    ],
+    "profile_quality": {
+      "detected_films_count": 49,
+      "target_films_count": 50,
+      "status": "partial",
+      "is_partial": true,
+      "warning": "Profil calculé sur 49 films détectés. C’est assez pour esquisser une tendance, mais certaines conclusions peuvent encore bouger avec plus de films."
+    }
+  },
+  "profile_quality": {
+    "detected_films_count": 49,
+    "target_films_count": 50,
+    "status": "partial",
+    "is_partial": true,
+    "warning": "Profil calculé sur 49 films détectés. C’est assez pour esquisser une tendance, mais certaines conclusions peuvent encore bouger avec plus de films."
+  },
+  "highlights": {
+    "most_popular": {
+      "rss_title": "Inception, 2010 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/inception/",
+      "letterboxd_slug": "inception",
+      "watched_at": "Tue, 30 Jun 2026 00:18:19 +1200",
+      "logged_at_raw": "Tue, 30 Jun 2026 00:18:19 +1200",
+      "logged_at_iso": "2026-06-29T12:18:19+00:00",
+      "logged_hour": 12,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "user_rating": 4.0,
+      "year": 2010,
+      "has_review": true,
+      "review_word_count": 30,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Inception",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 148.0,
+      "average_rating": 4.21,
+      "watches": 4326850,
+      "likes": 1723554,
+      "fans": 79000,
+      "total_ratings": 2822912,
+      "director": "Christopher Nolan",
+      "director_source": "megabank"
+    },
+    "most_niche": {
+      "rss_title": "Summer of 85, 2020 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/summer-of-85/",
+      "letterboxd_slug": "summer-of-85",
+      "watched_at": "Mon, 8 Jun 2026 05:46:19 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 05:46:19 +1200",
+      "logged_at_iso": "2026-06-07T17:46:19+00:00",
+      "logged_hour": 17,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/8/4/9/9/5/584995-summer-of-85-0-600-0-900-crop.jpg?v=1023e749ca",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/8/4/9/9/5/584995-summer-of-85-0-600-0-900-crop.jpg?v=1023e749ca",
+      "user_rating": 2.5,
+      "year": 2020,
+      "has_review": true,
+      "review_word_count": 10,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Summer of 85",
+      "directors": [
+        "François Ozon"
+      ],
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "countries": [
+        "Belgium",
+        "France"
+      ],
+      "original_language": "French",
+      "runtime": 101.0,
+      "average_rating": 3.48,
+      "watches": 129992,
+      "likes": 38962,
+      "fans": 2100,
+      "total_ratings": 103265,
+      "director": "François Ozon",
+      "director_source": "megabank"
+    },
+    "most_fans": {
+      "rss_title": "Inception, 2010 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/inception/",
+      "letterboxd_slug": "inception",
+      "watched_at": "Tue, 30 Jun 2026 00:18:19 +1200",
+      "logged_at_raw": "Tue, 30 Jun 2026 00:18:19 +1200",
+      "logged_at_iso": "2026-06-29T12:18:19+00:00",
+      "logged_hour": 12,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "user_rating": 4.0,
+      "year": 2010,
+      "has_review": true,
+      "review_word_count": 30,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Inception",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 148.0,
+      "average_rating": 4.21,
+      "watches": 4326850,
+      "likes": 1723554,
+      "fans": 79000,
+      "total_ratings": 2822912,
+      "director": "Christopher Nolan",
+      "director_source": "megabank"
+    },
+    "best_fans_ratio": {
+      "rss_title": "Paris, Texas, 1984 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/paris-texas/",
+      "letterboxd_slug": "paris-texas",
+      "watched_at": "Sat, 28 Mar 2026 22:34:07 +1300",
+      "logged_at_raw": "Sat, 28 Mar 2026 22:34:07 +1300",
+      "logged_at_iso": "2026-03-28T09:34:07+00:00",
+      "logged_hour": 9,
+      "logged_minute": 34,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
+      "user_rating": 4.5,
+      "year": 1984,
+      "has_review": true,
+      "review_word_count": 284,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Paris, Texas",
+      "directors": [
+        "Wim Wenders"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "UK",
+        "Germany",
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 145.0,
+      "average_rating": 4.39,
+      "watches": 607896,
+      "likes": 263368,
+      "fans": 40000,
+      "total_ratings": 460464,
+      "director": "Wim Wenders",
+      "director_source": "megabank"
+    },
+    "longest": {
+      "rss_title": "The Hateful Eight, 2015 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/the-hateful-eight/",
+      "letterboxd_slug": "the-hateful-eight",
+      "watched_at": "Mon, 18 May 2026 22:08:13 +1200",
+      "logged_at_raw": "Mon, 18 May 2026 22:08:13 +1200",
+      "logged_at_iso": "2026-05-18T10:08:13+00:00",
+      "logged_hour": 10,
+      "logged_minute": 8,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/9/7/0/1/2/197012-the-hateful-eight-0-600-0-900-crop.jpg?v=0428be5b84",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/9/7/0/1/2/197012-the-hateful-eight-0-600-0-900-crop.jpg?v=0428be5b84",
+      "user_rating": 4.0,
+      "year": 2015,
+      "has_review": true,
+      "review_word_count": 90,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Hateful Eight",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Mystery",
+        "Western",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 188.0,
+      "average_rating": 3.98,
+      "watches": 1413435,
+      "likes": 429917,
+      "fans": 11000,
+      "total_ratings": 951359,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    "shortest": {
+      "rss_title": "TRENTE, 2026 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/trente/",
+      "letterboxd_slug": "trente",
+      "watched_at": "Mon, 8 Jun 2026 04:41:56 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 04:41:56 +1200",
+      "logged_at_iso": "2026-06-07T16:41:56+00:00",
+      "logged_hour": 16,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "user_rating": 2.5,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "TRENTE",
+      "directors": [
+        "Sébastien Frit",
+        "Jeremie Levypon"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "countries": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1687834,
+      "director_source": "tmdb_details_cache",
+      "director": "Sébastien Frit"
+    }
+  }
+}

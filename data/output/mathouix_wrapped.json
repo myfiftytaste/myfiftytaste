@@ -1,0 +1,2392 @@
+{
+  "user": "mathouix",
+  "rss_url": "https://letterboxd.com/mathouix/rss/",
+  "generated_at": "2026-07-01T21:45:42.969064Z",
+  "films": [
+    {
+      "rss_title": "Jim Queen, 2026 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/jim-queen/",
+      "letterboxd_slug": "jim-queen",
+      "watched_at": "Sat, 20 Jun 2026 11:07:28 +1200",
+      "logged_at_raw": "Sat, 20 Jun 2026 11:07:28 +1200",
+      "logged_at_iso": "2026-06-19T23:07:28+00:00",
+      "logged_hour": 23,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "user_rating": 4.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 6,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Jim Queen and the Quest for Chloroqueer",
+      "directors": [
+        "Marco Nguyen",
+        "Nicolas Athané"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "Belgium"
+      ],
+      "original_language": "fr",
+      "runtime": 85,
+      "tmdb_id": 1061798,
+      "director_source": "tmdb_details_cache",
+      "director": "Marco Nguyen"
+    },
+    {
+      "rss_title": "Ride Away, 2024 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/ride-away-2024/",
+      "letterboxd_slug": "ride-away-2024",
+      "watched_at": "Sun, 17 May 2026 18:51:18 +1200",
+      "logged_at_raw": "Sun, 17 May 2026 18:51:18 +1200",
+      "logged_at_iso": "2026-05-17T06:51:18+00:00",
+      "logged_hour": 6,
+      "logged_minute": 51,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/2/1/3/6/1202136-ride-away-2024-0-600-0-900-crop.jpg?v=757b1ddcf9",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/2/1/3/6/1202136-ride-away-2024-0-600-0-900-crop.jpg?v=757b1ddcf9",
+      "user_rating": 4.0,
+      "year": 2024,
+      "has_review": true,
+      "review_word_count": 78,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "Ride Away",
+      "tmdb_candidate_title": "Ride Away",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Phantom of the Paradise, 1974 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/phantom-of-the-paradise/",
+      "letterboxd_slug": "phantom-of-the-paradise",
+      "watched_at": "Tue, 28 Apr 2026 10:06:14 +1200",
+      "logged_at_raw": "Tue, 28 Apr 2026 10:06:14 +1200",
+      "logged_at_iso": "2026-04-27T22:06:14+00:00",
+      "logged_hour": 22,
+      "logged_minute": 6,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/4/6/1/5/34615-phantom-of-the-paradise-0-600-0-900-crop.jpg?v=3c231dd1ff",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/4/6/1/5/34615-phantom-of-the-paradise-0-600-0-900-crop.jpg?v=3c231dd1ff",
+      "user_rating": 2.5,
+      "year": 1974,
+      "has_review": true,
+      "review_word_count": 12,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Phantom of the Paradise",
+      "directors": [
+        "Brian De Palma"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Horror",
+        "Fantasy",
+        "Thriller",
+        "Music",
+        "Romance"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 92.0,
+      "average_rating": null,
+      "watches": 137565,
+      "likes": 60878,
+      "fans": 6200,
+      "total_ratings": 104721,
+      "director": "Brian De Palma",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "I Swear, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/i-swear/",
+      "letterboxd_slug": "i-swear",
+      "watched_at": "Mon, 13 Apr 2026 08:07:20 +1200",
+      "logged_at_raw": "Mon, 13 Apr 2026 08:07:20 +1200",
+      "logged_at_iso": "2026-04-12T20:07:20+00:00",
+      "logged_hour": 20,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/7/8/4/2/1197842-i-swear-0-600-0-900-crop.jpg?v=b8f019138e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/7/8/4/2/1197842-i-swear-0-600-0-900-crop.jpg?v=b8f019138e",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "I Swear",
+      "directors": [
+        "Kirk Jones"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "GB",
+        "IE"
+      ],
+      "original_language": "en",
+      "runtime": 121,
+      "tmdb_id": 1317149,
+      "director_source": "tmdb_details_cache",
+      "director": "Kirk Jones"
+    },
+    {
+      "rss_title": "Hoppers, 2026 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/hoppers/",
+      "letterboxd_slug": "hoppers",
+      "watched_at": "Thu, 19 Mar 2026 02:35:10 +1300",
+      "logged_at_raw": "Thu, 19 Mar 2026 02:35:10 +1300",
+      "logged_at_iso": "2026-03-18T13:35:10+00:00",
+      "logged_hour": 13,
+      "logged_minute": 35,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/7/5/5/7/1207557-hoppers-0-600-0-900-crop.jpg?v=7711e7b5a7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/7/5/5/7/1207557-hoppers-0-600-0-900-crop.jpg?v=7711e7b5a7",
+      "user_rating": 3.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 14,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Hoppers",
+      "directors": [
+        "Daniel Chong"
+      ],
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Science Fiction"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 104,
+      "tmdb_id": 1327819,
+      "director_source": "tmdb_details_cache",
+      "director": "Daniel Chong"
+    },
+    {
+      "rss_title": "Alter Ego, 2026 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/alter-ego-2026/",
+      "letterboxd_slug": "alter-ego-2026",
+      "watched_at": "Tue, 10 Mar 2026 14:07:27 +1300",
+      "logged_at_raw": "Tue, 10 Mar 2026 14:07:27 +1300",
+      "logged_at_iso": "2026-03-10T01:07:27+00:00",
+      "logged_hour": 1,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/5/0/7/2/7/1150727-alter-ego-2026-0-600-0-900-crop.jpg?v=cdcbc59573",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/5/0/7/2/7/1150727-alter-ego-2026-0-600-0-900-crop.jpg?v=cdcbc59573",
+      "user_rating": 4.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 24,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Alter Ego",
+      "directors": [
+        "Nicolas Charlet",
+        "Bruno Lavaine"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 100,
+      "tmdb_id": 1266791,
+      "director_source": "tmdb_details_cache",
+      "director": "Nicolas Charlet"
+    },
+    {
+      "rss_title": "Primal, 2019 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/primal-2019-1/",
+      "letterboxd_slug": "primal-2019-1",
+      "watched_at": "Wed, 4 Mar 2026 08:44:20 +1300",
+      "logged_at_raw": "Wed, 4 Mar 2026 08:44:20 +1300",
+      "logged_at_iso": "2026-03-03T19:44:20+00:00",
+      "logged_hour": 19,
+      "logged_minute": 44,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/6/5/6/0/2/565602-primal-0-600-0-900-crop.jpg?v=cc67813feb",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/6/5/6/0/2/565602-primal-0-600-0-900-crop.jpg?v=cc67813feb",
+      "user_rating": 4.0,
+      "year": 2019,
+      "has_review": true,
+      "review_word_count": 22,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Primal",
+      "directors": [
+        "Nick Powell"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 97,
+      "tmdb_id": 500916,
+      "director_source": "tmdb_details_cache",
+      "director": "Nick Powell"
+    },
+    {
+      "rss_title": "Song of the Sea, 2014 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/song-of-the-sea/",
+      "letterboxd_slug": "song-of-the-sea",
+      "watched_at": "Mon, 2 Mar 2026 13:18:26 +1300",
+      "logged_at_raw": "Mon, 2 Mar 2026 13:18:26 +1300",
+      "logged_at_iso": "2026-03-02T00:18:26+00:00",
+      "logged_hour": 0,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/8/4/8/7/88487-song-of-the-sea-0-600-0-900-crop.jpg?v=8be993ee0b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/8/4/8/7/88487-song-of-the-sea-0-600-0-900-crop.jpg?v=8be993ee0b",
+      "user_rating": 4.5,
+      "year": 2014,
+      "has_review": true,
+      "review_word_count": 4,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Song of the Sea",
+      "directors": [
+        "Tomm Moore"
+      ],
+      "genres": [
+        "Fantasy",
+        "Animation",
+        "Family"
+      ],
+      "countries": [
+        "Belgium",
+        "Denmark",
+        "France",
+        "Ireland",
+        "Luxembourg",
+        "UK"
+      ],
+      "original_language": "English",
+      "runtime": 94.0,
+      "average_rating": 4.23,
+      "watches": 155931,
+      "likes": 59934,
+      "fans": 3500,
+      "total_ratings": 102564,
+      "director": "Tomm Moore",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "After Hours, 1985 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/after-hours/",
+      "letterboxd_slug": "after-hours",
+      "watched_at": "Sun, 22 Feb 2026 12:18:02 +1300",
+      "logged_at_raw": "Sun, 22 Feb 2026 12:18:02 +1300",
+      "logged_at_iso": "2026-02-21T23:18:02+00:00",
+      "logged_hour": 23,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/2z/7c/vx/lo/qpr5tRmvyx4rbv1gKMKbW1v5JUC-0-600-0-900-crop.jpg?v=3f65cdcb25",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/2z/7c/vx/lo/qpr5tRmvyx4rbv1gKMKbW1v5JUC-0-600-0-900-crop.jpg?v=3f65cdcb25",
+      "user_rating": 3.0,
+      "year": 1985,
+      "has_review": true,
+      "review_word_count": 74,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "After Hours",
+      "directors": [
+        "Martin Scorsese"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 97.0,
+      "average_rating": 4.13,
+      "watches": 368096,
+      "likes": 141780,
+      "fans": 8000,
+      "total_ratings": 285455,
+      "director": "Martin Scorsese",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Godfather, 1972 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-godfather/",
+      "letterboxd_slug": "the-godfather",
+      "watched_at": "Sun, 22 Feb 2026 12:05:52 +1300",
+      "logged_at_raw": "Sun, 22 Feb 2026 12:05:52 +1300",
+      "logged_at_iso": "2026-02-21T23:05:52+00:00",
+      "logged_hour": 23,
+      "logged_minute": 5,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-600-0-900-crop.jpg?v=bca8b67402",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-600-0-900-crop.jpg?v=bca8b67402",
+      "user_rating": 5.0,
+      "year": 1972,
+      "has_review": true,
+      "review_word_count": 16,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Godfather",
+      "directors": [
+        "Francis Ford Coppola"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 175.0,
+      "average_rating": 4.54,
+      "watches": 2701868,
+      "likes": 1073044,
+      "fans": 89000,
+      "total_ratings": 1818500,
+      "director": "Francis Ford Coppola",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Sundays, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/sundays-2025/",
+      "letterboxd_slug": "sundays-2025",
+      "watched_at": "Wed, 18 Feb 2026 14:31:58 +1300",
+      "logged_at_raw": "Wed, 18 Feb 2026 14:31:58 +1300",
+      "logged_at_iso": "2026-02-18T01:31:58+00:00",
+      "logged_hour": 1,
+      "logged_minute": 31,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/2/1/0/7/7/1321077-sundays-2025-0-600-0-900-crop.jpg?v=491bb1cc41",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/2/1/0/7/7/1321077-sundays-2025-0-600-0-900-crop.jpg?v=491bb1cc41",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 202,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Sundays",
+      "directors": [
+        "Alauda Ruiz de Azúa"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "Spain",
+        "France"
+      ],
+      "original_language": "es",
+      "runtime": 112,
+      "tmdb_id": 1443576,
+      "director_source": "tmdb_details_cache",
+      "director": "Alauda Ruiz de Azúa"
+    },
+    {
+      "rss_title": "Submarine, 2010 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/submarine/1/",
+      "letterboxd_slug": "submarine",
+      "watched_at": "Tue, 17 Feb 2026 09:51:26 +1300",
+      "logged_at_raw": "Tue, 17 Feb 2026 09:51:26 +1300",
+      "logged_at_iso": "2026-02-16T20:51:26+00:00",
+      "logged_hour": 20,
+      "logged_minute": 51,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/vp/ip/de/v2/mqunaysed9wv8OJsrZAlOF3j0Sr-0-600-0-900-crop.jpg?v=7f69e9b7e5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/vp/ip/de/v2/mqunaysed9wv8OJsrZAlOF3j0Sr-0-600-0-900-crop.jpg?v=7f69e9b7e5",
+      "user_rating": 4.5,
+      "year": 2010,
+      "has_review": true,
+      "review_word_count": 114,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Submarine",
+      "directors": [
+        "Richard Ayoade"
+      ],
+      "genres": [
+        "Romance",
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "original_language": "English",
+      "runtime": 97.0,
+      "average_rating": 3.85,
+      "watches": 401727,
+      "likes": 133179,
+      "fans": 13000,
+      "total_ratings": 264699,
+      "director": "Richard Ayoade",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "964 Pinocchio, 1991",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/964-pinocchio/",
+      "letterboxd_slug": "964-pinocchio",
+      "watched_at": "Thu, 5 Feb 2026 12:04:01 +1300",
+      "logged_at_raw": "Thu, 5 Feb 2026 12:04:01 +1300",
+      "logged_at_iso": "2026-02-04T23:04:01+00:00",
+      "logged_hour": 23,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/4/8/5/15485-964-pinocchio-0-600-0-900-crop.jpg?v=2a2ab5e556",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/4/8/5/15485-964-pinocchio-0-600-0-900-crop.jpg?v=2a2ab5e556",
+      "user_rating": null,
+      "year": 1991,
+      "has_review": true,
+      "review_word_count": 136,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "964 Pinocchio",
+      "directors": [
+        "Shozin Fukui"
+      ],
+      "genres": [
+        "Thriller",
+        "Horror",
+        "Science Fiction"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 97.0,
+      "average_rating": 3.36,
+      "watches": 25141,
+      "likes": 8161,
+      "fans": 366,
+      "total_ratings": 18160,
+      "director": "Shozin Fukui",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Hamnet, 2025 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/hamnet/",
+      "letterboxd_slug": "hamnet",
+      "watched_at": "Sat, 24 Jan 2026 07:11:34 +1300",
+      "logged_at_raw": "Sat, 24 Jan 2026 07:11:34 +1300",
+      "logged_at_iso": "2026-01-23T18:11:34+00:00",
+      "logged_hour": 18,
+      "logged_minute": 11,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/7/2/2/3/2/772232-hamnet-0-600-0-900-crop.jpg?v=631489314d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/7/2/2/3/2/772232-hamnet-0-600-0-900-crop.jpg?v=631489314d",
+      "user_rating": 5.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 162,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Hamnet",
+      "directors": [
+        "Chloé Zhao"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "History"
+      ],
+      "countries": [
+        "United Kingdom",
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 125,
+      "tmdb_id": 858024,
+      "director_source": "tmdb_details_cache",
+      "director": "Chloé Zhao"
+    },
+    {
+      "rss_title": "Punch-Drunk Love, 2002 - ★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/punch-drunk-love/",
+      "letterboxd_slug": "punch-drunk-love",
+      "watched_at": "Wed, 21 Jan 2026 04:17:45 +1300",
+      "logged_at_raw": "Wed, 21 Jan 2026 04:17:45 +1300",
+      "logged_at_iso": "2026-01-20T15:17:45+00:00",
+      "logged_hour": 15,
+      "logged_minute": 17,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/9/1/4/47914-punch-drunk-love-0-600-0-900-crop.jpg?v=032fc20313",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/9/1/4/47914-punch-drunk-love-0-600-0-900-crop.jpg?v=032fc20313",
+      "user_rating": 1.0,
+      "year": 2002,
+      "has_review": true,
+      "review_word_count": 2,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Punch-Drunk Love",
+      "directors": [
+        "Paul Thomas Anderson"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 96.0,
+      "average_rating": 3.98,
+      "watches": 660446,
+      "likes": 216672,
+      "fans": 11000,
+      "total_ratings": 470834,
+      "director": "Paul Thomas Anderson",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Secret Agent, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-secret-agent-2025/",
+      "letterboxd_slug": "the-secret-agent-2025",
+      "watched_at": "Mon, 19 Jan 2026 11:56:37 +1300",
+      "logged_at_raw": "Mon, 19 Jan 2026 11:56:37 +1300",
+      "logged_at_iso": "2026-01-18T22:56:37+00:00",
+      "logged_hour": 22,
+      "logged_minute": 56,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/0/4/3/4/8/1104348-the-secret-agent-2025-0-600-0-900-crop.jpg?v=3bcd2a3e02",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/0/4/3/4/8/1104348-the-secret-agent-2025-0-600-0-900-crop.jpg?v=3bcd2a3e02",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 54,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Secret Agent",
+      "directors": [
+        "Kleber Mendonça Filho"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "Brazil",
+        "France",
+        "Germany",
+        "Netherlands",
+        "Argentina"
+      ],
+      "original_language": "pt",
+      "runtime": 161,
+      "tmdb_id": 1220564,
+      "director_source": "tmdb_details_cache",
+      "director": "Kleber Mendonça Filho"
+    },
+    {
+      "rss_title": "Fargo, 1996 - ★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/fargo/",
+      "letterboxd_slug": "fargo",
+      "watched_at": "Mon, 12 Jan 2026 04:20:46 +1300",
+      "logged_at_raw": "Mon, 12 Jan 2026 04:20:46 +1300",
+      "logged_at_iso": "2026-01-11T15:20:46+00:00",
+      "logged_hour": 15,
+      "logged_minute": 20,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/8/1/51781-fargo-0-600-0-900-crop.jpg?v=44835e3b35",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/8/1/51781-fargo-0-600-0-900-crop.jpg?v=44835e3b35",
+      "user_rating": 2.0,
+      "year": 1996,
+      "has_review": true,
+      "review_word_count": 30,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Fargo",
+      "directors": [
+        "Joel Coen"
+      ],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller",
+        "Comedy"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 98.0,
+      "average_rating": 4.19,
+      "watches": 1403469,
+      "likes": 472772,
+      "fans": 15000,
+      "total_ratings": 952742,
+      "director": "Joel Coen",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "One Battle After Another, 2025 - ★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/one-battle-after-another/1/",
+      "letterboxd_slug": "one-battle-after-another",
+      "watched_at": "Sat, 10 Jan 2026 06:32:53 +1300",
+      "logged_at_raw": "Sat, 10 Jan 2026 06:32:53 +1300",
+      "logged_at_iso": "2026-01-09T17:32:53+00:00",
+      "logged_hour": 17,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/1/2/7/7/951277-one-battle-after-another-0-600-0-900-crop.jpg?v=d27c4cc662",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/1/2/7/7/951277-one-battle-after-another-0-600-0-900-crop.jpg?v=d27c4cc662",
+      "user_rating": 1.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 194,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "One Battle After Another",
+      "directors": [
+        "Paul Thomas Anderson"
+      ],
+      "genres": [
+        "Thriller",
+        "Crime",
+        "Comedy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 162,
+      "tmdb_id": 1054867,
+      "director_source": "tmdb_details_cache",
+      "director": "Paul Thomas Anderson"
+    },
+    {
+      "rss_title": "Avatar: Fire and Ash, 2025 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/avatar-fire-and-ash/",
+      "letterboxd_slug": "avatar-fire-and-ash",
+      "watched_at": "Fri, 26 Dec 2025 22:52:23 +1300",
+      "logged_at_raw": "Fri, 26 Dec 2025 22:52:23 +1300",
+      "logged_at_iso": "2025-12-26T09:52:23+00:00",
+      "logged_hour": 9,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "user_rating": 3.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 82,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Avatar: Fire and Ash",
+      "directors": [
+        "James Cameron"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 198,
+      "tmdb_id": 83533,
+      "director_source": "tmdb_details_cache",
+      "director": "James Cameron"
+    },
+    {
+      "rss_title": "Little Miss Sunshine, 2006 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/little-miss-sunshine/",
+      "letterboxd_slug": "little-miss-sunshine",
+      "watched_at": "Fri, 26 Dec 2025 02:24:50 +1300",
+      "logged_at_raw": "Fri, 26 Dec 2025 02:24:50 +1300",
+      "logged_at_iso": "2025-12-25T13:24:50+00:00",
+      "logged_hour": 13,
+      "logged_minute": 24,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/h6/xm/om/q7/dOeM4R55TsAFBXCPNIDDMiJkePr-0-600-0-900-crop.jpg?v=09383296c6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/h6/xm/om/q7/dOeM4R55TsAFBXCPNIDDMiJkePr-0-600-0-900-crop.jpg?v=09383296c6",
+      "user_rating": 3.5,
+      "year": 2006,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Little Miss Sunshine",
+      "directors": [
+        "Valerie Faris",
+        "Jonathan Dayton"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 102.0,
+      "average_rating": 4.19,
+      "watches": 2180672,
+      "likes": 863462,
+      "fans": 78000,
+      "total_ratings": 1462285,
+      "director": "Valerie Faris",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Dark Knight, 2008 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-dark-knight/",
+      "letterboxd_slug": "the-dark-knight",
+      "watched_at": "Sun, 21 Dec 2025 23:51:35 +1300",
+      "logged_at_raw": "Sun, 21 Dec 2025 23:51:35 +1300",
+      "logged_at_iso": "2025-12-21T10:51:35+00:00",
+      "logged_hour": 10,
+      "logged_minute": 51,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-600-0-900-crop.jpg?v=2d0ce4be25",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-600-0-900-crop.jpg?v=2d0ce4be25",
+      "user_rating": 4.0,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 130,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Dark Knight",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 152.0,
+      "average_rating": 4.48,
+      "watches": 4488171,
+      "likes": 1986315,
+      "fans": 110000,
+      "total_ratings": 2992201,
+      "director": "Christopher Nolan",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Wake Up Dead Man, 2025 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/wake-up-dead-man/",
+      "letterboxd_slug": "wake-up-dead-man",
+      "watched_at": "Tue, 16 Dec 2025 00:44:19 +1300",
+      "logged_at_raw": "Tue, 16 Dec 2025 00:44:19 +1300",
+      "logged_at_iso": "2025-12-15T11:44:19+00:00",
+      "logged_hour": 11,
+      "logged_minute": 44,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/2/9/1/1/3/729113-wake-up-dead-man-0-600-0-900-crop.jpg?v=85f3366617",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/2/9/1/1/3/729113-wake-up-dead-man-0-600-0-900-crop.jpg?v=85f3366617",
+      "user_rating": 2.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 64,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "Wake Up Dead Man: A Knives Out Mystery",
+      "tmdb_candidate_title": "Wake Up Dead Man: A Knives Out Mystery",
+      "tmdb_score": 0.8,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Perfect Days, 2023 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/perfect-days-2023/",
+      "letterboxd_slug": "perfect-days-2023",
+      "watched_at": "Mon, 15 Dec 2025 09:49:34 +1300",
+      "logged_at_raw": "Mon, 15 Dec 2025 09:49:34 +1300",
+      "logged_at_iso": "2025-12-14T20:49:34+00:00",
+      "logged_hour": 20,
+      "logged_minute": 49,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/7/9/2/2/9/879229-perfect-days-0-600-0-900-crop.jpg?v=4ea80661fd",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/7/9/2/2/9/879229-perfect-days-0-600-0-900-crop.jpg?v=4ea80661fd",
+      "user_rating": 5.0,
+      "year": 2023,
+      "has_review": true,
+      "review_word_count": 20,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Perfect Days",
+      "directors": [
+        "Wim Wenders"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "Germany",
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 124.0,
+      "average_rating": 4.29,
+      "watches": 643189,
+      "likes": 297360,
+      "fans": 27000,
+      "total_ratings": 539205,
+      "director": "Wim Wenders",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Collateral, 2004 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/collateral/",
+      "letterboxd_slug": "collateral",
+      "watched_at": "Sat, 13 Dec 2025 06:10:09 +1300",
+      "logged_at_raw": "Sat, 13 Dec 2025 06:10:09 +1300",
+      "logged_at_iso": "2025-12-12T17:10:09+00:00",
+      "logged_hour": 17,
+      "logged_minute": 10,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/9/9/5/50995-collateral-0-600-0-900-crop.jpg?v=1691f38093",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/9/9/5/50995-collateral-0-600-0-900-crop.jpg?v=1691f38093",
+      "user_rating": 4.0,
+      "year": 2004,
+      "has_review": true,
+      "review_word_count": 56,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Collateral",
+      "directors": [
+        "Michael Mann"
+      ],
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 120,
+      "tmdb_id": 1538,
+      "director_source": "tmdb_details_cache",
+      "director": "Michael Mann"
+    },
+    {
+      "rss_title": "Zootopia 2, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/zootopia-2/",
+      "letterboxd_slug": "zootopia-2",
+      "watched_at": "Mon, 8 Dec 2025 11:57:23 +1300",
+      "logged_at_raw": "Mon, 8 Dec 2025 11:57:23 +1300",
+      "logged_at_iso": "2025-12-07T22:57:23+00:00",
+      "logged_hour": 22,
+      "logged_minute": 57,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/7/3/4/2/977342-zootopia-2-0-600-0-900-crop.jpg?v=00a15a97bc",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/7/3/4/2/977342-zootopia-2-0-600-0-900-crop.jpg?v=00a15a97bc",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 132,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Zootopia 2",
+      "directors": [
+        "Jared Bush",
+        "Byron Howard"
+      ],
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy",
+        "Mystery",
+        "Family"
+      ],
+      "countries": [
+        "United States of America",
+        "Canada"
+      ],
+      "original_language": "en",
+      "runtime": 108,
+      "tmdb_id": 1084242,
+      "director_source": "tmdb_details_cache",
+      "director": "Jared Bush"
+    },
+    {
+      "rss_title": "The Shawshank Redemption, 1994 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-shawshank-redemption/",
+      "letterboxd_slug": "the-shawshank-redemption",
+      "watched_at": "Fri, 5 Dec 2025 12:11:33 +1300",
+      "logged_at_raw": "Fri, 5 Dec 2025 12:11:33 +1300",
+      "logged_at_iso": "2025-12-04T23:11:33+00:00",
+      "logged_hour": 23,
+      "logged_minute": 11,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/7l/hn/46/uz/zGINvGjdlO6TJRu9wESQvWlOKVT-0-600-0-900-crop.jpg?v=8736d1c395",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/7l/hn/46/uz/zGINvGjdlO6TJRu9wESQvWlOKVT-0-600-0-900-crop.jpg?v=8736d1c395",
+      "user_rating": 4.0,
+      "year": 1994,
+      "has_review": true,
+      "review_word_count": 14,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Shawshank Redemption",
+      "directors": [
+        "Frank Darabont"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 142.0,
+      "average_rating": 4.57,
+      "watches": 2729126,
+      "likes": 1067361,
+      "fans": 95000,
+      "total_ratings": 1828456,
+      "director": "Frank Darabont",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Watchmen, 2009 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/watchmen/",
+      "letterboxd_slug": "watchmen",
+      "watched_at": "Wed, 3 Dec 2025 06:58:24 +1300",
+      "logged_at_raw": "Wed, 3 Dec 2025 06:58:24 +1300",
+      "logged_at_iso": "2025-12-02T17:58:24+00:00",
+      "logged_hour": 17,
+      "logged_minute": 58,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/0/7/0/44070-watchmen-0-600-0-900-crop.jpg?v=dccd60903f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/0/7/0/44070-watchmen-0-600-0-900-crop.jpg?v=dccd60903f",
+      "user_rating": 3.5,
+      "year": 2009,
+      "has_review": true,
+      "review_word_count": 70,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Watchmen",
+      "directors": [
+        "Zack Snyder"
+      ],
+      "genres": [
+        "Mystery",
+        "Science Fiction",
+        "Action"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 163.0,
+      "average_rating": 3.66,
+      "watches": 796013,
+      "likes": 188176,
+      "fans": 3900,
+      "total_ratings": 475573,
+      "director": "Zack Snyder",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Arco, 2025 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/arco/",
+      "letterboxd_slug": "arco",
+      "watched_at": "Sat, 29 Nov 2025 09:33:18 +1300",
+      "logged_at_raw": "Sat, 29 Nov 2025 09:33:18 +1300",
+      "logged_at_iso": "2025-11-28T20:33:18+00:00",
+      "logged_hour": 20,
+      "logged_minute": 33,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/2/1/5/6/6/721566-arco-0-600-0-900-crop.jpg?v=dcaae85d56",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/2/1/5/6/6/721566-arco-0-600-0-900-crop.jpg?v=dcaae85d56",
+      "user_rating": 4.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 28,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Arco",
+      "directors": [
+        "Ugo Bienvenu"
+      ],
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Family",
+        "Science Fiction"
+      ],
+      "countries": [
+        "France",
+        "United Kingdom",
+        "United States of America"
+      ],
+      "original_language": "fr",
+      "runtime": 89,
+      "tmdb_id": 804370,
+      "director_source": "tmdb_details_cache",
+      "director": "Ugo Bienvenu"
+    },
+    {
+      "rss_title": "Mulholland Drive, 2001 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/mulholland-drive/",
+      "letterboxd_slug": "mulholland-drive",
+      "watched_at": "Thu, 6 Nov 2025 10:56:11 +1300",
+      "logged_at_raw": "Thu, 6 Nov 2025 10:56:11 +1300",
+      "logged_at_iso": "2025-11-05T21:56:11+00:00",
+      "logged_hour": 21,
+      "logged_minute": 56,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "user_rating": 4.0,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 36,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Mulholland Drive",
+      "directors": [
+        "David Lynch"
+      ],
+      "genres": [
+        "Mystery",
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "France",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 147.0,
+      "average_rating": 4.26,
+      "watches": 1172795,
+      "likes": 439434,
+      "fans": 54000,
+      "total_ratings": 825070,
+      "director": "David Lynch",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Adolescence, 2025 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/adolescence-2025/",
+      "letterboxd_slug": "adolescence-2025",
+      "watched_at": "Sat, 1 Nov 2025 12:36:04 +1300",
+      "logged_at_raw": "Sat, 1 Nov 2025 12:36:04 +1300",
+      "logged_at_iso": "2025-10-31T23:36:04+00:00",
+      "logged_hour": 23,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/2/6/8/2/8/1326828-adolescence-2025-0-600-0-900-crop.jpg?v=dde7c2d9f0",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/2/6/8/2/8/1326828-adolescence-2025-0-600-0-900-crop.jpg?v=dde7c2d9f0",
+      "user_rating": 2.5,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "The Real Adolescence: Our Killer Kids",
+      "tmdb_candidate_title": "The Real Adolescence: Our Killer Kids",
+      "tmdb_score": 0.8,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Requiem for a Dream, 2000 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/requiem-for-a-dream/",
+      "letterboxd_slug": "requiem-for-a-dream",
+      "watched_at": "Sat, 1 Nov 2025 12:30:48 +1300",
+      "logged_at_raw": "Sat, 1 Nov 2025 12:30:48 +1300",
+      "logged_at_iso": "2025-10-31T23:30:48+00:00",
+      "logged_hour": 23,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/lv/4b/f2/zj/muym4jTjdLx7E6as09d1wlC3sOB-0-600-0-900-crop.jpg?v=b4d5a4aa37",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/lv/4b/f2/zj/muym4jTjdLx7E6as09d1wlC3sOB-0-600-0-900-crop.jpg?v=b4d5a4aa37",
+      "user_rating": 4.5,
+      "year": 2000,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Requiem for a Dream",
+      "directors": [
+        "Darren Aronofsky"
+      ],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 102.0,
+      "average_rating": null,
+      "watches": 1653409,
+      "likes": 528229,
+      "fans": 37000,
+      "total_ratings": 1118771,
+      "director": "Darren Aronofsky",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Knives Out, 2019 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/knives-out-2019/",
+      "letterboxd_slug": "knives-out-2019",
+      "watched_at": "Sat, 1 Nov 2025 12:27:36 +1300",
+      "logged_at_raw": "Sat, 1 Nov 2025 12:27:36 +1300",
+      "logged_at_iso": "2025-10-31T23:27:36+00:00",
+      "logged_hour": 23,
+      "logged_minute": 27,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/5/3/7/0/475370-knives-out-0-600-0-900-crop.jpg?v=7da76d742c",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/5/3/7/0/475370-knives-out-0-600-0-900-crop.jpg?v=7da76d742c",
+      "user_rating": 3.5,
+      "year": 2019,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Knives Out",
+      "directors": [
+        "Rian Johnson"
+      ],
+      "genres": [
+        "Mystery",
+        "Comedy",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 131.0,
+      "average_rating": 3.97,
+      "watches": 4127486,
+      "likes": 1724424,
+      "fans": 37000,
+      "total_ratings": 2931963,
+      "director": "Rian Johnson",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Metropolis, 1927",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/metropolis/",
+      "letterboxd_slug": "metropolis",
+      "watched_at": "Tue, 28 Oct 2025 12:07:25 +1300",
+      "logged_at_raw": "Tue, 28 Oct 2025 12:07:25 +1300",
+      "logged_at_iso": "2025-10-27T23:07:25+00:00",
+      "logged_hour": 23,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/2z/xx/r0/hy/qriaeUUwdmlgethK3aSAx68mG05-0-600-0-900-crop.jpg?v=31b29ec62d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/2z/xx/r0/hy/qriaeUUwdmlgethK3aSAx68mG05-0-600-0-900-crop.jpg?v=31b29ec62d",
+      "user_rating": null,
+      "year": 1927,
+      "has_review": true,
+      "review_word_count": 2,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Metropolis",
+      "directors": [
+        "Fritz Lang"
+      ],
+      "genres": [
+        "Drama",
+        "Science Fiction"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "original_language": "No spoken language",
+      "runtime": 153.0,
+      "average_rating": 4.25,
+      "watches": 347259,
+      "likes": 102140,
+      "fans": 4100,
+      "total_ratings": 202783,
+      "director": "Fritz Lang",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Sink or Swim, 2018 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/sink-or-swim-2018/",
+      "letterboxd_slug": "sink-or-swim-2018",
+      "watched_at": "Tue, 28 Oct 2025 02:17:57 +1300",
+      "logged_at_raw": "Tue, 28 Oct 2025 02:17:57 +1300",
+      "logged_at_iso": "2025-10-27T13:17:57+00:00",
+      "logged_hour": 13,
+      "logged_minute": 17,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/1/5/3/1/8/415318-sink-or-swim-0-600-0-900-crop.jpg?v=ce2c7792c1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/1/5/3/1/8/415318-sink-or-swim-0-600-0-900-crop.jpg?v=ce2c7792c1",
+      "user_rating": 3.0,
+      "year": 2018,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Sink or Swim",
+      "directors": [
+        "Gilles Lellouche"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "Belgium"
+      ],
+      "original_language": "fr",
+      "runtime": 122,
+      "tmdb_id": 484482,
+      "director_source": "tmdb_details_cache",
+      "director": "Gilles Lellouche"
+    },
+    {
+      "rss_title": "Monster, 2023 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/monster-2023/",
+      "letterboxd_slug": "monster-2023",
+      "watched_at": "Wed, 8 Oct 2025 20:47:44 +1300",
+      "logged_at_raw": "Wed, 8 Oct 2025 20:47:44 +1300",
+      "logged_at_iso": "2025-10-08T07:47:44+00:00",
+      "logged_hour": 7,
+      "logged_minute": 47,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/4/7/0/3/0/947030-monster-0-600-0-900-crop.jpg?v=9787f75532",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/4/7/0/3/0/947030-monster-0-600-0-900-crop.jpg?v=9787f75532",
+      "user_rating": 4.5,
+      "year": 2023,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Monster",
+      "directors": [
+        "Hirokazu Kore-eda"
+      ],
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Drama"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 125.0,
+      "average_rating": 4.32,
+      "watches": 335056,
+      "likes": 159787,
+      "fans": 18000,
+      "total_ratings": 287583,
+      "director": "Hirokazu Kore-eda",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Oldboy, 2003 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/oldboy/",
+      "letterboxd_slug": "oldboy",
+      "watched_at": "Tue, 7 Oct 2025 08:20:43 +1300",
+      "logged_at_raw": "Tue, 7 Oct 2025 08:20:43 +1300",
+      "logged_at_iso": "2025-10-06T19:20:43+00:00",
+      "logged_hour": 19,
+      "logged_minute": 20,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/5/4/51454-oldboy-0-600-0-900-crop.jpg?v=294dbcadef",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/5/4/51454-oldboy-0-600-0-900-crop.jpg?v=294dbcadef",
+      "user_rating": 4.0,
+      "year": 2003,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Oldboy",
+      "directors": [
+        "Park Chan-wook"
+      ],
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Drama",
+        "Action"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "Korean",
+      "runtime": 120.0,
+      "average_rating": 4.38,
+      "watches": 1396966,
+      "likes": 521364,
+      "fans": 45000,
+      "total_ratings": 1029549,
+      "director": "Park Chan-wook",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Manchester by the Sea, 2016 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/manchester-by-the-sea/",
+      "letterboxd_slug": "manchester-by-the-sea",
+      "watched_at": "Sun, 5 Oct 2025 23:30:47 +1300",
+      "logged_at_raw": "Sun, 5 Oct 2025 23:30:47 +1300",
+      "logged_at_iso": "2025-10-05T10:30:47+00:00",
+      "logged_hour": 10,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/i7/li/tp/62/i0t7F6b4R1wURRESAiw9VJNuVoV-0-600-0-900-crop.jpg?v=65942464ea",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/i7/li/tp/62/i0t7F6b4R1wURRESAiw9VJNuVoV-0-600-0-900-crop.jpg?v=65942464ea",
+      "user_rating": 3.5,
+      "year": 2016,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Manchester by the Sea",
+      "directors": [
+        "Kenneth Lonergan"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 138.0,
+      "average_rating": null,
+      "watches": 953180,
+      "likes": 302976,
+      "fans": 21000,
+      "total_ratings": 685393,
+      "director": "Kenneth Lonergan",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/demon-slayer-kimetsu-no-yaiba-infinity-castle/",
+      "letterboxd_slug": "demon-slayer-kimetsu-no-yaiba-infinity-castle",
+      "watched_at": "Fri, 3 Oct 2025 02:00:25 +1300",
+      "logged_at_raw": "Fri, 3 Oct 2025 02:00:25 +1300",
+      "logged_at_iso": "2025-10-02T13:00:25+00:00",
+      "logged_hour": 13,
+      "logged_minute": 0,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/2/2/9/0/1192290-demon-slayer-kimetsu-no-yaiba-infinity-castle-0-600-0-900-crop.jpg?v=186ff42e55",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/2/2/9/0/1192290-demon-slayer-kimetsu-no-yaiba-infinity-castle-0-600-0-900-crop.jpg?v=186ff42e55",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "directors": [
+        "Haruo Sotozaki"
+      ],
+      "genres": [
+        "Animation",
+        "Action",
+        "Fantasy"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "ja",
+      "runtime": 156,
+      "tmdb_id": 1311031,
+      "director_source": "tmdb_details_cache",
+      "director": "Haruo Sotozaki"
+    },
+    {
+      "rss_title": "Weapons, 2025 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/weapons-2025/",
+      "letterboxd_slug": "weapons-2025",
+      "watched_at": "Fri, 3 Oct 2025 01:59:34 +1300",
+      "logged_at_raw": "Fri, 3 Oct 2025 01:59:34 +1300",
+      "logged_at_iso": "2025-10-02T12:59:34+00:00",
+      "logged_hour": 12,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/2/1/0/9/972109-weapons-2025-0-600-0-900-crop.jpg?v=8100270337",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/2/1/0/9/972109-weapons-2025-0-600-0-900-crop.jpg?v=8100270337",
+      "user_rating": 3.0,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Weapons",
+      "directors": [
+        "Zach Cregger"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 128,
+      "tmdb_id": 1078605,
+      "director_source": "tmdb_details_cache",
+      "director": "Zach Cregger"
+    },
+    {
+      "rss_title": "Perfect Blue, 1997 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/perfect-blue/",
+      "letterboxd_slug": "perfect-blue",
+      "watched_at": "Fri, 3 Oct 2025 01:57:03 +1300",
+      "logged_at_raw": "Fri, 3 Oct 2025 01:57:03 +1300",
+      "logged_at_iso": "2025-10-02T12:57:03+00:00",
+      "logged_hour": 12,
+      "logged_minute": 57,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/1/7/5/46175-perfect-blue-0-600-0-900-crop.jpg?v=1ed5878cce",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/1/7/5/46175-perfect-blue-0-600-0-900-crop.jpg?v=1ed5878cce",
+      "user_rating": 4.0,
+      "year": 1997,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Perfect Blue",
+      "directors": [
+        "Satoshi Kon"
+      ],
+      "genres": [
+        "Thriller",
+        "Animation",
+        "Horror"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 82.0,
+      "average_rating": 4.39,
+      "watches": 1014401,
+      "likes": 461297,
+      "fans": 42000,
+      "total_ratings": 767913,
+      "director": "Satoshi Kon",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Sirāt, 2025 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/sirat-2025/",
+      "letterboxd_slug": "sirat-2025",
+      "watched_at": "Fri, 3 Oct 2025 01:56:35 +1300",
+      "logged_at_raw": "Fri, 3 Oct 2025 01:56:35 +1300",
+      "logged_at_iso": "2025-10-02T12:56:35+00:00",
+      "logged_hour": 12,
+      "logged_minute": 56,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/3/7/7/7/7/1037777-sirat-2025-0-600-0-900-crop.jpg?v=1660cb1f29",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/3/7/7/7/7/1037777-sirat-2025-0-600-0-900-crop.jpg?v=1660cb1f29",
+      "user_rating": 2.5,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Sirāt",
+      "directors": [
+        "Oliver Laxe"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "Spain",
+        "France"
+      ],
+      "original_language": "es",
+      "runtime": 115,
+      "tmdb_id": 1151272,
+      "director_source": "tmdb_details_cache",
+      "director": "Oliver Laxe"
+    },
+    {
+      "rss_title": "Sinners, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/sinners-2025/",
+      "letterboxd_slug": "sinners-2025",
+      "watched_at": "Fri, 20 Jun 2025 12:48:34 +1200",
+      "logged_at_raw": "Fri, 20 Jun 2025 12:48:34 +1200",
+      "logged_at_iso": "2025-06-20T00:48:34+00:00",
+      "logged_hour": 0,
+      "logged_minute": 48,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/1/6/6/0/0/1116600-sinners-2025-0-600-0-900-crop.jpg?v=5996b7d555",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/1/6/6/0/0/1116600-sinners-2025-0-600-0-900-crop.jpg?v=5996b7d555",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Sinners",
+      "directors": [
+        "Ryan Coogler"
+      ],
+      "genres": [
+        "Horror",
+        "Action",
+        "Thriller"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 138,
+      "tmdb_id": 1233413,
+      "director_source": "tmdb_details_cache",
+      "director": "Ryan Coogler"
+    },
+    {
+      "rss_title": "La La Land, 2016 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/la-la-land/",
+      "letterboxd_slug": "la-la-land",
+      "watched_at": "Mon, 24 Feb 2025 13:07:37 +1300",
+      "logged_at_raw": "Mon, 24 Feb 2025 13:07:37 +1300",
+      "logged_at_iso": "2025-02-24T00:07:37+00:00",
+      "logged_hour": 0,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "user_rating": 3.5,
+      "year": 2016,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "La La Land",
+      "directors": [
+        "Damien Chazelle"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Music",
+        "Romance"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 129.0,
+      "average_rating": null,
+      "watches": 4393174,
+      "likes": 1979547,
+      "fans": 285000,
+      "total_ratings": 3220252,
+      "director": "Damien Chazelle",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Substance, 2024 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-substance/",
+      "letterboxd_slug": "the-substance",
+      "watched_at": "Mon, 24 Feb 2025 11:06:26 +1300",
+      "logged_at_raw": "Mon, 24 Feb 2025 11:06:26 +1300",
+      "logged_at_iso": "2025-02-23T22:06:26+00:00",
+      "logged_hour": 22,
+      "logged_minute": 6,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/3/8/1/4/0/838140-the-substance-0-600-0-900-crop.jpg?v=ab9e1072f8",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/3/8/1/4/0/838140-the-substance-0-600-0-900-crop.jpg?v=ab9e1072f8",
+      "user_rating": 3.5,
+      "year": 2024,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Substance",
+      "directors": [
+        "Coralie Fargeat"
+      ],
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "countries": [
+        "France",
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 141.0,
+      "average_rating": 3.79,
+      "watches": 2638918,
+      "likes": 904636,
+      "fans": 25000,
+      "total_ratings": 2331835,
+      "director": "Coralie Fargeat",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Riverboom, 2023 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/riverboom/",
+      "letterboxd_slug": "riverboom",
+      "watched_at": "Mon, 24 Feb 2025 11:05:15 +1300",
+      "logged_at_raw": "Mon, 24 Feb 2025 11:05:15 +1300",
+      "logged_at_iso": "2025-02-23T22:05:15+00:00",
+      "logged_hour": 22,
+      "logged_minute": 5,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/6/1/9/8/9/1061989-riverboom-0-600-0-900-crop.jpg?v=cb42ad52d1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/6/1/9/8/9/1061989-riverboom-0-600-0-900-crop.jpg?v=cb42ad52d1",
+      "user_rating": 3.5,
+      "year": 2023,
+      "has_review": true,
+      "review_word_count": 6,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "Riverboom",
+      "tmdb_candidate_title": "Riverboom",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "The Shape of Water, 2017 - ★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-shape-of-water/",
+      "letterboxd_slug": "the-shape-of-water",
+      "watched_at": "Sun, 9 Feb 2025 09:33:33 +1300",
+      "logged_at_raw": "Sun, 9 Feb 2025 09:33:33 +1300",
+      "logged_at_iso": "2025-02-08T20:33:33+00:00",
+      "logged_hour": 20,
+      "logged_minute": 33,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/f0/2f/4e/am/bxVvUHI1A9PWoVfEBZko6FZPv5A-0-600-0-900-crop.jpg?v=b150ad168f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/f0/2f/4e/am/bxVvUHI1A9PWoVfEBZko6FZPv5A-0-600-0-900-crop.jpg?v=b150ad168f",
+      "user_rating": 2.0,
+      "year": 2017,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Shape of Water",
+      "directors": [
+        "Guillermo del Toro"
+      ],
+      "genres": [
+        "Fantasy",
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 123.0,
+      "average_rating": 3.66,
+      "watches": 1340249,
+      "likes": 356734,
+      "fans": 7600,
+      "total_ratings": 861759,
+      "director": "Guillermo del Toro",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Flow, 2024 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/flow-2024/",
+      "letterboxd_slug": "flow-2024",
+      "watched_at": "Sun, 9 Feb 2025 09:32:42 +1300",
+      "logged_at_raw": "Sun, 9 Feb 2025 09:32:42 +1300",
+      "logged_at_iso": "2025-02-08T20:32:42+00:00",
+      "logged_hour": 20,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/3/9/4/5/1/739451-flow-2024-0-600-0-900-crop.jpg?v=d664eca804",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/3/9/4/5/1/739451-flow-2024-0-600-0-900-crop.jpg?v=d664eca804",
+      "user_rating": 3.0,
+      "year": 2024,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Flow",
+      "directors": [
+        "Gints Zilbalodis"
+      ],
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Family",
+        "Fantasy"
+      ],
+      "countries": [
+        "Latvia",
+        "Belgium",
+        "France"
+      ],
+      "original_language": "lv",
+      "runtime": 85,
+      "tmdb_id": 823219,
+      "director_source": "tmdb_details_cache",
+      "director": "Gints Zilbalodis"
+    },
+    {
+      "rss_title": "Anora, 2024 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/anora/",
+      "letterboxd_slug": "anora",
+      "watched_at": "Sat, 30 Nov 2024 12:05:28 +1300",
+      "logged_at_raw": "Sat, 30 Nov 2024 12:05:28 +1300",
+      "logged_at_iso": "2024-11-29T23:05:28+00:00",
+      "logged_hour": 23,
+      "logged_minute": 5,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/9/5/4/0/959540-anora-0-600-0-900-crop.jpg?v=6f92877033",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/9/5/4/0/959540-anora-0-600-0-900-crop.jpg?v=6f92877033",
+      "user_rating": 4.5,
+      "year": 2024,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Anora",
+      "directors": [
+        "Sean Baker"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 139.0,
+      "average_rating": null,
+      "watches": 1872966,
+      "likes": 656370,
+      "fans": 20000,
+      "total_ratings": 1658745,
+      "director": "Sean Baker",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Jim's Story, 2024 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/jims-story/",
+      "letterboxd_slug": "jims-story",
+      "watched_at": "Thu, 22 Aug 2024 19:14:45 +1200",
+      "logged_at_raw": "Thu, 22 Aug 2024 19:14:45 +1200",
+      "logged_at_iso": "2024-08-22T07:14:45+00:00",
+      "logged_hour": 7,
+      "logged_minute": 14,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/9/4/5/7/4/994574-jim-s-story-0-600-0-900-crop.jpg?v=a6f84dde84",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/9/4/5/7/4/994574-jim-s-story-0-600-0-900-crop.jpg?v=a6f84dde84",
+      "user_rating": 4.0,
+      "year": 2024,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Jim's Story",
+      "directors": [
+        "Jean-Marie Larrieu",
+        "Arnaud Larrieu"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 101,
+      "tmdb_id": 1102938,
+      "director_source": "tmdb_details_cache",
+      "director": "Jean-Marie Larrieu"
+    },
+    {
+      "rss_title": "The Prestige, 2006 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-prestige/",
+      "letterboxd_slug": "the-prestige",
+      "watched_at": "Sun, 18 Aug 2024 10:22:01 +1200",
+      "logged_at_raw": "Sun, 18 Aug 2024 10:22:01 +1200",
+      "logged_at_iso": "2024-08-17T22:22:01+00:00",
+      "logged_hour": 22,
+      "logged_minute": 22,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/4/7/51147-the-prestige-0-600-0-900-crop.jpg?v=ad7e891177",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/4/7/51147-the-prestige-0-600-0-900-crop.jpg?v=ad7e891177",
+      "user_rating": 4.5,
+      "year": 2006,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Prestige",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Drama",
+        "Mystery"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 130.0,
+      "average_rating": 4.25,
+      "watches": 1811879,
+      "likes": 605725,
+      "fans": 35000,
+      "total_ratings": 1225133,
+      "director": "Christopher Nolan",
+      "director_source": "megabank"
+    }
+  ],
+  "profile_summary": {
+    "films_analyzed": 50,
+    "megabank_social_count": 26,
+    "supplemental_confirmed_count": 20,
+    "supplemental_review_count": 4,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 0.52,
+    "metadata_coverage_confirmed": 0.92,
+    "metadata_coverage_potential": 1.0,
+    "total_analyzed": 50,
+    "matched_count": 26,
+    "absent_count": 24,
+    "coverage": 0.52,
+    "user_average_rating": 3.6145833333333335,
+    "community_average_rating": 4.13047619047619,
+    "average_difference": -0.5158928571428567,
+    "runtime_average": 122.65384615384616,
+    "watches_mean": 1528813.5384615385,
+    "watches_median": 1256522.0,
+    "likes_mean": 588913.7307692308,
+    "fans_mean": 41948.692307692305,
+    "top_genres": [
+      [
+        "Drama",
+        28
+      ],
+      [
+        "Comedy",
+        16
+      ],
+      [
+        "Thriller",
+        15
+      ],
+      [
+        "Crime",
+        9
+      ],
+      [
+        "Animation",
+        8
+      ],
+      [
+        "Science Fiction",
+        8
+      ],
+      [
+        "Mystery",
+        8
+      ],
+      [
+        "Romance",
+        7
+      ],
+      [
+        "Horror",
+        6
+      ],
+      [
+        "Fantasy",
+        6
+      ]
+    ],
+    "top_countries": [
+      [
+        "USA",
+        28
+      ],
+      [
+        "France",
+        12
+      ],
+      [
+        "UK",
+        9
+      ],
+      [
+        "Japan",
+        5
+      ],
+      [
+        "Belgium",
+        4
+      ],
+      [
+        "Germany",
+        3
+      ],
+      [
+        "Ireland",
+        2
+      ],
+      [
+        "Spain",
+        2
+      ],
+      [
+        "Denmark",
+        1
+      ],
+      [
+        "Luxembourg",
+        1
+      ]
+    ],
+    "top_languages": [
+      [
+        "English",
+        30
+      ],
+      [
+        "French",
+        5
+      ],
+      [
+        "Japanese",
+        5
+      ],
+      [
+        "Spanish",
+        2
+      ],
+      [
+        "pt",
+        1
+      ],
+      [
+        "No spoken language",
+        1
+      ],
+      [
+        "Korean",
+        1
+      ],
+      [
+        "lv",
+        1
+      ]
+    ],
+    "top_directors": [
+      [
+        "Christopher Nolan",
+        2
+      ],
+      [
+        "Brian De Palma",
+        1
+      ],
+      [
+        "Tomm Moore",
+        1
+      ],
+      [
+        "Martin Scorsese",
+        1
+      ],
+      [
+        "Francis Ford Coppola",
+        1
+      ],
+      [
+        "Richard Ayoade",
+        1
+      ],
+      [
+        "Shozin Fukui",
+        1
+      ],
+      [
+        "Paul Thomas Anderson",
+        1
+      ],
+      [
+        "Joel Coen",
+        1
+      ],
+      [
+        "Valerie Faris",
+        1
+      ]
+    ],
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    }
+  },
+  "profile_quality": {
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "status": "normal",
+    "is_partial": false,
+    "warning": null
+  },
+  "highlights": {
+    "most_popular": {
+      "rss_title": "The Dark Knight, 2008 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-dark-knight/",
+      "letterboxd_slug": "the-dark-knight",
+      "watched_at": "Sun, 21 Dec 2025 23:51:35 +1300",
+      "logged_at_raw": "Sun, 21 Dec 2025 23:51:35 +1300",
+      "logged_at_iso": "2025-12-21T10:51:35+00:00",
+      "logged_hour": 10,
+      "logged_minute": 51,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-600-0-900-crop.jpg?v=2d0ce4be25",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-600-0-900-crop.jpg?v=2d0ce4be25",
+      "user_rating": 4.0,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 130,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Dark Knight",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 152.0,
+      "average_rating": 4.48,
+      "watches": 4488171,
+      "likes": 1986315,
+      "fans": 110000,
+      "total_ratings": 2992201,
+      "director": "Christopher Nolan",
+      "director_source": "megabank"
+    },
+    "most_niche": {
+      "rss_title": "964 Pinocchio, 1991",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/964-pinocchio/",
+      "letterboxd_slug": "964-pinocchio",
+      "watched_at": "Thu, 5 Feb 2026 12:04:01 +1300",
+      "logged_at_raw": "Thu, 5 Feb 2026 12:04:01 +1300",
+      "logged_at_iso": "2026-02-04T23:04:01+00:00",
+      "logged_hour": 23,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/4/8/5/15485-964-pinocchio-0-600-0-900-crop.jpg?v=2a2ab5e556",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/4/8/5/15485-964-pinocchio-0-600-0-900-crop.jpg?v=2a2ab5e556",
+      "user_rating": null,
+      "year": 1991,
+      "has_review": true,
+      "review_word_count": 136,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "964 Pinocchio",
+      "directors": [
+        "Shozin Fukui"
+      ],
+      "genres": [
+        "Thriller",
+        "Horror",
+        "Science Fiction"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 97.0,
+      "average_rating": 3.36,
+      "watches": 25141,
+      "likes": 8161,
+      "fans": 366,
+      "total_ratings": 18160,
+      "director": "Shozin Fukui",
+      "director_source": "megabank"
+    },
+    "most_fans": {
+      "rss_title": "La La Land, 2016 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/la-la-land/",
+      "letterboxd_slug": "la-la-land",
+      "watched_at": "Mon, 24 Feb 2025 13:07:37 +1300",
+      "logged_at_raw": "Mon, 24 Feb 2025 13:07:37 +1300",
+      "logged_at_iso": "2025-02-24T00:07:37+00:00",
+      "logged_hour": 0,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "user_rating": 3.5,
+      "year": 2016,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "La La Land",
+      "directors": [
+        "Damien Chazelle"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Music",
+        "Romance"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 129.0,
+      "average_rating": null,
+      "watches": 4393174,
+      "likes": 1979547,
+      "fans": 285000,
+      "total_ratings": 3220252,
+      "director": "Damien Chazelle",
+      "director_source": "megabank"
+    },
+    "best_fans_ratio": {
+      "rss_title": "La La Land, 2016 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/la-la-land/",
+      "letterboxd_slug": "la-la-land",
+      "watched_at": "Mon, 24 Feb 2025 13:07:37 +1300",
+      "logged_at_raw": "Mon, 24 Feb 2025 13:07:37 +1300",
+      "logged_at_iso": "2025-02-24T00:07:37+00:00",
+      "logged_hour": 0,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "user_rating": 3.5,
+      "year": 2016,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "La La Land",
+      "directors": [
+        "Damien Chazelle"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Music",
+        "Romance"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 129.0,
+      "average_rating": null,
+      "watches": 4393174,
+      "likes": 1979547,
+      "fans": 285000,
+      "total_ratings": 3220252,
+      "director": "Damien Chazelle",
+      "director_source": "megabank"
+    },
+    "longest": {
+      "rss_title": "Avatar: Fire and Ash, 2025 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/avatar-fire-and-ash/",
+      "letterboxd_slug": "avatar-fire-and-ash",
+      "watched_at": "Fri, 26 Dec 2025 22:52:23 +1300",
+      "logged_at_raw": "Fri, 26 Dec 2025 22:52:23 +1300",
+      "logged_at_iso": "2025-12-26T09:52:23+00:00",
+      "logged_hour": 9,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "user_rating": 3.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 82,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Avatar: Fire and Ash",
+      "directors": [
+        "James Cameron"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 198,
+      "tmdb_id": 83533,
+      "director_source": "tmdb_details_cache",
+      "director": "James Cameron"
+    },
+    "shortest": {
+      "rss_title": "Perfect Blue, 1997 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/perfect-blue/",
+      "letterboxd_slug": "perfect-blue",
+      "watched_at": "Fri, 3 Oct 2025 01:57:03 +1300",
+      "logged_at_raw": "Fri, 3 Oct 2025 01:57:03 +1300",
+      "logged_at_iso": "2025-10-02T12:57:03+00:00",
+      "logged_hour": 12,
+      "logged_minute": 57,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/1/7/5/46175-perfect-blue-0-600-0-900-crop.jpg?v=1ed5878cce",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/1/7/5/46175-perfect-blue-0-600-0-900-crop.jpg?v=1ed5878cce",
+      "user_rating": 4.0,
+      "year": 1997,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Perfect Blue",
+      "directors": [
+        "Satoshi Kon"
+      ],
+      "genres": [
+        "Thriller",
+        "Animation",
+        "Horror"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 82.0,
+      "average_rating": 4.39,
+      "watches": 1014401,
+      "likes": 461297,
+      "fans": 42000,
+      "total_ratings": 767913,
+      "director": "Satoshi Kon",
+      "director_source": "megabank"
+    }
+  }
+}

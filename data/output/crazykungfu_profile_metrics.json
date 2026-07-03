@@ -1,0 +1,1691 @@
+{
+  "user": "crazykungfu",
+  "source_file": "data\\output\\crazykungfu_wrapped.json",
+  "coverage": {
+    "total_films_analyzed": 50,
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    },
+    "social_films_count": 18,
+    "confirmed_metadata_films_count": 47,
+    "potential_metadata_films_count": 50,
+    "supplemental_review_count": 3,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 0.36,
+    "confirmed_metadata_coverage": 0.94,
+    "potential_metadata_coverage": 1.0,
+    "review_count": 49,
+    "review_rate": 0.98
+  },
+  "radar_scores": {
+    "mainstreamness": {
+      "value_5": 4,
+      "raw_value": 75.00149855870742,
+      "label": "Popularité moyenne",
+      "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
+      "data_source": "18 films with Megabank social stats",
+      "confidence": "medium"
+    },
+    "oldness": {
+      "value_5": 2,
+      "raw_value": 17.460000000000036,
+      "average_year": 2008.54,
+      "label": "Âge moyen",
+      "description": "Tendance dérivée de l'année moyenne de sortie de tes 50 films détectés.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    },
+    "endurance": {
+      "value_5": 3,
+      "raw_value": 110.88888888888889,
+      "label": "Endurance",
+      "description": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
+      "data_source": "47 films with confirmed metadata",
+      "confidence": "high"
+    },
+    "reviewness": {
+      "value_5": 5,
+      "raw_value": 49,
+      "review_count": 49,
+      "review_rate": 0.98,
+      "label": "Journal intégral",
+      "description": "Chaque film ou presque devient une entrée de journal.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    }
+  },
+  "log_time_profile": {
+    "average_time": "19:34",
+    "average_hour_decimal": 19.57,
+    "period": "evening",
+    "label": "Prime time",
+    "description": "Tes films sont surtout loggés en soirée.",
+    "data_source": "50 films from Letterboxd RSS",
+    "confidence": "high"
+  },
+  "rating_personality": {
+    "user_average_rating": 3.47,
+    "community_average_rating": 3.822857142857143,
+    "average_difference": -0.35285714285714276,
+    "paired_user_average_rating": 3.892857142857143,
+    "paired_community_average_rating": 3.822857142857143,
+    "paired_average_difference": 0.06999999999999994,
+    "paired_count": 14,
+    "method": "paired_gap",
+    "label": "balanced"
+  },
+  "niche_profile": {
+    "watches_median": 179263.0,
+    "watches_mean": 573411.6111111111,
+    "most_niche_film": {
+      "rss_title": "Returning to Reims, 2021 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/returning-to-reims/",
+      "letterboxd_slug": "returning-to-reims",
+      "watched_at": "Wed, 22 Apr 2026 09:13:15 +1200",
+      "logged_at_raw": "Wed, 22 Apr 2026 09:13:15 +1200",
+      "logged_at_iso": "2026-04-21T21:13:15+00:00",
+      "logged_hour": 21,
+      "logged_minute": 13,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/5/3/3/9/1/753391-returning-to-reims-0-600-0-900-crop.jpg?v=324ea79b59",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/5/3/3/9/1/753391-returning-to-reims-0-600-0-900-crop.jpg?v=324ea79b59",
+      "user_rating": 3.5,
+      "year": 2021,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Returning to Reims",
+      "directors": [
+        "Jean-Gabriel Périot"
+      ],
+      "genres": [
+        "Documentary",
+        "History"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "French",
+      "runtime": 84.0,
+      "average_rating": 3.77,
+      "watches": 2412,
+      "likes": 570,
+      "fans": 8,
+      "total_ratings": 1583,
+      "director": "Jean-Gabriel Périot",
+      "director_source": "megabank"
+    },
+    "most_mainstream_film": {
+      "rss_title": "Kill Bill: Vol. 1, 2003 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/kill-bill-vol-1/",
+      "letterboxd_slug": "kill-bill-vol-1",
+      "watched_at": "Mon, 27 Apr 2026 01:52:47 +1200",
+      "logged_at_raw": "Mon, 27 Apr 2026 01:52:47 +1200",
+      "logged_at_iso": "2026-04-26T13:52:47+00:00",
+      "logged_hour": 13,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "user_rating": 4.5,
+      "year": 2003,
+      "has_review": true,
+      "review_word_count": 46,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Kill Bill: Vol. 1",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Crime",
+        "Action"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 111.0,
+      "average_rating": null,
+      "watches": 3101840,
+      "likes": 1190762,
+      "fans": 66000,
+      "total_ratings": 2026399,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    "niche_index": 24.998501441292568,
+    "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
+  },
+  "cult_profile": {
+    "best_cult_film": {
+      "rss_title": "The Face of Another, 1966 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-face-of-another/",
+      "letterboxd_slug": "the-face-of-another",
+      "watched_at": "Sun, 7 Jun 2026 09:16:28 +1200",
+      "logged_at_raw": "Sun, 7 Jun 2026 09:16:28 +1200",
+      "logged_at_iso": "2026-06-06T21:16:28+00:00",
+      "logged_hour": 21,
+      "logged_minute": 16,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/fz/b0/yq/rh/h1rbLyfFP9xOXzJt5ODqVfxBWic-0-600-0-900-crop.jpg?v=ba593ea4fd",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/fz/b0/yq/rh/h1rbLyfFP9xOXzJt5ODqVfxBWic-0-600-0-900-crop.jpg?v=ba593ea4fd",
+      "user_rating": 4.5,
+      "year": 1966,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Face of Another",
+      "directors": [
+        "Hiroshi Teshigahara"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Drama"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 122.0,
+      "average_rating": 4.23,
+      "watches": 57704,
+      "likes": 22344,
+      "fans": 1600,
+      "total_ratings": 41630,
+      "director": "Hiroshi Teshigahara",
+      "director_source": "megabank"
+    },
+    "best_cult_ratio": 0.027727713849993067,
+    "average_cult_ratio": 0.009908234509974653,
+    "cult_index": 49.54117254987327,
+    "formula": "fans / watches per social film; cult_index = clamp(average_cult_ratio / 0.02 * 100, 0, 100). A 2% average fans/watches ratio maps to 100."
+  },
+  "runtime_profile": {
+    "runtime_average": 110.88888888888889,
+    "runtime_included_count": 45,
+    "runtime_excluded_count": 5,
+    "runtime_invalid_metadata_count": 2,
+    "shortest_film": {
+      "rss_title": "[REC], 2007 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/rec/",
+      "letterboxd_slug": "rec",
+      "watched_at": "Fri, 15 May 2026 21:00:30 +1200",
+      "logged_at_raw": "Fri, 15 May 2026 21:00:30 +1200",
+      "logged_at_iso": "2026-05-15T09:00:30+00:00",
+      "logged_hour": 9,
+      "logged_minute": 0,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/wc/8v/37/hl/cOW5Oc3vnjD2QgK68BUvm6GGLZ4-0-600-0-900-crop.jpg?v=afc2876405",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/wc/8v/37/hl/cOW5Oc3vnjD2QgK68BUvm6GGLZ4-0-600-0-900-crop.jpg?v=afc2876405",
+      "user_rating": 4.0,
+      "year": 2007,
+      "has_review": true,
+      "review_word_count": 90,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "[REC]",
+      "directors": [
+        "Jaume Balagueró",
+        "Paco Plaza"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Spain"
+      ],
+      "original_language": "Spanish",
+      "runtime": 78.0,
+      "average_rating": 3.68,
+      "watches": 469661,
+      "likes": 121520,
+      "fans": 2900,
+      "total_ratings": 327185,
+      "director": "Jaume Balagueró",
+      "director_source": "megabank"
+    },
+    "longest_film": {
+      "rss_title": "A Prophet, 2009 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/a-prophet/",
+      "letterboxd_slug": "a-prophet",
+      "watched_at": "Tue, 7 Apr 2026 06:14:39 +1200",
+      "logged_at_raw": "Tue, 7 Apr 2026 06:14:39 +1200",
+      "logged_at_iso": "2026-04-06T18:14:39+00:00",
+      "logged_hour": 18,
+      "logged_minute": 14,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/1e/n7/st/bb/eQpVD55Kqhx0l4HGvZasYWEMXXJ-0-600-0-900-crop.jpg?v=fc2b368c4e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/1e/n7/st/bb/eQpVD55Kqhx0l4HGvZasYWEMXXJ-0-600-0-900-crop.jpg?v=fc2b368c4e",
+      "user_rating": 5.0,
+      "year": 2009,
+      "has_review": true,
+      "review_word_count": 22,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "A Prophet",
+      "directors": [
+        "Jacques Audiard"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "French",
+      "runtime": 155.0,
+      "average_rating": 4.17,
+      "watches": 88746,
+      "likes": 24202,
+      "fans": 1200,
+      "total_ratings": 61621,
+      "director": "Jacques Audiard",
+      "director_source": "megabank"
+    },
+    "label": "standard runtime"
+  },
+  "genre_dna": {
+    "top_genres": [
+      [
+        "Drama",
+        21
+      ],
+      [
+        "Crime",
+        14
+      ],
+      [
+        "Thriller",
+        12
+      ],
+      [
+        "Action",
+        11
+      ],
+      [
+        "Comedy",
+        9
+      ],
+      [
+        "Horror",
+        7
+      ],
+      [
+        "Science Fiction",
+        6
+      ],
+      [
+        "Adventure",
+        5
+      ],
+      [
+        "Animation",
+        4
+      ],
+      [
+        "Documentary",
+        4
+      ]
+    ],
+    "genre_diversity_count": 18,
+    "dominant_genre": "Drama",
+    "dominant_genre_share": 0.1926605504587156
+  },
+  "genre_bubbles": [
+    {
+      "genre": "Drama",
+      "count": 21,
+      "share": 0.1926605504587156,
+      "size": 140.0,
+      "average_user_rating": 3.57,
+      "average_community_rating": 4.06,
+      "rating_gap": -0.48,
+      "films": [
+        {
+          "title": "The Old Gun",
+          "year": 1975,
+          "slug": null
+        },
+        {
+          "title": "Gomorrah",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "The Face of Another",
+          "year": 1966,
+          "slug": null
+        },
+        {
+          "title": "Bone Tomahawk",
+          "year": 2015,
+          "slug": null
+        },
+        {
+          "title": "The Plague",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Fail Safe",
+          "year": 1964,
+          "slug": null
+        },
+        {
+          "title": "Cool Hand Luke",
+          "year": 1967,
+          "slug": null
+        },
+        {
+          "title": "Gummo",
+          "year": 1997,
+          "slug": null
+        },
+        {
+          "title": "The Devil Wears Prada 2",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Great Arch",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "All Your Faces",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "Michael",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Triangle of Sadness",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "Jerry Maguire",
+          "year": 1996,
+          "slug": null
+        },
+        {
+          "title": "Where Is The Friend's House?",
+          "year": 1987,
+          "slug": null
+        },
+        {
+          "title": "So Long, Stooge",
+          "year": 1983,
+          "slug": null
+        },
+        {
+          "title": "I Swear",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Wages of Fear",
+          "year": 1953,
+          "slug": null
+        },
+        {
+          "title": "A Prophet",
+          "year": 2009,
+          "slug": null
+        },
+        {
+          "title": "My Father's Shadow",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Bad Lieutenant",
+          "year": 1992,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Crime",
+      "count": 14,
+      "share": 0.12844036697247707,
+      "size": 106.67,
+      "average_user_rating": 3.57,
+      "average_community_rating": 3.9,
+      "rating_gap": -0.32,
+      "films": [
+        {
+          "title": "Gomorrah",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "The Taking of Pelham One Two Three",
+          "year": 1974,
+          "slug": null
+        },
+        {
+          "title": "Cool Hand Luke",
+          "year": 1967,
+          "slug": null
+        },
+        {
+          "title": "A Hero Never Dies",
+          "year": 1998,
+          "slug": null
+        },
+        {
+          "title": "Kill Bill: Vol. 2",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "Kill Bill: Vol. 1",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "Untamable",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Chaser",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "So Long, Stooge",
+          "year": 1983,
+          "slug": null
+        },
+        {
+          "title": "A Prophet",
+          "year": 2009,
+          "slug": null
+        },
+        {
+          "title": "Miami Vice",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Bad Lieutenant",
+          "year": 1992,
+          "slug": null
+        },
+        {
+          "title": "Sarkozy-Gaddafi: The Scandal of All Scandals",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Nice Guys",
+          "year": 2016,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Thriller",
+      "count": 12,
+      "share": 0.11009174311926606,
+      "size": 97.14,
+      "average_user_rating": 3.29,
+      "average_community_rating": 3.79,
+      "rating_gap": -0.5,
+      "films": [
+        {
+          "title": "Disclosure Day",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Plague",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Taking of Pelham One Two Three",
+          "year": 1974,
+          "slug": null
+        },
+        {
+          "title": "Fail Safe",
+          "year": 1964,
+          "slug": null
+        },
+        {
+          "title": "A Hero Never Dies",
+          "year": 1998,
+          "slug": null
+        },
+        {
+          "title": "The Night Eats the World",
+          "year": 2018,
+          "slug": null
+        },
+        {
+          "title": "Kill Bill: Vol. 2",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "The Ritual",
+          "year": 2017,
+          "slug": null
+        },
+        {
+          "title": "Untamable",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Chaser",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "The Wages of Fear",
+          "year": 1953,
+          "slug": null
+        },
+        {
+          "title": "Miami Vice",
+          "year": 2006,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Action",
+      "count": 11,
+      "share": 0.10091743119266056,
+      "size": 92.38,
+      "average_user_rating": 3.41,
+      "average_community_rating": 3.82,
+      "rating_gap": -0.41,
+      "films": [
+        {
+          "title": "The 36th Chamber of Shaolin",
+          "year": 1978,
+          "slug": null
+        },
+        {
+          "title": "Tombstone",
+          "year": 1993,
+          "slug": null
+        },
+        {
+          "title": "The Taking of Pelham One Two Three",
+          "year": 1974,
+          "slug": null
+        },
+        {
+          "title": "Cool Hand Luke",
+          "year": 1967,
+          "slug": null
+        },
+        {
+          "title": "A Hero Never Dies",
+          "year": 1998,
+          "slug": null
+        },
+        {
+          "title": "Mortal Kombat II",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Kill Bill: Vol. 2",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "Kill Bill: Vol. 1",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "The Chaser",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Miami Vice",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "The Nice Guys",
+          "year": 2016,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Comedy",
+      "count": 9,
+      "share": 0.08256880733944955,
+      "size": 82.86,
+      "average_user_rating": 3.22,
+      "average_community_rating": 3.62,
+      "rating_gap": -0.4,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Vertiginous",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Zoolander",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Gummo",
+          "year": 1997,
+          "slug": null
+        },
+        {
+          "title": "The Devil Wears Prada 2",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Triangle of Sadness",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "Jerry Maguire",
+          "year": 1996,
+          "slug": null
+        },
+        {
+          "title": "The Nice Guys",
+          "year": 2016,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Horror",
+      "count": 7,
+      "share": 0.06422018348623854,
+      "size": 73.33,
+      "average_user_rating": 3.71,
+      "average_community_rating": 3.43,
+      "rating_gap": 0.28,
+      "films": [
+        {
+          "title": "Backrooms",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Bone Tomahawk",
+          "year": 2015,
+          "slug": null
+        },
+        {
+          "title": "Obsession",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "[REC]",
+          "year": 2007,
+          "slug": null
+        },
+        {
+          "title": "The Night Eats the World",
+          "year": 2018,
+          "slug": null
+        },
+        {
+          "title": "Mad God",
+          "year": 2021,
+          "slug": null
+        },
+        {
+          "title": "The Ritual",
+          "year": 2017,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Science Fiction",
+      "count": 6,
+      "share": 0.05504587155963303,
+      "size": 68.57,
+      "average_user_rating": 3.08,
+      "average_community_rating": 4.23,
+      "rating_gap": -1.15,
+      "films": [
+        {
+          "title": "Disclosure Day",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Vertiginous",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Backrooms",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Face of Another",
+          "year": 1966,
+          "slug": null
+        },
+        {
+          "title": "The Night Eats the World",
+          "year": 2018,
+          "slug": null
+        },
+        {
+          "title": "Mad God",
+          "year": 2021,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Adventure",
+      "count": 5,
+      "share": 0.045871559633027525,
+      "size": 63.81,
+      "average_user_rating": 3.4,
+      "average_community_rating": 4.34,
+      "rating_gap": -0.94,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The 36th Chamber of Shaolin",
+          "year": 1978,
+          "slug": null
+        },
+        {
+          "title": "Mortal Kombat II",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Where Is The Friend's House?",
+          "year": 1987,
+          "slug": null
+        },
+        {
+          "title": "The Wages of Fear",
+          "year": 1953,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Animation",
+      "count": 4,
+      "share": 0.03669724770642202,
+      "size": 59.05,
+      "average_user_rating": 3.62,
+      "average_community_rating": null,
+      "rating_gap": null,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Vertiginous",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Mad God",
+          "year": 2021,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Documentary",
+      "count": 4,
+      "share": 0.03669724770642202,
+      "size": 59.05,
+      "average_user_rating": 3.25,
+      "average_community_rating": 3.77,
+      "rating_gap": -0.52,
+      "films": [
+        {
+          "title": "TRENTE",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Returning to Reims",
+          "year": 2021,
+          "slug": null
+        },
+        {
+          "title": "No Other Land",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Sarkozy-Gaddafi: The Scandal of All Scandals",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "History",
+      "count": 4,
+      "share": 0.03669724770642202,
+      "size": 59.05,
+      "average_user_rating": 3.75,
+      "average_community_rating": 3.77,
+      "rating_gap": -0.02,
+      "films": [
+        {
+          "title": "The Old Gun",
+          "year": 1975,
+          "slug": null
+        },
+        {
+          "title": "The Great Arch",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Returning to Reims",
+          "year": 2021,
+          "slug": null
+        },
+        {
+          "title": "I Swear",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Fantasy",
+      "count": 3,
+      "share": 0.027522935779816515,
+      "size": 54.29,
+      "average_user_rating": 3.67,
+      "average_community_rating": null,
+      "rating_gap": null,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Mortal Kombat II",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Mad God",
+          "year": 2021,
+          "slug": null
+        }
+      ]
+    }
+  ],
+  "country_passport": {
+    "top_countries": [
+      [
+        "USA",
+        24
+      ],
+      [
+        "France",
+        14
+      ],
+      [
+        "UK",
+        5
+      ],
+      [
+        "Germany",
+        3
+      ],
+      [
+        "Italy",
+        3
+      ],
+      [
+        "Japan",
+        2
+      ],
+      [
+        "Canada",
+        2
+      ],
+      [
+        "Hong Kong",
+        2
+      ],
+      [
+        "Denmark",
+        2
+      ],
+      [
+        "Ireland",
+        2
+      ]
+    ],
+    "number_of_countries": 24,
+    "dominant_country": "USA",
+    "non_us_share": 0.6712328767123288,
+    "label": "world cinema explorer"
+  },
+  "country_map": {
+    "title": "Ma carte",
+    "subtitle": "Les pays de production qui traversent tes 50 films détectés.",
+    "countries": [
+      {
+        "name": "USA",
+        "iso2": "US",
+        "count": 24,
+        "share": 0.3287671232876712,
+        "intensity": 1.0,
+        "films": [
+          {
+            "title": "Minions & Monsters",
+            "year": 2026,
+            "slug": "minions-monsters-2026"
+          },
+          {
+            "title": "Disclosure Day",
+            "year": 2026,
+            "slug": "disclosure-day"
+          },
+          {
+            "title": "Backrooms",
+            "year": 2026,
+            "slug": "backrooms-2026"
+          },
+          {
+            "title": "Tombstone",
+            "year": 1993,
+            "slug": "tombstone"
+          },
+          {
+            "title": "Bone Tomahawk",
+            "year": 2015,
+            "slug": "bone-tomahawk"
+          },
+          {
+            "title": "Obsession",
+            "year": 2025,
+            "slug": "obsession-2025"
+          },
+          {
+            "title": "The Plague",
+            "year": 2025,
+            "slug": "the-plague-2025"
+          },
+          {
+            "title": "The Taking of Pelham One Two Three",
+            "year": 1974,
+            "slug": "the-taking-of-pelham-one-two-three"
+          },
+          {
+            "title": "Zoolander",
+            "year": 2001,
+            "slug": "zoolander"
+          },
+          {
+            "title": "Fail Safe",
+            "year": 1964,
+            "slug": "fail-safe"
+          },
+          {
+            "title": "Cool Hand Luke",
+            "year": 1967,
+            "slug": "cool-hand-luke"
+          },
+          {
+            "title": "Mortal Kombat II",
+            "year": 2026,
+            "slug": "mortal-kombat-ii"
+          },
+          {
+            "title": "Gummo",
+            "year": 1997,
+            "slug": "gummo"
+          },
+          {
+            "title": "Mad God",
+            "year": 2021,
+            "slug": "mad-god"
+          },
+          {
+            "title": "The Devil Wears Prada 2",
+            "year": 2026,
+            "slug": "the-devil-wears-prada-2"
+          },
+          {
+            "title": "Michael",
+            "year": 2026,
+            "slug": "michael-2026"
+          },
+          {
+            "title": "Kill Bill: Vol. 2",
+            "year": 2004,
+            "slug": "kill-bill-vol-2"
+          },
+          {
+            "title": "The Ritual",
+            "year": 2017,
+            "slug": "the-ritual-2017"
+          },
+          {
+            "title": "Kill Bill: Vol. 1",
+            "year": 2003,
+            "slug": "kill-bill-vol-1"
+          },
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          },
+          {
+            "title": "Jerry Maguire",
+            "year": 1996,
+            "slug": "jerry-maguire"
+          },
+          {
+            "title": "Miami Vice",
+            "year": 2006,
+            "slug": "miami-vice"
+          },
+          {
+            "title": "Bad Lieutenant",
+            "year": 1992,
+            "slug": "bad-lieutenant"
+          },
+          {
+            "title": "The Nice Guys",
+            "year": 2016,
+            "slug": "the-nice-guys"
+          }
+        ]
+      },
+      {
+        "name": "France",
+        "iso2": "FR",
+        "count": 14,
+        "share": 0.1917808219178082,
+        "intensity": 0.5833333333333334,
+        "films": [
+          {
+            "title": "Vertiginous",
+            "year": 2026,
+            "slug": "vertiginous"
+          },
+          {
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
+          },
+          {
+            "title": "TRENTE",
+            "year": 2026,
+            "slug": "trente"
+          },
+          {
+            "title": "The Old Gun",
+            "year": 1975,
+            "slug": "the-old-gun"
+          },
+          {
+            "title": "The Night Eats the World",
+            "year": 2018,
+            "slug": "the-night-eats-the-world"
+          },
+          {
+            "title": "The Great Arch",
+            "year": 2025,
+            "slug": "the-great-arch-2025"
+          },
+          {
+            "title": "All Your Faces",
+            "year": 2023,
+            "slug": "all-your-faces"
+          },
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          },
+          {
+            "title": "Returning to Reims",
+            "year": 2021,
+            "slug": "returning-to-reims"
+          },
+          {
+            "title": "Untamable",
+            "year": 2025,
+            "slug": "untamable"
+          },
+          {
+            "title": "So Long, Stooge",
+            "year": 1983,
+            "slug": "so-long-stooge"
+          },
+          {
+            "title": "The Wages of Fear",
+            "year": 1953,
+            "slug": "the-wages-of-fear"
+          },
+          {
+            "title": "A Prophet",
+            "year": 2009,
+            "slug": "a-prophet"
+          },
+          {
+            "title": "Sarkozy-Gaddafi: The Scandal of All Scandals",
+            "year": 2025,
+            "slug": "sarkozy-gaddafi-the-scandal-of-all-scandals"
+          }
+        ]
+      },
+      {
+        "name": "UK",
+        "iso2": "GB",
+        "count": 5,
+        "share": 0.0684931506849315,
+        "intensity": 0.20833333333333334,
+        "films": [
+          {
+            "title": "Bone Tomahawk",
+            "year": 2015,
+            "slug": "bone-tomahawk"
+          },
+          {
+            "title": "The Ritual",
+            "year": 2017,
+            "slug": "the-ritual-2017"
+          },
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          },
+          {
+            "title": "I Swear",
+            "year": 2025,
+            "slug": "i-swear"
+          },
+          {
+            "title": "My Father's Shadow",
+            "year": 2025,
+            "slug": "my-fathers-shadow-2025"
+          }
+        ]
+      },
+      {
+        "name": "Germany",
+        "iso2": "DE",
+        "count": 3,
+        "share": 0.0410958904109589,
+        "intensity": 0.125,
+        "films": [
+          {
+            "title": "The Old Gun",
+            "year": 1975,
+            "slug": "the-old-gun"
+          },
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          },
+          {
+            "title": "Miami Vice",
+            "year": 2006,
+            "slug": "miami-vice"
+          }
+        ]
+      },
+      {
+        "name": "Italy",
+        "iso2": "IT",
+        "count": 3,
+        "share": 0.0410958904109589,
+        "intensity": 0.125,
+        "films": [
+          {
+            "title": "Gomorrah",
+            "year": 2008,
+            "slug": "gomorrah"
+          },
+          {
+            "title": "The Wages of Fear",
+            "year": 1953,
+            "slug": "the-wages-of-fear"
+          },
+          {
+            "title": "A Prophet",
+            "year": 2009,
+            "slug": "a-prophet"
+          }
+        ]
+      },
+      {
+        "name": "Japan",
+        "iso2": "JP",
+        "count": 2,
+        "share": 0.0273972602739726,
+        "intensity": 0.08333333333333333,
+        "films": [
+          {
+            "title": "Minions & Monsters",
+            "year": 2026,
+            "slug": "minions-monsters-2026"
+          },
+          {
+            "title": "The Face of Another",
+            "year": 1966,
+            "slug": "the-face-of-another"
+          }
+        ]
+      },
+      {
+        "name": "Canada",
+        "iso2": "CA",
+        "count": 2,
+        "share": 0.0273972602739726,
+        "intensity": 0.08333333333333333,
+        "films": [
+          {
+            "title": "Backrooms",
+            "year": 2026,
+            "slug": "backrooms-2026"
+          },
+          {
+            "title": "The Ritual",
+            "year": 2017,
+            "slug": "the-ritual-2017"
+          }
+        ]
+      },
+      {
+        "name": "Hong Kong",
+        "iso2": null,
+        "count": 2,
+        "share": 0.0273972602739726,
+        "intensity": 0.08333333333333333,
+        "films": [
+          {
+            "title": "The 36th Chamber of Shaolin",
+            "year": 1978,
+            "slug": "the-36th-chamber-of-shaolin"
+          },
+          {
+            "title": "A Hero Never Dies",
+            "year": 1998,
+            "slug": "a-hero-never-dies"
+          }
+        ]
+      },
+      {
+        "name": "Denmark",
+        "iso2": null,
+        "count": 2,
+        "share": 0.0273972602739726,
+        "intensity": 0.08333333333333333,
+        "films": [
+          {
+            "title": "The Great Arch",
+            "year": 2025,
+            "slug": "the-great-arch-2025"
+          },
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          }
+        ]
+      },
+      {
+        "name": "Ireland",
+        "iso2": "IE",
+        "count": 2,
+        "share": 0.0273972602739726,
+        "intensity": 0.08333333333333333,
+        "films": [
+          {
+            "title": "I Swear",
+            "year": 2025,
+            "slug": "i-swear"
+          },
+          {
+            "title": "My Father's Shadow",
+            "year": 2025,
+            "slug": "my-fathers-shadow-2025"
+          }
+        ]
+      },
+      {
+        "name": "Belgium",
+        "iso2": "BE",
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
+          }
+        ]
+      },
+      {
+        "name": "United Arab Emirates",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "The Plague",
+            "year": 2025,
+            "slug": "the-plague-2025"
+          }
+        ]
+      },
+      {
+        "name": "Spain",
+        "iso2": "ES",
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "[REC]",
+            "year": 2007,
+            "slug": "rec"
+          }
+        ]
+      },
+      {
+        "name": "Greece",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          }
+        ]
+      },
+      {
+        "name": "Mexico",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          }
+        ]
+      },
+      {
+        "name": "Sweden",
+        "iso2": "SE",
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          }
+        ]
+      },
+      {
+        "name": "Switzerland",
+        "iso2": "CH",
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          }
+        ]
+      },
+      {
+        "name": "Turkey",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "Triangle of Sadness",
+            "year": 2022,
+            "slug": "triangle-of-sadness"
+          }
+        ]
+      },
+      {
+        "name": "Norway",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "No Other Land",
+            "year": 2024,
+            "slug": "no-other-land"
+          }
+        ]
+      },
+      {
+        "name": "Palestinian Territory",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "No Other Land",
+            "year": 2024,
+            "slug": "no-other-land"
+          }
+        ]
+      },
+      {
+        "name": "Cameroon",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "Untamable",
+            "year": 2025,
+            "slug": "untamable"
+          }
+        ]
+      },
+      {
+        "name": "South Korea",
+        "iso2": "KR",
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "The Chaser",
+            "year": 2008,
+            "slug": "the-chaser"
+          }
+        ]
+      },
+      {
+        "name": "Iran",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "Where Is The Friend's House?",
+            "year": 1987,
+            "slug": "where-is-the-friends-house"
+          }
+        ]
+      },
+      {
+        "name": "Nigeria",
+        "iso2": "NG",
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.041666666666666664,
+        "films": [
+          {
+            "title": "My Father's Shadow",
+            "year": 2025,
+            "slug": "my-fathers-shadow-2025"
+          }
+        ]
+      }
+    ],
+    "max_count": 24,
+    "total_country_tags": 73
+  },
+  "director_recurrence": {
+    "top_directors": [
+      [
+        "Quentin Tarantino",
+        2
+      ],
+      [
+        "Pierre Coffin",
+        1
+      ],
+      [
+        "Steven Spielberg",
+        1
+      ],
+      [
+        "Quentin Dupieux",
+        1
+      ],
+      [
+        "Kane Parsons",
+        1
+      ],
+      [
+        "Marco Nguyen",
+        1
+      ],
+      [
+        "Nicolas Athané",
+        1
+      ],
+      [
+        "Lau Kar-Leung",
+        1
+      ],
+      [
+        "Sébastien Frit",
+        1
+      ],
+      [
+        "Jeremie Levypon",
+        1
+      ]
+    ],
+    "repeat_directors": [
+      {
+        "director": "Quentin Tarantino",
+        "count": 2
+      }
+    ],
+    "most_repeated_director": {
+      "director": "Quentin Tarantino",
+      "count": 2,
+      "director_slug": "quentin-tarantino",
+      "letterboxd_url": "https://letterboxd.com/director/quentin-tarantino/",
+      "films": [
+        {
+          "title": "Kill Bill: Vol. 2",
+          "slug": "kill-bill-vol-2",
+          "year": 2004
+        },
+        {
+          "title": "Kill Bill: Vol. 1",
+          "slug": "kill-bill-vol-1",
+          "year": 2003
+        }
+      ]
+    }
+  }
+}

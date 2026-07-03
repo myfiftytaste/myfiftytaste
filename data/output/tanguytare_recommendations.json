@@ -1,0 +1,810 @@
+{
+  "user": "tanguytare",
+  "source_files": {
+    "wrapped": "data\\output\\tanguytare_wrapped.json",
+    "profile_metrics": "data\\output\\tanguytare_profile_metrics.json",
+    "megabank": "data\\processed\\megabank_clean.json"
+  },
+  "recommendations": [
+    {
+      "slot": "safe_pick",
+      "title": "Parasite",
+      "year": 2019,
+      "slug": "parasite-2019",
+      "letterboxd_url": "https://letterboxd.com/film/parasite-2019",
+      "score": 0.8042,
+      "reason_codes": [
+        "genre_match",
+        "high_community_rating",
+        "director_affinity",
+        "fans_watches_signal",
+        "non_us_angle",
+        "decade_shift"
+      ],
+      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "genres": [
+        "Comedy",
+        "Thriller",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "runtime": 133.0,
+      "average_rating": 4.55,
+      "watches": 5015041.0,
+      "fans": 121000.0,
+      "director": "Bong Joon Ho"
+    },
+    {
+      "slot": "deep_cut",
+      "title": "Mind Game",
+      "year": null,
+      "slug": "mind-game",
+      "letterboxd_url": "https://letterboxd.com/film/mind-game",
+      "score": 0.8683,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "director_affinity",
+        "fans_watches_signal",
+        "non_us_angle",
+        "deep_cut"
+      ],
+      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
+      "genres": [
+        "Animation",
+        "Drama",
+        "Comedy",
+        "Romance",
+        "Fantasy"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "runtime": 103.0,
+      "average_rating": 4.18,
+      "watches": 59191.0,
+      "fans": 2300.0,
+      "director": "Masaaki Yuasa"
+    },
+    {
+      "slot": "wild_card",
+      "title": "The Cure",
+      "year": 1995,
+      "slug": "the-cure-1995",
+      "letterboxd_url": "https://letterboxd.com/film/the-cure-1995",
+      "score": 0.6129,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "fans_watches_signal",
+        "wild_card_contrast"
+      ],
+      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
+      "genres": [
+        "Drama",
+        "Family"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 97.0,
+      "average_rating": 3.87,
+      "watches": 19174.0,
+      "fans": 739.0,
+      "director": "Peter Horton"
+    }
+  ],
+  "diversity_checks": {
+    "directors": [
+      "Bong Joon Ho",
+      "Masaaki Yuasa",
+      "Peter Horton"
+    ],
+    "distinct_directors": true,
+    "primary_genres": [
+      [
+        "Comedy",
+        "Thriller"
+      ],
+      [
+        "Animation",
+        "Drama"
+      ],
+      [
+        "Drama",
+        "Family"
+      ]
+    ],
+    "countries": [
+      [
+        "South Korea"
+      ],
+      [
+        "Japan"
+      ],
+      [
+        "USA"
+      ]
+    ],
+    "popularity": [
+      "high",
+      "low",
+      "low"
+    ],
+    "non_us_recommendation_sought": true,
+    "non_us_recommendation_found": true,
+    "wild_card_contrast_score": 6,
+    "rejected": [
+      {
+        "slot": "deep_cut",
+        "title": "Tokyo!",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "France",
+          "Germany",
+          "Japan",
+          "South Korea"
+        ],
+        "score": 0.6495,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "deep_cut",
+        "title": "Barking Dogs Never Bite",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea"
+        ],
+        "score": 0.6201,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "deep_cut",
+        "title": "Mother",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea"
+        ],
+        "score": 0.6108,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "deep_cut",
+        "title": "Memories of Murder",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea"
+        ],
+        "score": 0.5061,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "deep_cut",
+        "title": "Parasite",
+        "director": "Charles Band",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4924,
+        "reason": "title_or_franchise_proximity"
+      },
+      {
+        "slot": "deep_cut",
+        "title": "Okja",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea",
+          "USA"
+        ],
+        "score": 0.4454,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "deep_cut",
+        "title": "Snowpiercer",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea"
+        ],
+        "score": 0.2684,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Parasite",
+        "director": "Charles Band",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4177,
+        "reason": "title_or_franchise_proximity"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Okja",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea",
+          "USA"
+        ],
+        "score": 0.5056,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Memories of Murder",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea"
+        ],
+        "score": 0.5756,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Tokyo!",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "France",
+          "Germany",
+          "Japan",
+          "South Korea"
+        ],
+        "score": 0.4823,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Mother",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea"
+        ],
+        "score": 0.5312,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Barking Dogs Never Bite",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea"
+        ],
+        "score": 0.4308,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Snowpiercer",
+        "director": "Bong Joon Ho",
+        "countries": [
+          "South Korea"
+        ],
+        "score": 0.4341,
+        "reason": "duplicate_director"
+      }
+    ]
+  },
+  "eligibility_excluded": [
+    {
+      "title": "#1 Fan: A Darkomentary",
+      "slug": "1-fan-a-darkomentary",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "12 Angry Men",
+      "slug": "12-angry-men-1997",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "12th Assistant Deacon",
+      "slug": "12th-assistant-deacon",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "7 Days in Hell",
+      "slug": "7-days-in-hell",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "8 Ball Bunny",
+      "slug": "8-ball-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "8: SIDA",
+      "slug": "8-sida",
+      "reason": "short_runtime"
+    },
+    {
+      "title": 9,
+      "slug": "9-2005",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Beautiful Planet",
+      "slug": "a-beautiful-planet",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Brief History of John Baldessari",
+      "slug": "a-brief-history-of-john-baldessari",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Charlie Brown Christmas",
+      "slug": "a-charlie-brown-christmas",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Charlie Brown Thanksgiving",
+      "slug": "a-charlie-brown-thanksgiving",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Christmas Carol",
+      "slug": "a-christmas-carol-2004",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Close Shave",
+      "slug": "a-close-shave-1995",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Cold Night's Death",
+      "slug": "a-cold-nights-death",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Fairly Odd Movie: Grow Up, Timmy Turner!",
+      "slug": "a-fairly-odd-movie-grow-up-timmy-turner",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Girl in the River: The Price of Forgiveness",
+      "slug": "a-girl-in-the-river-the-price-of-forgiveness",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Hypnotic Television Experience",
+      "slug": "a-hypnotic-television-experience",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Is for Acid",
+      "slug": "a-is-for-acid",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Killer Among Friends",
+      "slug": "a-killer-among-friends",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Kitten for Hitler",
+      "slug": "a-kitten-for-hitler",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Pest in the House",
+      "slug": "a-pest-in-the-house",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Short Vision",
+      "slug": "a-short-vision",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Star Is Born World Premiere",
+      "slug": "a-star-is-born-world-premiere",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Trip to the Moon",
+      "slug": "a-trip-to-the-moon",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Very Murray Christmas",
+      "slug": "a-very-murray-christmas",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Young Couple",
+      "slug": "a-young-couple",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Actus",
+      "slug": "actus",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Addams Family Reunion",
+      "slug": "addams-family-reunion",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Afro Samurai: Resurrection",
+      "slug": "afro-samurai-resurrection",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Aftermath",
+      "slug": "aftermath",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Aladdin",
+      "slug": "aladdin-1993-1",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Alaya",
+      "slug": "alaya",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Albert",
+      "slug": "albert-2016",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Ali Baba Bunny",
+      "slug": "ali-baba-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Alice in Russialand",
+      "slug": "alice-in-russialand",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Alone Time",
+      "slug": "alone-time",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "And the Oscar Goes To...",
+      "slug": "and-the-oscar-goes-to",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Aningaaq",
+      "slug": "aningaaq",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Annihilator",
+      "slug": "annihilator",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Apology",
+      "slug": "apology",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Archie: To Riverdale and Back Again",
+      "slug": "archie-to-riverdale-and-back-again",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Artemis '81",
+      "slug": "artemis-81",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "As Good as Dead",
+      "slug": "as-good-as-dead-1995",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Atomic Rulers",
+      "slug": "atomic-rulers",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Attack from Space",
+      "slug": "attack-from-space",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Attack of the 50 Ft. Woman",
+      "slug": "attack-of-the-50-ft-woman",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Bad Ronald",
+      "slug": "bad-ronald",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Bangkok Hilton",
+      "slug": "bangkok-hilton",
+      "reason": "tv_or_series_signal"
+    },
+    {
+      "title": "Bao",
+      "slug": "bao-2018",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Baoh: The Visitor",
+      "slug": "baoh-the-visitor",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bare Essentials",
+      "slug": "bare-essentials",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Basically",
+      "slug": "basically",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Baton Bunny",
+      "slug": "baton-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bayard & Me",
+      "slug": "bayard-me",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Baywatch: Forbidden Paradise",
+      "slug": "baywatch-forbidden-paradise",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "BBStory: An American Film Renaissance",
+      "slug": "bbstory-an-american-film-renaissance",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Beau",
+      "slug": "beau",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Beauty and the Beast",
+      "slug": "beauty-and-the-beast-1976",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Beep, Beep",
+      "slug": "beep-beep",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Benny's Bathtub",
+      "slug": "bennys-bathtub",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bewitched Bunny",
+      "slug": "bewitched-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Big Top Bunny",
+      "slug": "big-top-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Black Mirror: Bandersnatch",
+      "slug": "black-mirror-bandersnatch",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: Hang the DJ",
+      "slug": "black-mirror-hang-the-dj",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: Joan Is Awful",
+      "slug": "black-mirror-joan-is-awful",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: Metalhead",
+      "slug": "black-mirror-metalhead",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: San Junipero",
+      "slug": "black-mirror-san-junipero",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: White Christmas",
+      "slug": "black-mirror-white-christmas",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Blindfold: Acts of Obsession",
+      "slug": "blindfold-acts-of-obsession",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Blindsided",
+      "slug": "blindsided-2016",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Blood Lake: Attack of the Killer Lampreys",
+      "slug": "blood-lake-attack-of-the-killer-lampreys",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Blood: The Last Vampire",
+      "slug": "blood-the-last-vampire",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Body Bags",
+      "slug": "body-bags",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Bonnie & Clyde",
+      "slug": "bonnie-clyde-2013",
+      "reason": "tv_or_series_signal"
+    },
+    {
+      "title": "Breaking Social Distancing",
+      "slug": "breaking-social-distancing",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Brideless Groom",
+      "slug": "brideless-groom",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Brief Encounter",
+      "slug": "brief-encounter-1974",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Broom-Stick Bunny",
+      "slug": "broom-stick-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Brothers",
+      "slug": "brothers-2013-1",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bugs Bunny and the Three Bears",
+      "slug": "bugs-bunny-and-the-three-bears",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bully for Bugs",
+      "slug": "bully-for-bugs",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bunny Hugged",
+      "slug": "bunny-hugged",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Californy 'Er Bust",
+      "slug": "californy-er-bust",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Cancel",
+      "slug": "cancel",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Cannon Fodder",
+      "slug": "cannon-fodder",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Caricaturana",
+      "slug": "caricaturana",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Carne",
+      "slug": "carne",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Cartoon All-Stars to the Rescue",
+      "slug": "cartoon-all-stars-to-the-rescue",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Cast a Deadly Spell",
+      "slug": "cast-a-deadly-spell",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Castello Cavalcanti",
+      "slug": "castello-cavalcanti",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Celebrating Marvel's Stan Lee",
+      "slug": "celebrating-marvels-stan-lee",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "C'est la Vie",
+      "slug": "cest-la-vie-2016",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Charles Bronson: The Spirit of Masculinity",
+      "slug": "charles-bronson-the-spirit-of-masculinity",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Charles II: The Power and The Passion",
+      "slug": "charles-ii-the-power-and-the-passion",
+      "reason": "tv_or_series_signal"
+    },
+    {
+      "title": "Charlie",
+      "slug": "charlie-2013",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Charlie",
+      "slug": "charlie-2018",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Children of Shatila",
+      "slug": "children-of-shatila",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Chris Gethard: Career Suicide",
+      "slug": "chris-gethard-career-suicide",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Christmas Harmony",
+      "slug": "christmas-harmony",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Cigarette Candy",
+      "slug": "cigarette-candy",
+      "reason": "short_runtime"
+    }
+  ],
+  "notable_eligibility_excluded": [
+    {
+      "title": "Twin Peaks",
+      "slug": "twin-peaks",
+      "reason": "tv_or_series_signal"
+    }
+  ],
+  "scoring_notes": [
+    "Candidates are Megabank films not present in the user's last 50 RSS films.",
+    "Compatibility combines genre, country, language, runtime, era, mainstream fit, community rating, fans/watches, repeat director, and title redundancy.",
+    "safe_pick boosts global compatibility and community rating.",
+    "deep_cut boosts niche score and fans/watches, with a penalty for very high watch counts.",
+    "wild_card uses partial compatibility plus secondary/oblique signals instead of selecting the third-best global score."
+  ]
+}

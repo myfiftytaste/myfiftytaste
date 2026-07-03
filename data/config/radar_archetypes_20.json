@@ -1,0 +1,105 @@
+{
+  "mainstreamness": {
+    "public_axis_label": "Popularité",
+    "levels": {
+      "1": {
+        "title": "ERROR &”’_çè",
+        "one_line": "[insérer le lien d’une list Letterboxd weird] : https://boxd.it/GSklA"
+      },
+      "2": {
+        "title": "Digger de pépites",
+        "one_line": "Tu traces ton propre chemin à travers les lists Letterboxd obscures ; si un film dépasse 1 000 vues, il est mainstream pour toi… ça y est."
+      },
+      "3": {
+        "title": "Cinéphile éclectique",
+        "one_line": "Individu mesuré, tu suis tes potes cinéphiles à La Filmothèque pour remplir ton quota de films moins mainstream."
+      },
+      "4": {
+        "title": "Iencli assumé",
+        "one_line": "Tu es ce que l’on appelle dans le jargon un iencli de base, ta carte UGC ne sert qu’à aller voir les Marvel et le dernier Spielberg."
+      },
+      "5": {
+        "title": "Fan d’Interstellar",
+        "one_line": "Ta seule vue suffit à ce que Regelegorila fasse une rupture d’anévrisme, tu ne jures que par Interstellar, Fight Club et 7even."
+      }
+    }
+  },
+  "oldness": {
+    "public_axis_label": "Époque",
+    "levels": {
+      "1": {
+        "title": "1900’s connoiseurrr",
+        "one_line": "Tu ponces les Chaplin et les Keaton… « De toute façon les films parlant et la couleur c’est surfait. »"
+      },
+      "2": {
+        "title": "Éternel nostalgique",
+        "one_line": "Belmondo et Redford sont pour toi des petits jeunots, tu erres dans les limbes du XXe siècle comme Toto dans Cinema Paradiso."
+      },
+      "3": {
+        "title": "Entre deux époques",
+        "one_line": "Ton cœur chavire, tes deux amours sont les dernières sorties et les rétrospectives du 5e arrondissement."
+      },
+      "4": {
+        "title": "Aficionado d’avant-premières",
+        "one_line": "Tu renouvelles tes demandes d’accréditation à Cannes chaque année, aucun Dupieux ne reste au cinéma plus de 3 jours avant que tu ailles le voir."
+      },
+      "5": {
+        "title": "A24 crew",
+        "one_line": "Tu as une casquette Marty Supreme et un t-shirt A24. Même aller aux avant-premières ne te suffit pas… take your time pal."
+      }
+    }
+  },
+  "staminess": {
+    "public_axis_label": "Durée",
+    "technical_aliases": [
+      "endurance"
+    ],
+    "levels": {
+      "1": {
+        "title": "Supôt de TikTok & Netflix",
+        "one_line": "TikTok t’a eu toi et ta capacité de concentration… Une fois après 30 minutes de film tu as tenté de scroller vers le haut, je t’ai vu."
+      },
+      "2": {
+        "title": "TDAH contenu",
+        "one_line": "Les films qui te tiennent plus d’une heure et demie intéressé partent directement en 5 étoiles et tu as mis un an à envisager d'aller voir Le Parrain."
+      },
+      "3": {
+        "title": "Consommateur mesuré",
+        "one_line": "Tu es juste et parcimonieux, tu notes les films indépendamment de leur longueur… tu es un bot ?"
+      },
+      "4": {
+        "title": "Prof de cinéma",
+        "one_line": "Tu méprises les gens qui partent avant la fin du générique final, soit tu es en cavale, soit tu as beaucoup de temps à tuer."
+      },
+      "5": {
+        "title": "Zombie strapontinesque",
+        "one_line": "Une fois le gérant du cinéma a dû te sortir de force parce que tu ne voulais pas partir… Pour toi c’est mieux si un film est divisé en trois opus de 3h, tu n’as que Sátántangó dans tes films favoris."
+      }
+    }
+  },
+  "reviewness": {
+    "public_axis_label": "Trace écrite",
+    "levels": {
+      "1": {
+        "title": "Recherché par Letterboxd",
+        "one_line": "Mystérieux noteur qui jamais ne se justifie… la commu Letterboxd ne mérite pas tes avis ou quoi ?"
+      },
+      "2": {
+        "title": "Ombre fuyante",
+        "one_line": "Tu es l’ombre fuyante des cinémas, tu ne notes les films que quand tu as une vanne et que tu es persuadé que ton commentaire va percer…"
+      },
+      "3": {
+        "title": "Plume ponctuelle",
+        "one_line": "Tu ne commentes qu’un film sur deux, généralement celui que tu as détesté…"
+      },
+      "4": {
+        "title": "Critique intarissable",
+        "one_line": "Ta plume ne cesse d’écumer les fiches Letterboxd ! Tu aspires à être recruté en CDI sur Critikat."
+      },
+      "5": {
+        "title": "Oracle",
+        "one_line": "Être omniscient, tu es le messie filmique, Letterboxd t’a amené à nous pour nous éclabousser de ta vérité. Nous t’aimons."
+      }
+    }
+  }
+}

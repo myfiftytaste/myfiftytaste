@@ -1,0 +1,421 @@
+{
+  "user": "qa_5_films",
+  "source_files": {
+    "wrapped": "data\\output\\qa_5_films_wrapped.json",
+    "profile_metrics": "data\\output\\qa_5_films_profile_metrics.json",
+    "display_config": "data\\config\\display_config.json",
+    "radar_archetypes": "data\\config\\radar_archetypes_20.json"
+  },
+  "hero": {
+    "username": "qa_5_films",
+    "primary_archetype_id": "deep_cut_hunter",
+    "primary_archetype": "The Deep-Cut Hunter",
+    "subtitle": "Always digging below the surface.",
+    "one_liner": "Your taste profile favors films with smaller audiences and sharper discoveries.",
+    "social_coverage": 1.0,
+    "metadata_coverage": 1.0,
+    "detected_films_count": 5,
+    "target_films_count": 50,
+    "profile_quality_status": "very_limited"
+  },
+  "profile_quality": {
+    "detected_films_count": 5,
+    "target_films_count": 50,
+    "status": "very_limited",
+    "is_partial": true,
+    "warning": "Profil très limité : seulement 5 films détectés. Certaines sections peuvent être indisponibles."
+  },
+  "average_rating_summary": {
+    "value": 3.5,
+    "scale": 5,
+    "detected_films_count": 5,
+    "target_films_count": 50
+  },
+  "radar_scores": {
+    "mainstreamness": {
+      "value_5": 2,
+      "raw_value": 38.78046210942676,
+      "label": "Popularité moyenne",
+      "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
+      "data_source": "5 films with Megabank social stats",
+      "confidence": "low"
+    },
+    "oldness": {
+      "value_5": 3,
+      "raw_value": 24.0,
+      "average_year": 2002.0,
+      "label": "Âge moyen",
+      "description": "Tendance dérivée de l'année moyenne de sortie de tes 5 films détectés.",
+      "data_source": "5 films from Letterboxd RSS",
+      "confidence": "low"
+    },
+    "endurance": {
+      "value_5": 1,
+      "raw_value": 92.0,
+      "label": "Endurance",
+      "description": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
+      "data_source": "5 films with confirmed metadata",
+      "confidence": "low"
+    },
+    "reviewness": {
+      "value_5": 1,
+      "raw_value": 2,
+      "review_count": 2,
+      "review_rate": 0.4,
+      "label": "Quelques traces",
+      "description": "Tu écris seulement quand un film appelle vraiment un commentaire.",
+      "data_source": "5 films from Letterboxd RSS",
+      "confidence": "low"
+    }
+  },
+  "radar_editorial": {
+    "title": "Profil radar",
+    "subtitle": "Quatre axes pour situer ton rapport récent aux films : mainstreamness, oldness, staminess et reviewness.",
+    "axes": {
+      "mainstreamness": {
+        "axis_id": "mainstreamness",
+        "technical_axis_id": "mainstreamness",
+        "label": "Popularité",
+        "title": "Digger de pépites",
+        "one_line": "Tu traces ton propre chemin à travers les lists Letterboxd obscures ; si un film dépasse 1 000 vues, il est mainstream pour toi… ça y est.",
+        "cran": 2,
+        "image": null,
+        "image_src": null,
+        "illustration": null
+      },
+      "oldness": {
+        "axis_id": "oldness",
+        "technical_axis_id": "oldness",
+        "label": "Époque",
+        "title": "Entre deux époques",
+        "one_line": "Ton cœur chavire, tes deux amours sont les dernières sorties et les rétrospectives du 5e arrondissement.",
+        "cran": 3,
+        "image": null,
+        "image_src": null,
+        "illustration": null
+      },
+      "endurance": {
+        "axis_id": "staminess",
+        "technical_axis_id": "endurance",
+        "label": "Durée",
+        "title": "Supôt de TikTok & Netflix",
+        "one_line": "TikTok t’a eu toi et ta capacité de concentration… Une fois après 30 minutes de film tu as tenté de scroller vers le haut, je t’ai vu.",
+        "cran": 1,
+        "image": null,
+        "image_src": null,
+        "illustration": null
+      },
+      "reviewness": {
+        "axis_id": "reviewness",
+        "technical_axis_id": "reviewness",
+        "label": "Trace écrite",
+        "title": "Recherché par Letterboxd",
+        "one_line": "Mystérieux noteur qui jamais ne se justifie… la commu Letterboxd ne mérite pas tes avis ou quoi ?",
+        "cran": 1,
+        "image": null,
+        "image_src": null,
+        "illustration": null
+      }
+    }
+  },
+  "log_time_profile": null,
+  "genre_bubbles": [
+    {
+      "genre": "Drama",
+      "count": 4,
+      "share": 0.4,
+      "size": 140.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.8,
+      "rating_gap": -0.3
+    },
+    {
+      "genre": "Thriller",
+      "count": 2,
+      "share": 0.2,
+      "size": 90.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.8,
+      "rating_gap": -0.3
+    },
+    {
+      "genre": "Comedy",
+      "count": 1,
+      "share": 0.1,
+      "size": 65.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.7,
+      "rating_gap": -0.2
+    },
+    {
+      "genre": "Horror",
+      "count": 1,
+      "share": 0.1,
+      "size": 65.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.8,
+      "rating_gap": -0.3
+    },
+    {
+      "genre": "Mystery",
+      "count": 1,
+      "share": 0.1,
+      "size": 65.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.8,
+      "rating_gap": -0.3
+    },
+    {
+      "genre": "Crime",
+      "count": 1,
+      "share": 0.1,
+      "size": 65.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.9,
+      "rating_gap": -0.4
+    }
+  ],
+  "country_map": {
+    "title": "Passeport cinéma",
+    "subtitle": "Les pays de production qui traversent tes 5 films détectés.",
+    "countries": [
+      {
+        "name": "USA",
+        "iso2": "US",
+        "count": 2,
+        "share": 0.4,
+        "intensity": 1.0
+      },
+      {
+        "name": "France",
+        "iso2": "FR",
+        "count": 1,
+        "share": 0.2,
+        "intensity": 0.5
+      },
+      {
+        "name": "Japan",
+        "iso2": "JP",
+        "count": 1,
+        "share": 0.2,
+        "intensity": 0.5
+      },
+      {
+        "name": "South Korea",
+        "iso2": "KR",
+        "count": 1,
+        "share": 0.2,
+        "intensity": 0.5
+      }
+    ],
+    "max_count": 2,
+    "total_country_tags": 5
+  },
+  "recommendations": [],
+  "recommendations_status": {
+    "available": false,
+    "unavailable_reason": null
+  },
+  "cards": [
+    {
+      "id": "rating_personality",
+      "title": "Sévère",
+      "value": "-0.30",
+      "label": "",
+      "description": "Tu notes environ 0.30 étoile(s) en dessous de la moyenne Letterboxd.",
+      "confidence": "low",
+      "data_source": "5 films avec données sociales",
+      "confidence_label": "FAIBLE"
+    },
+    {
+      "id": "reviewness",
+      "title": "Reviewer",
+      "value": "2/5",
+      "label": "",
+      "description": "Tu commentes rarement tes films vus.",
+      "confidence": "low",
+      "data_source": "5 films depuis le RSS Letterboxd",
+      "confidence_label": "FAIBLE"
+    },
+    {
+      "id": "runtime_profile",
+      "title": "Durée moyenne",
+      "value": "1h32",
+      "label": "",
+      "description": "Les films que tu as vus durent en moyenne 1h32.",
+      "confidence": "low",
+      "data_source": "5 films avec métadonnées confirmées",
+      "confidence_label": "FAIBLE"
+    },
+    {
+      "id": "country_passport",
+      "title": "Chauvin",
+      "value": "USA",
+      "label": "",
+      "description": "Les États-Unis représentent 40 % des occurrences de pays de production de tes films vus.",
+      "confidence": "low",
+      "data_source": "5 films avec métadonnées confirmées",
+      "confidence_label": "FAIBLE"
+    }
+  ],
+  "cards_section": {
+    "eyebrow": "SYNTHÈSE",
+    "title": "En bref…"
+  },
+  "highlights_copy": {
+    "eyebrow": "HIGHLIGHTS",
+    "title": "Toi, en 5 films et 1 réal",
+    "labels": {
+      "most_niche": "Le plus niche",
+      "most_mainstream": "Le plus mainstream",
+      "most_cult": "Le plus culte",
+      "longest": "Le plus long",
+      "shortest": "Le plus court",
+      "most_repeated_director": "Ton réalisateur récurrent"
+    }
+  },
+  "highlights": {
+    "most_niche": {
+      "title": "QA Film 0",
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "slug": "qa-film-0",
+      "url": "https://letterboxd.com/film/qa-film-0/",
+      "source": "megabank",
+      "year": 2000,
+      "director": "Director 0",
+      "directors": [
+        "Director 0"
+      ],
+      "director_source": "film_normalized",
+      "rss_poster_url": null,
+      "letterboxd_poster_url": null,
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": null,
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "missing",
+      "poster_source": null,
+      "poster_match": null,
+      "poster_rejections": []
+    },
+    "most_mainstream": {
+      "title": "QA Film 4",
+      "rss_title": "QA Film 4, 2004 - ★★★½",
+      "slug": "qa-film-4",
+      "url": "https://letterboxd.com/film/qa-film-4/",
+      "source": "megabank",
+      "year": 2004,
+      "director": "Director 4",
+      "directors": [
+        "Director 4"
+      ],
+      "director_source": "film_normalized",
+      "rss_poster_url": null,
+      "letterboxd_poster_url": null,
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": null,
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "missing",
+      "poster_source": null,
+      "poster_match": null,
+      "poster_rejections": []
+    },
+    "most_cult": {
+      "title": "QA Film 0",
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "slug": "qa-film-0",
+      "url": "https://letterboxd.com/film/qa-film-0/",
+      "source": "megabank",
+      "year": 2000,
+      "director": "Director 0",
+      "directors": [
+        "Director 0"
+      ],
+      "director_source": "film_normalized",
+      "rss_poster_url": null,
+      "letterboxd_poster_url": null,
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": null,
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "missing",
+      "poster_source": null,
+      "poster_match": null,
+      "poster_rejections": []
+    },
+    "longest": {
+      "title": "QA Film 4",
+      "rss_title": "QA Film 4, 2004 - ★★★½",
+      "slug": "qa-film-4",
+      "url": "https://letterboxd.com/film/qa-film-4/",
+      "source": "megabank",
+      "year": 2004,
+      "director": "Director 4",
+      "directors": [
+        "Director 4"
+      ],
+      "director_source": "film_normalized",
+      "rss_poster_url": null,
+      "letterboxd_poster_url": null,
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": null,
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "missing",
+      "poster_source": null,
+      "poster_match": null,
+      "poster_rejections": []
+    },
+    "shortest": {
+      "title": "QA Film 0",
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "slug": "qa-film-0",
+      "url": "https://letterboxd.com/film/qa-film-0/",
+      "source": "megabank",
+      "year": 2000,
+      "director": "Director 0",
+      "directors": [
+        "Director 0"
+      ],
+      "director_source": "film_normalized",
+      "rss_poster_url": null,
+      "letterboxd_poster_url": null,
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": null,
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "missing",
+      "poster_source": null,
+      "poster_match": null,
+      "poster_rejections": []
+    },
+    "most_repeated_director": null
+  },
+  "media_enrichment": {
+    "tmdb_lookup_source": "server_cache_or_api",
+    "items_checked": 5,
+    "posters_verified": 0,
+    "posters_ambiguous": 0,
+    "posters_missing_count": 5,
+    "verified_by_source": {},
+    "homonymy_rejections": [],
+    "posters_missing": [
+      "QA Film 0",
+      "QA Film 4",
+      "QA Film 0",
+      "QA Film 4",
+      "QA Film 0"
+    ],
+    "obsession_audit": null
+  },
+  "warnings": [
+    "Profil très limité : seulement 5 films détectés. Certaines sections peuvent être indisponibles."
+  ],
+  "config_fallback_warnings": []
+}

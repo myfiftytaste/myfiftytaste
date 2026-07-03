@@ -1,0 +1,17 @@
+{
+  "user": "qa_0_films",
+  "rss_url": "https://letterboxd.com/qa_0_films/rss/",
+  "generated_at": "2026-01-01T00:00:00Z",
+  "films": [],
+  "profile_summary": {
+    "films_analyzed": 0
+  },
+  "profile_quality": {
+    "detected_films_count": 0,
+    "target_films_count": 50,
+    "status": "very_limited",
+    "is_partial": false,
+    "warning": null
+  },
+  "highlights": {}
+}

@@ -1,0 +1,2758 @@
+{
+  "obsession-2025": {
+    "letterboxd_slug": "obsession-2025",
+    "title": "Obsession",
+    "original_title": "Obsession",
+    "year": "2025",
+    "runtime": 109,
+    "directors": [
+      "Curry Barker"
+    ],
+    "genres": [
+      "Horror"
+    ],
+    "countries": [
+      "US"
+    ],
+    "original_language": "en",
+    "tmdb_id": null,
+    "tmdb_score": null,
+    "metadata_source": "manual_correction",
+    "correction_note": "Letterboxd RSS poster is exact for obsession-2025; previous TMDB ID 1436161 was a homonymous short and must not be used for director/poster enrichment.",
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "look-back-2024": {
+    "letterboxd_slug": "look-back-2024",
+    "title": "Look Back",
+    "original_title": "ルックバック",
+    "year": "2024",
+    "runtime": 58,
+    "genres": [
+      "Animation",
+      "Drama"
+    ],
+    "countries": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "tmdb_id": 1244492,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "society-of-the-snow": {
+    "letterboxd_slug": "society-of-the-snow",
+    "title": "Society of the Snow",
+    "original_title": "La sociedad de la nieve",
+    "year": "2023",
+    "runtime": 143,
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "ES",
+      "US"
+    ],
+    "original_language": "es",
+    "tmdb_id": 906126,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "club-kid": {
+    "letterboxd_slug": "club-kid",
+    "title": "Club Kid",
+    "original_title": "Club Kid",
+    "year": "2026",
+    "runtime": 126,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "US"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1585239,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "night-is-short-walk-on-girl": {
+    "letterboxd_slug": "night-is-short-walk-on-girl",
+    "title": "Night Is Short, Walk On Girl",
+    "original_title": "夜は短し歩けよ乙女",
+    "year": "2017",
+    "runtime": 93,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Animation",
+      "Fantasy"
+    ],
+    "countries": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "tmdb_id": 430214,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "pulse-2001": {
+    "letterboxd_slug": "pulse-2001",
+    "title": "Pulse",
+    "original_title": "回路",
+    "year": "2001",
+    "runtime": 119,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Mystery"
+    ],
+    "countries": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "tmdb_id": 27324,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "trente": {
+    "letterboxd_slug": "trente",
+    "title": "TRENTE",
+    "original_title": "TRENTE",
+    "year": "2026",
+    "runtime": 0,
+    "genres": [
+      "Documentary"
+    ],
+    "countries": [
+      "FR"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1687834,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "angels-egg": {
+    "letterboxd_slug": "angels-egg",
+    "title": "Angel's Egg",
+    "original_title": "天使のたまご",
+    "year": "1985",
+    "runtime": 71,
+    "genres": [
+      "Animation",
+      "Fantasy",
+      "Mystery",
+      "Science Fiction"
+    ],
+    "countries": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "tmdb_id": 15916,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-beloved-2026": {
+    "letterboxd_slug": "the-beloved-2026",
+    "title": "The Beloved",
+    "original_title": "El ser querido",
+    "year": "2026",
+    "runtime": 135,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "ES",
+      "FR"
+    ],
+    "original_language": "es",
+    "tmdb_id": 1074074,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "just-an-illusion-2026": {
+    "letterboxd_slug": "just-an-illusion-2026",
+    "title": "Just an Illusion",
+    "original_title": "Juste une illusion",
+    "year": "2026",
+    "runtime": 116,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "FR"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1404684,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "my-fathers-shadow-2025": {
+    "letterboxd_slug": "my-fathers-shadow-2025",
+    "title": "My Father's Shadow",
+    "original_title": "My Father's Shadow",
+    "year": "2025",
+    "runtime": 93,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "NG",
+      "GB",
+      "IE"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1432605,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "i-swear": {
+    "letterboxd_slug": "i-swear",
+    "title": "I Swear",
+    "original_title": "I Swear",
+    "year": "2025",
+    "runtime": 121,
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "GB",
+      "IE"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1317149,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-chaser": {
+    "letterboxd_slug": "the-chaser",
+    "title": "The Chaser",
+    "original_title": "추격자",
+    "year": "2008",
+    "runtime": 125,
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Action"
+    ],
+    "countries": [
+      "KR"
+    ],
+    "original_language": "ko",
+    "tmdb_id": 13855,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "jim-queen-and-the-quest-for-chloroqueer": {
+    "letterboxd_slug": "jim-queen-and-the-quest-for-chloroqueer",
+    "title": "Jim Queen and the Quest for Chloroqueer",
+    "original_title": "Jim Queen à la recherche de la Chloroqueer",
+    "year": "2026",
+    "runtime": 85,
+    "genres": [
+      "Animation",
+      "Comedy"
+    ],
+    "countries": [
+      "France",
+      "Belgium"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1061798,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "minions-monsters-2026": {
+    "letterboxd_slug": "minions-monsters-2026",
+    "title": "Minions & Monsters",
+    "original_title": "Minions & Monsters",
+    "year": "2026",
+    "runtime": 90,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family",
+      "Fantasy"
+    ],
+    "countries": [
+      "United States of America",
+      "Japan"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1315772,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "disclosure-day": {
+    "letterboxd_slug": "disclosure-day",
+    "title": "Disclosure Day",
+    "original_title": "Disclosure Day",
+    "year": "2026",
+    "runtime": 145,
+    "genres": [
+      "Science Fiction",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1275779,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "vertiginous": {
+    "letterboxd_slug": "vertiginous",
+    "title": "Vertiginous",
+    "original_title": "Le Vertige",
+    "year": "2026",
+    "runtime": 0,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Science Fiction"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1668499,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "backrooms-2026": {
+    "letterboxd_slug": "backrooms-2026",
+    "title": "Backrooms",
+    "original_title": "Backrooms",
+    "year": "2026",
+    "runtime": 111,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Science Fiction"
+    ],
+    "countries": [
+      "United States of America",
+      "Canada"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1083381,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "jim-queen": {
+    "letterboxd_slug": "jim-queen",
+    "title": "Jim Queen and the Quest for Chloroqueer",
+    "original_title": "Jim Queen à la recherche de la Chloroqueer",
+    "year": "2026",
+    "runtime": 85,
+    "genres": [
+      "Animation",
+      "Comedy"
+    ],
+    "countries": [
+      "France",
+      "Belgium"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1061798,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-old-gun": {
+    "letterboxd_slug": "the-old-gun",
+    "title": "The Old Gun",
+    "original_title": "Le Vieux Fusil",
+    "year": "1975",
+    "runtime": 103,
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "France",
+      "Germany"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 3480,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "gomorrah": {
+    "letterboxd_slug": "gomorrah",
+    "title": "Gomorrah",
+    "original_title": "Gomorra",
+    "year": "2008",
+    "runtime": 137,
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "countries": [
+      "Italy"
+    ],
+    "original_language": "it",
+    "tmdb_id": 8882,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "bone-tomahawk": {
+    "letterboxd_slug": "bone-tomahawk",
+    "title": "Bone Tomahawk",
+    "original_title": "Bone Tomahawk",
+    "year": "2015",
+    "runtime": 133,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Western"
+    ],
+    "countries": [
+      "United States of America",
+      "United Kingdom"
+    ],
+    "original_language": "en",
+    "tmdb_id": 294963,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-plague-2025": {
+    "letterboxd_slug": "the-plague-2025",
+    "title": "The Plague",
+    "original_title": "The Plague",
+    "year": "2025",
+    "runtime": 98,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America",
+      "United Arab Emirates"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1370814,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "a-hero-never-dies": {
+    "letterboxd_slug": "a-hero-never-dies",
+    "title": "A Hero Never Dies",
+    "original_title": "A Hero Never Dies",
+    "year": "1998",
+    "runtime": 98,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "countries": [
+      "Hong Kong"
+    ],
+    "original_language": "cn",
+    "tmdb_id": 58776,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "mortal-kombat-ii": {
+    "letterboxd_slug": "mortal-kombat-ii",
+    "title": "Mortal Kombat II",
+    "original_title": "Mortal Kombat II",
+    "year": "2026",
+    "runtime": 116,
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Adventure"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 931285,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-night-eats-the-world": {
+    "letterboxd_slug": "the-night-eats-the-world",
+    "title": "The Night Eats the World",
+    "original_title": "La nuit a dévoré le monde",
+    "year": "2018",
+    "runtime": 94,
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 457955,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "gummo": {
+    "letterboxd_slug": "gummo",
+    "title": "Gummo",
+    "original_title": "Gummo",
+    "year": "1997",
+    "runtime": 89,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 18415,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "mad-god": {
+    "letterboxd_slug": "mad-god",
+    "title": "Mad God",
+    "original_title": "Mad God",
+    "year": "2021",
+    "runtime": 84,
+    "genres": [
+      "Animation",
+      "Fantasy",
+      "Horror",
+      "Science Fiction"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 846867,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-devil-wears-prada-2": {
+    "letterboxd_slug": "the-devil-wears-prada-2",
+    "title": "The Devil Wears Prada 2",
+    "original_title": "The Devil Wears Prada 2",
+    "year": "2026",
+    "runtime": 119,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1314481,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-great-arch-2025": {
+    "letterboxd_slug": "the-great-arch-2025",
+    "title": "The Great Arch",
+    "original_title": "L'Inconnu de la Grande Arche",
+    "year": "2025",
+    "runtime": 104,
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "France",
+      "Denmark"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1290424,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "all-your-faces": {
+    "letterboxd_slug": "all-your-faces",
+    "title": "All Your Faces",
+    "original_title": "Je verrai toujours vos visages",
+    "year": "2023",
+    "runtime": 115,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1000492,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "michael-2026": {
+    "letterboxd_slug": "michael-2026",
+    "title": "Michael",
+    "original_title": "Michael",
+    "year": "2026",
+    "runtime": 128,
+    "genres": [
+      "Music",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 936075,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "no-other-land": {
+    "letterboxd_slug": "no-other-land",
+    "title": "No Other Land",
+    "original_title": "لا أرض أخرى",
+    "year": "2024",
+    "runtime": 92,
+    "genres": [
+      "Documentary"
+    ],
+    "countries": [
+      "Norway",
+      "Palestinian Territory"
+    ],
+    "original_language": "ar",
+    "tmdb_id": 1232493,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "untamable": {
+    "letterboxd_slug": "untamable",
+    "title": "Untamable",
+    "original_title": "Indomptables",
+    "year": "2025",
+    "runtime": 81,
+    "genres": [
+      "Thriller",
+      "Crime"
+    ],
+    "countries": [
+      "France",
+      "Cameroon"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1461911,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "where-is-the-friends-house": {
+    "letterboxd_slug": "where-is-the-friends-house",
+    "title": "Where Is The Friend's House?",
+    "original_title": "خانه‌ی دوست کجاست؟",
+    "year": "1987",
+    "runtime": 83,
+    "genres": [
+      "Drama",
+      "Adventure"
+    ],
+    "countries": [
+      "Iran"
+    ],
+    "original_language": "fa",
+    "tmdb_id": 49964,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "so-long-stooge": {
+    "letterboxd_slug": "so-long-stooge",
+    "title": "So Long, Stooge",
+    "original_title": "Tchao Pantin",
+    "year": "1983",
+    "runtime": 94,
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 58833,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "bad-lieutenant": {
+    "letterboxd_slug": "bad-lieutenant",
+    "title": "Bad Lieutenant",
+    "original_title": "Bad Lieutenant",
+    "year": "1992",
+    "runtime": 96,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 12143,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "sarkozy-gaddafi-the-scandal-of-all-scandals": {
+    "letterboxd_slug": "sarkozy-gaddafi-the-scandal-of-all-scandals",
+    "title": "Sarkozy-Gaddafi: The Scandal of All Scandals",
+    "original_title": "Personne n'y comprend rien",
+    "year": "2025",
+    "runtime": 103,
+    "genres": [
+      "Documentary",
+      "Crime"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1290465,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "hoppers": {
+    "letterboxd_slug": "hoppers",
+    "title": "Hoppers",
+    "original_title": "Hoppers",
+    "year": "2026",
+    "runtime": 104,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family",
+      "Science Fiction"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1327819,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "alter-ego-2026": {
+    "letterboxd_slug": "alter-ego-2026",
+    "title": "Alter Ego",
+    "original_title": "Alter ego",
+    "year": "2026",
+    "runtime": 100,
+    "genres": [
+      "Comedy"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1266791,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "primal-2019-1": {
+    "letterboxd_slug": "primal-2019-1",
+    "title": "Primal",
+    "original_title": "Primal",
+    "year": "2019",
+    "runtime": 97,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 500916,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "sundays-2025": {
+    "letterboxd_slug": "sundays-2025",
+    "title": "Sundays",
+    "original_title": "Los domingos",
+    "year": "2025",
+    "runtime": 112,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Spain",
+      "France"
+    ],
+    "original_language": "es",
+    "tmdb_id": 1443576,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "hamnet": {
+    "letterboxd_slug": "hamnet",
+    "title": "Hamnet",
+    "original_title": "Hamnet",
+    "year": "2025",
+    "runtime": 125,
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 858024,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-secret-agent-2025": {
+    "letterboxd_slug": "the-secret-agent-2025",
+    "title": "The Secret Agent",
+    "original_title": "O Agente Secreto",
+    "year": "2025",
+    "runtime": 161,
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Crime"
+    ],
+    "countries": [
+      "Brazil",
+      "France",
+      "Germany",
+      "Netherlands",
+      "Argentina"
+    ],
+    "original_language": "pt",
+    "tmdb_id": 1220564,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "one-battle-after-another": {
+    "letterboxd_slug": "one-battle-after-another",
+    "title": "One Battle After Another",
+    "original_title": "One Battle After Another",
+    "year": "2025",
+    "runtime": 162,
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Comedy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1054867,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "avatar-fire-and-ash": {
+    "letterboxd_slug": "avatar-fire-and-ash",
+    "title": "Avatar: Fire and Ash",
+    "original_title": "Avatar: Fire and Ash",
+    "year": "2025",
+    "runtime": 198,
+    "genres": [
+      "Science Fiction",
+      "Adventure",
+      "Fantasy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 83533,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "collateral": {
+    "letterboxd_slug": "collateral",
+    "title": "Collateral",
+    "original_title": "Collateral",
+    "year": "2004",
+    "runtime": 120,
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1538,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "zootopia-2": {
+    "letterboxd_slug": "zootopia-2",
+    "title": "Zootopia 2",
+    "original_title": "Zootopia 2",
+    "year": "2025",
+    "runtime": 108,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy",
+      "Mystery",
+      "Family"
+    ],
+    "countries": [
+      "United States of America",
+      "Canada"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1084242,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "arco": {
+    "letterboxd_slug": "arco",
+    "title": "Arco",
+    "original_title": "Arco",
+    "year": "2025",
+    "runtime": 89,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Family",
+      "Science Fiction"
+    ],
+    "countries": [
+      "France",
+      "United Kingdom",
+      "United States of America"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 804370,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "sink-or-swim-2018": {
+    "letterboxd_slug": "sink-or-swim-2018",
+    "title": "Sink or Swim",
+    "original_title": "Le Grand Bain",
+    "year": "2018",
+    "runtime": 122,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "countries": [
+      "France",
+      "Belgium"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 484482,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "demon-slayer-kimetsu-no-yaiba-infinity-castle": {
+    "letterboxd_slug": "demon-slayer-kimetsu-no-yaiba-infinity-castle",
+    "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+    "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+    "year": "2025",
+    "runtime": 156,
+    "genres": [
+      "Animation",
+      "Action",
+      "Fantasy"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "original_language": "ja",
+    "tmdb_id": 1311031,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "weapons-2025": {
+    "letterboxd_slug": "weapons-2025",
+    "title": "Weapons",
+    "original_title": "Weapons",
+    "year": "2025",
+    "runtime": 128,
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1078605,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "sirat-2025": {
+    "letterboxd_slug": "sirat-2025",
+    "title": "Sirāt",
+    "original_title": "Sirāt",
+    "year": "2025",
+    "runtime": 115,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "countries": [
+      "Spain",
+      "France"
+    ],
+    "original_language": "es",
+    "tmdb_id": 1151272,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "sinners-2025": {
+    "letterboxd_slug": "sinners-2025",
+    "title": "Sinners",
+    "original_title": "Sinners",
+    "year": "2025",
+    "runtime": 138,
+    "genres": [
+      "Horror",
+      "Action",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1233413,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "flow-2024": {
+    "letterboxd_slug": "flow-2024",
+    "title": "Flow",
+    "original_title": "Straume",
+    "year": "2024",
+    "runtime": 85,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Family",
+      "Fantasy"
+    ],
+    "countries": [
+      "Latvia",
+      "Belgium",
+      "France"
+    ],
+    "original_language": "lv",
+    "tmdb_id": 823219,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "jims-story": {
+    "letterboxd_slug": "jims-story",
+    "title": "Jim's Story",
+    "original_title": "Le Roman de Jim",
+    "year": "2024",
+    "runtime": 101,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1102938,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-little-panda-fighter": {
+    "letterboxd_slug": "the-little-panda-fighter",
+    "title": "The Little Panda Fighter",
+    "original_title": "Ursinho da Pesada",
+    "year": "2008",
+    "runtime": 51,
+    "genres": [
+      "Action",
+      "Animation",
+      "Comedy",
+      "Family",
+      "Adventure"
+    ],
+    "countries": [
+      "Brazil"
+    ],
+    "original_language": "pt",
+    "tmdb_id": 258722,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "adgwa-ata": {
+    "letterboxd_slug": "adgwa-ata",
+    "title": "Adgwa-Ata",
+    "original_title": "Adgwa-Ata",
+    "year": "2026",
+    "runtime": 15,
+    "genres": [
+      "Animation",
+      "Science Fiction",
+      "Drama",
+      "Fantasy"
+    ],
+    "countries": [
+      "Hungary",
+      "France"
+    ],
+    "original_language": "xx",
+    "tmdb_id": 1659077,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "de-gaulle-resistance": {
+    "letterboxd_slug": "de-gaulle-resistance",
+    "title": "De Gaulle: Résistance",
+    "original_title": "La Bataille de Gaulle : L’âge de fer",
+    "year": "2026",
+    "runtime": 160,
+    "genres": [
+      "History",
+      "Drama"
+    ],
+    "countries": [
+      "France",
+      "Belgium",
+      "United States of America"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1165366,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "sully": {
+    "letterboxd_slug": "sully",
+    "title": "Sully",
+    "original_title": "Sully",
+    "year": "2016",
+    "runtime": 96,
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 363676,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "sibyl": {
+    "letterboxd_slug": "sibyl",
+    "title": "Sibyl",
+    "original_title": "Sibyl",
+    "year": "2019",
+    "runtime": 101,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Belgium",
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 559401,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "im-still-here-2024": {
+    "letterboxd_slug": "im-still-here-2024",
+    "title": "I'm Still Here",
+    "original_title": "Ainda Estou Aqui",
+    "year": "2024",
+    "runtime": 138,
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "Brazil",
+      "France"
+    ],
+    "original_language": "pt",
+    "tmdb_id": 1000837,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "declaration-of-war": {
+    "letterboxd_slug": "declaration-of-war",
+    "title": "Declaration of War",
+    "original_title": "La guerre est déclarée",
+    "year": "2011",
+    "runtime": 100,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 73562,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "it-was-just-an-accident": {
+    "letterboxd_slug": "it-was-just-an-accident",
+    "title": "It Was Just an Accident",
+    "original_title": "Un simple accident",
+    "year": "2025",
+    "runtime": 104,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Crime",
+      "Mystery"
+    ],
+    "countries": [
+      "Iran",
+      "France",
+      "Luxembourg"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1456349,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "joyeux-noel": {
+    "letterboxd_slug": "joyeux-noel",
+    "title": "Joyeux Noel",
+    "original_title": "Joyeux Noël",
+    "year": "2005",
+    "runtime": 116,
+    "genres": [
+      "Drama",
+      "War",
+      "Romance",
+      "History"
+    ],
+    "countries": [
+      "Belgium",
+      "France",
+      "Germany",
+      "Romania",
+      "United Kingdom"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 11661,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "goliath-2022": {
+    "letterboxd_slug": "goliath-2022",
+    "title": "Goliath",
+    "original_title": "Goliath",
+    "year": "2022",
+    "runtime": 121,
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
+    "countries": [
+      "Belgium",
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 884971,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "omar-killed-me": {
+    "letterboxd_slug": "omar-killed-me",
+    "title": "Omar Killed Me",
+    "original_title": "Omar m'a tuer",
+    "year": "2011",
+    "runtime": 85,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "countries": [
+      "France",
+      "Morocco"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 68178,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "life-is-beautiful": {
+    "letterboxd_slug": "life-is-beautiful",
+    "title": "Life Is Beautiful",
+    "original_title": "La vita è bella",
+    "year": "1997",
+    "runtime": 116,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "Italy"
+    ],
+    "original_language": "it",
+    "tmdb_id": 637,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "how-to-make-millions-before-grandma-dies": {
+    "letterboxd_slug": "how-to-make-millions-before-grandma-dies",
+    "title": "How to Make Millions Before Grandma Dies",
+    "original_title": "หลานม่า",
+    "year": "2024",
+    "runtime": 126,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Thailand"
+    ],
+    "original_language": "th",
+    "tmdb_id": 1103621,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "kinds-of-kindness": {
+    "letterboxd_slug": "kinds-of-kindness",
+    "title": "Kinds of Kindness",
+    "original_title": "Kinds of Kindness",
+    "year": "2024",
+    "runtime": 164,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Horror"
+    ],
+    "countries": [
+      "Ireland",
+      "United Kingdom",
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1029955,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-drama": {
+    "letterboxd_slug": "the-drama",
+    "title": "The Drama",
+    "original_title": "The Drama",
+    "year": "2026",
+    "runtime": 105,
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1325734,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-speech-2020-1": {
+    "letterboxd_slug": "the-speech-2020-1",
+    "title": "The Speech",
+    "original_title": "黄真真的演讲",
+    "year": "2020",
+    "runtime": 25,
+    "genres": [],
+    "countries": [],
+    "original_language": "zh",
+    "tmdb_id": 745457,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "radiostars": {
+    "letterboxd_slug": "radiostars",
+    "title": "Radiostars",
+    "original_title": "Radiostars",
+    "year": "2012",
+    "runtime": 100,
+    "genres": [
+      "Comedy"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 100830,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "little-amelie-or-the-character-of-rain": {
+    "letterboxd_slug": "little-amelie-or-the-character-of-rain",
+    "title": "Little Amélie or the Character of Rain",
+    "original_title": "Amélie et la métaphysique des tubes",
+    "year": "2025",
+    "runtime": 77,
+    "genres": [
+      "Animation",
+      "Drama",
+      "Family"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 682012,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "tell-no-one": {
+    "letterboxd_slug": "tell-no-one",
+    "title": "Tell No One",
+    "original_title": "Ne le dis à personne",
+    "year": "2006",
+    "runtime": 131,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Crime",
+      "Mystery"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 10795,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "dallas-buyers-club": {
+    "letterboxd_slug": "dallas-buyers-club",
+    "title": "Dallas Buyers Club",
+    "original_title": "Dallas Buyers Club",
+    "year": "2013",
+    "runtime": 117,
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 152532,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "nino-2025": {
+    "letterboxd_slug": "nino-2025",
+    "title": "Nino",
+    "original_title": "Nino",
+    "year": "2025",
+    "runtime": 96,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1313229,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "hen-2025": {
+    "letterboxd_slug": "hen-2025",
+    "title": "Hen",
+    "original_title": "Hen",
+    "year": "2025",
+    "runtime": 108,
+    "genres": [
+      "Horror"
+    ],
+    "countries": [
+      "South Africa"
+    ],
+    "original_language": "af",
+    "tmdb_id": 1534155,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "dj-ahmet": {
+    "letterboxd_slug": "dj-ahmet",
+    "title": "DJ Ahmet",
+    "original_title": "Диџеј Ахмет",
+    "year": "2025",
+    "runtime": 97,
+    "genres": [
+      "Drama",
+      "Music",
+      "Comedy"
+    ],
+    "countries": [
+      "Macedonia",
+      "Czech Republic",
+      "Serbia",
+      "Croatia"
+    ],
+    "original_language": "mk",
+    "tmdb_id": 1400743,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "pirates-of-the-caribbean-dead-mans-chest": {
+    "letterboxd_slug": "pirates-of-the-caribbean-dead-mans-chest",
+    "title": "Pirates of the Caribbean: Dead Man's Chest",
+    "original_title": "Pirates of the Caribbean: Dead Man's Chest",
+    "year": "2006",
+    "runtime": 151,
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 58,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "a-city-of-sadness": {
+    "letterboxd_slug": "a-city-of-sadness",
+    "title": "A City of Sadness",
+    "original_title": "悲情城市",
+    "year": "1989",
+    "runtime": 158,
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "Hong Kong",
+      "Taiwan"
+    ],
+    "original_language": "zh",
+    "tmdb_id": 49982,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "junk-world": {
+    "letterboxd_slug": "junk-world",
+    "title": "Junk World",
+    "original_title": "JUNK WORLD",
+    "year": "2025",
+    "runtime": 105,
+    "genres": [
+      "Animation",
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "original_language": "ja",
+    "tmdb_id": 1170215,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "one-day-in-the-life-of-andrei-arsenevich": {
+    "letterboxd_slug": "one-day-in-the-life-of-andrei-arsenevich",
+    "title": "One Day in the Life of Andrei Arsenevich",
+    "original_title": "Une journée d'Andrei Arsenevitch",
+    "year": "1999",
+    "runtime": 55,
+    "genres": [
+      "TV Movie",
+      "Documentary"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 137196,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-world-of-love": {
+    "letterboxd_slug": "the-world-of-love",
+    "title": "The World of Love",
+    "original_title": "세계의 주인",
+    "year": "2025",
+    "runtime": 119,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "South Korea"
+    ],
+    "original_language": "ko",
+    "tmdb_id": 1317512,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "bitter-christmas": {
+    "letterboxd_slug": "bitter-christmas",
+    "title": "Bitter Christmas",
+    "original_title": "Amarga Navidad",
+    "year": "2026",
+    "runtime": 112,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "countries": [
+      "Spain"
+    ],
+    "original_language": "es",
+    "tmdb_id": 1088548,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-swimmer": {
+    "letterboxd_slug": "the-swimmer",
+    "title": "The Swimmer",
+    "original_title": "The Swimmer",
+    "year": "1968",
+    "runtime": 95,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 33564,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "crescendo-2026-2": {
+    "letterboxd_slug": "crescendo-2026-2",
+    "title": "Crescendo",
+    "original_title": "L'Objet du délit",
+    "year": "2026",
+    "runtime": 133,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "France",
+      "Belgium"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1466123,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "il-divo": {
+    "letterboxd_slug": "il-divo",
+    "title": "Il Divo",
+    "original_title": "Il Divo",
+    "year": "2008",
+    "runtime": 113,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Italy",
+      "France"
+    ],
+    "original_language": "it",
+    "tmdb_id": 8832,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "mirrored-mind": {
+    "letterboxd_slug": "mirrored-mind",
+    "title": "Mirrored Mind",
+    "original_title": "鏡心",
+    "year": "2005",
+    "runtime": 61,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "original_language": "ja",
+    "tmdb_id": 79860,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-longest-nite": {
+    "letterboxd_slug": "the-longest-nite",
+    "title": "The Longest Nite",
+    "original_title": "暗花",
+    "year": "1998",
+    "runtime": 84,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "countries": [
+      "Hong Kong"
+    ],
+    "original_language": "cn",
+    "tmdb_id": 41158,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "yannick-2023": {
+    "letterboxd_slug": "yannick-2023",
+    "title": "Yannick",
+    "original_title": "Yannick",
+    "year": "2023",
+    "runtime": 67,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Thriller"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1110358,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-second-act": {
+    "letterboxd_slug": "the-second-act",
+    "title": "The Second Act",
+    "original_title": "Le Deuxième Acte",
+    "year": "2024",
+    "runtime": 80,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1161108,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "juha": {
+    "letterboxd_slug": "juha",
+    "title": "Juha",
+    "original_title": "Juha",
+    "year": "1999",
+    "runtime": 78,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "Finland",
+      "France",
+      "Germany"
+    ],
+    "original_language": "fi",
+    "tmdb_id": 55257,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-cruise": {
+    "letterboxd_slug": "the-cruise",
+    "title": "The Cruise",
+    "original_title": "The Cruise",
+    "year": "1998",
+    "runtime": 76,
+    "genres": [
+      "Documentary"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 32326,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "project-hail-mary": {
+    "letterboxd_slug": "project-hail-mary",
+    "title": "Project Hail Mary",
+    "original_title": "Project Hail Mary",
+    "year": "2026",
+    "runtime": 157,
+    "genres": [
+      "Science Fiction",
+      "Adventure"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 687163,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "alice-in-wonderland-1915": {
+    "letterboxd_slug": "alice-in-wonderland-1915",
+    "title": "Alice in Wonderland",
+    "original_title": "Alice in Wonderland",
+    "year": "1915",
+    "runtime": 59,
+    "genres": [
+      "Family",
+      "Fantasy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 87300,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "wuthering-heights-2026": {
+    "letterboxd_slug": "wuthering-heights-2026",
+    "title": "\"Wuthering Heights\"",
+    "original_title": "\"Wuthering Heights\"",
+    "year": "2026",
+    "runtime": 136,
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America",
+      "United Kingdom"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1316092,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "bullet-in-the-head": {
+    "letterboxd_slug": "bullet-in-the-head",
+    "title": "Bullet in the Head",
+    "original_title": "喋血街頭",
+    "year": "1990",
+    "runtime": 136,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller",
+      "War"
+    ],
+    "countries": [
+      "Hong Kong"
+    ],
+    "original_language": "cn",
+    "tmdb_id": 11909,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "surfs-up": {
+    "letterboxd_slug": "surfs-up",
+    "title": "Surf's Up",
+    "original_title": "Surf's Up",
+    "year": "2007",
+    "runtime": 85,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 9408,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-twilight-saga-breaking-dawn-part-1": {
+    "letterboxd_slug": "the-twilight-saga-breaking-dawn-part-1",
+    "title": "The Twilight Saga: Breaking Dawn - Part 1",
+    "original_title": "The Twilight Saga: Breaking Dawn - Part 1",
+    "year": "2011",
+    "runtime": 117,
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Romance"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 50619,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "victor-victoria": {
+    "letterboxd_slug": "victor-victoria",
+    "title": "Victor/Victoria",
+    "original_title": "Victor/Victoria",
+    "year": "1982",
+    "runtime": 134,
+    "genres": [
+      "Music",
+      "Comedy",
+      "Romance"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 12614,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "seven-psychopaths": {
+    "letterboxd_slug": "seven-psychopaths",
+    "title": "Seven Psychopaths",
+    "original_title": "Seven Psychopaths",
+    "year": "2012",
+    "runtime": 110,
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 86838,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "those-happy-days": {
+    "letterboxd_slug": "those-happy-days",
+    "title": "Those Happy Days",
+    "original_title": "Nos jours heureux",
+    "year": "2006",
+    "runtime": 103,
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 19100,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "paranoid-park": {
+    "letterboxd_slug": "paranoid-park",
+    "title": "Paranoid Park",
+    "original_title": "Paranoid Park",
+    "year": "2007",
+    "runtime": 84,
+    "genres": [
+      "Drama",
+      "Crime",
+      "Mystery"
+    ],
+    "countries": [
+      "United States of America",
+      "France"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1990,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "marty-supreme": {
+    "letterboxd_slug": "marty-supreme",
+    "title": "Marty Supreme",
+    "original_title": "Marty Supreme",
+    "year": "2025",
+    "runtime": 150,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1317288,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "no-other-choice-2025": {
+    "letterboxd_slug": "no-other-choice-2025",
+    "title": "No Other Choice",
+    "original_title": "어쩔수가없다",
+    "year": "2025",
+    "runtime": 139,
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Thriller"
+    ],
+    "countries": [
+      "South Korea",
+      "France"
+    ],
+    "original_language": "ko",
+    "tmdb_id": 639988,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "nikita": {
+    "letterboxd_slug": "nikita",
+    "title": "Nikita",
+    "original_title": "Nikita",
+    "year": "1990",
+    "runtime": 117,
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "countries": [
+      "France",
+      "Italy"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 9322,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "into-the-woods-2014": {
+    "letterboxd_slug": "into-the-woods-2014",
+    "title": "Into the Woods",
+    "original_title": "Into the Woods",
+    "year": "2014",
+    "runtime": 125,
+    "genres": [
+      "Fantasy",
+      "Comedy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 224141,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "f1": {
+    "letterboxd_slug": "f1",
+    "title": "F1",
+    "original_title": "F1",
+    "year": "2025",
+    "runtime": 156,
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 911430,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "madagascar-3-europes-most-wanted": {
+    "letterboxd_slug": "madagascar-3-europes-most-wanted",
+    "title": "Madagascar 3: Europe's Most Wanted",
+    "original_title": "Madagascar 3: Europe's Most Wanted",
+    "year": "2012",
+    "runtime": 93,
+    "genres": [
+      "Animation",
+      "Family",
+      "Comedy",
+      "Adventure"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 80321,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "people-we-meet-on-vacation": {
+    "letterboxd_slug": "people-we-meet-on-vacation",
+    "title": "People We Meet on Vacation",
+    "original_title": "People We Meet on Vacation",
+    "year": "2026",
+    "runtime": 116,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1034716,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "black-coal-thin-ice": {
+    "letterboxd_slug": "black-coal-thin-ice",
+    "title": "Black Coal, Thin Ice",
+    "original_title": "白日焰火",
+    "year": "2014",
+    "runtime": 106,
+    "genres": [
+      "Drama",
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "countries": [
+      "China"
+    ],
+    "original_language": "zh",
+    "tmdb_id": 255756,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "parallel-tales": {
+    "letterboxd_slug": "parallel-tales",
+    "title": "Parallel Tales",
+    "original_title": "Histoires parallèles",
+    "year": "2026",
+    "runtime": 140,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "countries": [
+      "France",
+      "Belgium",
+      "Italy",
+      "United States of America",
+      "Saudi Arabia"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1157869,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-taste-of-others": {
+    "letterboxd_slug": "the-taste-of-others",
+    "title": "The Taste of Others",
+    "original_title": "Le Goût des autres",
+    "year": "2000",
+    "runtime": 112,
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Romance"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 10697,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "all-thats-left-of-you": {
+    "letterboxd_slug": "all-thats-left-of-you",
+    "title": "All That's Left of You",
+    "original_title": "اللي باقي منك",
+    "year": "2025",
+    "runtime": 146,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Germany",
+      "Cyprus",
+      "United States of America",
+      "Qatar",
+      "Saudi Arabia",
+      "Egypt",
+      "United Arab Emirates",
+      "Jordan",
+      "Kuwait",
+      "Palestinian Territory",
+      "Greece"
+    ],
+    "original_language": "ar",
+    "tmdb_id": 1219620,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-history-of-sound": {
+    "letterboxd_slug": "the-history-of-sound",
+    "title": "The History of Sound",
+    "original_title": "The History of Sound",
+    "year": "2025",
+    "runtime": 128,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Music"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America",
+      "Sweden"
+    ],
+    "original_language": "en",
+    "tmdb_id": 891584,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "family-resemblances": {
+    "letterboxd_slug": "family-resemblances",
+    "title": "Family Resemblances",
+    "original_title": "Un air de famille",
+    "year": "1996",
+    "runtime": 110,
+    "genres": [
+      "Comedy"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 14646,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "when-the-cats-away": {
+    "letterboxd_slug": "when-the-cats-away",
+    "title": "When the Cat's Away",
+    "original_title": "Chacun cherche son chat",
+    "year": "1996",
+    "runtime": 91,
+    "genres": [
+      "Comedy"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 11956,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-torch-2022": {
+    "letterboxd_slug": "the-torch-2022",
+    "title": "The Torch",
+    "original_title": "The Torch",
+    "year": "2022",
+    "runtime": 107,
+    "genres": [
+      "Documentary",
+      "Music"
+    ],
+    "countries": [
+      "United States of America",
+      "India"
+    ],
+    "original_language": "en",
+    "tmdb_id": 632221,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-flame-2020-2": {
+    "letterboxd_slug": "the-flame-2020-2",
+    "title": "The Flame",
+    "original_title": "The Flame",
+    "year": "2020",
+    "runtime": 12,
+    "genres": [
+      "Documentary"
+    ],
+    "countries": [
+      "Australia"
+    ],
+    "original_language": "en",
+    "tmdb_id": 656481,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-rapture-2023": {
+    "letterboxd_slug": "the-rapture-2023",
+    "title": "The Rapture",
+    "original_title": "Le Ravissement",
+    "year": "2023",
+    "runtime": 97,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 995757,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "forever-young-2022": {
+    "letterboxd_slug": "forever-young-2022",
+    "title": "Forever Young",
+    "original_title": "Les Amandiers",
+    "year": "2022",
+    "runtime": 126,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "countries": [
+      "France",
+      "Italy"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 848958,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "a-little-something-extra": {
+    "letterboxd_slug": "a-little-something-extra",
+    "title": "A Little Something Extra",
+    "original_title": "Un p'tit truc en plus",
+    "year": "2024",
+    "runtime": 89,
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1152014,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-piano-accident": {
+    "letterboxd_slug": "the-piano-accident",
+    "title": "The Piano Accident",
+    "original_title": "L'Accident de Piano",
+    "year": "2025",
+    "runtime": 88,
+    "genres": [
+      "Comedy"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1313144,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "love-is-overrated": {
+    "letterboxd_slug": "love-is-overrated",
+    "title": "Love Is Overrated",
+    "original_title": "L'Amour c'est surcoté",
+    "year": "2025",
+    "runtime": 97,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1071064,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "resurrection-2025": {
+    "letterboxd_slug": "resurrection-2025",
+    "title": "Resurrection",
+    "original_title": "狂野时代",
+    "year": "2025",
+    "runtime": 159,
+    "genres": [
+      "Science Fiction",
+      "Drama"
+    ],
+    "countries": [
+      "China",
+      "France"
+    ],
+    "original_language": "zh",
+    "tmdb_id": 878608,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "out-of-love-2025": {
+    "letterboxd_slug": "out-of-love-2025",
+    "title": "Out of Love",
+    "original_title": "Les enfants vont bien",
+    "year": "2025",
+    "runtime": 111,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1277882,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "eagles-of-the-republic": {
+    "letterboxd_slug": "eagles-of-the-republic",
+    "title": "Eagles of the Republic",
+    "original_title": "Eagles of the Republic",
+    "year": "2025",
+    "runtime": 128,
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
+    "countries": [
+      "Sweden",
+      "France",
+      "Denmark",
+      "Finland",
+      "Germany",
+      "Turkey"
+    ],
+    "original_language": "ar",
+    "tmdb_id": 1220566,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "nouvelle-vague-2025": {
+    "letterboxd_slug": "nouvelle-vague-2025",
+    "title": "Nouvelle Vague",
+    "original_title": "Nouvelle Vague",
+    "year": "2025",
+    "runtime": 106,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "France",
+      "United States of America"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1254808,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "six-and-twelve": {
+    "letterboxd_slug": "six-and-twelve",
+    "title": "Six and Twelve",
+    "original_title": "Sitta wa Thaniat 'Ashar",
+    "year": "1968",
+    "runtime": 18,
+    "genres": [
+      "Documentary"
+    ],
+    "countries": [
+      "Morocco"
+    ],
+    "original_language": "ar",
+    "tmdb_id": 601758,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-last-paradises": {
+    "letterboxd_slug": "the-last-paradises",
+    "title": "The Last Paradises",
+    "original_title": "Les derniers paradis",
+    "year": "2019",
+    "runtime": 13,
+    "genres": [
+      "Documentary"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 643555,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "sukar": {
+    "letterboxd_slug": "sukar",
+    "title": "Sukar",
+    "original_title": "Sukar",
+    "year": "2020",
+    "runtime": 10,
+    "genres": [
+      "Comedy"
+    ],
+    "countries": [
+      "France",
+      "Morocco"
+    ],
+    "original_language": "en",
+    "tmdb_id": 744474,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-stranger-2025-1": {
+    "letterboxd_slug": "the-stranger-2025-1",
+    "title": "The Stranger",
+    "original_title": "L'Étranger",
+    "year": "2025",
+    "runtime": 122,
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "countries": [
+      "France",
+      "Belgium",
+      "Morocco"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1429348,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "ablaze-2025": {
+    "letterboxd_slug": "ablaze-2025",
+    "title": "Ablaze",
+    "original_title": "Les Braises",
+    "year": "2025",
+    "runtime": 102,
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "France",
+      "Belgium"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1331358,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "bye-bye-2021": {
+    "letterboxd_slug": "bye-bye-2021",
+    "title": "Bye Bye",
+    "original_title": "Partir un jour",
+    "year": "2021",
+    "runtime": 25,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Music"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 845112,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "scars-we-love": {
+    "letterboxd_slug": "scars-we-love",
+    "title": "Scars We Love",
+    "original_title": "Les Belles Cicatrices",
+    "year": "2024",
+    "runtime": 15,
+    "genres": [
+      "Animation",
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1279225,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-little-sister-2025": {
+    "letterboxd_slug": "the-little-sister-2025",
+    "title": "The Little Sister",
+    "original_title": "La Petite Dernière",
+    "year": "2025",
+    "runtime": 112,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "France",
+      "Germany"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 961077,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "a-poet": {
+    "letterboxd_slug": "a-poet",
+    "title": "A Poet",
+    "original_title": "Un poeta",
+    "year": "2025",
+    "runtime": 123,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "Colombia",
+      "Germany",
+      "Sweden"
+    ],
+    "original_language": "es",
+    "tmdb_id": 1465563,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  }
+}

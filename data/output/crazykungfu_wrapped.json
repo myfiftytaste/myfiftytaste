@@ -1,0 +1,2344 @@
+{
+  "user": "crazykungfu",
+  "rss_url": "https://letterboxd.com/crazykungfu/rss/",
+  "generated_at": "2026-07-01T22:53:40.301520Z",
+  "films": [
+    {
+      "rss_title": "Minions & Monsters, 2026 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/minions-monsters-2026/",
+      "letterboxd_slug": "minions-monsters-2026",
+      "watched_at": "Mon, 29 Jun 2026 10:10:27 +1200",
+      "logged_at_raw": "Mon, 29 Jun 2026 10:10:27 +1200",
+      "logged_at_iso": "2026-06-28T22:10:27+00:00",
+      "logged_hour": 22,
+      "logged_minute": 10,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996",
+      "user_rating": 3.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 130,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Minions & Monsters",
+      "directors": [
+        "Pierre Coffin"
+      ],
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America",
+        "Japan"
+      ],
+      "original_language": "en",
+      "runtime": 90,
+      "tmdb_id": 1315772,
+      "director_source": "tmdb_details_cache",
+      "director": "Pierre Coffin"
+    },
+    {
+      "rss_title": "Disclosure Day, 2026 - ★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/disclosure-day/",
+      "letterboxd_slug": "disclosure-day",
+      "watched_at": "Mon, 29 Jun 2026 07:05:04 +1200",
+      "logged_at_raw": "Mon, 29 Jun 2026 07:05:04 +1200",
+      "logged_at_iso": "2026-06-28T19:05:04+00:00",
+      "logged_hour": 19,
+      "logged_minute": 5,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/5/9/2/5/1/1159251-disclosure-day-0-600-0-900-crop.jpg?v=9ae810e4bb",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/5/9/2/5/1/1159251-disclosure-day-0-600-0-900-crop.jpg?v=9ae810e4bb",
+      "user_rating": 1.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 66,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Disclosure Day",
+      "directors": [
+        "Steven Spielberg"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Thriller"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 145,
+      "tmdb_id": 1275779,
+      "director_source": "tmdb_details_cache",
+      "director": "Steven Spielberg"
+    },
+    {
+      "rss_title": "Vertiginous, 2026 - ★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/vertiginous/",
+      "letterboxd_slug": "vertiginous",
+      "watched_at": "Sun, 28 Jun 2026 02:32:59 +1200",
+      "logged_at_raw": "Sun, 28 Jun 2026 02:32:59 +1200",
+      "logged_at_iso": "2026-06-27T14:32:59+00:00",
+      "logged_hour": 14,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/1/0/1/4/1531014-vertiginous-0-600-0-900-crop.jpg?v=2233c93bb4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/1/0/1/4/1531014-vertiginous-0-600-0-900-crop.jpg?v=2233c93bb4",
+      "user_rating": 2.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 46,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Vertiginous",
+      "directors": [
+        "Quentin Dupieux"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Science Fiction"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1668499,
+      "director_source": "tmdb_details_cache",
+      "director": "Quentin Dupieux"
+    },
+    {
+      "rss_title": "Backrooms, 2026 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/backrooms-2026/",
+      "letterboxd_slug": "backrooms-2026",
+      "watched_at": "Sun, 28 Jun 2026 01:41:30 +1200",
+      "logged_at_raw": "Sun, 28 Jun 2026 01:41:30 +1200",
+      "logged_at_iso": "2026-06-27T13:41:30+00:00",
+      "logged_hour": 13,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/6/4/1/9/976419-backrooms-2026-0-600-0-900-crop.jpg?v=f7a99e3fc8",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/6/4/1/9/976419-backrooms-2026-0-600-0-900-crop.jpg?v=f7a99e3fc8",
+      "user_rating": 3.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 28,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Backrooms",
+      "directors": [
+        "Kane Parsons"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Science Fiction"
+      ],
+      "countries": [
+        "United States of America",
+        "Canada"
+      ],
+      "original_language": "en",
+      "runtime": 111,
+      "tmdb_id": 1083381,
+      "director_source": "tmdb_details_cache",
+      "director": "Kane Parsons"
+    },
+    {
+      "rss_title": "Lord of the Flies, 2026 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/lord-of-the-flies-2026/",
+      "letterboxd_slug": "lord-of-the-flies-2026",
+      "watched_at": "Tue, 23 Jun 2026 09:38:02 +1200",
+      "logged_at_raw": "Tue, 23 Jun 2026 09:38:02 +1200",
+      "logged_at_iso": "2026-06-22T21:38:02+00:00",
+      "logged_hour": 21,
+      "logged_minute": 38,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/4/9/9/4/3/8/1499438-lord-of-the-flies-2026-0-600-0-900-crop.jpg?v=be4bd6cf70",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/4/9/9/4/3/8/1499438-lord-of-the-flies-2026-0-600-0-900-crop.jpg?v=be4bd6cf70",
+      "user_rating": 4.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 34,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "Making of Lord of the Flies",
+      "tmdb_candidate_title": "Making of Lord of the Flies",
+      "tmdb_score": 0.8,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Jim Queen, 2026 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/jim-queen/",
+      "letterboxd_slug": "jim-queen",
+      "watched_at": "Sat, 20 Jun 2026 10:01:20 +1200",
+      "logged_at_raw": "Sat, 20 Jun 2026 10:01:20 +1200",
+      "logged_at_iso": "2026-06-19T22:01:20+00:00",
+      "logged_hour": 22,
+      "logged_minute": 1,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "user_rating": 4.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 20,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Jim Queen and the Quest for Chloroqueer",
+      "directors": [
+        "Marco Nguyen",
+        "Nicolas Athané"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "Belgium"
+      ],
+      "original_language": "fr",
+      "runtime": 85,
+      "tmdb_id": 1061798,
+      "director_source": "tmdb_details_cache",
+      "director": "Marco Nguyen"
+    },
+    {
+      "rss_title": "The 36th Chamber of Shaolin, 1978 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-36th-chamber-of-shaolin/",
+      "letterboxd_slug": "the-36th-chamber-of-shaolin",
+      "watched_at": "Fri, 19 Jun 2026 09:06:36 +1200",
+      "logged_at_raw": "Fri, 19 Jun 2026 09:06:36 +1200",
+      "logged_at_iso": "2026-06-18T21:06:36+00:00",
+      "logged_hour": 21,
+      "logged_minute": 6,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/9/6/0/44960-the-36th-chamber-of-shaolin-0-600-0-900-crop.jpg?v=ab340a14b0",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/9/6/0/44960-the-36th-chamber-of-shaolin-0-600-0-900-crop.jpg?v=ab340a14b0",
+      "user_rating": 3.5,
+      "year": 1978,
+      "has_review": true,
+      "review_word_count": 16,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The 36th Chamber of Shaolin",
+      "directors": [
+        "Lau Kar-Leung"
+      ],
+      "genres": [
+        "Adventure",
+        "Action"
+      ],
+      "countries": [
+        "Hong Kong"
+      ],
+      "original_language": "Chinese",
+      "runtime": 115.0,
+      "average_rating": null,
+      "watches": 43532,
+      "likes": 14987,
+      "fans": 346,
+      "total_ratings": 30549,
+      "director": "Lau Kar-Leung",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "TRENTE, 2026 - ½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/trente/",
+      "letterboxd_slug": "trente",
+      "watched_at": "Wed, 17 Jun 2026 04:07:42 +1200",
+      "logged_at_raw": "Wed, 17 Jun 2026 04:07:42 +1200",
+      "logged_at_iso": "2026-06-16T16:07:42+00:00",
+      "logged_hour": 16,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "user_rating": 0.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 36,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "TRENTE",
+      "directors": [
+        "Sébastien Frit",
+        "Jeremie Levypon"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "countries": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1687834,
+      "director_source": "tmdb_details_cache",
+      "director": "Sébastien Frit"
+    },
+    {
+      "rss_title": "The Old Gun, 1975 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-old-gun/",
+      "letterboxd_slug": "the-old-gun",
+      "watched_at": "Tue, 16 Jun 2026 07:58:50 +1200",
+      "logged_at_raw": "Tue, 16 Jun 2026 07:58:50 +1200",
+      "logged_at_iso": "2026-06-15T19:58:50+00:00",
+      "logged_hour": 19,
+      "logged_minute": 58,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/7/2/2/49722-the-old-gun-0-600-0-900-crop.jpg?v=f6378eef0e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/7/2/2/49722-the-old-gun-0-600-0-900-crop.jpg?v=f6378eef0e",
+      "user_rating": 4.0,
+      "year": 1975,
+      "has_review": true,
+      "review_word_count": 114,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Old Gun",
+      "directors": [
+        "Robert Enrico"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "France",
+        "Germany"
+      ],
+      "original_language": "fr",
+      "runtime": 103,
+      "tmdb_id": 3480,
+      "director_source": "tmdb_details_cache",
+      "director": "Robert Enrico"
+    },
+    {
+      "rss_title": "Gomorrah, 2008 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/gomorrah/",
+      "letterboxd_slug": "gomorrah",
+      "watched_at": "Tue, 16 Jun 2026 02:44:21 +1200",
+      "logged_at_raw": "Tue, 16 Jun 2026 02:44:21 +1200",
+      "logged_at_iso": "2026-06-15T14:44:21+00:00",
+      "logged_hour": 14,
+      "logged_minute": 44,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/5/4/2/47542-gomorrah-0-600-0-900-crop.jpg?v=c0ec32062f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/5/4/2/47542-gomorrah-0-600-0-900-crop.jpg?v=c0ec32062f",
+      "user_rating": 4.0,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 112,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Gomorrah",
+      "directors": [
+        "Matteo Garrone"
+      ],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "Italy"
+      ],
+      "original_language": "it",
+      "runtime": 137,
+      "tmdb_id": 8882,
+      "director_source": "tmdb_details_cache",
+      "director": "Matteo Garrone"
+    },
+    {
+      "rss_title": "Tombstone, 1993 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/tombstone/",
+      "letterboxd_slug": "tombstone",
+      "watched_at": "Mon, 8 Jun 2026 04:57:09 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 04:57:09 +1200",
+      "logged_at_iso": "2026-06-07T16:57:09+00:00",
+      "logged_hour": 16,
+      "logged_minute": 57,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/8/3/9/44839-tombstone-0-600-0-900-crop.jpg?v=7242ef82fa",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/8/3/9/44839-tombstone-0-600-0-900-crop.jpg?v=7242ef82fa",
+      "user_rating": 2.5,
+      "year": 1993,
+      "has_review": true,
+      "review_word_count": 118,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Tombstone",
+      "directors": [
+        "George P. Cosmatos"
+      ],
+      "genres": [
+        "Action",
+        "Western"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 130.0,
+      "average_rating": 3.87,
+      "watches": 205193,
+      "likes": 65776,
+      "fans": 4700,
+      "total_ratings": 143601,
+      "director": "George P. Cosmatos",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Face of Another, 1966 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-face-of-another/",
+      "letterboxd_slug": "the-face-of-another",
+      "watched_at": "Sun, 7 Jun 2026 09:16:28 +1200",
+      "logged_at_raw": "Sun, 7 Jun 2026 09:16:28 +1200",
+      "logged_at_iso": "2026-06-06T21:16:28+00:00",
+      "logged_hour": 21,
+      "logged_minute": 16,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/fz/b0/yq/rh/h1rbLyfFP9xOXzJt5ODqVfxBWic-0-600-0-900-crop.jpg?v=ba593ea4fd",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/fz/b0/yq/rh/h1rbLyfFP9xOXzJt5ODqVfxBWic-0-600-0-900-crop.jpg?v=ba593ea4fd",
+      "user_rating": 4.5,
+      "year": 1966,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Face of Another",
+      "directors": [
+        "Hiroshi Teshigahara"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Drama"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 122.0,
+      "average_rating": 4.23,
+      "watches": 57704,
+      "likes": 22344,
+      "fans": 1600,
+      "total_ratings": 41630,
+      "director": "Hiroshi Teshigahara",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Bone Tomahawk, 2015 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/bone-tomahawk/",
+      "letterboxd_slug": "bone-tomahawk",
+      "watched_at": "Sun, 7 Jun 2026 04:38:05 +1200",
+      "logged_at_raw": "Sun, 7 Jun 2026 04:38:05 +1200",
+      "logged_at_iso": "2026-06-06T16:38:05+00:00",
+      "logged_hour": 16,
+      "logged_minute": 38,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/2/2/2/9/8/222298-bone-tomahawk-0-600-0-900-crop.jpg?v=de275d2399",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/2/2/2/9/8/222298-bone-tomahawk-0-600-0-900-crop.jpg?v=de275d2399",
+      "user_rating": 3.0,
+      "year": 2015,
+      "has_review": true,
+      "review_word_count": 36,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Bone Tomahawk",
+      "directors": [
+        "S. Craig Zahler"
+      ],
+      "genres": [
+        "Drama",
+        "Horror",
+        "Western"
+      ],
+      "countries": [
+        "United States of America",
+        "United Kingdom"
+      ],
+      "original_language": "en",
+      "runtime": 133,
+      "tmdb_id": 294963,
+      "director_source": "tmdb_details_cache",
+      "director": "S. Craig Zahler"
+    },
+    {
+      "rss_title": "Obsession, 2025 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/obsession-2025/",
+      "letterboxd_slug": "obsession-2025",
+      "watched_at": "Sat, 6 Jun 2026 23:59:38 +1200",
+      "logged_at_raw": "Sat, 6 Jun 2026 23:59:38 +1200",
+      "logged_at_iso": "2026-06-06T11:59:38+00:00",
+      "logged_hour": 11,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "user_rating": 4.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 10,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Obsession",
+      "directors": [
+        "Curry Barker"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "US"
+      ],
+      "original_language": "en",
+      "runtime": 109,
+      "tmdb_id": null,
+      "director": "Curry Barker",
+      "director_source": "supplemental"
+    },
+    {
+      "rss_title": "The Plague, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-plague-2025/",
+      "letterboxd_slug": "the-plague-2025",
+      "watched_at": "Thu, 4 Jun 2026 09:05:25 +1200",
+      "logged_at_raw": "Thu, 4 Jun 2026 09:05:25 +1200",
+      "logged_at_iso": "2026-06-03T21:05:25+00:00",
+      "logged_hour": 21,
+      "logged_minute": 5,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/5/7/8/3/0/1257830-the-plague-2025-0-600-0-900-crop.jpg?v=005eebc50c",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/5/7/8/3/0/1257830-the-plague-2025-0-600-0-900-crop.jpg?v=005eebc50c",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 64,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Plague",
+      "directors": [
+        "Charlie Polinger"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "United States of America",
+        "United Arab Emirates"
+      ],
+      "original_language": "en",
+      "runtime": 98,
+      "tmdb_id": 1370814,
+      "director_source": "tmdb_details_cache",
+      "director": "Charlie Polinger"
+    },
+    {
+      "rss_title": "The Taking of Pelham One Two Three, 1974 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-taking-of-pelham-one-two-three/",
+      "letterboxd_slug": "the-taking-of-pelham-one-two-three",
+      "watched_at": "Wed, 27 May 2026 08:31:09 +1200",
+      "logged_at_raw": "Wed, 27 May 2026 08:31:09 +1200",
+      "logged_at_iso": "2026-05-26T20:31:09+00:00",
+      "logged_hour": 20,
+      "logged_minute": 31,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/8/0/0/47800-the-taking-of-pelham-one-two-three-0-600-0-900-crop.jpg?v=b04395e6e7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/8/0/0/47800-the-taking-of-pelham-one-two-three-0-600-0-900-crop.jpg?v=b04395e6e7",
+      "user_rating": 3.0,
+      "year": 1974,
+      "has_review": true,
+      "review_word_count": 46,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Taking of Pelham One Two Three",
+      "directors": [
+        "Joseph Sargent"
+      ],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 104.0,
+      "average_rating": null,
+      "watches": 79530,
+      "likes": 26933,
+      "fans": 456,
+      "total_ratings": 57999,
+      "director": "Joseph Sargent",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Zoolander, 2001 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/zoolander/2/",
+      "letterboxd_slug": "zoolander",
+      "watched_at": "Tue, 26 May 2026 18:57:51 +1200",
+      "logged_at_raw": "Tue, 26 May 2026 18:57:51 +1200",
+      "logged_at_iso": "2026-05-26T06:57:51+00:00",
+      "logged_hour": 6,
+      "logged_minute": 57,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/1/9/8/47198-zoolander-0-600-0-900-crop.jpg?v=b30902c672",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/1/9/8/47198-zoolander-0-600-0-900-crop.jpg?v=b30902c672",
+      "user_rating": 4.0,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 46,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Zoolander",
+      "directors": [
+        "Ben Stiller"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 89.0,
+      "average_rating": 3.37,
+      "watches": 1094494,
+      "likes": 230832,
+      "fans": 4000,
+      "total_ratings": 614867,
+      "director": "Ben Stiller",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Fail Safe, 1964 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/fail-safe/",
+      "letterboxd_slug": "fail-safe",
+      "watched_at": "Sun, 24 May 2026 04:58:28 +1200",
+      "logged_at_raw": "Sun, 24 May 2026 04:58:28 +1200",
+      "logged_at_iso": "2026-05-23T16:58:28+00:00",
+      "logged_hour": 16,
+      "logged_minute": 58,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/6/0/8/51608-fail-safe-0-600-0-900-crop.jpg?v=2eabe8a26d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/6/0/8/51608-fail-safe-0-600-0-900-crop.jpg?v=2eabe8a26d",
+      "user_rating": 5.0,
+      "year": 1964,
+      "has_review": true,
+      "review_word_count": 110,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Fail Safe",
+      "directors": [
+        "Sidney Lumet"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "War"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 112.0,
+      "average_rating": 4.22,
+      "watches": 34254,
+      "likes": 11308,
+      "fans": 283,
+      "total_ratings": 25319,
+      "director": "Sidney Lumet",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Cool Hand Luke, 1967 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/cool-hand-luke/",
+      "letterboxd_slug": "cool-hand-luke",
+      "watched_at": "Thu, 21 May 2026 09:58:35 +1200",
+      "logged_at_raw": "Thu, 21 May 2026 09:58:35 +1200",
+      "logged_at_iso": "2026-05-20T21:58:35+00:00",
+      "logged_hour": 21,
+      "logged_minute": 58,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/11/m8/qg/qc/1qbMudClWdExuNL24AphbTq2sjN-0-600-0-900-crop.jpg?v=dc197a6ec9",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/11/m8/qg/qc/1qbMudClWdExuNL24AphbTq2sjN-0-600-0-900-crop.jpg?v=dc197a6ec9",
+      "user_rating": 5.0,
+      "year": 1967,
+      "has_review": true,
+      "review_word_count": 566,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Cool Hand Luke",
+      "directors": [
+        "Stuart Rosenberg"
+      ],
+      "genres": [
+        "Crime",
+        "Action",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 127.0,
+      "average_rating": 4.15,
+      "watches": 153333,
+      "likes": 44353,
+      "fans": 2300,
+      "total_ratings": 98182,
+      "director": "Stuart Rosenberg",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "A Hero Never Dies, 1998 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/a-hero-never-dies/",
+      "letterboxd_slug": "a-hero-never-dies",
+      "watched_at": "Mon, 18 May 2026 06:34:32 +1200",
+      "logged_at_raw": "Mon, 18 May 2026 06:34:32 +1200",
+      "logged_at_iso": "2026-05-17T18:34:32+00:00",
+      "logged_hour": 18,
+      "logged_minute": 34,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/5/3/9/7539-a-hero-never-dies-0-600-0-900-crop.jpg?v=b3e877084f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/5/3/9/7539-a-hero-never-dies-0-600-0-900-crop.jpg?v=b3e877084f",
+      "user_rating": 3.5,
+      "year": 1998,
+      "has_review": true,
+      "review_word_count": 66,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "A Hero Never Dies",
+      "directors": [
+        "Johnnie To"
+      ],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "countries": [
+        "Hong Kong"
+      ],
+      "original_language": "cn",
+      "runtime": 98,
+      "tmdb_id": 58776,
+      "director_source": "tmdb_details_cache",
+      "director": "Johnnie To"
+    },
+    {
+      "rss_title": "[REC], 2007 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/rec/",
+      "letterboxd_slug": "rec",
+      "watched_at": "Fri, 15 May 2026 21:00:30 +1200",
+      "logged_at_raw": "Fri, 15 May 2026 21:00:30 +1200",
+      "logged_at_iso": "2026-05-15T09:00:30+00:00",
+      "logged_hour": 9,
+      "logged_minute": 0,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/wc/8v/37/hl/cOW5Oc3vnjD2QgK68BUvm6GGLZ4-0-600-0-900-crop.jpg?v=afc2876405",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/wc/8v/37/hl/cOW5Oc3vnjD2QgK68BUvm6GGLZ4-0-600-0-900-crop.jpg?v=afc2876405",
+      "user_rating": 4.0,
+      "year": 2007,
+      "has_review": true,
+      "review_word_count": 90,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "[REC]",
+      "directors": [
+        "Jaume Balagueró",
+        "Paco Plaza"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Spain"
+      ],
+      "original_language": "Spanish",
+      "runtime": 78.0,
+      "average_rating": 3.68,
+      "watches": 469661,
+      "likes": 121520,
+      "fans": 2900,
+      "total_ratings": 327185,
+      "director": "Jaume Balagueró",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Mortal Kombat II, 2026 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/mortal-kombat-ii/",
+      "letterboxd_slug": "mortal-kombat-ii",
+      "watched_at": "Tue, 12 May 2026 19:26:36 +1200",
+      "logged_at_raw": "Tue, 12 May 2026 19:26:36 +1200",
+      "logged_at_iso": "2026-05-12T07:26:36+00:00",
+      "logged_hour": 7,
+      "logged_minute": 26,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/3/6/5/7/1/836571-mortal-kombat-ii-0-600-0-900-crop.jpg?v=6fea3b13de",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/3/6/5/7/1/836571-mortal-kombat-ii-0-600-0-900-crop.jpg?v=6fea3b13de",
+      "user_rating": 2.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 28,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Mortal Kombat II",
+      "directors": [
+        "Simon McQuoid"
+      ],
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Adventure"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 116,
+      "tmdb_id": 931285,
+      "director_source": "tmdb_details_cache",
+      "director": "Simon McQuoid"
+    },
+    {
+      "rss_title": "The Night Eats the World, 2018 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-night-eats-the-world/",
+      "letterboxd_slug": "the-night-eats-the-world",
+      "watched_at": "Mon, 11 May 2026 08:33:40 +1200",
+      "logged_at_raw": "Mon, 11 May 2026 08:33:40 +1200",
+      "logged_at_iso": "2026-05-10T20:33:40+00:00",
+      "logged_hour": 20,
+      "logged_minute": 33,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/8/9/8/8/6/389886-the-night-eats-the-world-0-600-0-900-crop.jpg?v=30fdef90da",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/8/9/8/8/6/389886-the-night-eats-the-world-0-600-0-900-crop.jpg?v=30fdef90da",
+      "user_rating": 3.0,
+      "year": 2018,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Night Eats the World",
+      "directors": [
+        "Dominique Rocher"
+      ],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Science Fiction"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 94,
+      "tmdb_id": 457955,
+      "director_source": "tmdb_details_cache",
+      "director": "Dominique Rocher"
+    },
+    {
+      "rss_title": "Gummo, 1997 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/gummo/",
+      "letterboxd_slug": "gummo",
+      "watched_at": "Mon, 11 May 2026 03:46:58 +1200",
+      "logged_at_raw": "Mon, 11 May 2026 03:46:58 +1200",
+      "logged_at_iso": "2026-05-10T15:46:58+00:00",
+      "logged_hour": 15,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ax/63/ma/r8/54rpZVaJ2PJ9SrqFAYqxY2YAdRB-0-600-0-900-crop.jpg?v=c3d50845ae",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ax/63/ma/r8/54rpZVaJ2PJ9SrqFAYqxY2YAdRB-0-600-0-900-crop.jpg?v=c3d50845ae",
+      "user_rating": 3.0,
+      "year": 1997,
+      "has_review": true,
+      "review_word_count": 98,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Gummo",
+      "directors": [
+        "Harmony Korine"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 89,
+      "tmdb_id": 18415,
+      "director_source": "tmdb_details_cache",
+      "director": "Harmony Korine"
+    },
+    {
+      "rss_title": "Mad God, 2021 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/mad-god/",
+      "letterboxd_slug": "mad-god",
+      "watched_at": "Sun, 10 May 2026 21:36:43 +1200",
+      "logged_at_raw": "Sun, 10 May 2026 21:36:43 +1200",
+      "logged_at_iso": "2026-05-10T09:36:43+00:00",
+      "logged_hour": 9,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/6/1/0/4/6/761046-mad-god-0-600-0-900-crop.jpg?v=ccd8e25d6d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/6/1/0/4/6/761046-mad-god-0-600-0-900-crop.jpg?v=ccd8e25d6d",
+      "user_rating": 5.0,
+      "year": 2021,
+      "has_review": true,
+      "review_word_count": 14,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Mad God",
+      "directors": [
+        "Phil Tippett"
+      ],
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Horror",
+        "Science Fiction"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 84,
+      "tmdb_id": 846867,
+      "director_source": "tmdb_details_cache",
+      "director": "Phil Tippett"
+    },
+    {
+      "rss_title": "The Devil Wears Prada 2, 2026 - ★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-devil-wears-prada-2/",
+      "letterboxd_slug": "the-devil-wears-prada-2",
+      "watched_at": "Fri, 8 May 2026 10:15:59 +1200",
+      "logged_at_raw": "Fri, 8 May 2026 10:15:59 +1200",
+      "logged_at_iso": "2026-05-07T22:15:59+00:00",
+      "logged_hour": 22,
+      "logged_minute": 15,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/5/5/8/6/1195586-the-devil-wears-prada-2-0-600-0-900-crop.jpg?v=0d955add69",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/5/5/8/6/1195586-the-devil-wears-prada-2-0-600-0-900-crop.jpg?v=0d955add69",
+      "user_rating": 2.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 34,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Devil Wears Prada 2",
+      "directors": [
+        "David Frankel"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 119,
+      "tmdb_id": 1314481,
+      "director_source": "tmdb_details_cache",
+      "director": "David Frankel"
+    },
+    {
+      "rss_title": "The Great Arch, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-great-arch-2025/",
+      "letterboxd_slug": "the-great-arch-2025",
+      "watched_at": "Thu, 7 May 2026 09:39:51 +1200",
+      "logged_at_raw": "Thu, 7 May 2026 09:39:51 +1200",
+      "logged_at_iso": "2026-05-06T21:39:51+00:00",
+      "logged_hour": 21,
+      "logged_minute": 39,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/7/3/4/8/6/1173486-the-great-arch-2025-0-600-0-900-crop.jpg?v=b25e202783",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/7/3/4/8/6/1173486-the-great-arch-2025-0-600-0-900-crop.jpg?v=b25e202783",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 328,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Great Arch",
+      "directors": [
+        "Stéphane Demoustier"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "France",
+        "Denmark"
+      ],
+      "original_language": "fr",
+      "runtime": 104,
+      "tmdb_id": 1290424,
+      "director_source": "tmdb_details_cache",
+      "director": "Stéphane Demoustier"
+    },
+    {
+      "rss_title": "All Your Faces, 2023 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/all-your-faces/",
+      "letterboxd_slug": "all-your-faces",
+      "watched_at": "Wed, 6 May 2026 09:53:54 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 09:53:54 +1200",
+      "logged_at_iso": "2026-05-05T21:53:54+00:00",
+      "logged_hour": 21,
+      "logged_minute": 53,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/0/1/3/5/0/901350-all-your-faces-0-600-0-900-crop.jpg?v=33e008392e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/0/1/3/5/0/901350-all-your-faces-0-600-0-900-crop.jpg?v=33e008392e",
+      "user_rating": 4.0,
+      "year": 2023,
+      "has_review": true,
+      "review_word_count": 94,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "All Your Faces",
+      "directors": [
+        "Jeanne Herry"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 115,
+      "tmdb_id": 1000492,
+      "director_source": "tmdb_details_cache",
+      "director": "Jeanne Herry"
+    },
+    {
+      "rss_title": "Michael, 2026 - ★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/michael-2026/",
+      "letterboxd_slug": "michael-2026",
+      "watched_at": "Sun, 3 May 2026 07:57:18 +1200",
+      "logged_at_raw": "Sun, 3 May 2026 07:57:18 +1200",
+      "logged_at_iso": "2026-05-02T19:57:18+00:00",
+      "logged_hour": 19,
+      "logged_minute": 57,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/4/1/1/0/3/841103-michael-2026-0-600-0-900-crop.jpg?v=1e8e478e40",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/4/1/1/0/3/841103-michael-2026-0-600-0-900-crop.jpg?v=1e8e478e40",
+      "user_rating": 1.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 198,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Michael",
+      "directors": [
+        "Antoine Fuqua"
+      ],
+      "genres": [
+        "Music",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 128,
+      "tmdb_id": 936075,
+      "director_source": "tmdb_details_cache",
+      "director": "Antoine Fuqua"
+    },
+    {
+      "rss_title": "Dead Man's Wire, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/dead-mans-wire/",
+      "letterboxd_slug": "dead-mans-wire",
+      "watched_at": "Thu, 30 Apr 2026 07:58:47 +1200",
+      "logged_at_raw": "Thu, 30 Apr 2026 07:58:47 +1200",
+      "logged_at_iso": "2026-04-29T19:58:47+00:00",
+      "logged_hour": 19,
+      "logged_minute": 58,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/4/7/2/5/1/1147251-dead-mans-wire-0-600-0-900-crop.jpg?v=75bec36eec",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/4/7/2/5/1/1147251-dead-mans-wire-0-600-0-900-crop.jpg?v=75bec36eec",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 74,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "Dead Man's Wire",
+      "tmdb_candidate_title": "Dead Man's Wire",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Kill Bill: Vol. 2, 2004 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/kill-bill-vol-2/",
+      "letterboxd_slug": "kill-bill-vol-2",
+      "watched_at": "Wed, 29 Apr 2026 07:32:55 +1200",
+      "logged_at_raw": "Wed, 29 Apr 2026 07:32:55 +1200",
+      "logged_at_iso": "2026-04-28T19:32:55+00:00",
+      "logged_hour": 19,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730",
+      "user_rating": 3.0,
+      "year": 2004,
+      "has_review": true,
+      "review_word_count": 36,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Kill Bill: Vol. 2",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Thriller",
+        "Action",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 136.0,
+      "average_rating": null,
+      "watches": 1760722,
+      "likes": 550225,
+      "fans": 9000,
+      "total_ratings": 1114672,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Ritual, 2017 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-ritual-2017/",
+      "letterboxd_slug": "the-ritual-2017",
+      "watched_at": "Mon, 27 Apr 2026 08:59:08 +1200",
+      "logged_at_raw": "Mon, 27 Apr 2026 08:59:08 +1200",
+      "logged_at_iso": "2026-04-26T20:59:08+00:00",
+      "logged_hour": 20,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/p0/5w/nn/bg/hHuJqzby593lmYmw1SzT0XYy99t-0-600-0-900-crop.jpg?v=5e686a841b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/p0/5w/nn/bg/hHuJqzby593lmYmw1SzT0XYy99t-0-600-0-900-crop.jpg?v=5e686a841b",
+      "user_rating": 3.5,
+      "year": 2017,
+      "has_review": true,
+      "review_word_count": 62,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Ritual",
+      "directors": [
+        "David Bruckner"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "countries": [
+        "Canada",
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 94.0,
+      "average_rating": 3.18,
+      "watches": 405112,
+      "likes": 80807,
+      "fans": 1100,
+      "total_ratings": 286178,
+      "director": "David Bruckner",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Kill Bill: Vol. 1, 2003 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/kill-bill-vol-1/",
+      "letterboxd_slug": "kill-bill-vol-1",
+      "watched_at": "Mon, 27 Apr 2026 01:52:47 +1200",
+      "logged_at_raw": "Mon, 27 Apr 2026 01:52:47 +1200",
+      "logged_at_iso": "2026-04-26T13:52:47+00:00",
+      "logged_hour": 13,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "user_rating": 4.5,
+      "year": 2003,
+      "has_review": true,
+      "review_word_count": 46,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Kill Bill: Vol. 1",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Crime",
+        "Action"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 111.0,
+      "average_rating": null,
+      "watches": 3101840,
+      "likes": 1190762,
+      "fans": 66000,
+      "total_ratings": 2026399,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Triangle of Sadness, 2022 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/triangle-of-sadness/",
+      "letterboxd_slug": "triangle-of-sadness",
+      "watched_at": "Sat, 25 Apr 2026 10:23:22 +1200",
+      "logged_at_raw": "Sat, 25 Apr 2026 10:23:22 +1200",
+      "logged_at_iso": "2026-04-24T22:23:22+00:00",
+      "logged_hour": 22,
+      "logged_minute": 23,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/2/7/9/7/0/427970-triangle-of-sadness-0-600-0-900-crop.jpg?v=a9210ebfee",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/2/7/9/7/0/427970-triangle-of-sadness-0-600-0-900-crop.jpg?v=a9210ebfee",
+      "user_rating": 2.5,
+      "year": 2022,
+      "has_review": true,
+      "review_word_count": 74,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Triangle of Sadness",
+      "directors": [
+        "Ruben Östlund"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "Denmark",
+        "France",
+        "Germany",
+        "Greece",
+        "Mexico",
+        "Sweden",
+        "Switzerland",
+        "Turkey",
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 147.0,
+      "average_rating": 3.69,
+      "watches": 929148,
+      "likes": 247150,
+      "fans": 4300,
+      "total_ratings": 744778,
+      "director": "Ruben Östlund",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Jerry Maguire, 1996 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/jerry-maguire/",
+      "letterboxd_slug": "jerry-maguire",
+      "watched_at": "Thu, 23 Apr 2026 07:59:44 +1200",
+      "logged_at_raw": "Thu, 23 Apr 2026 07:59:44 +1200",
+      "logged_at_iso": "2026-04-22T19:59:44+00:00",
+      "logged_hour": 19,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/0/6/47206-jerry-maguire-0-600-0-900-crop.jpg?v=0f7ed523ed",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/0/6/47206-jerry-maguire-0-600-0-900-crop.jpg?v=0f7ed523ed",
+      "user_rating": 4.0,
+      "year": 1996,
+      "has_review": true,
+      "review_word_count": 98,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Jerry Maguire",
+      "directors": [
+        "Cameron Crowe"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 139.0,
+      "average_rating": 3.59,
+      "watches": 361249,
+      "likes": 71878,
+      "fans": 1400,
+      "total_ratings": 214439,
+      "director": "Cameron Crowe",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Returning to Reims, 2021 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/returning-to-reims/",
+      "letterboxd_slug": "returning-to-reims",
+      "watched_at": "Wed, 22 Apr 2026 09:13:15 +1200",
+      "logged_at_raw": "Wed, 22 Apr 2026 09:13:15 +1200",
+      "logged_at_iso": "2026-04-21T21:13:15+00:00",
+      "logged_hour": 21,
+      "logged_minute": 13,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/5/3/3/9/1/753391-returning-to-reims-0-600-0-900-crop.jpg?v=324ea79b59",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/5/3/3/9/1/753391-returning-to-reims-0-600-0-900-crop.jpg?v=324ea79b59",
+      "user_rating": 3.5,
+      "year": 2021,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Returning to Reims",
+      "directors": [
+        "Jean-Gabriel Périot"
+      ],
+      "genres": [
+        "Documentary",
+        "History"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "French",
+      "runtime": 84.0,
+      "average_rating": 3.77,
+      "watches": 2412,
+      "likes": 570,
+      "fans": 8,
+      "total_ratings": 1583,
+      "director": "Jean-Gabriel Périot",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "No Other Land, 2024 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/no-other-land/",
+      "letterboxd_slug": "no-other-land",
+      "watched_at": "Mon, 20 Apr 2026 23:34:49 +1200",
+      "logged_at_raw": "Mon, 20 Apr 2026 23:34:49 +1200",
+      "logged_at_iso": "2026-04-20T11:34:49+00:00",
+      "logged_hour": 11,
+      "logged_minute": 34,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/1/5/8/7/4/1115874-no-other-land-0-600-0-900-crop.jpg?v=7a96e00fce",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/1/5/8/7/4/1115874-no-other-land-0-600-0-900-crop.jpg?v=7a96e00fce",
+      "user_rating": 4.5,
+      "year": 2024,
+      "has_review": true,
+      "review_word_count": 50,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "No Other Land",
+      "directors": [
+        "Rachel Szor",
+        "Yuval Abraham",
+        "Hamdan Ballal",
+        "Basel Adra"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "countries": [
+        "Norway",
+        "Palestinian Territory"
+      ],
+      "original_language": "ar",
+      "runtime": 92,
+      "tmdb_id": 1232493,
+      "director_source": "tmdb_details_cache",
+      "director": "Rachel Szor"
+    },
+    {
+      "rss_title": "Untamable, 2025 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/untamable/",
+      "letterboxd_slug": "untamable",
+      "watched_at": "Tue, 14 Apr 2026 09:46:32 +1200",
+      "logged_at_raw": "Tue, 14 Apr 2026 09:46:32 +1200",
+      "logged_at_iso": "2026-04-13T21:46:32+00:00",
+      "logged_hour": 21,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/3/8/6/1/3/1338613-untamable-0-600-0-900-crop.jpg?v=96f393db76",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/3/8/6/1/3/1338613-untamable-0-600-0-900-crop.jpg?v=96f393db76",
+      "user_rating": 3.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 22,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Untamable",
+      "directors": [
+        "Thomas Ngijol"
+      ],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "France",
+        "Cameroon"
+      ],
+      "original_language": "fr",
+      "runtime": 81,
+      "tmdb_id": 1461911,
+      "director_source": "tmdb_details_cache",
+      "director": "Thomas Ngijol"
+    },
+    {
+      "rss_title": "Empire of Silence, 2021 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/empire-of-silence/",
+      "letterboxd_slug": "empire-of-silence",
+      "watched_at": "Tue, 14 Apr 2026 09:32:32 +1200",
+      "logged_at_raw": "Tue, 14 Apr 2026 09:32:32 +1200",
+      "logged_at_iso": "2026-04-13T21:32:32+00:00",
+      "logged_hour": 21,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/0/2/9/6/1/802961-empire-of-silence-0-600-0-900-crop.jpg?v=06c5342faa",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/0/2/9/6/1/802961-empire-of-silence-0-600-0-900-crop.jpg?v=06c5342faa",
+      "user_rating": 5.0,
+      "year": 2021,
+      "has_review": true,
+      "review_word_count": 36,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "Empire of Silence",
+      "tmdb_candidate_title": "Empire of Silence",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "The Chaser, 2008 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-chaser/",
+      "letterboxd_slug": "the-chaser",
+      "watched_at": "Sun, 12 Apr 2026 19:56:37 +1200",
+      "logged_at_raw": "Sun, 12 Apr 2026 19:56:37 +1200",
+      "logged_at_iso": "2026-04-12T07:56:37+00:00",
+      "logged_hour": 7,
+      "logged_minute": 56,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/3l/8e/hm/nf/the-chaser-0-600-0-900-crop.jpg?v=c93c9856fa",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/3l/8e/hm/nf/the-chaser-0-600-0-900-crop.jpg?v=c93c9856fa",
+      "user_rating": 3.5,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 34,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Chaser",
+      "directors": [
+        "Na Hong-jin"
+      ],
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Action"
+      ],
+      "countries": [
+        "KR"
+      ],
+      "original_language": "ko",
+      "runtime": 125,
+      "tmdb_id": 13855,
+      "director_source": "tmdb_details_cache",
+      "director": "Na Hong-jin"
+    },
+    {
+      "rss_title": "Where Is the Friend's House?, 1987 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/where-is-the-friends-house/",
+      "letterboxd_slug": "where-is-the-friends-house",
+      "watched_at": "Sun, 12 Apr 2026 06:48:39 +1200",
+      "logged_at_raw": "Sun, 12 Apr 2026 06:48:39 +1200",
+      "logged_at_iso": "2026-04-11T18:48:39+00:00",
+      "logged_hour": 18,
+      "logged_minute": 48,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/6/6/9/15669-where-is-the-friend-s-house--0-600-0-900-crop.jpg?v=fa9af1e128",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/6/6/9/15669-where-is-the-friend-s-house--0-600-0-900-crop.jpg?v=fa9af1e128",
+      "user_rating": 3.0,
+      "year": 1987,
+      "has_review": true,
+      "review_word_count": 14,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Where Is The Friend's House?",
+      "directors": [
+        "Abbas Kiarostami"
+      ],
+      "genres": [
+        "Drama",
+        "Adventure"
+      ],
+      "countries": [
+        "Iran"
+      ],
+      "original_language": "fa",
+      "runtime": 83,
+      "tmdb_id": 49964,
+      "director_source": "tmdb_details_cache",
+      "director": "Abbas Kiarostami"
+    },
+    {
+      "rss_title": "So Long, Stooge, 1983 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/so-long-stooge/",
+      "letterboxd_slug": "so-long-stooge",
+      "watched_at": "Fri, 10 Apr 2026 09:49:13 +1200",
+      "logged_at_raw": "Fri, 10 Apr 2026 09:49:13 +1200",
+      "logged_at_iso": "2026-04-09T21:49:13+00:00",
+      "logged_hour": 21,
+      "logged_minute": 49,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/4/8/8/7488-so-long-stooge-0-600-0-900-crop.jpg?v=45df2a0a36",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/4/8/8/7488-so-long-stooge-0-600-0-900-crop.jpg?v=45df2a0a36",
+      "user_rating": 2.5,
+      "year": 1983,
+      "has_review": true,
+      "review_word_count": 10,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "So Long, Stooge",
+      "directors": [
+        "Claude Berri"
+      ],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 94,
+      "tmdb_id": 58833,
+      "director_source": "tmdb_details_cache",
+      "director": "Claude Berri"
+    },
+    {
+      "rss_title": "I Swear, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/i-swear/",
+      "letterboxd_slug": "i-swear",
+      "watched_at": "Thu, 9 Apr 2026 10:20:17 +1200",
+      "logged_at_raw": "Thu, 9 Apr 2026 10:20:17 +1200",
+      "logged_at_iso": "2026-04-08T22:20:17+00:00",
+      "logged_hour": 22,
+      "logged_minute": 20,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/7/8/4/2/1197842-i-swear-0-600-0-900-crop.jpg?v=b8f019138e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/7/8/4/2/1197842-i-swear-0-600-0-900-crop.jpg?v=b8f019138e",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 30,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "I Swear",
+      "directors": [
+        "Kirk Jones"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "GB",
+        "IE"
+      ],
+      "original_language": "en",
+      "runtime": 121,
+      "tmdb_id": 1317149,
+      "director_source": "tmdb_details_cache",
+      "director": "Kirk Jones"
+    },
+    {
+      "rss_title": "The Wages of Fear, 1953 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-wages-of-fear/",
+      "letterboxd_slug": "the-wages-of-fear",
+      "watched_at": "Wed, 8 Apr 2026 10:15:33 +1200",
+      "logged_at_raw": "Wed, 8 Apr 2026 10:15:33 +1200",
+      "logged_at_iso": "2026-04-07T22:15:33+00:00",
+      "logged_hour": 22,
+      "logged_minute": 15,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/9/51849-the-wages-of-fear-0-600-0-900-crop.jpg?v=d6918aa1f4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/9/51849-the-wages-of-fear-0-600-0-900-crop.jpg?v=d6918aa1f4",
+      "user_rating": 4.5,
+      "year": 1953,
+      "has_review": true,
+      "review_word_count": 28,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Wages of Fear",
+      "directors": [
+        "Henri-Georges Clouzot"
+      ],
+      "genres": [
+        "Adventure",
+        "Thriller",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "French",
+      "runtime": 153.0,
+      "average_rating": 4.34,
+      "watches": 70252,
+      "likes": 23196,
+      "fans": 714,
+      "total_ratings": 49760,
+      "director": "Henri-Georges Clouzot",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "A Prophet, 2009 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/a-prophet/",
+      "letterboxd_slug": "a-prophet",
+      "watched_at": "Tue, 7 Apr 2026 06:14:39 +1200",
+      "logged_at_raw": "Tue, 7 Apr 2026 06:14:39 +1200",
+      "logged_at_iso": "2026-04-06T18:14:39+00:00",
+      "logged_hour": 18,
+      "logged_minute": 14,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/1e/n7/st/bb/eQpVD55Kqhx0l4HGvZasYWEMXXJ-0-600-0-900-crop.jpg?v=fc2b368c4e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/1e/n7/st/bb/eQpVD55Kqhx0l4HGvZasYWEMXXJ-0-600-0-900-crop.jpg?v=fc2b368c4e",
+      "user_rating": 5.0,
+      "year": 2009,
+      "has_review": true,
+      "review_word_count": 22,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "A Prophet",
+      "directors": [
+        "Jacques Audiard"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "French",
+      "runtime": 155.0,
+      "average_rating": 4.17,
+      "watches": 88746,
+      "likes": 24202,
+      "fans": 1200,
+      "total_ratings": 61621,
+      "director": "Jacques Audiard",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "My Father's Shadow, 2025 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/my-fathers-shadow-2025/",
+      "letterboxd_slug": "my-fathers-shadow-2025",
+      "watched_at": "Tue, 7 Apr 2026 01:13:08 +1200",
+      "logged_at_raw": "Tue, 7 Apr 2026 01:13:08 +1200",
+      "logged_at_iso": "2026-04-06T13:13:08+00:00",
+      "logged_hour": 13,
+      "logged_minute": 13,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/1/1/2/5/1/1311251-my-fathers-shadow-2025-0-600-0-900-crop.jpg?v=8a0d4c5e7a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/1/1/2/5/1/1311251-my-fathers-shadow-2025-0-600-0-900-crop.jpg?v=8a0d4c5e7a",
+      "user_rating": 4.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 68,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "My Father's Shadow",
+      "directors": [
+        "Akinola Davies Jr."
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "NG",
+        "GB",
+        "IE"
+      ],
+      "original_language": "en",
+      "runtime": 93,
+      "tmdb_id": 1432605,
+      "director_source": "tmdb_details_cache",
+      "director": "Akinola Davies Jr."
+    },
+    {
+      "rss_title": "Miami Vice, 2006 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/miami-vice/",
+      "letterboxd_slug": "miami-vice",
+      "watched_at": "Sun, 5 Apr 2026 10:02:34 +1200",
+      "logged_at_raw": "Sun, 5 Apr 2026 10:02:34 +1200",
+      "logged_at_iso": "2026-04-04T22:02:34+00:00",
+      "logged_hour": 22,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/9/6/8/51968-miami-vice-0-600-0-900-crop.jpg?v=323641dcfe",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/9/6/8/51968-miami-vice-0-600-0-900-crop.jpg?v=323641dcfe",
+      "user_rating": 2.5,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 46,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Miami Vice",
+      "directors": [
+        "Michael Mann"
+      ],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "countries": [
+        "Germany",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 132.0,
+      "average_rating": 3.43,
+      "watches": 153221,
+      "likes": 33634,
+      "fans": 1100,
+      "total_ratings": 101710,
+      "director": "Michael Mann",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Bad Lieutenant, 1992 - ★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/bad-lieutenant/",
+      "letterboxd_slug": "bad-lieutenant",
+      "watched_at": "Sat, 4 Apr 2026 08:32:22 +1300",
+      "logged_at_raw": "Sat, 4 Apr 2026 08:32:22 +1300",
+      "logged_at_iso": "2026-04-03T19:32:22+00:00",
+      "logged_hour": 19,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/h6/co/bt/7z/oe8VjWCKXktqA19T1ZWtaSn8rc2-0-600-0-900-crop.jpg?v=6e84444fa6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/h6/co/bt/7z/oe8VjWCKXktqA19T1ZWtaSn8rc2-0-600-0-900-crop.jpg?v=6e84444fa6",
+      "user_rating": 2.0,
+      "year": 1992,
+      "has_review": true,
+      "review_word_count": 14,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Bad Lieutenant",
+      "directors": [
+        "Abel Ferrara"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 96,
+      "tmdb_id": 12143,
+      "director_source": "tmdb_details_cache",
+      "director": "Abel Ferrara"
+    },
+    {
+      "rss_title": "Sarkozy-Gaddafi: The Scandal of All Scandals, 2025 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/sarkozy-gaddafi-the-scandal-of-all-scandals/",
+      "letterboxd_slug": "sarkozy-gaddafi-the-scandal-of-all-scandals",
+      "watched_at": "Tue, 31 Mar 2026 09:36:10 +1300",
+      "logged_at_raw": "Tue, 31 Mar 2026 09:36:10 +1300",
+      "logged_at_iso": "2026-03-30T20:36:10+00:00",
+      "logged_hour": 20,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/7/3/5/7/3/1173573-sarkozy-gaddafi-the-scandal-of-all-scandals-0-600-0-900-crop.jpg?v=f4e54d84bc",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/7/3/5/7/3/1173573-sarkozy-gaddafi-the-scandal-of-all-scandals-0-600-0-900-crop.jpg?v=f4e54d84bc",
+      "user_rating": 4.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 20,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Sarkozy-Gaddafi: The Scandal of All Scandals",
+      "directors": [
+        "Yannick Kergoat"
+      ],
+      "genres": [
+        "Documentary",
+        "Crime"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 103,
+      "tmdb_id": 1290465,
+      "director_source": "tmdb_details_cache",
+      "director": "Yannick Kergoat"
+    },
+    {
+      "rss_title": "The Nice Guys, 2016 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-nice-guys/",
+      "letterboxd_slug": "the-nice-guys",
+      "watched_at": "Mon, 30 Mar 2026 11:00:16 +1300",
+      "logged_at_raw": "Mon, 30 Mar 2026 11:00:16 +1300",
+      "logged_at_iso": "2026-03-29T22:00:16+00:00",
+      "logged_hour": 22,
+      "logged_minute": 0,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/1/6/3/0/1/216301-the-nice-guys-0-600-0-900-crop.jpg?v=40616daa2c",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/1/6/3/0/1/216301-the-nice-guys-0-600-0-900-crop.jpg?v=40616daa2c",
+      "user_rating": 4.0,
+      "year": 2016,
+      "has_review": true,
+      "review_word_count": 32,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Nice Guys",
+      "directors": [
+        "Shane Black"
+      ],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 116.0,
+      "average_rating": 3.83,
+      "watches": 1311006,
+      "likes": 424832,
+      "fans": 12000,
+      "total_ratings": 934467,
+      "director": "Shane Black",
+      "director_source": "megabank"
+    }
+  ],
+  "profile_summary": {
+    "films_analyzed": 50,
+    "megabank_social_count": 18,
+    "supplemental_confirmed_count": 29,
+    "supplemental_review_count": 3,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 0.36,
+    "metadata_coverage_confirmed": 0.94,
+    "metadata_coverage_potential": 1.0,
+    "total_analyzed": 50,
+    "matched_count": 18,
+    "absent_count": 32,
+    "coverage": 0.36,
+    "user_average_rating": 3.47,
+    "community_average_rating": 3.822857142857143,
+    "average_difference": -0.35285714285714276,
+    "runtime_average": 119.11111111111111,
+    "watches_mean": 573411.6111111111,
+    "watches_median": 179263.0,
+    "likes_mean": 176961.61111111112,
+    "fans_mean": 6300.388888888889,
+    "top_genres": [
+      [
+        "Drama",
+        21
+      ],
+      [
+        "Crime",
+        14
+      ],
+      [
+        "Thriller",
+        12
+      ],
+      [
+        "Action",
+        11
+      ],
+      [
+        "Comedy",
+        9
+      ],
+      [
+        "Horror",
+        7
+      ],
+      [
+        "Science Fiction",
+        6
+      ],
+      [
+        "Adventure",
+        5
+      ],
+      [
+        "Animation",
+        4
+      ],
+      [
+        "Documentary",
+        4
+      ]
+    ],
+    "top_countries": [
+      [
+        "USA",
+        24
+      ],
+      [
+        "France",
+        14
+      ],
+      [
+        "UK",
+        5
+      ],
+      [
+        "Germany",
+        3
+      ],
+      [
+        "Italy",
+        3
+      ],
+      [
+        "Japan",
+        2
+      ],
+      [
+        "Canada",
+        2
+      ],
+      [
+        "Hong Kong",
+        2
+      ],
+      [
+        "Denmark",
+        2
+      ],
+      [
+        "Ireland",
+        2
+      ]
+    ],
+    "top_languages": [
+      [
+        "English",
+        26
+      ],
+      [
+        "French",
+        13
+      ],
+      [
+        "Chinese",
+        1
+      ],
+      [
+        "Italian",
+        1
+      ],
+      [
+        "Japanese",
+        1
+      ],
+      [
+        "cn",
+        1
+      ],
+      [
+        "Spanish",
+        1
+      ],
+      [
+        "ar",
+        1
+      ],
+      [
+        "Korean",
+        1
+      ],
+      [
+        "fa",
+        1
+      ]
+    ],
+    "top_directors": [
+      [
+        "Quentin Tarantino",
+        2
+      ],
+      [
+        "Lau Kar-Leung",
+        1
+      ],
+      [
+        "George P. Cosmatos",
+        1
+      ],
+      [
+        "Hiroshi Teshigahara",
+        1
+      ],
+      [
+        "Curry Barker",
+        1
+      ],
+      [
+        "Joseph Sargent",
+        1
+      ],
+      [
+        "Ben Stiller",
+        1
+      ],
+      [
+        "Sidney Lumet",
+        1
+      ],
+      [
+        "Stuart Rosenberg",
+        1
+      ],
+      [
+        "Jaume Balagueró",
+        1
+      ]
+    ],
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    }
+  },
+  "profile_quality": {
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "status": "normal",
+    "is_partial": false,
+    "warning": null
+  },
+  "highlights": {
+    "most_popular": {
+      "rss_title": "Kill Bill: Vol. 1, 2003 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/kill-bill-vol-1/",
+      "letterboxd_slug": "kill-bill-vol-1",
+      "watched_at": "Mon, 27 Apr 2026 01:52:47 +1200",
+      "logged_at_raw": "Mon, 27 Apr 2026 01:52:47 +1200",
+      "logged_at_iso": "2026-04-26T13:52:47+00:00",
+      "logged_hour": 13,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "user_rating": 4.5,
+      "year": 2003,
+      "has_review": true,
+      "review_word_count": 46,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Kill Bill: Vol. 1",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Crime",
+        "Action"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 111.0,
+      "average_rating": null,
+      "watches": 3101840,
+      "likes": 1190762,
+      "fans": 66000,
+      "total_ratings": 2026399,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    "most_niche": {
+      "rss_title": "Returning to Reims, 2021 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/returning-to-reims/",
+      "letterboxd_slug": "returning-to-reims",
+      "watched_at": "Wed, 22 Apr 2026 09:13:15 +1200",
+      "logged_at_raw": "Wed, 22 Apr 2026 09:13:15 +1200",
+      "logged_at_iso": "2026-04-21T21:13:15+00:00",
+      "logged_hour": 21,
+      "logged_minute": 13,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/5/3/3/9/1/753391-returning-to-reims-0-600-0-900-crop.jpg?v=324ea79b59",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/5/3/3/9/1/753391-returning-to-reims-0-600-0-900-crop.jpg?v=324ea79b59",
+      "user_rating": 3.5,
+      "year": 2021,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Returning to Reims",
+      "directors": [
+        "Jean-Gabriel Périot"
+      ],
+      "genres": [
+        "Documentary",
+        "History"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "French",
+      "runtime": 84.0,
+      "average_rating": 3.77,
+      "watches": 2412,
+      "likes": 570,
+      "fans": 8,
+      "total_ratings": 1583,
+      "director": "Jean-Gabriel Périot",
+      "director_source": "megabank"
+    },
+    "most_fans": {
+      "rss_title": "Kill Bill: Vol. 1, 2003 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/kill-bill-vol-1/",
+      "letterboxd_slug": "kill-bill-vol-1",
+      "watched_at": "Mon, 27 Apr 2026 01:52:47 +1200",
+      "logged_at_raw": "Mon, 27 Apr 2026 01:52:47 +1200",
+      "logged_at_iso": "2026-04-26T13:52:47+00:00",
+      "logged_hour": 13,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "user_rating": 4.5,
+      "year": 2003,
+      "has_review": true,
+      "review_word_count": 46,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Kill Bill: Vol. 1",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Crime",
+        "Action"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 111.0,
+      "average_rating": null,
+      "watches": 3101840,
+      "likes": 1190762,
+      "fans": 66000,
+      "total_ratings": 2026399,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    "best_fans_ratio": {
+      "rss_title": "The Face of Another, 1966 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/the-face-of-another/",
+      "letterboxd_slug": "the-face-of-another",
+      "watched_at": "Sun, 7 Jun 2026 09:16:28 +1200",
+      "logged_at_raw": "Sun, 7 Jun 2026 09:16:28 +1200",
+      "logged_at_iso": "2026-06-06T21:16:28+00:00",
+      "logged_hour": 21,
+      "logged_minute": 16,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/fz/b0/yq/rh/h1rbLyfFP9xOXzJt5ODqVfxBWic-0-600-0-900-crop.jpg?v=ba593ea4fd",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/fz/b0/yq/rh/h1rbLyfFP9xOXzJt5ODqVfxBWic-0-600-0-900-crop.jpg?v=ba593ea4fd",
+      "user_rating": 4.5,
+      "year": 1966,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Face of Another",
+      "directors": [
+        "Hiroshi Teshigahara"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Drama"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 122.0,
+      "average_rating": 4.23,
+      "watches": 57704,
+      "likes": 22344,
+      "fans": 1600,
+      "total_ratings": 41630,
+      "director": "Hiroshi Teshigahara",
+      "director_source": "megabank"
+    },
+    "longest": {
+      "rss_title": "A Prophet, 2009 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/a-prophet/",
+      "letterboxd_slug": "a-prophet",
+      "watched_at": "Tue, 7 Apr 2026 06:14:39 +1200",
+      "logged_at_raw": "Tue, 7 Apr 2026 06:14:39 +1200",
+      "logged_at_iso": "2026-04-06T18:14:39+00:00",
+      "logged_hour": 18,
+      "logged_minute": 14,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/1e/n7/st/bb/eQpVD55Kqhx0l4HGvZasYWEMXXJ-0-600-0-900-crop.jpg?v=fc2b368c4e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/1e/n7/st/bb/eQpVD55Kqhx0l4HGvZasYWEMXXJ-0-600-0-900-crop.jpg?v=fc2b368c4e",
+      "user_rating": 5.0,
+      "year": 2009,
+      "has_review": true,
+      "review_word_count": 22,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "A Prophet",
+      "directors": [
+        "Jacques Audiard"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "French",
+      "runtime": 155.0,
+      "average_rating": 4.17,
+      "watches": 88746,
+      "likes": 24202,
+      "fans": 1200,
+      "total_ratings": 61621,
+      "director": "Jacques Audiard",
+      "director_source": "megabank"
+    },
+    "shortest": {
+      "rss_title": "Vertiginous, 2026 - ★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/vertiginous/",
+      "letterboxd_slug": "vertiginous",
+      "watched_at": "Sun, 28 Jun 2026 02:32:59 +1200",
+      "logged_at_raw": "Sun, 28 Jun 2026 02:32:59 +1200",
+      "logged_at_iso": "2026-06-27T14:32:59+00:00",
+      "logged_hour": 14,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/1/0/1/4/1531014-vertiginous-0-600-0-900-crop.jpg?v=2233c93bb4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/1/0/1/4/1531014-vertiginous-0-600-0-900-crop.jpg?v=2233c93bb4",
+      "user_rating": 2.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 46,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Vertiginous",
+      "directors": [
+        "Quentin Dupieux"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Science Fiction"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1668499,
+      "director_source": "tmdb_details_cache",
+      "director": "Quentin Dupieux"
+    }
+  }
+}

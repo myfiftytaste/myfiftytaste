@@ -1,0 +1,1618 @@
+{
+  "user": "qa_50_films",
+  "rss_url": "https://letterboxd.com/qa_50_films/rss/",
+  "generated_at": "2026-01-01T00:00:00Z",
+  "films": [
+    {
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "title": "QA Film 0",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-0/",
+      "letterboxd_slug": "qa-film-0",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2000,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 90,
+      "average_rating": 3.6,
+      "watches": 10000,
+      "likes": 1000,
+      "fans": 100,
+      "total_ratings": 5000
+    },
+    {
+      "rss_title": "QA Film 1, 2001 - ★★★½",
+      "title": "QA Film 1",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-1/",
+      "letterboxd_slug": "qa-film-1",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2001,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 1"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 91,
+      "average_rating": 3.7,
+      "watches": 12500,
+      "likes": 1100,
+      "fans": 110,
+      "total_ratings": 5200
+    },
+    {
+      "rss_title": "QA Film 2, 2002 - ★★★½",
+      "title": "QA Film 2",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-2/",
+      "letterboxd_slug": "qa-film-2",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2002,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 2"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 92,
+      "average_rating": 3.8000000000000003,
+      "watches": 15000,
+      "likes": 1200,
+      "fans": 120,
+      "total_ratings": 5400
+    },
+    {
+      "rss_title": "QA Film 3, 2003 - ★★★½",
+      "title": "QA Film 3",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-3/",
+      "letterboxd_slug": "qa-film-3",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2003,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 3"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 93,
+      "average_rating": 3.9,
+      "watches": 17500,
+      "likes": 1300,
+      "fans": 130,
+      "total_ratings": 5600
+    },
+    {
+      "rss_title": "QA Film 4, 2004 - ★★★½",
+      "title": "QA Film 4",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-4/",
+      "letterboxd_slug": "qa-film-4",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2004,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 4"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 94,
+      "average_rating": 4.0,
+      "watches": 20000,
+      "likes": 1400,
+      "fans": 140,
+      "total_ratings": 5800
+    },
+    {
+      "rss_title": "QA Film 5, 2005 - ★★★½",
+      "title": "QA Film 5",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-5/",
+      "letterboxd_slug": "qa-film-5",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2005,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 5"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 95,
+      "average_rating": 4.1,
+      "watches": 22500,
+      "likes": 1500,
+      "fans": 150,
+      "total_ratings": 6000
+    },
+    {
+      "rss_title": "QA Film 6, 2006 - ★★★½",
+      "title": "QA Film 6",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-6/",
+      "letterboxd_slug": "qa-film-6",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 6"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 96,
+      "average_rating": 4.2,
+      "watches": 25000,
+      "likes": 1600,
+      "fans": 160,
+      "total_ratings": 6200
+    },
+    {
+      "rss_title": "QA Film 7, 2007 - ★★★½",
+      "title": "QA Film 7",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-7/",
+      "letterboxd_slug": "qa-film-7",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2007,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 97,
+      "average_rating": 4.3,
+      "watches": 27500,
+      "likes": 1700,
+      "fans": 170,
+      "total_ratings": 6400
+    },
+    {
+      "rss_title": "QA Film 8, 2008 - ★★★½",
+      "title": "QA Film 8",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-8/",
+      "letterboxd_slug": "qa-film-8",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2008,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 1"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 98,
+      "average_rating": 3.6,
+      "watches": 30000,
+      "likes": 1800,
+      "fans": 180,
+      "total_ratings": 6600
+    },
+    {
+      "rss_title": "QA Film 9, 2009 - ★★★½",
+      "title": "QA Film 9",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-9/",
+      "letterboxd_slug": "qa-film-9",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2009,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 2"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 99,
+      "average_rating": 3.7,
+      "watches": 32500,
+      "likes": 1900,
+      "fans": 190,
+      "total_ratings": 6800
+    },
+    {
+      "rss_title": "QA Film 10, 2010 - ★★★½",
+      "title": "QA Film 10",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-10/",
+      "letterboxd_slug": "qa-film-10",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2010,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 3"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 100,
+      "average_rating": 3.8000000000000003,
+      "watches": 35000,
+      "likes": 2000,
+      "fans": 200,
+      "total_ratings": 7000
+    },
+    {
+      "rss_title": "QA Film 11, 2011 - ★★★½",
+      "title": "QA Film 11",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-11/",
+      "letterboxd_slug": "qa-film-11",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2011,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 4"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 101,
+      "average_rating": 3.9,
+      "watches": 37500,
+      "likes": 2100,
+      "fans": 210,
+      "total_ratings": 7200
+    },
+    {
+      "rss_title": "QA Film 12, 2012 - ★★★½",
+      "title": "QA Film 12",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-12/",
+      "letterboxd_slug": "qa-film-12",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2012,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 5"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 102,
+      "average_rating": 4.0,
+      "watches": 40000,
+      "likes": 2200,
+      "fans": 220,
+      "total_ratings": 7400
+    },
+    {
+      "rss_title": "QA Film 13, 2013 - ★★★½",
+      "title": "QA Film 13",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-13/",
+      "letterboxd_slug": "qa-film-13",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2013,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 6"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 103,
+      "average_rating": 4.1,
+      "watches": 42500,
+      "likes": 2300,
+      "fans": 230,
+      "total_ratings": 7600
+    },
+    {
+      "rss_title": "QA Film 14, 2014 - ★★★½",
+      "title": "QA Film 14",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-14/",
+      "letterboxd_slug": "qa-film-14",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2014,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 104,
+      "average_rating": 4.2,
+      "watches": 45000,
+      "likes": 2400,
+      "fans": 240,
+      "total_ratings": 7800
+    },
+    {
+      "rss_title": "QA Film 15, 2015 - ★★★½",
+      "title": "QA Film 15",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-15/",
+      "letterboxd_slug": "qa-film-15",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2015,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 1"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 105,
+      "average_rating": 4.3,
+      "watches": 47500,
+      "likes": 2500,
+      "fans": 250,
+      "total_ratings": 8000
+    },
+    {
+      "rss_title": "QA Film 16, 2016 - ★★★½",
+      "title": "QA Film 16",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-16/",
+      "letterboxd_slug": "qa-film-16",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2016,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 2"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 106,
+      "average_rating": 3.6,
+      "watches": 50000,
+      "likes": 2600,
+      "fans": 260,
+      "total_ratings": 8200
+    },
+    {
+      "rss_title": "QA Film 17, 2017 - ★★★½",
+      "title": "QA Film 17",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-17/",
+      "letterboxd_slug": "qa-film-17",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2017,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 3"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 107,
+      "average_rating": 3.7,
+      "watches": 52500,
+      "likes": 2700,
+      "fans": 270,
+      "total_ratings": 8400
+    },
+    {
+      "rss_title": "QA Film 18, 2018 - ★★★½",
+      "title": "QA Film 18",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-18/",
+      "letterboxd_slug": "qa-film-18",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2018,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 4"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 108,
+      "average_rating": 3.8000000000000003,
+      "watches": 55000,
+      "likes": 2800,
+      "fans": 280,
+      "total_ratings": 8600
+    },
+    {
+      "rss_title": "QA Film 19, 2019 - ★★★½",
+      "title": "QA Film 19",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-19/",
+      "letterboxd_slug": "qa-film-19",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2019,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 5"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 109,
+      "average_rating": 3.9,
+      "watches": 57500,
+      "likes": 2900,
+      "fans": 290,
+      "total_ratings": 8800
+    },
+    {
+      "rss_title": "QA Film 20, 2000 - ★★★½",
+      "title": "QA Film 20",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-20/",
+      "letterboxd_slug": "qa-film-20",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2000,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 6"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 110,
+      "average_rating": 4.0,
+      "watches": 60000,
+      "likes": 3000,
+      "fans": 300,
+      "total_ratings": 9000
+    },
+    {
+      "rss_title": "QA Film 21, 2001 - ★★★½",
+      "title": "QA Film 21",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-21/",
+      "letterboxd_slug": "qa-film-21",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 111,
+      "average_rating": 4.1,
+      "watches": 62500,
+      "likes": 3100,
+      "fans": 310,
+      "total_ratings": 9200
+    },
+    {
+      "rss_title": "QA Film 22, 2002 - ★★★½",
+      "title": "QA Film 22",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-22/",
+      "letterboxd_slug": "qa-film-22",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2002,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 1"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 112,
+      "average_rating": 4.2,
+      "watches": 65000,
+      "likes": 3200,
+      "fans": 320,
+      "total_ratings": 9400
+    },
+    {
+      "rss_title": "QA Film 23, 2003 - ★★★½",
+      "title": "QA Film 23",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-23/",
+      "letterboxd_slug": "qa-film-23",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2003,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 2"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 113,
+      "average_rating": 4.3,
+      "watches": 67500,
+      "likes": 3300,
+      "fans": 330,
+      "total_ratings": 9600
+    },
+    {
+      "rss_title": "QA Film 24, 2004 - ★★★½",
+      "title": "QA Film 24",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-24/",
+      "letterboxd_slug": "qa-film-24",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2004,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 3"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 114,
+      "average_rating": 3.6,
+      "watches": 70000,
+      "likes": 3400,
+      "fans": 340,
+      "total_ratings": 9800
+    },
+    {
+      "rss_title": "QA Film 25, 2005 - ★★★½",
+      "title": "QA Film 25",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-25/",
+      "letterboxd_slug": "qa-film-25",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2005,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 4"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 115,
+      "average_rating": 3.7,
+      "watches": 72500,
+      "likes": 3500,
+      "fans": 350,
+      "total_ratings": 10000
+    },
+    {
+      "rss_title": "QA Film 26, 2006 - ★★★½",
+      "title": "QA Film 26",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-26/",
+      "letterboxd_slug": "qa-film-26",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2006,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 5"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 116,
+      "average_rating": 3.8000000000000003,
+      "watches": 75000,
+      "likes": 3600,
+      "fans": 360,
+      "total_ratings": 10200
+    },
+    {
+      "rss_title": "QA Film 27, 2007 - ★★★½",
+      "title": "QA Film 27",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-27/",
+      "letterboxd_slug": "qa-film-27",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2007,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 6"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 117,
+      "average_rating": 3.9,
+      "watches": 77500,
+      "likes": 3700,
+      "fans": 370,
+      "total_ratings": 10400
+    },
+    {
+      "rss_title": "QA Film 28, 2008 - ★★★½",
+      "title": "QA Film 28",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-28/",
+      "letterboxd_slug": "qa-film-28",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2008,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 118,
+      "average_rating": 4.0,
+      "watches": 80000,
+      "likes": 3800,
+      "fans": 380,
+      "total_ratings": 10600
+    },
+    {
+      "rss_title": "QA Film 29, 2009 - ★★★½",
+      "title": "QA Film 29",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-29/",
+      "letterboxd_slug": "qa-film-29",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2009,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 1"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 119,
+      "average_rating": 4.1,
+      "watches": 82500,
+      "likes": 3900,
+      "fans": 390,
+      "total_ratings": 10800
+    },
+    {
+      "rss_title": "QA Film 30, 2010 - ★★★½",
+      "title": "QA Film 30",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-30/",
+      "letterboxd_slug": "qa-film-30",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2010,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 2"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 120,
+      "average_rating": 4.2,
+      "watches": 85000,
+      "likes": 4000,
+      "fans": 400,
+      "total_ratings": 11000
+    },
+    {
+      "rss_title": "QA Film 31, 2011 - ★★★½",
+      "title": "QA Film 31",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-31/",
+      "letterboxd_slug": "qa-film-31",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2011,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 3"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 121,
+      "average_rating": 4.3,
+      "watches": 87500,
+      "likes": 4100,
+      "fans": 410,
+      "total_ratings": 11200
+    },
+    {
+      "rss_title": "QA Film 32, 2012 - ★★★½",
+      "title": "QA Film 32",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-32/",
+      "letterboxd_slug": "qa-film-32",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2012,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 4"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 122,
+      "average_rating": 3.6,
+      "watches": 90000,
+      "likes": 4200,
+      "fans": 420,
+      "total_ratings": 11400
+    },
+    {
+      "rss_title": "QA Film 33, 2013 - ★★★½",
+      "title": "QA Film 33",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-33/",
+      "letterboxd_slug": "qa-film-33",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 5"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 123,
+      "average_rating": 3.7,
+      "watches": 92500,
+      "likes": 4300,
+      "fans": 430,
+      "total_ratings": 11600
+    },
+    {
+      "rss_title": "QA Film 34, 2014 - ★★★½",
+      "title": "QA Film 34",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-34/",
+      "letterboxd_slug": "qa-film-34",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2014,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 6"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 124,
+      "average_rating": 3.8000000000000003,
+      "watches": 95000,
+      "likes": 4400,
+      "fans": 440,
+      "total_ratings": 11800
+    },
+    {
+      "rss_title": "QA Film 35, 2015 - ★★★½",
+      "title": "QA Film 35",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-35/",
+      "letterboxd_slug": "qa-film-35",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2015,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 125,
+      "average_rating": 3.9,
+      "watches": 97500,
+      "likes": 4500,
+      "fans": 450,
+      "total_ratings": 12000
+    },
+    {
+      "rss_title": "QA Film 36, 2016 - ★★★½",
+      "title": "QA Film 36",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-36/",
+      "letterboxd_slug": "qa-film-36",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2016,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 1"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 126,
+      "average_rating": 4.0,
+      "watches": 100000,
+      "likes": 4600,
+      "fans": 460,
+      "total_ratings": 12200
+    },
+    {
+      "rss_title": "QA Film 37, 2017 - ★★★½",
+      "title": "QA Film 37",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-37/",
+      "letterboxd_slug": "qa-film-37",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2017,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 2"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 127,
+      "average_rating": 4.1,
+      "watches": 102500,
+      "likes": 4700,
+      "fans": 470,
+      "total_ratings": 12400
+    },
+    {
+      "rss_title": "QA Film 38, 2018 - ★★★½",
+      "title": "QA Film 38",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-38/",
+      "letterboxd_slug": "qa-film-38",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2018,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 3"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 128,
+      "average_rating": 4.2,
+      "watches": 105000,
+      "likes": 4800,
+      "fans": 480,
+      "total_ratings": 12600
+    },
+    {
+      "rss_title": "QA Film 39, 2019 - ★★★½",
+      "title": "QA Film 39",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-39/",
+      "letterboxd_slug": "qa-film-39",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2019,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 4"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 129,
+      "average_rating": 4.3,
+      "watches": 107500,
+      "likes": 4900,
+      "fans": 490,
+      "total_ratings": 12800
+    },
+    {
+      "rss_title": "QA Film 40, 2000 - ★★★½",
+      "title": "QA Film 40",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-40/",
+      "letterboxd_slug": "qa-film-40",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2000,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 5"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 130,
+      "average_rating": 3.6,
+      "watches": 110000,
+      "likes": 5000,
+      "fans": 500,
+      "total_ratings": 13000
+    },
+    {
+      "rss_title": "QA Film 41, 2001 - ★★★½",
+      "title": "QA Film 41",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-41/",
+      "letterboxd_slug": "qa-film-41",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2001,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 6"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 131,
+      "average_rating": 3.7,
+      "watches": 112500,
+      "likes": 5100,
+      "fans": 510,
+      "total_ratings": 13200
+    },
+    {
+      "rss_title": "QA Film 42, 2002 - ★★★½",
+      "title": "QA Film 42",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-42/",
+      "letterboxd_slug": "qa-film-42",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2002,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 132,
+      "average_rating": 3.8000000000000003,
+      "watches": 115000,
+      "likes": 5200,
+      "fans": 520,
+      "total_ratings": 13400
+    },
+    {
+      "rss_title": "QA Film 43, 2003 - ★★★½",
+      "title": "QA Film 43",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-43/",
+      "letterboxd_slug": "qa-film-43",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2003,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 1"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 133,
+      "average_rating": 3.9,
+      "watches": 117500,
+      "likes": 5300,
+      "fans": 530,
+      "total_ratings": 13600
+    },
+    {
+      "rss_title": "QA Film 44, 2004 - ★★★½",
+      "title": "QA Film 44",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-44/",
+      "letterboxd_slug": "qa-film-44",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2004,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 2"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 134,
+      "average_rating": 4.0,
+      "watches": 120000,
+      "likes": 5400,
+      "fans": 540,
+      "total_ratings": 13800
+    },
+    {
+      "rss_title": "QA Film 45, 2005 - ★★★½",
+      "title": "QA Film 45",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-45/",
+      "letterboxd_slug": "qa-film-45",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2005,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 3"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 90,
+      "average_rating": 4.1,
+      "watches": 122500,
+      "likes": 5500,
+      "fans": 550,
+      "total_ratings": 14000
+    },
+    {
+      "rss_title": "QA Film 46, 2006 - ★★★½",
+      "title": "QA Film 46",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-46/",
+      "letterboxd_slug": "qa-film-46",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2006,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 4"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "English",
+      "runtime": 91,
+      "average_rating": 4.2,
+      "watches": 125000,
+      "likes": 5600,
+      "fans": 560,
+      "total_ratings": 14200
+    },
+    {
+      "rss_title": "QA Film 47, 2007 - ★★★½",
+      "title": "QA Film 47",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-47/",
+      "letterboxd_slug": "qa-film-47",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2007,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 5"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "English",
+      "runtime": 92,
+      "average_rating": 4.3,
+      "watches": 127500,
+      "likes": 5700,
+      "fans": 570,
+      "total_ratings": 14400
+    },
+    {
+      "rss_title": "QA Film 48, 2008 - ★★★½",
+      "title": "QA Film 48",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-48/",
+      "letterboxd_slug": "qa-film-48",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 6"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 93,
+      "average_rating": 3.6,
+      "watches": 130000,
+      "likes": 5800,
+      "fans": 580,
+      "total_ratings": 14600
+    },
+    {
+      "rss_title": "QA Film 49, 2009 - ★★★½",
+      "title": "QA Film 49",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-49/",
+      "letterboxd_slug": "qa-film-49",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2009,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 94,
+      "average_rating": 3.7,
+      "watches": 132500,
+      "likes": 5900,
+      "fans": 590,
+      "total_ratings": 14800
+    }
+  ],
+  "profile_summary": {
+    "films_analyzed": 50
+  },
+  "profile_quality": {
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "status": "normal",
+    "is_partial": false,
+    "warning": null
+  },
+  "highlights": {}
+}

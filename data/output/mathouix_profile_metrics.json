@@ -1,0 +1,1740 @@
+{
+  "user": "mathouix",
+  "source_file": "data\\output\\mathouix_wrapped.json",
+  "coverage": {
+    "total_films_analyzed": 50,
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    },
+    "social_films_count": 26,
+    "confirmed_metadata_films_count": 46,
+    "potential_metadata_films_count": 50,
+    "supplemental_review_count": 4,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 0.52,
+    "confirmed_metadata_coverage": 0.92,
+    "potential_metadata_coverage": 1.0,
+    "review_count": 29,
+    "review_rate": 0.58
+  },
+  "radar_scores": {
+    "mainstreamness": {
+      "value_5": 5,
+      "raw_value": 92.91763717727153,
+      "label": "Popularité moyenne",
+      "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
+      "data_source": "26 films with Megabank social stats",
+      "confidence": "high"
+    },
+    "oldness": {
+      "value_5": 2,
+      "raw_value": 13.579999999999927,
+      "average_year": 2012.42,
+      "label": "Âge moyen",
+      "description": "Tendance dérivée de l'année moyenne de sortie de tes 50 films détectés.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    },
+    "endurance": {
+      "value_5": 4,
+      "raw_value": 122.08695652173913,
+      "label": "Endurance",
+      "description": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
+      "data_source": "46 films with confirmed metadata",
+      "confidence": "high"
+    },
+    "reviewness": {
+      "value_5": 3,
+      "raw_value": 29,
+      "review_count": 29,
+      "review_rate": 0.58,
+      "label": "Carnet régulier",
+      "description": "Ton profil ressemble déjà à un carnet de cinéma régulier.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    }
+  },
+  "log_time_profile": {
+    "average_time": "20:48",
+    "average_hour_decimal": 20.8,
+    "period": "evening",
+    "label": "Prime time",
+    "description": "Tes films sont surtout loggés en soirée.",
+    "data_source": "50 films from Letterboxd RSS",
+    "confidence": "high"
+  },
+  "rating_personality": {
+    "user_average_rating": 3.6145833333333335,
+    "community_average_rating": 4.13047619047619,
+    "average_difference": -0.5158928571428567,
+    "paired_user_average_rating": 3.6842105263157894,
+    "paired_community_average_rating": 4.164736842105263,
+    "paired_average_difference": -0.4805263157894738,
+    "paired_count": 19,
+    "method": "paired_gap",
+    "label": "severe"
+  },
+  "niche_profile": {
+    "watches_median": 1256522.0,
+    "watches_mean": 1528813.5384615385,
+    "most_niche_film": {
+      "rss_title": "964 Pinocchio, 1991",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/964-pinocchio/",
+      "letterboxd_slug": "964-pinocchio",
+      "watched_at": "Thu, 5 Feb 2026 12:04:01 +1300",
+      "logged_at_raw": "Thu, 5 Feb 2026 12:04:01 +1300",
+      "logged_at_iso": "2026-02-04T23:04:01+00:00",
+      "logged_hour": 23,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/4/8/5/15485-964-pinocchio-0-600-0-900-crop.jpg?v=2a2ab5e556",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/4/8/5/15485-964-pinocchio-0-600-0-900-crop.jpg?v=2a2ab5e556",
+      "user_rating": null,
+      "year": 1991,
+      "has_review": true,
+      "review_word_count": 136,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "964 Pinocchio",
+      "directors": [
+        "Shozin Fukui"
+      ],
+      "genres": [
+        "Thriller",
+        "Horror",
+        "Science Fiction"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 97.0,
+      "average_rating": 3.36,
+      "watches": 25141,
+      "likes": 8161,
+      "fans": 366,
+      "total_ratings": 18160,
+      "director": "Shozin Fukui",
+      "director_source": "megabank"
+    },
+    "most_mainstream_film": {
+      "rss_title": "The Dark Knight, 2008 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-dark-knight/",
+      "letterboxd_slug": "the-dark-knight",
+      "watched_at": "Sun, 21 Dec 2025 23:51:35 +1300",
+      "logged_at_raw": "Sun, 21 Dec 2025 23:51:35 +1300",
+      "logged_at_iso": "2025-12-21T10:51:35+00:00",
+      "logged_hour": 10,
+      "logged_minute": 51,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-600-0-900-crop.jpg?v=2d0ce4be25",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-600-0-900-crop.jpg?v=2d0ce4be25",
+      "user_rating": 4.0,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 130,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Dark Knight",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 152.0,
+      "average_rating": 4.48,
+      "watches": 4488171,
+      "likes": 1986315,
+      "fans": 110000,
+      "total_ratings": 2992201,
+      "director": "Christopher Nolan",
+      "director_source": "megabank"
+    },
+    "niche_index": 7.082362822728477,
+    "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
+  },
+  "cult_profile": {
+    "best_cult_film": {
+      "rss_title": "La La Land, 2016 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/la-la-land/",
+      "letterboxd_slug": "la-la-land",
+      "watched_at": "Mon, 24 Feb 2025 13:07:37 +1300",
+      "logged_at_raw": "Mon, 24 Feb 2025 13:07:37 +1300",
+      "logged_at_iso": "2025-02-24T00:07:37+00:00",
+      "logged_hour": 0,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "user_rating": 3.5,
+      "year": 2016,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "La La Land",
+      "directors": [
+        "Damien Chazelle"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Music",
+        "Romance"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 129.0,
+      "average_rating": null,
+      "watches": 4393174,
+      "likes": 1979547,
+      "fans": 285000,
+      "total_ratings": 3220252,
+      "director": "Damien Chazelle",
+      "director_source": "megabank"
+    },
+    "best_cult_ratio": 0.06487336945907446,
+    "average_cult_ratio": 0.026422749516332677,
+    "cult_index": 100.0,
+    "formula": "fans / watches per social film; cult_index = clamp(average_cult_ratio / 0.02 * 100, 0, 100). A 2% average fans/watches ratio maps to 100."
+  },
+  "runtime_profile": {
+    "runtime_average": 122.08695652173913,
+    "runtime_included_count": 46,
+    "runtime_excluded_count": 4,
+    "runtime_invalid_metadata_count": 0,
+    "shortest_film": {
+      "rss_title": "Perfect Blue, 1997 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/perfect-blue/",
+      "letterboxd_slug": "perfect-blue",
+      "watched_at": "Fri, 3 Oct 2025 01:57:03 +1300",
+      "logged_at_raw": "Fri, 3 Oct 2025 01:57:03 +1300",
+      "logged_at_iso": "2025-10-02T12:57:03+00:00",
+      "logged_hour": 12,
+      "logged_minute": 57,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/1/7/5/46175-perfect-blue-0-600-0-900-crop.jpg?v=1ed5878cce",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/1/7/5/46175-perfect-blue-0-600-0-900-crop.jpg?v=1ed5878cce",
+      "user_rating": 4.0,
+      "year": 1997,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Perfect Blue",
+      "directors": [
+        "Satoshi Kon"
+      ],
+      "genres": [
+        "Thriller",
+        "Animation",
+        "Horror"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 82.0,
+      "average_rating": 4.39,
+      "watches": 1014401,
+      "likes": 461297,
+      "fans": 42000,
+      "total_ratings": 767913,
+      "director": "Satoshi Kon",
+      "director_source": "megabank"
+    },
+    "longest_film": {
+      "rss_title": "Avatar: Fire and Ash, 2025 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/avatar-fire-and-ash/",
+      "letterboxd_slug": "avatar-fire-and-ash",
+      "watched_at": "Fri, 26 Dec 2025 22:52:23 +1300",
+      "logged_at_raw": "Fri, 26 Dec 2025 22:52:23 +1300",
+      "logged_at_iso": "2025-12-26T09:52:23+00:00",
+      "logged_hour": 9,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "user_rating": 3.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 82,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Avatar: Fire and Ash",
+      "directors": [
+        "James Cameron"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 198,
+      "tmdb_id": 83533,
+      "director_source": "tmdb_details_cache",
+      "director": "James Cameron"
+    },
+    "label": "standard runtime"
+  },
+  "genre_dna": {
+    "top_genres": [
+      [
+        "Drama",
+        28
+      ],
+      [
+        "Comedy",
+        16
+      ],
+      [
+        "Thriller",
+        15
+      ],
+      [
+        "Crime",
+        9
+      ],
+      [
+        "Animation",
+        8
+      ],
+      [
+        "Science Fiction",
+        8
+      ],
+      [
+        "Mystery",
+        8
+      ],
+      [
+        "Romance",
+        7
+      ],
+      [
+        "Horror",
+        6
+      ],
+      [
+        "Fantasy",
+        6
+      ]
+    ],
+    "genre_diversity_count": 15,
+    "dominant_genre": "Drama",
+    "dominant_genre_share": 0.21212121212121213
+  },
+  "genre_bubbles": [
+    {
+      "genre": "Drama",
+      "count": 28,
+      "share": 0.21212121212121213,
+      "size": 140.0,
+      "average_user_rating": 3.7,
+      "average_community_rating": 4.22,
+      "rating_gap": -0.52,
+      "films": [
+        {
+          "title": "Phantom of the Paradise",
+          "year": 1974,
+          "slug": null
+        },
+        {
+          "title": "I Swear",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "After Hours",
+          "year": 1985,
+          "slug": null
+        },
+        {
+          "title": "The Godfather",
+          "year": 1972,
+          "slug": null
+        },
+        {
+          "title": "Sundays",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Submarine",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Hamnet",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Punch-Drunk Love",
+          "year": 2002,
+          "slug": null
+        },
+        {
+          "title": "The Secret Agent",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Fargo",
+          "year": 1996,
+          "slug": null
+        },
+        {
+          "title": "Little Miss Sunshine",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "The Dark Knight",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Perfect Days",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "Collateral",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "The Shawshank Redemption",
+          "year": 1994,
+          "slug": null
+        },
+        {
+          "title": "Mulholland Drive",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Requiem for a Dream",
+          "year": 2000,
+          "slug": null
+        },
+        {
+          "title": "Metropolis",
+          "year": 1927,
+          "slug": null
+        },
+        {
+          "title": "Sink or Swim",
+          "year": 2018,
+          "slug": null
+        },
+        {
+          "title": "Monster",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "Oldboy",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "Manchester by the Sea",
+          "year": 2016,
+          "slug": null
+        },
+        {
+          "title": "Sirāt",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "La La Land",
+          "year": 2016,
+          "slug": null
+        },
+        {
+          "title": "The Shape of Water",
+          "year": 2017,
+          "slug": null
+        },
+        {
+          "title": "Anora",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Jim's Story",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "The Prestige",
+          "year": 2006,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Comedy",
+      "count": 16,
+      "share": 0.12121212121212122,
+      "size": 97.14,
+      "average_user_rating": 3.25,
+      "average_community_rating": 4.05,
+      "rating_gap": -0.8,
+      "films": [
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Phantom of the Paradise",
+          "year": 1974,
+          "slug": null
+        },
+        {
+          "title": "Hoppers",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Alter Ego",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "After Hours",
+          "year": 1985,
+          "slug": null
+        },
+        {
+          "title": "Submarine",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Punch-Drunk Love",
+          "year": 2002,
+          "slug": null
+        },
+        {
+          "title": "Fargo",
+          "year": 1996,
+          "slug": null
+        },
+        {
+          "title": "One Battle After Another",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Little Miss Sunshine",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Zootopia 2",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Knives Out",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "Sink or Swim",
+          "year": 2018,
+          "slug": null
+        },
+        {
+          "title": "La La Land",
+          "year": 2016,
+          "slug": null
+        },
+        {
+          "title": "Anora",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Jim's Story",
+          "year": 2024,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Thriller",
+      "count": 15,
+      "share": 0.11363636363636363,
+      "size": 93.57,
+      "average_user_rating": 3.43,
+      "average_community_rating": 4.19,
+      "rating_gap": -0.76,
+      "films": [
+        {
+          "title": "Phantom of the Paradise",
+          "year": 1974,
+          "slug": null
+        },
+        {
+          "title": "Primal",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "After Hours",
+          "year": 1985,
+          "slug": null
+        },
+        {
+          "title": "964 Pinocchio",
+          "year": 1991,
+          "slug": null
+        },
+        {
+          "title": "The Secret Agent",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Fargo",
+          "year": 1996,
+          "slug": null
+        },
+        {
+          "title": "One Battle After Another",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Dark Knight",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Collateral",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "Mulholland Drive",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Monster",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "Oldboy",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "Perfect Blue",
+          "year": 1997,
+          "slug": null
+        },
+        {
+          "title": "Sirāt",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Sinners",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Crime",
+      "count": 9,
+      "share": 0.06818181818181818,
+      "size": 72.14,
+      "average_user_rating": 3.61,
+      "average_community_rating": 4.35,
+      "rating_gap": -0.74,
+      "films": [
+        {
+          "title": "The Godfather",
+          "year": 1972,
+          "slug": null
+        },
+        {
+          "title": "The Secret Agent",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Fargo",
+          "year": 1996,
+          "slug": null
+        },
+        {
+          "title": "One Battle After Another",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Dark Knight",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Collateral",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "The Shawshank Redemption",
+          "year": 1994,
+          "slug": null
+        },
+        {
+          "title": "Requiem for a Dream",
+          "year": 2000,
+          "slug": null
+        },
+        {
+          "title": "Knives Out",
+          "year": 2019,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Animation",
+      "count": 8,
+      "share": 0.06060606060606061,
+      "size": 68.57,
+      "average_user_rating": 3.81,
+      "average_community_rating": 4.31,
+      "rating_gap": -0.5,
+      "films": [
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Hoppers",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Song of the Sea",
+          "year": 2014,
+          "slug": null
+        },
+        {
+          "title": "Zootopia 2",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Arco",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Perfect Blue",
+          "year": 1997,
+          "slug": null
+        },
+        {
+          "title": "Flow",
+          "year": 2024,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Science Fiction",
+      "count": 8,
+      "share": 0.06060606060606061,
+      "size": 68.57,
+      "average_user_rating": 3.67,
+      "average_community_rating": 3.86,
+      "rating_gap": -0.2,
+      "films": [
+        {
+          "title": "Hoppers",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "964 Pinocchio",
+          "year": 1991,
+          "slug": null
+        },
+        {
+          "title": "Avatar: Fire and Ash",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Watchmen",
+          "year": 2009,
+          "slug": null
+        },
+        {
+          "title": "Arco",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Metropolis",
+          "year": 1927,
+          "slug": null
+        },
+        {
+          "title": "The Substance",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "The Prestige",
+          "year": 2006,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Mystery",
+      "count": 8,
+      "share": 0.06060606060606061,
+      "size": 68.57,
+      "average_user_rating": 3.88,
+      "average_community_rating": 4.14,
+      "rating_gap": -0.26,
+      "films": [
+        {
+          "title": "Zootopia 2",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Watchmen",
+          "year": 2009,
+          "slug": null
+        },
+        {
+          "title": "Mulholland Drive",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Knives Out",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "Monster",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "Oldboy",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "Weapons",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Prestige",
+          "year": 2006,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Romance",
+      "count": 7,
+      "share": 0.05303030303030303,
+      "size": 65.0,
+      "average_user_rating": 3.29,
+      "average_community_rating": 3.83,
+      "rating_gap": -0.54,
+      "films": [
+        {
+          "title": "Phantom of the Paradise",
+          "year": 1974,
+          "slug": null
+        },
+        {
+          "title": "Submarine",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Hamnet",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Punch-Drunk Love",
+          "year": 2002,
+          "slug": null
+        },
+        {
+          "title": "La La Land",
+          "year": 2016,
+          "slug": null
+        },
+        {
+          "title": "The Shape of Water",
+          "year": 2017,
+          "slug": null
+        },
+        {
+          "title": "Anora",
+          "year": 2024,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Horror",
+      "count": 6,
+      "share": 0.045454545454545456,
+      "size": 61.43,
+      "average_user_rating": 3.4,
+      "average_community_rating": 3.85,
+      "rating_gap": -0.45,
+      "films": [
+        {
+          "title": "Phantom of the Paradise",
+          "year": 1974,
+          "slug": null
+        },
+        {
+          "title": "964 Pinocchio",
+          "year": 1991,
+          "slug": null
+        },
+        {
+          "title": "Weapons",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Perfect Blue",
+          "year": 1997,
+          "slug": null
+        },
+        {
+          "title": "Sinners",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Substance",
+          "year": 2024,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Fantasy",
+      "count": 6,
+      "share": 0.045454545454545456,
+      "size": 61.43,
+      "average_user_rating": 3.08,
+      "average_community_rating": 3.95,
+      "rating_gap": -0.86,
+      "films": [
+        {
+          "title": "Phantom of the Paradise",
+          "year": 1974,
+          "slug": null
+        },
+        {
+          "title": "Song of the Sea",
+          "year": 2014,
+          "slug": null
+        },
+        {
+          "title": "Avatar: Fire and Ash",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Shape of Water",
+          "year": 2017,
+          "slug": null
+        },
+        {
+          "title": "Flow",
+          "year": 2024,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Adventure",
+      "count": 6,
+      "share": 0.045454545454545456,
+      "size": 61.43,
+      "average_user_rating": 3.58,
+      "average_community_rating": null,
+      "rating_gap": null,
+      "films": [
+        {
+          "title": "Hoppers",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Primal",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "Avatar: Fire and Ash",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Zootopia 2",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Arco",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Flow",
+          "year": 2024,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Action",
+      "count": 6,
+      "share": 0.045454545454545456,
+      "size": 61.43,
+      "average_user_rating": 3.83,
+      "average_community_rating": 4.17,
+      "rating_gap": -0.34,
+      "films": [
+        {
+          "title": "Primal",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "The Dark Knight",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Watchmen",
+          "year": 2009,
+          "slug": null
+        },
+        {
+          "title": "Oldboy",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Sinners",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    }
+  ],
+  "country_passport": {
+    "top_countries": [
+      [
+        "USA",
+        28
+      ],
+      [
+        "France",
+        12
+      ],
+      [
+        "UK",
+        9
+      ],
+      [
+        "Japan",
+        5
+      ],
+      [
+        "Belgium",
+        4
+      ],
+      [
+        "Germany",
+        3
+      ],
+      [
+        "Ireland",
+        2
+      ],
+      [
+        "Spain",
+        2
+      ],
+      [
+        "Denmark",
+        1
+      ],
+      [
+        "Luxembourg",
+        1
+      ]
+    ],
+    "number_of_countries": 16,
+    "dominant_country": "USA",
+    "non_us_share": 0.6164383561643836,
+    "label": "internationally curious"
+  },
+  "country_map": {
+    "title": "Ma carte",
+    "subtitle": "Les pays de production qui traversent tes 50 films détectés.",
+    "countries": [
+      {
+        "name": "USA",
+        "iso2": "US",
+        "count": 28,
+        "share": 0.3835616438356164,
+        "intensity": 1.0,
+        "films": [
+          {
+            "title": "Phantom of the Paradise",
+            "year": 1974,
+            "slug": "phantom-of-the-paradise"
+          },
+          {
+            "title": "Hoppers",
+            "year": 2026,
+            "slug": "hoppers"
+          },
+          {
+            "title": "Primal",
+            "year": 2019,
+            "slug": "primal-2019-1"
+          },
+          {
+            "title": "After Hours",
+            "year": 1985,
+            "slug": "after-hours"
+          },
+          {
+            "title": "The Godfather",
+            "year": 1972,
+            "slug": "the-godfather"
+          },
+          {
+            "title": "Hamnet",
+            "year": 2025,
+            "slug": "hamnet"
+          },
+          {
+            "title": "Punch-Drunk Love",
+            "year": 2002,
+            "slug": "punch-drunk-love"
+          },
+          {
+            "title": "Fargo",
+            "year": 1996,
+            "slug": "fargo"
+          },
+          {
+            "title": "One Battle After Another",
+            "year": 2025,
+            "slug": "one-battle-after-another"
+          },
+          {
+            "title": "Avatar: Fire and Ash",
+            "year": 2025,
+            "slug": "avatar-fire-and-ash"
+          },
+          {
+            "title": "Little Miss Sunshine",
+            "year": 2006,
+            "slug": "little-miss-sunshine"
+          },
+          {
+            "title": "The Dark Knight",
+            "year": 2008,
+            "slug": "the-dark-knight"
+          },
+          {
+            "title": "Collateral",
+            "year": 2004,
+            "slug": "collateral"
+          },
+          {
+            "title": "Zootopia 2",
+            "year": 2025,
+            "slug": "zootopia-2"
+          },
+          {
+            "title": "The Shawshank Redemption",
+            "year": 1994,
+            "slug": "the-shawshank-redemption"
+          },
+          {
+            "title": "Watchmen",
+            "year": 2009,
+            "slug": "watchmen"
+          },
+          {
+            "title": "Arco",
+            "year": 2025,
+            "slug": "arco"
+          },
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "mulholland-drive"
+          },
+          {
+            "title": "Requiem for a Dream",
+            "year": 2000,
+            "slug": "requiem-for-a-dream"
+          },
+          {
+            "title": "Knives Out",
+            "year": 2019,
+            "slug": "knives-out-2019"
+          },
+          {
+            "title": "Manchester by the Sea",
+            "year": 2016,
+            "slug": "manchester-by-the-sea"
+          },
+          {
+            "title": "Weapons",
+            "year": 2025,
+            "slug": "weapons-2025"
+          },
+          {
+            "title": "Sinners",
+            "year": 2025,
+            "slug": "sinners-2025"
+          },
+          {
+            "title": "La La Land",
+            "year": 2016,
+            "slug": "la-la-land"
+          },
+          {
+            "title": "The Substance",
+            "year": 2024,
+            "slug": "the-substance"
+          },
+          {
+            "title": "The Shape of Water",
+            "year": 2017,
+            "slug": "the-shape-of-water"
+          },
+          {
+            "title": "Anora",
+            "year": 2024,
+            "slug": "anora"
+          },
+          {
+            "title": "The Prestige",
+            "year": 2006,
+            "slug": "the-prestige"
+          }
+        ]
+      },
+      {
+        "name": "France",
+        "iso2": "FR",
+        "count": 12,
+        "share": 0.1643835616438356,
+        "intensity": 0.42857142857142855,
+        "films": [
+          {
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
+          },
+          {
+            "title": "Alter Ego",
+            "year": 2026,
+            "slug": "alter-ego-2026"
+          },
+          {
+            "title": "Song of the Sea",
+            "year": 2014,
+            "slug": "song-of-the-sea"
+          },
+          {
+            "title": "Sundays",
+            "year": 2025,
+            "slug": "sundays-2025"
+          },
+          {
+            "title": "The Secret Agent",
+            "year": 2025,
+            "slug": "the-secret-agent-2025"
+          },
+          {
+            "title": "Arco",
+            "year": 2025,
+            "slug": "arco"
+          },
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "mulholland-drive"
+          },
+          {
+            "title": "Sink or Swim",
+            "year": 2018,
+            "slug": "sink-or-swim-2018"
+          },
+          {
+            "title": "Sirāt",
+            "year": 2025,
+            "slug": "sirat-2025"
+          },
+          {
+            "title": "The Substance",
+            "year": 2024,
+            "slug": "the-substance"
+          },
+          {
+            "title": "Flow",
+            "year": 2024,
+            "slug": "flow-2024"
+          },
+          {
+            "title": "Jim's Story",
+            "year": 2024,
+            "slug": "jims-story"
+          }
+        ]
+      },
+      {
+        "name": "UK",
+        "iso2": "GB",
+        "count": 9,
+        "share": 0.1232876712328767,
+        "intensity": 0.32142857142857145,
+        "films": [
+          {
+            "title": "I Swear",
+            "year": 2025,
+            "slug": "i-swear"
+          },
+          {
+            "title": "Song of the Sea",
+            "year": 2014,
+            "slug": "song-of-the-sea"
+          },
+          {
+            "title": "Submarine",
+            "year": 2010,
+            "slug": "submarine"
+          },
+          {
+            "title": "Hamnet",
+            "year": 2025,
+            "slug": "hamnet"
+          },
+          {
+            "title": "Fargo",
+            "year": 1996,
+            "slug": "fargo"
+          },
+          {
+            "title": "The Dark Knight",
+            "year": 2008,
+            "slug": "the-dark-knight"
+          },
+          {
+            "title": "Arco",
+            "year": 2025,
+            "slug": "arco"
+          },
+          {
+            "title": "The Substance",
+            "year": 2024,
+            "slug": "the-substance"
+          },
+          {
+            "title": "The Prestige",
+            "year": 2006,
+            "slug": "the-prestige"
+          }
+        ]
+      },
+      {
+        "name": "Japan",
+        "iso2": "JP",
+        "count": 5,
+        "share": 0.0684931506849315,
+        "intensity": 0.17857142857142858,
+        "films": [
+          {
+            "title": "964 Pinocchio",
+            "year": 1991,
+            "slug": "964-pinocchio"
+          },
+          {
+            "title": "Perfect Days",
+            "year": 2023,
+            "slug": "perfect-days-2023"
+          },
+          {
+            "title": "Monster",
+            "year": 2023,
+            "slug": "monster-2023"
+          },
+          {
+            "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+            "year": 2025,
+            "slug": "demon-slayer-kimetsu-no-yaiba-infinity-castle"
+          },
+          {
+            "title": "Perfect Blue",
+            "year": 1997,
+            "slug": "perfect-blue"
+          }
+        ]
+      },
+      {
+        "name": "Belgium",
+        "iso2": "BE",
+        "count": 4,
+        "share": 0.0547945205479452,
+        "intensity": 0.14285714285714285,
+        "films": [
+          {
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
+          },
+          {
+            "title": "Song of the Sea",
+            "year": 2014,
+            "slug": "song-of-the-sea"
+          },
+          {
+            "title": "Sink or Swim",
+            "year": 2018,
+            "slug": "sink-or-swim-2018"
+          },
+          {
+            "title": "Flow",
+            "year": 2024,
+            "slug": "flow-2024"
+          }
+        ]
+      },
+      {
+        "name": "Germany",
+        "iso2": "DE",
+        "count": 3,
+        "share": 0.0410958904109589,
+        "intensity": 0.10714285714285714,
+        "films": [
+          {
+            "title": "The Secret Agent",
+            "year": 2025,
+            "slug": "the-secret-agent-2025"
+          },
+          {
+            "title": "Perfect Days",
+            "year": 2023,
+            "slug": "perfect-days-2023"
+          },
+          {
+            "title": "Metropolis",
+            "year": 1927,
+            "slug": "metropolis"
+          }
+        ]
+      },
+      {
+        "name": "Ireland",
+        "iso2": "IE",
+        "count": 2,
+        "share": 0.0273972602739726,
+        "intensity": 0.07142857142857142,
+        "films": [
+          {
+            "title": "I Swear",
+            "year": 2025,
+            "slug": "i-swear"
+          },
+          {
+            "title": "Song of the Sea",
+            "year": 2014,
+            "slug": "song-of-the-sea"
+          }
+        ]
+      },
+      {
+        "name": "Spain",
+        "iso2": "ES",
+        "count": 2,
+        "share": 0.0273972602739726,
+        "intensity": 0.07142857142857142,
+        "films": [
+          {
+            "title": "Sundays",
+            "year": 2025,
+            "slug": "sundays-2025"
+          },
+          {
+            "title": "Sirāt",
+            "year": 2025,
+            "slug": "sirat-2025"
+          }
+        ]
+      },
+      {
+        "name": "Denmark",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.03571428571428571,
+        "films": [
+          {
+            "title": "Song of the Sea",
+            "year": 2014,
+            "slug": "song-of-the-sea"
+          }
+        ]
+      },
+      {
+        "name": "Luxembourg",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.03571428571428571,
+        "films": [
+          {
+            "title": "Song of the Sea",
+            "year": 2014,
+            "slug": "song-of-the-sea"
+          }
+        ]
+      },
+      {
+        "name": "Brazil",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.03571428571428571,
+        "films": [
+          {
+            "title": "The Secret Agent",
+            "year": 2025,
+            "slug": "the-secret-agent-2025"
+          }
+        ]
+      },
+      {
+        "name": "Netherlands",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.03571428571428571,
+        "films": [
+          {
+            "title": "The Secret Agent",
+            "year": 2025,
+            "slug": "the-secret-agent-2025"
+          }
+        ]
+      },
+      {
+        "name": "Argentina",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.03571428571428571,
+        "films": [
+          {
+            "title": "The Secret Agent",
+            "year": 2025,
+            "slug": "the-secret-agent-2025"
+          }
+        ]
+      },
+      {
+        "name": "Canada",
+        "iso2": "CA",
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.03571428571428571,
+        "films": [
+          {
+            "title": "Zootopia 2",
+            "year": 2025,
+            "slug": "zootopia-2"
+          }
+        ]
+      },
+      {
+        "name": "South Korea",
+        "iso2": "KR",
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.03571428571428571,
+        "films": [
+          {
+            "title": "Oldboy",
+            "year": 2003,
+            "slug": "oldboy"
+          }
+        ]
+      },
+      {
+        "name": "Latvia",
+        "iso2": null,
+        "count": 1,
+        "share": 0.0136986301369863,
+        "intensity": 0.03571428571428571,
+        "films": [
+          {
+            "title": "Flow",
+            "year": 2024,
+            "slug": "flow-2024"
+          }
+        ]
+      }
+    ],
+    "max_count": 28,
+    "total_country_tags": 73
+  },
+  "director_recurrence": {
+    "top_directors": [
+      [
+        "Paul Thomas Anderson",
+        2
+      ],
+      [
+        "Christopher Nolan",
+        2
+      ],
+      [
+        "Marco Nguyen",
+        1
+      ],
+      [
+        "Nicolas Athané",
+        1
+      ],
+      [
+        "Brian De Palma",
+        1
+      ],
+      [
+        "Kirk Jones",
+        1
+      ],
+      [
+        "Daniel Chong",
+        1
+      ],
+      [
+        "Nicolas Charlet",
+        1
+      ],
+      [
+        "Bruno Lavaine",
+        1
+      ],
+      [
+        "Nick Powell",
+        1
+      ]
+    ],
+    "repeat_directors": [
+      {
+        "director": "Paul Thomas Anderson",
+        "count": 2
+      },
+      {
+        "director": "Christopher Nolan",
+        "count": 2
+      }
+    ],
+    "most_repeated_director": {
+      "director": "Paul Thomas Anderson",
+      "count": 2,
+      "director_slug": "paul-thomas-anderson",
+      "letterboxd_url": "https://letterboxd.com/director/paul-thomas-anderson/",
+      "films": [
+        {
+          "title": "Punch-Drunk Love",
+          "slug": "punch-drunk-love",
+          "year": 2002
+        },
+        {
+          "title": "One Battle After Another",
+          "slug": "one-battle-after-another",
+          "year": 2025
+        }
+      ]
+    }
+  }
+}

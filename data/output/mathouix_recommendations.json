@@ -1,0 +1,857 @@
+{
+  "user": "mathouix",
+  "source_files": {
+    "wrapped": "data\\output\\mathouix_wrapped.json",
+    "profile_metrics": "data\\output\\mathouix_profile_metrics.json",
+    "megabank": "data\\processed\\megabank_clean.json"
+  },
+  "recommendations": [
+    {
+      "slot": "safe_pick",
+      "title": "Whiplash",
+      "year": 2014,
+      "slug": "whiplash-2014",
+      "letterboxd_url": "https://letterboxd.com/film/whiplash-2014",
+      "score": 0.8526,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "director_affinity",
+        "fans_watches_signal"
+      ],
+      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "genres": [
+        "Drama",
+        "Music"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 107.0,
+      "average_rating": 4.42,
+      "watches": 3925603.0,
+      "fans": 154000.0,
+      "director": "Damien Chazelle"
+    },
+    {
+      "slot": "deep_cut",
+      "title": "Wings of Desire",
+      "year": null,
+      "slug": "wings-of-desire",
+      "letterboxd_url": "https://letterboxd.com/film/wings-of-desire",
+      "score": 0.8039,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "director_affinity",
+        "fans_watches_signal",
+        "non_us_angle",
+        "deep_cut"
+      ],
+      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
+      "genres": [
+        "Drama",
+        "Romance",
+        "Fantasy"
+      ],
+      "countries": [
+        "France",
+        "Germany"
+      ],
+      "runtime": 128.0,
+      "average_rating": 4.31,
+      "watches": 204338.0,
+      "fans": 9400.0,
+      "director": "Wim Wenders"
+    },
+    {
+      "slot": "wild_card",
+      "title": "Waves",
+      "year": 2019,
+      "slug": "waves-2019",
+      "letterboxd_url": "https://letterboxd.com/film/waves-2019",
+      "score": 0.6426,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "fans_watches_signal",
+        "non_us_angle",
+        "wild_card_contrast"
+      ],
+      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "countries": [
+        "Canada",
+        "USA"
+      ],
+      "runtime": 135.0,
+      "average_rating": 3.92,
+      "watches": 407861.0,
+      "fans": 25000.0,
+      "director": "Trey Edward Shults"
+    }
+  ],
+  "diversity_checks": {
+    "directors": [
+      "Damien Chazelle",
+      "Wim Wenders",
+      "Trey Edward Shults"
+    ],
+    "distinct_directors": true,
+    "primary_genres": [
+      [
+        "Drama",
+        "Music"
+      ],
+      [
+        "Drama",
+        "Romance"
+      ],
+      [
+        "Romance",
+        "Drama"
+      ]
+    ],
+    "countries": [
+      [
+        "USA"
+      ],
+      [
+        "France",
+        "Germany"
+      ],
+      [
+        "Canada",
+        "USA"
+      ]
+    ],
+    "popularity": [
+      "high",
+      "low",
+      "low"
+    ],
+    "non_us_recommendation_sought": true,
+    "non_us_recommendation_found": true,
+    "wild_card_contrast_score": 5,
+    "rejected": [
+      {
+        "slot": "deep_cut",
+        "title": "Babylon",
+        "director": "Damien Chazelle",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.6572,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "deep_cut",
+        "title": "First Man",
+        "director": "Damien Chazelle",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5651,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "deep_cut",
+        "title": "Wings of Desire",
+        "director": "Wim Wenders",
+        "countries": [
+          "France",
+          "Germany"
+        ],
+        "score": 0.8039,
+        "reason": "replaced_by_non_us_diversity"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Paris, Texas",
+        "director": "Wim Wenders",
+        "countries": [
+          "France",
+          "Germany",
+          "UK"
+        ],
+        "score": 0.6547,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Buena Vista Social Club",
+        "director": "Wim Wenders",
+        "countries": [
+          "Cuba",
+          "France",
+          "Germany",
+          "UK",
+          "USA"
+        ],
+        "score": 0.5984,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Until the End of the World",
+        "director": "Wim Wenders",
+        "countries": [
+          "Australia",
+          "France",
+          "Germany"
+        ],
+        "score": 0.5314,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Babylon",
+        "director": "Damien Chazelle",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5924,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Wings",
+        "director": "William A. Wellman",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.472,
+        "reason": "title_or_franchise_proximity"
+      },
+      {
+        "slot": "wild_card",
+        "title": "The American Friend",
+        "director": "Wim Wenders",
+        "countries": [
+          "France",
+          "Germany"
+        ],
+        "score": 0.4527,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "First Man",
+        "director": "Damien Chazelle",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5117,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Kings of the Road",
+        "director": "Wim Wenders",
+        "countries": [
+          "Germany"
+        ],
+        "score": 0.4267,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Good Will Hunting",
+        "director": "Gus Van Sant",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.6436,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Dead Poets Society",
+        "director": "Peter Weir",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.6403,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Black Swan",
+        "director": "Darren Aronofsky",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.6296,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "The Perks of Being a Wallflower",
+        "director": "Stephen Chbosky",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.6002,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "The Social Network",
+        "director": "David Fincher",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5439,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "The Breakfast Club",
+        "director": "John Hughes",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5086,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Every Thing Will Be Fine",
+        "director": "Wim Wenders",
+        "countries": [
+          "Canada",
+          "Germany",
+          "Norway",
+          "Sweden"
+        ],
+        "score": 0.3469,
+        "reason": "duplicate_director"
+      }
+    ]
+  },
+  "eligibility_excluded": [
+    {
+      "title": "#1 Fan: A Darkomentary",
+      "slug": "1-fan-a-darkomentary",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "12 Angry Men",
+      "slug": "12-angry-men-1997",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "12th Assistant Deacon",
+      "slug": "12th-assistant-deacon",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "7 Days in Hell",
+      "slug": "7-days-in-hell",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "8 Ball Bunny",
+      "slug": "8-ball-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "8: SIDA",
+      "slug": "8-sida",
+      "reason": "short_runtime"
+    },
+    {
+      "title": 9,
+      "slug": "9-2005",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Beautiful Planet",
+      "slug": "a-beautiful-planet",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Brief History of John Baldessari",
+      "slug": "a-brief-history-of-john-baldessari",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Charlie Brown Christmas",
+      "slug": "a-charlie-brown-christmas",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Charlie Brown Thanksgiving",
+      "slug": "a-charlie-brown-thanksgiving",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Christmas Carol",
+      "slug": "a-christmas-carol-2004",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Close Shave",
+      "slug": "a-close-shave-1995",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Cold Night's Death",
+      "slug": "a-cold-nights-death",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Fairly Odd Movie: Grow Up, Timmy Turner!",
+      "slug": "a-fairly-odd-movie-grow-up-timmy-turner",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Girl in the River: The Price of Forgiveness",
+      "slug": "a-girl-in-the-river-the-price-of-forgiveness",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Hypnotic Television Experience",
+      "slug": "a-hypnotic-television-experience",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Is for Acid",
+      "slug": "a-is-for-acid",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Killer Among Friends",
+      "slug": "a-killer-among-friends",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Kitten for Hitler",
+      "slug": "a-kitten-for-hitler",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Pest in the House",
+      "slug": "a-pest-in-the-house",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Short Vision",
+      "slug": "a-short-vision",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Star Is Born World Premiere",
+      "slug": "a-star-is-born-world-premiere",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Trip to the Moon",
+      "slug": "a-trip-to-the-moon",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "A Very Murray Christmas",
+      "slug": "a-very-murray-christmas",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "A Young Couple",
+      "slug": "a-young-couple",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Actus",
+      "slug": "actus",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Addams Family Reunion",
+      "slug": "addams-family-reunion",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Afro Samurai: Resurrection",
+      "slug": "afro-samurai-resurrection",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Aftermath",
+      "slug": "aftermath",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Aladdin",
+      "slug": "aladdin-1993-1",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Alaya",
+      "slug": "alaya",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Albert",
+      "slug": "albert-2016",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Ali Baba Bunny",
+      "slug": "ali-baba-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Alice in Russialand",
+      "slug": "alice-in-russialand",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Alone Time",
+      "slug": "alone-time",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "And the Oscar Goes To...",
+      "slug": "and-the-oscar-goes-to",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Aningaaq",
+      "slug": "aningaaq",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Annihilator",
+      "slug": "annihilator",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Apology",
+      "slug": "apology",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Archie: To Riverdale and Back Again",
+      "slug": "archie-to-riverdale-and-back-again",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Artemis '81",
+      "slug": "artemis-81",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "As Good as Dead",
+      "slug": "as-good-as-dead-1995",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Atomic Rulers",
+      "slug": "atomic-rulers",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Attack from Space",
+      "slug": "attack-from-space",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Attack of the 50 Ft. Woman",
+      "slug": "attack-of-the-50-ft-woman",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Bad Ronald",
+      "slug": "bad-ronald",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Bangkok Hilton",
+      "slug": "bangkok-hilton",
+      "reason": "tv_or_series_signal"
+    },
+    {
+      "title": "Bao",
+      "slug": "bao-2018",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Baoh: The Visitor",
+      "slug": "baoh-the-visitor",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bare Essentials",
+      "slug": "bare-essentials",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Basically",
+      "slug": "basically",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Baton Bunny",
+      "slug": "baton-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bayard & Me",
+      "slug": "bayard-me",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Baywatch: Forbidden Paradise",
+      "slug": "baywatch-forbidden-paradise",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "BBStory: An American Film Renaissance",
+      "slug": "bbstory-an-american-film-renaissance",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Beau",
+      "slug": "beau",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Beauty and the Beast",
+      "slug": "beauty-and-the-beast-1976",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Beep, Beep",
+      "slug": "beep-beep",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Benny's Bathtub",
+      "slug": "bennys-bathtub",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bewitched Bunny",
+      "slug": "bewitched-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Big Top Bunny",
+      "slug": "big-top-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Black Mirror: Bandersnatch",
+      "slug": "black-mirror-bandersnatch",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: Hang the DJ",
+      "slug": "black-mirror-hang-the-dj",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: Joan Is Awful",
+      "slug": "black-mirror-joan-is-awful",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: Metalhead",
+      "slug": "black-mirror-metalhead",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: San Junipero",
+      "slug": "black-mirror-san-junipero",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Black Mirror: White Christmas",
+      "slug": "black-mirror-white-christmas",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Blindfold: Acts of Obsession",
+      "slug": "blindfold-acts-of-obsession",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Blindsided",
+      "slug": "blindsided-2016",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Blood Lake: Attack of the Killer Lampreys",
+      "slug": "blood-lake-attack-of-the-killer-lampreys",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Blood: The Last Vampire",
+      "slug": "blood-the-last-vampire",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Body Bags",
+      "slug": "body-bags",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Bonnie & Clyde",
+      "slug": "bonnie-clyde-2013",
+      "reason": "tv_or_series_signal"
+    },
+    {
+      "title": "Breaking Social Distancing",
+      "slug": "breaking-social-distancing",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Brideless Groom",
+      "slug": "brideless-groom",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Brief Encounter",
+      "slug": "brief-encounter-1974",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Broom-Stick Bunny",
+      "slug": "broom-stick-bunny",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Brothers",
+      "slug": "brothers-2013-1",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bugs Bunny and the Three Bears",
+      "slug": "bugs-bunny-and-the-three-bears",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bully for Bugs",
+      "slug": "bully-for-bugs",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Bunny Hugged",
+      "slug": "bunny-hugged",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Californy 'Er Bust",
+      "slug": "californy-er-bust",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Cancel",
+      "slug": "cancel",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Cannon Fodder",
+      "slug": "cannon-fodder",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Caricaturana",
+      "slug": "caricaturana",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Carne",
+      "slug": "carne",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Cartoon All-Stars to the Rescue",
+      "slug": "cartoon-all-stars-to-the-rescue",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Cast a Deadly Spell",
+      "slug": "cast-a-deadly-spell",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Castello Cavalcanti",
+      "slug": "castello-cavalcanti",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Celebrating Marvel's Stan Lee",
+      "slug": "celebrating-marvels-stan-lee",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "C'est la Vie",
+      "slug": "cest-la-vie-2016",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Charles Bronson: The Spirit of Masculinity",
+      "slug": "charles-bronson-the-spirit-of-masculinity",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Charles II: The Power and The Passion",
+      "slug": "charles-ii-the-power-and-the-passion",
+      "reason": "tv_or_series_signal"
+    },
+    {
+      "title": "Charlie",
+      "slug": "charlie-2013",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Charlie",
+      "slug": "charlie-2018",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Children of Shatila",
+      "slug": "children-of-shatila",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Chris Gethard: Career Suicide",
+      "slug": "chris-gethard-career-suicide",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Christmas Harmony",
+      "slug": "christmas-harmony",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Cigarette Candy",
+      "slug": "cigarette-candy",
+      "reason": "short_runtime"
+    }
+  ],
+  "notable_eligibility_excluded": [
+    {
+      "title": "Twin Peaks",
+      "slug": "twin-peaks",
+      "reason": "tv_or_series_signal"
+    }
+  ],
+  "scoring_notes": [
+    "Candidates are Megabank films not present in the user's last 50 RSS films.",
+    "Compatibility combines genre, country, language, runtime, era, mainstream fit, community rating, fans/watches, repeat director, and title redundancy.",
+    "safe_pick boosts global compatibility and community rating.",
+    "deep_cut boosts niche score and fans/watches, with a penalty for very high watch counts.",
+    "wild_card uses partial compatibility plus secondary/oblique signals instead of selecting the third-best global score."
+  ]
+}

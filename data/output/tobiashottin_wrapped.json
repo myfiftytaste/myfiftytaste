@@ -1,0 +1,2308 @@
+{
+  "user": "tobiashottin",
+  "rss_url": "https://letterboxd.com/tobiashottin/rss/",
+  "generated_at": "2026-07-01T23:02:18.390769Z",
+  "films": [
+    {
+      "rss_title": "Backrooms, 2026 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/backrooms-2026/",
+      "letterboxd_slug": "backrooms-2026",
+      "watched_at": "Sat, 27 Jun 2026 19:35:17 +1200",
+      "logged_at_raw": "Sat, 27 Jun 2026 19:35:17 +1200",
+      "logged_at_iso": "2026-06-27T07:35:17+00:00",
+      "logged_hour": 7,
+      "logged_minute": 35,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/6/4/1/9/976419-backrooms-2026-0-600-0-900-crop.jpg?v=f7a99e3fc8",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/6/4/1/9/976419-backrooms-2026-0-600-0-900-crop.jpg?v=f7a99e3fc8",
+      "user_rating": 4.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 650,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Backrooms",
+      "directors": [
+        "Kane Parsons"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Science Fiction"
+      ],
+      "countries": [
+        "United States of America",
+        "Canada"
+      ],
+      "original_language": "en",
+      "runtime": 111,
+      "tmdb_id": 1083381,
+      "director_source": "tmdb_details_cache",
+      "director": "Kane Parsons"
+    },
+    {
+      "rss_title": "Minions & Monsters, 2026 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/minions-monsters-2026/",
+      "letterboxd_slug": "minions-monsters-2026",
+      "watched_at": "Sat, 27 Jun 2026 19:34:54 +1200",
+      "logged_at_raw": "Sat, 27 Jun 2026 19:34:54 +1200",
+      "logged_at_iso": "2026-06-27T07:34:54+00:00",
+      "logged_hour": 7,
+      "logged_minute": 34,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996",
+      "user_rating": 4.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 556,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Minions & Monsters",
+      "directors": [
+        "Pierre Coffin"
+      ],
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America",
+        "Japan"
+      ],
+      "original_language": "en",
+      "runtime": 90,
+      "tmdb_id": 1315772,
+      "director_source": "tmdb_details_cache",
+      "director": "Pierre Coffin"
+    },
+    {
+      "rss_title": "A Year of School, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/a-year-of-school/",
+      "letterboxd_slug": "a-year-of-school",
+      "watched_at": "Sat, 27 Jun 2026 19:33:51 +1200",
+      "logged_at_raw": "Sat, 27 Jun 2026 19:33:51 +1200",
+      "logged_at_iso": "2026-06-27T07:33:51+00:00",
+      "logged_hour": 7,
+      "logged_minute": 33,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/2/0/5/7/6/1320576-a-year-of-school-0-600-0-900-crop.jpg?v=bf6de6cc88",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/2/0/5/7/6/1320576-a-year-of-school-0-600-0-900-crop.jpg?v=bf6de6cc88",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 114,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "A Year of School",
+      "tmdb_candidate_title": "A Year of School",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Rocco and His Brothers, 1960 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/rocco-and-his-brothers/",
+      "letterboxd_slug": "rocco-and-his-brothers",
+      "watched_at": "Sat, 27 Jun 2026 19:29:19 +1200",
+      "logged_at_raw": "Sat, 27 Jun 2026 19:29:19 +1200",
+      "logged_at_iso": "2026-06-27T07:29:19+00:00",
+      "logged_hour": 7,
+      "logged_minute": 29,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/7/3/8/47738-rocco-and-his-brothers-0-600-0-900-crop.jpg?v=50b0fb7b37",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/7/3/8/47738-rocco-and-his-brothers-0-600-0-900-crop.jpg?v=50b0fb7b37",
+      "user_rating": 4.0,
+      "year": 1960,
+      "has_review": true,
+      "review_word_count": 114,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Rocco and His Brothers",
+      "directors": [
+        "Luchino Visconti"
+      ],
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "Italian",
+      "runtime": 178.0,
+      "average_rating": 4.31,
+      "watches": 49588,
+      "likes": 16326,
+      "fans": 883,
+      "total_ratings": 33466,
+      "director": "Luchino Visconti",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Jim Queen, 2026 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/jim-queen/",
+      "letterboxd_slug": "jim-queen",
+      "watched_at": "Tue, 23 Jun 2026 21:04:08 +1200",
+      "logged_at_raw": "Tue, 23 Jun 2026 21:04:08 +1200",
+      "logged_at_iso": "2026-06-23T09:04:08+00:00",
+      "logged_hour": 9,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "user_rating": 5.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 410,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Jim Queen and the Quest for Chloroqueer",
+      "directors": [
+        "Marco Nguyen",
+        "Nicolas Athané"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "Belgium"
+      ],
+      "original_language": "fr",
+      "runtime": 85,
+      "tmdb_id": 1061798,
+      "director_source": "tmdb_details_cache",
+      "director": "Marco Nguyen"
+    },
+    {
+      "rss_title": "Hen, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/hen-2025/",
+      "letterboxd_slug": "hen-2025",
+      "watched_at": "Tue, 23 Jun 2026 20:40:36 +1200",
+      "logged_at_raw": "Tue, 23 Jun 2026 20:40:36 +1200",
+      "logged_at_iso": "2026-06-23T08:40:36+00:00",
+      "logged_hour": 8,
+      "logged_minute": 40,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/6/8/0/4/0/1268040-hen-2025-0-600-0-900-crop.jpg?v=26b0255349",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/6/8/0/4/0/1268040-hen-2025-0-600-0-900-crop.jpg?v=26b0255349",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 422,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Hen",
+      "directors": [
+        "Nico Scheepers"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "South Africa"
+      ],
+      "original_language": "af",
+      "runtime": 108,
+      "tmdb_id": 1534155,
+      "director_source": "tmdb_details_cache",
+      "director": "Nico Scheepers"
+    },
+    {
+      "rss_title": "The Banishment, 2007 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-banishment/",
+      "letterboxd_slug": "the-banishment",
+      "watched_at": "Sat, 20 Jun 2026 03:31:40 +1200",
+      "logged_at_raw": "Sat, 20 Jun 2026 03:31:40 +1200",
+      "logged_at_iso": "2026-06-19T15:31:40+00:00",
+      "logged_hour": 15,
+      "logged_minute": 31,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/6/2/5/8/36258-the-banishment-0-600-0-900-crop.jpg?v=9770318dad",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/6/2/5/8/36258-the-banishment-0-600-0-900-crop.jpg?v=9770318dad",
+      "user_rating": 4.5,
+      "year": 2007,
+      "has_review": true,
+      "review_word_count": 464,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "The Banishment",
+      "tmdb_candidate_title": "The Banishment",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Bouchra, 2025 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/bouchra/",
+      "letterboxd_slug": "bouchra",
+      "watched_at": "Fri, 19 Jun 2026 04:32:40 +1200",
+      "logged_at_raw": "Fri, 19 Jun 2026 04:32:40 +1200",
+      "logged_at_iso": "2026-06-18T16:32:40+00:00",
+      "logged_hour": 16,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/9/3/0/2/5/1393025-bouchra-0-600-0-900-crop.jpg?v=8606db1ed5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/9/3/0/2/5/1393025-bouchra-0-600-0-900-crop.jpg?v=8606db1ed5",
+      "user_rating": 3.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 706,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "Bouchra",
+      "tmdb_candidate_title": "Bouchra",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Obsession, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/obsession-2025/",
+      "letterboxd_slug": "obsession-2025",
+      "watched_at": "Fri, 19 Jun 2026 04:32:19 +1200",
+      "logged_at_raw": "Fri, 19 Jun 2026 04:32:19 +1200",
+      "logged_at_iso": "2026-06-18T16:32:19+00:00",
+      "logged_hour": 16,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 808,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Obsession",
+      "directors": [
+        "Curry Barker"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "US"
+      ],
+      "original_language": "en",
+      "runtime": 109,
+      "tmdb_id": null,
+      "director": "Curry Barker",
+      "director_source": "supplemental"
+    },
+    {
+      "rss_title": "DJ Ahmet, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/dj-ahmet/",
+      "letterboxd_slug": "dj-ahmet",
+      "watched_at": "Fri, 19 Jun 2026 04:19:20 +1200",
+      "logged_at_raw": "Fri, 19 Jun 2026 04:19:20 +1200",
+      "logged_at_iso": "2026-06-18T16:19:20+00:00",
+      "logged_hour": 16,
+      "logged_minute": 19,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/8/4/1/3/9/1284139-dj-ahmet-0-600-0-900-crop.jpg?v=0d59d662e9",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/8/4/1/3/9/1284139-dj-ahmet-0-600-0-900-crop.jpg?v=0d59d662e9",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 194,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "DJ Ahmet",
+      "directors": [
+        "Georgi M. Unkovski"
+      ],
+      "genres": [
+        "Drama",
+        "Music",
+        "Comedy"
+      ],
+      "countries": [
+        "Macedonia",
+        "Czech Republic",
+        "Serbia",
+        "Croatia"
+      ],
+      "original_language": "mk",
+      "runtime": 97,
+      "tmdb_id": 1400743,
+      "director_source": "tmdb_details_cache",
+      "director": "Georgi M. Unkovski"
+    },
+    {
+      "rss_title": "The Christophers, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-christophers/",
+      "letterboxd_slug": "the-christophers",
+      "watched_at": "Fri, 19 Jun 2026 04:14:21 +1200",
+      "logged_at_raw": "Fri, 19 Jun 2026 04:14:21 +1200",
+      "logged_at_iso": "2026-06-18T16:14:21+00:00",
+      "logged_hour": 16,
+      "logged_minute": 14,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/8/3/6/8/4/1283684-the-christophers-0-600-0-900-crop.jpg?v=4269379fb4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/8/3/6/8/4/1283684-the-christophers-0-600-0-900-crop.jpg?v=4269379fb4",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 310,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "The Christophers",
+      "tmdb_candidate_title": "The Christophers",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Pirates of the Caribbean: Dead Man's Chest, 2006 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/pirates-of-the-caribbean-dead-mans-chest/",
+      "letterboxd_slug": "pirates-of-the-caribbean-dead-mans-chest",
+      "watched_at": "Tue, 16 Jun 2026 22:44:14 +1200",
+      "logged_at_raw": "Tue, 16 Jun 2026 22:44:14 +1200",
+      "logged_at_iso": "2026-06-16T10:44:14+00:00",
+      "logged_hour": 10,
+      "logged_minute": 44,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/9/8/9/51989-pirates-of-the-caribbean-dead-man-s-chest-0-600-0-900-crop.jpg?v=f9c46ae728",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/9/8/9/51989-pirates-of-the-caribbean-dead-man-s-chest-0-600-0-900-crop.jpg?v=f9c46ae728",
+      "user_rating": 3.5,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 166,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Pirates of the Caribbean: Dead Man's Chest",
+      "directors": [
+        "Gore Verbinski"
+      ],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 151,
+      "tmdb_id": 58,
+      "director_source": "tmdb_details_cache",
+      "director": "Gore Verbinski"
+    },
+    {
+      "rss_title": "Moebius, 2013 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/moebius-2013/",
+      "letterboxd_slug": "moebius-2013",
+      "watched_at": "Tue, 9 Jun 2026 00:27:54 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 00:27:54 +1200",
+      "logged_at_iso": "2026-06-08T12:27:54+00:00",
+      "logged_hour": 12,
+      "logged_minute": 27,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/0/6/7/153067-moebius-0-600-0-900-crop.jpg?v=fa31414cc5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/0/6/7/153067-moebius-0-600-0-900-crop.jpg?v=fa31414cc5",
+      "user_rating": 4.0,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 646,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Moebius",
+      "directors": [
+        "Kim Ki-duk"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "Korean",
+      "runtime": 89.0,
+      "average_rating": 3.28,
+      "watches": 13131,
+      "likes": 2277,
+      "fans": 34,
+      "total_ratings": 9007,
+      "director": "Kim Ki-duk",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "A City of Sadness, 1989 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/a-city-of-sadness/",
+      "letterboxd_slug": "a-city-of-sadness",
+      "watched_at": "Tue, 9 Jun 2026 00:11:20 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 00:11:20 +1200",
+      "logged_at_iso": "2026-06-08T12:11:20+00:00",
+      "logged_hour": 12,
+      "logged_minute": 11,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/6/5/1/15651-a-city-of-sadness-0-600-0-900-crop.jpg?v=96893fa78f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/6/5/1/15651-a-city-of-sadness-0-600-0-900-crop.jpg?v=96893fa78f",
+      "user_rating": 3.5,
+      "year": 1989,
+      "has_review": true,
+      "review_word_count": 168,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "A City of Sadness",
+      "directors": [
+        "Hou Hsiao-hsien"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "Hong Kong",
+        "Taiwan"
+      ],
+      "original_language": "zh",
+      "runtime": 158,
+      "tmdb_id": 49982,
+      "director_source": "tmdb_details_cache",
+      "director": "Hou Hsiao-hsien"
+    },
+    {
+      "rss_title": "The French Connection, 1971 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-french-connection/",
+      "letterboxd_slug": "the-french-connection",
+      "watched_at": "Tue, 9 Jun 2026 00:07:08 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 00:07:08 +1200",
+      "logged_at_iso": "2026-06-08T12:07:08+00:00",
+      "logged_hour": 12,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/m0/ut/ds/ts/5XSGvIKl2yPvOkieFjc3rzLw7x0-0-600-0-900-crop.jpg?v=b5eb5cf6f7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/m0/ut/ds/ts/5XSGvIKl2yPvOkieFjc3rzLw7x0-0-600-0-900-crop.jpg?v=b5eb5cf6f7",
+      "user_rating": 3.0,
+      "year": 1971,
+      "has_review": true,
+      "review_word_count": 294,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The French Connection",
+      "directors": [
+        "William Friedkin"
+      ],
+      "genres": [
+        "Crime",
+        "Action",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 104.0,
+      "average_rating": 4.0,
+      "watches": 227813,
+      "likes": 61251,
+      "fans": 776,
+      "total_ratings": 157960,
+      "director": "William Friedkin",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Junk World, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/junk-world/",
+      "letterboxd_slug": "junk-world",
+      "watched_at": "Mon, 8 Jun 2026 23:55:30 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 23:55:30 +1200",
+      "logged_at_iso": "2026-06-08T11:55:30+00:00",
+      "logged_hour": 11,
+      "logged_minute": 55,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/5/7/3/2/2/1057322-junk-world-0-600-0-900-crop.jpg?v=7e848837c9",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/5/7/3/2/2/1057322-junk-world-0-600-0-900-crop.jpg?v=7e848837c9",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 464,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Junk World",
+      "directors": [
+        "Takahide Hori"
+      ],
+      "genres": [
+        "Animation",
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "ja",
+      "runtime": 105,
+      "tmdb_id": 1170215,
+      "director_source": "tmdb_details_cache",
+      "director": "Takahide Hori"
+    },
+    {
+      "rss_title": "Fata Morgana, 1971 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/fata-morgana/",
+      "letterboxd_slug": "fata-morgana",
+      "watched_at": "Sat, 6 Jun 2026 05:38:39 +1200",
+      "logged_at_raw": "Sat, 6 Jun 2026 05:38:39 +1200",
+      "logged_at_iso": "2026-06-05T17:38:39+00:00",
+      "logged_hour": 17,
+      "logged_minute": 38,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/5/3/0/10530-fata-morgana-0-600-0-900-crop.jpg?v=af80423a0b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/5/3/0/10530-fata-morgana-0-600-0-900-crop.jpg?v=af80423a0b",
+      "user_rating": 3.0,
+      "year": 1971,
+      "has_review": true,
+      "review_word_count": 210,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "Fata Morgana",
+      "tmdb_candidate_title": "Fata Morgana",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "One Day in the Life of Andrei Arsenevich, 1999 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/one-day-in-the-life-of-andrei-arsenevich/",
+      "letterboxd_slug": "one-day-in-the-life-of-andrei-arsenevich",
+      "watched_at": "Sat, 6 Jun 2026 05:28:22 +1200",
+      "logged_at_raw": "Sat, 6 Jun 2026 05:28:22 +1200",
+      "logged_at_iso": "2026-06-05T17:28:22+00:00",
+      "logged_hour": 17,
+      "logged_minute": 28,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/5/2/2/3/105223-one-day-in-the-life-of-andrei-arsenevich-0-600-0-900-crop.jpg?v=cb2f3b80fd",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/5/2/2/3/105223-one-day-in-the-life-of-andrei-arsenevich-0-600-0-900-crop.jpg?v=cb2f3b80fd",
+      "user_rating": 4.0,
+      "year": 1999,
+      "has_review": true,
+      "review_word_count": 118,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "One Day in the Life of Andrei Arsenevich",
+      "directors": [
+        "Chris Marker"
+      ],
+      "genres": [
+        "TV Movie",
+        "Documentary"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 55,
+      "tmdb_id": 137196,
+      "director_source": "tmdb_details_cache",
+      "director": "Chris Marker"
+    },
+    {
+      "rss_title": "The World of Love, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-world-of-love/",
+      "letterboxd_slug": "the-world-of-love",
+      "watched_at": "Tue, 2 Jun 2026 22:53:40 +1200",
+      "logged_at_raw": "Tue, 2 Jun 2026 22:53:40 +1200",
+      "logged_at_iso": "2026-06-02T10:53:40+00:00",
+      "logged_hour": 10,
+      "logged_minute": 53,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/8/2/7/0/1198270-the-world-of-love-0-600-0-900-crop.jpg?v=27712a2e91",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/8/2/7/0/1198270-the-world-of-love-0-600-0-900-crop.jpg?v=27712a2e91",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 1012,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The World of Love",
+      "directors": [
+        "Yoon Ga-eun"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "ko",
+      "runtime": 119,
+      "tmdb_id": 1317512,
+      "director_source": "tmdb_details_cache",
+      "director": "Yoon Ga-eun"
+    },
+    {
+      "rss_title": "Bitter Christmas, 2026 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/bitter-christmas/",
+      "letterboxd_slug": "bitter-christmas",
+      "watched_at": "Tue, 2 Jun 2026 22:30:15 +1200",
+      "logged_at_raw": "Tue, 2 Jun 2026 22:30:15 +1200",
+      "logged_at_iso": "2026-06-02T10:30:15+00:00",
+      "logged_hour": 10,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/8/1/4/3/7/981437-bitter-christmas-0-600-0-900-crop.jpg?v=e53e0d2801",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/8/1/4/3/7/981437-bitter-christmas-0-600-0-900-crop.jpg?v=e53e0d2801",
+      "user_rating": 2.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 276,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Bitter Christmas",
+      "directors": [
+        "Pedro Almodóvar"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "Spain"
+      ],
+      "original_language": "es",
+      "runtime": 112,
+      "tmdb_id": 1088548,
+      "director_source": "tmdb_details_cache",
+      "director": "Pedro Almodóvar"
+    },
+    {
+      "rss_title": "The Swimmer, 1968 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-swimmer/",
+      "letterboxd_slug": "the-swimmer",
+      "watched_at": "Tue, 2 Jun 2026 22:25:33 +1200",
+      "logged_at_raw": "Tue, 2 Jun 2026 22:25:33 +1200",
+      "logged_at_iso": "2026-06-02T10:25:33+00:00",
+      "logged_hour": 10,
+      "logged_minute": 25,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/9/6/9/6/29696-the-swimmer-0-600-0-900-crop.jpg?v=8df97976d7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/9/6/9/6/29696-the-swimmer-0-600-0-900-crop.jpg?v=8df97976d7",
+      "user_rating": 4.0,
+      "year": 1968,
+      "has_review": true,
+      "review_word_count": 474,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Swimmer",
+      "directors": [
+        "Frank Perry"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "United Kingdom",
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 95,
+      "tmdb_id": 33564,
+      "director_source": "tmdb_details_cache",
+      "director": "Frank Perry"
+    },
+    {
+      "rss_title": "Twelve Monkeys, 1995 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/twelve-monkeys/",
+      "letterboxd_slug": "twelve-monkeys",
+      "watched_at": "Tue, 2 Jun 2026 22:04:01 +1200",
+      "logged_at_raw": "Tue, 2 Jun 2026 22:04:01 +1200",
+      "logged_at_iso": "2026-06-02T10:04:01+00:00",
+      "logged_hour": 10,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/gx/5a/fn/12/6Sj9wDu3YugthXsU0Vry5XFAZGg-0-600-0-900-crop.jpg?v=f6da1ec950",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/gx/5a/fn/12/6Sj9wDu3YugthXsU0Vry5XFAZGg-0-600-0-900-crop.jpg?v=f6da1ec950",
+      "user_rating": 5.0,
+      "year": 1995,
+      "has_review": true,
+      "review_word_count": 500,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Twelve Monkeys",
+      "directors": [
+        "Terry Gilliam"
+      ],
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Science Fiction"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 129.0,
+      "average_rating": 3.87,
+      "watches": 570593,
+      "likes": 141330,
+      "fans": 2500,
+      "total_ratings": 350171,
+      "director": "Terry Gilliam",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Crescendo, 2026 - ½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/crescendo-2026-2/",
+      "letterboxd_slug": "crescendo-2026-2",
+      "watched_at": "Tue, 2 Jun 2026 21:46:30 +1200",
+      "logged_at_raw": "Tue, 2 Jun 2026 21:46:30 +1200",
+      "logged_at_iso": "2026-06-02T09:46:30+00:00",
+      "logged_hour": 9,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/4/3/0/8/1/1343081-crescendo-2026-2-0-600-0-900-crop.jpg?v=27325c4745",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/4/3/0/8/1/1343081-crescendo-2026-2-0-600-0-900-crop.jpg?v=27325c4745",
+      "user_rating": 0.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 1046,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Crescendo",
+      "directors": [
+        "Agnès Jaoui"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Belgium"
+      ],
+      "original_language": "fr",
+      "runtime": 133,
+      "tmdb_id": 1466123,
+      "director_source": "tmdb_details_cache",
+      "director": "Agnès Jaoui"
+    },
+    {
+      "rss_title": "Mulholland Drive, 2001 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/mulholland-drive/1/",
+      "letterboxd_slug": "mulholland-drive",
+      "watched_at": "Tue, 26 May 2026 01:36:32 +1200",
+      "logged_at_raw": "Tue, 26 May 2026 01:36:32 +1200",
+      "logged_at_iso": "2026-05-25T13:36:32+00:00",
+      "logged_hour": 13,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "user_rating": 4.0,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 88,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Mulholland Drive",
+      "directors": [
+        "David Lynch"
+      ],
+      "genres": [
+        "Mystery",
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "France",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 147.0,
+      "average_rating": 4.26,
+      "watches": 1172795,
+      "likes": 439434,
+      "fans": 54000,
+      "total_ratings": 825070,
+      "director": "David Lynch",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Beloved, 2026 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-beloved-2026/",
+      "letterboxd_slug": "the-beloved-2026",
+      "watched_at": "Fri, 22 May 2026 00:44:19 +1200",
+      "logged_at_raw": "Fri, 22 May 2026 00:44:19 +1200",
+      "logged_at_iso": "2026-05-21T12:44:19+00:00",
+      "logged_hour": 12,
+      "logged_minute": 44,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/6/8/3/5/7/968357-the-beloved-2026-0-600-0-900-crop.jpg?v=e95a524c37",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/6/8/3/5/7/968357-the-beloved-2026-0-600-0-900-crop.jpg?v=e95a524c37",
+      "user_rating": 4.5,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Beloved",
+      "directors": [
+        "Rodrigo Sorogoyen"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "ES",
+        "FR"
+      ],
+      "original_language": "es",
+      "runtime": 135,
+      "tmdb_id": 1074074,
+      "director_source": "tmdb_details_cache",
+      "director": "Rodrigo Sorogoyen"
+    },
+    {
+      "rss_title": "The Leopard, 1963 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-leopard/",
+      "letterboxd_slug": "the-leopard",
+      "watched_at": "Mon, 18 May 2026 20:24:57 +1200",
+      "logged_at_raw": "Mon, 18 May 2026 20:24:57 +1200",
+      "logged_at_iso": "2026-05-18T08:24:57+00:00",
+      "logged_hour": 8,
+      "logged_minute": 24,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/6/7/51167-the-leopard-0-600-0-900-crop.jpg?v=7b7c331fe4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/6/7/51167-the-leopard-0-600-0-900-crop.jpg?v=7b7c331fe4",
+      "user_rating": 4.0,
+      "year": 1963,
+      "has_review": true,
+      "review_word_count": 528,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Leopard",
+      "directors": [
+        "Luchino Visconti"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "Italian",
+      "runtime": 186.0,
+      "average_rating": 4.14,
+      "watches": 60880,
+      "likes": 17088,
+      "fans": 802,
+      "total_ratings": 39970,
+      "director": "Luchino Visconti",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Il Divo, 2008 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/il-divo/",
+      "letterboxd_slug": "il-divo",
+      "watched_at": "Mon, 18 May 2026 20:12:54 +1200",
+      "logged_at_raw": "Mon, 18 May 2026 20:12:54 +1200",
+      "logged_at_iso": "2026-05-18T08:12:54+00:00",
+      "logged_hour": 8,
+      "logged_minute": 12,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/5/8/9/47589-il-divo-0-600-0-900-crop.jpg?v=bcc2bf801c",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/5/8/9/47589-il-divo-0-600-0-900-crop.jpg?v=bcc2bf801c",
+      "user_rating": 2.5,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 582,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Il Divo",
+      "directors": [
+        "Paolo Sorrentino"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "Italy",
+        "France"
+      ],
+      "original_language": "it",
+      "runtime": 113,
+      "tmdb_id": 8832,
+      "director_source": "tmdb_details_cache",
+      "director": "Paolo Sorrentino"
+    },
+    {
+      "rss_title": "A Close Shave, 1995 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/a-close-shave-1995/",
+      "letterboxd_slug": "a-close-shave-1995",
+      "watched_at": "Thu, 14 May 2026 03:37:39 +1200",
+      "logged_at_raw": "Thu, 14 May 2026 03:37:39 +1200",
+      "logged_at_iso": "2026-05-13T15:37:39+00:00",
+      "logged_hour": 15,
+      "logged_minute": 37,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/5/8/5/51585-a-close-shave-1995-0-600-0-900-crop.jpg?v=e84c7fea11",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/5/8/5/51585-a-close-shave-1995-0-600-0-900-crop.jpg?v=e84c7fea11",
+      "user_rating": 4.0,
+      "year": 1995,
+      "has_review": true,
+      "review_word_count": 508,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "A Close Shave",
+      "directors": [
+        "Nick Park"
+      ],
+      "genres": [
+        "Family",
+        "Comedy",
+        "Animation"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "original_language": "English",
+      "runtime": 30.0,
+      "average_rating": 4.15,
+      "watches": 127901,
+      "likes": 34597,
+      "fans": 165,
+      "total_ratings": 69700,
+      "director": "Nick Park",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Devil Wears Prada, 2006 - ½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-devil-wears-prada/",
+      "letterboxd_slug": "the-devil-wears-prada",
+      "watched_at": "Thu, 14 May 2026 03:37:18 +1200",
+      "logged_at_raw": "Thu, 14 May 2026 03:37:18 +1200",
+      "logged_at_iso": "2026-05-13T15:37:18+00:00",
+      "logged_hour": 15,
+      "logged_minute": 37,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330",
+      "user_rating": 0.5,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 596,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Devil Wears Prada",
+      "directors": [
+        "David Frankel"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 109.0,
+      "average_rating": 3.81,
+      "watches": 2701050,
+      "likes": 847229,
+      "fans": 40000,
+      "total_ratings": 1679811,
+      "director": "David Frankel",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Mirrored Mind, 2005 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/mirrored-mind/",
+      "letterboxd_slug": "mirrored-mind",
+      "watched_at": "Thu, 14 May 2026 03:36:51 +1200",
+      "logged_at_raw": "Thu, 14 May 2026 03:36:51 +1200",
+      "logged_at_iso": "2026-05-13T15:36:51+00:00",
+      "logged_hour": 15,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/6/3/2/6/66326-mirrored-mind-0-600-0-900-crop.jpg?v=1e266f6939",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/6/3/2/6/66326-mirrored-mind-0-600-0-900-crop.jpg?v=1e266f6939",
+      "user_rating": 3.0,
+      "year": 2005,
+      "has_review": true,
+      "review_word_count": 94,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Mirrored Mind",
+      "directors": [
+        "Gakuryu Ishii"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "ja",
+      "runtime": 61,
+      "tmdb_id": 79860,
+      "director_source": "tmdb_details_cache",
+      "director": "Gakuryu Ishii"
+    },
+    {
+      "rss_title": "Michael, 2026 - ★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/michael-2026/",
+      "letterboxd_slug": "michael-2026",
+      "watched_at": "Thu, 14 May 2026 03:36:19 +1200",
+      "logged_at_raw": "Thu, 14 May 2026 03:36:19 +1200",
+      "logged_at_iso": "2026-05-13T15:36:19+00:00",
+      "logged_hour": 15,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/4/1/1/0/3/841103-michael-2026-0-600-0-900-crop.jpg?v=1e8e478e40",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/4/1/1/0/3/841103-michael-2026-0-600-0-900-crop.jpg?v=1e8e478e40",
+      "user_rating": 1.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 654,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Michael",
+      "directors": [
+        "Antoine Fuqua"
+      ],
+      "genres": [
+        "Music",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 128,
+      "tmdb_id": 936075,
+      "director_source": "tmdb_details_cache",
+      "director": "Antoine Fuqua"
+    },
+    {
+      "rss_title": "The Longest Nite, 1998 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-longest-nite/",
+      "letterboxd_slug": "the-longest-nite",
+      "watched_at": "Wed, 6 May 2026 21:02:12 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 21:02:12 +1200",
+      "logged_at_iso": "2026-05-06T09:02:12+00:00",
+      "logged_hour": 9,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/3/8/5/3/23853-the-longest-nite-0-600-0-900-crop.jpg?v=323e293376",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/3/8/5/3/23853-the-longest-nite-0-600-0-900-crop.jpg?v=323e293376",
+      "user_rating": 3.5,
+      "year": 1998,
+      "has_review": true,
+      "review_word_count": 218,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Longest Nite",
+      "directors": [
+        "Patrick Yau Tat-Chi"
+      ],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "countries": [
+        "Hong Kong"
+      ],
+      "original_language": "cn",
+      "runtime": 84,
+      "tmdb_id": 41158,
+      "director_source": "tmdb_details_cache",
+      "director": "Patrick Yau Tat-Chi"
+    },
+    {
+      "rss_title": "Pierrot le Fou, 1965 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/pierrot-le-fou/",
+      "letterboxd_slug": "pierrot-le-fou",
+      "watched_at": "Wed, 6 May 2026 20:48:44 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 20:48:44 +1200",
+      "logged_at_iso": "2026-05-06T08:48:44+00:00",
+      "logged_hour": 8,
+      "logged_minute": 48,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/0/9/0/50090-pierrot-le-fou-0-600-0-900-crop.jpg?v=1c8a33c309",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/0/9/0/50090-pierrot-le-fou-0-600-0-900-crop.jpg?v=1c8a33c309",
+      "user_rating": 4.5,
+      "year": 1965,
+      "has_review": true,
+      "review_word_count": 330,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Pierrot le Fou",
+      "directors": [
+        "Jean-Luc Godard"
+      ],
+      "genres": [
+        "Romance",
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "French",
+      "runtime": 110.0,
+      "average_rating": null,
+      "watches": 180938,
+      "likes": 59620,
+      "fans": 4900,
+      "total_ratings": 119169,
+      "director": "Jean-Luc Godard",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Yannick, 2023 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/yannick-2023/",
+      "letterboxd_slug": "yannick-2023",
+      "watched_at": "Wed, 6 May 2026 20:40:13 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 20:40:13 +1200",
+      "logged_at_iso": "2026-05-06T08:40:13+00:00",
+      "logged_hour": 8,
+      "logged_minute": 40,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/0/1/8/3/6/1001836-yannick-0-600-0-900-crop.jpg?v=d862dbca81",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/0/1/8/3/6/1001836-yannick-0-600-0-900-crop.jpg?v=d862dbca81",
+      "user_rating": 3.0,
+      "year": 2023,
+      "has_review": true,
+      "review_word_count": 172,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Yannick",
+      "directors": [
+        "Quentin Dupieux"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 67,
+      "tmdb_id": 1110358,
+      "director_source": "tmdb_details_cache",
+      "director": "Quentin Dupieux"
+    },
+    {
+      "rss_title": "The Second Act, 2024 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-second-act/",
+      "letterboxd_slug": "the-second-act",
+      "watched_at": "Wed, 6 May 2026 20:25:32 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 20:25:32 +1200",
+      "logged_at_iso": "2026-05-06T08:25:32+00:00",
+      "logged_hour": 8,
+      "logged_minute": 25,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/4/7/1/6/4/1047164-the-second-act-0-600-0-900-crop.jpg?v=86602d3dc5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/4/7/1/6/4/1047164-the-second-act-0-600-0-900-crop.jpg?v=86602d3dc5",
+      "user_rating": 3.5,
+      "year": 2024,
+      "has_review": true,
+      "review_word_count": 104,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Second Act",
+      "directors": [
+        "Quentin Dupieux"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 80,
+      "tmdb_id": 1161108,
+      "director_source": "tmdb_details_cache",
+      "director": "Quentin Dupieux"
+    },
+    {
+      "rss_title": "My Father's Shadow, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/my-fathers-shadow-2025/",
+      "letterboxd_slug": "my-fathers-shadow-2025",
+      "watched_at": "Wed, 6 May 2026 20:23:46 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 20:23:46 +1200",
+      "logged_at_iso": "2026-05-06T08:23:46+00:00",
+      "logged_hour": 8,
+      "logged_minute": 23,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/1/1/2/5/1/1311251-my-fathers-shadow-2025-0-600-0-900-crop.jpg?v=8a0d4c5e7a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/1/1/2/5/1/1311251-my-fathers-shadow-2025-0-600-0-900-crop.jpg?v=8a0d4c5e7a",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 252,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "My Father's Shadow",
+      "directors": [
+        "Akinola Davies Jr."
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "NG",
+        "GB",
+        "IE"
+      ],
+      "original_language": "en",
+      "runtime": 93,
+      "tmdb_id": 1432605,
+      "director_source": "tmdb_details_cache",
+      "director": "Akinola Davies Jr."
+    },
+    {
+      "rss_title": "Juha, 1999 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/juha/",
+      "letterboxd_slug": "juha",
+      "watched_at": "Wed, 6 May 2026 20:18:17 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 20:18:17 +1200",
+      "logged_at_iso": "2026-05-06T08:18:17+00:00",
+      "logged_hour": 8,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/8/6/2/10862-juha-0-600-0-900-crop.jpg?v=fe91aaa65f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/0/8/6/2/10862-juha-0-600-0-900-crop.jpg?v=fe91aaa65f",
+      "user_rating": 3.5,
+      "year": 1999,
+      "has_review": true,
+      "review_word_count": 266,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Juha",
+      "directors": [
+        "Aki Kaurismäki"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "Finland",
+        "France",
+        "Germany"
+      ],
+      "original_language": "fi",
+      "runtime": 78,
+      "tmdb_id": 55257,
+      "director_source": "tmdb_details_cache",
+      "director": "Aki Kaurismäki"
+    },
+    {
+      "rss_title": "Fitzcarraldo, 1982 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/fitzcarraldo/",
+      "letterboxd_slug": "fitzcarraldo",
+      "watched_at": "Fri, 10 Apr 2026 19:36:21 +1200",
+      "logged_at_raw": "Fri, 10 Apr 2026 19:36:21 +1200",
+      "logged_at_iso": "2026-04-10T07:36:21+00:00",
+      "logged_hour": 7,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/mx/hx/fm/03/uovgR063sBxGHQWD8YzQm4WJX4-0-600-0-900-crop.jpg?v=75ea9132cc",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/mx/hx/fm/03/uovgR063sBxGHQWD8YzQm4WJX4-0-600-0-900-crop.jpg?v=75ea9132cc",
+      "user_rating": 4.0,
+      "year": 1982,
+      "has_review": true,
+      "review_word_count": 318,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Fitzcarraldo",
+      "directors": [
+        "Werner Herzog"
+      ],
+      "genres": [
+        "Drama",
+        "Adventure"
+      ],
+      "countries": [
+        "Germany",
+        "Peru"
+      ],
+      "original_language": "German",
+      "runtime": 157.0,
+      "average_rating": 4.14,
+      "watches": 96959,
+      "likes": 27924,
+      "fans": 1100,
+      "total_ratings": 63358,
+      "director": "Werner Herzog",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Viridiana, 1961 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/viridiana/",
+      "letterboxd_slug": "viridiana",
+      "watched_at": "Fri, 10 Apr 2026 19:18:16 +1200",
+      "logged_at_raw": "Fri, 10 Apr 2026 19:18:16 +1200",
+      "logged_at_iso": "2026-04-10T07:18:16+00:00",
+      "logged_hour": 7,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/2/9/4/49294-viridiana-0-600-0-900-crop.jpg?v=45489590bd",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/2/9/4/49294-viridiana-0-600-0-900-crop.jpg?v=45489590bd",
+      "user_rating": 4.0,
+      "year": 1961,
+      "has_review": true,
+      "review_word_count": 416,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Viridiana",
+      "directors": [
+        "Luis Buñuel"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "Spain",
+        "Mexico"
+      ],
+      "original_language": "Spanish",
+      "runtime": 90.0,
+      "average_rating": null,
+      "watches": 57514,
+      "likes": 16196,
+      "fans": 414,
+      "total_ratings": 38122,
+      "director": "Luis Buñuel",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Cruise, 1998 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-cruise/",
+      "letterboxd_slug": "the-cruise",
+      "watched_at": "Fri, 10 Apr 2026 19:12:23 +1200",
+      "logged_at_raw": "Fri, 10 Apr 2026 19:12:23 +1200",
+      "logged_at_iso": "2026-04-10T07:12:23+00:00",
+      "logged_hour": 7,
+      "logged_minute": 12,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/0/4/6/5/30465-the-cruise-0-600-0-900-crop.jpg?v=c06b2d5321",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/0/4/6/5/30465-the-cruise-0-600-0-900-crop.jpg?v=c06b2d5321",
+      "user_rating": 3.5,
+      "year": 1998,
+      "has_review": true,
+      "review_word_count": 184,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Cruise",
+      "directors": [
+        "Bennett Miller"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 76,
+      "tmdb_id": 32326,
+      "director_source": "tmdb_details_cache",
+      "director": "Bennett Miller"
+    },
+    {
+      "rss_title": "The Drama, 2026 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-drama/",
+      "letterboxd_slug": "the-drama",
+      "watched_at": "Fri, 10 Apr 2026 18:50:24 +1200",
+      "logged_at_raw": "Fri, 10 Apr 2026 18:50:24 +1200",
+      "logged_at_iso": "2026-04-10T06:50:24+00:00",
+      "logged_hour": 6,
+      "logged_minute": 50,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/5/4/9/4/1205494-the-drama-0-600-0-900-crop.jpg?v=2320acafd5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/5/4/9/4/1205494-the-drama-0-600-0-900-crop.jpg?v=2320acafd5",
+      "user_rating": 3.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 1078,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Drama",
+      "directors": [
+        "Kristoffer Borgli"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 105,
+      "tmdb_id": 1325734,
+      "director_source": "tmdb_details_cache",
+      "director": "Kristoffer Borgli"
+    },
+    {
+      "rss_title": "One Flew Over the Cuckoo's Nest, 1975 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/one-flew-over-the-cuckoos-nest/",
+      "letterboxd_slug": "one-flew-over-the-cuckoos-nest",
+      "watched_at": "Sun, 5 Apr 2026 04:58:53 +1200",
+      "logged_at_raw": "Sun, 5 Apr 2026 04:58:53 +1200",
+      "logged_at_iso": "2026-04-04T16:58:53+00:00",
+      "logged_hour": 16,
+      "logged_minute": 58,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/lf/ry/hy/2e/RHteRHXqym9f0gI4cmChbFOxD-0-600-0-900-crop.jpg?v=1e6a37509a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/lf/ry/hy/2e/RHteRHXqym9f0gI4cmChbFOxD-0-600-0-900-crop.jpg?v=1e6a37509a",
+      "user_rating": 4.5,
+      "year": 1975,
+      "has_review": true,
+      "review_word_count": 74,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "One Flew Over the Cuckoo's Nest",
+      "directors": [
+        "Miloš Forman"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 133.0,
+      "average_rating": 4.36,
+      "watches": 1117895,
+      "likes": 360602,
+      "fans": 19000,
+      "total_ratings": 710799,
+      "director": "Miloš Forman",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Wild at Heart, 1990 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/wild-at-heart/",
+      "letterboxd_slug": "wild-at-heart",
+      "watched_at": "Sun, 5 Apr 2026 04:57:20 +1200",
+      "logged_at_raw": "Sun, 5 Apr 2026 04:57:20 +1200",
+      "logged_at_iso": "2026-04-04T16:57:20+00:00",
+      "logged_hour": 16,
+      "logged_minute": 57,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/bi/3h/zv/k4/5Lu9HbcGBxjm4R1KNthmqaD5VRT-0-600-0-900-crop.jpg?v=36a83d1697",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/bi/3h/zv/k4/5Lu9HbcGBxjm4R1KNthmqaD5VRT-0-600-0-900-crop.jpg?v=36a83d1697",
+      "user_rating": 4.0,
+      "year": 1990,
+      "has_review": true,
+      "review_word_count": 224,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Wild at Heart",
+      "directors": [
+        "David Lynch"
+      ],
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Romance"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 125.0,
+      "average_rating": 3.89,
+      "watches": 280529,
+      "likes": 95425,
+      "fans": 4200,
+      "total_ratings": 198543,
+      "director": "David Lynch",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Bram Stoker's Dracula, 1992 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/bram-stokers-dracula/",
+      "letterboxd_slug": "bram-stokers-dracula",
+      "watched_at": "Sun, 5 Apr 2026 04:55:53 +1200",
+      "logged_at_raw": "Sun, 5 Apr 2026 04:55:53 +1200",
+      "logged_at_iso": "2026-04-04T16:55:53+00:00",
+      "logged_hour": 16,
+      "logged_minute": 55,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/8/4/5/4/48454-bram-stoker-s-dracula-0-600-0-900-crop.jpg?v=18a4a777e2",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/8/4/5/4/48454-bram-stoker-s-dracula-0-600-0-900-crop.jpg?v=18a4a777e2",
+      "user_rating": 3.0,
+      "year": 1992,
+      "has_review": true,
+      "review_word_count": 442,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Bram Stoker's Dracula",
+      "directors": [
+        "Francis Ford Coppola"
+      ],
+      "genres": [
+        "Horror",
+        "Romance"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 128.0,
+      "average_rating": 3.71,
+      "watches": 555561,
+      "likes": 163549,
+      "fans": 9000,
+      "total_ratings": 375248,
+      "director": "Francis Ford Coppola",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "M*A*S*H, 1970 - ★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/mash/",
+      "letterboxd_slug": "mash",
+      "watched_at": "Sat, 4 Apr 2026 11:35:48 +1300",
+      "logged_at_raw": "Sat, 4 Apr 2026 11:35:48 +1300",
+      "logged_at_iso": "2026-04-03T22:35:48+00:00",
+      "logged_hour": 22,
+      "logged_minute": 35,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/7/3/51473-m-a-s-h-0-600-0-900-crop.jpg?v=058a166ea1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/7/3/51473-m-a-s-h-0-600-0-900-crop.jpg?v=058a166ea1",
+      "user_rating": 1.0,
+      "year": 1970,
+      "has_review": true,
+      "review_word_count": 502,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "M*A*S*H",
+      "directors": [
+        "Robert Altman"
+      ],
+      "genres": [
+        "War",
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 116.0,
+      "average_rating": 3.52,
+      "watches": 103164,
+      "likes": 18738,
+      "fans": 152,
+      "total_ratings": 58416,
+      "director": "Robert Altman",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Project Hail Mary, 2026 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/project-hail-mary/",
+      "letterboxd_slug": "project-hail-mary",
+      "watched_at": "Tue, 31 Mar 2026 01:18:41 +1300",
+      "logged_at_raw": "Tue, 31 Mar 2026 01:18:41 +1300",
+      "logged_at_iso": "2026-03-30T12:18:41+00:00",
+      "logged_hour": 12,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/1/1/2/8/8/611288-project-hail-mary-0-600-0-900-crop.jpg?v=ac31b6ec03",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/1/1/2/8/8/611288-project-hail-mary-0-600-0-900-crop.jpg?v=ac31b6ec03",
+      "user_rating": 4.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 494,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Project Hail Mary",
+      "directors": [
+        "Phil Lord",
+        "Christopher Miller"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 157,
+      "tmdb_id": 687163,
+      "director_source": "tmdb_details_cache",
+      "director": "Phil Lord"
+    },
+    {
+      "rss_title": "Alice in Wonderland, 1915 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/alice-in-wonderland-1915/",
+      "letterboxd_slug": "alice-in-wonderland-1915",
+      "watched_at": "Sat, 28 Mar 2026 00:06:25 +1300",
+      "logged_at_raw": "Sat, 28 Mar 2026 00:06:25 +1300",
+      "logged_at_iso": "2026-03-27T11:06:25+00:00",
+      "logged_hour": 11,
+      "logged_minute": 6,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/3/7/7/6/73776-alice-in-wonderland-0-600-0-900-crop.jpg?v=752a7a8272",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/3/7/7/6/73776-alice-in-wonderland-0-600-0-900-crop.jpg?v=752a7a8272",
+      "user_rating": 2.5,
+      "year": 1915,
+      "has_review": true,
+      "review_word_count": 174,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Alice in Wonderland",
+      "directors": [
+        "W.W. Young"
+      ],
+      "genres": [
+        "Family",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 59,
+      "tmdb_id": 87300,
+      "director_source": "tmdb_details_cache",
+      "director": "W.W. Young"
+    },
+    {
+      "rss_title": "Silent Movie, 1976 - ★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/silent-movie/",
+      "letterboxd_slug": "silent-movie",
+      "watched_at": "Sat, 28 Mar 2026 00:00:50 +1300",
+      "logged_at_raw": "Sat, 28 Mar 2026 00:00:50 +1300",
+      "logged_at_iso": "2026-03-27T11:00:50+00:00",
+      "logged_hour": 11,
+      "logged_minute": 0,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/7/3/0/45730-silent-movie-0-600-0-900-crop.jpg?v=b5bf3657ad",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/7/3/0/45730-silent-movie-0-600-0-900-crop.jpg?v=b5bf3657ad",
+      "user_rating": 2.0,
+      "year": 1976,
+      "has_review": true,
+      "review_word_count": 282,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Silent Movie",
+      "directors": [
+        "Mel Brooks"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 87.0,
+      "average_rating": 3.42,
+      "watches": 19962,
+      "likes": 3665,
+      "fans": 10,
+      "total_ratings": 11064,
+      "director": "Mel Brooks",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Wuthering Heights, 2026 - ★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/wuthering-heights-2026/",
+      "letterboxd_slug": "wuthering-heights-2026",
+      "watched_at": "Mon, 16 Mar 2026 22:01:36 +1300",
+      "logged_at_raw": "Mon, 16 Mar 2026 22:01:36 +1300",
+      "logged_at_iso": "2026-03-16T09:01:36+00:00",
+      "logged_hour": 9,
+      "logged_minute": 1,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/9/1/1/1196911-wuthering-heights-2026-0-600-0-900-crop.jpg?v=7d02cf3bdc",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/9/1/1/1196911-wuthering-heights-2026-0-600-0-900-crop.jpg?v=7d02cf3bdc",
+      "user_rating": 1.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 388,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "\"Wuthering Heights\"",
+      "directors": [
+        "Emerald Fennell"
+      ],
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America",
+        "United Kingdom"
+      ],
+      "original_language": "en",
+      "runtime": 136,
+      "tmdb_id": 1316092,
+      "director_source": "tmdb_details_cache",
+      "director": "Emerald Fennell"
+    },
+    {
+      "rss_title": "Bullet in the Head, 1990 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/bullet-in-the-head/",
+      "letterboxd_slug": "bullet-in-the-head",
+      "watched_at": "Mon, 16 Mar 2026 22:00:04 +1300",
+      "logged_at_raw": "Mon, 16 Mar 2026 22:00:04 +1300",
+      "logged_at_iso": "2026-03-16T09:00:04+00:00",
+      "logged_hour": 9,
+      "logged_minute": 0,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/8/9/7/44897-bullet-in-the-head-0-600-0-900-crop.jpg?v=7c8ab2f3de",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/8/9/7/44897-bullet-in-the-head-0-600-0-900-crop.jpg?v=7c8ab2f3de",
+      "user_rating": 4.5,
+      "year": 1990,
+      "has_review": true,
+      "review_word_count": 254,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Bullet in the Head",
+      "directors": [
+        "John Woo"
+      ],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller",
+        "War"
+      ],
+      "countries": [
+        "Hong Kong"
+      ],
+      "original_language": "cn",
+      "runtime": 136,
+      "tmdb_id": 11909,
+      "director_source": "tmdb_details_cache",
+      "director": "John Woo"
+    }
+  ],
+  "profile_summary": {
+    "films_analyzed": 50,
+    "megabank_social_count": 16,
+    "supplemental_confirmed_count": 29,
+    "supplemental_review_count": 5,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 0.32,
+    "metadata_coverage_confirmed": 0.9,
+    "metadata_coverage_potential": 1.0,
+    "total_analyzed": 50,
+    "matched_count": 16,
+    "absent_count": 34,
+    "coverage": 0.32,
+    "user_average_rating": 3.43,
+    "community_average_rating": 3.9185714285714286,
+    "average_difference": -0.48857142857142843,
+    "runtime_average": 119.875,
+    "watches_mean": 458517.0625,
+    "watches_median": 154419.5,
+    "likes_mean": 144078.1875,
+    "fans_mean": 8621.0,
+    "top_genres": [
+      [
+        "Drama",
+        26
+      ],
+      [
+        "Comedy",
+        13
+      ],
+      [
+        "Romance",
+        7
+      ],
+      [
+        "Thriller",
+        7
+      ],
+      [
+        "Adventure",
+        5
+      ],
+      [
+        "Action",
+        5
+      ],
+      [
+        "Crime",
+        5
+      ],
+      [
+        "Horror",
+        4
+      ],
+      [
+        "Science Fiction",
+        4
+      ],
+      [
+        "Animation",
+        4
+      ]
+    ],
+    "top_countries": [
+      [
+        "USA",
+        20
+      ],
+      [
+        "France",
+        12
+      ],
+      [
+        "Italy",
+        4
+      ],
+      [
+        "UK",
+        4
+      ],
+      [
+        "Japan",
+        3
+      ],
+      [
+        "Hong Kong",
+        3
+      ],
+      [
+        "Spain",
+        3
+      ],
+      [
+        "Belgium",
+        2
+      ],
+      [
+        "South Korea",
+        2
+      ],
+      [
+        "Germany",
+        2
+      ]
+    ],
+    "top_languages": [
+      [
+        "English",
+        22
+      ],
+      [
+        "French",
+        6
+      ],
+      [
+        "Italian",
+        3
+      ],
+      [
+        "Spanish",
+        3
+      ],
+      [
+        "Korean",
+        2
+      ],
+      [
+        "Japanese",
+        2
+      ],
+      [
+        "cn",
+        2
+      ],
+      [
+        "af",
+        1
+      ],
+      [
+        "mk",
+        1
+      ],
+      [
+        "zh",
+        1
+      ]
+    ],
+    "top_directors": [
+      [
+        "Luchino Visconti",
+        2
+      ],
+      [
+        "David Lynch",
+        2
+      ],
+      [
+        "Curry Barker",
+        1
+      ],
+      [
+        "Kim Ki-duk",
+        1
+      ],
+      [
+        "William Friedkin",
+        1
+      ],
+      [
+        "Terry Gilliam",
+        1
+      ],
+      [
+        "Nick Park",
+        1
+      ],
+      [
+        "David Frankel",
+        1
+      ],
+      [
+        "Jean-Luc Godard",
+        1
+      ],
+      [
+        "Werner Herzog",
+        1
+      ]
+    ],
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    }
+  },
+  "profile_quality": {
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "status": "normal",
+    "is_partial": false,
+    "warning": null
+  },
+  "highlights": {
+    "most_popular": {
+      "rss_title": "The Devil Wears Prada, 2006 - ½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-devil-wears-prada/",
+      "letterboxd_slug": "the-devil-wears-prada",
+      "watched_at": "Thu, 14 May 2026 03:37:18 +1200",
+      "logged_at_raw": "Thu, 14 May 2026 03:37:18 +1200",
+      "logged_at_iso": "2026-05-13T15:37:18+00:00",
+      "logged_hour": 15,
+      "logged_minute": 37,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330",
+      "user_rating": 0.5,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 596,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Devil Wears Prada",
+      "directors": [
+        "David Frankel"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 109.0,
+      "average_rating": 3.81,
+      "watches": 2701050,
+      "likes": 847229,
+      "fans": 40000,
+      "total_ratings": 1679811,
+      "director": "David Frankel",
+      "director_source": "megabank"
+    },
+    "most_niche": {
+      "rss_title": "Moebius, 2013 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/moebius-2013/",
+      "letterboxd_slug": "moebius-2013",
+      "watched_at": "Tue, 9 Jun 2026 00:27:54 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 00:27:54 +1200",
+      "logged_at_iso": "2026-06-08T12:27:54+00:00",
+      "logged_hour": 12,
+      "logged_minute": 27,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/0/6/7/153067-moebius-0-600-0-900-crop.jpg?v=fa31414cc5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/0/6/7/153067-moebius-0-600-0-900-crop.jpg?v=fa31414cc5",
+      "user_rating": 4.0,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 646,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Moebius",
+      "directors": [
+        "Kim Ki-duk"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "Korean",
+      "runtime": 89.0,
+      "average_rating": 3.28,
+      "watches": 13131,
+      "likes": 2277,
+      "fans": 34,
+      "total_ratings": 9007,
+      "director": "Kim Ki-duk",
+      "director_source": "megabank"
+    },
+    "most_fans": {
+      "rss_title": "Mulholland Drive, 2001 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/mulholland-drive/1/",
+      "letterboxd_slug": "mulholland-drive",
+      "watched_at": "Tue, 26 May 2026 01:36:32 +1200",
+      "logged_at_raw": "Tue, 26 May 2026 01:36:32 +1200",
+      "logged_at_iso": "2026-05-25T13:36:32+00:00",
+      "logged_hour": 13,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "user_rating": 4.0,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 88,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Mulholland Drive",
+      "directors": [
+        "David Lynch"
+      ],
+      "genres": [
+        "Mystery",
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "France",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 147.0,
+      "average_rating": 4.26,
+      "watches": 1172795,
+      "likes": 439434,
+      "fans": 54000,
+      "total_ratings": 825070,
+      "director": "David Lynch",
+      "director_source": "megabank"
+    },
+    "best_fans_ratio": {
+      "rss_title": "Mulholland Drive, 2001 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/mulholland-drive/1/",
+      "letterboxd_slug": "mulholland-drive",
+      "watched_at": "Tue, 26 May 2026 01:36:32 +1200",
+      "logged_at_raw": "Tue, 26 May 2026 01:36:32 +1200",
+      "logged_at_iso": "2026-05-25T13:36:32+00:00",
+      "logged_hour": 13,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "user_rating": 4.0,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 88,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Mulholland Drive",
+      "directors": [
+        "David Lynch"
+      ],
+      "genres": [
+        "Mystery",
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "France",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 147.0,
+      "average_rating": 4.26,
+      "watches": 1172795,
+      "likes": 439434,
+      "fans": 54000,
+      "total_ratings": 825070,
+      "director": "David Lynch",
+      "director_source": "megabank"
+    },
+    "longest": {
+      "rss_title": "The Leopard, 1963 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-leopard/",
+      "letterboxd_slug": "the-leopard",
+      "watched_at": "Mon, 18 May 2026 20:24:57 +1200",
+      "logged_at_raw": "Mon, 18 May 2026 20:24:57 +1200",
+      "logged_at_iso": "2026-05-18T08:24:57+00:00",
+      "logged_hour": 8,
+      "logged_minute": 24,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/6/7/51167-the-leopard-0-600-0-900-crop.jpg?v=7b7c331fe4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/6/7/51167-the-leopard-0-600-0-900-crop.jpg?v=7b7c331fe4",
+      "user_rating": 4.0,
+      "year": 1963,
+      "has_review": true,
+      "review_word_count": 528,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Leopard",
+      "directors": [
+        "Luchino Visconti"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "Italian",
+      "runtime": 186.0,
+      "average_rating": 4.14,
+      "watches": 60880,
+      "likes": 17088,
+      "fans": 802,
+      "total_ratings": 39970,
+      "director": "Luchino Visconti",
+      "director_source": "megabank"
+    },
+    "shortest": {
+      "rss_title": "A Close Shave, 1995 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/a-close-shave-1995/",
+      "letterboxd_slug": "a-close-shave-1995",
+      "watched_at": "Thu, 14 May 2026 03:37:39 +1200",
+      "logged_at_raw": "Thu, 14 May 2026 03:37:39 +1200",
+      "logged_at_iso": "2026-05-13T15:37:39+00:00",
+      "logged_hour": 15,
+      "logged_minute": 37,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/5/8/5/51585-a-close-shave-1995-0-600-0-900-crop.jpg?v=e84c7fea11",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/5/8/5/51585-a-close-shave-1995-0-600-0-900-crop.jpg?v=e84c7fea11",
+      "user_rating": 4.0,
+      "year": 1995,
+      "has_review": true,
+      "review_word_count": 508,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "A Close Shave",
+      "directors": [
+        "Nick Park"
+      ],
+      "genres": [
+        "Family",
+        "Comedy",
+        "Animation"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "original_language": "English",
+      "runtime": 30.0,
+      "average_rating": 4.15,
+      "watches": 127901,
+      "likes": 34597,
+      "fans": 165,
+      "total_ratings": 69700,
+      "director": "Nick Park",
+      "director_source": "megabank"
+    }
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "user": "qa_5_films",
+  "source_file": "data\\output\\qa_5_films_wrapped.json",
+  "coverage": {
+    "total_films_analyzed": 5,
+    "detected_films_count": 5,
+    "target_films_count": 50,
+    "profile_quality": {
+      "detected_films_count": 5,
+      "target_films_count": 50,
+      "status": "very_limited",
+      "is_partial": true,
+      "warning": "Profil très limité : seulement 5 films détectés. Certaines sections peuvent être indisponibles."
+    },
+    "social_films_count": 5,
+    "confirmed_metadata_films_count": 5,
+    "potential_metadata_films_count": 5,
+    "supplemental_review_count": 0,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 1.0,
+    "confirmed_metadata_coverage": 1.0,
+    "potential_metadata_coverage": 1.0,
+    "review_count": 2,
+    "review_rate": 0.4
+  },
+  "radar_scores": {
+    "mainstreamness": {
+      "value_5": 2,
+      "raw_value": 38.78046210942676,
+      "label": "Popularité moyenne",
+      "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
+      "data_source": "5 films with Megabank social stats",
+      "confidence": "low"
+    },
+    "oldness": {
+      "value_5": 3,
+      "raw_value": 24.0,
+      "average_year": 2002.0,
+      "label": "Âge moyen",
+      "description": "Tendance dérivée de l'année moyenne de sortie de tes 5 films détectés.",
+      "data_source": "5 films from Letterboxd RSS",
+      "confidence": "low"
+    },
+    "endurance": {
+      "value_5": 1,
+      "raw_value": 92.0,
+      "label": "Endurance",
+      "description": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
+      "data_source": "5 films with confirmed metadata",
+      "confidence": "low"
+    },
+    "reviewness": {
+      "value_5": 1,
+      "raw_value": 2,
+      "review_count": 2,
+      "review_rate": 0.4,
+      "label": "Quelques traces",
+      "description": "Tu écris seulement quand un film appelle vraiment un commentaire.",
+      "data_source": "5 films from Letterboxd RSS",
+      "confidence": "low"
+    }
+  },
+  "log_time_profile": null,
+  "rating_personality": {
+    "user_average_rating": 3.5,
+    "community_average_rating": 3.8000000000000003,
+    "average_difference": -0.30000000000000027,
+    "label": "severe"
+  },
+  "niche_profile": {
+    "watches_median": 15000.0,
+    "watches_mean": 15000.0,
+    "most_niche_film": {
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "title": "QA Film 0",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-0/",
+      "letterboxd_slug": "qa-film-0",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2000,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 90,
+      "average_rating": 3.6,
+      "watches": 10000,
+      "likes": 1000,
+      "fans": 100,
+      "total_ratings": 5000
+    },
+    "most_mainstream_film": {
+      "rss_title": "QA Film 4, 2004 - ★★★½",
+      "title": "QA Film 4",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-4/",
+      "letterboxd_slug": "qa-film-4",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2004,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 4"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 94,
+      "average_rating": 4.0,
+      "watches": 20000,
+      "likes": 1400,
+      "fans": 140,
+      "total_ratings": 5800
+    },
+    "niche_index": 61.21953789057324,
+    "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
+  },
+  "cult_profile": {
+    "best_cult_film": {
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "title": "QA Film 0",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-0/",
+      "letterboxd_slug": "qa-film-0",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2000,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 90,
+      "average_rating": 3.6,
+      "watches": 10000,
+      "likes": 1000,
+      "fans": 100,
+      "total_ratings": 5000
+    },
+    "best_cult_ratio": 0.01,
+    "average_cult_ratio": 0.008245714285714287,
+    "cult_index": 41.22857142857143,
+    "formula": "fans / watches per social film; cult_index = clamp(average_cult_ratio / 0.02 * 100, 0, 100). A 2% average fans/watches ratio maps to 100."
+  },
+  "runtime_profile": {
+    "runtime_average": 92.0,
+    "shortest_film": {
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "title": "QA Film 0",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-0/",
+      "letterboxd_slug": "qa-film-0",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2000,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 90,
+      "average_rating": 3.6,
+      "watches": 10000,
+      "likes": 1000,
+      "fans": 100,
+      "total_ratings": 5000
+    },
+    "longest_film": {
+      "rss_title": "QA Film 4, 2004 - ★★★½",
+      "title": "QA Film 4",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-4/",
+      "letterboxd_slug": "qa-film-4",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2004,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 4"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 94,
+      "average_rating": 4.0,
+      "watches": 20000,
+      "likes": 1400,
+      "fans": 140,
+      "total_ratings": 5800
+    },
+    "label": "short-form friendly"
+  },
+  "genre_dna": {
+    "top_genres": [
+      [
+        "Drama",
+        4
+      ],
+      [
+        "Thriller",
+        2
+      ],
+      [
+        "Comedy",
+        1
+      ],
+      [
+        "Horror",
+        1
+      ],
+      [
+        "Mystery",
+        1
+      ],
+      [
+        "Crime",
+        1
+      ]
+    ],
+    "genre_diversity_count": 6,
+    "dominant_genre": "Drama",
+    "dominant_genre_share": 0.4
+  },
+  "genre_bubbles": [
+    {
+      "genre": "Drama",
+      "count": 4,
+      "share": 0.4,
+      "size": 140.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.8,
+      "rating_gap": -0.3
+    },
+    {
+      "genre": "Thriller",
+      "count": 2,
+      "share": 0.2,
+      "size": 90.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.8,
+      "rating_gap": -0.3
+    },
+    {
+      "genre": "Comedy",
+      "count": 1,
+      "share": 0.1,
+      "size": 65.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.7,
+      "rating_gap": -0.2
+    },
+    {
+      "genre": "Horror",
+      "count": 1,
+      "share": 0.1,
+      "size": 65.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.8,
+      "rating_gap": -0.3
+    },
+    {
+      "genre": "Mystery",
+      "count": 1,
+      "share": 0.1,
+      "size": 65.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.8,
+      "rating_gap": -0.3
+    },
+    {
+      "genre": "Crime",
+      "count": 1,
+      "share": 0.1,
+      "size": 65.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.9,
+      "rating_gap": -0.4
+    }
+  ],
+  "country_passport": {
+    "top_countries": [
+      [
+        "USA",
+        2
+      ],
+      [
+        "France",
+        1
+      ],
+      [
+        "Japan",
+        1
+      ],
+      [
+        "South Korea",
+        1
+      ]
+    ],
+    "number_of_countries": 4,
+    "dominant_country": "USA",
+    "non_us_share": 0.6,
+    "label": "internationally curious"
+  },
+  "country_map": {
+    "title": "Passeport cinéma",
+    "subtitle": "Les pays de production qui traversent tes 5 films détectés.",
+    "countries": [
+      {
+        "name": "USA",
+        "iso2": "US",
+        "count": 2,
+        "share": 0.4,
+        "intensity": 1.0
+      },
+      {
+        "name": "France",
+        "iso2": "FR",
+        "count": 1,
+        "share": 0.2,
+        "intensity": 0.5
+      },
+      {
+        "name": "Japan",
+        "iso2": "JP",
+        "count": 1,
+        "share": 0.2,
+        "intensity": 0.5
+      },
+      {
+        "name": "South Korea",
+        "iso2": "KR",
+        "count": 1,
+        "share": 0.2,
+        "intensity": 0.5
+      }
+    ],
+    "max_count": 2,
+    "total_country_tags": 5
+  },
+  "director_recurrence": {
+    "top_directors": [
+      [
+        "Director 0",
+        1
+      ],
+      [
+        "Director 1",
+        1
+      ],
+      [
+        "Director 2",
+        1
+      ],
+      [
+        "Director 3",
+        1
+      ],
+      [
+        "Director 4",
+        1
+      ]
+    ],
+    "repeat_directors": [],
+    "most_repeated_director": null
+  }
+}

@@ -1,0 +1,1581 @@
+{
+  "user": "tobiashottin",
+  "source_file": "data\\output\\tobiashottin_wrapped.json",
+  "coverage": {
+    "total_films_analyzed": 50,
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    },
+    "social_films_count": 16,
+    "confirmed_metadata_films_count": 45,
+    "potential_metadata_films_count": 50,
+    "supplemental_review_count": 5,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 0.32,
+    "confirmed_metadata_coverage": 0.9,
+    "potential_metadata_coverage": 1.0,
+    "review_count": 49,
+    "review_rate": 0.98
+  },
+  "radar_scores": {
+    "mainstreamness": {
+      "value_5": 4,
+      "raw_value": 73.6026273858384,
+      "label": "Popularité moyenne",
+      "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
+      "data_source": "16 films with Megabank social stats",
+      "confidence": "medium"
+    },
+    "oldness": {
+      "value_5": 3,
+      "raw_value": 24.0,
+      "average_year": 2002.0,
+      "label": "Âge moyen",
+      "description": "Tendance dérivée de l'année moyenne de sortie de tes 50 films détectés.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    },
+    "endurance": {
+      "value_5": 3,
+      "raw_value": 110.08888888888889,
+      "label": "Endurance",
+      "description": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
+      "data_source": "45 films with confirmed metadata",
+      "confidence": "high"
+    },
+    "reviewness": {
+      "value_5": 5,
+      "raw_value": 49,
+      "review_count": 49,
+      "review_rate": 0.98,
+      "label": "Journal intégral",
+      "description": "Chaque film ou presque devient une entrée de journal.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    }
+  },
+  "log_time_profile": {
+    "average_time": "11:16",
+    "average_hour_decimal": 11.27,
+    "period": "morning",
+    "label": "Soleil matinal",
+    "description": "Tes films sont surtout loggés en début de journée.",
+    "data_source": "50 films from Letterboxd RSS",
+    "confidence": "high"
+  },
+  "rating_personality": {
+    "user_average_rating": 3.43,
+    "community_average_rating": 3.9185714285714286,
+    "average_difference": -0.48857142857142843,
+    "paired_user_average_rating": 3.357142857142857,
+    "paired_community_average_rating": 3.9185714285714286,
+    "paired_average_difference": -0.5614285714285714,
+    "paired_count": 14,
+    "method": "paired_gap",
+    "label": "severe"
+  },
+  "niche_profile": {
+    "watches_median": 154419.5,
+    "watches_mean": 458517.0625,
+    "most_niche_film": {
+      "rss_title": "Moebius, 2013 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/moebius-2013/",
+      "letterboxd_slug": "moebius-2013",
+      "watched_at": "Tue, 9 Jun 2026 00:27:54 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 00:27:54 +1200",
+      "logged_at_iso": "2026-06-08T12:27:54+00:00",
+      "logged_hour": 12,
+      "logged_minute": 27,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/0/6/7/153067-moebius-0-600-0-900-crop.jpg?v=fa31414cc5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/0/6/7/153067-moebius-0-600-0-900-crop.jpg?v=fa31414cc5",
+      "user_rating": 4.0,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 646,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Moebius",
+      "directors": [
+        "Kim Ki-duk"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "Korean",
+      "runtime": 89.0,
+      "average_rating": 3.28,
+      "watches": 13131,
+      "likes": 2277,
+      "fans": 34,
+      "total_ratings": 9007,
+      "director": "Kim Ki-duk",
+      "director_source": "megabank"
+    },
+    "most_mainstream_film": {
+      "rss_title": "The Devil Wears Prada, 2006 - ½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-devil-wears-prada/",
+      "letterboxd_slug": "the-devil-wears-prada",
+      "watched_at": "Thu, 14 May 2026 03:37:18 +1200",
+      "logged_at_raw": "Thu, 14 May 2026 03:37:18 +1200",
+      "logged_at_iso": "2026-05-13T15:37:18+00:00",
+      "logged_hour": 15,
+      "logged_minute": 37,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330",
+      "user_rating": 0.5,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 596,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Devil Wears Prada",
+      "directors": [
+        "David Frankel"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 109.0,
+      "average_rating": 3.81,
+      "watches": 2701050,
+      "likes": 847229,
+      "fans": 40000,
+      "total_ratings": 1679811,
+      "director": "David Frankel",
+      "director_source": "megabank"
+    },
+    "niche_index": 26.397372614161597,
+    "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
+  },
+  "cult_profile": {
+    "best_cult_film": {
+      "rss_title": "Mulholland Drive, 2001 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/mulholland-drive/1/",
+      "letterboxd_slug": "mulholland-drive",
+      "watched_at": "Tue, 26 May 2026 01:36:32 +1200",
+      "logged_at_raw": "Tue, 26 May 2026 01:36:32 +1200",
+      "logged_at_iso": "2026-05-25T13:36:32+00:00",
+      "logged_hour": 13,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/kv/7n/p8/tv/fMC8JBWx2VjsJ53JopAcFjqmlYv-0-600-0-900-crop.jpg?v=3d69c00608",
+      "user_rating": 4.0,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 88,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Mulholland Drive",
+      "directors": [
+        "David Lynch"
+      ],
+      "genres": [
+        "Mystery",
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "France",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 147.0,
+      "average_rating": 4.26,
+      "watches": 1172795,
+      "likes": 439434,
+      "fans": 54000,
+      "total_ratings": 825070,
+      "director": "David Lynch",
+      "director_source": "megabank"
+    },
+    "best_cult_ratio": 0.04604385250619247,
+    "average_cult_ratio": 0.012454163818484203,
+    "cult_index": 62.270819092421014,
+    "formula": "fans / watches per social film; cult_index = clamp(average_cult_ratio / 0.02 * 100, 0, 100). A 2% average fans/watches ratio maps to 100."
+  },
+  "runtime_profile": {
+    "runtime_average": 110.08888888888889,
+    "runtime_included_count": 45,
+    "runtime_excluded_count": 5,
+    "runtime_invalid_metadata_count": 0,
+    "shortest_film": {
+      "rss_title": "A Close Shave, 1995 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/a-close-shave-1995/",
+      "letterboxd_slug": "a-close-shave-1995",
+      "watched_at": "Thu, 14 May 2026 03:37:39 +1200",
+      "logged_at_raw": "Thu, 14 May 2026 03:37:39 +1200",
+      "logged_at_iso": "2026-05-13T15:37:39+00:00",
+      "logged_hour": 15,
+      "logged_minute": 37,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/5/8/5/51585-a-close-shave-1995-0-600-0-900-crop.jpg?v=e84c7fea11",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/5/8/5/51585-a-close-shave-1995-0-600-0-900-crop.jpg?v=e84c7fea11",
+      "user_rating": 4.0,
+      "year": 1995,
+      "has_review": true,
+      "review_word_count": 508,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "A Close Shave",
+      "directors": [
+        "Nick Park"
+      ],
+      "genres": [
+        "Family",
+        "Comedy",
+        "Animation"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "original_language": "English",
+      "runtime": 30.0,
+      "average_rating": 4.15,
+      "watches": 127901,
+      "likes": 34597,
+      "fans": 165,
+      "total_ratings": 69700,
+      "director": "Nick Park",
+      "director_source": "megabank"
+    },
+    "longest_film": {
+      "rss_title": "The Leopard, 1963 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/the-leopard/",
+      "letterboxd_slug": "the-leopard",
+      "watched_at": "Mon, 18 May 2026 20:24:57 +1200",
+      "logged_at_raw": "Mon, 18 May 2026 20:24:57 +1200",
+      "logged_at_iso": "2026-05-18T08:24:57+00:00",
+      "logged_hour": 8,
+      "logged_minute": 24,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/6/7/51167-the-leopard-0-600-0-900-crop.jpg?v=7b7c331fe4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/6/7/51167-the-leopard-0-600-0-900-crop.jpg?v=7b7c331fe4",
+      "user_rating": 4.0,
+      "year": 1963,
+      "has_review": true,
+      "review_word_count": 528,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Leopard",
+      "directors": [
+        "Luchino Visconti"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "Italian",
+      "runtime": 186.0,
+      "average_rating": 4.14,
+      "watches": 60880,
+      "likes": 17088,
+      "fans": 802,
+      "total_ratings": 39970,
+      "director": "Luchino Visconti",
+      "director_source": "megabank"
+    },
+    "label": "standard runtime"
+  },
+  "genre_dna": {
+    "top_genres": [
+      [
+        "Drama",
+        26
+      ],
+      [
+        "Comedy",
+        13
+      ],
+      [
+        "Romance",
+        7
+      ],
+      [
+        "Thriller",
+        7
+      ],
+      [
+        "Adventure",
+        5
+      ],
+      [
+        "Action",
+        5
+      ],
+      [
+        "Crime",
+        5
+      ],
+      [
+        "Horror",
+        4
+      ],
+      [
+        "Science Fiction",
+        4
+      ],
+      [
+        "Animation",
+        4
+      ]
+    ],
+    "genre_diversity_count": 18,
+    "dominant_genre": "Drama",
+    "dominant_genre_share": 0.26804123711340205
+  },
+  "genre_bubbles": [
+    {
+      "genre": "Drama",
+      "count": 26,
+      "share": 0.26804123711340205,
+      "size": 140.0,
+      "average_user_rating": 3.13,
+      "average_community_rating": 3.98,
+      "rating_gap": -0.84,
+      "films": [
+        {
+          "title": "Rocco and His Brothers",
+          "year": 1960,
+          "slug": null
+        },
+        {
+          "title": "DJ Ahmet",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Moebius",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "A City of Sadness",
+          "year": 1989,
+          "slug": null
+        },
+        {
+          "title": "The World of Love",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Bitter Christmas",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Swimmer",
+          "year": 1968,
+          "slug": null
+        },
+        {
+          "title": "Crescendo",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Mulholland Drive",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "The Beloved",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Leopard",
+          "year": 1963,
+          "slug": null
+        },
+        {
+          "title": "Il Divo",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "The Devil Wears Prada",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Mirrored Mind",
+          "year": 2005,
+          "slug": null
+        },
+        {
+          "title": "Michael",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Pierrot le Fou",
+          "year": 1965,
+          "slug": null
+        },
+        {
+          "title": "Yannick",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "The Second Act",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "My Father's Shadow",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Juha",
+          "year": 1999,
+          "slug": null
+        },
+        {
+          "title": "Fitzcarraldo",
+          "year": 1982,
+          "slug": null
+        },
+        {
+          "title": "Viridiana",
+          "year": 1961,
+          "slug": null
+        },
+        {
+          "title": "The Drama",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "One Flew Over the Cuckoo's Nest",
+          "year": 1975,
+          "slug": null
+        },
+        {
+          "title": "M*A*S*H",
+          "year": 1970,
+          "slug": null
+        },
+        {
+          "title": "\"Wuthering Heights\"",
+          "year": 2026,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Comedy",
+      "count": 13,
+      "share": 0.13402061855670103,
+      "size": 90.0,
+      "average_user_rating": 2.77,
+      "average_community_rating": 3.73,
+      "rating_gap": -0.96,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "DJ Ahmet",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Bitter Christmas",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Crescendo",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "A Close Shave",
+          "year": 1995,
+          "slug": null
+        },
+        {
+          "title": "The Devil Wears Prada",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Yannick",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "The Second Act",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Juha",
+          "year": 1999,
+          "slug": null
+        },
+        {
+          "title": "The Drama",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "M*A*S*H",
+          "year": 1970,
+          "slug": null
+        },
+        {
+          "title": "Silent Movie",
+          "year": 1976,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Romance",
+      "count": 7,
+      "share": 0.07216494845360824,
+      "size": 66.92,
+      "average_user_rating": 3.29,
+      "average_community_rating": 3.97,
+      "rating_gap": -0.68,
+      "films": [
+        {
+          "title": "Rocco and His Brothers",
+          "year": 1960,
+          "slug": null
+        },
+        {
+          "title": "Pierrot le Fou",
+          "year": 1965,
+          "slug": null
+        },
+        {
+          "title": "Juha",
+          "year": 1999,
+          "slug": null
+        },
+        {
+          "title": "The Drama",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Wild at Heart",
+          "year": 1990,
+          "slug": null
+        },
+        {
+          "title": "Bram Stoker's Dracula",
+          "year": 1992,
+          "slug": null
+        },
+        {
+          "title": "\"Wuthering Heights\"",
+          "year": 2026,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Thriller",
+      "count": 7,
+      "share": 0.07216494845360824,
+      "size": 66.92,
+      "average_user_rating": 3.86,
+      "average_community_rating": 4.0,
+      "rating_gap": -0.15,
+      "films": [
+        {
+          "title": "The French Connection",
+          "year": 1971,
+          "slug": null
+        },
+        {
+          "title": "Twelve Monkeys",
+          "year": 1995,
+          "slug": null
+        },
+        {
+          "title": "Mulholland Drive",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "The Longest Nite",
+          "year": 1998,
+          "slug": null
+        },
+        {
+          "title": "Yannick",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "Wild at Heart",
+          "year": 1990,
+          "slug": null
+        },
+        {
+          "title": "Bullet in the Head",
+          "year": 1990,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Adventure",
+      "count": 5,
+      "share": 0.05154639175257732,
+      "size": 59.23,
+      "average_user_rating": 3.9,
+      "average_community_rating": 4.14,
+      "rating_gap": -0.24,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Pirates of the Caribbean: Dead Man's Chest",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Junk World",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Fitzcarraldo",
+          "year": 1982,
+          "slug": null
+        },
+        {
+          "title": "Project Hail Mary",
+          "year": 2026,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Action",
+      "count": 5,
+      "share": 0.05154639175257732,
+      "size": 59.23,
+      "average_user_rating": 3.7,
+      "average_community_rating": 4.0,
+      "rating_gap": -0.3,
+      "films": [
+        {
+          "title": "Pirates of the Caribbean: Dead Man's Chest",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "The French Connection",
+          "year": 1971,
+          "slug": null
+        },
+        {
+          "title": "Junk World",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Longest Nite",
+          "year": 1998,
+          "slug": null
+        },
+        {
+          "title": "Bullet in the Head",
+          "year": 1990,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Crime",
+      "count": 5,
+      "share": 0.05154639175257732,
+      "size": 59.23,
+      "average_user_rating": 3.9,
+      "average_community_rating": 3.95,
+      "rating_gap": -0.05,
+      "films": [
+        {
+          "title": "The French Connection",
+          "year": 1971,
+          "slug": null
+        },
+        {
+          "title": "The Longest Nite",
+          "year": 1998,
+          "slug": null
+        },
+        {
+          "title": "Pierrot le Fou",
+          "year": 1965,
+          "slug": null
+        },
+        {
+          "title": "Wild at Heart",
+          "year": 1990,
+          "slug": null
+        },
+        {
+          "title": "Bullet in the Head",
+          "year": 1990,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Horror",
+      "count": 4,
+      "share": 0.041237113402061855,
+      "size": 55.38,
+      "average_user_rating": 3.75,
+      "average_community_rating": 3.71,
+      "rating_gap": 0.04,
+      "films": [
+        {
+          "title": "Backrooms",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Hen",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Obsession",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Bram Stoker's Dracula",
+          "year": 1992,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Science Fiction",
+      "count": 4,
+      "share": 0.041237113402061855,
+      "size": 55.38,
+      "average_user_rating": 4.38,
+      "average_community_rating": 3.87,
+      "rating_gap": 0.5,
+      "films": [
+        {
+          "title": "Backrooms",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Junk World",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Twelve Monkeys",
+          "year": 1995,
+          "slug": null
+        },
+        {
+          "title": "Project Hail Mary",
+          "year": 2026,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Animation",
+      "count": 4,
+      "share": 0.041237113402061855,
+      "size": 55.38,
+      "average_user_rating": 4.25,
+      "average_community_rating": 4.15,
+      "rating_gap": 0.1,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Junk World",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "A Close Shave",
+          "year": 1995,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Mystery",
+      "count": 3,
+      "share": 0.030927835051546393,
+      "size": 51.54,
+      "average_user_rating": 4.5,
+      "average_community_rating": 4.06,
+      "rating_gap": 0.44,
+      "films": [
+        {
+          "title": "Backrooms",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Twelve Monkeys",
+          "year": 1995,
+          "slug": null
+        },
+        {
+          "title": "Mulholland Drive",
+          "year": 2001,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Family",
+      "count": 3,
+      "share": 0.030927835051546393,
+      "size": 51.54,
+      "average_user_rating": 3.5,
+      "average_community_rating": 4.15,
+      "rating_gap": -0.65,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "A Close Shave",
+          "year": 1995,
+          "slug": null
+        },
+        {
+          "title": "Alice in Wonderland",
+          "year": 1915,
+          "slug": null
+        }
+      ]
+    }
+  ],
+  "country_passport": {
+    "top_countries": [
+      [
+        "USA",
+        20
+      ],
+      [
+        "France",
+        12
+      ],
+      [
+        "Italy",
+        4
+      ],
+      [
+        "UK",
+        4
+      ],
+      [
+        "Japan",
+        3
+      ],
+      [
+        "Hong Kong",
+        3
+      ],
+      [
+        "Spain",
+        3
+      ],
+      [
+        "Belgium",
+        2
+      ],
+      [
+        "South Korea",
+        2
+      ],
+      [
+        "Germany",
+        2
+      ]
+    ],
+    "number_of_countries": 22,
+    "dominant_country": "USA",
+    "non_us_share": 0.7014925373134329,
+    "label": "world cinema explorer"
+  },
+  "country_map": {
+    "title": "Ma carte",
+    "subtitle": "Les pays de production qui traversent tes 50 films détectés.",
+    "countries": [
+      {
+        "name": "USA",
+        "iso2": "US",
+        "count": 20,
+        "share": 0.29850746268656714,
+        "intensity": 1.0,
+        "films": [
+          {
+            "title": "Backrooms",
+            "year": 2026,
+            "slug": "backrooms-2026"
+          },
+          {
+            "title": "Minions & Monsters",
+            "year": 2026,
+            "slug": "minions-monsters-2026"
+          },
+          {
+            "title": "Obsession",
+            "year": 2025,
+            "slug": "obsession-2025"
+          },
+          {
+            "title": "Pirates of the Caribbean: Dead Man's Chest",
+            "year": 2006,
+            "slug": "pirates-of-the-caribbean-dead-mans-chest"
+          },
+          {
+            "title": "The French Connection",
+            "year": 1971,
+            "slug": "the-french-connection"
+          },
+          {
+            "title": "The Swimmer",
+            "year": 1968,
+            "slug": "the-swimmer"
+          },
+          {
+            "title": "Twelve Monkeys",
+            "year": 1995,
+            "slug": "twelve-monkeys"
+          },
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "mulholland-drive"
+          },
+          {
+            "title": "The Devil Wears Prada",
+            "year": 2006,
+            "slug": "the-devil-wears-prada"
+          },
+          {
+            "title": "Michael",
+            "year": 2026,
+            "slug": "michael-2026"
+          },
+          {
+            "title": "The Cruise",
+            "year": 1998,
+            "slug": "the-cruise"
+          },
+          {
+            "title": "The Drama",
+            "year": 2026,
+            "slug": "the-drama"
+          },
+          {
+            "title": "One Flew Over the Cuckoo's Nest",
+            "year": 1975,
+            "slug": "one-flew-over-the-cuckoos-nest"
+          },
+          {
+            "title": "Wild at Heart",
+            "year": 1990,
+            "slug": "wild-at-heart"
+          },
+          {
+            "title": "Bram Stoker's Dracula",
+            "year": 1992,
+            "slug": "bram-stokers-dracula"
+          },
+          {
+            "title": "M*A*S*H",
+            "year": 1970,
+            "slug": "mash"
+          },
+          {
+            "title": "Project Hail Mary",
+            "year": 2026,
+            "slug": "project-hail-mary"
+          },
+          {
+            "title": "Alice in Wonderland",
+            "year": 1915,
+            "slug": "alice-in-wonderland-1915"
+          },
+          {
+            "title": "Silent Movie",
+            "year": 1976,
+            "slug": "silent-movie"
+          },
+          {
+            "title": "\"Wuthering Heights\"",
+            "year": 2026,
+            "slug": "wuthering-heights-2026"
+          }
+        ]
+      },
+      {
+        "name": "France",
+        "iso2": "FR",
+        "count": 12,
+        "share": 0.1791044776119403,
+        "intensity": 0.6,
+        "films": [
+          {
+            "title": "Rocco and His Brothers",
+            "year": 1960,
+            "slug": "rocco-and-his-brothers"
+          },
+          {
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
+          },
+          {
+            "title": "One Day in the Life of Andrei Arsenevich",
+            "year": 1999,
+            "slug": "one-day-in-the-life-of-andrei-arsenevich"
+          },
+          {
+            "title": "Crescendo",
+            "year": 2026,
+            "slug": "crescendo-2026-2"
+          },
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "mulholland-drive"
+          },
+          {
+            "title": "The Beloved",
+            "year": 2026,
+            "slug": "the-beloved-2026"
+          },
+          {
+            "title": "The Leopard",
+            "year": 1963,
+            "slug": "the-leopard"
+          },
+          {
+            "title": "Il Divo",
+            "year": 2008,
+            "slug": "il-divo"
+          },
+          {
+            "title": "Pierrot le Fou",
+            "year": 1965,
+            "slug": "pierrot-le-fou"
+          },
+          {
+            "title": "Yannick",
+            "year": 2023,
+            "slug": "yannick-2023"
+          },
+          {
+            "title": "The Second Act",
+            "year": 2024,
+            "slug": "the-second-act"
+          },
+          {
+            "title": "Juha",
+            "year": 1999,
+            "slug": "juha"
+          }
+        ]
+      },
+      {
+        "name": "Italy",
+        "iso2": "IT",
+        "count": 4,
+        "share": 0.05970149253731343,
+        "intensity": 0.2,
+        "films": [
+          {
+            "title": "Rocco and His Brothers",
+            "year": 1960,
+            "slug": "rocco-and-his-brothers"
+          },
+          {
+            "title": "The Leopard",
+            "year": 1963,
+            "slug": "the-leopard"
+          },
+          {
+            "title": "Il Divo",
+            "year": 2008,
+            "slug": "il-divo"
+          },
+          {
+            "title": "Pierrot le Fou",
+            "year": 1965,
+            "slug": "pierrot-le-fou"
+          }
+        ]
+      },
+      {
+        "name": "UK",
+        "iso2": "GB",
+        "count": 4,
+        "share": 0.05970149253731343,
+        "intensity": 0.2,
+        "films": [
+          {
+            "title": "The Swimmer",
+            "year": 1968,
+            "slug": "the-swimmer"
+          },
+          {
+            "title": "A Close Shave",
+            "year": 1995,
+            "slug": "a-close-shave-1995"
+          },
+          {
+            "title": "My Father's Shadow",
+            "year": 2025,
+            "slug": "my-fathers-shadow-2025"
+          },
+          {
+            "title": "\"Wuthering Heights\"",
+            "year": 2026,
+            "slug": "wuthering-heights-2026"
+          }
+        ]
+      },
+      {
+        "name": "Japan",
+        "iso2": "JP",
+        "count": 3,
+        "share": 0.04477611940298507,
+        "intensity": 0.15,
+        "films": [
+          {
+            "title": "Minions & Monsters",
+            "year": 2026,
+            "slug": "minions-monsters-2026"
+          },
+          {
+            "title": "Junk World",
+            "year": 2025,
+            "slug": "junk-world"
+          },
+          {
+            "title": "Mirrored Mind",
+            "year": 2005,
+            "slug": "mirrored-mind"
+          }
+        ]
+      },
+      {
+        "name": "Hong Kong",
+        "iso2": null,
+        "count": 3,
+        "share": 0.04477611940298507,
+        "intensity": 0.15,
+        "films": [
+          {
+            "title": "A City of Sadness",
+            "year": 1989,
+            "slug": "a-city-of-sadness"
+          },
+          {
+            "title": "The Longest Nite",
+            "year": 1998,
+            "slug": "the-longest-nite"
+          },
+          {
+            "title": "Bullet in the Head",
+            "year": 1990,
+            "slug": "bullet-in-the-head"
+          }
+        ]
+      },
+      {
+        "name": "Spain",
+        "iso2": "ES",
+        "count": 3,
+        "share": 0.04477611940298507,
+        "intensity": 0.15,
+        "films": [
+          {
+            "title": "Bitter Christmas",
+            "year": 2026,
+            "slug": "bitter-christmas"
+          },
+          {
+            "title": "The Beloved",
+            "year": 2026,
+            "slug": "the-beloved-2026"
+          },
+          {
+            "title": "Viridiana",
+            "year": 1961,
+            "slug": "viridiana"
+          }
+        ]
+      },
+      {
+        "name": "Belgium",
+        "iso2": "BE",
+        "count": 2,
+        "share": 0.029850746268656716,
+        "intensity": 0.1,
+        "films": [
+          {
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
+          },
+          {
+            "title": "Crescendo",
+            "year": 2026,
+            "slug": "crescendo-2026-2"
+          }
+        ]
+      },
+      {
+        "name": "South Korea",
+        "iso2": "KR",
+        "count": 2,
+        "share": 0.029850746268656716,
+        "intensity": 0.1,
+        "films": [
+          {
+            "title": "Moebius",
+            "year": 2013,
+            "slug": "moebius-2013"
+          },
+          {
+            "title": "The World of Love",
+            "year": 2025,
+            "slug": "the-world-of-love"
+          }
+        ]
+      },
+      {
+        "name": "Germany",
+        "iso2": "DE",
+        "count": 2,
+        "share": 0.029850746268656716,
+        "intensity": 0.1,
+        "films": [
+          {
+            "title": "Juha",
+            "year": 1999,
+            "slug": "juha"
+          },
+          {
+            "title": "Fitzcarraldo",
+            "year": 1982,
+            "slug": "fitzcarraldo"
+          }
+        ]
+      },
+      {
+        "name": "Canada",
+        "iso2": "CA",
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "Backrooms",
+            "year": 2026,
+            "slug": "backrooms-2026"
+          }
+        ]
+      },
+      {
+        "name": "South Africa",
+        "iso2": null,
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "Hen",
+            "year": 2025,
+            "slug": "hen-2025"
+          }
+        ]
+      },
+      {
+        "name": "Macedonia",
+        "iso2": null,
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "DJ Ahmet",
+            "year": 2025,
+            "slug": "dj-ahmet"
+          }
+        ]
+      },
+      {
+        "name": "Czech Republic",
+        "iso2": null,
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "DJ Ahmet",
+            "year": 2025,
+            "slug": "dj-ahmet"
+          }
+        ]
+      },
+      {
+        "name": "Serbia",
+        "iso2": null,
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "DJ Ahmet",
+            "year": 2025,
+            "slug": "dj-ahmet"
+          }
+        ]
+      },
+      {
+        "name": "Croatia",
+        "iso2": null,
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "DJ Ahmet",
+            "year": 2025,
+            "slug": "dj-ahmet"
+          }
+        ]
+      },
+      {
+        "name": "Taiwan",
+        "iso2": null,
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "A City of Sadness",
+            "year": 1989,
+            "slug": "a-city-of-sadness"
+          }
+        ]
+      },
+      {
+        "name": "Nigeria",
+        "iso2": "NG",
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "My Father's Shadow",
+            "year": 2025,
+            "slug": "my-fathers-shadow-2025"
+          }
+        ]
+      },
+      {
+        "name": "Ireland",
+        "iso2": "IE",
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "My Father's Shadow",
+            "year": 2025,
+            "slug": "my-fathers-shadow-2025"
+          }
+        ]
+      },
+      {
+        "name": "Finland",
+        "iso2": null,
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "Juha",
+            "year": 1999,
+            "slug": "juha"
+          }
+        ]
+      },
+      {
+        "name": "Peru",
+        "iso2": null,
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "Fitzcarraldo",
+            "year": 1982,
+            "slug": "fitzcarraldo"
+          }
+        ]
+      },
+      {
+        "name": "Mexico",
+        "iso2": null,
+        "count": 1,
+        "share": 0.014925373134328358,
+        "intensity": 0.05,
+        "films": [
+          {
+            "title": "Viridiana",
+            "year": 1961,
+            "slug": "viridiana"
+          }
+        ]
+      }
+    ],
+    "max_count": 20,
+    "total_country_tags": 67
+  },
+  "director_recurrence": {
+    "top_directors": [
+      [
+        "Luchino Visconti",
+        2
+      ],
+      [
+        "David Lynch",
+        2
+      ],
+      [
+        "Quentin Dupieux",
+        2
+      ],
+      [
+        "Kane Parsons",
+        1
+      ],
+      [
+        "Pierre Coffin",
+        1
+      ],
+      [
+        "Marco Nguyen",
+        1
+      ],
+      [
+        "Nicolas Athané",
+        1
+      ],
+      [
+        "Nico Scheepers",
+        1
+      ],
+      [
+        "Curry Barker",
+        1
+      ],
+      [
+        "Georgi M. Unkovski",
+        1
+      ]
+    ],
+    "repeat_directors": [
+      {
+        "director": "Luchino Visconti",
+        "count": 2
+      },
+      {
+        "director": "David Lynch",
+        "count": 2
+      },
+      {
+        "director": "Quentin Dupieux",
+        "count": 2
+      }
+    ],
+    "most_repeated_director": {
+      "director": "Luchino Visconti",
+      "count": 2,
+      "director_slug": "luchino-visconti",
+      "letterboxd_url": "https://letterboxd.com/director/luchino-visconti/",
+      "films": [
+        {
+          "title": "Rocco and His Brothers",
+          "slug": "rocco-and-his-brothers",
+          "year": 1960
+        },
+        {
+          "title": "The Leopard",
+          "slug": "the-leopard",
+          "year": 1963
+        }
+      ]
+    }
+  }
+}

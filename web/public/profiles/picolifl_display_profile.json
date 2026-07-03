@@ -1,0 +1,1776 @@
+{
+  "user": "picolifl",
+  "source_files": {
+    "wrapped": "data\\output\\picolifl_wrapped.json",
+    "profile_metrics": "data\\output\\picolifl_profile_metrics.json",
+    "display_config": "data\\config\\display_config.json",
+    "radar_archetypes": "data\\config\\radar_archetypes_20.json"
+  },
+  "hero": {
+    "username": "picolifl",
+    "primary_archetype_id": "demanding_explorer",
+    "primary_archetype": "The Demanding Explorer",
+    "subtitle": "Exacting taste, wide horizons.",
+    "one_liner": "You wander far from the obvious picks, but you make every star work for it.",
+    "social_coverage": 0.4489795918367347,
+    "metadata_coverage": 0.9591836734693877,
+    "detected_films_count": 49,
+    "target_films_count": 50,
+    "profile_quality_status": "partial"
+  },
+  "profile_quality": {
+    "detected_films_count": 49,
+    "target_films_count": 50,
+    "status": "partial",
+    "is_partial": true,
+    "warning": "Profil calculé sur 49 films détectés. C’est assez pour esquisser une tendance, mais certaines conclusions peuvent encore bouger avec plus de films."
+  },
+  "average_rating_summary": {
+    "value": 3.4895833333333335,
+    "scale": 5,
+    "detected_films_count": 49,
+    "target_films_count": 50
+  },
+  "radar_scores": {
+    "mainstreamness": {
+      "value_5": 5,
+      "raw_value": 91.92658732878938,
+      "label": "Popularité moyenne",
+      "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
+      "data_source": "22 films with Megabank social stats",
+      "confidence": "medium"
+    },
+    "oldness": {
+      "value_5": 2,
+      "raw_value": 12.346938775510125,
+      "average_year": 2013.6530612244899,
+      "label": "Âge moyen",
+      "description": "Tendance dérivée de l'année moyenne de sortie de tes 49 films détectés.",
+      "data_source": "49 films from Letterboxd RSS",
+      "confidence": "high"
+    },
+    "endurance": {
+      "value_5": 3,
+      "raw_value": 116.71739130434783,
+      "label": "Endurance",
+      "description": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
+      "data_source": "47 films with confirmed metadata",
+      "confidence": "high"
+    },
+    "reviewness": {
+      "value_5": 5,
+      "raw_value": 48,
+      "review_count": 48,
+      "review_rate": 0.9795918367346939,
+      "label": "Journal intégral",
+      "description": "Chaque film ou presque devient une entrée de journal.",
+      "data_source": "49 films from Letterboxd RSS",
+      "confidence": "medium"
+    }
+  },
+  "radar_editorial": {
+    "title": "Profil radar",
+    "subtitle": "Quatre axes pour situer ton rapport récent aux films : mainstreamness, oldness, staminess et reviewness.",
+    "axes": {
+      "mainstreamness": {
+        "axis_id": "mainstreamness",
+        "technical_axis_id": "mainstreamness",
+        "label": "Popularité",
+        "title": "Fan d’Interstellar",
+        "one_line": "Ta seule vue suffit à ce que Regelegorila fasse une rupture d’anévrisme, tu ne jures que par Interstellar, Fight Club et 7even.",
+        "cran": 5,
+        "image": null,
+        "image_src": null,
+        "illustration": null
+      },
+      "oldness": {
+        "axis_id": "oldness",
+        "technical_axis_id": "oldness",
+        "label": "Époque",
+        "title": "Éternel nostalgique",
+        "one_line": "Belmondo et Redford sont pour toi des petits jeunots, tu erres dans les limbes du XXe siècle comme Toto dans Cinema Paradiso.",
+        "cran": 2,
+        "image": null,
+        "image_src": null,
+        "illustration": null
+      },
+      "endurance": {
+        "axis_id": "staminess",
+        "technical_axis_id": "endurance",
+        "label": "Durée",
+        "title": "Consommateur mesuré",
+        "one_line": "Tu es juste et parcimonieux, tu notes les films indépendamment de leur longueur… tu es un bot ?",
+        "cran": 3,
+        "image": null,
+        "image_src": null,
+        "illustration": null
+      },
+      "reviewness": {
+        "axis_id": "reviewness",
+        "technical_axis_id": "reviewness",
+        "label": "Trace écrite",
+        "title": "Oracle",
+        "one_line": "Être omniscient, tu es le messie filmique, Letterboxd t’a amené à nous pour nous éclabousser de ta vérité. Nous t’aimons.",
+        "cran": 5,
+        "image": null,
+        "image_src": null,
+        "illustration": null
+      }
+    }
+  },
+  "log_time_profile": {
+    "average_time": "15:57",
+    "average_hour_decimal": 15.95,
+    "period": "afternoon",
+    "label": "Séance d’après-midi",
+    "description": "Tes films sont surtout loggés dans l’après-midi.",
+    "data_source": "49 films from Letterboxd RSS",
+    "confidence": "high"
+  },
+  "genre_bubbles": [
+    {
+      "genre": "Drama",
+      "count": 37,
+      "share": 0.3333333333333333,
+      "size": 140.0,
+      "average_user_rating": 3.54,
+      "average_community_rating": 3.93,
+      "rating_gap": -0.39,
+      "films": [
+        {
+          "title": "De Gaulle: Résistance",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Inside Llewyn Davis",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "The Favourite",
+          "year": 2018,
+          "slug": null
+        },
+        {
+          "title": "Burn After Reading",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Sully",
+          "year": 2016,
+          "slug": null
+        },
+        {
+          "title": "Persepolis",
+          "year": 2007,
+          "slug": null
+        },
+        {
+          "title": "Summer of 85",
+          "year": 2020,
+          "slug": null
+        },
+        {
+          "title": "The Great Arch",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Sibyl",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "I'm Still Here",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Declaration of War",
+          "year": 2011,
+          "slug": null
+        },
+        {
+          "title": "Sirāt",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Hateful Eight",
+          "year": 2015,
+          "slug": null
+        },
+        {
+          "title": "Synecdoche, New York",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "It Was Just an Accident",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Children of Men",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Joyeux Noel",
+          "year": 2005,
+          "slug": null
+        },
+        {
+          "title": "Goliath",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "Vanilla Sky",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Omar Killed Me",
+          "year": 2011,
+          "slug": null
+        },
+        {
+          "title": "Life Is Beautiful",
+          "year": 1997,
+          "slug": null
+        },
+        {
+          "title": "In Bruges",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "How to Make Millions Before Grandma Dies",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Kinds of Kindness",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Her",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "Hamnet",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Drama",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Blue Is the Warmest Color",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "Hiroshima Mon Amour",
+          "year": 1959,
+          "slug": null
+        },
+        {
+          "title": "The Departed",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Little Amélie or the Character of Rain",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Tell No One",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Paris, Texas",
+          "year": 1984,
+          "slug": null
+        },
+        {
+          "title": "All About My Mother",
+          "year": 1999,
+          "slug": null
+        },
+        {
+          "title": "Conclave",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Dallas Buyers Club",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "Nino",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Thriller",
+      "count": 13,
+      "share": 0.11711711711711711,
+      "size": 75.14,
+      "average_user_rating": 3.38,
+      "average_community_rating": 3.83,
+      "rating_gap": -0.45,
+      "films": [
+        {
+          "title": "Now You See Me",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "The Favourite",
+          "year": 2018,
+          "slug": null
+        },
+        {
+          "title": "Sirāt",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Decision to Leave",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "It Was Just an Accident",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Children of Men",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Goliath",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "Vanilla Sky",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Omar Killed Me",
+          "year": 2011,
+          "slug": null
+        },
+        {
+          "title": "Train to Busan",
+          "year": 2016,
+          "slug": null
+        },
+        {
+          "title": "The Departed",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Tell No One",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Conclave",
+          "year": 2024,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "History",
+      "count": 9,
+      "share": 0.08108108108108109,
+      "size": 64.32,
+      "average_user_rating": 3.33,
+      "average_community_rating": 4.17,
+      "rating_gap": -0.84,
+      "films": [
+        {
+          "title": "De Gaulle: Résistance",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Favourite",
+          "year": 2018,
+          "slug": null
+        },
+        {
+          "title": "Sully",
+          "year": 2016,
+          "slug": null
+        },
+        {
+          "title": "The Great Arch",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "I'm Still Here",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Joyeux Noel",
+          "year": 2005,
+          "slug": null
+        },
+        {
+          "title": "Hamnet",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Hiroshima Mon Amour",
+          "year": 1959,
+          "slug": null
+        },
+        {
+          "title": "Dallas Buyers Club",
+          "year": 2013,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Comedy",
+      "count": 9,
+      "share": 0.08108108108108109,
+      "size": 64.32,
+      "average_user_rating": 3.72,
+      "average_community_rating": 3.9,
+      "rating_gap": -0.17,
+      "films": [
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Favourite",
+          "year": 2018,
+          "slug": null
+        },
+        {
+          "title": "Burn After Reading",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Life Is Beautiful",
+          "year": 1997,
+          "slug": null
+        },
+        {
+          "title": "In Bruges",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Kinds of Kindness",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "The Drama",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Radiostars",
+          "year": 2012,
+          "slug": null
+        },
+        {
+          "title": "All About My Mother",
+          "year": 1999,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Romance",
+      "count": 9,
+      "share": 0.08108108108108109,
+      "size": 64.32,
+      "average_user_rating": 3.44,
+      "average_community_rating": 3.72,
+      "rating_gap": -0.28,
+      "films": [
+        {
+          "title": "Summer of 85",
+          "year": 2020,
+          "slug": null
+        },
+        {
+          "title": "Decision to Leave",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "Joyeux Noel",
+          "year": 2005,
+          "slug": null
+        },
+        {
+          "title": "Vanilla Sky",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Her",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "Hamnet",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Drama",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Blue Is the Warmest Color",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "Hiroshima Mon Amour",
+          "year": 1959,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Crime",
+      "count": 6,
+      "share": 0.05405405405405406,
+      "size": 56.22,
+      "average_user_rating": 3.58,
+      "average_community_rating": 3.85,
+      "rating_gap": -0.27,
+      "films": [
+        {
+          "title": "Now You See Me",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "It Was Just an Accident",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "In Bruges",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "The Departed",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Tell No One",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "A Clockwork Orange",
+          "year": 1971,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Mystery",
+      "count": 6,
+      "share": 0.05405405405405406,
+      "size": 56.22,
+      "average_user_rating": 3.58,
+      "average_community_rating": 3.83,
+      "rating_gap": -0.24,
+      "films": [
+        {
+          "title": "Decision to Leave",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "The Hateful Eight",
+          "year": 2015,
+          "slug": null
+        },
+        {
+          "title": "It Was Just an Accident",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Vanilla Sky",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Tell No One",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Conclave",
+          "year": 2024,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Science Fiction",
+      "count": 5,
+      "share": 0.04504504504504504,
+      "size": 53.51,
+      "average_user_rating": 3.7,
+      "average_community_rating": 3.88,
+      "rating_gap": -0.18,
+      "films": [
+        {
+          "title": "Inception",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Children of Men",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Vanilla Sky",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Her",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "A Clockwork Orange",
+          "year": 1971,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Animation",
+      "count": 3,
+      "share": 0.02702702702702703,
+      "size": 48.11,
+      "average_user_rating": 3.5,
+      "average_community_rating": 4.19,
+      "rating_gap": -0.69,
+      "films": [
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Persepolis",
+          "year": 2007,
+          "slug": null
+        },
+        {
+          "title": "Little Amélie or the Character of Rain",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Action",
+      "count": 3,
+      "share": 0.02702702702702703,
+      "size": 48.11,
+      "average_user_rating": 3.33,
+      "average_community_rating": 4.09,
+      "rating_gap": -0.76,
+      "films": [
+        {
+          "title": "Inception",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Children of Men",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Train to Busan",
+          "year": 2016,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Horror",
+      "count": 3,
+      "share": 0.02702702702702703,
+      "size": 48.11,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.97,
+      "rating_gap": -0.47,
+      "films": [
+        {
+          "title": "Obsession",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Train to Busan",
+          "year": 2016,
+          "slug": null
+        },
+        {
+          "title": "Kinds of Kindness",
+          "year": 2024,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Adventure",
+      "count": 2,
+      "share": 0.018018018018018018,
+      "size": 45.41,
+      "average_user_rating": 3.75,
+      "average_community_rating": 4.09,
+      "rating_gap": -0.34,
+      "films": [
+        {
+          "title": "Inception",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Train to Busan",
+          "year": 2016,
+          "slug": null
+        }
+      ]
+    }
+  ],
+  "country_map": {
+    "title": "Ma carte",
+    "subtitle": "Les pays de production qui traversent tes 49 films détectés.",
+    "countries": [
+      {
+        "name": "France",
+        "iso2": "FR",
+        "count": 25,
+        "share": 0.2976190476190476,
+        "intensity": 1.0,
+        "films": [
+          {
+            "title": "De Gaulle: Résistance",
+            "year": 2026,
+            "slug": "de-gaulle-resistance"
+          },
+          {
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
+          },
+          {
+            "title": "Inside Llewyn Davis",
+            "year": 2013,
+            "slug": "inside-llewyn-davis"
+          },
+          {
+            "title": "Now You See Me",
+            "year": 2013,
+            "slug": "now-you-see-me"
+          },
+          {
+            "title": "Burn After Reading",
+            "year": 2008,
+            "slug": "burn-after-reading"
+          },
+          {
+            "title": "Persepolis",
+            "year": 2007,
+            "slug": "persepolis"
+          },
+          {
+            "title": "Summer of 85",
+            "year": 2020,
+            "slug": "summer-of-85"
+          },
+          {
+            "title": "TRENTE",
+            "year": 2026,
+            "slug": "trente"
+          },
+          {
+            "title": "The Great Arch",
+            "year": 2025,
+            "slug": "the-great-arch-2025"
+          },
+          {
+            "title": "Sibyl",
+            "year": 2019,
+            "slug": "sibyl"
+          },
+          {
+            "title": "I'm Still Here",
+            "year": 2024,
+            "slug": "im-still-here-2024"
+          },
+          {
+            "title": "Declaration of War",
+            "year": 2011,
+            "slug": "declaration-of-war"
+          },
+          {
+            "title": "Sirāt",
+            "year": 2025,
+            "slug": "sirat-2025"
+          },
+          {
+            "title": "It Was Just an Accident",
+            "year": 2025,
+            "slug": "it-was-just-an-accident"
+          },
+          {
+            "title": "Joyeux Noel",
+            "year": 2005,
+            "slug": "joyeux-noel"
+          },
+          {
+            "title": "Goliath",
+            "year": 2022,
+            "slug": "goliath-2022"
+          },
+          {
+            "title": "Omar Killed Me",
+            "year": 2011,
+            "slug": "omar-killed-me"
+          },
+          {
+            "title": "Blue Is the Warmest Color",
+            "year": 2013,
+            "slug": "blue-is-the-warmest-color"
+          },
+          {
+            "title": "Hiroshima Mon Amour",
+            "year": 1959,
+            "slug": "hiroshima-mon-amour"
+          },
+          {
+            "title": "Radiostars",
+            "year": 2012,
+            "slug": "radiostars"
+          },
+          {
+            "title": "Little Amélie or the Character of Rain",
+            "year": 2025,
+            "slug": "little-amelie-or-the-character-of-rain"
+          },
+          {
+            "title": "Tell No One",
+            "year": 2006,
+            "slug": "tell-no-one"
+          },
+          {
+            "title": "Paris, Texas",
+            "year": 1984,
+            "slug": "paris-texas"
+          },
+          {
+            "title": "All About My Mother",
+            "year": 1999,
+            "slug": "all-about-my-mother"
+          },
+          {
+            "title": "Nino",
+            "year": 2025,
+            "slug": "nino-2025"
+          }
+        ]
+      },
+      {
+        "name": "USA",
+        "iso2": "US",
+        "count": 20,
+        "share": 0.23809523809523808,
+        "intensity": 0.8,
+        "films": [
+          {
+            "title": "De Gaulle: Résistance",
+            "year": 2026,
+            "slug": "de-gaulle-resistance"
+          },
+          {
+            "title": "Inception",
+            "year": 2010,
+            "slug": "inception"
+          },
+          {
+            "title": "Now You See Me",
+            "year": 2013,
+            "slug": "now-you-see-me"
+          },
+          {
+            "title": "The Favourite",
+            "year": 2018,
+            "slug": "the-favourite"
+          },
+          {
+            "title": "Burn After Reading",
+            "year": 2008,
+            "slug": "burn-after-reading"
+          },
+          {
+            "title": "Sully",
+            "year": 2016,
+            "slug": "sully"
+          },
+          {
+            "title": "Obsession",
+            "year": 2025,
+            "slug": "obsession-2025"
+          },
+          {
+            "title": "Persepolis",
+            "year": 2007,
+            "slug": "persepolis"
+          },
+          {
+            "title": "The Hateful Eight",
+            "year": 2015,
+            "slug": "the-hateful-eight"
+          },
+          {
+            "title": "Synecdoche, New York",
+            "year": 2008,
+            "slug": "synecdoche-new-york"
+          },
+          {
+            "title": "Children of Men",
+            "year": 2006,
+            "slug": "children-of-men"
+          },
+          {
+            "title": "Vanilla Sky",
+            "year": 2001,
+            "slug": "vanilla-sky"
+          },
+          {
+            "title": "In Bruges",
+            "year": 2008,
+            "slug": "in-bruges"
+          },
+          {
+            "title": "Kinds of Kindness",
+            "year": 2024,
+            "slug": "kinds-of-kindness"
+          },
+          {
+            "title": "Her",
+            "year": 2013,
+            "slug": "her"
+          },
+          {
+            "title": "Hamnet",
+            "year": 2025,
+            "slug": "hamnet"
+          },
+          {
+            "title": "The Drama",
+            "year": 2026,
+            "slug": "the-drama"
+          },
+          {
+            "title": "The Departed",
+            "year": 2006,
+            "slug": "the-departed"
+          },
+          {
+            "title": "Conclave",
+            "year": 2024,
+            "slug": "conclave"
+          },
+          {
+            "title": "Dallas Buyers Club",
+            "year": 2013,
+            "slug": "dallas-buyers-club"
+          }
+        ]
+      },
+      {
+        "name": "UK",
+        "iso2": "GB",
+        "count": 12,
+        "share": 0.14285714285714285,
+        "intensity": 0.48,
+        "films": [
+          {
+            "title": "Inception",
+            "year": 2010,
+            "slug": "inception"
+          },
+          {
+            "title": "Inside Llewyn Davis",
+            "year": 2013,
+            "slug": "inside-llewyn-davis"
+          },
+          {
+            "title": "The Favourite",
+            "year": 2018,
+            "slug": "the-favourite"
+          },
+          {
+            "title": "Burn After Reading",
+            "year": 2008,
+            "slug": "burn-after-reading"
+          },
+          {
+            "title": "Children of Men",
+            "year": 2006,
+            "slug": "children-of-men"
+          },
+          {
+            "title": "Joyeux Noel",
+            "year": 2005,
+            "slug": "joyeux-noel"
+          },
+          {
+            "title": "In Bruges",
+            "year": 2008,
+            "slug": "in-bruges"
+          },
+          {
+            "title": "Kinds of Kindness",
+            "year": 2024,
+            "slug": "kinds-of-kindness"
+          },
+          {
+            "title": "Hamnet",
+            "year": 2025,
+            "slug": "hamnet"
+          },
+          {
+            "title": "Paris, Texas",
+            "year": 1984,
+            "slug": "paris-texas"
+          },
+          {
+            "title": "Conclave",
+            "year": 2024,
+            "slug": "conclave"
+          },
+          {
+            "title": "A Clockwork Orange",
+            "year": 1971,
+            "slug": "a-clockwork-orange"
+          }
+        ]
+      },
+      {
+        "name": "Belgium",
+        "iso2": "BE",
+        "count": 7,
+        "share": 0.08333333333333333,
+        "intensity": 0.28,
+        "films": [
+          {
+            "title": "De Gaulle: Résistance",
+            "year": 2026,
+            "slug": "de-gaulle-resistance"
+          },
+          {
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
+          },
+          {
+            "title": "Summer of 85",
+            "year": 2020,
+            "slug": "summer-of-85"
+          },
+          {
+            "title": "Sibyl",
+            "year": 2019,
+            "slug": "sibyl"
+          },
+          {
+            "title": "Joyeux Noel",
+            "year": 2005,
+            "slug": "joyeux-noel"
+          },
+          {
+            "title": "Goliath",
+            "year": 2022,
+            "slug": "goliath-2022"
+          },
+          {
+            "title": "Blue Is the Warmest Color",
+            "year": 2013,
+            "slug": "blue-is-the-warmest-color"
+          }
+        ]
+      },
+      {
+        "name": "Spain",
+        "iso2": "ES",
+        "count": 4,
+        "share": 0.047619047619047616,
+        "intensity": 0.16,
+        "films": [
+          {
+            "title": "Sirāt",
+            "year": 2025,
+            "slug": "sirat-2025"
+          },
+          {
+            "title": "Vanilla Sky",
+            "year": 2001,
+            "slug": "vanilla-sky"
+          },
+          {
+            "title": "Blue Is the Warmest Color",
+            "year": 2013,
+            "slug": "blue-is-the-warmest-color"
+          },
+          {
+            "title": "All About My Mother",
+            "year": 1999,
+            "slug": "all-about-my-mother"
+          }
+        ]
+      },
+      {
+        "name": "Ireland",
+        "iso2": "IE",
+        "count": 2,
+        "share": 0.023809523809523808,
+        "intensity": 0.08,
+        "films": [
+          {
+            "title": "The Favourite",
+            "year": 2018,
+            "slug": "the-favourite"
+          },
+          {
+            "title": "Kinds of Kindness",
+            "year": 2024,
+            "slug": "kinds-of-kindness"
+          }
+        ]
+      },
+      {
+        "name": "South Korea",
+        "iso2": "KR",
+        "count": 2,
+        "share": 0.023809523809523808,
+        "intensity": 0.08,
+        "films": [
+          {
+            "title": "Decision to Leave",
+            "year": 2022,
+            "slug": "decision-to-leave"
+          },
+          {
+            "title": "Train to Busan",
+            "year": 2016,
+            "slug": "train-to-busan"
+          }
+        ]
+      },
+      {
+        "name": "Germany",
+        "iso2": "DE",
+        "count": 2,
+        "share": 0.023809523809523808,
+        "intensity": 0.08,
+        "films": [
+          {
+            "title": "Joyeux Noel",
+            "year": 2005,
+            "slug": "joyeux-noel"
+          },
+          {
+            "title": "Paris, Texas",
+            "year": 1984,
+            "slug": "paris-texas"
+          }
+        ]
+      },
+      {
+        "name": "Denmark",
+        "iso2": null,
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "The Great Arch",
+            "year": 2025,
+            "slug": "the-great-arch-2025"
+          }
+        ]
+      },
+      {
+        "name": "Brazil",
+        "iso2": null,
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "I'm Still Here",
+            "year": 2024,
+            "slug": "im-still-here-2024"
+          }
+        ]
+      },
+      {
+        "name": "Iran",
+        "iso2": null,
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "It Was Just an Accident",
+            "year": 2025,
+            "slug": "it-was-just-an-accident"
+          }
+        ]
+      },
+      {
+        "name": "Luxembourg",
+        "iso2": null,
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "It Was Just an Accident",
+            "year": 2025,
+            "slug": "it-was-just-an-accident"
+          }
+        ]
+      },
+      {
+        "name": "Romania",
+        "iso2": null,
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "Joyeux Noel",
+            "year": 2005,
+            "slug": "joyeux-noel"
+          }
+        ]
+      },
+      {
+        "name": "Morocco",
+        "iso2": null,
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "Omar Killed Me",
+            "year": 2011,
+            "slug": "omar-killed-me"
+          }
+        ]
+      },
+      {
+        "name": "Italy",
+        "iso2": "IT",
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "Life Is Beautiful",
+            "year": 1997,
+            "slug": "life-is-beautiful"
+          }
+        ]
+      },
+      {
+        "name": "Thailand",
+        "iso2": null,
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "How to Make Millions Before Grandma Dies",
+            "year": 2024,
+            "slug": "how-to-make-millions-before-grandma-dies"
+          }
+        ]
+      },
+      {
+        "name": "Japan",
+        "iso2": "JP",
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "Hiroshima Mon Amour",
+            "year": 1959,
+            "slug": "hiroshima-mon-amour"
+          }
+        ]
+      },
+      {
+        "name": "Hong Kong",
+        "iso2": null,
+        "count": 1,
+        "share": 0.011904761904761904,
+        "intensity": 0.04,
+        "films": [
+          {
+            "title": "The Departed",
+            "year": 2006,
+            "slug": "the-departed"
+          }
+        ]
+      }
+    ],
+    "max_count": 25,
+    "total_country_tags": 84
+  },
+  "recommendations": [
+    {
+      "slot": "safe_pick",
+      "title": "The Dark Knight",
+      "year": null,
+      "slug": "the-dark-knight",
+      "letterboxd_url": "https://letterboxd.com/film/the-dark-knight",
+      "score": 0.8699,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "high_community_rating",
+        "director_affinity",
+        "fans_watches_signal",
+        "non_us_angle"
+      ],
+      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "runtime": 152.0,
+      "average_rating": 4.48,
+      "watches": 4488171.0,
+      "fans": 110000.0,
+      "director": "Christopher Nolan",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "director_source": "film_normalized",
+      "poster_status": "missing",
+      "poster_source": null,
+      "poster_match": null
+    },
+    {
+      "slot": "deep_cut",
+      "title": "The Young Girls of Rochefort",
+      "year": null,
+      "slug": "the-young-girls-of-rochefort",
+      "letterboxd_url": "https://letterboxd.com/film/the-young-girls-of-rochefort",
+      "score": 0.8207,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "fans_watches_signal",
+        "non_us_angle",
+        "deep_cut"
+      ],
+      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "runtime": 126.0,
+      "average_rating": 4.32,
+      "watches": 117024.0,
+      "fans": 6300.0,
+      "director": "Jacques Demy",
+      "directors": [
+        "Jacques Demy"
+      ],
+      "director_source": "film_normalized",
+      "poster_status": "missing",
+      "poster_source": null,
+      "poster_match": null
+    },
+    {
+      "slot": "wild_card",
+      "title": "Pride",
+      "year": 2014,
+      "slug": "pride-2014",
+      "letterboxd_url": "https://letterboxd.com/film/pride-2014",
+      "score": 0.6614,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "fans_watches_signal",
+        "non_us_angle",
+        "wild_card_contrast"
+      ],
+      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "UK"
+      ],
+      "runtime": 120.0,
+      "average_rating": 4.13,
+      "watches": 166225.0,
+      "fans": 4600.0,
+      "director": "Matthew Warchus",
+      "directors": [
+        "Matthew Warchus"
+      ],
+      "director_source": "film_normalized",
+      "tmdb_id": 234200,
+      "poster_path": "/Kc3vbqO0X4VRnjACGNoWLNQvHo.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/Kc3vbqO0X4VRnjACGNoWLNQvHo.jpg",
+      "backdrop_path": "/tqLjEqOELHek2zfZ1d3vknG7Dfu.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/tqLjEqOELHek2zfZ1d3vknG7Dfu.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 234200,
+        "tmdb_title": "Pride",
+        "tmdb_original_title": "Pride",
+        "tmdb_year": 2014,
+        "expected_title": "Pride",
+        "expected_year": 2014,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    }
+  ],
+  "recommendations_status": {
+    "available": true,
+    "unavailable_reason": null
+  },
+  "recommendations_copy": {
+    "eyebrow": "RECOMMANDATIONS",
+    "title": "Trois recos pour la suite, à voir ou revoir",
+    "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
+    "unavailable_text": "Recommandations indisponibles pour ce profil.",
+    "slot_labels": {
+      "safe_pick": "Le choix sûr",
+      "deep_cut": "Le détour",
+      "wild_card": "Le pari"
+    },
+    "slot_descriptions": {
+      "safe_pick": "Un film populaire proche de tes genres préférés.",
+      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
+      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+    }
+  },
+  "cards": [
+    {
+      "id": "rating_personality",
+      "title": "Sévère",
+      "value": "-0.37",
+      "label": "",
+      "description": "Tu notes environ 0,37 étoile(s) en dessous de la moyenne Letterboxd.",
+      "confidence": "medium",
+      "data_source": "16 films comparables avec moyenne Letterboxd",
+      "confidence_label": "MOYEN"
+    },
+    {
+      "id": "reviewness",
+      "title": "Reviewer",
+      "value": "48/49",
+      "label": "",
+      "description": "Tu commentes souvent tes films vus.",
+      "confidence": "medium",
+      "data_source": "49 films depuis le RSS Letterboxd",
+      "confidence_label": "MOYEN"
+    },
+    {
+      "id": "runtime_profile",
+      "title": "Durée moyenne",
+      "value": "1h57",
+      "label": "",
+      "description": "Les films que tu as vus durent en moyenne 1h57.",
+      "confidence": "high",
+      "data_source": "46 films avec durée confirmée",
+      "confidence_label": "FIABLE"
+    },
+    {
+      "id": "country_passport",
+      "title": "Chauvin",
+      "value": "France",
+      "label": "",
+      "description": "La France représente 30 % des occurrences de pays de production de tes films vus.",
+      "confidence": "high",
+      "data_source": "47 films avec métadonnées confirmées",
+      "confidence_label": "FIABLE"
+    }
+  ],
+  "cards_section": {
+    "eyebrow": "SYNTHÈSE",
+    "title": "En bref…"
+  },
+  "synthesis_cards_audit": {
+    "rating_gap_method": "paired_gap",
+    "paired_count": 16,
+    "runtime_included_count": 46,
+    "runtime_excluded_count": 3
+  },
+  "highlights_copy": {
+    "eyebrow": "HIGHLIGHTS",
+    "title": "Toi, en 5 films et 1 réal",
+    "labels": {
+      "most_niche": "Le plus niche",
+      "most_mainstream": "Le plus mainstream",
+      "most_cult": "Le plus culte",
+      "longest": "Le plus long",
+      "shortest": "Le plus court",
+      "most_repeated_director": "Ton réalisateur récurrent"
+    }
+  },
+  "highlights": {
+    "most_niche": {
+      "title": "Summer of 85",
+      "rss_title": "Summer of 85, 2020 - ★★½",
+      "slug": "summer-of-85",
+      "url": "https://letterboxd.com/picolifl/film/summer-of-85/",
+      "source": "megabank",
+      "year": 2020,
+      "director": "François Ozon",
+      "directors": [
+        "François Ozon"
+      ],
+      "director_source": "megabank",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/8/4/9/9/5/584995-summer-of-85-0-600-0-900-crop.jpg?v=1023e749ca",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/8/4/9/9/5/584995-summer-of-85-0-600-0-900-crop.jpg?v=1023e749ca",
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/5/8/4/9/9/5/584995-summer-of-85-0-600-0-900-crop.jpg?v=1023e749ca",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "summer-of-85",
+        "expected_title": "Summer of 85",
+        "expected_year": 2020,
+        "confidence": 1.0
+      }
+    },
+    "most_mainstream": {
+      "title": "Inception",
+      "rss_title": "Inception, 2010 - ★★★★",
+      "slug": "inception",
+      "url": "https://letterboxd.com/picolifl/film/inception/",
+      "source": "megabank",
+      "year": 2010,
+      "director": "Christopher Nolan",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "director_source": "megabank",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "inception",
+        "expected_title": "Inception",
+        "expected_year": 2010,
+        "confidence": 1.0
+      }
+    },
+    "most_cult": {
+      "title": "Paris, Texas",
+      "rss_title": "Paris, Texas, 1984 - ★★★★½",
+      "slug": "paris-texas",
+      "url": "https://letterboxd.com/picolifl/film/paris-texas/",
+      "source": "megabank",
+      "year": 1984,
+      "director": "Wim Wenders",
+      "directors": [
+        "Wim Wenders"
+      ],
+      "director_source": "megabank",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "paris-texas",
+        "expected_title": "Paris, Texas",
+        "expected_year": 1984,
+        "confidence": 1.0
+      }
+    },
+    "longest": {
+      "title": "The Hateful Eight",
+      "rss_title": "The Hateful Eight, 2015 - ★★★★",
+      "slug": "the-hateful-eight",
+      "url": "https://letterboxd.com/picolifl/film/the-hateful-eight/",
+      "source": "megabank",
+      "year": 2015,
+      "director": "Quentin Tarantino",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "director_source": "megabank",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/9/7/0/1/2/197012-the-hateful-eight-0-600-0-900-crop.jpg?v=0428be5b84",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/9/7/0/1/2/197012-the-hateful-eight-0-600-0-900-crop.jpg?v=0428be5b84",
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/1/9/7/0/1/2/197012-the-hateful-eight-0-600-0-900-crop.jpg?v=0428be5b84",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "the-hateful-eight",
+        "expected_title": "The Hateful Eight",
+        "expected_year": 2015,
+        "confidence": 1.0
+      }
+    },
+    "shortest": {
+      "title": "The Speech",
+      "rss_title": "The Speech, 2020 - ★★★",
+      "slug": "the-speech-2020-1",
+      "url": "https://letterboxd.com/picolifl/film/the-speech-2020-1/",
+      "source": "supplemental",
+      "year": 2020,
+      "director": "Haohao Yan",
+      "directors": [
+        "Haohao Yan"
+      ],
+      "director_source": "tmdb_details_cache",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/3/5/2/3/7/635237-the-speech-0-600-0-900-crop.jpg?v=49776ab9be",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/3/5/2/3/7/635237-the-speech-0-600-0-900-crop.jpg?v=49776ab9be",
+      "tmdb_id": 745457,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/6/3/5/2/3/7/635237-the-speech-0-600-0-900-crop.jpg?v=49776ab9be",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "the-speech-2020-1",
+        "expected_title": "The Speech",
+        "expected_year": 2020,
+        "confidence": 1.0
+      }
+    },
+    "most_repeated_director": {
+      "director": "Joel Coen",
+      "count": 2,
+      "director_slug": "joel-coen",
+      "letterboxd_url": "https://letterboxd.com/director/joel-coen/",
+      "films": [
+        {
+          "title": "Inside Llewyn Davis",
+          "slug": "inside-llewyn-davis",
+          "year": 2013
+        },
+        {
+          "title": "Burn After Reading",
+          "slug": "burn-after-reading",
+          "year": 2008
+        }
+      ]
+    }
+  },
+  "media_enrichment": {
+    "tmdb_lookup_source": "server_cache_or_api",
+    "items_checked": 8,
+    "posters_verified": 6,
+    "posters_ambiguous": 0,
+    "posters_missing_count": 2,
+    "verified_by_source": {
+      "tmdb_search": 1,
+      "letterboxd_rss": 5
+    },
+    "homonymy_rejections": [],
+    "posters_missing": [
+      "The Dark Knight",
+      "The Young Girls of Rochefort"
+    ],
+    "obsession_audit": null
+  },
+  "warnings": [
+    "Profil calculé sur 49 films détectés. C’est assez pour esquisser une tendance, mais certaines conclusions peuvent encore bouger avec plus de films.",
+    "Social stats are based only on films present in the Megabank."
+  ],
+  "config_fallback_warnings": []
+}

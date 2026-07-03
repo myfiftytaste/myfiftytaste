@@ -1,0 +1,504 @@
+{
+  "user": "qa_50_films",
+  "source_file": "data\\output\\qa_50_films_wrapped.json",
+  "coverage": {
+    "total_films_analyzed": 50,
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    },
+    "social_films_count": 50,
+    "confirmed_metadata_films_count": 50,
+    "potential_metadata_films_count": 50,
+    "supplemental_review_count": 0,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 1.0,
+    "confirmed_metadata_coverage": 1.0,
+    "potential_metadata_coverage": 1.0,
+    "review_count": 17,
+    "review_rate": 0.34
+  },
+  "radar_scores": {
+    "mainstreamness": {
+      "value_5": 3,
+      "raw_value": 59.166515630015866,
+      "label": "Popularité moyenne",
+      "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
+      "data_source": "50 films with Megabank social stats",
+      "confidence": "high"
+    },
+    "oldness": {
+      "value_5": 2,
+      "raw_value": 17.5,
+      "average_year": 2008.5,
+      "label": "Âge moyen",
+      "description": "Tendance dérivée de l'année moyenne de sortie de tes 50 films détectés.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    },
+    "endurance": {
+      "value_5": 3,
+      "raw_value": 110.0,
+      "label": "Endurance",
+      "description": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
+      "data_source": "50 films with confirmed metadata",
+      "confidence": "high"
+    },
+    "reviewness": {
+      "value_5": 2,
+      "raw_value": 17,
+      "review_count": 17,
+      "review_rate": 0.34,
+      "label": "Critique sélectif",
+      "description": "Tu choisis tes moments : certaines séances méritent une vraie trace.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    }
+  },
+  "log_time_profile": null,
+  "rating_personality": {
+    "user_average_rating": 3.5,
+    "community_average_rating": 3.938,
+    "average_difference": -0.43800000000000017,
+    "label": "severe"
+  },
+  "niche_profile": {
+    "watches_median": 71250.0,
+    "watches_mean": 71250.0,
+    "most_niche_film": {
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "title": "QA Film 0",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-0/",
+      "letterboxd_slug": "qa-film-0",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2000,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 90,
+      "average_rating": 3.6,
+      "watches": 10000,
+      "likes": 1000,
+      "fans": 100,
+      "total_ratings": 5000
+    },
+    "most_mainstream_film": {
+      "rss_title": "QA Film 49, 2009 - ★★★½",
+      "title": "QA Film 49",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-49/",
+      "letterboxd_slug": "qa-film-49",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2009,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "English",
+      "runtime": 94,
+      "average_rating": 3.7,
+      "watches": 132500,
+      "likes": 5900,
+      "fans": 590,
+      "total_ratings": 14800
+    },
+    "niche_index": 40.833484369984134,
+    "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
+  },
+  "cult_profile": {
+    "best_cult_film": {
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "title": "QA Film 0",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-0/",
+      "letterboxd_slug": "qa-film-0",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2000,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 90,
+      "average_rating": 3.6,
+      "watches": 10000,
+      "likes": 1000,
+      "fans": 100,
+      "total_ratings": 5000
+    },
+    "best_cult_ratio": 0.01,
+    "average_cult_ratio": 0.005307317700108361,
+    "cult_index": 26.536588500541804,
+    "formula": "fans / watches per social film; cult_index = clamp(average_cult_ratio / 0.02 * 100, 0, 100). A 2% average fans/watches ratio maps to 100."
+  },
+  "runtime_profile": {
+    "runtime_average": 110.0,
+    "shortest_film": {
+      "rss_title": "QA Film 0, 2000 - ★★★½",
+      "title": "QA Film 0",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-0/",
+      "letterboxd_slug": "qa-film-0",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2000,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 0"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 90,
+      "average_rating": 3.6,
+      "watches": 10000,
+      "likes": 1000,
+      "fans": 100,
+      "total_ratings": 5000
+    },
+    "longest_film": {
+      "rss_title": "QA Film 44, 2004 - ★★★½",
+      "title": "QA Film 44",
+      "letterboxd_url": "https://letterboxd.com/film/qa-film-44/",
+      "letterboxd_slug": "qa-film-44",
+      "watched_at": "2026-01-01",
+      "user_rating": 3.5,
+      "year": 2004,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "directors": [
+        "Director 2"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 134,
+      "average_rating": 4.0,
+      "watches": 120000,
+      "likes": 5400,
+      "fans": 540,
+      "total_ratings": 13800
+    },
+    "label": "standard runtime"
+  },
+  "genre_dna": {
+    "top_genres": [
+      [
+        "Drama",
+        38
+      ],
+      [
+        "Thriller",
+        13
+      ],
+      [
+        "Comedy",
+        13
+      ],
+      [
+        "Horror",
+        12
+      ],
+      [
+        "Mystery",
+        12
+      ],
+      [
+        "Crime",
+        12
+      ]
+    ],
+    "genre_diversity_count": 6,
+    "dominant_genre": "Drama",
+    "dominant_genre_share": 0.38
+  },
+  "genre_bubbles": [
+    {
+      "genre": "Drama",
+      "count": 38,
+      "share": 0.38,
+      "size": 140.0,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.92,
+      "rating_gap": -0.42
+    },
+    {
+      "genre": "Thriller",
+      "count": 13,
+      "share": 0.13,
+      "size": 74.21,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.78,
+      "rating_gap": -0.28
+    },
+    {
+      "genre": "Comedy",
+      "count": 13,
+      "share": 0.13,
+      "size": 74.21,
+      "average_user_rating": 3.5,
+      "average_community_rating": 3.88,
+      "rating_gap": -0.38
+    },
+    {
+      "genre": "Horror",
+      "count": 12,
+      "share": 0.12,
+      "size": 71.58,
+      "average_user_rating": 3.5,
+      "average_community_rating": 4.0,
+      "rating_gap": -0.5
+    },
+    {
+      "genre": "Mystery",
+      "count": 12,
+      "share": 0.12,
+      "size": 71.58,
+      "average_user_rating": 3.5,
+      "average_community_rating": 4.0,
+      "rating_gap": -0.5
+    },
+    {
+      "genre": "Crime",
+      "count": 12,
+      "share": 0.12,
+      "size": 71.58,
+      "average_user_rating": 3.5,
+      "average_community_rating": 4.1,
+      "rating_gap": -0.6
+    }
+  ],
+  "country_passport": {
+    "top_countries": [
+      [
+        "USA",
+        13
+      ],
+      [
+        "France",
+        13
+      ],
+      [
+        "Japan",
+        12
+      ],
+      [
+        "South Korea",
+        12
+      ]
+    ],
+    "number_of_countries": 4,
+    "dominant_country": "USA",
+    "non_us_share": 0.74,
+    "label": "world cinema explorer"
+  },
+  "country_map": {
+    "title": "Passeport cinéma",
+    "subtitle": "Les pays de production qui traversent tes 50 films détectés.",
+    "countries": [
+      {
+        "name": "USA",
+        "iso2": "US",
+        "count": 13,
+        "share": 0.26,
+        "intensity": 1.0
+      },
+      {
+        "name": "France",
+        "iso2": "FR",
+        "count": 13,
+        "share": 0.26,
+        "intensity": 1.0
+      },
+      {
+        "name": "Japan",
+        "iso2": "JP",
+        "count": 12,
+        "share": 0.24,
+        "intensity": 0.9230769230769231
+      },
+      {
+        "name": "South Korea",
+        "iso2": "KR",
+        "count": 12,
+        "share": 0.24,
+        "intensity": 0.9230769230769231
+      }
+    ],
+    "max_count": 13,
+    "total_country_tags": 50
+  },
+  "director_recurrence": {
+    "top_directors": [
+      [
+        "Director 0",
+        8
+      ],
+      [
+        "Director 1",
+        7
+      ],
+      [
+        "Director 2",
+        7
+      ],
+      [
+        "Director 3",
+        7
+      ],
+      [
+        "Director 4",
+        7
+      ],
+      [
+        "Director 5",
+        7
+      ],
+      [
+        "Director 6",
+        7
+      ]
+    ],
+    "repeat_directors": [
+      {
+        "director": "Director 0",
+        "count": 8
+      },
+      {
+        "director": "Director 1",
+        "count": 7
+      },
+      {
+        "director": "Director 2",
+        "count": 7
+      },
+      {
+        "director": "Director 3",
+        "count": 7
+      },
+      {
+        "director": "Director 4",
+        "count": 7
+      },
+      {
+        "director": "Director 5",
+        "count": 7
+      },
+      {
+        "director": "Director 6",
+        "count": 7
+      }
+    ],
+    "most_repeated_director": {
+      "director": "Director 0",
+      "count": 8,
+      "director_slug": "director-0",
+      "letterboxd_url": "https://letterboxd.com/director/director-0/",
+      "films": [
+        {
+          "title": "QA Film 0",
+          "slug": "qa-film-0",
+          "year": 2000
+        },
+        {
+          "title": "QA Film 7",
+          "slug": "qa-film-7",
+          "year": 2007
+        },
+        {
+          "title": "QA Film 14",
+          "slug": "qa-film-14",
+          "year": 2014
+        },
+        {
+          "title": "QA Film 21",
+          "slug": "qa-film-21",
+          "year": 2001
+        },
+        {
+          "title": "QA Film 28",
+          "slug": "qa-film-28",
+          "year": 2008
+        },
+        {
+          "title": "QA Film 35",
+          "slug": "qa-film-35",
+          "year": 2015
+        },
+        {
+          "title": "QA Film 42",
+          "slug": "qa-film-42",
+          "year": 2002
+        },
+        {
+          "title": "QA Film 49",
+          "slug": "qa-film-49",
+          "year": 2009
+        }
+      ]
+    }
+  }
+}

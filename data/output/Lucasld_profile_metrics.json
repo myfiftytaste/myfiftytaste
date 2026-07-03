@@ -1,0 +1,1690 @@
+{
+  "user": "Lucasld",
+  "source_file": "data\\output\\Lucasld_wrapped.json",
+  "coverage": {
+    "total_films_analyzed": 50,
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    },
+    "social_films_count": 28,
+    "confirmed_metadata_films_count": 50,
+    "potential_metadata_films_count": 50,
+    "supplemental_review_count": 0,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 0.56,
+    "confirmed_metadata_coverage": 1.0,
+    "potential_metadata_coverage": 1.0,
+    "review_count": 2,
+    "review_rate": 0.04
+  },
+  "radar_scores": {
+    "mainstreamness": {
+      "value_5": 5,
+      "raw_value": 95.16967388779334,
+      "label": "Popularité moyenne",
+      "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
+      "data_source": "28 films with Megabank social stats",
+      "confidence": "high"
+    },
+    "oldness": {
+      "value_5": 2,
+      "raw_value": 19.74000000000001,
+      "average_year": 2006.26,
+      "label": "Âge moyen",
+      "description": "Tendance dérivée de l'année moyenne de sortie de tes 50 films détectés.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    },
+    "endurance": {
+      "value_5": 3,
+      "raw_value": 117.12,
+      "label": "Endurance",
+      "description": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
+      "data_source": "50 films with confirmed metadata",
+      "confidence": "high"
+    },
+    "reviewness": {
+      "value_5": 1,
+      "raw_value": 2,
+      "review_count": 2,
+      "review_rate": 0.04,
+      "label": "Quelques traces",
+      "description": "Tu écris seulement quand un film appelle vraiment un commentaire.",
+      "data_source": "50 films from Letterboxd RSS",
+      "confidence": "high"
+    }
+  },
+  "log_time_profile": {
+    "average_time": "22:49",
+    "average_hour_decimal": 22.82,
+    "period": "evening",
+    "label": "Prime time",
+    "description": "Tes films sont surtout loggés en soirée.",
+    "data_source": "50 films from Letterboxd RSS",
+    "confidence": "high"
+  },
+  "rating_personality": {
+    "user_average_rating": 3.9895833333333335,
+    "community_average_rating": 3.9875,
+    "average_difference": 0.002083333333333659,
+    "paired_user_average_rating": 4.184210526315789,
+    "paired_community_average_rating": 4.057368421052631,
+    "paired_average_difference": 0.12684210526315795,
+    "paired_count": 19,
+    "method": "paired_gap",
+    "label": "balanced"
+  },
+  "niche_profile": {
+    "watches_median": 1589198.0,
+    "watches_mean": 1750281.142857143,
+    "most_niche_film": {
+      "rss_title": "Hard Boiled, 1992 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/hard-boiled/",
+      "letterboxd_slug": "hard-boiled",
+      "watched_at": "Sun, 4 Jan 2026 11:54:54 +1300",
+      "logged_at_raw": "Sun, 4 Jan 2026 11:54:54 +1300",
+      "logged_at_iso": "2026-01-03T22:54:54+00:00",
+      "logged_hour": 22,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/0/1/3/45013-hard-boiled-0-600-0-900-crop.jpg?v=4bc5621882",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/0/1/3/45013-hard-boiled-0-600-0-900-crop.jpg?v=4bc5621882",
+      "user_rating": 4.0,
+      "year": 1992,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Hard Boiled",
+      "directors": [
+        "John Woo"
+      ],
+      "genres": [
+        "Thriller",
+        "Crime",
+        "Action"
+      ],
+      "countries": [
+        "Hong Kong"
+      ],
+      "original_language": "Cantonese",
+      "runtime": 126.0,
+      "average_rating": 4.16,
+      "watches": 102483,
+      "likes": 36446,
+      "fans": 1100,
+      "total_ratings": 72120,
+      "director": "John Woo",
+      "director_source": "megabank"
+    },
+    "most_mainstream_film": {
+      "rss_title": "Barbie, 2023 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/barbie/",
+      "letterboxd_slug": "barbie",
+      "watched_at": "Mon, 8 Jun 2026 04:39:54 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 04:39:54 +1200",
+      "logged_at_iso": "2026-06-07T16:39:54+00:00",
+      "logged_hour": 16,
+      "logged_minute": 39,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/7/7/0/6/4/277064-barbie-0-600-0-900-crop.jpg?v=1b83dc7a71",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/7/7/0/6/4/277064-barbie-0-600-0-900-crop.jpg?v=1b83dc7a71",
+      "user_rating": 3.5,
+      "year": 2023,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Barbie",
+      "directors": [
+        "Greta Gerwig"
+      ],
+      "genres": [
+        "Comedy",
+        "Adventure"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 114.0,
+      "average_rating": 3.78,
+      "watches": 5195503,
+      "likes": 2140382,
+      "fans": 25000,
+      "total_ratings": 4091037,
+      "director": "Greta Gerwig",
+      "director_source": "megabank"
+    },
+    "niche_index": 4.830326112206657,
+    "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
+  },
+  "cult_profile": {
+    "best_cult_film": {
+      "rss_title": "Dead Poets Society, 1989 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/dead-poets-society/",
+      "letterboxd_slug": "dead-poets-society",
+      "watched_at": "Thu, 29 Jan 2026 12:59:07 +1300",
+      "logged_at_raw": "Thu, 29 Jan 2026 12:59:07 +1300",
+      "logged_at_iso": "2026-01-28T23:59:07+00:00",
+      "logged_hour": 23,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "user_rating": 5.0,
+      "year": 1989,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Dead Poets Society",
+      "directors": [
+        "Peter Weir"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 128.0,
+      "average_rating": 4.31,
+      "watches": 2741325,
+      "likes": 1210176,
+      "fans": 187000,
+      "total_ratings": 1861056,
+      "director": "Peter Weir",
+      "director_source": "megabank"
+    },
+    "best_cult_ratio": 0.06821518791095547,
+    "average_cult_ratio": 0.02181115086304399,
+    "cult_index": 100.0,
+    "formula": "fans / watches per social film; cult_index = clamp(average_cult_ratio / 0.02 * 100, 0, 100). A 2% average fans/watches ratio maps to 100."
+  },
+  "runtime_profile": {
+    "runtime_average": 117.12,
+    "runtime_included_count": 50,
+    "runtime_excluded_count": 0,
+    "runtime_invalid_metadata_count": 0,
+    "shortest_film": {
+      "rss_title": "Alice in Wonderland, 1951 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/alice-in-wonderland-1951/",
+      "letterboxd_slug": "alice-in-wonderland-1951",
+      "watched_at": "Mon, 1 Jun 2026 19:30:29 +1200",
+      "logged_at_raw": "Mon, 1 Jun 2026 19:30:29 +1200",
+      "logged_at_iso": "2026-06-01T07:30:29+00:00",
+      "logged_hour": 7,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/p5/63/wj/c3/AdwfqyNiH8UqeYKFYoiKhwTtjAb-0-600-0-900-crop.jpg?v=f9c56785d4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/p5/63/wj/c3/AdwfqyNiH8UqeYKFYoiKhwTtjAb-0-600-0-900-crop.jpg?v=f9c56785d4",
+      "user_rating": 4.0,
+      "year": 1951,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Alice in Wonderland",
+      "directors": [
+        "Clyde Geronimi",
+        "Wilfred Jackson"
+      ],
+      "genres": [
+        "Fantasy",
+        "Animation",
+        "Family",
+        "Adventure"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 75.0,
+      "average_rating": 3.77,
+      "watches": 921246,
+      "likes": 178852,
+      "fans": 8000,
+      "total_ratings": 399698,
+      "director": "Clyde Geronimi",
+      "director_source": "megabank"
+    },
+    "longest_film": {
+      "rss_title": "Avatar: Fire and Ash, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/avatar-fire-and-ash/",
+      "letterboxd_slug": "avatar-fire-and-ash",
+      "watched_at": "Mon, 29 Dec 2025 08:59:44 +1300",
+      "logged_at_raw": "Mon, 29 Dec 2025 08:59:44 +1300",
+      "logged_at_iso": "2025-12-28T19:59:44+00:00",
+      "logged_hour": 19,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Avatar: Fire and Ash",
+      "directors": [
+        "James Cameron"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 198,
+      "tmdb_id": 83533,
+      "director_source": "tmdb_details_cache",
+      "director": "James Cameron"
+    },
+    "label": "standard runtime"
+  },
+  "genre_dna": {
+    "top_genres": [
+      [
+        "Comedy",
+        24
+      ],
+      [
+        "Drama",
+        23
+      ],
+      [
+        "Adventure",
+        12
+      ],
+      [
+        "Romance",
+        11
+      ],
+      [
+        "Family",
+        10
+      ],
+      [
+        "Animation",
+        9
+      ],
+      [
+        "Fantasy",
+        9
+      ],
+      [
+        "Crime",
+        9
+      ],
+      [
+        "Thriller",
+        9
+      ],
+      [
+        "Action",
+        6
+      ]
+    ],
+    "genre_diversity_count": 15,
+    "dominant_genre": "Comedy",
+    "dominant_genre_share": 0.1791044776119403
+  },
+  "genre_bubbles": [
+    {
+      "genre": "Comedy",
+      "count": 24,
+      "share": 0.1791044776119403,
+      "size": 140.0,
+      "average_user_rating": 3.85,
+      "average_community_rating": 3.89,
+      "rating_gap": -0.03,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Surf's Up",
+          "year": 2007,
+          "slug": null
+        },
+        {
+          "title": "Barbie",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "Victor/Victoria",
+          "year": 1982,
+          "slug": null
+        },
+        {
+          "title": "Seven Psychopaths",
+          "year": 2012,
+          "slug": null
+        },
+        {
+          "title": "The Young Girls of Rochefort",
+          "year": 1967,
+          "slug": null
+        },
+        {
+          "title": "Those Happy Days",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "The Devil Wears Prada",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "The Drama",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Despicable Me",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Legally Blonde",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Mean Girls",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "The Aristocats",
+          "year": 1970,
+          "slug": null
+        },
+        {
+          "title": "School of Rock",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "No Other Choice",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Into the Woods",
+          "year": 2014,
+          "slug": null
+        },
+        {
+          "title": "The Breakfast Club",
+          "year": 1985,
+          "slug": null
+        },
+        {
+          "title": "Madagascar 3: Europe's Most Wanted",
+          "year": 2012,
+          "slug": null
+        },
+        {
+          "title": "People We Meet on Vacation",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Amélie",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Zootopia 2",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Rushmore",
+          "year": 1998,
+          "slug": null
+        },
+        {
+          "title": "The Banshees of Inisherin",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "The King of Comedy",
+          "year": 1982,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Drama",
+      "count": 23,
+      "share": 0.17164179104477612,
+      "size": 135.83,
+      "average_user_rating": 4.07,
+      "average_community_rating": 4.02,
+      "rating_gap": 0.05,
+      "films": [
+        {
+          "title": "Portrait of a Lady on Fire",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "Dallas Buyers Club",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "The Young Girls of Rochefort",
+          "year": 1967,
+          "slug": null
+        },
+        {
+          "title": "The Devil Wears Prada",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Paranoid Park",
+          "year": 2007,
+          "slug": null
+        },
+        {
+          "title": "The Drama",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Twilight Saga: Eclipse",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Mean Girls",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "Marty Supreme",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "In the Mood for Love",
+          "year": 2000,
+          "slug": null
+        },
+        {
+          "title": "Carlito's Way",
+          "year": 1993,
+          "slug": null
+        },
+        {
+          "title": "Gone Girl",
+          "year": 2014,
+          "slug": null
+        },
+        {
+          "title": "Memories of Murder",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "F1",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Breakfast Club",
+          "year": 1985,
+          "slug": null
+        },
+        {
+          "title": "Hamnet",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Dead Poets Society",
+          "year": 1989,
+          "slug": null
+        },
+        {
+          "title": "People We Meet on Vacation",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Rushmore",
+          "year": 1998,
+          "slug": null
+        },
+        {
+          "title": "Mysterious Skin",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "Black Coal, Thin Ice",
+          "year": 2014,
+          "slug": null
+        },
+        {
+          "title": "The Banshees of Inisherin",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "The King of Comedy",
+          "year": 1982,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Adventure",
+      "count": 12,
+      "share": 0.08955223880597014,
+      "size": 90.0,
+      "average_user_rating": 3.8,
+      "average_community_rating": 3.66,
+      "rating_gap": 0.14,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Barbie",
+          "year": 2023,
+          "slug": null
+        },
+        {
+          "title": "The Twilight Saga: Breaking Dawn - Part 1",
+          "year": 2011,
+          "slug": null
+        },
+        {
+          "title": "Alice in Wonderland",
+          "year": 1951,
+          "slug": null
+        },
+        {
+          "title": "Project Hail Mary",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Twilight Saga: Eclipse",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "The Aristocats",
+          "year": 1970,
+          "slug": null
+        },
+        {
+          "title": "How to Train Your Dragon",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Madagascar 3: Europe's Most Wanted",
+          "year": 2012,
+          "slug": null
+        },
+        {
+          "title": "The Lord of the Rings: The Fellowship of the Ring",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Zootopia 2",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Avatar: Fire and Ash",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Romance",
+      "count": 11,
+      "share": 0.08208955223880597,
+      "size": 85.83,
+      "average_user_rating": 3.89,
+      "average_community_rating": 3.96,
+      "rating_gap": -0.08,
+      "films": [
+        {
+          "title": "Portrait of a Lady on Fire",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "The Twilight Saga: Breaking Dawn - Part 1",
+          "year": 2011,
+          "slug": null
+        },
+        {
+          "title": "Victor/Victoria",
+          "year": 1982,
+          "slug": null
+        },
+        {
+          "title": "The Young Girls of Rochefort",
+          "year": 1967,
+          "slug": null
+        },
+        {
+          "title": "The Drama",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Twilight Saga: Eclipse",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Legally Blonde",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "In the Mood for Love",
+          "year": 2000,
+          "slug": null
+        },
+        {
+          "title": "Hamnet",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "People We Meet on Vacation",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Amélie",
+          "year": 2001,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Family",
+      "count": 10,
+      "share": 0.07462686567164178,
+      "size": 81.67,
+      "average_user_rating": 3.85,
+      "average_community_rating": 3.88,
+      "rating_gap": -0.02,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Surf's Up",
+          "year": 2007,
+          "slug": null
+        },
+        {
+          "title": "Alice in Wonderland",
+          "year": 1951,
+          "slug": null
+        },
+        {
+          "title": "Those Happy Days",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Despicable Me",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Spirited Away",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "The Aristocats",
+          "year": 1970,
+          "slug": null
+        },
+        {
+          "title": "How to Train Your Dragon",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Madagascar 3: Europe's Most Wanted",
+          "year": 2012,
+          "slug": null
+        },
+        {
+          "title": "Zootopia 2",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Animation",
+      "count": 9,
+      "share": 0.06716417910447761,
+      "size": 77.5,
+      "average_user_rating": 3.83,
+      "average_community_rating": 3.88,
+      "rating_gap": -0.04,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Surf's Up",
+          "year": 2007,
+          "slug": null
+        },
+        {
+          "title": "Alice in Wonderland",
+          "year": 1951,
+          "slug": null
+        },
+        {
+          "title": "Despicable Me",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Spirited Away",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "The Aristocats",
+          "year": 1970,
+          "slug": null
+        },
+        {
+          "title": "How to Train Your Dragon",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Madagascar 3: Europe's Most Wanted",
+          "year": 2012,
+          "slug": null
+        },
+        {
+          "title": "Zootopia 2",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Fantasy",
+      "count": 9,
+      "share": 0.06716417910447761,
+      "size": 77.5,
+      "average_user_rating": 3.86,
+      "average_community_rating": 3.81,
+      "rating_gap": 0.04,
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Twilight Saga: Breaking Dawn - Part 1",
+          "year": 2011,
+          "slug": null
+        },
+        {
+          "title": "Alice in Wonderland",
+          "year": 1951,
+          "slug": null
+        },
+        {
+          "title": "The Twilight Saga: Eclipse",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "Spirited Away",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Into the Woods",
+          "year": 2014,
+          "slug": null
+        },
+        {
+          "title": "How to Train Your Dragon",
+          "year": 2010,
+          "slug": null
+        },
+        {
+          "title": "The Lord of the Rings: The Fellowship of the Ring",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Avatar: Fire and Ash",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Crime",
+      "count": 9,
+      "share": 0.06716417910447761,
+      "size": 77.5,
+      "average_user_rating": 4.17,
+      "average_community_rating": 4.29,
+      "rating_gap": -0.12,
+      "films": [
+        {
+          "title": "Seven Psychopaths",
+          "year": 2012,
+          "slug": null
+        },
+        {
+          "title": "Paranoid Park",
+          "year": 2007,
+          "slug": null
+        },
+        {
+          "title": "Kill Bill: Vol. 2",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "Kill Bill: Vol. 1",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "No Other Choice",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Carlito's Way",
+          "year": 1993,
+          "slug": null
+        },
+        {
+          "title": "Memories of Murder",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "Hard Boiled",
+          "year": 1992,
+          "slug": null
+        },
+        {
+          "title": "Black Coal, Thin Ice",
+          "year": 2014,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Thriller",
+      "count": 9,
+      "share": 0.06716417910447761,
+      "size": 77.5,
+      "average_user_rating": 4.11,
+      "average_community_rating": 4.29,
+      "rating_gap": -0.18,
+      "films": [
+        {
+          "title": "Kill Bill: Vol. 2",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "Marty Supreme",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "No Other Choice",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Nikita",
+          "year": 1990,
+          "slug": null
+        },
+        {
+          "title": "Carlito's Way",
+          "year": 1993,
+          "slug": null
+        },
+        {
+          "title": "Gone Girl",
+          "year": 2014,
+          "slug": null
+        },
+        {
+          "title": "Memories of Murder",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "Hard Boiled",
+          "year": 1992,
+          "slug": null
+        },
+        {
+          "title": "Black Coal, Thin Ice",
+          "year": 2014,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Action",
+      "count": 6,
+      "share": 0.04477611940298507,
+      "size": 65.0,
+      "average_user_rating": 4.25,
+      "average_community_rating": 4.27,
+      "rating_gap": -0.02,
+      "films": [
+        {
+          "title": "Kill Bill: Vol. 2",
+          "year": 2004,
+          "slug": null
+        },
+        {
+          "title": "Kill Bill: Vol. 1",
+          "year": 2003,
+          "slug": null
+        },
+        {
+          "title": "Nikita",
+          "year": 1990,
+          "slug": null
+        },
+        {
+          "title": "F1",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "The Lord of the Rings: The Fellowship of the Ring",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Hard Boiled",
+          "year": 1992,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Mystery",
+      "count": 4,
+      "share": 0.029850746268656716,
+      "size": 56.67,
+      "average_user_rating": 3.75,
+      "average_community_rating": null,
+      "rating_gap": null,
+      "films": [
+        {
+          "title": "Paranoid Park",
+          "year": 2007,
+          "slug": null
+        },
+        {
+          "title": "Gone Girl",
+          "year": 2014,
+          "slug": null
+        },
+        {
+          "title": "Zootopia 2",
+          "year": 2025,
+          "slug": null
+        },
+        {
+          "title": "Black Coal, Thin Ice",
+          "year": 2014,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "History",
+      "count": 3,
+      "share": 0.022388059701492536,
+      "size": 52.5,
+      "average_user_rating": 3.67,
+      "average_community_rating": 4.43,
+      "rating_gap": -0.76,
+      "films": [
+        {
+          "title": "Portrait of a Lady on Fire",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "Dallas Buyers Club",
+          "year": 2013,
+          "slug": null
+        },
+        {
+          "title": "Hamnet",
+          "year": 2025,
+          "slug": null
+        }
+      ]
+    }
+  ],
+  "country_passport": {
+    "top_countries": [
+      [
+        "USA",
+        39
+      ],
+      [
+        "France",
+        8
+      ],
+      [
+        "UK",
+        5
+      ],
+      [
+        "Japan",
+        2
+      ],
+      [
+        "Hong Kong",
+        2
+      ],
+      [
+        "South Korea",
+        2
+      ],
+      [
+        "Italy",
+        1
+      ],
+      [
+        "Germany",
+        1
+      ],
+      [
+        "New Zealand",
+        1
+      ],
+      [
+        "Canada",
+        1
+      ]
+    ],
+    "number_of_countries": 12,
+    "dominant_country": "USA",
+    "non_us_share": 0.390625,
+    "label": "internationally curious"
+  },
+  "country_map": {
+    "title": "Ma carte",
+    "subtitle": "Les pays de production qui traversent tes 50 films détectés.",
+    "countries": [
+      {
+        "name": "USA",
+        "iso2": "US",
+        "count": 39,
+        "share": 0.609375,
+        "intensity": 1.0,
+        "films": [
+          {
+            "title": "Minions & Monsters",
+            "year": 2026,
+            "slug": "minions-monsters-2026"
+          },
+          {
+            "title": "Surf's Up",
+            "year": 2007,
+            "slug": "surfs-up"
+          },
+          {
+            "title": "Barbie",
+            "year": 2023,
+            "slug": "barbie"
+          },
+          {
+            "title": "The Twilight Saga: Breaking Dawn - Part 1",
+            "year": 2011,
+            "slug": "the-twilight-saga-breaking-dawn-part-1"
+          },
+          {
+            "title": "Alice in Wonderland",
+            "year": 1951,
+            "slug": "alice-in-wonderland-1951"
+          },
+          {
+            "title": "Victor/Victoria",
+            "year": 1982,
+            "slug": "victor-victoria"
+          },
+          {
+            "title": "Obsession",
+            "year": 2025,
+            "slug": "obsession-2025"
+          },
+          {
+            "title": "Seven Psychopaths",
+            "year": 2012,
+            "slug": "seven-psychopaths"
+          },
+          {
+            "title": "Dallas Buyers Club",
+            "year": 2013,
+            "slug": "dallas-buyers-club"
+          },
+          {
+            "title": "Project Hail Mary",
+            "year": 2026,
+            "slug": "project-hail-mary"
+          },
+          {
+            "title": "The Devil Wears Prada",
+            "year": 2006,
+            "slug": "the-devil-wears-prada"
+          },
+          {
+            "title": "Paranoid Park",
+            "year": 2007,
+            "slug": "paranoid-park"
+          },
+          {
+            "title": "The Drama",
+            "year": 2026,
+            "slug": "the-drama"
+          },
+          {
+            "title": "Despicable Me",
+            "year": 2010,
+            "slug": "despicable-me"
+          },
+          {
+            "title": "The Twilight Saga: Eclipse",
+            "year": 2010,
+            "slug": "the-twilight-saga-eclipse"
+          },
+          {
+            "title": "Legally Blonde",
+            "year": 2001,
+            "slug": "legally-blonde"
+          },
+          {
+            "title": "Mean Girls",
+            "year": 2004,
+            "slug": "mean-girls"
+          },
+          {
+            "title": "The Aristocats",
+            "year": 1970,
+            "slug": "the-aristocats"
+          },
+          {
+            "title": "Kill Bill: Vol. 2",
+            "year": 2004,
+            "slug": "kill-bill-vol-2"
+          },
+          {
+            "title": "Marty Supreme",
+            "year": 2025,
+            "slug": "marty-supreme"
+          },
+          {
+            "title": "Kill Bill: Vol. 1",
+            "year": 2003,
+            "slug": "kill-bill-vol-1"
+          },
+          {
+            "title": "School of Rock",
+            "year": 2003,
+            "slug": "school-of-rock"
+          },
+          {
+            "title": "Carlito's Way",
+            "year": 1993,
+            "slug": "carlitos-way"
+          },
+          {
+            "title": "Into the Woods",
+            "year": 2014,
+            "slug": "into-the-woods-2014"
+          },
+          {
+            "title": "Gone Girl",
+            "year": 2014,
+            "slug": "gone-girl"
+          },
+          {
+            "title": "F1",
+            "year": 2025,
+            "slug": "f1"
+          },
+          {
+            "title": "How to Train Your Dragon",
+            "year": 2010,
+            "slug": "how-to-train-your-dragon"
+          },
+          {
+            "title": "The Breakfast Club",
+            "year": 1985,
+            "slug": "the-breakfast-club"
+          },
+          {
+            "title": "Hamnet",
+            "year": 2025,
+            "slug": "hamnet"
+          },
+          {
+            "title": "Dead Poets Society",
+            "year": 1989,
+            "slug": "dead-poets-society"
+          },
+          {
+            "title": "Madagascar 3: Europe's Most Wanted",
+            "year": 2012,
+            "slug": "madagascar-3-europes-most-wanted"
+          },
+          {
+            "title": "People We Meet on Vacation",
+            "year": 2026,
+            "slug": "people-we-meet-on-vacation"
+          },
+          {
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "year": 2001,
+            "slug": "the-lord-of-the-rings-the-fellowship-of-the-ring"
+          },
+          {
+            "title": "Zootopia 2",
+            "year": 2025,
+            "slug": "zootopia-2"
+          },
+          {
+            "title": "Rushmore",
+            "year": 1998,
+            "slug": "rushmore"
+          },
+          {
+            "title": "Mysterious Skin",
+            "year": 2004,
+            "slug": "mysterious-skin"
+          },
+          {
+            "title": "Avatar: Fire and Ash",
+            "year": 2025,
+            "slug": "avatar-fire-and-ash"
+          },
+          {
+            "title": "The Banshees of Inisherin",
+            "year": 2022,
+            "slug": "the-banshees-of-inisherin"
+          },
+          {
+            "title": "The King of Comedy",
+            "year": 1982,
+            "slug": "the-king-of-comedy"
+          }
+        ]
+      },
+      {
+        "name": "France",
+        "iso2": "FR",
+        "count": 8,
+        "share": 0.125,
+        "intensity": 0.20512820512820512,
+        "films": [
+          {
+            "title": "Portrait of a Lady on Fire",
+            "year": 2019,
+            "slug": "portrait-of-a-lady-on-fire"
+          },
+          {
+            "title": "The Young Girls of Rochefort",
+            "year": 1967,
+            "slug": "the-young-girls-of-rochefort"
+          },
+          {
+            "title": "Those Happy Days",
+            "year": 2006,
+            "slug": "those-happy-days"
+          },
+          {
+            "title": "Paranoid Park",
+            "year": 2007,
+            "slug": "paranoid-park"
+          },
+          {
+            "title": "In the Mood for Love",
+            "year": 2000,
+            "slug": "in-the-mood-for-love"
+          },
+          {
+            "title": "No Other Choice",
+            "year": 2025,
+            "slug": "no-other-choice-2025"
+          },
+          {
+            "title": "Nikita",
+            "year": 1990,
+            "slug": "nikita"
+          },
+          {
+            "title": "Amélie",
+            "year": 2001,
+            "slug": "amelie"
+          }
+        ]
+      },
+      {
+        "name": "UK",
+        "iso2": "GB",
+        "count": 5,
+        "share": 0.078125,
+        "intensity": 0.1282051282051282,
+        "films": [
+          {
+            "title": "Barbie",
+            "year": 2023,
+            "slug": "barbie"
+          },
+          {
+            "title": "Victor/Victoria",
+            "year": 1982,
+            "slug": "victor-victoria"
+          },
+          {
+            "title": "Seven Psychopaths",
+            "year": 2012,
+            "slug": "seven-psychopaths"
+          },
+          {
+            "title": "Hamnet",
+            "year": 2025,
+            "slug": "hamnet"
+          },
+          {
+            "title": "The Banshees of Inisherin",
+            "year": 2022,
+            "slug": "the-banshees-of-inisherin"
+          }
+        ]
+      },
+      {
+        "name": "Japan",
+        "iso2": "JP",
+        "count": 2,
+        "share": 0.03125,
+        "intensity": 0.05128205128205128,
+        "films": [
+          {
+            "title": "Minions & Monsters",
+            "year": 2026,
+            "slug": "minions-monsters-2026"
+          },
+          {
+            "title": "Spirited Away",
+            "year": 2001,
+            "slug": "spirited-away"
+          }
+        ]
+      },
+      {
+        "name": "Hong Kong",
+        "iso2": null,
+        "count": 2,
+        "share": 0.03125,
+        "intensity": 0.05128205128205128,
+        "films": [
+          {
+            "title": "In the Mood for Love",
+            "year": 2000,
+            "slug": "in-the-mood-for-love"
+          },
+          {
+            "title": "Hard Boiled",
+            "year": 1992,
+            "slug": "hard-boiled"
+          }
+        ]
+      },
+      {
+        "name": "South Korea",
+        "iso2": "KR",
+        "count": 2,
+        "share": 0.03125,
+        "intensity": 0.05128205128205128,
+        "films": [
+          {
+            "title": "No Other Choice",
+            "year": 2025,
+            "slug": "no-other-choice-2025"
+          },
+          {
+            "title": "Memories of Murder",
+            "year": 2003,
+            "slug": "memories-of-murder"
+          }
+        ]
+      },
+      {
+        "name": "Italy",
+        "iso2": "IT",
+        "count": 1,
+        "share": 0.015625,
+        "intensity": 0.02564102564102564,
+        "films": [
+          {
+            "title": "Nikita",
+            "year": 1990,
+            "slug": "nikita"
+          }
+        ]
+      },
+      {
+        "name": "Germany",
+        "iso2": "DE",
+        "count": 1,
+        "share": 0.015625,
+        "intensity": 0.02564102564102564,
+        "films": [
+          {
+            "title": "Amélie",
+            "year": 2001,
+            "slug": "amelie"
+          }
+        ]
+      },
+      {
+        "name": "New Zealand",
+        "iso2": null,
+        "count": 1,
+        "share": 0.015625,
+        "intensity": 0.02564102564102564,
+        "films": [
+          {
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "year": 2001,
+            "slug": "the-lord-of-the-rings-the-fellowship-of-the-ring"
+          }
+        ]
+      },
+      {
+        "name": "Canada",
+        "iso2": "CA",
+        "count": 1,
+        "share": 0.015625,
+        "intensity": 0.02564102564102564,
+        "films": [
+          {
+            "title": "Zootopia 2",
+            "year": 2025,
+            "slug": "zootopia-2"
+          }
+        ]
+      },
+      {
+        "name": "Netherlands",
+        "iso2": null,
+        "count": 1,
+        "share": 0.015625,
+        "intensity": 0.02564102564102564,
+        "films": [
+          {
+            "title": "Mysterious Skin",
+            "year": 2004,
+            "slug": "mysterious-skin"
+          }
+        ]
+      },
+      {
+        "name": "China",
+        "iso2": "CN",
+        "count": 1,
+        "share": 0.015625,
+        "intensity": 0.02564102564102564,
+        "films": [
+          {
+            "title": "Black Coal, Thin Ice",
+            "year": 2014,
+            "slug": "black-coal-thin-ice"
+          }
+        ]
+      }
+    ],
+    "max_count": 39,
+    "total_country_tags": 64
+  },
+  "director_recurrence": {
+    "top_directors": [
+      [
+        "Pierre Coffin",
+        2
+      ],
+      [
+        "Martin McDonagh",
+        2
+      ],
+      [
+        "Quentin Tarantino",
+        2
+      ],
+      [
+        "Chris Buck",
+        1
+      ],
+      [
+        "Ash Brannon",
+        1
+      ],
+      [
+        "Greta Gerwig",
+        1
+      ],
+      [
+        "Céline Sciamma",
+        1
+      ],
+      [
+        "Bill Condon",
+        1
+      ],
+      [
+        "Clyde Geronimi",
+        1
+      ],
+      [
+        "Wilfred Jackson",
+        1
+      ]
+    ],
+    "repeat_directors": [
+      {
+        "director": "Pierre Coffin",
+        "count": 2
+      },
+      {
+        "director": "Martin McDonagh",
+        "count": 2
+      },
+      {
+        "director": "Quentin Tarantino",
+        "count": 2
+      }
+    ],
+    "most_repeated_director": {
+      "director": "Pierre Coffin",
+      "count": 2,
+      "director_slug": "pierre-coffin",
+      "letterboxd_url": "https://letterboxd.com/director/pierre-coffin/",
+      "films": [
+        {
+          "title": "Minions & Monsters",
+          "slug": "minions-monsters-2026",
+          "year": 2026
+        },
+        {
+          "title": "Despicable Me",
+          "slug": "despicable-me",
+          "year": 2010
+        }
+      ]
+    }
+  }
+}

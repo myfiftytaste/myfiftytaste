@@ -1,0 +1,11 @@
+{
+  "profiles": [
+    { "input": "tanguytare", "canonical": "tanguytare" },
+    { "input": "mathouix", "canonical": "mathouix" },
+    { "input": "crazykungfu", "canonical": "crazykungfu" },
+    { "input": "picolifl", "canonical": "picolifl" },
+    { "input": "tobiashottin", "canonical": "tobiashottin" },
+    { "input": "lucasld", "canonical": "Lucasld" },
+    { "input": "mathmon", "canonical": "mathmon" }
+  ]
+}

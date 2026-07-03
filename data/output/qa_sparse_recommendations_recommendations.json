@@ -1,0 +1,13 @@
+{
+  "user": "qa_sparse_recommendations",
+  "source_files": {
+    "wrapped": "data\\output\\qa_sparse_recommendations_wrapped.json",
+    "profile_metrics": "data\\output\\qa_sparse_recommendations_profile_metrics.json",
+    "megabank": "data\\fixtures\\qa_small_megabank.json"
+  },
+  "recommendations": [],
+  "unavailable_reason": "Not enough eligible Megabank candidates after excluding watched films (2 candidates available).",
+  "scoring_notes": [
+    "Recommendations are optional and may be unavailable for small or sparse profiles."
+  ]
+}

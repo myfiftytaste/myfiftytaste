@@ -1,0 +1,2402 @@
+{
+  "user": "tanguytare",
+  "rss_url": "https://letterboxd.com/tanguytare/rss/",
+  "generated_at": "2026-07-01T21:45:27.464453Z",
+  "films": [
+    {
+      "rss_title": "The Lighthouse, 2019 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-lighthouse-2019/",
+      "letterboxd_slug": "the-lighthouse-2019",
+      "watched_at": "Tue, 30 Jun 2026 10:46:10 +1200",
+      "logged_at_raw": "Tue, 30 Jun 2026 10:46:10 +1200",
+      "logged_at_iso": "2026-06-29T22:46:10+00:00",
+      "logged_hour": 22,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-600-0-900-crop.jpg?v=ee97005537",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-600-0-900-crop.jpg?v=ee97005537",
+      "user_rating": 3.5,
+      "year": 2019,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Lighthouse",
+      "directors": [
+        "Robert Eggers"
+      ],
+      "genres": [
+        "Horror",
+        "Drama",
+        "Thriller",
+        "Fantasy"
+      ],
+      "countries": [
+        "Brazil",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 109.0,
+      "average_rating": null,
+      "watches": 1617901,
+      "likes": 595862,
+      "fans": 30000,
+      "total_ratings": 1214277,
+      "director": "Robert Eggers",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Disclosure Day, 2026 - ★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/disclosure-day/",
+      "letterboxd_slug": "disclosure-day",
+      "watched_at": "Mon, 29 Jun 2026 10:27:23 +1200",
+      "logged_at_raw": "Mon, 29 Jun 2026 10:27:23 +1200",
+      "logged_at_iso": "2026-06-28T22:27:23+00:00",
+      "logged_hour": 22,
+      "logged_minute": 27,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/5/9/2/5/1/1159251-disclosure-day-0-600-0-900-crop.jpg?v=9ae810e4bb",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/5/9/2/5/1/1159251-disclosure-day-0-600-0-900-crop.jpg?v=9ae810e4bb",
+      "user_rating": 1.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 250,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Disclosure Day",
+      "directors": [
+        "Steven Spielberg"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Thriller"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 145,
+      "tmdb_id": 1275779,
+      "director_source": "tmdb_details_cache",
+      "director": "Steven Spielberg"
+    },
+    {
+      "rss_title": "The Fire Within: A Requiem for Katia and Maurice Krafft, 2022 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-fire-within-a-requiem-for-katia-and-maurice/",
+      "letterboxd_slug": "the-fire-within-a-requiem-for-katia-and-maurice",
+      "watched_at": "Mon, 29 Jun 2026 06:46:24 +1200",
+      "logged_at_raw": "Mon, 29 Jun 2026 06:46:24 +1200",
+      "logged_at_iso": "2026-06-28T18:46:24+00:00",
+      "logged_hour": 18,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/7/9/7/6/3/879763-the-fire-within-requiem-for-katia-and-maurice-krafft-0-600-0-900-crop.jpg?v=75e75bfcd9",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/7/9/7/6/3/879763-the-fire-within-requiem-for-katia-and-maurice-krafft-0-600-0-900-crop.jpg?v=75e75bfcd9",
+      "user_rating": 3.5,
+      "year": 2022,
+      "has_review": true,
+      "review_word_count": 14,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "The Fire Within: A Requiem for Katia and Maurice Krafft",
+      "tmdb_candidate_title": "The Fire Within: A Requiem for Katia and Maurice Krafft",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "The Little Panda Fighter, 2008 - ★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-little-panda-fighter/",
+      "letterboxd_slug": "the-little-panda-fighter",
+      "watched_at": "Tue, 30 Jun 2026 00:06:43 +1200",
+      "logged_at_raw": "Tue, 30 Jun 2026 00:06:43 +1200",
+      "logged_at_iso": "2026-06-29T12:06:43+00:00",
+      "logged_hour": 12,
+      "logged_minute": 6,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/8/2/3/3/8/182338-the-little-panda-fighter-0-600-0-900-crop.jpg?v=d76b4e9fe0",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/8/2/3/3/8/182338-the-little-panda-fighter-0-600-0-900-crop.jpg?v=d76b4e9fe0",
+      "user_rating": 2.0,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 50,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Little Panda Fighter",
+      "directors": [
+        "Michelle Gabriel"
+      ],
+      "genres": [
+        "Action",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Adventure"
+      ],
+      "countries": [
+        "Brazil"
+      ],
+      "original_language": "pt",
+      "runtime": 51,
+      "tmdb_id": 258722,
+      "director_source": "tmdb_details_cache",
+      "director": "Michelle Gabriel"
+    },
+    {
+      "rss_title": "Adgwa-Ata, 2026",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/adgwa-ata/",
+      "letterboxd_slug": "adgwa-ata",
+      "watched_at": "Sun, 28 Jun 2026 10:38:28 +1200",
+      "logged_at_raw": "Sun, 28 Jun 2026 10:38:28 +1200",
+      "logged_at_iso": "2026-06-27T22:38:28+00:00",
+      "logged_hour": 22,
+      "logged_minute": 38,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/2/3/0/5/8/1523058-adgwa-ata-0-600-0-900-crop.jpg?v=1240364f16",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/2/3/0/5/8/1523058-adgwa-ata-0-600-0-900-crop.jpg?v=1240364f16",
+      "user_rating": null,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Adgwa-Ata",
+      "directors": [
+        "Zsuzsanna Kreif"
+      ],
+      "genres": [
+        "Animation",
+        "Science Fiction",
+        "Drama",
+        "Fantasy"
+      ],
+      "countries": [
+        "Hungary",
+        "France"
+      ],
+      "original_language": "xx",
+      "runtime": 15,
+      "tmdb_id": 1659077,
+      "director_source": "tmdb_details_cache",
+      "director": "Zsuzsanna Kreif"
+    },
+    {
+      "rss_title": "Vertiginous, 2026 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/vertiginous/",
+      "letterboxd_slug": "vertiginous",
+      "watched_at": "Sun, 28 Jun 2026 01:42:56 +1200",
+      "logged_at_raw": "Sun, 28 Jun 2026 01:42:56 +1200",
+      "logged_at_iso": "2026-06-27T13:42:56+00:00",
+      "logged_hour": 13,
+      "logged_minute": 42,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/1/0/1/4/1531014-vertiginous-0-600-0-900-crop.jpg?v=2233c93bb4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/1/0/1/4/1531014-vertiginous-0-600-0-900-crop.jpg?v=2233c93bb4",
+      "user_rating": 2.5,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Vertiginous",
+      "directors": [
+        "Quentin Dupieux"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Science Fiction"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1668499,
+      "director_source": "tmdb_details_cache",
+      "director": "Quentin Dupieux"
+    },
+    {
+      "rss_title": "Backrooms, 2026 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/backrooms-2026/",
+      "letterboxd_slug": "backrooms-2026",
+      "watched_at": "Sun, 28 Jun 2026 01:41:58 +1200",
+      "logged_at_raw": "Sun, 28 Jun 2026 01:41:58 +1200",
+      "logged_at_iso": "2026-06-27T13:41:58+00:00",
+      "logged_hour": 13,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/6/4/1/9/976419-backrooms-2026-0-600-0-900-crop.jpg?v=f7a99e3fc8",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/6/4/1/9/976419-backrooms-2026-0-600-0-900-crop.jpg?v=f7a99e3fc8",
+      "user_rating": 3.5,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Backrooms",
+      "directors": [
+        "Kane Parsons"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Science Fiction"
+      ],
+      "countries": [
+        "United States of America",
+        "Canada"
+      ],
+      "original_language": "en",
+      "runtime": 111,
+      "tmdb_id": 1083381,
+      "director_source": "tmdb_details_cache",
+      "director": "Kane Parsons"
+    },
+    {
+      "rss_title": "Minions & Monsters, 2026 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/minions-monsters-2026/",
+      "letterboxd_slug": "minions-monsters-2026",
+      "watched_at": "Fri, 26 Jun 2026 08:07:58 +1200",
+      "logged_at_raw": "Fri, 26 Jun 2026 08:07:58 +1200",
+      "logged_at_iso": "2026-06-25T20:07:58+00:00",
+      "logged_hour": 20,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996",
+      "user_rating": 3.0,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Minions & Monsters",
+      "directors": [
+        "Pierre Coffin"
+      ],
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America",
+        "Japan"
+      ],
+      "original_language": "en",
+      "runtime": 90,
+      "tmdb_id": 1315772,
+      "director_source": "tmdb_details_cache",
+      "director": "Pierre Coffin"
+    },
+    {
+      "rss_title": "Ghost in the Shell, 1995 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/ghost-in-the-shell/",
+      "letterboxd_slug": "ghost-in-the-shell",
+      "watched_at": "Wed, 24 Jun 2026 09:39:39 +1200",
+      "logged_at_raw": "Wed, 24 Jun 2026 09:39:39 +1200",
+      "logged_at_iso": "2026-06-23T21:39:39+00:00",
+      "logged_hour": 21,
+      "logged_minute": 39,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/0/47270-ghost-in-the-shell-0-600-0-900-crop.jpg?v=c837d80ee1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/0/47270-ghost-in-the-shell-0-600-0-900-crop.jpg?v=c837d80ee1",
+      "user_rating": 4.0,
+      "year": 1995,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Ghost in the Shell",
+      "directors": [
+        "Mamoru Oshii"
+      ],
+      "genres": [
+        "Animation",
+        "Science Fiction",
+        "Action"
+      ],
+      "countries": [
+        "Japan",
+        "UK"
+      ],
+      "original_language": "Japanese",
+      "runtime": 83.0,
+      "average_rating": null,
+      "watches": 467079,
+      "likes": 154233,
+      "fans": 7000,
+      "total_ratings": 306998,
+      "director": "Mamoru Oshii",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Jim Queen, 2026 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/jim-queen/",
+      "letterboxd_slug": "jim-queen",
+      "watched_at": "Sun, 21 Jun 2026 08:04:17 +1200",
+      "logged_at_raw": "Sun, 21 Jun 2026 08:04:17 +1200",
+      "logged_at_iso": "2026-06-20T20:04:17+00:00",
+      "logged_hour": 20,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "user_rating": 4.5,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Jim Queen and the Quest for Chloroqueer",
+      "directors": [
+        "Marco Nguyen",
+        "Nicolas Athané"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "Belgium"
+      ],
+      "original_language": "fr",
+      "runtime": 85,
+      "tmdb_id": 1061798,
+      "director_source": "tmdb_details_cache",
+      "director": "Marco Nguyen"
+    },
+    {
+      "rss_title": "Suspiria, 1977 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/suspiria/",
+      "letterboxd_slug": "suspiria",
+      "watched_at": "Tue, 30 Jun 2026 00:28:13 +1200",
+      "logged_at_raw": "Tue, 30 Jun 2026 00:28:13 +1200",
+      "logged_at_iso": "2026-06-29T12:28:13+00:00",
+      "logged_hour": 12,
+      "logged_minute": 28,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/9/0/0/44900-suspiria-0-600-0-900-crop.jpg?v=d1fbb1d377",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/9/0/0/44900-suspiria-0-600-0-900-crop.jpg?v=d1fbb1d377",
+      "user_rating": 4.5,
+      "year": 1977,
+      "has_review": true,
+      "review_word_count": 136,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Suspiria",
+      "directors": [
+        "Dario Argento"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "Italy"
+      ],
+      "original_language": "English",
+      "runtime": 99.0,
+      "average_rating": 3.93,
+      "watches": 618171,
+      "likes": 219548,
+      "fans": 13000,
+      "total_ratings": 443757,
+      "director": "Dario Argento",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Bouchra, 2025",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/bouchra/",
+      "letterboxd_slug": "bouchra",
+      "watched_at": "Wed, 24 Jun 2026 03:45:32 +1200",
+      "logged_at_raw": "Wed, 24 Jun 2026 03:45:32 +1200",
+      "logged_at_iso": "2026-06-23T15:45:32+00:00",
+      "logged_hour": 15,
+      "logged_minute": 45,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/9/3/0/2/5/1393025-bouchra-0-600-0-900-crop.jpg?v=8606db1ed5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/9/3/0/2/5/1393025-bouchra-0-600-0-900-crop.jpg?v=8606db1ed5",
+      "user_rating": null,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 286,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "Bouchra",
+      "tmdb_candidate_title": "Bouchra",
+      "tmdb_score": 0.75,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "The Host, 2006 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-host/",
+      "letterboxd_slug": "the-host",
+      "watched_at": "Thu, 25 Jun 2026 09:00:07 +1200",
+      "logged_at_raw": "Thu, 25 Jun 2026 09:00:07 +1200",
+      "logged_at_iso": "2026-06-24T21:00:07+00:00",
+      "logged_hour": 21,
+      "logged_minute": 0,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/2/5/51125-the-host-0-600-0-900-crop.jpg?v=98f2d8c268",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/1/2/5/51125-the-host-0-600-0-900-crop.jpg?v=98f2d8c268",
+      "user_rating": 3.0,
+      "year": 2006,
+      "has_review": true,
+      "review_word_count": 184,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Host",
+      "directors": [
+        "Bong Joon Ho"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Drama",
+        "Horror"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "Korean",
+      "runtime": 120.0,
+      "average_rating": 3.77,
+      "watches": 372742,
+      "likes": 95919,
+      "fans": 944,
+      "total_ratings": 254328,
+      "director": "Bong Joon Ho",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Carlito's Way, 1993 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/carlitos-way/",
+      "letterboxd_slug": "carlitos-way",
+      "watched_at": "Sun, 14 Jun 2026 11:16:30 +1200",
+      "logged_at_raw": "Sun, 14 Jun 2026 11:16:30 +1200",
+      "logged_at_iso": "2026-06-13T23:16:30+00:00",
+      "logged_hour": 23,
+      "logged_minute": 16,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/8/4/7/3/48473-carlito-s-way-0-600-0-900-crop.jpg?v=62c2c5eb07",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/8/4/7/3/48473-carlito-s-way-0-600-0-900-crop.jpg?v=62c2c5eb07",
+      "user_rating": 3.5,
+      "year": 1993,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Carlito's Way",
+      "directors": [
+        "Brian De Palma"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 144.0,
+      "average_rating": null,
+      "watches": 200996,
+      "likes": 59034,
+      "fans": 2000,
+      "total_ratings": 139448,
+      "director": "Brian De Palma",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Slumdog Millionaire, 2008 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/slumdog-millionaire/",
+      "letterboxd_slug": "slumdog-millionaire",
+      "watched_at": "Wed, 24 Jun 2026 23:02:58 +1200",
+      "logged_at_raw": "Wed, 24 Jun 2026 23:02:58 +1200",
+      "logged_at_iso": "2026-06-24T11:02:58+00:00",
+      "logged_hour": 11,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/6/1/3/44613-slumdog-millionaire-0-600-0-900-crop.jpg?v=6cff9e413f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/6/1/3/44613-slumdog-millionaire-0-600-0-900-crop.jpg?v=6cff9e413f",
+      "user_rating": 4.0,
+      "year": 2008,
+      "has_review": true,
+      "review_word_count": 250,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Slumdog Millionaire",
+      "directors": [
+        "Danny Boyle"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "original_language": "English",
+      "runtime": 120.0,
+      "average_rating": 3.92,
+      "watches": 960238,
+      "likes": 195759,
+      "fans": 4300,
+      "total_ratings": 513180,
+      "director": "Danny Boyle",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Menu, 2022 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-menu-2022/",
+      "letterboxd_slug": "the-menu-2022",
+      "watched_at": "Thu, 11 Jun 2026 08:30:57 +1200",
+      "logged_at_raw": "Thu, 11 Jun 2026 08:30:57 +1200",
+      "logged_at_iso": "2026-06-10T20:30:57+00:00",
+      "logged_hour": 20,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/2/1/3/2/3/521323-the-menu-0-600-0-900-crop.jpg?v=d00a0d03a8",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/2/1/3/2/3/521323-the-menu-0-600-0-900-crop.jpg?v=d00a0d03a8",
+      "user_rating": 3.0,
+      "year": 2022,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Menu",
+      "directors": [
+        "Mark Mylod"
+      ],
+      "genres": [
+        "Comedy",
+        "Thriller",
+        "Horror"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 107.0,
+      "average_rating": 3.53,
+      "watches": 2978848,
+      "likes": 901581,
+      "fans": 7500,
+      "total_ratings": 2331290,
+      "director": "Mark Mylod",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Boogie Nights, 1997 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/boogie-nights/",
+      "letterboxd_slug": "boogie-nights",
+      "watched_at": "Tue, 9 Jun 2026 10:10:32 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 10:10:32 +1200",
+      "logged_at_iso": "2026-06-08T22:10:32+00:00",
+      "logged_hour": 22,
+      "logged_minute": 10,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/0/0/7/49007-boogie-nights-0-600-0-900-crop.jpg?v=57bef85dc6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/0/0/7/49007-boogie-nights-0-600-0-900-crop.jpg?v=57bef85dc6",
+      "user_rating": 4.5,
+      "year": 1997,
+      "has_review": true,
+      "review_word_count": 72,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Boogie Nights",
+      "directors": [
+        "Paul Thomas Anderson"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 156.0,
+      "average_rating": 4.21,
+      "watches": 653574,
+      "likes": 214169,
+      "fans": 11000,
+      "total_ratings": 448490,
+      "director": "Paul Thomas Anderson",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Persona, 1966 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/persona/",
+      "letterboxd_slug": "persona",
+      "watched_at": "Wed, 17 Jun 2026 21:34:58 +1200",
+      "logged_at_raw": "Wed, 17 Jun 2026 21:34:58 +1200",
+      "logged_at_iso": "2026-06-17T09:34:58+00:00",
+      "logged_hour": 9,
+      "logged_minute": 34,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/3/5/5/51355-persona-0-600-0-900-crop.jpg?v=aca1e0fd3d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/3/5/5/51355-persona-0-600-0-900-crop.jpg?v=aca1e0fd3d",
+      "user_rating": 2.5,
+      "year": 1966,
+      "has_review": true,
+      "review_word_count": 280,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Persona",
+      "directors": [
+        "Ingmar Bergman"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "Sweden"
+      ],
+      "original_language": "Swedish",
+      "runtime": 83.0,
+      "average_rating": null,
+      "watches": 463097,
+      "likes": 175630,
+      "fans": 18000,
+      "total_ratings": 323521,
+      "director": "Ingmar Bergman",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Enemy, 2013 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/enemy/",
+      "letterboxd_slug": "enemy",
+      "watched_at": "Wed, 17 Jun 2026 09:26:22 +1200",
+      "logged_at_raw": "Wed, 17 Jun 2026 09:26:22 +1200",
+      "logged_at_iso": "2026-06-16T21:26:22+00:00",
+      "logged_hour": 21,
+      "logged_minute": 26,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sj/00/0d/n1/aQkyFHzNzZoMhxZ7c0IaK8BljED-0-600-0-900-crop.jpg?v=338dcff82c",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sj/00/0d/n1/aQkyFHzNzZoMhxZ7c0IaK8BljED-0-600-0-900-crop.jpg?v=338dcff82c",
+      "user_rating": 3.0,
+      "year": 2013,
+      "has_review": true,
+      "review_word_count": 240,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Enemy",
+      "directors": [
+        "Denis Villeneuve"
+      ],
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
+      "countries": [
+        "Canada",
+        "France",
+        "Spain"
+      ],
+      "original_language": "English",
+      "runtime": 91.0,
+      "average_rating": 3.61,
+      "watches": 611712,
+      "likes": 149322,
+      "fans": 1900,
+      "total_ratings": 438678,
+      "director": "Denis Villeneuve",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "L'Argent, 1983 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/largent-1983/",
+      "letterboxd_slug": "largent-1983",
+      "watched_at": "Wed, 17 Jun 2026 01:45:26 +1200",
+      "logged_at_raw": "Wed, 17 Jun 2026 01:45:26 +1200",
+      "logged_at_iso": "2026-06-16T13:45:26+00:00",
+      "logged_hour": 13,
+      "logged_minute": 45,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/2/9/5/4/22954-l-argent-0-600-0-900-crop.jpg?v=3d088030ca",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/2/9/5/4/22954-l-argent-0-600-0-900-crop.jpg?v=3d088030ca",
+      "user_rating": 2.5,
+      "year": 1983,
+      "has_review": true,
+      "review_word_count": 88,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "L'Argent",
+      "directors": [
+        "Robert Bresson"
+      ],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "France",
+        "Switzerland"
+      ],
+      "original_language": "French",
+      "runtime": 85.0,
+      "average_rating": 4.0,
+      "watches": 51239,
+      "likes": 14874,
+      "fans": 429,
+      "total_ratings": 34786,
+      "director": "Robert Bresson",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The French Connection, 1971 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-french-connection/",
+      "letterboxd_slug": "the-french-connection",
+      "watched_at": "Sun, 7 Jun 2026 22:34:19 +1200",
+      "logged_at_raw": "Sun, 7 Jun 2026 22:34:19 +1200",
+      "logged_at_iso": "2026-06-07T10:34:19+00:00",
+      "logged_hour": 10,
+      "logged_minute": 34,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/m0/ut/ds/ts/5XSGvIKl2yPvOkieFjc3rzLw7x0-0-600-0-900-crop.jpg?v=b5eb5cf6f7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/m0/ut/ds/ts/5XSGvIKl2yPvOkieFjc3rzLw7x0-0-600-0-900-crop.jpg?v=b5eb5cf6f7",
+      "user_rating": 3.0,
+      "year": 1971,
+      "has_review": true,
+      "review_word_count": 108,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The French Connection",
+      "directors": [
+        "William Friedkin"
+      ],
+      "genres": [
+        "Crime",
+        "Action",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 104.0,
+      "average_rating": 4.0,
+      "watches": 227813,
+      "likes": 61251,
+      "fans": 776,
+      "total_ratings": 157960,
+      "director": "William Friedkin",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Obsession, 2025 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/obsession-2025/",
+      "letterboxd_slug": "obsession-2025",
+      "watched_at": "Tue, 16 Jun 2026 10:54:51 +1200",
+      "logged_at_raw": "Tue, 16 Jun 2026 10:54:51 +1200",
+      "logged_at_iso": "2026-06-15T22:54:51+00:00",
+      "logged_hour": 22,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "user_rating": 4.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 340,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Obsession",
+      "directors": [
+        "Curry Barker"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "US"
+      ],
+      "original_language": "en",
+      "runtime": 109,
+      "tmdb_id": null,
+      "director": "Curry Barker",
+      "director_source": "supplemental"
+    },
+    {
+      "rss_title": "Sexy Beast, 2000 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/sexy-beast/",
+      "letterboxd_slug": "sexy-beast",
+      "watched_at": "Thu, 2 Jul 2026 06:28:35 +1200",
+      "logged_at_raw": "Thu, 2 Jul 2026 06:28:35 +1200",
+      "logged_at_iso": "2026-07-01T18:28:35+00:00",
+      "logged_hour": 18,
+      "logged_minute": 28,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/0i/uu/90/yq/t1nDiWheu0HlOZA8thaESVCXpHr-0-600-0-900-crop.jpg?v=e8429aa8b3",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/0i/uu/90/yq/t1nDiWheu0HlOZA8thaESVCXpHr-0-600-0-900-crop.jpg?v=e8429aa8b3",
+      "user_rating": 5.0,
+      "year": 2000,
+      "has_review": true,
+      "review_word_count": 352,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Sexy Beast",
+      "directors": [
+        "Jonathan Glazer"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "Spain",
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 89.0,
+      "average_rating": 3.93,
+      "watches": 148014,
+      "likes": 46598,
+      "fans": 1200,
+      "total_ratings": 109400,
+      "director": "Jonathan Glazer",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "PlayTime, 1967 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/playtime/",
+      "letterboxd_slug": "playtime",
+      "watched_at": "Wed, 24 Jun 2026 09:40:48 +1200",
+      "logged_at_raw": "Wed, 24 Jun 2026 09:40:48 +1200",
+      "logged_at_iso": "2026-06-23T21:40:48+00:00",
+      "logged_hour": 21,
+      "logged_minute": 40,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/bi/e2/9h/of/ivRkXDUcdBZxQiYw5R99ZJM0CpA-0-600-0-900-crop.jpg?v=5ab043bd2f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/bi/e2/9h/of/ivRkXDUcdBZxQiYw5R99ZJM0CpA-0-600-0-900-crop.jpg?v=5ab043bd2f",
+      "user_rating": 3.0,
+      "year": 1967,
+      "has_review": true,
+      "review_word_count": 152,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "PlayTime",
+      "directors": [
+        "Jacques Tati"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "French",
+      "runtime": 115.0,
+      "average_rating": 4.21,
+      "watches": 120967,
+      "likes": 43026,
+      "fans": 3200,
+      "total_ratings": 81884,
+      "director": "Jacques Tati",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Cinema Paradiso, 1988 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/cinema-paradiso/",
+      "letterboxd_slug": "cinema-paradiso",
+      "watched_at": "Tue, 9 Jun 2026 22:18:34 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 22:18:34 +1200",
+      "logged_at_iso": "2026-06-09T10:18:34+00:00",
+      "logged_hour": 10,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/4/9/3/45493-cinema-paradiso-0-600-0-900-crop.jpg?v=8e66264ed4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/4/9/3/45493-cinema-paradiso-0-600-0-900-crop.jpg?v=8e66264ed4",
+      "user_rating": 4.0,
+      "year": 1988,
+      "has_review": true,
+      "review_word_count": 226,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Cinema Paradiso",
+      "directors": [
+        "Giuseppe Tornatore"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "Italian",
+      "runtime": 155.0,
+      "average_rating": 4.48,
+      "watches": 487433,
+      "likes": 207124,
+      "fans": 33000,
+      "total_ratings": 341631,
+      "director": "Giuseppe Tornatore",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Look Back, 2024 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/look-back-2024/",
+      "letterboxd_slug": "look-back-2024",
+      "watched_at": "Tue, 9 Jun 2026 03:55:40 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 03:55:40 +1200",
+      "logged_at_iso": "2026-06-08T15:55:40+00:00",
+      "logged_hour": 15,
+      "logged_minute": 55,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/2/7/6/6/9/1127669-look-back-0-600-0-900-crop.jpg?v=6a67407577",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/2/7/6/6/9/1127669-look-back-0-600-0-900-crop.jpg?v=6a67407577",
+      "user_rating": 3.5,
+      "year": 2024,
+      "has_review": true,
+      "review_word_count": 186,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Look Back",
+      "directors": [
+        "Kiyotaka Oshiyama"
+      ],
+      "genres": [
+        "Animation",
+        "Drama"
+      ],
+      "countries": [
+        "JP"
+      ],
+      "original_language": "ja",
+      "runtime": 58,
+      "tmdb_id": 1244492,
+      "director_source": "tmdb_details_cache",
+      "director": "Kiyotaka Oshiyama"
+    },
+    {
+      "rss_title": "Cries and Whispers, 1972 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/cries-and-whispers/",
+      "letterboxd_slug": "cries-and-whispers",
+      "watched_at": "Sat, 6 Jun 2026 03:50:27 +1200",
+      "logged_at_raw": "Sat, 6 Jun 2026 03:50:27 +1200",
+      "logged_at_iso": "2026-06-05T15:50:27+00:00",
+      "logged_hour": 15,
+      "logged_minute": 50,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/4/1/4/46414-cries-and-whispers-0-600-0-900-crop.jpg?v=80b1fa11db",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/4/1/4/46414-cries-and-whispers-0-600-0-900-crop.jpg?v=80b1fa11db",
+      "user_rating": 2.5,
+      "year": 1972,
+      "has_review": true,
+      "review_word_count": 188,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Cries and Whispers",
+      "directors": [
+        "Ingmar Bergman"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "Sweden"
+      ],
+      "original_language": "Swedish",
+      "runtime": 95.0,
+      "average_rating": 4.22,
+      "watches": 96188,
+      "likes": 30531,
+      "fans": 1300,
+      "total_ratings": 66101,
+      "director": "Ingmar Bergman",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Society of the Snow, 2023 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/society-of-the-snow/",
+      "letterboxd_slug": "society-of-the-snow",
+      "watched_at": "Sat, 6 Jun 2026 20:54:38 +1200",
+      "logged_at_raw": "Sat, 6 Jun 2026 20:54:38 +1200",
+      "logged_at_iso": "2026-06-06T08:54:38+00:00",
+      "logged_hour": 8,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/1/3/8/4/0/813840-society-of-the-snow-0-600-0-900-crop.jpg?v=c75af7d2b8",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/1/3/8/4/0/813840-society-of-the-snow-0-600-0-900-crop.jpg?v=c75af7d2b8",
+      "user_rating": 3.0,
+      "year": 2023,
+      "has_review": true,
+      "review_word_count": 212,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Society of the Snow",
+      "directors": [
+        "J. A. Bayona"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "ES",
+        "US"
+      ],
+      "original_language": "es",
+      "runtime": 143,
+      "tmdb_id": 906126,
+      "director_source": "tmdb_details_cache",
+      "director": "J. A. Bayona"
+    },
+    {
+      "rss_title": "Good Time, 2017 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/good-time/",
+      "letterboxd_slug": "good-time",
+      "watched_at": "Wed, 10 Jun 2026 09:10:34 +1200",
+      "logged_at_raw": "Wed, 10 Jun 2026 09:10:34 +1200",
+      "logged_at_iso": "2026-06-09T21:10:34+00:00",
+      "logged_hour": 21,
+      "logged_minute": 10,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/6/2/3/6/2/362362-good-time-0-600-0-900-crop.jpg?v=f7b17715d2",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/6/2/3/6/2/362362-good-time-0-600-0-900-crop.jpg?v=f7b17715d2",
+      "user_rating": 3.5,
+      "year": 2017,
+      "has_review": true,
+      "review_word_count": 190,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Good Time",
+      "directors": [
+        "Josh Safdie",
+        "Benny Safdie"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 102.0,
+      "average_rating": 4.0,
+      "watches": 788380,
+      "likes": 273785,
+      "fans": 9700,
+      "total_ratings": 600200,
+      "director": "Josh Safdie",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Club Kid, 2026 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/club-kid/",
+      "letterboxd_slug": "club-kid",
+      "watched_at": "Sat, 30 May 2026 08:55:09 +1200",
+      "logged_at_raw": "Sat, 30 May 2026 08:55:09 +1200",
+      "logged_at_iso": "2026-05-29T20:55:09+00:00",
+      "logged_hour": 20,
+      "logged_minute": 55,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/4/5/6/2/4/2/1456242-club-kid-0-600-0-900-crop.jpg?v=bf12fdff2a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/4/5/6/2/4/2/1456242-club-kid-0-600-0-900-crop.jpg?v=bf12fdff2a",
+      "user_rating": 5.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 8,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Club Kid",
+      "directors": [
+        "Jordan Firstman"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "US"
+      ],
+      "original_language": "en",
+      "runtime": 126,
+      "tmdb_id": 1585239,
+      "director_source": "tmdb_details_cache",
+      "director": "Jordan Firstman"
+    },
+    {
+      "rss_title": "Night Is Short, Walk On Girl, 2017 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/night-is-short-walk-on-girl/",
+      "letterboxd_slug": "night-is-short-walk-on-girl",
+      "watched_at": "Fri, 5 Jun 2026 03:52:02 +1200",
+      "logged_at_raw": "Fri, 5 Jun 2026 03:52:02 +1200",
+      "logged_at_iso": "2026-06-04T15:52:02+00:00",
+      "logged_hour": 15,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/6/3/4/6/0/363460-night-is-short-walk-on-girl-0-600-0-900-crop.jpg?v=ea41691f71",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/6/3/4/6/0/363460-night-is-short-walk-on-girl-0-600-0-900-crop.jpg?v=ea41691f71",
+      "user_rating": 4.5,
+      "year": 2017,
+      "has_review": true,
+      "review_word_count": 294,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Night Is Short, Walk On Girl",
+      "directors": [
+        "Masaaki Yuasa"
+      ],
+      "genres": [
+        "Comedy",
+        "Romance",
+        "Animation",
+        "Fantasy"
+      ],
+      "countries": [
+        "JP"
+      ],
+      "original_language": "ja",
+      "runtime": 93,
+      "tmdb_id": 430214,
+      "director_source": "tmdb_details_cache",
+      "director": "Masaaki Yuasa"
+    },
+    {
+      "rss_title": "Pulse, 2001 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/pulse-2001/",
+      "letterboxd_slug": "pulse-2001",
+      "watched_at": "Thu, 28 May 2026 21:53:08 +1200",
+      "logged_at_raw": "Thu, 28 May 2026 21:53:08 +1200",
+      "logged_at_iso": "2026-05-28T09:53:08+00:00",
+      "logged_hour": 9,
+      "logged_minute": 53,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/4/6/1/8/34618-pulse-0-600-0-900-crop.jpg?v=9e927f3d94",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/4/6/1/8/34618-pulse-0-600-0-900-crop.jpg?v=9e927f3d94",
+      "user_rating": 5.0,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 392,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Pulse",
+      "directors": [
+        "Kiyoshi Kurosawa"
+      ],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
+      "countries": [
+        "JP"
+      ],
+      "original_language": "ja",
+      "runtime": 119,
+      "tmdb_id": 27324,
+      "director_source": "tmdb_details_cache",
+      "director": "Kiyoshi Kurosawa"
+    },
+    {
+      "rss_title": "TRENTE, 2026 - ★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/trente/1/",
+      "letterboxd_slug": "trente",
+      "watched_at": "Wed, 27 May 2026 08:58:20 +1200",
+      "logged_at_raw": "Wed, 27 May 2026 08:58:20 +1200",
+      "logged_at_iso": "2026-05-26T20:58:20+00:00",
+      "logged_hour": 20,
+      "logged_minute": 58,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "user_rating": 1.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 282,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "TRENTE",
+      "directors": [
+        "Sébastien Frit",
+        "Jeremie Levypon"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "countries": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1687834,
+      "director_source": "tmdb_details_cache",
+      "director": "Sébastien Frit"
+    },
+    {
+      "rss_title": "The Taking of Pelham One Two Three, 1974 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-taking-of-pelham-one-two-three/",
+      "letterboxd_slug": "the-taking-of-pelham-one-two-three",
+      "watched_at": "Fri, 5 Jun 2026 00:22:21 +1200",
+      "logged_at_raw": "Fri, 5 Jun 2026 00:22:21 +1200",
+      "logged_at_iso": "2026-06-04T12:22:21+00:00",
+      "logged_hour": 12,
+      "logged_minute": 22,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/8/0/0/47800-the-taking-of-pelham-one-two-three-0-600-0-900-crop.jpg?v=b04395e6e7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/8/0/0/47800-the-taking-of-pelham-one-two-three-0-600-0-900-crop.jpg?v=b04395e6e7",
+      "user_rating": 3.0,
+      "year": 1974,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Taking of Pelham One Two Three",
+      "directors": [
+        "Joseph Sargent"
+      ],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 104.0,
+      "average_rating": null,
+      "watches": 79530,
+      "likes": 26933,
+      "fans": 456,
+      "total_ratings": 57999,
+      "director": "Joseph Sargent",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Millennium Actress, 2001 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/millennium-actress/",
+      "letterboxd_slug": "millennium-actress",
+      "watched_at": "Thu, 28 May 2026 00:17:36 +1200",
+      "logged_at_raw": "Thu, 28 May 2026 00:17:36 +1200",
+      "logged_at_iso": "2026-05-27T12:17:36+00:00",
+      "logged_hour": 12,
+      "logged_minute": 17,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/9/8/8/4/29884-millennium-actress-0-600-0-900-crop.jpg?v=7c3df2e20f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/9/8/8/4/29884-millennium-actress-0-600-0-900-crop.jpg?v=7c3df2e20f",
+      "user_rating": 3.0,
+      "year": 2001,
+      "has_review": true,
+      "review_word_count": 216,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Millennium Actress",
+      "directors": [
+        "Satoshi Kon"
+      ],
+      "genres": [
+        "Romance",
+        "Animation",
+        "Drama",
+        "Fantasy"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 87.0,
+      "average_rating": 4.23,
+      "watches": 155657,
+      "likes": 58809,
+      "fans": 3200,
+      "total_ratings": 110438,
+      "director": "Satoshi Kon",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Angel's Egg, 1985 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/angels-egg/",
+      "letterboxd_slug": "angels-egg",
+      "watched_at": "Tue, 26 May 2026 10:01:30 +1200",
+      "logged_at_raw": "Tue, 26 May 2026 10:01:30 +1200",
+      "logged_at_iso": "2026-05-25T22:01:30+00:00",
+      "logged_hour": 22,
+      "logged_minute": 1,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/1/9/9/0/41990-angel-s-egg-0-600-0-900-crop.jpg?v=98f9bf2def",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/1/9/9/0/41990-angel-s-egg-0-600-0-900-crop.jpg?v=98f9bf2def",
+      "user_rating": 3.5,
+      "year": 1985,
+      "has_review": true,
+      "review_word_count": 154,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Angel's Egg",
+      "directors": [
+        "Mamoru Oshii"
+      ],
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Mystery",
+        "Science Fiction"
+      ],
+      "countries": [
+        "JP"
+      ],
+      "original_language": "ja",
+      "runtime": 71,
+      "tmdb_id": 15916,
+      "director_source": "tmdb_details_cache",
+      "director": "Mamoru Oshii"
+    },
+    {
+      "rss_title": "The Skin I Live In, 2011 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-skin-i-live-in/",
+      "letterboxd_slug": "the-skin-i-live-in",
+      "watched_at": "Fri, 5 Jun 2026 19:18:50 +1200",
+      "logged_at_raw": "Fri, 5 Jun 2026 19:18:50 +1200",
+      "logged_at_iso": "2026-06-05T07:18:50+00:00",
+      "logged_hour": 7,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/jc/zx/ej/uw/iFIgRIhz3CdWDuKBqEDURV4a4Ly-0-600-0-900-crop.jpg?v=db0dde8109",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/jc/zx/ej/uw/iFIgRIhz3CdWDuKBqEDURV4a4Ly-0-600-0-900-crop.jpg?v=db0dde8109",
+      "user_rating": 4.0,
+      "year": 2011,
+      "has_review": true,
+      "review_word_count": 258,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Skin I Live In",
+      "directors": [
+        "Pedro Almodóvar"
+      ],
+      "genres": [
+        "Horror",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
+      "countries": [
+        "Spain"
+      ],
+      "original_language": "Spanish",
+      "runtime": 120.0,
+      "average_rating": 3.82,
+      "watches": 416611,
+      "likes": 103174,
+      "fans": 2400,
+      "total_ratings": 281497,
+      "director": "Pedro Almodóvar",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Beloved, 2026 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-beloved-2026/",
+      "letterboxd_slug": "the-beloved-2026",
+      "watched_at": "Sat, 23 May 2026 19:05:09 +1200",
+      "logged_at_raw": "Sat, 23 May 2026 19:05:09 +1200",
+      "logged_at_iso": "2026-05-23T07:05:09+00:00",
+      "logged_hour": 7,
+      "logged_minute": 5,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/6/8/3/5/7/968357-the-beloved-2026-0-600-0-900-crop.jpg?v=e95a524c37",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/6/8/3/5/7/968357-the-beloved-2026-0-600-0-900-crop.jpg?v=e95a524c37",
+      "user_rating": 3.5,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Beloved",
+      "directors": [
+        "Rodrigo Sorogoyen"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "ES",
+        "FR"
+      ],
+      "original_language": "es",
+      "runtime": 135,
+      "tmdb_id": 1074074,
+      "director_source": "tmdb_details_cache",
+      "director": "Rodrigo Sorogoyen"
+    },
+    {
+      "rss_title": "Blow Out, 1981 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/blow-out/",
+      "letterboxd_slug": "blow-out",
+      "watched_at": "Wed, 20 May 2026 22:54:34 +1200",
+      "logged_at_raw": "Wed, 20 May 2026 22:54:34 +1200",
+      "logged_at_iso": "2026-05-20T10:54:34+00:00",
+      "logged_hour": 10,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/1/0/9/45109-blow-out-0-600-0-900-crop.jpg?v=0d7535d1bb",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/1/0/9/45109-blow-out-0-600-0-900-crop.jpg?v=0d7535d1bb",
+      "user_rating": 4.5,
+      "year": 1981,
+      "has_review": true,
+      "review_word_count": 184,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Blow Out",
+      "directors": [
+        "Brian De Palma"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 108.0,
+      "average_rating": null,
+      "watches": 257932,
+      "likes": 89483,
+      "fans": 3100,
+      "total_ratings": 195364,
+      "director": "Brian De Palma",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Rear Window, 1954 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/rear-window/",
+      "letterboxd_slug": "rear-window",
+      "watched_at": "Tue, 19 May 2026 22:15:26 +1200",
+      "logged_at_raw": "Tue, 19 May 2026 22:15:26 +1200",
+      "logged_at_iso": "2026-05-19T10:15:26+00:00",
+      "logged_hour": 10,
+      "logged_minute": 15,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/5/5/2/51552-rear-window-0-600-0-900-crop.jpg?v=855a2e3070",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/5/5/2/51552-rear-window-0-600-0-900-crop.jpg?v=855a2e3070",
+      "user_rating": 4.0,
+      "year": 1954,
+      "has_review": true,
+      "review_word_count": 186,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Rear Window",
+      "directors": [
+        "Alfred Hitchcock"
+      ],
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 112.0,
+      "average_rating": 4.37,
+      "watches": 921057,
+      "likes": 331306,
+      "fans": 18000,
+      "total_ratings": 614385,
+      "director": "Alfred Hitchcock",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Diabolique, 1955 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/diabolique-1955/",
+      "letterboxd_slug": "diabolique-1955",
+      "watched_at": "Sun, 17 May 2026 22:33:00 +1200",
+      "logged_at_raw": "Sun, 17 May 2026 22:33:00 +1200",
+      "logged_at_iso": "2026-05-17T10:33:00+00:00",
+      "logged_hour": 10,
+      "logged_minute": 33,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/3/2/5/51325-diabolique-0-600-0-900-crop.jpg?v=4b7fb60833",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/3/2/5/51325-diabolique-0-600-0-900-crop.jpg?v=4b7fb60833",
+      "user_rating": 4.0,
+      "year": 1955,
+      "has_review": true,
+      "review_word_count": 184,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Diabolique",
+      "directors": [
+        "Henri-Georges Clouzot"
+      ],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "French",
+      "runtime": 117.0,
+      "average_rating": 4.18,
+      "watches": 101362,
+      "likes": 32460,
+      "fans": 592,
+      "total_ratings": 70408,
+      "director": "Henri-Georges Clouzot",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Godfather Part II, 1974 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-godfather-part-ii/",
+      "letterboxd_slug": "the-godfather-part-ii",
+      "watched_at": "Tue, 12 May 2026 07:39:33 +1200",
+      "logged_at_raw": "Tue, 12 May 2026 07:39:33 +1200",
+      "logged_at_iso": "2026-05-11T19:39:33+00:00",
+      "logged_hour": 19,
+      "logged_minute": 39,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/6/51816-the-godfather-part-ii-0-600-0-900-crop.jpg?v=6a49853f25",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/6/51816-the-godfather-part-ii-0-600-0-900-crop.jpg?v=6a49853f25",
+      "user_rating": 4.5,
+      "year": 1974,
+      "has_review": true,
+      "review_word_count": 362,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Godfather Part II",
+      "directors": [
+        "Francis Ford Coppola"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 202.0,
+      "average_rating": 4.59,
+      "watches": 1438692,
+      "likes": 524247,
+      "fans": 37000,
+      "total_ratings": 947967,
+      "director": "Francis Ford Coppola",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Videodrome, 1983 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/videodrome/",
+      "letterboxd_slug": "videodrome",
+      "watched_at": "Sun, 10 May 2026 11:02:43 +1200",
+      "logged_at_raw": "Sun, 10 May 2026 11:02:43 +1200",
+      "logged_at_iso": "2026-05-09T23:02:43+00:00",
+      "logged_hour": 23,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/xw/sw/3v/st/o8psaYgwTYFpqJhHISoMq178J4n-0-600-0-900-crop.jpg?v=837f65a552",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/xw/sw/3v/st/o8psaYgwTYFpqJhHISoMq178J4n-0-600-0-900-crop.jpg?v=837f65a552",
+      "user_rating": 4.0,
+      "year": 1983,
+      "has_review": true,
+      "review_word_count": 284,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Videodrome",
+      "directors": [
+        "David Cronenberg"
+      ],
+      "genres": [
+        "Mystery",
+        "Science Fiction",
+        "Horror"
+      ],
+      "countries": [
+        "Canada"
+      ],
+      "original_language": "English",
+      "runtime": 88.0,
+      "average_rating": 3.88,
+      "watches": 394589,
+      "likes": 130064,
+      "fans": 5700,
+      "total_ratings": 280871,
+      "director": "David Cronenberg",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Phantom Thread, 2017 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/phantom-thread/",
+      "letterboxd_slug": "phantom-thread",
+      "watched_at": "Sun, 17 May 2026 03:55:55 +1200",
+      "logged_at_raw": "Sun, 17 May 2026 03:55:55 +1200",
+      "logged_at_iso": "2026-05-16T15:55:55+00:00",
+      "logged_hour": 15,
+      "logged_minute": 55,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/3/5/3/8/4/335384-phantom-thread-0-600-0-900-crop.jpg?v=6b47f80ec7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/3/5/3/8/4/335384-phantom-thread-0-600-0-900-crop.jpg?v=6b47f80ec7",
+      "user_rating": 4.0,
+      "year": 2017,
+      "has_review": true,
+      "review_word_count": 218,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Phantom Thread",
+      "directors": [
+        "Paul Thomas Anderson"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "USA",
+        "China"
+      ],
+      "original_language": "English",
+      "runtime": 130.0,
+      "average_rating": 4.15,
+      "watches": 631935,
+      "likes": 215303,
+      "fans": 16000,
+      "total_ratings": 462129,
+      "director": "Paul Thomas Anderson",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Kiki's Delivery Service, 1989 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/kikis-delivery-service/",
+      "letterboxd_slug": "kikis-delivery-service",
+      "watched_at": "Wed, 6 May 2026 19:01:36 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 19:01:36 +1200",
+      "logged_at_iso": "2026-05-06T07:01:36+00:00",
+      "logged_hour": 7,
+      "logged_minute": 1,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/5e/rk/0e/99/C70E830B-E641-4CD4-87B3-8DFB91383E20-0-600-0-900-crop.jpg?v=359a791d0d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/5e/rk/0e/99/C70E830B-E641-4CD4-87B3-8DFB91383E20-0-600-0-900-crop.jpg?v=359a791d0d",
+      "user_rating": 3.0,
+      "year": 1989,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Kiki's Delivery Service",
+      "directors": [
+        "Hayao Miyazaki"
+      ],
+      "genres": [
+        "Family",
+        "Fantasy",
+        "Animation"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 103.0,
+      "average_rating": 4.14,
+      "watches": 1252760,
+      "likes": 471318,
+      "fans": 23000,
+      "total_ratings": 806385,
+      "director": "Hayao Miyazaki",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Ready or Not, 2019 - ★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/ready-or-not-2019/",
+      "letterboxd_slug": "ready-or-not-2019",
+      "watched_at": "Wed, 6 May 2026 18:59:30 +1200",
+      "logged_at_raw": "Wed, 6 May 2026 18:59:30 +1200",
+      "logged_at_iso": "2026-05-06T06:59:30+00:00",
+      "logged_hour": 6,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/5/9/6/9/495969-ready-or-not-0-600-0-900-crop.jpg?v=13279f6ca8",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/9/5/9/6/9/495969-ready-or-not-0-600-0-900-crop.jpg?v=13279f6ca8",
+      "user_rating": 2.0,
+      "year": 2019,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Ready or Not",
+      "directors": [
+        "Matt Bettinelli-Olpin",
+        "Tyler Gillett"
+      ],
+      "genres": [
+        "Comedy",
+        "Horror"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 95.0,
+      "average_rating": 3.52,
+      "watches": 1092801,
+      "likes": 315997,
+      "fans": 5500,
+      "total_ratings": 823332,
+      "director": "Matt Bettinelli-Olpin",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Lost Land, 2025 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/lost-land-2025/",
+      "letterboxd_slug": "lost-land-2025",
+      "watched_at": "Tue, 5 May 2026 08:29:34 +1200",
+      "logged_at_raw": "Tue, 5 May 2026 08:29:34 +1200",
+      "logged_at_iso": "2026-05-04T20:29:34+00:00",
+      "logged_hour": 20,
+      "logged_minute": 29,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/9/3/0/4/6/1393046-lost-land-2025-0-600-0-900-crop.jpg?v=b919621cae",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/9/3/0/4/6/1393046-lost-land-2025-0-600-0-900-crop.jpg?v=b919621cae",
+      "user_rating": 3.0,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": false,
+      "source": "supplemental_review",
+      "has_social_stats": false,
+      "has_metadata": false,
+      "title": "In the Lost Lands",
+      "tmdb_candidate_title": "In the Lost Lands",
+      "tmdb_score": 0.8,
+      "tmdb_id": null,
+      "review_reason": "score below confirmation threshold",
+      "directors": [],
+      "director": null
+    },
+    {
+      "rss_title": "Grizzly Man, 2005 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/grizzly-man/",
+      "letterboxd_slug": "grizzly-man",
+      "watched_at": "Thu, 14 May 2026 02:02:56 +1200",
+      "logged_at_raw": "Thu, 14 May 2026 02:02:56 +1200",
+      "logged_at_iso": "2026-05-13T14:02:56+00:00",
+      "logged_hour": 14,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/6/0/9/51609-grizzly-man-0-600-0-900-crop.jpg?v=0e5a5e5c94",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/6/0/9/51609-grizzly-man-0-600-0-900-crop.jpg?v=0e5a5e5c94",
+      "user_rating": 2.5,
+      "year": 2005,
+      "has_review": true,
+      "review_word_count": 150,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Grizzly Man",
+      "directors": [
+        "Werner Herzog"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 103.0,
+      "average_rating": 4.13,
+      "watches": 156645,
+      "likes": 44104,
+      "fans": 961,
+      "total_ratings": 100472,
+      "director": "Werner Herzog",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Wings of Desire, 1987 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/wings-of-desire/",
+      "letterboxd_slug": "wings-of-desire",
+      "watched_at": "Sat, 2 May 2026 10:49:49 +1200",
+      "logged_at_raw": "Sat, 2 May 2026 10:49:49 +1200",
+      "logged_at_iso": "2026-05-01T22:49:49+00:00",
+      "logged_hour": 22,
+      "logged_minute": 49,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/9/0/7/51907-wings-of-desire-0-600-0-900-crop.jpg?v=9b4044c82d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/9/0/7/51907-wings-of-desire-0-600-0-900-crop.jpg?v=9b4044c82d",
+      "user_rating": 3.0,
+      "year": 1987,
+      "has_review": true,
+      "review_word_count": 20,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Wings of Desire",
+      "directors": [
+        "Wim Wenders"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "Fantasy"
+      ],
+      "countries": [
+        "France",
+        "Germany"
+      ],
+      "original_language": "German",
+      "runtime": 128.0,
+      "average_rating": 4.31,
+      "watches": 204338,
+      "likes": 78560,
+      "fans": 9400,
+      "total_ratings": 140285,
+      "director": "Wim Wenders",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Open Your Eyes, 1997 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/open-your-eyes/",
+      "letterboxd_slug": "open-your-eyes",
+      "watched_at": "Thu, 30 Apr 2026 10:08:26 +1200",
+      "logged_at_raw": "Thu, 30 Apr 2026 10:08:26 +1200",
+      "logged_at_iso": "2026-04-29T22:08:26+00:00",
+      "logged_hour": 22,
+      "logged_minute": 8,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/7/0/3/50703-open-your-eyes-0-600-0-900-crop.jpg?v=722adc7f9d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/7/0/3/50703-open-your-eyes-0-600-0-900-crop.jpg?v=722adc7f9d",
+      "user_rating": 3.0,
+      "year": 1997,
+      "has_review": true,
+      "review_word_count": 14,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Open Your Eyes",
+      "directors": [
+        "Alejandro Amenábar"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Science Fiction"
+      ],
+      "countries": [
+        "Spain",
+        "France",
+        "Italy"
+      ],
+      "original_language": "Spanish",
+      "runtime": 117.0,
+      "average_rating": 3.88,
+      "watches": 68565,
+      "likes": 16839,
+      "fans": 526,
+      "total_ratings": 45767,
+      "director": "Alejandro Amenábar",
+      "director_source": "megabank"
+    }
+  ],
+  "profile_summary": {
+    "films_analyzed": 50,
+    "megabank_social_count": 31,
+    "supplemental_confirmed_count": 16,
+    "supplemental_review_count": 3,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 0.62,
+    "metadata_coverage_confirmed": 0.94,
+    "metadata_coverage_potential": 1.0,
+    "total_analyzed": 50,
+    "matched_count": 31,
+    "absent_count": 19,
+    "coverage": 0.62,
+    "user_average_rating": 3.4270833333333335,
+    "community_average_rating": 4.0404,
+    "average_difference": -0.6133166666666665,
+    "runtime_average": 111.96774193548387,
+    "watches_mean": 581834.3870967742,
+    "watches_median": 416611.0,
+    "likes_mean": 189575.5806451613,
+    "fans_mean": 8744.645161290322,
+    "top_genres": [
+      [
+        "Drama",
+        23
+      ],
+      [
+        "Thriller",
+        15
+      ],
+      [
+        "Horror",
+        11
+      ],
+      [
+        "Animation",
+        11
+      ],
+      [
+        "Comedy",
+        10
+      ],
+      [
+        "Science Fiction",
+        9
+      ],
+      [
+        "Mystery",
+        9
+      ],
+      [
+        "Fantasy",
+        8
+      ],
+      [
+        "Crime",
+        8
+      ],
+      [
+        "Romance",
+        6
+      ]
+    ],
+    "top_countries": [
+      [
+        "USA",
+        20
+      ],
+      [
+        "France",
+        12
+      ],
+      [
+        "Japan",
+        8
+      ],
+      [
+        "Spain",
+        6
+      ],
+      [
+        "Italy",
+        4
+      ],
+      [
+        "Canada",
+        3
+      ],
+      [
+        "UK",
+        3
+      ],
+      [
+        "Brazil",
+        2
+      ],
+      [
+        "Sweden",
+        2
+      ],
+      [
+        "Hungary",
+        1
+      ]
+    ],
+    "top_languages": [
+      [
+        "English",
+        23
+      ],
+      [
+        "Japanese",
+        7
+      ],
+      [
+        "French",
+        6
+      ],
+      [
+        "Spanish",
+        4
+      ],
+      [
+        "Swedish",
+        2
+      ],
+      [
+        "pt",
+        1
+      ],
+      [
+        "xx",
+        1
+      ],
+      [
+        "Korean",
+        1
+      ],
+      [
+        "Italian",
+        1
+      ],
+      [
+        "German",
+        1
+      ]
+    ],
+    "top_directors": [
+      [
+        "Brian De Palma",
+        2
+      ],
+      [
+        "Paul Thomas Anderson",
+        2
+      ],
+      [
+        "Ingmar Bergman",
+        2
+      ],
+      [
+        "Robert Eggers",
+        1
+      ],
+      [
+        "Mamoru Oshii",
+        1
+      ],
+      [
+        "Dario Argento",
+        1
+      ],
+      [
+        "Bong Joon Ho",
+        1
+      ],
+      [
+        "Danny Boyle",
+        1
+      ],
+      [
+        "Mark Mylod",
+        1
+      ],
+      [
+        "Denis Villeneuve",
+        1
+      ]
+    ],
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    }
+  },
+  "profile_quality": {
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "status": "normal",
+    "is_partial": false,
+    "warning": null
+  },
+  "highlights": {
+    "most_popular": {
+      "rss_title": "The Menu, 2022 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-menu-2022/",
+      "letterboxd_slug": "the-menu-2022",
+      "watched_at": "Thu, 11 Jun 2026 08:30:57 +1200",
+      "logged_at_raw": "Thu, 11 Jun 2026 08:30:57 +1200",
+      "logged_at_iso": "2026-06-10T20:30:57+00:00",
+      "logged_hour": 20,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/2/1/3/2/3/521323-the-menu-0-600-0-900-crop.jpg?v=d00a0d03a8",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/2/1/3/2/3/521323-the-menu-0-600-0-900-crop.jpg?v=d00a0d03a8",
+      "user_rating": 3.0,
+      "year": 2022,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Menu",
+      "directors": [
+        "Mark Mylod"
+      ],
+      "genres": [
+        "Comedy",
+        "Thriller",
+        "Horror"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 107.0,
+      "average_rating": 3.53,
+      "watches": 2978848,
+      "likes": 901581,
+      "fans": 7500,
+      "total_ratings": 2331290,
+      "director": "Mark Mylod",
+      "director_source": "megabank"
+    },
+    "most_niche": {
+      "rss_title": "L'Argent, 1983 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/largent-1983/",
+      "letterboxd_slug": "largent-1983",
+      "watched_at": "Wed, 17 Jun 2026 01:45:26 +1200",
+      "logged_at_raw": "Wed, 17 Jun 2026 01:45:26 +1200",
+      "logged_at_iso": "2026-06-16T13:45:26+00:00",
+      "logged_hour": 13,
+      "logged_minute": 45,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/2/9/5/4/22954-l-argent-0-600-0-900-crop.jpg?v=3d088030ca",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/2/9/5/4/22954-l-argent-0-600-0-900-crop.jpg?v=3d088030ca",
+      "user_rating": 2.5,
+      "year": 1983,
+      "has_review": true,
+      "review_word_count": 88,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "L'Argent",
+      "directors": [
+        "Robert Bresson"
+      ],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "France",
+        "Switzerland"
+      ],
+      "original_language": "French",
+      "runtime": 85.0,
+      "average_rating": 4.0,
+      "watches": 51239,
+      "likes": 14874,
+      "fans": 429,
+      "total_ratings": 34786,
+      "director": "Robert Bresson",
+      "director_source": "megabank"
+    },
+    "most_fans": {
+      "rss_title": "The Godfather Part II, 1974 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-godfather-part-ii/",
+      "letterboxd_slug": "the-godfather-part-ii",
+      "watched_at": "Tue, 12 May 2026 07:39:33 +1200",
+      "logged_at_raw": "Tue, 12 May 2026 07:39:33 +1200",
+      "logged_at_iso": "2026-05-11T19:39:33+00:00",
+      "logged_hour": 19,
+      "logged_minute": 39,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/6/51816-the-godfather-part-ii-0-600-0-900-crop.jpg?v=6a49853f25",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/6/51816-the-godfather-part-ii-0-600-0-900-crop.jpg?v=6a49853f25",
+      "user_rating": 4.5,
+      "year": 1974,
+      "has_review": true,
+      "review_word_count": 362,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Godfather Part II",
+      "directors": [
+        "Francis Ford Coppola"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 202.0,
+      "average_rating": 4.59,
+      "watches": 1438692,
+      "likes": 524247,
+      "fans": 37000,
+      "total_ratings": 947967,
+      "director": "Francis Ford Coppola",
+      "director_source": "megabank"
+    },
+    "best_fans_ratio": {
+      "rss_title": "Cinema Paradiso, 1988 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/cinema-paradiso/",
+      "letterboxd_slug": "cinema-paradiso",
+      "watched_at": "Tue, 9 Jun 2026 22:18:34 +1200",
+      "logged_at_raw": "Tue, 9 Jun 2026 22:18:34 +1200",
+      "logged_at_iso": "2026-06-09T10:18:34+00:00",
+      "logged_hour": 10,
+      "logged_minute": 18,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/4/9/3/45493-cinema-paradiso-0-600-0-900-crop.jpg?v=8e66264ed4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/4/9/3/45493-cinema-paradiso-0-600-0-900-crop.jpg?v=8e66264ed4",
+      "user_rating": 4.0,
+      "year": 1988,
+      "has_review": true,
+      "review_word_count": 226,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Cinema Paradiso",
+      "directors": [
+        "Giuseppe Tornatore"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "Italian",
+      "runtime": 155.0,
+      "average_rating": 4.48,
+      "watches": 487433,
+      "likes": 207124,
+      "fans": 33000,
+      "total_ratings": 341631,
+      "director": "Giuseppe Tornatore",
+      "director_source": "megabank"
+    },
+    "longest": {
+      "rss_title": "The Godfather Part II, 1974 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/the-godfather-part-ii/",
+      "letterboxd_slug": "the-godfather-part-ii",
+      "watched_at": "Tue, 12 May 2026 07:39:33 +1200",
+      "logged_at_raw": "Tue, 12 May 2026 07:39:33 +1200",
+      "logged_at_iso": "2026-05-11T19:39:33+00:00",
+      "logged_hour": 19,
+      "logged_minute": 39,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/6/51816-the-godfather-part-ii-0-600-0-900-crop.jpg?v=6a49853f25",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/6/51816-the-godfather-part-ii-0-600-0-900-crop.jpg?v=6a49853f25",
+      "user_rating": 4.5,
+      "year": 1974,
+      "has_review": true,
+      "review_word_count": 362,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Godfather Part II",
+      "directors": [
+        "Francis Ford Coppola"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 202.0,
+      "average_rating": 4.59,
+      "watches": 1438692,
+      "likes": 524247,
+      "fans": 37000,
+      "total_ratings": 947967,
+      "director": "Francis Ford Coppola",
+      "director_source": "megabank"
+    },
+    "shortest": {
+      "rss_title": "Vertiginous, 2026 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/vertiginous/",
+      "letterboxd_slug": "vertiginous",
+      "watched_at": "Sun, 28 Jun 2026 01:42:56 +1200",
+      "logged_at_raw": "Sun, 28 Jun 2026 01:42:56 +1200",
+      "logged_at_iso": "2026-06-27T13:42:56+00:00",
+      "logged_hour": 13,
+      "logged_minute": 42,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/1/0/1/4/1531014-vertiginous-0-600-0-900-crop.jpg?v=2233c93bb4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/3/1/0/1/4/1531014-vertiginous-0-600-0-900-crop.jpg?v=2233c93bb4",
+      "user_rating": 2.5,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Vertiginous",
+      "directors": [
+        "Quentin Dupieux"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Science Fiction"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1668499,
+      "director_source": "tmdb_details_cache",
+      "director": "Quentin Dupieux"
+    }
+  }
+}

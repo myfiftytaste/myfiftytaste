@@ -1,0 +1,1071 @@
+{
+  "source_file": "data\\raw\\Megabank.xlsx",
+  "source_file_modified": false,
+  "sheets": [
+    {
+      "sheet_name": "Movie_Data_File",
+      "rows": 0,
+      "useful_rows": 10002,
+      "columns": 37,
+      "headers": [
+        {
+          "index": 1,
+          "letter": "A",
+          "header": "Film_title",
+          "label": "Film_title",
+          "normalized": "film title"
+        },
+        {
+          "index": 2,
+          "letter": "B",
+          "header": "Release_year",
+          "label": "Release_year",
+          "normalized": "release year"
+        },
+        {
+          "index": 3,
+          "letter": "C",
+          "header": "Director",
+          "label": "Director",
+          "normalized": "director"
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "header": "Cast",
+          "label": "Cast",
+          "normalized": "cast"
+        },
+        {
+          "index": 5,
+          "letter": "E",
+          "header": "Average_rating",
+          "label": "Average_rating",
+          "normalized": "average rating"
+        },
+        {
+          "index": 6,
+          "letter": "F",
+          "header": "Genres",
+          "label": "Genres",
+          "normalized": "genres"
+        },
+        {
+          "index": 7,
+          "letter": "G",
+          "header": "Runtime",
+          "label": "Runtime",
+          "normalized": "runtime"
+        },
+        {
+          "index": 8,
+          "letter": "H",
+          "header": "Countries",
+          "label": "Countries",
+          "normalized": "countries"
+        },
+        {
+          "index": 9,
+          "letter": "I",
+          "header": "Original_language",
+          "label": "Original_language",
+          "normalized": "original language"
+        },
+        {
+          "index": 10,
+          "letter": "J",
+          "header": "Spoken_languages",
+          "label": "Spoken_languages",
+          "normalized": "spoken languages"
+        },
+        {
+          "index": 11,
+          "letter": "K",
+          "header": "Description",
+          "label": "Description",
+          "normalized": "description"
+        },
+        {
+          "index": 12,
+          "letter": "L",
+          "header": "Studios",
+          "label": "Studios",
+          "normalized": "studios"
+        },
+        {
+          "index": 13,
+          "letter": "M",
+          "header": "Watches",
+          "label": "Watches",
+          "normalized": "watches"
+        },
+        {
+          "index": 14,
+          "letter": "N",
+          "header": "List_appearances",
+          "label": "List_appearances",
+          "normalized": "list appearances"
+        },
+        {
+          "index": 15,
+          "letter": "O",
+          "header": "Likes",
+          "label": "Likes",
+          "normalized": "likes"
+        },
+        {
+          "index": 16,
+          "letter": "P",
+          "header": "Fans",
+          "label": "Fans",
+          "normalized": "fans"
+        },
+        {
+          "index": 17,
+          "letter": "Q",
+          "header": "½",
+          "label": "½",
+          "normalized": ""
+        },
+        {
+          "index": 18,
+          "letter": "R",
+          "header": "★",
+          "label": "★",
+          "normalized": ""
+        },
+        {
+          "index": 19,
+          "letter": "S",
+          "header": "★½",
+          "label": "★½",
+          "normalized": ""
+        },
+        {
+          "index": 20,
+          "letter": "T",
+          "header": "★★",
+          "label": "★★",
+          "normalized": ""
+        },
+        {
+          "index": 21,
+          "letter": "U",
+          "header": "★★½",
+          "label": "★★½",
+          "normalized": ""
+        },
+        {
+          "index": 22,
+          "letter": "V",
+          "header": "★★★",
+          "label": "★★★",
+          "normalized": ""
+        },
+        {
+          "index": 23,
+          "letter": "W",
+          "header": "★★★½",
+          "label": "★★★½",
+          "normalized": ""
+        },
+        {
+          "index": 24,
+          "letter": "X",
+          "header": "★★★★",
+          "label": "★★★★",
+          "normalized": ""
+        },
+        {
+          "index": 25,
+          "letter": "Y",
+          "header": "★★★★½",
+          "label": "★★★★½",
+          "normalized": ""
+        },
+        {
+          "index": 26,
+          "letter": "Z",
+          "header": "★★★★★",
+          "label": "★★★★★",
+          "normalized": ""
+        },
+        {
+          "index": 27,
+          "letter": "AA",
+          "header": "Total_ratings",
+          "label": "Total_ratings",
+          "normalized": "total ratings"
+        },
+        {
+          "index": 28,
+          "letter": "AB",
+          "header": "Film_URL",
+          "label": "Film_URL",
+          "normalized": "film url"
+        },
+        {
+          "index": 29,
+          "letter": "AC",
+          "header": "",
+          "label": "(empty header AC)",
+          "normalized": ""
+        },
+        {
+          "index": 30,
+          "letter": "AD",
+          "header": "TMDB ID",
+          "label": "TMDB ID",
+          "normalized": "tmdb id"
+        },
+        {
+          "index": 31,
+          "letter": "AE",
+          "header": "Mainstreamness",
+          "label": "Mainstreamness",
+          "normalized": "mainstreamness"
+        },
+        {
+          "index": 32,
+          "letter": "AF",
+          "header": "Oldness",
+          "label": "Oldness",
+          "normalized": "oldness"
+        },
+        {
+          "index": 33,
+          "letter": "AG",
+          "header": "Weirdness",
+          "label": "Weirdness",
+          "normalized": "weirdness"
+        },
+        {
+          "index": 34,
+          "letter": "AH",
+          "header": "Colorness",
+          "label": "Colorness",
+          "normalized": "colorness"
+        },
+        {
+          "index": 35,
+          "letter": "AI",
+          "header": "Speedness",
+          "label": "Speedness",
+          "normalized": "speedness"
+        },
+        {
+          "index": 36,
+          "letter": "AJ",
+          "header": "",
+          "label": "(empty header AJ)",
+          "normalized": ""
+        },
+        {
+          "index": 37,
+          "letter": "AK",
+          "header": "Year",
+          "label": "Year",
+          "normalized": "year"
+        }
+      ],
+      "empty_headers": [
+        "AC",
+        "AJ"
+      ],
+      "duplicate_normalized_headers": [],
+      "column_profile": [
+        {
+          "letter": "A",
+          "header": "Film_title",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 9667,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "B",
+          "header": "Release_year",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 1,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "C",
+          "header": "Director",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 4764,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "D",
+          "header": "Cast",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 9879,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "E",
+          "header": "Average_rating",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 301,
+          "inferred_type": "mixed"
+        },
+        {
+          "letter": "F",
+          "header": "Genres",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 2397,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "G",
+          "header": "Runtime",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 301,
+          "inferred_type": "mixed"
+        },
+        {
+          "letter": "H",
+          "header": "Countries",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 858,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "I",
+          "header": "Original_language",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 57,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "J",
+          "header": "Spoken_languages",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 892,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "K",
+          "header": "Description",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 9964,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "L",
+          "header": "Studios",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 8017,
+          "inferred_type": "text"
+        },
+        {
+          "letter": "M",
+          "header": "Watches",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 8794,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "N",
+          "header": "List_appearances",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 7888,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "O",
+          "header": "Likes",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 6741,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "P",
+          "header": "Fans",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 963,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "Q",
+          "header": "½",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 2230,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "R",
+          "header": "★",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 3086,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "S",
+          "header": "★½",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 3122,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "T",
+          "header": "★★",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 4676,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "U",
+          "header": "★★½",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 4990,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "V",
+          "header": "★★★",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 6370,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "W",
+          "header": "★★★½",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 6104,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "X",
+          "header": "★★★★",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 6025,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "Y",
+          "header": "★★★★½",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 4327,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "Z",
+          "header": "★★★★★",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 4699,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "AA",
+          "header": "Total_ratings",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 8338,
+          "inferred_type": "integer"
+        },
+        {
+          "letter": "AB",
+          "header": "Film_URL",
+          "empty_header": false,
+          "empty_values": 2,
+          "unique_values": 9971,
+          "inferred_type": "url"
+        },
+        {
+          "letter": "AC",
+          "header": "(empty header AC)",
+          "empty_header": true,
+          "empty_values": 10004,
+          "unique_values": 0,
+          "inferred_type": "empty"
+        },
+        {
+          "letter": "AD",
+          "header": "TMDB ID",
+          "empty_header": false,
+          "empty_values": 10004,
+          "unique_values": 0,
+          "inferred_type": "empty"
+        },
+        {
+          "letter": "AE",
+          "header": "Mainstreamness",
+          "empty_header": false,
+          "empty_values": 10004,
+          "unique_values": 0,
+          "inferred_type": "empty"
+        },
+        {
+          "letter": "AF",
+          "header": "Oldness",
+          "empty_header": false,
+          "empty_values": 10004,
+          "unique_values": 0,
+          "inferred_type": "empty"
+        },
+        {
+          "letter": "AG",
+          "header": "Weirdness",
+          "empty_header": false,
+          "empty_values": 10004,
+          "unique_values": 0,
+          "inferred_type": "empty"
+        },
+        {
+          "letter": "AH",
+          "header": "Colorness",
+          "empty_header": false,
+          "empty_values": 10004,
+          "unique_values": 0,
+          "inferred_type": "empty"
+        },
+        {
+          "letter": "AI",
+          "header": "Speedness",
+          "empty_header": false,
+          "empty_values": 10004,
+          "unique_values": 0,
+          "inferred_type": "empty"
+        },
+        {
+          "letter": "AJ",
+          "header": "(empty header AJ)",
+          "empty_header": true,
+          "empty_values": 10004,
+          "unique_values": 0,
+          "inferred_type": "empty"
+        },
+        {
+          "letter": "AK",
+          "header": "Year",
+          "empty_header": false,
+          "empty_values": 10004,
+          "unique_values": 0,
+          "inferred_type": "empty"
+        }
+      ],
+      "candidate_columns": {
+        "title": [
+          {
+            "column": "Film_title",
+            "letter": "A",
+            "score": 5.0
+          },
+          {
+            "column": "Film_URL",
+            "letter": "AB",
+            "score": 0.5
+          }
+        ],
+        "year": [
+          {
+            "column": "Release_year",
+            "letter": "B",
+            "score": 7.5
+          },
+          {
+            "column": "Year",
+            "letter": "AK",
+            "score": 5.0
+          }
+        ],
+        "letterboxd_url": [
+          {
+            "column": "Film_URL",
+            "letter": "AB",
+            "score": 8.5
+          }
+        ],
+        "letterboxd_average": [
+          {
+            "column": "Average_rating",
+            "letter": "E",
+            "score": 5.0
+          },
+          {
+            "column": "Fans",
+            "letter": "P",
+            "score": 3.0
+          },
+          {
+            "column": "★★★★½",
+            "letter": "Y",
+            "score": 2.59
+          },
+          {
+            "column": "Total_ratings",
+            "letter": "AA",
+            "score": 2.52
+          },
+          {
+            "column": "½",
+            "letter": "Q",
+            "score": 2.1
+          }
+        ],
+        "watches": [
+          {
+            "column": "Watches",
+            "letter": "M",
+            "score": 9.5
+          },
+          {
+            "column": "List_appearances",
+            "letter": "N",
+            "score": 2.0
+          },
+          {
+            "column": "Likes",
+            "letter": "O",
+            "score": 2.0
+          },
+          {
+            "column": "Fans",
+            "letter": "P",
+            "score": 2.0
+          },
+          {
+            "column": "½",
+            "letter": "Q",
+            "score": 2.0
+          }
+        ],
+        "likes": [
+          {
+            "column": "Likes",
+            "letter": "O",
+            "score": 9.5
+          },
+          {
+            "column": "Watches",
+            "letter": "M",
+            "score": 2.0
+          },
+          {
+            "column": "List_appearances",
+            "letter": "N",
+            "score": 2.0
+          },
+          {
+            "column": "Fans",
+            "letter": "P",
+            "score": 2.0
+          },
+          {
+            "column": "½",
+            "letter": "Q",
+            "score": 2.0
+          }
+        ],
+        "fans": [
+          {
+            "column": "Fans",
+            "letter": "P",
+            "score": 9.5
+          },
+          {
+            "column": "Watches",
+            "letter": "M",
+            "score": 2.0
+          },
+          {
+            "column": "List_appearances",
+            "letter": "N",
+            "score": 2.0
+          },
+          {
+            "column": "Likes",
+            "letter": "O",
+            "score": 2.0
+          },
+          {
+            "column": "½",
+            "letter": "Q",
+            "score": 2.0
+          }
+        ],
+        "genres": [
+          {
+            "column": "Genres",
+            "letter": "F",
+            "score": 8.81
+          },
+          {
+            "column": "Cast",
+            "letter": "D",
+            "score": 1.5
+          },
+          {
+            "column": "Description",
+            "letter": "K",
+            "score": 1.5
+          },
+          {
+            "column": "Studios",
+            "letter": "L",
+            "score": 0.91
+          },
+          {
+            "column": "Countries",
+            "letter": "H",
+            "score": 0.32
+          }
+        ],
+        "director": [
+          {
+            "column": "Director",
+            "letter": "C",
+            "score": 5.15
+          },
+          {
+            "column": "Cast",
+            "letter": "D",
+            "score": 1.5
+          },
+          {
+            "column": "Description",
+            "letter": "K",
+            "score": 1.5
+          },
+          {
+            "column": "Genres",
+            "letter": "F",
+            "score": 1.31
+          },
+          {
+            "column": "Studios",
+            "letter": "L",
+            "score": 0.91
+          }
+        ],
+        "runtime": [
+          {
+            "column": "Runtime",
+            "letter": "G",
+            "score": 6.97
+          },
+          {
+            "column": "Watches",
+            "letter": "M",
+            "score": 2.0
+          },
+          {
+            "column": "List_appearances",
+            "letter": "N",
+            "score": 2.0
+          },
+          {
+            "column": "Likes",
+            "letter": "O",
+            "score": 2.0
+          },
+          {
+            "column": "Fans",
+            "letter": "P",
+            "score": 2.0
+          }
+        ],
+        "country": [
+          {
+            "column": "Countries",
+            "letter": "H",
+            "score": 5.32
+          },
+          {
+            "column": "Cast",
+            "letter": "D",
+            "score": 1.5
+          },
+          {
+            "column": "Description",
+            "letter": "K",
+            "score": 1.5
+          },
+          {
+            "column": "Genres",
+            "letter": "F",
+            "score": 1.31
+          },
+          {
+            "column": "Studios",
+            "letter": "L",
+            "score": 0.91
+          }
+        ],
+        "language": [
+          {
+            "column": "Spoken_languages",
+            "letter": "J",
+            "score": 5.26
+          },
+          {
+            "column": "Original_language",
+            "letter": "I",
+            "score": 2.5
+          },
+          {
+            "column": "Cast",
+            "letter": "D",
+            "score": 1.5
+          },
+          {
+            "column": "Description",
+            "letter": "K",
+            "score": 1.5
+          },
+          {
+            "column": "Genres",
+            "letter": "F",
+            "score": 1.31
+          }
+        ]
+      },
+      "duplicates": {
+        "by_letterboxd_url": {
+          "candidate_column": "AB",
+          "duplicate_groups": [
+            {
+              "value": "https://letterboxd.com/film/12th-delaware",
+              "rows": [
+                3160,
+                3161
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/7-days-in-havana",
+              "rows": [
+                9741,
+                9742
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/ant-man-and-the-wasp",
+              "rows": [
+                6302,
+                6303
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/bad-boys-for-life",
+              "rows": [
+                6113,
+                6114
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/black-bear",
+              "rows": [
+                2815,
+                2816
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/captive-rage",
+              "rows": [
+                396,
+                397
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/christmas-evil",
+              "rows": [
+                8219,
+                8220
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/city-on-fire-1979",
+              "rows": [
+                6857,
+                6858
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/dark-age",
+              "rows": [
+                5099,
+                5100
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/dawn-of-the-mummy",
+              "rows": [
+                7665,
+                7666,
+                7667
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/demented-death-farm-massacre",
+              "rows": [
+                6862,
+                6863
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/demonlover",
+              "rows": [
+                2931,
+                2932
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/extracted",
+              "rows": [
+                5406,
+                5407
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/hitmans-run",
+              "rows": [
+                9987,
+                9988
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/houseboat",
+              "rows": [
+                5162,
+                5163
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/its-alive-iii-island-of-the-alive",
+              "rows": [
+                6085,
+                6086
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/joe",
+              "rows": [
+                3275,
+                3276
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/johnny-english",
+              "rows": [
+                9469,
+                9470
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/just-before-i-go",
+              "rows": [
+                6376,
+                6377
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/lost-girls-2020",
+              "rows": [
+                6562,
+                6563
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/movie-trailers-a-love-story",
+              "rows": [
+                158,
+                159
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/nighthawks",
+              "rows": [
+                5145,
+                5146
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/nuts",
+              "rows": [
+                4941,
+                4942
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/rebels-of-the-neon-god",
+              "rows": [
+                1067,
+                1068
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/roald-dahls-the-witches",
+              "rows": [
+                7786,
+                7787,
+                7788
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/the-fresh-prince-of-bel-air-reunion",
+              "rows": [
+                8555,
+                8556
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/the-ghost-of-frankenstein",
+              "rows": [
+                6007,
+                6008
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/the-inner-circle",
+              "rows": [
+                3956,
+                3957
+              ]
+            },
+            {
+              "value": "https://letterboxd.com/film/unpregnant",
+              "rows": [
+                9289,
+                9290
+              ]
+            }
+          ]
+        },
+        "by_normalized_title_year": {
+          "candidate_columns": {
+            "title": "A",
+            "year": "B"
+          },
+          "duplicate_groups": []
+        }
+      }
+    }
+  ]
+}

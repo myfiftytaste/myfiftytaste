@@ -1,0 +1,66 @@
+[
+  {
+    "rss_title": "QA Film 100, 2000 - ★★★½",
+    "title": "QA Film 100",
+    "letterboxd_url": "https://letterboxd.com/film/qa-film-100/",
+    "letterboxd_slug": "qa-candidate-a",
+    "watched_at": "2026-01-01",
+    "user_rating": 3.5,
+    "year": 2000,
+    "has_review": false,
+    "review_word_count": 0,
+    "matched": true,
+    "source": "megabank",
+    "has_social_stats": true,
+    "has_metadata": true,
+    "directors": [
+      "Director 2"
+    ],
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "countries": [
+      "USA"
+    ],
+    "original_language": "English",
+    "runtime": 100,
+    "average_rating": 4.0,
+    "watches": 260000,
+    "likes": 11000,
+    "fans": 1100,
+    "total_ratings": 25000
+  },
+  {
+    "rss_title": "QA Film 101, 2001 - ★★★½",
+    "title": "QA Film 101",
+    "letterboxd_url": "https://letterboxd.com/film/qa-film-101/",
+    "letterboxd_slug": "qa-candidate-b",
+    "watched_at": "2026-01-01",
+    "user_rating": 3.5,
+    "year": 2001,
+    "has_review": false,
+    "review_word_count": 0,
+    "matched": true,
+    "source": "megabank",
+    "has_social_stats": true,
+    "has_metadata": true,
+    "directors": [
+      "Director 3"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "English",
+    "runtime": 101,
+    "average_rating": 4.1,
+    "watches": 262500,
+    "likes": 11100,
+    "fans": 1110,
+    "total_ratings": 25200
+  }
+]

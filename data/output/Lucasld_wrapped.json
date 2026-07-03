@@ -1,0 +1,2407 @@
+{
+  "user": "Lucasld",
+  "rss_url": "https://letterboxd.com/Lucasld/rss/",
+  "generated_at": "2026-07-01T23:06:32.654291Z",
+  "films": [
+    {
+      "rss_title": "Minions & Monsters, 2026 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/minions-monsters-2026/",
+      "letterboxd_slug": "minions-monsters-2026",
+      "watched_at": "Fri, 26 Jun 2026 21:54:17 +1200",
+      "logged_at_raw": "Fri, 26 Jun 2026 21:54:17 +1200",
+      "logged_at_iso": "2026-06-26T09:54:17+00:00",
+      "logged_hour": 9,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996",
+      "user_rating": 3.0,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Minions & Monsters",
+      "directors": [
+        "Pierre Coffin"
+      ],
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America",
+        "Japan"
+      ],
+      "original_language": "en",
+      "runtime": 90,
+      "tmdb_id": 1315772,
+      "director_source": "tmdb_details_cache",
+      "director": "Pierre Coffin"
+    },
+    {
+      "rss_title": "Surf's Up, 2007 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/surfs-up/",
+      "letterboxd_slug": "surfs-up",
+      "watched_at": "Wed, 17 Jun 2026 23:01:03 +1200",
+      "logged_at_raw": "Wed, 17 Jun 2026 23:01:03 +1200",
+      "logged_at_iso": "2026-06-17T11:01:03+00:00",
+      "logged_hour": 11,
+      "logged_minute": 1,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/1/8/8/47188-surf-s-up-0-600-0-900-crop.jpg?v=df58128c8b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/1/8/8/47188-surf-s-up-0-600-0-900-crop.jpg?v=df58128c8b",
+      "user_rating": 4.0,
+      "year": 2007,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Surf's Up",
+      "directors": [
+        "Chris Buck",
+        "Ash Brannon"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Family"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 85,
+      "tmdb_id": 9408,
+      "director_source": "tmdb_details_cache",
+      "director": "Chris Buck"
+    },
+    {
+      "rss_title": "Barbie, 2023 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/barbie/",
+      "letterboxd_slug": "barbie",
+      "watched_at": "Mon, 8 Jun 2026 04:39:54 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 04:39:54 +1200",
+      "logged_at_iso": "2026-06-07T16:39:54+00:00",
+      "logged_hour": 16,
+      "logged_minute": 39,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/7/7/0/6/4/277064-barbie-0-600-0-900-crop.jpg?v=1b83dc7a71",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/7/7/0/6/4/277064-barbie-0-600-0-900-crop.jpg?v=1b83dc7a71",
+      "user_rating": 3.5,
+      "year": 2023,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Barbie",
+      "directors": [
+        "Greta Gerwig"
+      ],
+      "genres": [
+        "Comedy",
+        "Adventure"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 114.0,
+      "average_rating": 3.78,
+      "watches": 5195503,
+      "likes": 2140382,
+      "fans": 25000,
+      "total_ratings": 4091037,
+      "director": "Greta Gerwig",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Portrait of a Lady on Fire, 2019 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/portrait-of-a-lady-on-fire/",
+      "letterboxd_slug": "portrait-of-a-lady-on-fire",
+      "watched_at": "Sat, 6 Jun 2026 09:19:20 +1200",
+      "logged_at_raw": "Sat, 6 Jun 2026 09:19:20 +1200",
+      "logged_at_iso": "2026-06-05T21:19:20+00:00",
+      "logged_hour": 21,
+      "logged_minute": 19,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/0/8/3/0/460830-portrait-of-a-lady-on-fire-0-600-0-900-crop.jpg?v=79b0f67aa9",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/0/8/3/0/460830-portrait-of-a-lady-on-fire-0-600-0-900-crop.jpg?v=79b0f67aa9",
+      "user_rating": 4.5,
+      "year": 2019,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Portrait of a Lady on Fire",
+      "directors": [
+        "Céline Sciamma"
+      ],
+      "genres": [
+        "History",
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "French",
+      "runtime": 121.0,
+      "average_rating": 4.43,
+      "watches": 1068012,
+      "likes": 504478,
+      "fans": 67000,
+      "total_ratings": 825304,
+      "director": "Céline Sciamma",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Twilight Saga: Breaking Dawn – Part 1, 2011",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-twilight-saga-breaking-dawn-part-1/",
+      "letterboxd_slug": "the-twilight-saga-breaking-dawn-part-1",
+      "watched_at": "Mon, 1 Jun 2026 19:30:50 +1200",
+      "logged_at_raw": "Mon, 1 Jun 2026 19:30:50 +1200",
+      "logged_at_iso": "2026-06-01T07:30:50+00:00",
+      "logged_hour": 7,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/0/7/7/15077-the-twilight-saga-breaking-dawn-part-1-0-600-0-900-crop.jpg?v=00df403dcd",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/0/7/7/15077-the-twilight-saga-breaking-dawn-part-1-0-600-0-900-crop.jpg?v=00df403dcd",
+      "user_rating": null,
+      "year": 2011,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Twilight Saga: Breaking Dawn - Part 1",
+      "directors": [
+        "Bill Condon"
+      ],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Romance"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 117,
+      "tmdb_id": 50619,
+      "director_source": "tmdb_details_cache",
+      "director": "Bill Condon"
+    },
+    {
+      "rss_title": "Alice in Wonderland, 1951 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/alice-in-wonderland-1951/",
+      "letterboxd_slug": "alice-in-wonderland-1951",
+      "watched_at": "Mon, 1 Jun 2026 19:30:29 +1200",
+      "logged_at_raw": "Mon, 1 Jun 2026 19:30:29 +1200",
+      "logged_at_iso": "2026-06-01T07:30:29+00:00",
+      "logged_hour": 7,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/p5/63/wj/c3/AdwfqyNiH8UqeYKFYoiKhwTtjAb-0-600-0-900-crop.jpg?v=f9c56785d4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/p5/63/wj/c3/AdwfqyNiH8UqeYKFYoiKhwTtjAb-0-600-0-900-crop.jpg?v=f9c56785d4",
+      "user_rating": 4.0,
+      "year": 1951,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Alice in Wonderland",
+      "directors": [
+        "Clyde Geronimi",
+        "Wilfred Jackson"
+      ],
+      "genres": [
+        "Fantasy",
+        "Animation",
+        "Family",
+        "Adventure"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 75.0,
+      "average_rating": 3.77,
+      "watches": 921246,
+      "likes": 178852,
+      "fans": 8000,
+      "total_ratings": 399698,
+      "director": "Clyde Geronimi",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Victor/Victoria, 1982 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/victor-victoria/",
+      "letterboxd_slug": "victor-victoria",
+      "watched_at": "Tue, 26 May 2026 18:41:53 +1200",
+      "logged_at_raw": "Tue, 26 May 2026 18:41:53 +1200",
+      "logged_at_iso": "2026-05-26T06:41:53+00:00",
+      "logged_hour": 6,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/4/2/7/44427-victor-victoria-0-600-0-900-crop.jpg?v=f4d3ee2007",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/4/4/2/7/44427-victor-victoria-0-600-0-900-crop.jpg?v=f4d3ee2007",
+      "user_rating": 4.0,
+      "year": 1982,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Victor/Victoria",
+      "directors": [
+        "Blake Edwards"
+      ],
+      "genres": [
+        "Music",
+        "Comedy",
+        "Romance"
+      ],
+      "countries": [
+        "United Kingdom",
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 134,
+      "tmdb_id": 12614,
+      "director_source": "tmdb_details_cache",
+      "director": "Blake Edwards"
+    },
+    {
+      "rss_title": "Obsession, 2025 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/obsession-2025/",
+      "letterboxd_slug": "obsession-2025",
+      "watched_at": "Mon, 25 May 2026 07:31:18 +1200",
+      "logged_at_raw": "Mon, 25 May 2026 07:31:18 +1200",
+      "logged_at_iso": "2026-05-24T19:31:18+00:00",
+      "logged_hour": 19,
+      "logged_minute": 31,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6",
+      "user_rating": 4.5,
+      "year": 2025,
+      "has_review": true,
+      "review_word_count": 26,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Obsession",
+      "directors": [
+        "Curry Barker"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "US"
+      ],
+      "original_language": "en",
+      "runtime": 109,
+      "tmdb_id": null,
+      "director": "Curry Barker",
+      "director_source": "supplemental"
+    },
+    {
+      "rss_title": "Seven Psychopaths, 2012 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/seven-psychopaths/",
+      "letterboxd_slug": "seven-psychopaths",
+      "watched_at": "Wed, 13 May 2026 23:02:14 +1200",
+      "logged_at_raw": "Wed, 13 May 2026 23:02:14 +1200",
+      "logged_at_iso": "2026-05-13T11:02:14+00:00",
+      "logged_hour": 11,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/pg/x4/nh/ju/tBXdHVUQozj229NqnM9CoExXvw1-0-600-0-900-crop.jpg?v=5e8e2b0334",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/pg/x4/nh/ju/tBXdHVUQozj229NqnM9CoExXvw1-0-600-0-900-crop.jpg?v=5e8e2b0334",
+      "user_rating": 4.0,
+      "year": 2012,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Seven Psychopaths",
+      "directors": [
+        "Martin McDonagh"
+      ],
+      "genres": [
+        "Comedy",
+        "Crime"
+      ],
+      "countries": [
+        "United Kingdom",
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 110,
+      "tmdb_id": 86838,
+      "director_source": "tmdb_details_cache",
+      "director": "Martin McDonagh"
+    },
+    {
+      "rss_title": "Dallas Buyers Club, 2013 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/dallas-buyers-club/",
+      "letterboxd_slug": "dallas-buyers-club",
+      "watched_at": "Mon, 11 May 2026 10:33:20 +1200",
+      "logged_at_raw": "Mon, 11 May 2026 10:33:20 +1200",
+      "logged_at_iso": "2026-05-10T22:33:20+00:00",
+      "logged_hour": 22,
+      "logged_minute": 33,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/4/6/0/5/114605-dallas-buyers-club-0-600-0-900-crop.jpg?v=f1a830ac72",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/4/6/0/5/114605-dallas-buyers-club-0-600-0-900-crop.jpg?v=f1a830ac72",
+      "user_rating": 4.0,
+      "year": 2013,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Dallas Buyers Club",
+      "directors": [
+        "Jean-Marc Vallée"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 117,
+      "tmdb_id": 152532,
+      "director_source": "tmdb_details_cache",
+      "director": "Jean-Marc Vallée"
+    },
+    {
+      "rss_title": "Project Hail Mary, 2026 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/project-hail-mary/",
+      "letterboxd_slug": "project-hail-mary",
+      "watched_at": "Fri, 8 May 2026 20:14:01 +1200",
+      "logged_at_raw": "Fri, 8 May 2026 20:14:01 +1200",
+      "logged_at_iso": "2026-05-08T08:14:01+00:00",
+      "logged_hour": 8,
+      "logged_minute": 14,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/1/1/2/8/8/611288-project-hail-mary-0-600-0-900-crop.jpg?v=ac31b6ec03",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/6/1/1/2/8/8/611288-project-hail-mary-0-600-0-900-crop.jpg?v=ac31b6ec03",
+      "user_rating": 4.0,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Project Hail Mary",
+      "directors": [
+        "Phil Lord",
+        "Christopher Miller"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 157,
+      "tmdb_id": 687163,
+      "director_source": "tmdb_details_cache",
+      "director": "Phil Lord"
+    },
+    {
+      "rss_title": "The Young Girls of Rochefort, 1967 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-young-girls-of-rochefort/",
+      "letterboxd_slug": "the-young-girls-of-rochefort",
+      "watched_at": "Mon, 4 May 2026 10:07:52 +1200",
+      "logged_at_raw": "Mon, 4 May 2026 10:07:52 +1200",
+      "logged_at_iso": "2026-05-03T22:07:52+00:00",
+      "logged_hour": 22,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/2/5/8/50258-the-young-girls-of-rochefort-0-600-0-900-crop.jpg?v=9e2c7a35d1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/2/5/8/50258-the-young-girls-of-rochefort-0-600-0-900-crop.jpg?v=9e2c7a35d1",
+      "user_rating": 4.5,
+      "year": 1967,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Young Girls of Rochefort",
+      "directors": [
+        "Jacques Demy"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "French",
+      "runtime": 126.0,
+      "average_rating": 4.32,
+      "watches": 117024,
+      "likes": 51497,
+      "fans": 6300,
+      "total_ratings": 84074,
+      "director": "Jacques Demy",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Those Happy Days, 2006 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/those-happy-days/",
+      "letterboxd_slug": "those-happy-days",
+      "watched_at": "Sun, 26 Apr 2026 21:45:24 +1200",
+      "logged_at_raw": "Sun, 26 Apr 2026 21:45:24 +1200",
+      "logged_at_iso": "2026-04-26T09:45:24+00:00",
+      "logged_hour": 9,
+      "logged_minute": 45,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/9/8/6/3/39863-those-happy-days-0-600-0-900-crop.jpg?v=4c333c2a74",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/9/8/6/3/39863-those-happy-days-0-600-0-900-crop.jpg?v=4c333c2a74",
+      "user_rating": 4.0,
+      "year": 2006,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Those Happy Days",
+      "directors": [
+        "Olivier Nakache",
+        "Éric Toledano"
+      ],
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "countries": [
+        "France"
+      ],
+      "original_language": "fr",
+      "runtime": 103,
+      "tmdb_id": 19100,
+      "director_source": "tmdb_details_cache",
+      "director": "Olivier Nakache"
+    },
+    {
+      "rss_title": "The Devil Wears Prada, 2006 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-devil-wears-prada/",
+      "letterboxd_slug": "the-devil-wears-prada",
+      "watched_at": "Tue, 21 Apr 2026 05:49:39 +1200",
+      "logged_at_raw": "Tue, 21 Apr 2026 05:49:39 +1200",
+      "logged_at_iso": "2026-04-20T17:49:39+00:00",
+      "logged_hour": 17,
+      "logged_minute": 49,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330",
+      "user_rating": 4.0,
+      "year": 2006,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Devil Wears Prada",
+      "directors": [
+        "David Frankel"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 109.0,
+      "average_rating": 3.81,
+      "watches": 2701050,
+      "likes": 847229,
+      "fans": 40000,
+      "total_ratings": 1679811,
+      "director": "David Frankel",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Paranoid Park, 2007 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/paranoid-park/",
+      "letterboxd_slug": "paranoid-park",
+      "watched_at": "Sun, 19 Apr 2026 02:19:51 +1200",
+      "logged_at_raw": "Sun, 19 Apr 2026 02:19:51 +1200",
+      "logged_at_iso": "2026-04-18T14:19:51+00:00",
+      "logged_hour": 14,
+      "logged_minute": 19,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/6/2/2/50622-paranoid-park-0-600-0-900-crop.jpg?v=92cc21f07a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/6/2/2/50622-paranoid-park-0-600-0-900-crop.jpg?v=92cc21f07a",
+      "user_rating": 3.5,
+      "year": 2007,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Paranoid Park",
+      "directors": [
+        "Gus Van Sant"
+      ],
+      "genres": [
+        "Drama",
+        "Crime",
+        "Mystery"
+      ],
+      "countries": [
+        "United States of America",
+        "France"
+      ],
+      "original_language": "en",
+      "runtime": 84,
+      "tmdb_id": 1990,
+      "director_source": "tmdb_details_cache",
+      "director": "Gus Van Sant"
+    },
+    {
+      "rss_title": "The Drama, 2026 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-drama/",
+      "letterboxd_slug": "the-drama",
+      "watched_at": "Sun, 12 Apr 2026 08:04:13 +1200",
+      "logged_at_raw": "Sun, 12 Apr 2026 08:04:13 +1200",
+      "logged_at_iso": "2026-04-11T20:04:13+00:00",
+      "logged_hour": 20,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/5/4/9/4/1205494-the-drama-0-600-0-900-crop.jpg?v=2320acafd5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/2/0/5/4/9/4/1205494-the-drama-0-600-0-900-crop.jpg?v=2320acafd5",
+      "user_rating": 4.0,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "The Drama",
+      "directors": [
+        "Kristoffer Borgli"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 105,
+      "tmdb_id": 1325734,
+      "director_source": "tmdb_details_cache",
+      "director": "Kristoffer Borgli"
+    },
+    {
+      "rss_title": "Despicable Me, 2010 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/despicable-me/",
+      "letterboxd_slug": "despicable-me",
+      "watched_at": "Tue, 7 Apr 2026 07:02:16 +1200",
+      "logged_at_raw": "Tue, 7 Apr 2026 07:02:16 +1200",
+      "logged_at_iso": "2026-04-06T19:02:16+00:00",
+      "logged_hour": 19,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/9/0/6/7/39067-despicable-me-0-600-0-900-crop.jpg?v=a50cb28a31",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/9/0/6/7/39067-despicable-me-0-600-0-900-crop.jpg?v=a50cb28a31",
+      "user_rating": 4.0,
+      "year": 2010,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Despicable Me",
+      "directors": [
+        "Pierre Coffin",
+        "Chris Renaud"
+      ],
+      "genres": [
+        "Comedy",
+        "Animation",
+        "Family"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 95.0,
+      "average_rating": 3.59,
+      "watches": 1789789,
+      "likes": 286499,
+      "fans": 1900,
+      "total_ratings": 826998,
+      "director": "Pierre Coffin",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Twilight Saga: Eclipse, 2010",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-twilight-saga-eclipse/",
+      "letterboxd_slug": "the-twilight-saga-eclipse",
+      "watched_at": "Tue, 7 Apr 2026 07:01:29 +1200",
+      "logged_at_raw": "Tue, 7 Apr 2026 07:01:29 +1200",
+      "logged_at_iso": "2026-04-06T19:01:29+00:00",
+      "logged_hour": 19,
+      "logged_minute": 1,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/7/0/8/8/37088-the-twilight-saga-eclipse-0-600-0-900-crop.jpg?v=b7981ac336",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/3/7/0/8/8/37088-the-twilight-saga-eclipse-0-600-0-900-crop.jpg?v=b7981ac336",
+      "user_rating": null,
+      "year": 2010,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Twilight Saga: Eclipse",
+      "directors": [
+        "David Slade"
+      ],
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Romance",
+        "Adventure"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 124.0,
+      "average_rating": 2.66,
+      "watches": 1163099,
+      "likes": 149908,
+      "fans": 1600,
+      "total_ratings": 572810,
+      "director": "David Slade",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Legally Blonde, 2001 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/legally-blonde/",
+      "letterboxd_slug": "legally-blonde",
+      "watched_at": "Fri, 27 Mar 2026 02:04:18 +1300",
+      "logged_at_raw": "Fri, 27 Mar 2026 02:04:18 +1300",
+      "logged_at_iso": "2026-03-26T13:04:18+00:00",
+      "logged_hour": 13,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/5/8/6/47586-legally-blonde-0-600-0-900-crop.jpg?v=683a318854",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/5/8/6/47586-legally-blonde-0-600-0-900-crop.jpg?v=683a318854",
+      "user_rating": 3.5,
+      "year": 2001,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Legally Blonde",
+      "directors": [
+        "Robert Luketic"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 96.0,
+      "average_rating": 3.81,
+      "watches": 1817664,
+      "likes": 512886,
+      "fans": 19000,
+      "total_ratings": 1021309,
+      "director": "Robert Luketic",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Mean Girls, 2004 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/mean-girls/",
+      "letterboxd_slug": "mean-girls",
+      "watched_at": "Fri, 27 Mar 2026 02:03:42 +1300",
+      "logged_at_raw": "Fri, 27 Mar 2026 02:03:42 +1300",
+      "logged_at_iso": "2026-03-26T13:03:42+00:00",
+      "logged_hour": 13,
+      "logged_minute": 3,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/0/4/9/46049-mean-girls-0-600-0-900-crop.jpg?v=e6378abb7b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/0/4/9/46049-mean-girls-0-600-0-900-crop.jpg?v=e6378abb7b",
+      "user_rating": 4.0,
+      "year": 2004,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Mean Girls",
+      "directors": [
+        "Mark Waters"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 97.0,
+      "average_rating": 3.83,
+      "watches": 3400634,
+      "likes": 1055143,
+      "fans": 28000,
+      "total_ratings": 2008888,
+      "director": "Mark Waters",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Spirited Away, 2001 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/spirited-away/",
+      "letterboxd_slug": "spirited-away",
+      "watched_at": "Mon, 23 Mar 2026 12:31:22 +1300",
+      "logged_at_raw": "Mon, 23 Mar 2026 12:31:22 +1300",
+      "logged_at_iso": "2026-03-22T23:31:22+00:00",
+      "logged_hour": 23,
+      "logged_minute": 31,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/9/2/1/51921-spirited-away-0-600-0-900-crop.jpg?v=a3ad463c55",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/9/2/1/51921-spirited-away-0-600-0-900-crop.jpg?v=a3ad463c55",
+      "user_rating": 4.5,
+      "year": 2001,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Spirited Away",
+      "directors": [
+        "Hayao Miyazaki"
+      ],
+      "genres": [
+        "Family",
+        "Fantasy",
+        "Animation"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "original_language": "Japanese",
+      "runtime": 125.0,
+      "average_rating": 4.45,
+      "watches": 3707328,
+      "likes": 1725068,
+      "fans": 107000,
+      "total_ratings": 2512581,
+      "director": "Hayao Miyazaki",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Aristocats, 1970 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-aristocats/",
+      "letterboxd_slug": "the-aristocats",
+      "watched_at": "Fri, 27 Feb 2026 21:12:46 +1300",
+      "logged_at_raw": "Fri, 27 Feb 2026 21:12:46 +1300",
+      "logged_at_iso": "2026-02-27T08:12:46+00:00",
+      "logged_hour": 8,
+      "logged_minute": 12,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/5/3/7/46537-the-aristocats-0-600-0-900-crop.jpg?v=8eeab59d9f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/5/3/7/46537-the-aristocats-0-600-0-900-crop.jpg?v=8eeab59d9f",
+      "user_rating": 4.0,
+      "year": 1970,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Aristocats",
+      "directors": [
+        "Wolfgang Reitherman"
+      ],
+      "genres": [
+        "Comedy",
+        "Animation",
+        "Family",
+        "Adventure"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 78.0,
+      "average_rating": 3.69,
+      "watches": 563502,
+      "likes": 107951,
+      "fans": 3100,
+      "total_ratings": 244283,
+      "director": "Wolfgang Reitherman",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Kill Bill: Vol. 2, 2004 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/kill-bill-vol-2/",
+      "letterboxd_slug": "kill-bill-vol-2",
+      "watched_at": "Thu, 26 Feb 2026 12:24:12 +1300",
+      "logged_at_raw": "Thu, 26 Feb 2026 12:24:12 +1300",
+      "logged_at_iso": "2026-02-25T23:24:12+00:00",
+      "logged_hour": 23,
+      "logged_minute": 24,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730",
+      "user_rating": 5.0,
+      "year": 2004,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Kill Bill: Vol. 2",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Thriller",
+        "Action",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 136.0,
+      "average_rating": null,
+      "watches": 1760722,
+      "likes": 550225,
+      "fans": 9000,
+      "total_ratings": 1114672,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Marty Supreme, 2025 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/marty-supreme/",
+      "letterboxd_slug": "marty-supreme",
+      "watched_at": "Wed, 25 Feb 2026 20:41:51 +1300",
+      "logged_at_raw": "Wed, 25 Feb 2026 20:41:51 +1300",
+      "logged_at_iso": "2026-02-25T07:41:51+00:00",
+      "logged_hour": 7,
+      "logged_minute": 41,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/7/4/9/9/1197499-marty-supreme-0-600-0-900-crop.jpg?v=b14a26bb43",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/9/7/4/9/9/1197499-marty-supreme-0-600-0-900-crop.jpg?v=b14a26bb43",
+      "user_rating": 4.5,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Marty Supreme",
+      "directors": [
+        "Josh Safdie"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 150,
+      "tmdb_id": 1317288,
+      "director_source": "tmdb_details_cache",
+      "director": "Josh Safdie"
+    },
+    {
+      "rss_title": "Kill Bill: Vol. 1, 2003 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/kill-bill-vol-1/",
+      "letterboxd_slug": "kill-bill-vol-1",
+      "watched_at": "Tue, 24 Feb 2026 11:52:05 +1300",
+      "logged_at_raw": "Tue, 24 Feb 2026 11:52:05 +1300",
+      "logged_at_iso": "2026-02-23T22:52:05+00:00",
+      "logged_hour": 22,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-600-0-900-crop.jpg?v=5a65f5202f",
+      "user_rating": 5.0,
+      "year": 2003,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Kill Bill: Vol. 1",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Crime",
+        "Action"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 111.0,
+      "average_rating": null,
+      "watches": 3101840,
+      "likes": 1190762,
+      "fans": 66000,
+      "total_ratings": 2026399,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "In the Mood for Love, 2000 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/in-the-mood-for-love/",
+      "letterboxd_slug": "in-the-mood-for-love",
+      "watched_at": "Sat, 21 Feb 2026 11:36:55 +1300",
+      "logged_at_raw": "Sat, 21 Feb 2026 11:36:55 +1300",
+      "logged_at_iso": "2026-02-20T22:36:55+00:00",
+      "logged_hour": 22,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/g1/7l/2j/qk/tSRdvZY1waXrTeMqeLBmq9IRs08-0-600-0-900-crop.jpg?v=938633fc19",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/g1/7l/2j/qk/tSRdvZY1waXrTeMqeLBmq9IRs08-0-600-0-900-crop.jpg?v=938633fc19",
+      "user_rating": 4.0,
+      "year": 2000,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "In the Mood for Love",
+      "directors": [
+        "Wong Kar-wai"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "countries": [
+        "Hong Kong",
+        "France"
+      ],
+      "original_language": "Cantonese",
+      "runtime": 99.0,
+      "average_rating": 4.39,
+      "watches": 876907,
+      "likes": 385757,
+      "fans": 51000,
+      "total_ratings": 655232,
+      "director": "Wong Kar-wai",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "School of Rock, 2003 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/school-of-rock/",
+      "letterboxd_slug": "school-of-rock",
+      "watched_at": "Fri, 20 Feb 2026 11:31:19 +1300",
+      "logged_at_raw": "Fri, 20 Feb 2026 11:31:19 +1300",
+      "logged_at_iso": "2026-02-19T22:31:19+00:00",
+      "logged_hour": 22,
+      "logged_minute": 31,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/9/5/0/50950-school-of-rock-0-600-0-900-crop.jpg?v=1d462b4ca3",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/9/5/0/50950-school-of-rock-0-600-0-900-crop.jpg?v=1d462b4ca3",
+      "user_rating": 3.5,
+      "year": 2003,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "School of Rock",
+      "directors": [
+        "Richard Linklater"
+      ],
+      "genres": [
+        "Music",
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 110.0,
+      "average_rating": 3.77,
+      "watches": 1655522,
+      "likes": 412697,
+      "fans": 13000,
+      "total_ratings": 858274,
+      "director": "Richard Linklater",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "No Other Choice, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/no-other-choice-2025/",
+      "letterboxd_slug": "no-other-choice-2025",
+      "watched_at": "Thu, 19 Feb 2026 07:21:34 +1300",
+      "logged_at_raw": "Thu, 19 Feb 2026 07:21:34 +1300",
+      "logged_at_iso": "2026-02-18T18:21:34+00:00",
+      "logged_hour": 18,
+      "logged_minute": 21,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/6/5/9/5/2/565952-no-other-choice-2025-0-600-0-900-crop.jpg?v=87ef42b9f5",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/6/5/9/5/2/565952-no-other-choice-2025-0-600-0-900-crop.jpg?v=87ef42b9f5",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "No Other Choice",
+      "directors": [
+        "Park Chan-wook"
+      ],
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Thriller"
+      ],
+      "countries": [
+        "South Korea",
+        "France"
+      ],
+      "original_language": "ko",
+      "runtime": 139,
+      "tmdb_id": 639988,
+      "director_source": "tmdb_details_cache",
+      "director": "Park Chan-wook"
+    },
+    {
+      "rss_title": "Nikita, 1990 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/nikita/",
+      "letterboxd_slug": "nikita",
+      "watched_at": "Wed, 18 Feb 2026 13:35:36 +1300",
+      "logged_at_raw": "Wed, 18 Feb 2026 13:35:36 +1300",
+      "logged_at_iso": "2026-02-18T00:35:36+00:00",
+      "logged_hour": 0,
+      "logged_minute": 35,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/1/47271-la-femme-nikita-0-600-0-900-crop.jpg?v=f7d1131cfb",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/1/47271-la-femme-nikita-0-600-0-900-crop.jpg?v=f7d1131cfb",
+      "user_rating": 2.5,
+      "year": 1990,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Nikita",
+      "directors": [
+        "Luc Besson"
+      ],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "fr",
+      "runtime": 117,
+      "tmdb_id": 9322,
+      "director_source": "tmdb_details_cache",
+      "director": "Luc Besson"
+    },
+    {
+      "rss_title": "Carlito's Way, 1993 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/carlitos-way/",
+      "letterboxd_slug": "carlitos-way",
+      "watched_at": "Mon, 16 Feb 2026 23:00:19 +1300",
+      "logged_at_raw": "Mon, 16 Feb 2026 23:00:19 +1300",
+      "logged_at_iso": "2026-02-16T10:00:19+00:00",
+      "logged_hour": 10,
+      "logged_minute": 0,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/8/4/7/3/48473-carlito-s-way-0-600-0-900-crop.jpg?v=62c2c5eb07",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/8/4/7/3/48473-carlito-s-way-0-600-0-900-crop.jpg?v=62c2c5eb07",
+      "user_rating": 4.0,
+      "year": 1993,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Carlito's Way",
+      "directors": [
+        "Brian De Palma"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 144.0,
+      "average_rating": null,
+      "watches": 200996,
+      "likes": 59034,
+      "fans": 2000,
+      "total_ratings": 139448,
+      "director": "Brian De Palma",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Into the Woods, 2014 - ★★★ (contains spoilers)",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/into-the-woods-2014/",
+      "letterboxd_slug": "into-the-woods-2014",
+      "watched_at": "Sun, 15 Feb 2026 23:32:10 +1300",
+      "logged_at_raw": "Sun, 15 Feb 2026 23:32:10 +1300",
+      "logged_at_iso": "2026-02-15T10:32:10+00:00",
+      "logged_hour": 10,
+      "logged_minute": 32,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/qr/pm/w7/ol/5h91odPFNlBuJbRBj5N4MEBfXDE-0-600-0-900-crop.jpg?v=bbbc90a332",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/qr/pm/w7/ol/5h91odPFNlBuJbRBj5N4MEBfXDE-0-600-0-900-crop.jpg?v=bbbc90a332",
+      "user_rating": 3.0,
+      "year": 2014,
+      "has_review": true,
+      "review_word_count": 16,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Into the Woods",
+      "directors": [
+        "Rob Marshall"
+      ],
+      "genres": [
+        "Fantasy",
+        "Comedy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 125,
+      "tmdb_id": 224141,
+      "director_source": "tmdb_details_cache",
+      "director": "Rob Marshall"
+    },
+    {
+      "rss_title": "Gone Girl, 2014 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/gone-girl/1/",
+      "letterboxd_slug": "gone-girl",
+      "watched_at": "Wed, 11 Feb 2026 20:59:56 +1300",
+      "logged_at_raw": "Wed, 11 Feb 2026 20:59:56 +1300",
+      "logged_at_iso": "2026-02-11T07:59:56+00:00",
+      "logged_hour": 7,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/4/9/8/5/7/149857-gone-girl-0-600-0-900-crop.jpg?v=dfe3c8018b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/4/9/8/5/7/149857-gone-girl-0-600-0-900-crop.jpg?v=dfe3c8018b",
+      "user_rating": 5.0,
+      "year": 2014,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Gone Girl",
+      "directors": [
+        "David Fincher"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 149.0,
+      "average_rating": null,
+      "watches": 3332336,
+      "likes": 1228407,
+      "fans": 48000,
+      "total_ratings": 2299826,
+      "director": "David Fincher",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Memories of Murder, 2003 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/memories-of-murder/",
+      "letterboxd_slug": "memories-of-murder",
+      "watched_at": "Sun, 8 Feb 2026 12:42:57 +1300",
+      "logged_at_raw": "Sun, 8 Feb 2026 12:42:57 +1300",
+      "logged_at_iso": "2026-02-07T23:42:57+00:00",
+      "logged_hour": 23,
+      "logged_minute": 42,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/84/xt/e8/mw/gawnVe9cFowdoDLo9Pok12NTw39-0-600-0-900-crop.jpg?v=7cad204593",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/84/xt/e8/mw/gawnVe9cFowdoDLo9Pok12NTw39-0-600-0-900-crop.jpg?v=7cad204593",
+      "user_rating": 5.0,
+      "year": 2003,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Memories of Murder",
+      "directors": [
+        "Bong Joon Ho"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "original_language": "Korean",
+      "runtime": 131.0,
+      "average_rating": 4.42,
+      "watches": 762547,
+      "likes": 299889,
+      "fans": 27000,
+      "total_ratings": 600298,
+      "director": "Bong Joon Ho",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "F1, 2025 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/f1/",
+      "letterboxd_slug": "f1",
+      "watched_at": "Sat, 7 Feb 2026 13:02:55 +1300",
+      "logged_at_raw": "Sat, 7 Feb 2026 13:02:55 +1300",
+      "logged_at_iso": "2026-02-07T00:02:55+00:00",
+      "logged_hour": 0,
+      "logged_minute": 2,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/1/7/9/7/7/817977-f1-the-movie-0-600-0-900-crop.jpg?v=f5ae2b99b9",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/8/1/7/9/7/7/817977-f1-the-movie-0-600-0-900-crop.jpg?v=f5ae2b99b9",
+      "user_rating": 4.0,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "F1",
+      "directors": [
+        "Joseph Kosinski"
+      ],
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 156,
+      "tmdb_id": 911430,
+      "director_source": "tmdb_details_cache",
+      "director": "Joseph Kosinski"
+    },
+    {
+      "rss_title": "How to Train Your Dragon, 2010 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/how-to-train-your-dragon/",
+      "letterboxd_slug": "how-to-train-your-dragon",
+      "watched_at": "Thu, 5 Feb 2026 12:36:20 +1300",
+      "logged_at_raw": "Thu, 5 Feb 2026 12:36:20 +1300",
+      "logged_at_iso": "2026-02-04T23:36:20+00:00",
+      "logged_hour": 23,
+      "logged_minute": 36,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/0r/r7/c6/7e/hIXX3IRFy0InUOmYeWjvhCAgQNj-0-600-0-900-crop.jpg?v=d158027eb4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/0r/r7/c6/7e/hIXX3IRFy0InUOmYeWjvhCAgQNj-0-600-0-900-crop.jpg?v=d158027eb4",
+      "user_rating": 4.0,
+      "year": 2010,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "How to Train Your Dragon",
+      "directors": [
+        "Dean DeBlois",
+        "Chris Sanders"
+      ],
+      "genres": [
+        "Fantasy",
+        "Family",
+        "Adventure",
+        "Animation"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 98.0,
+      "average_rating": null,
+      "watches": 2118430,
+      "likes": 562225,
+      "fans": 32000,
+      "total_ratings": 1134330,
+      "director": "Dean DeBlois",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Breakfast Club, 1985 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-breakfast-club/",
+      "letterboxd_slug": "the-breakfast-club",
+      "watched_at": "Sat, 31 Jan 2026 12:43:31 +1300",
+      "logged_at_raw": "Sat, 31 Jan 2026 12:43:31 +1300",
+      "logged_at_iso": "2026-01-30T23:43:31+00:00",
+      "logged_hour": 23,
+      "logged_minute": 43,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/5/1/8/50518-the-breakfast-club-0-600-0-900-crop.jpg?v=cce37bedf1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/0/5/1/8/50518-the-breakfast-club-0-600-0-900-crop.jpg?v=cce37bedf1",
+      "user_rating": 4.0,
+      "year": 1985,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Breakfast Club",
+      "directors": [
+        "John Hughes"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 98.0,
+      "average_rating": 3.76,
+      "watches": 2515799,
+      "likes": 796946,
+      "fans": 28000,
+      "total_ratings": 1472623,
+      "director": "John Hughes",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Hamnet, 2025 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/hamnet/",
+      "letterboxd_slug": "hamnet",
+      "watched_at": "Fri, 30 Jan 2026 15:10:32 +1300",
+      "logged_at_raw": "Fri, 30 Jan 2026 15:10:32 +1300",
+      "logged_at_iso": "2026-01-30T02:10:32+00:00",
+      "logged_hour": 2,
+      "logged_minute": 10,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/7/2/2/3/2/772232-hamnet-0-600-0-900-crop.jpg?v=631489314d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/7/2/2/3/2/772232-hamnet-0-600-0-900-crop.jpg?v=631489314d",
+      "user_rating": 2.5,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Hamnet",
+      "directors": [
+        "Chloé Zhao"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "History"
+      ],
+      "countries": [
+        "United Kingdom",
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 125,
+      "tmdb_id": 858024,
+      "director_source": "tmdb_details_cache",
+      "director": "Chloé Zhao"
+    },
+    {
+      "rss_title": "Dead Poets Society, 1989 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/dead-poets-society/",
+      "letterboxd_slug": "dead-poets-society",
+      "watched_at": "Thu, 29 Jan 2026 12:59:07 +1300",
+      "logged_at_raw": "Thu, 29 Jan 2026 12:59:07 +1300",
+      "logged_at_iso": "2026-01-28T23:59:07+00:00",
+      "logged_hour": 23,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "user_rating": 5.0,
+      "year": 1989,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Dead Poets Society",
+      "directors": [
+        "Peter Weir"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 128.0,
+      "average_rating": 4.31,
+      "watches": 2741325,
+      "likes": 1210176,
+      "fans": 187000,
+      "total_ratings": 1861056,
+      "director": "Peter Weir",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Madagascar 3: Europe's Most Wanted, 2012 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/madagascar-3-europes-most-wanted/",
+      "letterboxd_slug": "madagascar-3-europes-most-wanted",
+      "watched_at": "Fri, 23 Jan 2026 12:15:41 +1300",
+      "logged_at_raw": "Fri, 23 Jan 2026 12:15:41 +1300",
+      "logged_at_iso": "2026-01-22T23:15:41+00:00",
+      "logged_hour": 23,
+      "logged_minute": 15,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ra/ee/np/jf/5aNEbL2EpKk47V3wDXVenLx2ksS-0-600-0-900-crop.jpg?v=3b859eebca",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ra/ee/np/jf/5aNEbL2EpKk47V3wDXVenLx2ksS-0-600-0-900-crop.jpg?v=3b859eebca",
+      "user_rating": 3.5,
+      "year": 2012,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Madagascar 3: Europe's Most Wanted",
+      "directors": [
+        "Eric Darnell",
+        "Conrad Vernon",
+        "Tom McGrath"
+      ],
+      "genres": [
+        "Animation",
+        "Family",
+        "Comedy",
+        "Adventure"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 93,
+      "tmdb_id": 80321,
+      "director_source": "tmdb_details_cache",
+      "director": "Eric Darnell"
+    },
+    {
+      "rss_title": "People We Meet on Vacation, 2026 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/people-we-meet-on-vacation/",
+      "letterboxd_slug": "people-we-meet-on-vacation",
+      "watched_at": "Tue, 20 Jan 2026 12:04:46 +1300",
+      "logged_at_raw": "Tue, 20 Jan 2026 12:04:46 +1300",
+      "logged_at_iso": "2026-01-19T23:04:46+00:00",
+      "logged_hour": 23,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/3/2/8/5/6/932856-people-we-meet-on-vacation-0-600-0-900-crop.jpg?v=c98853a2fc",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/3/2/8/5/6/932856-people-we-meet-on-vacation-0-600-0-900-crop.jpg?v=c98853a2fc",
+      "user_rating": 3.5,
+      "year": 2026,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "People We Meet on Vacation",
+      "directors": [
+        "Brett Haley"
+      ],
+      "genres": [
+        "Comedy",
+        "Romance",
+        "Drama"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 116,
+      "tmdb_id": 1034716,
+      "director_source": "tmdb_details_cache",
+      "director": "Brett Haley"
+    },
+    {
+      "rss_title": "Amélie, 2001 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/amelie/",
+      "letterboxd_slug": "amelie",
+      "watched_at": "Thu, 15 Jan 2026 12:52:34 +1300",
+      "logged_at_raw": "Thu, 15 Jan 2026 12:52:34 +1300",
+      "logged_at_iso": "2026-01-14T23:52:34+00:00",
+      "logged_hour": 23,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ly/0v/ey/u7/pM20xF4WFyX7G3ie0YBXFp75aEC-0-600-0-900-crop.jpg?v=bc8a28c252",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ly/0v/ey/u7/pM20xF4WFyX7G3ie0YBXFp75aEC-0-600-0-900-crop.jpg?v=bc8a28c252",
+      "user_rating": 4.5,
+      "year": 2001,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Amélie",
+      "directors": [
+        "Jean-Pierre Jeunet"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "Germany"
+      ],
+      "original_language": "French",
+      "runtime": 122.0,
+      "average_rating": 4.18,
+      "watches": 1522874,
+      "likes": 559923,
+      "fans": 65000,
+      "total_ratings": 935785,
+      "director": "Jean-Pierre Jeunet",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The Lord of the Rings: The Fellowship of the Ring, 2001 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-lord-of-the-rings-the-fellowship-of-the-ring/",
+      "letterboxd_slug": "the-lord-of-the-rings-the-fellowship-of-the-ring",
+      "watched_at": "Sat, 10 Jan 2026 15:24:36 +1300",
+      "logged_at_raw": "Sat, 10 Jan 2026 15:24:36 +1300",
+      "logged_at_iso": "2026-01-10T02:24:36+00:00",
+      "logged_hour": 2,
+      "logged_minute": 24,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/3t/vq/0u/m6/1tX9ZlgVvWjAQhMs1vAfsYpi7VK-0-600-0-900-crop.jpg?v=30bbb824e1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/3t/vq/0u/m6/1tX9ZlgVvWjAQhMs1vAfsYpi7VK-0-600-0-900-crop.jpg?v=30bbb824e1",
+      "user_rating": 5.0,
+      "year": 2001,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "directors": [
+        "Peter Jackson"
+      ],
+      "genres": [
+        "Fantasy",
+        "Adventure",
+        "Action"
+      ],
+      "countries": [
+        "New Zealand",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 179.0,
+      "average_rating": 4.38,
+      "watches": 3187177,
+      "likes": 1145750,
+      "fans": 65000,
+      "total_ratings": 1954265,
+      "director": "Peter Jackson",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Zootopia 2, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/zootopia-2/",
+      "letterboxd_slug": "zootopia-2",
+      "watched_at": "Wed, 7 Jan 2026 08:09:51 +1300",
+      "logged_at_raw": "Wed, 7 Jan 2026 08:09:51 +1300",
+      "logged_at_iso": "2026-01-06T19:09:51+00:00",
+      "logged_hour": 19,
+      "logged_minute": 9,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/7/3/4/2/977342-zootopia-2-0-600-0-900-crop.jpg?v=00a15a97bc",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/7/7/3/4/2/977342-zootopia-2-0-600-0-900-crop.jpg?v=00a15a97bc",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Zootopia 2",
+      "directors": [
+        "Jared Bush",
+        "Byron Howard"
+      ],
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy",
+        "Mystery",
+        "Family"
+      ],
+      "countries": [
+        "United States of America",
+        "Canada"
+      ],
+      "original_language": "en",
+      "runtime": 108,
+      "tmdb_id": 1084242,
+      "director_source": "tmdb_details_cache",
+      "director": "Jared Bush"
+    },
+    {
+      "rss_title": "Hard Boiled, 1992 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/hard-boiled/",
+      "letterboxd_slug": "hard-boiled",
+      "watched_at": "Sun, 4 Jan 2026 11:54:54 +1300",
+      "logged_at_raw": "Sun, 4 Jan 2026 11:54:54 +1300",
+      "logged_at_iso": "2026-01-03T22:54:54+00:00",
+      "logged_hour": 22,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/0/1/3/45013-hard-boiled-0-600-0-900-crop.jpg?v=4bc5621882",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/0/1/3/45013-hard-boiled-0-600-0-900-crop.jpg?v=4bc5621882",
+      "user_rating": 4.0,
+      "year": 1992,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Hard Boiled",
+      "directors": [
+        "John Woo"
+      ],
+      "genres": [
+        "Thriller",
+        "Crime",
+        "Action"
+      ],
+      "countries": [
+        "Hong Kong"
+      ],
+      "original_language": "Cantonese",
+      "runtime": 126.0,
+      "average_rating": 4.16,
+      "watches": 102483,
+      "likes": 36446,
+      "fans": 1100,
+      "total_ratings": 72120,
+      "director": "John Woo",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Rushmore, 1998 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/rushmore/",
+      "letterboxd_slug": "rushmore",
+      "watched_at": "Fri, 2 Jan 2026 23:25:17 +1300",
+      "logged_at_raw": "Fri, 2 Jan 2026 23:25:17 +1300",
+      "logged_at_iso": "2026-01-02T10:25:17+00:00",
+      "logged_hour": 10,
+      "logged_minute": 25,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/vx/bi/ni/1k/921qm0FJwDvi6ptaxNCp7xvqNGA-0-600-0-900-crop.jpg?v=e356b53de6",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/vx/bi/ni/1k/921qm0FJwDvi6ptaxNCp7xvqNGA-0-600-0-900-crop.jpg?v=e356b53de6",
+      "user_rating": 4.0,
+      "year": 1998,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Rushmore",
+      "directors": [
+        "Wes Anderson"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 93.0,
+      "average_rating": null,
+      "watches": 568020,
+      "likes": 176511,
+      "fans": 7800,
+      "total_ratings": 377317,
+      "director": "Wes Anderson",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Mysterious Skin, 2004 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/mysterious-skin/",
+      "letterboxd_slug": "mysterious-skin",
+      "watched_at": "Wed, 31 Dec 2025 23:35:02 +1300",
+      "logged_at_raw": "Wed, 31 Dec 2025 23:35:02 +1300",
+      "logged_at_iso": "2025-12-31T10:35:02+00:00",
+      "logged_hour": 10,
+      "logged_minute": 35,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/uo/r7/1v/1j/wynnf6LT4ueuCuREPRMtHGQIk5T-0-600-0-900-crop.jpg?v=b0c8031954",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/uo/r7/1v/1j/wynnf6LT4ueuCuREPRMtHGQIk5T-0-600-0-900-crop.jpg?v=b0c8031954",
+      "user_rating": 4.0,
+      "year": 2004,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Mysterious Skin",
+      "directors": [
+        "Gregg Araki"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "USA",
+        "Netherlands"
+      ],
+      "original_language": "English",
+      "runtime": 105.0,
+      "average_rating": null,
+      "watches": 436858,
+      "likes": 181703,
+      "fans": 24000,
+      "total_ratings": 341359,
+      "director": "Gregg Araki",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "Avatar: Fire and Ash, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/avatar-fire-and-ash/",
+      "letterboxd_slug": "avatar-fire-and-ash",
+      "watched_at": "Mon, 29 Dec 2025 08:59:44 +1300",
+      "logged_at_raw": "Mon, 29 Dec 2025 08:59:44 +1300",
+      "logged_at_iso": "2025-12-28T19:59:44+00:00",
+      "logged_hour": 19,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Avatar: Fire and Ash",
+      "directors": [
+        "James Cameron"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 198,
+      "tmdb_id": 83533,
+      "director_source": "tmdb_details_cache",
+      "director": "James Cameron"
+    },
+    {
+      "rss_title": "Black Coal, Thin Ice, 2014 - ★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/black-coal-thin-ice/",
+      "letterboxd_slug": "black-coal-thin-ice",
+      "watched_at": "Fri, 26 Dec 2025 11:17:09 +1300",
+      "logged_at_raw": "Fri, 26 Dec 2025 11:17:09 +1300",
+      "logged_at_iso": "2025-12-25T22:17:09+00:00",
+      "logged_hour": 22,
+      "logged_minute": 17,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ey/pc/w1/vf/ylkr5CI1awOgt3Aa81IeJLz2jwy-0-600-0-900-crop.jpg?v=ff751b2911",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ey/pc/w1/vf/ylkr5CI1awOgt3Aa81IeJLz2jwy-0-600-0-900-crop.jpg?v=ff751b2911",
+      "user_rating": 3.0,
+      "year": 2014,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Black Coal, Thin Ice",
+      "directors": [
+        "Diao Yinan"
+      ],
+      "genres": [
+        "Drama",
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
+      "countries": [
+        "China"
+      ],
+      "original_language": "zh",
+      "runtime": 106,
+      "tmdb_id": 255756,
+      "director_source": "tmdb_details_cache",
+      "director": "Diao Yinan"
+    },
+    {
+      "rss_title": "The Banshees of Inisherin, 2022 - ★★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-banshees-of-inisherin/",
+      "letterboxd_slug": "the-banshees-of-inisherin",
+      "watched_at": "Wed, 24 Dec 2025 11:43:24 +1300",
+      "logged_at_raw": "Wed, 24 Dec 2025 11:43:24 +1300",
+      "logged_at_iso": "2025-12-23T22:43:24+00:00",
+      "logged_hour": 22,
+      "logged_minute": 43,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/9/8/8/8/2/598882-the-banshees-of-inisherin-0-600-0-900-crop.jpg?v=933f9af6e7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/9/8/8/8/2/598882-the-banshees-of-inisherin-0-600-0-900-crop.jpg?v=933f9af6e7",
+      "user_rating": 4.5,
+      "year": 2022,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Banshees of Inisherin",
+      "directors": [
+        "Martin McDonagh"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 114.0,
+      "average_rating": null,
+      "watches": 1257278,
+      "likes": 452077,
+      "fans": 16000,
+      "total_ratings": 1017016,
+      "director": "Martin McDonagh",
+      "director_source": "megabank"
+    },
+    {
+      "rss_title": "The King of Comedy, 1982 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/the-king-of-comedy/",
+      "letterboxd_slug": "the-king-of-comedy",
+      "watched_at": "Tue, 23 Dec 2025 22:46:38 +1300",
+      "logged_at_raw": "Tue, 23 Dec 2025 22:46:38 +1300",
+      "logged_at_iso": "2025-12-23T09:46:38+00:00",
+      "logged_hour": 9,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/4g/y9/qr/q9/pbAqLKoLydP7jl6P0vmYwlDtRPD-0-600-0-900-crop.jpg?v=8eb030b5f7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/4g/y9/qr/q9/pbAqLKoLydP7jl6P0vmYwlDtRPD-0-600-0-900-crop.jpg?v=8eb030b5f7",
+      "user_rating": 4.0,
+      "year": 1982,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The King of Comedy",
+      "directors": [
+        "Martin Scorsese"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 109.0,
+      "average_rating": 4.24,
+      "watches": 421907,
+      "likes": 152006,
+      "fans": 3600,
+      "total_ratings": 322277,
+      "director": "Martin Scorsese",
+      "director_source": "megabank"
+    }
+  ],
+  "profile_summary": {
+    "films_analyzed": 50,
+    "megabank_social_count": 28,
+    "supplemental_confirmed_count": 22,
+    "supplemental_review_count": 0,
+    "supplemental_rejected_count": 0,
+    "missing_count": 0,
+    "social_coverage": 0.56,
+    "metadata_coverage_confirmed": 1.0,
+    "metadata_coverage_potential": 1.0,
+    "total_analyzed": 50,
+    "matched_count": 28,
+    "absent_count": 22,
+    "coverage": 0.56,
+    "user_average_rating": 3.9895833333333335,
+    "community_average_rating": 3.9875,
+    "average_difference": 0.002083333333333659,
+    "runtime_average": 114.71428571428571,
+    "watches_mean": 1750281.142857143,
+    "watches_median": 1589198.0,
+    "likes_mean": 605729.5357142857,
+    "fans_mean": 34014.28571428572,
+    "top_genres": [
+      [
+        "Comedy",
+        24
+      ],
+      [
+        "Drama",
+        23
+      ],
+      [
+        "Adventure",
+        12
+      ],
+      [
+        "Romance",
+        11
+      ],
+      [
+        "Family",
+        10
+      ],
+      [
+        "Animation",
+        9
+      ],
+      [
+        "Fantasy",
+        9
+      ],
+      [
+        "Crime",
+        9
+      ],
+      [
+        "Thriller",
+        9
+      ],
+      [
+        "Action",
+        6
+      ]
+    ],
+    "top_countries": [
+      [
+        "USA",
+        39
+      ],
+      [
+        "France",
+        8
+      ],
+      [
+        "UK",
+        5
+      ],
+      [
+        "Japan",
+        2
+      ],
+      [
+        "Hong Kong",
+        2
+      ],
+      [
+        "South Korea",
+        2
+      ],
+      [
+        "Italy",
+        1
+      ],
+      [
+        "Germany",
+        1
+      ],
+      [
+        "New Zealand",
+        1
+      ],
+      [
+        "Canada",
+        1
+      ]
+    ],
+    "top_languages": [
+      [
+        "English",
+        39
+      ],
+      [
+        "French",
+        5
+      ],
+      [
+        "Cantonese",
+        2
+      ],
+      [
+        "Korean",
+        2
+      ],
+      [
+        "Japanese",
+        1
+      ],
+      [
+        "zh",
+        1
+      ]
+    ],
+    "top_directors": [
+      [
+        "Quentin Tarantino",
+        2
+      ],
+      [
+        "Greta Gerwig",
+        1
+      ],
+      [
+        "Céline Sciamma",
+        1
+      ],
+      [
+        "Clyde Geronimi",
+        1
+      ],
+      [
+        "Wilfred Jackson",
+        1
+      ],
+      [
+        "Curry Barker",
+        1
+      ],
+      [
+        "Jacques Demy",
+        1
+      ],
+      [
+        "David Frankel",
+        1
+      ],
+      [
+        "Pierre Coffin",
+        1
+      ],
+      [
+        "Chris Renaud",
+        1
+      ]
+    ],
+    "profile_quality": {
+      "detected_films_count": 50,
+      "target_films_count": 50,
+      "status": "normal",
+      "is_partial": false,
+      "warning": null
+    }
+  },
+  "profile_quality": {
+    "detected_films_count": 50,
+    "target_films_count": 50,
+    "status": "normal",
+    "is_partial": false,
+    "warning": null
+  },
+  "highlights": {
+    "most_popular": {
+      "rss_title": "Barbie, 2023 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/barbie/",
+      "letterboxd_slug": "barbie",
+      "watched_at": "Mon, 8 Jun 2026 04:39:54 +1200",
+      "logged_at_raw": "Mon, 8 Jun 2026 04:39:54 +1200",
+      "logged_at_iso": "2026-06-07T16:39:54+00:00",
+      "logged_hour": 16,
+      "logged_minute": 39,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/7/7/0/6/4/277064-barbie-0-600-0-900-crop.jpg?v=1b83dc7a71",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/7/7/0/6/4/277064-barbie-0-600-0-900-crop.jpg?v=1b83dc7a71",
+      "user_rating": 3.5,
+      "year": 2023,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Barbie",
+      "directors": [
+        "Greta Gerwig"
+      ],
+      "genres": [
+        "Comedy",
+        "Adventure"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 114.0,
+      "average_rating": 3.78,
+      "watches": 5195503,
+      "likes": 2140382,
+      "fans": 25000,
+      "total_ratings": 4091037,
+      "director": "Greta Gerwig",
+      "director_source": "megabank"
+    },
+    "most_niche": {
+      "rss_title": "Hard Boiled, 1992 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/hard-boiled/",
+      "letterboxd_slug": "hard-boiled",
+      "watched_at": "Sun, 4 Jan 2026 11:54:54 +1300",
+      "logged_at_raw": "Sun, 4 Jan 2026 11:54:54 +1300",
+      "logged_at_iso": "2026-01-03T22:54:54+00:00",
+      "logged_hour": 22,
+      "logged_minute": 54,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/0/1/3/45013-hard-boiled-0-600-0-900-crop.jpg?v=4bc5621882",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/0/1/3/45013-hard-boiled-0-600-0-900-crop.jpg?v=4bc5621882",
+      "user_rating": 4.0,
+      "year": 1992,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Hard Boiled",
+      "directors": [
+        "John Woo"
+      ],
+      "genres": [
+        "Thriller",
+        "Crime",
+        "Action"
+      ],
+      "countries": [
+        "Hong Kong"
+      ],
+      "original_language": "Cantonese",
+      "runtime": 126.0,
+      "average_rating": 4.16,
+      "watches": 102483,
+      "likes": 36446,
+      "fans": 1100,
+      "total_ratings": 72120,
+      "director": "John Woo",
+      "director_source": "megabank"
+    },
+    "most_fans": {
+      "rss_title": "Dead Poets Society, 1989 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/dead-poets-society/",
+      "letterboxd_slug": "dead-poets-society",
+      "watched_at": "Thu, 29 Jan 2026 12:59:07 +1300",
+      "logged_at_raw": "Thu, 29 Jan 2026 12:59:07 +1300",
+      "logged_at_iso": "2026-01-28T23:59:07+00:00",
+      "logged_hour": 23,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "user_rating": 5.0,
+      "year": 1989,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Dead Poets Society",
+      "directors": [
+        "Peter Weir"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 128.0,
+      "average_rating": 4.31,
+      "watches": 2741325,
+      "likes": 1210176,
+      "fans": 187000,
+      "total_ratings": 1861056,
+      "director": "Peter Weir",
+      "director_source": "megabank"
+    },
+    "best_fans_ratio": {
+      "rss_title": "Dead Poets Society, 1989 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/dead-poets-society/",
+      "letterboxd_slug": "dead-poets-society",
+      "watched_at": "Thu, 29 Jan 2026 12:59:07 +1300",
+      "logged_at_raw": "Thu, 29 Jan 2026 12:59:07 +1300",
+      "logged_at_iso": "2026-01-28T23:59:07+00:00",
+      "logged_hour": 23,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "user_rating": 5.0,
+      "year": 1989,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Dead Poets Society",
+      "directors": [
+        "Peter Weir"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 128.0,
+      "average_rating": 4.31,
+      "watches": 2741325,
+      "likes": 1210176,
+      "fans": 187000,
+      "total_ratings": 1861056,
+      "director": "Peter Weir",
+      "director_source": "megabank"
+    },
+    "longest": {
+      "rss_title": "Avatar: Fire and Ash, 2025 - ★★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/avatar-fire-and-ash/",
+      "letterboxd_slug": "avatar-fire-and-ash",
+      "watched_at": "Mon, 29 Dec 2025 08:59:44 +1300",
+      "logged_at_raw": "Mon, 29 Dec 2025 08:59:44 +1300",
+      "logged_at_iso": "2025-12-28T19:59:44+00:00",
+      "logged_hour": 19,
+      "logged_minute": 59,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
+      "user_rating": 3.5,
+      "year": 2025,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Avatar: Fire and Ash",
+      "directors": [
+        "James Cameron"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "original_language": "en",
+      "runtime": 198,
+      "tmdb_id": 83533,
+      "director_source": "tmdb_details_cache",
+      "director": "James Cameron"
+    },
+    "shortest": {
+      "rss_title": "Alice in Wonderland, 1951 - ★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/alice-in-wonderland-1951/",
+      "letterboxd_slug": "alice-in-wonderland-1951",
+      "watched_at": "Mon, 1 Jun 2026 19:30:29 +1200",
+      "logged_at_raw": "Mon, 1 Jun 2026 19:30:29 +1200",
+      "logged_at_iso": "2026-06-01T07:30:29+00:00",
+      "logged_hour": 7,
+      "logged_minute": 30,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/p5/63/wj/c3/AdwfqyNiH8UqeYKFYoiKhwTtjAb-0-600-0-900-crop.jpg?v=f9c56785d4",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/p5/63/wj/c3/AdwfqyNiH8UqeYKFYoiKhwTtjAb-0-600-0-900-crop.jpg?v=f9c56785d4",
+      "user_rating": 4.0,
+      "year": 1951,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Alice in Wonderland",
+      "directors": [
+        "Clyde Geronimi",
+        "Wilfred Jackson"
+      ],
+      "genres": [
+        "Fantasy",
+        "Animation",
+        "Family",
+        "Adventure"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 75.0,
+      "average_rating": 3.77,
+      "watches": 921246,
+      "likes": 178852,
+      "fans": 8000,
+      "total_ratings": 399698,
+      "director": "Clyde Geronimi",
+      "director_source": "megabank"
+    }
+  }
+}
