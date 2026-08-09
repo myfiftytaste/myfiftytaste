@@ -1,5 +1,13 @@
 # Slug aliases review for tanguytare
 
+> Workflow note (2026-08-09): confirmed alias mappings (RSS slug → Megabank slug)
+> must be written directly into `data/processed/slug_aliases.json`, which is the
+> file `scripts/build_user_wrapped.py` actually loads. That file was previously
+> named `slug_aliases.draft.json` and was never read by the pipeline — it has
+> been renamed. None of the candidates below were confident enough to record
+> as aliases (all `probably_absent_from_megabank` or `uncertain`), so
+> `slug_aliases.json` is currently empty (`{}`).
+
 Wrapped file: letterboxd-wrapped\data\output\tanguytare_wrapped.json
 Missing films analyzed: 15
 

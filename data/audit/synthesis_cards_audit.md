@@ -6,7 +6,9 @@ Generated from:
 - `data/output/tanguytare_profile_metrics.json`
 - `data/output/tanguytare_display_profile.json`
 
-Scope: audit only. No Python script, generated JSON, score, or frontend change was made.
+Scope: audit only at the time this report was written. No Python script, generated JSON, score, or frontend change was made during the audit itself.
+
+**Resolved (2026-08-09):** the paired-gap fix recommended in section D was implemented in `scripts/build_profile_metrics.py` (`paired_average_difference`, `paired_community_average_rating`, `method: "paired_gap"`) and is preferred by `scripts/build_display_profile.py` over the legacy `average_difference`. The `rating_personality` card now displays the paired value (e.g. `tanguytare_display_profile.json` currently shows `-0.58`, recomputed from the latest RSS pull — the exact number will drift over time as new films are logged, but the methodology described below is the one in production). The runtime-average findings in this report were already correct and required no change.
 
 ## Rating gap audit
 
