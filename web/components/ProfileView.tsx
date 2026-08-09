@@ -7,10 +7,11 @@ import GenreBubbles from "./GenreBubbles";
 import LogTimeArc from "./LogTimeArc";
 import RadarChart from "./RadarChart";
 import Recommendations from "./Recommendations";
+import SeverityGauge from "./SeverityGauge";
 import WorldMap from "./WorldMap";
 import { useVisualTheme } from "./VisualThemeProvider";
 
-type Card = {
+export type Card = {
   id: string;
   title: string;
   value: string | null;
@@ -298,6 +299,8 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
   const averageRating = profile.average_rating_summary?.value;
   const averageRatingScale = profile.average_rating_summary?.scale;
   const letterboxdProfileUrl = `https://letterboxd.com/${hero.username}/`;
+  const ratingCard = cards.find((card) => card.id === "rating_personality") ?? null;
+  const remainingCards = cards.filter((card) => card.id !== "rating_personality");
 
   return (
     <main className="pageShell">
@@ -321,28 +324,33 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
           scale={averageRatingScale}
           detectedFilmsCount={detectedFilmsCount}
         />
-        <aside className="heroPanel" aria-label="Profile coverage">
-          <div className="heroWelcome">
-            <strong>
-              Bienvenue,{" "}
-              <a href={letterboxdProfileUrl} rel="noreferrer" target="_blank">
-                @{hero.username}
-              </a>
-            </strong>
-          </div>
-          <div className="coverageRows">
-            <div>
-              <span>Films analysés</span>
-              <strong>
-                {detectedFilmsCount}/{targetFilmsCount}
-              </strong>
+        <div className="heroPanelWrap">
+          <p className="heroWelcomePlain">
+            Bienvenue,{" "}
+            <a href={letterboxdProfileUrl} rel="noreferrer" target="_blank">
+              @{hero.username}
+            </a>
+          </p>
+          <aside className="heroPanel" aria-label="Profile coverage">
+            <SeverityGauge card={ratingCard} />
+            <div className="coverageRows">
+              <div>
+                <span>Films analysés</span>
+                <strong>
+                  {detectedFilmsCount}/{targetFilmsCount}
+                </strong>
+              </div>
+              <div>
+                <span>Couverture algorithme</span>
+                <strong>{formatPercent(hero.metadata_coverage)}</strong>
+              </div>
+              <div>
+                <span>Fiabilité</span>
+                <strong>{ratingCard?.confidence_label ?? "—"}</strong>
+              </div>
             </div>
-            <div>
-              <span>Couverture par l’algorithme MyFiftyTaste</span>
-              <strong>{formatPercent(hero.metadata_coverage)}</strong>
-            </div>
-          </div>
-        </aside>
+          </aside>
+        </div>
       </section>
 
       {sampleWarning ? (
@@ -391,7 +399,7 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
           <h2>{cards_section?.title ?? "At a glance…"}</h2>
         </div>
         <div className="cardsGrid">
-          {cards.map((card) => (
+          {remainingCards.map((card) => (
             <article className="metricCard" key={card.id}>
               <div className="cardTopline">
                 <h3>{card.title}</h3>
