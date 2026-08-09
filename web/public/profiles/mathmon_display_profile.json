@@ -41,7 +41,7 @@
       "confidence": "low"
     },
     "oldness": {
-      "value_5": 4,
+      "value_5": 5,
       "raw_value": 10.61999999999989,
       "average_year": 2015.38,
       "label": "Âge moyen",
@@ -87,9 +87,9 @@
         "axis_id": "oldness",
         "technical_axis_id": "oldness",
         "label": "Époque",
-        "title": "Aficionado d’avant-premières",
-        "one_line": "Tu renouvelles tes demandes d’accréditation à Cannes chaque année, aucun Dupieux ne reste au cinéma plus de 3 jours avant que tu ailles le voir.",
-        "cran": 4,
+        "title": "A24 crew",
+        "one_line": "Tu as une casquette Marty Supreme et un t-shirt A24. Même aller aux avant-premières ne te suffit pas… take your time pal.",
+        "cran": 5,
         "image": null,
         "image_src": null,
         "illustration": null

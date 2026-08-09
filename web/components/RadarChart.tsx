@@ -82,8 +82,8 @@ const radarBackCopy: Record<keyof RadarScores, RadarBackCopy> = {
       "1/5 : moyenne avant 1975",
       "2/5 : moyenne entre 1975 et 1989",
       "3/5 : moyenne entre 1990 et 2004",
-      "4/5 : moyenne entre 2005 et 2016",
-      "5/5 : moyenne à partir de 2017",
+      "4/5 : moyenne entre 2005 et 2015",
+      "5/5 : moyenne à partir de 2016",
     ],
   },
   reviewness: {

@@ -684,11 +684,15 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         3 if mainstream_normalized <= 80 else
         4 if mainstream_normalized <= 92 else 5
     )
+    # Bucket 4/5 boundary nudged 2016 -> 2015 on 2026-08-09: across the 7 real
+    # profiles, mathmon (average_year 2015.38) sat 0.62 year below the old
+    # boundary, the closest of anyone to a threshold edge. Shifts only mathmon
+    # from bucket 4 to 5; no other profile's average_year falls in that gap.
     oldness_value = (
         1 if average_year is None or average_year < 1975 else
         2 if average_year <= 1989 else
         3 if average_year <= 2004 else
-        4 if average_year <= 2016 else 5
+        4 if average_year <= 2015 else 5
     )
     endurance_value = score_from_thresholds(
         int(round(runtime_average or 0)),
