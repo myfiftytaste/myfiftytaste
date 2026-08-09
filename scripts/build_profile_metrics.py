@@ -671,11 +671,18 @@ def build_metrics(username: str) -> tuple[Path, Path]:
     )
     mainstream_raw = (100 - niche_index) if niche_index is not None else None
     mainstream_normalized = clamp(mainstream_raw or 0, 0, 100)
+    # Thresholds recalibrated 2026-08-09: the original 25/50/70/90 split assumed
+    # mainstream_normalized would spread across the full 0-100 range, but real
+    # users' 50 recent logs skew far higher than a random Megabank sample (people
+    # still mostly watch films with real cultural visibility, even niche-leaning
+    # viewers). All 7 real profiles landed in bucket 4-5 under the old thresholds.
+    # Rescaled to the range actually observed (roughly 65-95) so the axis
+    # discriminates again.
     mainstream_value = (
-        1 if mainstream_normalized <= 25 else
-        2 if mainstream_normalized <= 50 else
-        3 if mainstream_normalized <= 70 else
-        4 if mainstream_normalized <= 90 else 5
+        1 if mainstream_normalized <= 45 else
+        2 if mainstream_normalized <= 65 else
+        3 if mainstream_normalized <= 80 else
+        4 if mainstream_normalized <= 92 else 5
     )
     oldness_value = (
         1 if average_year is None or average_year < 1975 else

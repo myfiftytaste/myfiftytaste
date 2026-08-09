@@ -12,7 +12,7 @@
       "year": null,
       "slug": "the-dark-knight",
       "letterboxd_url": "https://letterboxd.com/film/the-dark-knight",
-      "score": 0.8699,
+      "score": 0.8539,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -44,7 +44,7 @@
       "year": null,
       "slug": "the-young-girls-of-rochefort",
       "letterboxd_url": "https://letterboxd.com/film/the-young-girls-of-rochefort",
-      "score": 0.8207,
+      "score": 0.8322,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -75,7 +75,7 @@
       "year": 2014,
       "slug": "pride-2014",
       "letterboxd_url": "https://letterboxd.com/film/pride-2014",
-      "score": 0.6614,
+      "score": 0.6681,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -151,7 +151,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.6309,
+        "score": 0.6356,
         "reason": "duplicate_director"
       },
       {
@@ -162,7 +162,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.5752,
+        "score": 0.5867,
         "reason": "duplicate_director"
       },
       {
@@ -172,7 +172,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4856,
+        "score": 0.4972,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -182,7 +182,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4732,
+        "score": 0.4847,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -193,7 +193,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.4618,
+        "score": 0.4503,
         "reason": "duplicate_director"
       },
       {
@@ -206,7 +206,7 @@
           "Spain",
           "USA"
         ],
-        "score": 0.4273,
+        "score": 0.4388,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -217,7 +217,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.4001,
+        "score": 0.4116,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -227,7 +227,7 @@
         "countries": [
           "UK"
         ],
-        "score": 0.3826,
+        "score": 0.3941,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -238,7 +238,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.3719,
+        "score": 0.3604,
         "reason": "duplicate_director"
       },
       {
@@ -248,7 +248,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.3666,
+        "score": 0.3551,
         "reason": "duplicate_director"
       },
       {
@@ -259,7 +259,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.3662,
+        "score": 0.3546,
         "reason": "duplicate_director"
       },
       {
@@ -270,7 +270,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.3179,
+        "score": 0.3064,
         "reason": "duplicate_director"
       },
       {
@@ -280,7 +280,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.2857,
+        "score": 0.2972,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -291,7 +291,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.2698,
+        "score": 0.2583,
         "reason": "duplicate_director"
       },
       {
@@ -302,7 +302,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.2379,
+        "score": 0.2264,
         "reason": "duplicate_director"
       },
       {
@@ -313,7 +313,7 @@
           "France",
           "Germany"
         ],
-        "score": 0.5508,
+        "score": 0.5575,
         "reason": "duplicate_director"
       },
       {
@@ -323,7 +323,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4526,
+        "score": 0.4593,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -333,7 +333,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4394,
+        "score": 0.4461,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -343,7 +343,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5102,
+        "score": 0.513,
         "reason": "duplicate_director"
       },
       {
@@ -353,7 +353,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5704,
+        "score": 0.5637,
         "reason": "duplicate_director"
       },
       {
@@ -364,18 +364,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.5857,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Interstellar",
-        "director": "Christopher Nolan",
-        "countries": [
-          "UK",
-          "USA"
-        ],
-        "score": 0.6476,
+        "score": 0.579,
         "reason": "duplicate_director"
       },
       {
@@ -388,8 +377,19 @@
           "Spain",
           "USA"
         ],
-        "score": 0.3424,
+        "score": 0.3491,
         "reason": "title_or_franchise_proximity"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Interstellar",
+        "director": "Christopher Nolan",
+        "countries": [
+          "UK",
+          "USA"
+        ],
+        "score": 0.6409,
+        "reason": "duplicate_director"
       },
       {
         "slot": "wild_card",
@@ -399,18 +399,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.4673,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Prestige",
-        "director": "Christopher Nolan",
-        "countries": [
-          "UK",
-          "USA"
-        ],
-        "score": 0.6115,
+        "score": 0.474,
         "reason": "duplicate_director"
       },
       {
@@ -420,18 +409,18 @@
         "countries": [
           "UK"
         ],
-        "score": 0.3046,
+        "score": 0.3113,
         "reason": "title_or_franchise_proximity"
       },
       {
         "slot": "wild_card",
-        "title": "Dunkirk",
+        "title": "The Prestige",
         "director": "Christopher Nolan",
         "countries": [
           "UK",
           "USA"
         ],
-        "score": 0.5852,
+        "score": 0.6048,
         "reason": "duplicate_director"
       },
       {
@@ -442,8 +431,19 @@
           "UK",
           "USA"
         ],
-        "score": 0.3475,
+        "score": 0.3542,
         "reason": "title_or_franchise_proximity"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Dunkirk",
+        "director": "Christopher Nolan",
+        "countries": [
+          "UK",
+          "USA"
+        ],
+        "score": 0.5785,
+        "reason": "duplicate_director"
       },
       {
         "slot": "wild_card",
@@ -452,7 +452,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.2337,
+        "score": 0.2404,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -463,7 +463,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.5035,
+        "score": 0.4967,
         "reason": "duplicate_director"
       },
       {
@@ -474,7 +474,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.4917,
+        "score": 0.485,
         "reason": "duplicate_director"
       }
     ]

@@ -33,7 +33,7 @@
   },
   "radar_scores": {
     "mainstreamness": {
-      "value_5": 4,
+      "value_5": 3,
       "raw_value": 73.6026273858384,
       "label": "Popularité moyenne",
       "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
@@ -76,9 +76,9 @@
         "axis_id": "mainstreamness",
         "technical_axis_id": "mainstreamness",
         "label": "Popularité",
-        "title": "Iencli assumé",
-        "one_line": "Tu es ce que l’on appelle dans le jargon un iencli de base, ta carte UGC ne sert qu’à aller voir les Marvel et le dernier Spielberg.",
-        "cran": 4,
+        "title": "Cinéphile éclectique",
+        "one_line": "Individu mesuré, tu suis tes potes cinéphiles à La Filmothèque pour remplir ton quota de films moins mainstream.",
+        "cran": 3,
         "image": null,
         "image_src": null,
         "illustration": null
@@ -1239,7 +1239,7 @@
       "year": null,
       "slug": "the-long-goodbye",
       "letterboxd_url": "https://letterboxd.com/film/the-long-goodbye",
-      "score": 0.8401,
+      "score": 0.8352,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -1274,14 +1274,13 @@
     },
     {
       "slot": "deep_cut",
-      "title": "The Young Girls of Rochefort",
+      "title": "Mind Game",
       "year": null,
-      "slug": "the-young-girls-of-rochefort",
-      "letterboxd_url": "https://letterboxd.com/film/the-young-girls-of-rochefort",
-      "score": 0.7392,
+      "slug": "mind-game",
+      "letterboxd_url": "https://letterboxd.com/film/mind-game",
+      "score": 0.7449,
       "reason_codes": [
         "genre_match",
-        "country_match",
         "runtime_match",
         "high_community_rating",
         "fans_watches_signal",
@@ -1290,20 +1289,22 @@
       ],
       "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
       "genres": [
-        "Romance",
+        "Animation",
+        "Drama",
         "Comedy",
-        "Drama"
+        "Romance",
+        "Fantasy"
       ],
       "countries": [
-        "France"
+        "Japan"
       ],
-      "runtime": 126.0,
-      "average_rating": 4.32,
-      "watches": 117024.0,
-      "fans": 6300.0,
-      "director": "Jacques Demy",
+      "runtime": 103.0,
+      "average_rating": 4.18,
+      "watches": 59191.0,
+      "fans": 2300.0,
+      "director": "Masaaki Yuasa",
       "directors": [
-        "Jacques Demy"
+        "Masaaki Yuasa"
       ],
       "director_source": "film_normalized",
       "poster_status": "missing",
@@ -1316,7 +1317,7 @@
       "year": null,
       "slug": "interstellar",
       "letterboxd_url": "https://letterboxd.com/film/interstellar",
-      "score": 0.598,
+      "score": 0.5912,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -1605,7 +1606,7 @@
     "homonymy_rejections": [],
     "posters_missing": [
       "The Long Goodbye",
-      "The Young Girls of Rochefort",
+      "Mind Game",
       "Interstellar"
     ],
     "obsession_audit": null

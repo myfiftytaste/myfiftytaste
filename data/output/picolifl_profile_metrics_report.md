@@ -37,7 +37,7 @@
 
 ## Radar scores
 
-- Mainstreamness: 5 / 5
+- Mainstreamness: 4 / 5
 - Oldness: 4 / 5
 - Endurance: 3 / 5
 - Reviewness: 5 / 5

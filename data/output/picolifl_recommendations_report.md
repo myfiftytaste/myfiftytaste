@@ -39,26 +39,26 @@
 
 ### Rejected candidates
 
-- deep_cut: Insomnia | Christopher Nolan | USA | 0.6309 | duplicate_director
-- deep_cut: Following | Christopher Nolan | UK, USA | 0.5752 | duplicate_director
-- deep_cut: Batman: The Dark Knight Returns, Part 2 | Jay Oliva | USA | 0.4856 | title_or_franchise_proximity
-- deep_cut: Batman: The Dark Knight Returns, Part 1 | Jay Oliva | USA | 0.4732 | title_or_franchise_proximity
-- deep_cut: The Prestige | Christopher Nolan | UK, USA | 0.4618 | duplicate_director
-- deep_cut: The 33 | Patricia Riggen | Chile, Colombia, Spain, USA | 0.4273 | title_or_franchise_proximity
-- deep_cut: The 7.39 | John Alexander | UK, USA | 0.4001 | title_or_franchise_proximity
-- deep_cut: The V.I.P.s | Anthony Asquith | UK | 0.3826 | title_or_franchise_proximity
-- deep_cut: Interstellar | Christopher Nolan | UK, USA | 0.3719 | duplicate_director
-- deep_cut: Memento | Christopher Nolan | USA | 0.3666 | duplicate_director
-- deep_cut: Dunkirk | Christopher Nolan | UK, USA | 0.3662 | duplicate_director
-- deep_cut: The Dark Knight Rises | Christopher Nolan | UK, USA | 0.3179 | duplicate_director
-- deep_cut: The Ex | Jesse Peretz | USA | 0.2857 | title_or_franchise_proximity
-- deep_cut: Tenet | Christopher Nolan | UK, USA | 0.2698 | duplicate_director
-- deep_cut: Oppenheimer | Christopher Nolan | UK, USA | 0.2379 | duplicate_director
-- wild_card: The Umbrellas of Cherbourg | Jacques Demy | France, Germany | 0.5508 | duplicate_director
-- wild_card: Batman: The Dark Knight Returns, Part 2 | Jay Oliva | USA | 0.4526 | title_or_franchise_proximity
-- wild_card: Batman: The Dark Knight Returns, Part 1 | Jay Oliva | USA | 0.4394 | title_or_franchise_proximity
-- wild_card: Insomnia | Christopher Nolan | USA | 0.5102 | duplicate_director
-- wild_card: Memento | Christopher Nolan | USA | 0.5704 | duplicate_director
+- deep_cut: Insomnia | Christopher Nolan | USA | 0.6356 | duplicate_director
+- deep_cut: Following | Christopher Nolan | UK, USA | 0.5867 | duplicate_director
+- deep_cut: Batman: The Dark Knight Returns, Part 2 | Jay Oliva | USA | 0.4972 | title_or_franchise_proximity
+- deep_cut: Batman: The Dark Knight Returns, Part 1 | Jay Oliva | USA | 0.4847 | title_or_franchise_proximity
+- deep_cut: The Prestige | Christopher Nolan | UK, USA | 0.4503 | duplicate_director
+- deep_cut: The 33 | Patricia Riggen | Chile, Colombia, Spain, USA | 0.4388 | title_or_franchise_proximity
+- deep_cut: The 7.39 | John Alexander | UK, USA | 0.4116 | title_or_franchise_proximity
+- deep_cut: The V.I.P.s | Anthony Asquith | UK | 0.3941 | title_or_franchise_proximity
+- deep_cut: Interstellar | Christopher Nolan | UK, USA | 0.3604 | duplicate_director
+- deep_cut: Memento | Christopher Nolan | USA | 0.3551 | duplicate_director
+- deep_cut: Dunkirk | Christopher Nolan | UK, USA | 0.3546 | duplicate_director
+- deep_cut: The Dark Knight Rises | Christopher Nolan | UK, USA | 0.3064 | duplicate_director
+- deep_cut: The Ex | Jesse Peretz | USA | 0.2972 | title_or_franchise_proximity
+- deep_cut: Tenet | Christopher Nolan | UK, USA | 0.2583 | duplicate_director
+- deep_cut: Oppenheimer | Christopher Nolan | UK, USA | 0.2264 | duplicate_director
+- wild_card: The Umbrellas of Cherbourg | Jacques Demy | France, Germany | 0.5575 | duplicate_director
+- wild_card: Batman: The Dark Knight Returns, Part 2 | Jay Oliva | USA | 0.4593 | title_or_franchise_proximity
+- wild_card: Batman: The Dark Knight Returns, Part 1 | Jay Oliva | USA | 0.4461 | title_or_franchise_proximity
+- wild_card: Insomnia | Christopher Nolan | USA | 0.513 | duplicate_director
+- wild_card: Memento | Christopher Nolan | USA | 0.5637 | duplicate_director
 
 ### Notable eligibility exclusions
 
@@ -91,7 +91,7 @@
 
 ### safe_pick: The Dark Knight
 
-- Score: 0.8699
+- Score: 0.8539
 - Year: None
 - Slug: the-dark-knight
 - Genres: Action, Drama, Thriller, Crime
@@ -102,7 +102,7 @@
 
 ### deep_cut: The Young Girls of Rochefort
 
-- Score: 0.8207
+- Score: 0.8322
 - Year: None
 - Slug: the-young-girls-of-rochefort
 - Genres: Romance, Comedy, Drama
@@ -113,7 +113,7 @@
 
 ### wild_card: Pride
 
-- Score: 0.6614
+- Score: 0.6681
 - Year: 2014
 - Slug: pride-2014
 - Genres: Drama, Comedy

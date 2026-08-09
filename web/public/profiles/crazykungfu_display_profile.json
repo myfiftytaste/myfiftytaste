@@ -33,7 +33,7 @@
   },
   "radar_scores": {
     "mainstreamness": {
-      "value_5": 4,
+      "value_5": 3,
       "raw_value": 75.00149855870742,
       "label": "Popularité moyenne",
       "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
@@ -76,9 +76,9 @@
         "axis_id": "mainstreamness",
         "technical_axis_id": "mainstreamness",
         "label": "Popularité",
-        "title": "Iencli assumé",
-        "one_line": "Tu es ce que l’on appelle dans le jargon un iencli de base, ta carte UGC ne sert qu’à aller voir les Marvel et le dernier Spielberg.",
-        "cran": 4,
+        "title": "Cinéphile éclectique",
+        "one_line": "Individu mesuré, tu suis tes potes cinéphiles à La Filmothèque pour remplir ton quota de films moins mainstream.",
+        "cran": 3,
         "image": null,
         "image_src": null,
         "illustration": null
@@ -1357,7 +1357,7 @@
       "year": null,
       "slug": "dog-day-afternoon",
       "letterboxd_url": "https://letterboxd.com/film/dog-day-afternoon",
-      "score": 0.813,
+      "score": 0.797,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -1394,7 +1394,7 @@
       "year": null,
       "slug": "mind-game",
       "letterboxd_url": "https://letterboxd.com/film/mind-game",
-      "score": 0.7285,
+      "score": 0.74,
       "reason_codes": [
         "genre_match",
         "runtime_match",
@@ -1433,7 +1433,7 @@
       "year": null,
       "slug": "nowhere",
       "letterboxd_url": "https://letterboxd.com/film/nowhere",
-      "score": 0.6202,
+      "score": 0.6224,
       "reason_codes": [
         "genre_match",
         "country_match",

@@ -12,7 +12,7 @@
       "year": null,
       "slug": "the-long-goodbye",
       "letterboxd_url": "https://letterboxd.com/film/the-long-goodbye",
-      "score": 0.8401,
+      "score": 0.8352,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -40,14 +40,13 @@
     },
     {
       "slot": "deep_cut",
-      "title": "The Young Girls of Rochefort",
+      "title": "Mind Game",
       "year": null,
-      "slug": "the-young-girls-of-rochefort",
-      "letterboxd_url": "https://letterboxd.com/film/the-young-girls-of-rochefort",
-      "score": 0.7392,
+      "slug": "mind-game",
+      "letterboxd_url": "https://letterboxd.com/film/mind-game",
+      "score": 0.7449,
       "reason_codes": [
         "genre_match",
-        "country_match",
         "runtime_match",
         "high_community_rating",
         "fans_watches_signal",
@@ -56,18 +55,20 @@
       ],
       "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
       "genres": [
-        "Romance",
+        "Animation",
+        "Drama",
         "Comedy",
-        "Drama"
+        "Romance",
+        "Fantasy"
       ],
       "countries": [
-        "France"
+        "Japan"
       ],
-      "runtime": 126.0,
-      "average_rating": 4.32,
-      "watches": 117024.0,
-      "fans": 6300.0,
-      "director": "Jacques Demy"
+      "runtime": 103.0,
+      "average_rating": 4.18,
+      "watches": 59191.0,
+      "fans": 2300.0,
+      "director": "Masaaki Yuasa"
     },
     {
       "slot": "wild_card",
@@ -75,7 +76,7 @@
       "year": null,
       "slug": "interstellar",
       "letterboxd_url": "https://letterboxd.com/film/interstellar",
-      "score": 0.598,
+      "score": 0.5912,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -104,7 +105,7 @@
   "diversity_checks": {
     "directors": [
       "Robert Altman",
-      "Jacques Demy",
+      "Masaaki Yuasa",
       "Christopher Nolan"
     ],
     "distinct_directors": true,
@@ -114,8 +115,8 @@
         "Thriller"
       ],
       [
-        "Romance",
-        "Comedy"
+        "Animation",
+        "Drama"
       ],
       [
         "Science Fiction",
@@ -127,7 +128,7 @@
         "USA"
       ],
       [
-        "France"
+        "Japan"
       ],
       [
         "UK",
@@ -136,7 +137,7 @@
     ],
     "popularity": [
       "mid",
-      "mid",
+      "low",
       "high"
     ],
     "non_us_recommendation_sought": true,
@@ -150,7 +151,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.6783,
+        "score": 0.6867,
         "reason": "duplicate_director"
       },
       {
@@ -160,7 +161,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.6719,
+        "score": 0.679,
         "reason": "duplicate_director"
       },
       {
@@ -170,7 +171,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.6521,
+        "score": 0.6636,
         "reason": "duplicate_director"
       },
       {
@@ -180,7 +181,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.6404,
+        "score": 0.6496,
         "reason": "duplicate_director"
       },
       {
@@ -190,7 +191,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.6281,
+        "score": 0.6396,
         "reason": "duplicate_director"
       },
       {
@@ -200,17 +201,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.625,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "The Player",
-        "director": "Robert Altman",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5911,
+        "score": 0.6365,
         "reason": "duplicate_director"
       },
       {
@@ -221,7 +212,17 @@
           "UK",
           "USA"
         ],
-        "score": 0.5849,
+        "score": 0.5964,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "deep_cut",
+        "title": "The Player",
+        "director": "Robert Altman",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5893,
         "reason": "duplicate_director"
       },
       {
@@ -231,7 +232,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5609,
+        "score": 0.5724,
         "reason": "duplicate_director"
       },
       {
@@ -241,7 +242,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5399,
+        "score": 0.5515,
         "reason": "duplicate_director"
       },
       {
@@ -251,7 +252,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5287,
+        "score": 0.538,
         "reason": "duplicate_director"
       },
       {
@@ -261,7 +262,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4687,
+        "score": 0.4802,
         "reason": "duplicate_director"
       },
       {
@@ -274,7 +275,7 @@
           "Spain",
           "USA"
         ],
-        "score": 0.3908,
+        "score": 0.4023,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -285,7 +286,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.3864,
+        "score": 0.3979,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -295,7 +296,7 @@
         "countries": [
           "UK"
         ],
-        "score": 0.3637,
+        "score": 0.3752,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -305,7 +306,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.3208,
+        "score": 0.3323,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -315,19 +316,8 @@
         "countries": [
           "USA"
         ],
-        "score": 0.7868,
+        "score": 0.7983,
         "reason": "replaced_by_non_us_diversity"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Umbrellas of Cherbourg",
-        "director": "Jacques Demy",
-        "countries": [
-          "France",
-          "Germany"
-        ],
-        "score": 0.539,
-        "reason": "duplicate_director"
       },
       {
         "slot": "wild_card",
@@ -337,7 +327,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.5162,
+        "score": 0.5229,
         "reason": "duplicate_director"
       },
       {
@@ -347,7 +337,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5631,
+        "score": 0.5673,
         "reason": "duplicate_director"
       },
       {
@@ -357,7 +347,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5308,
+        "score": 0.5375,
         "reason": "duplicate_director"
       },
       {
@@ -367,17 +357,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4447,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "3 Women",
-        "director": "Robert Altman",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5872,
+        "score": 0.4514,
         "reason": "duplicate_director"
       },
       {
@@ -387,7 +367,17 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5111,
+        "score": 0.5178,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "3 Women",
+        "director": "Robert Altman",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5921,
         "reason": "duplicate_director"
       },
       {
@@ -400,7 +390,7 @@
           "Spain",
           "USA"
         ],
-        "score": 0.3572,
+        "score": 0.3639,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -411,7 +401,7 @@
           "UK",
           "USA"
         ],
-        "score": 0.345,
+        "score": 0.3517,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -421,18 +411,18 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5677,
+        "score": 0.573,
         "reason": "duplicate_director"
       },
       {
         "slot": "wild_card",
-        "title": "Double Indemnity",
-        "director": "Billy Wilder",
+        "title": "HealtH",
+        "director": "Robert Altman",
         "countries": [
           "USA"
         ],
-        "score": 0.5439,
-        "reason": "wild_card_lacks_contrast"
+        "score": 0.4675,
+        "reason": "duplicate_director"
       },
       {
         "slot": "wild_card",
@@ -441,7 +431,17 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5433,
+        "score": 0.5373,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Double Indemnity",
+        "director": "Billy Wilder",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5372,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -451,37 +451,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5367,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "HealtH",
-        "director": "Robert Altman",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4607,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Dial M for Murder",
-        "director": "Alfred Hitchcock",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.523,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Basketball Diaries",
-        "director": "Scott Kalvert",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5218,
+        "score": 0.5348,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -491,8 +461,28 @@
         "countries": [
           "UK"
         ],
-        "score": 0.2894,
+        "score": 0.2961,
         "reason": "title_or_franchise_proximity"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Dial M for Murder",
+        "director": "Alfred Hitchcock",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5171,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "The Basketball Diaries",
+        "director": "Scott Kalvert",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.5151,
+        "reason": "wild_card_lacks_contrast"
       },
       {
         "slot": "wild_card",
@@ -501,7 +491,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.5071,
+        "score": 0.5118,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -511,7 +501,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4976,
+        "score": 0.4974,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -521,67 +511,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.496,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "25th Hour",
-        "director": "Spike Lee",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4808,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Player",
-        "director": "Robert Altman",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4792,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Gone Baby Gone",
-        "director": "Ben Affleck",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4792,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Side Effects",
-        "director": "Steven Soderbergh",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4773,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Bad Lieutenant: Port of Call – New Orleans",
-        "director": "Werner Herzog",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.477,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Assault on Precinct 13",
-        "director": "John Carpenter",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4759,
+        "score": 0.4965,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -591,8 +521,68 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4751,
+        "score": 0.4819,
         "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Bad Lieutenant: Port of Call – New Orleans",
+        "director": "Werner Herzog",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4811,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "25th Hour",
+        "director": "Spike Lee",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4803,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "The Last Stand",
+        "director": "Kim Jee-woon",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4787,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "The Player",
+        "director": "Robert Altman",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4782,
+        "reason": "duplicate_director"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Side Effects",
+        "director": "Steven Soderbergh",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4774,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Assault on Precinct 13",
+        "director": "John Carpenter",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4764,
+        "reason": "wild_card_lacks_contrast"
       },
       {
         "slot": "wild_card",
@@ -601,7 +591,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4747,
+        "score": 0.4757,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -616,22 +606,12 @@
       },
       {
         "slot": "wild_card",
-        "title": "The Last Stand",
-        "director": "Kim Jee-woon",
+        "title": "Gone Baby Gone",
+        "director": "Ben Affleck",
         "countries": [
           "USA"
         ],
-        "score": 0.473,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Longest Yard",
-        "director": "Peter Segal",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4706,
+        "score": 0.4739,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -641,37 +621,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.469,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Brawl in Cell Block 99",
-        "director": "S. Craig Zahler",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4627,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Badlands",
-        "director": "Terrence Malick",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4625,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Weird: The Al Yankovic Story",
-        "director": "Eric Appel",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4622,
+        "score": 0.4699,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -681,37 +631,27 @@
         "countries": [
           "USA"
         ],
-        "score": 0.3861,
+        "score": 0.3929,
         "reason": "duplicate_director"
       },
       {
         "slot": "wild_card",
-        "title": "Blow",
-        "director": "Ted Demme",
+        "title": "Brawl in Cell Block 99",
+        "director": "S. Craig Zahler",
         "countries": [
           "USA"
         ],
-        "score": 0.4601,
+        "score": 0.4651,
         "reason": "wild_card_lacks_contrast"
       },
       {
         "slot": "wild_card",
-        "title": "Serial Mom",
-        "director": "John Waters",
+        "title": "The Longest Yard",
+        "director": "Peter Segal",
         "countries": [
           "USA"
         ],
-        "score": 0.4587,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Bonnie and Clyde",
-        "director": "Arthur Penn",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4584,
+        "score": 0.4639,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -721,17 +661,47 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4559,
+        "score": 0.4604,
         "reason": "wild_card_lacks_contrast"
       },
       {
         "slot": "wild_card",
-        "title": "Strangers on a Train",
-        "director": "Alfred Hitchcock",
+        "title": "Serial Mom",
+        "director": "John Waters",
         "countries": [
           "USA"
         ],
-        "score": 0.4517,
+        "score": 0.4598,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Weird: The Al Yankovic Story",
+        "director": "Eric Appel",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4596,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Badlands",
+        "director": "Terrence Malick",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4577,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Blow",
+        "director": "Ted Demme",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4551,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -741,7 +711,17 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4503,
+        "score": 0.4547,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Bonnie and Clyde",
+        "director": "Arthur Penn",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4537,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -751,7 +731,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4499,
+        "score": 0.4534,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -761,37 +741,17 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4491,
+        "score": 0.4531,
         "reason": "wild_card_lacks_contrast"
       },
       {
         "slot": "wild_card",
-        "title": "Blood Simple",
-        "director": "Joel Coen",
+        "title": "Strangers on a Train",
+        "director": "Alfred Hitchcock",
         "countries": [
           "USA"
         ],
-        "score": 0.4456,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Snake Eyes",
-        "director": "Brian De Palma",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4415,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Wall Street",
-        "director": "Oliver Stone",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4403,
+        "score": 0.447,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -801,7 +761,17 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4402,
+        "score": 0.4449,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Snake Eyes",
+        "director": "Brian De Palma",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4432,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -811,7 +781,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4393,
+        "score": 0.4415,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -821,27 +791,27 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4354,
+        "score": 0.4408,
         "reason": "duplicate_director"
       },
       {
         "slot": "wild_card",
-        "title": "Analyze This",
-        "director": "Harold Ramis",
+        "title": "Blood Simple",
+        "director": "Joel Coen",
         "countries": [
           "USA"
         ],
-        "score": 0.4352,
+        "score": 0.4403,
         "reason": "wild_card_lacks_contrast"
       },
       {
         "slot": "wild_card",
-        "title": "No Sudden Move",
-        "director": "Steven Soderbergh",
+        "title": "Wall Street",
+        "director": "Oliver Stone",
         "countries": [
           "USA"
         ],
-        "score": 0.4333,
+        "score": 0.439,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -851,7 +821,27 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4316,
+        "score": 0.4368,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Analyze This",
+        "director": "Harold Ramis",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4364,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "No Sudden Move",
+        "director": "Steven Soderbergh",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.4361,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -861,7 +851,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4239,
+        "score": 0.4265,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -871,7 +861,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.4212,
+        "score": 0.4206,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -881,7 +871,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.2576,
+        "score": 0.2643,
         "reason": "title_or_franchise_proximity"
       },
       {
@@ -891,7 +881,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.3991,
+        "score": 0.3964,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -901,7 +891,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.3989,
+        "score": 0.3922,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -911,17 +901,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.3921,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Death Note",
-        "director": "Adam Wingard",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.385,
+        "score": 0.3903,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -931,17 +911,17 @@
         "countries": [
           "USA"
         ],
-        "score": 0.3783,
+        "score": 0.3833,
         "reason": "wild_card_lacks_contrast"
       },
       {
         "slot": "wild_card",
-        "title": "Identity Thief",
-        "director": "Seth Gordon",
+        "title": "Death Note",
+        "director": "Adam Wingard",
         "countries": [
           "USA"
         ],
-        "score": 0.3712,
+        "score": 0.3783,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -951,7 +931,17 @@
         "countries": [
           "USA"
         ],
-        "score": 0.3677,
+        "score": 0.3727,
+        "reason": "wild_card_lacks_contrast"
+      },
+      {
+        "slot": "wild_card",
+        "title": "Identity Thief",
+        "director": "Seth Gordon",
+        "countries": [
+          "USA"
+        ],
+        "score": 0.3666,
         "reason": "wild_card_lacks_contrast"
       },
       {
@@ -961,7 +951,7 @@
         "countries": [
           "USA"
         ],
-        "score": 0.3549,
+        "score": 0.3554,
         "reason": "wild_card_lacks_contrast"
       }
     ]

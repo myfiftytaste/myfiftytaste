@@ -26,7 +26,7 @@
   },
   "radar_scores": {
     "mainstreamness": {
-      "value_5": 4,
+      "value_5": 3,
       "raw_value": 75.00149855870742,
       "label": "Popularité moyenne",
       "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",

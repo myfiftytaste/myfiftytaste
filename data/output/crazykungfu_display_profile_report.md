@@ -12,7 +12,7 @@
 
 ## Radar scores
 
-- mainstreamness: 4 / 5
+- mainstreamness: 3 / 5
 - oldness: 4 / 5
 - endurance: 3 / 5
 - reviewness: 5 / 5
@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: Dog Day Afternoon (0.813)
-- deep_cut: Mind Game (0.7285)
-- wild_card: Nowhere (0.6202)
+- safe_pick: Dog Day Afternoon (0.797)
+- deep_cut: Mind Game (0.74)
+- wild_card: Nowhere (0.6224)
 
 ## Cards
 

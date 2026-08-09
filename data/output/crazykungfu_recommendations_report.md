@@ -34,31 +34,31 @@
 - Wild card contrast score: 5
 - Directors: Sidney Lumet, Masaaki Yuasa, Gregg Araki
 - Primary genres: Crime, Drama | Animation, Drama | Drama, Comedy
-- Duplicate director rejections: The Anderson Tapes (Sidney Lumet), Family Business (Sidney Lumet), Prince of the City (Sidney Lumet), Before the Devil Knows You're Dead (Sidney Lumet), Guilty as Sin (Sidney Lumet), The Hill (Sidney Lumet), The Wiz (Sidney Lumet), Network (Sidney Lumet), Murder on the Orient Express (Sidney Lumet), Serpico (Sidney Lumet), 12 Angry Men (Sidney Lumet), 12 Angry Men (Sidney Lumet), Network (Sidney Lumet), Serpico (Sidney Lumet), Before the Devil Knows You're Dead (Sidney Lumet), Murder on the Orient Express (Sidney Lumet), The Wiz (Sidney Lumet), The Hill (Sidney Lumet), Prince of the City (Sidney Lumet), The Anderson Tapes (Sidney Lumet), Family Business (Sidney Lumet), Guilty as Sin (Sidney Lumet)
+- Duplicate director rejections: The Anderson Tapes (Sidney Lumet), Family Business (Sidney Lumet), Prince of the City (Sidney Lumet), Before the Devil Knows You're Dead (Sidney Lumet), Guilty as Sin (Sidney Lumet), The Hill (Sidney Lumet), The Wiz (Sidney Lumet), Murder on the Orient Express (Sidney Lumet), Network (Sidney Lumet), Serpico (Sidney Lumet), 12 Angry Men (Sidney Lumet), 12 Angry Men (Sidney Lumet), Network (Sidney Lumet), Before the Devil Knows You're Dead (Sidney Lumet), Serpico (Sidney Lumet), Murder on the Orient Express (Sidney Lumet), The Wiz (Sidney Lumet), The Hill (Sidney Lumet), Prince of the City (Sidney Lumet), The Anderson Tapes (Sidney Lumet), Family Business (Sidney Lumet), Guilty as Sin (Sidney Lumet)
 - Title/franchise proximity rejections: None
 
 ### Rejected candidates
 
-- deep_cut: The Anderson Tapes | Sidney Lumet | USA | 0.6557 | duplicate_director
-- deep_cut: Family Business | Sidney Lumet | USA | 0.617 | duplicate_director
-- deep_cut: Prince of the City | Sidney Lumet | USA | 0.6086 | duplicate_director
-- deep_cut: Before the Devil Knows You're Dead | Sidney Lumet | UK, USA | 0.593 | duplicate_director
-- deep_cut: Guilty as Sin | Sidney Lumet | USA | 0.5817 | duplicate_director
-- deep_cut: The Hill | Sidney Lumet | UK | 0.5747 | duplicate_director
-- deep_cut: The Wiz | Sidney Lumet | USA | 0.571 | duplicate_director
-- deep_cut: Network | Sidney Lumet | USA | 0.5384 | duplicate_director
-- deep_cut: Murder on the Orient Express | Sidney Lumet | UK | 0.5301 | duplicate_director
-- deep_cut: Serpico | Sidney Lumet | USA | 0.489 | duplicate_director
-- deep_cut: 12 Angry Men | Sidney Lumet | USA | 0.3622 | duplicate_director
-- deep_cut: Paid in Full | Charles Stone III | USA | 0.7789 | replaced_by_non_us_diversity
-- wild_card: 12 Angry Men | Sidney Lumet | USA | 0.6666 | duplicate_director
-- wild_card: Network | Sidney Lumet | USA | 0.5942 | duplicate_director
-- wild_card: The Shawshank Redemption | Frank Darabont | USA | 0.6073 | wild_card_lacks_contrast
-- wild_card: Serpico | Sidney Lumet | USA | 0.5295 | duplicate_director
-- wild_card: Before the Devil Knows You're Dead | Sidney Lumet | UK, USA | 0.5262 | duplicate_director
-- wild_card: Murder on the Orient Express | Sidney Lumet | UK | 0.437 | duplicate_director
-- wild_card: Se7en | David Fincher | USA | 0.5819 | wild_card_lacks_contrast
-- wild_card: The Wiz | Sidney Lumet | USA | 0.4994 | duplicate_director
+- deep_cut: The Anderson Tapes | Sidney Lumet | USA | 0.6672 | duplicate_director
+- deep_cut: Family Business | Sidney Lumet | USA | 0.6285 | duplicate_director
+- deep_cut: Prince of the City | Sidney Lumet | USA | 0.6201 | duplicate_director
+- deep_cut: Before the Devil Knows You're Dead | Sidney Lumet | UK, USA | 0.5938 | duplicate_director
+- deep_cut: Guilty as Sin | Sidney Lumet | USA | 0.5932 | duplicate_director
+- deep_cut: The Hill | Sidney Lumet | UK | 0.5862 | duplicate_director
+- deep_cut: The Wiz | Sidney Lumet | USA | 0.5825 | duplicate_director
+- deep_cut: Murder on the Orient Express | Sidney Lumet | UK | 0.5333 | duplicate_director
+- deep_cut: Network | Sidney Lumet | USA | 0.528 | duplicate_director
+- deep_cut: Serpico | Sidney Lumet | USA | 0.4814 | duplicate_director
+- deep_cut: 12 Angry Men | Sidney Lumet | USA | 0.3507 | duplicate_director
+- deep_cut: Paid in Full | Charles Stone III | USA | 0.7904 | replaced_by_non_us_diversity
+- wild_card: 12 Angry Men | Sidney Lumet | USA | 0.6599 | duplicate_director
+- wild_card: Network | Sidney Lumet | USA | 0.5881 | duplicate_director
+- wild_card: Before the Devil Knows You're Dead | Sidney Lumet | UK, USA | 0.5267 | duplicate_director
+- wild_card: The Shawshank Redemption | Frank Darabont | USA | 0.6006 | wild_card_lacks_contrast
+- wild_card: Serpico | Sidney Lumet | USA | 0.525 | duplicate_director
+- wild_card: Murder on the Orient Express | Sidney Lumet | UK | 0.4388 | duplicate_director
+- wild_card: The Wiz | Sidney Lumet | USA | 0.5061 | duplicate_director
+- wild_card: The Hill | Sidney Lumet | UK | 0.428 | duplicate_director
 
 ### Notable eligibility exclusions
 
@@ -91,7 +91,7 @@
 
 ### safe_pick: Dog Day Afternoon
 
-- Score: 0.813
+- Score: 0.797
 - Year: None
 - Slug: dog-day-afternoon
 - Genres: Crime, Drama, Thriller
@@ -102,7 +102,7 @@
 
 ### deep_cut: Mind Game
 
-- Score: 0.7285
+- Score: 0.74
 - Year: None
 - Slug: mind-game
 - Genres: Animation, Drama, Comedy, Romance, Fantasy
@@ -113,7 +113,7 @@
 
 ### wild_card: Nowhere
 
-- Score: 0.6202
+- Score: 0.6224
 - Year: None
 - Slug: nowhere
 - Genres: Drama, Comedy, Science Fiction

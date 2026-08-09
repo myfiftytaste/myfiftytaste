@@ -33,7 +33,7 @@
   },
   "radar_scores": {
     "mainstreamness": {
-      "value_5": 5,
+      "value_5": 4,
       "raw_value": 91.92658732878938,
       "label": "Popularité moyenne",
       "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
@@ -76,9 +76,9 @@
         "axis_id": "mainstreamness",
         "technical_axis_id": "mainstreamness",
         "label": "Popularité",
-        "title": "Fan d’Interstellar",
-        "one_line": "Ta seule vue suffit à ce que Regelegorila fasse une rupture d’anévrisme, tu ne jures que par Interstellar, Fight Club et 7even.",
-        "cran": 5,
+        "title": "Iencli assumé",
+        "one_line": "Tu es ce que l’on appelle dans le jargon un iencli de base, ta carte UGC ne sert qu’à aller voir les Marvel et le dernier Spielberg.",
+        "cran": 4,
         "image": null,
         "image_src": null,
         "illustration": null
@@ -1383,7 +1383,7 @@
       "year": null,
       "slug": "the-dark-knight",
       "letterboxd_url": "https://letterboxd.com/film/the-dark-knight",
-      "score": 0.8699,
+      "score": 0.8539,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -1422,7 +1422,7 @@
       "year": null,
       "slug": "the-young-girls-of-rochefort",
       "letterboxd_url": "https://letterboxd.com/film/the-young-girls-of-rochefort",
-      "score": 0.8207,
+      "score": 0.8322,
       "reason_codes": [
         "genre_match",
         "country_match",
@@ -1460,7 +1460,7 @@
       "year": 2014,
       "slug": "pride-2014",
       "letterboxd_url": "https://letterboxd.com/film/pride-2014",
-      "score": 0.6614,
+      "score": 0.6681,
       "reason_codes": [
         "genre_match",
         "country_match",

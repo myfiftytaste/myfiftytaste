@@ -12,7 +12,7 @@
 
 ## Radar scores
 
-- mainstreamness: 4 / 5
+- mainstreamness: 3 / 5
 - oldness: 3 / 5
 - endurance: 3 / 5
 - reviewness: 5 / 5
@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: The Long Goodbye (0.8401)
-- deep_cut: The Young Girls of Rochefort (0.7392)
-- wild_card: Interstellar (0.598)
+- safe_pick: The Long Goodbye (0.8352)
+- deep_cut: Mind Game (0.7449)
+- wild_card: Interstellar (0.5912)
 
 ## Cards
 

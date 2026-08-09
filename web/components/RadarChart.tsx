@@ -69,11 +69,11 @@ const radarBackCopy: Record<keyof RadarScores, RadarBackCopy> = {
   mainstreamness: {
     intro: "Chaque film reçoit un score de popularité (0 à 100) sur une échelle logarithmique entre 1 000 vues (très niche) et 1 million de vues (très mainstream), puis on fait la moyenne sur tes films.",
     steps: [
-      "1/5 : score moyen de 0 à 25/100",
-      "2/5 : score moyen de 26 à 50/100",
-      "3/5 : score moyen de 51 à 70/100",
-      "4/5 : score moyen de 71 à 90/100",
-      "5/5 : score moyen de 91 à 100/100",
+      "1/5 : score moyen de 0 à 45/100",
+      "2/5 : score moyen de 46 à 65/100",
+      "3/5 : score moyen de 66 à 80/100",
+      "4/5 : score moyen de 81 à 92/100",
+      "5/5 : score moyen de 93 à 100/100",
     ],
   },
   oldness: {

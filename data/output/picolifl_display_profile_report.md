@@ -12,7 +12,7 @@
 
 ## Radar scores
 
-- mainstreamness: 5 / 5
+- mainstreamness: 4 / 5
 - oldness: 4 / 5
 - endurance: 3 / 5
 - reviewness: 5 / 5
@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: The Dark Knight (0.8699)
-- deep_cut: The Young Girls of Rochefort (0.8207)
-- wild_card: Pride (0.6614)
+- safe_pick: The Dark Knight (0.8539)
+- deep_cut: The Young Girls of Rochefort (0.8322)
+- wild_card: Pride (0.6681)
 
 ## Cards
 
