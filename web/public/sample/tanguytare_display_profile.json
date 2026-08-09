@@ -4,7 +4,7 @@
     "wrapped": "data\\output\\tanguytare_wrapped.json",
     "profile_metrics": "data\\output\\tanguytare_profile_metrics.json",
     "display_config": "data\\config\\display_config.json",
-    "radar_archetypes": "data\\config\\radar_archetypes_20.json"
+    "radar_archetypes": "data\\config\\radar_archetypes.json"
   },
   "hero": {
     "username": "tanguytare",
@@ -12,7 +12,7 @@
     "primary_archetype": "The Demanding Explorer",
     "subtitle": "Exacting taste, wide horizons.",
     "one_liner": "You wander far from the obvious picks, but you make every star work for it.",
-    "social_coverage": 0.72,
+    "social_coverage": 0.62,
     "metadata_coverage": 0.94,
     "detected_films_count": 50,
     "target_films_count": 50,
@@ -26,7 +26,7 @@
     "warning": null
   },
   "average_rating_summary": {
-    "value": 3.5408163265306123,
+    "value": 3.4270833333333335,
     "scale": 5,
     "detected_films_count": 50,
     "target_films_count": 50
@@ -34,16 +34,16 @@
   "radar_scores": {
     "mainstreamness": {
       "value_5": 4,
-      "raw_value": 83.74739688266291,
+      "raw_value": 84.19912949314437,
       "label": "Popularité moyenne",
       "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
-      "data_source": "36 films with Megabank social stats",
+      "data_source": "31 films with Megabank social stats",
       "confidence": "high"
     },
     "oldness": {
       "value_5": 3,
-      "raw_value": 27.079999999999927,
-      "average_year": 1998.92,
+      "raw_value": 23.40000000000009,
+      "average_year": 2002.6,
       "label": "Âge moyen",
       "description": "Tendance dérivée de l'année moyenne de sortie de tes 50 films détectés.",
       "data_source": "50 films from Letterboxd RSS",
@@ -51,7 +51,7 @@
     },
     "endurance": {
       "value_5": 3,
-      "raw_value": 111.3913043478261,
+      "raw_value": 107.15555555555555,
       "label": "Endurance",
       "description": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
       "data_source": "47 films with confirmed metadata",
@@ -59,9 +59,9 @@
     },
     "reviewness": {
       "value_5": 4,
-      "raw_value": 40,
-      "review_count": 40,
-      "review_rate": 0.8,
+      "raw_value": 37,
+      "review_count": 37,
+      "review_rate": 0.74,
       "label": "Plume assidue",
       "description": "Tu accompagnes souvent tes notes d’un regard écrit.",
       "data_source": "50 films from Letterboxd RSS",
@@ -95,11 +95,11 @@
         "illustration": null
       },
       "endurance": {
-        "axis_id": "staminess",
+        "axis_id": "endurance",
         "technical_axis_id": "endurance",
         "label": "Durée",
-        "title": "Consommateur mesuré",
-        "one_line": "Tu es juste et parcimonieux, tu notes les films indépendamment de leur longueur… tu es un bot ?",
+        "title": "Endurance",
+        "one_line": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
         "cran": 3,
         "image": null,
         "image_src": null,
@@ -119,24 +119,34 @@
     }
   },
   "log_time_profile": {
-    "average_time": "18:25",
-    "average_hour_decimal": 18.42,
-    "period": "evening",
-    "label": "Prime time",
-    "description": "Tes films sont surtout loggés en soirée.",
+    "average_time": "17:29",
+    "average_hour_decimal": 17.48,
+    "period": "afternoon",
+    "label": "Séance d’après-midi",
+    "description": "Tes films sont surtout loggés dans l’après-midi.",
     "data_source": "50 films from Letterboxd RSS",
     "confidence": "high"
   },
   "genre_bubbles": [
     {
       "genre": "Drama",
-      "count": 29,
-      "share": 0.23577235772357724,
+      "count": 23,
+      "share": 0.1885245901639344,
       "size": 140.0,
-      "average_user_rating": 3.6,
+      "average_user_rating": 3.61,
       "average_community_rating": 4.11,
-      "rating_gap": -0.5,
+      "rating_gap": -0.49,
       "films": [
+        {
+          "title": "The Lighthouse",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "Adgwa-Ata",
+          "year": 2026,
+          "slug": null
+        },
         {
           "title": "The Host",
           "year": 2006,
@@ -241,58 +251,28 @@
           "title": "Open Your Eyes",
           "year": 1997,
           "slug": null
-        },
-        {
-          "title": "Phantom of the Paradise",
-          "year": 1974,
-          "slug": null
-        },
-        {
-          "title": "Just an Illusion",
-          "year": 2026,
-          "slug": null
-        },
-        {
-          "title": "Blue Velvet",
-          "year": 1986,
-          "slug": null
-        },
-        {
-          "title": "Mind Game",
-          "year": 2004,
-          "slug": null
-        },
-        {
-          "title": "Children of Men",
-          "year": 2006,
-          "slug": null
-        },
-        {
-          "title": "Salò, or the 120 Days of Sodom",
-          "year": 1975,
-          "slug": null
-        },
-        {
-          "title": "Eyes Wide Shut",
-          "year": 1999,
-          "slug": null
-        },
-        {
-          "title": "My Father's Shadow",
-          "year": 2025,
-          "slug": null
         }
       ]
     },
     {
       "genre": "Thriller",
-      "count": 17,
-      "share": 0.13821138211382114,
-      "size": 98.62,
-      "average_user_rating": 3.76,
-      "average_community_rating": 3.93,
-      "rating_gap": -0.17,
+      "count": 15,
+      "share": 0.12295081967213115,
+      "size": 105.22,
+      "average_user_rating": 3.57,
+      "average_community_rating": 3.92,
+      "rating_gap": -0.36,
       "films": [
+        {
+          "title": "The Lighthouse",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "Disclosure Day",
+          "year": 2026,
+          "slug": null
+        },
         {
           "title": "Carlito's Way",
           "year": 1993,
@@ -357,38 +337,28 @@
           "title": "Open Your Eyes",
           "year": 1997,
           "slug": null
-        },
-        {
-          "title": "Phantom of the Paradise",
-          "year": 1974,
-          "slug": null
-        },
-        {
-          "title": "Blue Velvet",
-          "year": 1986,
-          "slug": null
-        },
-        {
-          "title": "Children of Men",
-          "year": 2006,
-          "slug": null
-        },
-        {
-          "title": "Eyes Wide Shut",
-          "year": 1999,
-          "slug": null
         }
       ]
     },
     {
       "genre": "Horror",
       "count": 11,
-      "share": 0.08943089430894309,
-      "size": 77.93,
-      "average_user_rating": 3.68,
+      "share": 0.09016393442622951,
+      "size": 87.83,
+      "average_user_rating": 3.73,
       "average_community_rating": 3.8,
-      "rating_gap": -0.12,
+      "rating_gap": -0.08,
       "films": [
+        {
+          "title": "The Lighthouse",
+          "year": 2019,
+          "slug": null
+        },
+        {
+          "title": "Backrooms",
+          "year": 2026,
+          "slug": null
+        },
         {
           "title": "Suspiria",
           "year": 1977,
@@ -433,28 +403,206 @@
           "title": "Ready or Not",
           "year": 2019,
           "slug": null
-        },
+        }
+      ]
+    },
+    {
+      "genre": "Animation",
+      "count": 11,
+      "share": 0.09016393442622951,
+      "size": 87.83,
+      "average_user_rating": 3.35,
+      "average_community_rating": 4.19,
+      "rating_gap": -0.84,
+      "films": [
         {
-          "title": "Phantom of the Paradise",
-          "year": 1974,
+          "title": "The Little Panda Fighter",
+          "year": 2008,
           "slug": null
         },
         {
-          "title": "Salò, or the 120 Days of Sodom",
-          "year": 1975,
+          "title": "Adgwa-Ata",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Vertiginous",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Ghost in the Shell",
+          "year": 1995,
+          "slug": null
+        },
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Look Back",
+          "year": 2024,
+          "slug": null
+        },
+        {
+          "title": "Night Is Short, Walk On Girl",
+          "year": 2017,
+          "slug": null
+        },
+        {
+          "title": "Millennium Actress",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Angel's Egg",
+          "year": 1985,
+          "slug": null
+        },
+        {
+          "title": "Kiki's Delivery Service",
+          "year": 1989,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Comedy",
+      "count": 10,
+      "share": 0.08196721311475409,
+      "size": 83.48,
+      "average_user_rating": 3.45,
+      "average_community_rating": 3.8,
+      "rating_gap": -0.35,
+      "films": [
+        {
+          "title": "The Little Panda Fighter",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Vertiginous",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Jim Queen and the Quest for Chloroqueer",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "The Menu",
+          "year": 2022,
+          "slug": null
+        },
+        {
+          "title": "Sexy Beast",
+          "year": 2000,
+          "slug": null
+        },
+        {
+          "title": "PlayTime",
+          "year": 1967,
+          "slug": null
+        },
+        {
+          "title": "Club Kid",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Night Is Short, Walk On Girl",
+          "year": 2017,
+          "slug": null
+        },
+        {
+          "title": "Ready or Not",
+          "year": 2019,
+          "slug": null
+        }
+      ]
+    },
+    {
+      "genre": "Science Fiction",
+      "count": 9,
+      "share": 0.07377049180327869,
+      "size": 79.13,
+      "average_user_rating": 3.12,
+      "average_community_rating": 3.84,
+      "rating_gap": -0.72,
+      "films": [
+        {
+          "title": "Disclosure Day",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Adgwa-Ata",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Vertiginous",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Backrooms",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Ghost in the Shell",
+          "year": 1995,
+          "slug": null
+        },
+        {
+          "title": "The Host",
+          "year": 2006,
+          "slug": null
+        },
+        {
+          "title": "Angel's Egg",
+          "year": 1985,
+          "slug": null
+        },
+        {
+          "title": "Videodrome",
+          "year": 1983,
+          "slug": null
+        },
+        {
+          "title": "Open Your Eyes",
+          "year": 1997,
           "slug": null
         }
       ]
     },
     {
       "genre": "Mystery",
-      "count": 10,
-      "share": 0.08130081300813008,
-      "size": 74.48,
-      "average_user_rating": 4.1,
-      "average_community_rating": 3.98,
-      "rating_gap": 0.12,
+      "count": 9,
+      "share": 0.07377049180327869,
+      "size": 79.13,
+      "average_user_rating": 3.94,
+      "average_community_rating": 3.97,
+      "rating_gap": -0.03,
       "films": [
+        {
+          "title": "Backrooms",
+          "year": 2026,
+          "slug": null
+        },
         {
           "title": "Enemy",
           "year": 2013,
@@ -494,27 +642,68 @@
           "title": "Videodrome",
           "year": 1983,
           "slug": null
-        },
+        }
+      ]
+    },
+    {
+      "genre": "Fantasy",
+      "count": 8,
+      "share": 0.06557377049180328,
+      "size": 74.78,
+      "average_user_rating": 3.36,
+      "average_community_rating": 4.23,
+      "rating_gap": -0.87,
+      "films": [
         {
-          "title": "Blue Velvet",
-          "year": 1986,
+          "title": "The Lighthouse",
+          "year": 2019,
           "slug": null
         },
         {
-          "title": "Eyes Wide Shut",
-          "year": 1999,
+          "title": "Adgwa-Ata",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Minions & Monsters",
+          "year": 2026,
+          "slug": null
+        },
+        {
+          "title": "Night Is Short, Walk On Girl",
+          "year": 2017,
+          "slug": null
+        },
+        {
+          "title": "Millennium Actress",
+          "year": 2001,
+          "slug": null
+        },
+        {
+          "title": "Angel's Egg",
+          "year": 1985,
+          "slug": null
+        },
+        {
+          "title": "Kiki's Delivery Service",
+          "year": 1989,
+          "slug": null
+        },
+        {
+          "title": "Wings of Desire",
+          "year": 1987,
           "slug": null
         }
       ]
     },
     {
       "genre": "Crime",
-      "count": 9,
-      "share": 0.07317073170731707,
-      "size": 71.03,
-      "average_user_rating": 3.78,
+      "count": 8,
+      "share": 0.06557377049180328,
+      "size": 74.78,
+      "average_user_rating": 3.69,
       "average_community_rating": 4.1,
-      "rating_gap": -0.33,
+      "rating_gap": -0.42,
       "films": [
         {
           "title": "Carlito's Way",
@@ -555,78 +744,17 @@
           "title": "The Godfather Part II",
           "year": 1974,
           "slug": null
-        },
-        {
-          "title": "Blue Velvet",
-          "year": 1986,
-          "slug": null
-        }
-      ]
-    },
-    {
-      "genre": "Comedy",
-      "count": 9,
-      "share": 0.07317073170731707,
-      "size": 71.03,
-      "average_user_rating": 3.56,
-      "average_community_rating": 3.87,
-      "rating_gap": -0.32,
-      "films": [
-        {
-          "title": "The Menu",
-          "year": 2022,
-          "slug": null
-        },
-        {
-          "title": "Sexy Beast",
-          "year": 2000,
-          "slug": null
-        },
-        {
-          "title": "PlayTime",
-          "year": 1967,
-          "slug": null
-        },
-        {
-          "title": "Club Kid",
-          "year": 2026,
-          "slug": null
-        },
-        {
-          "title": "Night Is Short, Walk On Girl",
-          "year": 2017,
-          "slug": null
-        },
-        {
-          "title": "Ready or Not",
-          "year": 2019,
-          "slug": null
-        },
-        {
-          "title": "Phantom of the Paradise",
-          "year": 1974,
-          "slug": null
-        },
-        {
-          "title": "Just an Illusion",
-          "year": 2026,
-          "slug": null
-        },
-        {
-          "title": "Mind Game",
-          "year": 2004,
-          "slug": null
         }
       ]
     },
     {
       "genre": "Romance",
-      "count": 8,
-      "share": 0.06504065040650407,
-      "size": 67.59,
-      "average_user_rating": 3.62,
-      "average_community_rating": 4.21,
-      "rating_gap": -0.59,
+      "count": 6,
+      "share": 0.04918032786885246,
+      "size": 66.09,
+      "average_user_rating": 3.75,
+      "average_community_rating": 4.22,
+      "rating_gap": -0.47,
       "films": [
         {
           "title": "Slumdog Millionaire",
@@ -657,161 +785,23 @@
           "title": "Wings of Desire",
           "year": 1987,
           "slug": null
-        },
-        {
-          "title": "Phantom of the Paradise",
-          "year": 1974,
-          "slug": null
-        },
-        {
-          "title": "Mind Game",
-          "year": 2004,
-          "slug": null
-        }
-      ]
-    },
-    {
-      "genre": "Animation",
-      "count": 7,
-      "share": 0.056910569105691054,
-      "size": 64.14,
-      "average_user_rating": 3.5,
-      "average_community_rating": 4.18,
-      "rating_gap": -0.68,
-      "films": [
-        {
-          "title": "Ghost in the Shell",
-          "year": 1995,
-          "slug": null
-        },
-        {
-          "title": "Look Back",
-          "year": 2024,
-          "slug": null
-        },
-        {
-          "title": "Night Is Short, Walk On Girl",
-          "year": 2017,
-          "slug": null
-        },
-        {
-          "title": "Millennium Actress",
-          "year": 2001,
-          "slug": null
-        },
-        {
-          "title": "Angel's Egg",
-          "year": 1985,
-          "slug": null
-        },
-        {
-          "title": "Kiki's Delivery Service",
-          "year": 1989,
-          "slug": null
-        },
-        {
-          "title": "Mind Game",
-          "year": 2004,
-          "slug": null
-        }
-      ]
-    },
-    {
-      "genre": "Fantasy",
-      "count": 7,
-      "share": 0.056910569105691054,
-      "size": 64.14,
-      "average_user_rating": 3.36,
-      "average_community_rating": 4.21,
-      "rating_gap": -0.86,
-      "films": [
-        {
-          "title": "Night Is Short, Walk On Girl",
-          "year": 2017,
-          "slug": null
-        },
-        {
-          "title": "Millennium Actress",
-          "year": 2001,
-          "slug": null
-        },
-        {
-          "title": "Angel's Egg",
-          "year": 1985,
-          "slug": null
-        },
-        {
-          "title": "Kiki's Delivery Service",
-          "year": 1989,
-          "slug": null
-        },
-        {
-          "title": "Wings of Desire",
-          "year": 1987,
-          "slug": null
-        },
-        {
-          "title": "Phantom of the Paradise",
-          "year": 1974,
-          "slug": null
-        },
-        {
-          "title": "Mind Game",
-          "year": 2004,
-          "slug": null
-        }
-      ]
-    },
-    {
-      "genre": "Science Fiction",
-      "count": 6,
-      "share": 0.04878048780487805,
-      "size": 60.69,
-      "average_user_rating": 3.42,
-      "average_community_rating": 3.84,
-      "rating_gap": -0.43,
-      "films": [
-        {
-          "title": "Ghost in the Shell",
-          "year": 1995,
-          "slug": null
-        },
-        {
-          "title": "The Host",
-          "year": 2006,
-          "slug": null
-        },
-        {
-          "title": "Angel's Egg",
-          "year": 1985,
-          "slug": null
-        },
-        {
-          "title": "Videodrome",
-          "year": 1983,
-          "slug": null
-        },
-        {
-          "title": "Open Your Eyes",
-          "year": 1997,
-          "slug": null
-        },
-        {
-          "title": "Children of Men",
-          "year": 2006,
-          "slug": null
         }
       ]
     },
     {
       "genre": "Action",
       "count": 4,
-      "share": 0.032520325203252036,
-      "size": 53.79,
-      "average_user_rating": 3.25,
+      "share": 0.03278688524590164,
+      "size": 57.39,
+      "average_user_rating": 3.0,
       "average_community_rating": 4.0,
-      "rating_gap": -0.75,
+      "rating_gap": -1.0,
       "films": [
+        {
+          "title": "The Little Panda Fighter",
+          "year": 2008,
+          "slug": null
+        },
         {
           "title": "Ghost in the Shell",
           "year": 1995,
@@ -826,31 +816,31 @@
           "title": "The Taking of Pelham One Two Three",
           "year": 1974,
           "slug": null
-        },
-        {
-          "title": "Children of Men",
-          "year": 2006,
-          "slug": null
         }
       ]
     },
     {
-      "genre": "Documentary",
-      "count": 2,
-      "share": 0.016260162601626018,
-      "size": 46.9,
-      "average_user_rating": 1.75,
-      "average_community_rating": 4.13,
-      "rating_gap": -2.38,
+      "genre": "Family",
+      "count": 3,
+      "share": 0.02459016393442623,
+      "size": 53.04,
+      "average_user_rating": 2.67,
+      "average_community_rating": 4.14,
+      "rating_gap": -1.47,
       "films": [
         {
-          "title": "TRENTE",
+          "title": "The Little Panda Fighter",
+          "year": 2008,
+          "slug": null
+        },
+        {
+          "title": "Minions & Monsters",
           "year": 2026,
           "slug": null
         },
         {
-          "title": "Grizzly Man",
-          "year": 2005,
+          "title": "Kiki's Delivery Service",
+          "year": 1989,
           "slug": null
         }
       ]
@@ -867,6 +857,26 @@
         "share": 0.30303030303030304,
         "intensity": 1.0,
         "films": [
+          {
+            "title": "The Lighthouse",
+            "year": 2019,
+            "slug": "the-lighthouse-2019"
+          },
+          {
+            "title": "Disclosure Day",
+            "year": 2026,
+            "slug": "disclosure-day"
+          },
+          {
+            "title": "Backrooms",
+            "year": 2026,
+            "slug": "backrooms-2026"
+          },
+          {
+            "title": "Minions & Monsters",
+            "year": 2026,
+            "slug": "minions-monsters-2026"
+          },
           {
             "title": "Carlito's Way",
             "year": 1993,
@@ -946,36 +956,31 @@
             "title": "Grizzly Man",
             "year": 2005,
             "slug": "grizzly-man"
-          },
-          {
-            "title": "Phantom of the Paradise",
-            "year": 1974,
-            "slug": "phantom-of-the-paradise"
-          },
-          {
-            "title": "Blue Velvet",
-            "year": 1986,
-            "slug": "blue-velvet"
-          },
-          {
-            "title": "Children of Men",
-            "year": 2006,
-            "slug": "children-of-men"
-          },
-          {
-            "title": "Eyes Wide Shut",
-            "year": 1999,
-            "slug": "eyes-wide-shut"
           }
         ]
       },
       {
         "name": "France",
         "iso2": "FR",
-        "count": 11,
-        "share": 0.16666666666666666,
-        "intensity": 0.55,
+        "count": 12,
+        "share": 0.18181818181818182,
+        "intensity": 0.6,
         "films": [
+          {
+            "title": "Adgwa-Ata",
+            "year": 2026,
+            "slug": "adgwa-ata"
+          },
+          {
+            "title": "Vertiginous",
+            "year": 2026,
+            "slug": "vertiginous"
+          },
+          {
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
+          },
           {
             "title": "Enemy",
             "year": 2013,
@@ -1020,16 +1025,6 @@
             "title": "Open Your Eyes",
             "year": 1997,
             "slug": "open-your-eyes"
-          },
-          {
-            "title": "Just an Illusion",
-            "year": 2026,
-            "slug": "just-an-illusion-2026"
-          },
-          {
-            "title": "Salò, or the 120 Days of Sodom",
-            "year": 1975,
-            "slug": "salo-or-the-120-days-of-sodom"
           }
         ]
       },
@@ -1040,6 +1035,11 @@
         "share": 0.12121212121212122,
         "intensity": 0.4,
         "films": [
+          {
+            "title": "Minions & Monsters",
+            "year": 2026,
+            "slug": "minions-monsters-2026"
+          },
           {
             "title": "Ghost in the Shell",
             "year": 1995,
@@ -1074,50 +1074,6 @@
             "title": "Kiki's Delivery Service",
             "year": 1989,
             "slug": "kikis-delivery-service"
-          },
-          {
-            "title": "Mind Game",
-            "year": 2004,
-            "slug": "mind-game"
-          }
-        ]
-      },
-      {
-        "name": "UK",
-        "iso2": "GB",
-        "count": 6,
-        "share": 0.09090909090909091,
-        "intensity": 0.3,
-        "films": [
-          {
-            "title": "Ghost in the Shell",
-            "year": 1995,
-            "slug": "ghost-in-the-shell"
-          },
-          {
-            "title": "Slumdog Millionaire",
-            "year": 2008,
-            "slug": "slumdog-millionaire"
-          },
-          {
-            "title": "Sexy Beast",
-            "year": 2000,
-            "slug": "sexy-beast"
-          },
-          {
-            "title": "Children of Men",
-            "year": 2006,
-            "slug": "children-of-men"
-          },
-          {
-            "title": "Eyes Wide Shut",
-            "year": 1999,
-            "slug": "eyes-wide-shut"
-          },
-          {
-            "title": "My Father's Shadow",
-            "year": 2025,
-            "slug": "my-fathers-shadow-2025"
           }
         ]
       },
@@ -1163,9 +1119,9 @@
       {
         "name": "Italy",
         "iso2": "IT",
-        "count": 5,
-        "share": 0.07575757575757576,
-        "intensity": 0.25,
+        "count": 4,
+        "share": 0.06060606060606061,
+        "intensity": 0.2,
         "films": [
           {
             "title": "Suspiria",
@@ -1186,11 +1142,73 @@
             "title": "Open Your Eyes",
             "year": 1997,
             "slug": "open-your-eyes"
+          }
+        ]
+      },
+      {
+        "name": "Canada",
+        "iso2": "CA",
+        "count": 3,
+        "share": 0.045454545454545456,
+        "intensity": 0.15,
+        "films": [
+          {
+            "title": "Backrooms",
+            "year": 2026,
+            "slug": "backrooms-2026"
           },
           {
-            "title": "Salò, or the 120 Days of Sodom",
-            "year": 1975,
-            "slug": "salo-or-the-120-days-of-sodom"
+            "title": "Enemy",
+            "year": 2013,
+            "slug": "enemy"
+          },
+          {
+            "title": "Videodrome",
+            "year": 1983,
+            "slug": "videodrome"
+          }
+        ]
+      },
+      {
+        "name": "UK",
+        "iso2": "GB",
+        "count": 3,
+        "share": 0.045454545454545456,
+        "intensity": 0.15,
+        "films": [
+          {
+            "title": "Ghost in the Shell",
+            "year": 1995,
+            "slug": "ghost-in-the-shell"
+          },
+          {
+            "title": "Slumdog Millionaire",
+            "year": 2008,
+            "slug": "slumdog-millionaire"
+          },
+          {
+            "title": "Sexy Beast",
+            "year": 2000,
+            "slug": "sexy-beast"
+          }
+        ]
+      },
+      {
+        "name": "Brazil",
+        "iso2": null,
+        "count": 2,
+        "share": 0.030303030303030304,
+        "intensity": 0.1,
+        "films": [
+          {
+            "title": "The Lighthouse",
+            "year": 2019,
+            "slug": "the-lighthouse-2019"
+          },
+          {
+            "title": "The Little Panda Fighter",
+            "year": 2008,
+            "slug": "the-little-panda-fighter"
           }
         ]
       },
@@ -1214,21 +1232,30 @@
         ]
       },
       {
-        "name": "Canada",
-        "iso2": "CA",
-        "count": 2,
-        "share": 0.030303030303030304,
-        "intensity": 0.1,
+        "name": "Hungary",
+        "iso2": null,
+        "count": 1,
+        "share": 0.015151515151515152,
+        "intensity": 0.05,
         "films": [
           {
-            "title": "Enemy",
-            "year": 2013,
-            "slug": "enemy"
-          },
+            "title": "Adgwa-Ata",
+            "year": 2026,
+            "slug": "adgwa-ata"
+          }
+        ]
+      },
+      {
+        "name": "Belgium",
+        "iso2": "BE",
+        "count": 1,
+        "share": 0.015151515151515152,
+        "intensity": 0.05,
+        "films": [
           {
-            "title": "Videodrome",
-            "year": 1983,
-            "slug": "videodrome"
+            "title": "Jim Queen and the Quest for Chloroqueer",
+            "year": 2026,
+            "slug": "jim-queen"
           }
         ]
       },
@@ -1287,34 +1314,6 @@
             "slug": "wings-of-desire"
           }
         ]
-      },
-      {
-        "name": "Nigeria",
-        "iso2": "NG",
-        "count": 1,
-        "share": 0.015151515151515152,
-        "intensity": 0.05,
-        "films": [
-          {
-            "title": "My Father's Shadow",
-            "year": 2025,
-            "slug": "my-fathers-shadow-2025"
-          }
-        ]
-      },
-      {
-        "name": "Ireland",
-        "iso2": "IE",
-        "count": 1,
-        "share": 0.015151515151515152,
-        "intensity": 0.05,
-        "films": [
-          {
-            "title": "My Father's Shadow",
-            "year": 2025,
-            "slug": "my-fathers-shadow-2025"
-          }
-        ]
       }
     ],
     "max_count": 20,
@@ -1327,7 +1326,7 @@
       "year": 2019,
       "slug": "parasite-2019",
       "letterboxd_url": "https://letterboxd.com/film/parasite-2019",
-      "score": 0.8249,
+      "score": 0.8042,
       "reason_codes": [
         "genre_match",
         "high_community_rating",
@@ -1374,20 +1373,61 @@
     },
     {
       "slot": "deep_cut",
+      "title": "Mind Game",
+      "year": null,
+      "slug": "mind-game",
+      "letterboxd_url": "https://letterboxd.com/film/mind-game",
+      "score": 0.8683,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "director_affinity",
+        "fans_watches_signal",
+        "non_us_angle",
+        "deep_cut"
+      ],
+      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
+      "genres": [
+        "Animation",
+        "Drama",
+        "Comedy",
+        "Romance",
+        "Fantasy"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "runtime": 103.0,
+      "average_rating": 4.18,
+      "watches": 59191.0,
+      "fans": 2300.0,
+      "director": "Masaaki Yuasa",
+      "directors": [
+        "Masaaki Yuasa"
+      ],
+      "director_source": "film_normalized",
+      "poster_status": "missing",
+      "poster_source": null,
+      "poster_match": null
+    },
+    {
+      "slot": "wild_card",
       "title": "The Cure",
       "year": 1995,
       "slug": "the-cure-1995",
       "letterboxd_url": "https://letterboxd.com/film/the-cure-1995",
-      "score": 0.79,
+      "score": 0.6129,
       "reason_codes": [
         "genre_match",
         "country_match",
         "runtime_match",
         "high_community_rating",
         "fans_watches_signal",
-        "deep_cut"
+        "wild_card_contrast"
       ],
-      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
+      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
       "genres": [
         "Drama",
         "Family"
@@ -1421,57 +1461,6 @@
         "confidence": 1.0,
         "year_delta": 0
       }
-    },
-    {
-      "slot": "wild_card",
-      "title": "Fireworks",
-      "year": 1997,
-      "slug": "fireworks-1997",
-      "letterboxd_url": "https://letterboxd.com/film/fireworks-1997",
-      "score": 0.6082,
-      "reason_codes": [
-        "genre_match",
-        "country_match",
-        "runtime_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "wild_card_contrast"
-      ],
-      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "countries": [
-        "Japan"
-      ],
-      "runtime": 103.0,
-      "average_rating": 4.19,
-      "watches": 78925.0,
-      "fans": 2600.0,
-      "director": "Takeshi Kitano",
-      "directors": [
-        "Takeshi Kitano"
-      ],
-      "director_source": "film_normalized",
-      "tmdb_id": 5910,
-      "poster_path": "/bWIo1nDJnSyGJvVt8bRw8PHBqo4.jpg",
-      "poster_url": "https://image.tmdb.org/t/p/w500/bWIo1nDJnSyGJvVt8bRw8PHBqo4.jpg",
-      "backdrop_path": "/mdQ6oH7GLM9VerAb8JhsEAyJnHs.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w780/mdQ6oH7GLM9VerAb8JhsEAyJnHs.jpg",
-      "poster_status": "verified",
-      "poster_source": "tmdb_search",
-      "poster_match": {
-        "tmdb_id": 5910,
-        "tmdb_title": "Fireworks",
-        "tmdb_original_title": "HANA-BI",
-        "tmdb_year": 1997,
-        "expected_title": "Fireworks",
-        "expected_year": 1997,
-        "confidence": 1.0,
-        "year_delta": 0
-      }
     }
   ],
   "recommendations_status": {
@@ -1498,17 +1487,17 @@
     {
       "id": "rating_personality",
       "title": "Sévère",
-      "value": "-0.56",
+      "value": "-0.58",
       "label": "",
-      "description": "Tu notes environ 0,56 étoile(s) en dessous de la moyenne Letterboxd.",
+      "description": "Tu notes environ 0,58 étoile(s) en dessous de la moyenne Letterboxd.",
       "confidence": "high",
-      "data_source": "27 films comparables avec moyenne Letterboxd",
+      "data_source": "25 films comparables avec moyenne Letterboxd",
       "confidence_label": "FIABLE"
     },
     {
       "id": "reviewness",
       "title": "Reviewer",
-      "value": "40/50",
+      "value": "37/50",
       "label": "",
       "description": "Tu commentes souvent tes films vus.",
       "confidence": "high",
@@ -1518,11 +1507,11 @@
     {
       "id": "runtime_profile",
       "title": "Durée moyenne",
-      "value": "1h51",
+      "value": "1h47",
       "label": "",
-      "description": "Les films que tu as vus durent en moyenne 1h51.",
+      "description": "Les films que tu as vus durent en moyenne 1h47.",
       "confidence": "high",
-      "data_source": "46 films avec durée confirmée",
+      "data_source": "45 films avec durée confirmée",
       "confidence_label": "FIABLE"
     },
     {
@@ -1542,9 +1531,9 @@
   },
   "synthesis_cards_audit": {
     "rating_gap_method": "paired_gap",
-    "paired_count": 27,
-    "runtime_included_count": 46,
-    "runtime_excluded_count": 4
+    "paired_count": 25,
+    "runtime_included_count": 45,
+    "runtime_excluded_count": 5
   },
   "highlights_copy": {
     "eyebrow": "HIGHLIGHTS",
@@ -1672,53 +1661,48 @@
       }
     },
     "shortest": {
-      "title": "Look Back",
-      "rss_title": "Look Back, 2024 - ★★★½",
-      "slug": "look-back-2024",
-      "url": "https://letterboxd.com/tanguytare/film/look-back-2024/",
+      "title": "Adgwa-Ata",
+      "rss_title": "Adgwa-Ata, 2026",
+      "slug": "adgwa-ata",
+      "url": "https://letterboxd.com/tanguytare/film/adgwa-ata/",
       "source": "supplemental",
-      "year": 2024,
-      "director": "Kiyotaka Oshiyama",
+      "year": 2026,
+      "director": "Zsuzsanna Kreif",
       "directors": [
-        "Kiyotaka Oshiyama"
+        "Zsuzsanna Kreif"
       ],
       "director_source": "tmdb_details_cache",
-      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/2/7/6/6/9/1127669-look-back-0-600-0-900-crop.jpg?v=6a67407577",
-      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/2/7/6/6/9/1127669-look-back-0-600-0-900-crop.jpg?v=6a67407577",
-      "tmdb_id": 1244492,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/2/3/0/5/8/1523058-adgwa-ata-0-600-0-900-crop.jpg?v=1240364f16",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/2/3/0/5/8/1523058-adgwa-ata-0-600-0-900-crop.jpg?v=1240364f16",
+      "tmdb_id": 1659077,
       "poster_path": null,
-      "poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/2/7/6/6/9/1127669-look-back-0-600-0-900-crop.jpg?v=6a67407577",
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/2/3/0/5/8/1523058-adgwa-ata-0-600-0-900-crop.jpg?v=1240364f16",
       "backdrop_path": null,
       "backdrop_url": null,
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
-        "letterboxd_slug": "look-back-2024",
-        "expected_title": "Look Back",
-        "expected_year": 2024,
+        "letterboxd_slug": "adgwa-ata",
+        "expected_title": "Adgwa-Ata",
+        "expected_year": 2026,
         "confidence": 1.0
       }
     },
     "most_repeated_director": {
-      "director": "Brian De Palma",
-      "count": 3,
-      "director_slug": "brian-de-palma",
-      "letterboxd_url": "https://letterboxd.com/director/brian-de-palma/",
+      "director": "Mamoru Oshii",
+      "count": 2,
+      "director_slug": "mamoru-oshii",
+      "letterboxd_url": "https://letterboxd.com/director/mamoru-oshii/",
       "films": [
         {
-          "title": "Carlito's Way",
-          "slug": "carlitos-way",
-          "year": 1993
+          "title": "Ghost in the Shell",
+          "slug": "ghost-in-the-shell",
+          "year": 1995
         },
         {
-          "title": "Blow Out",
-          "slug": "blow-out",
-          "year": 1981
-        },
-        {
-          "title": "Phantom of the Paradise",
-          "slug": "phantom-of-the-paradise",
-          "year": 1974
+          "title": "Angel's Egg",
+          "slug": "angels-egg",
+          "year": 1985
         }
       ]
     }
@@ -1726,15 +1710,17 @@
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
     "items_checked": 8,
-    "posters_verified": 8,
+    "posters_verified": 7,
     "posters_ambiguous": 0,
-    "posters_missing_count": 0,
+    "posters_missing_count": 1,
     "verified_by_source": {
-      "tmdb_search": 3,
+      "tmdb_search": 2,
       "letterboxd_rss": 5
     },
     "homonymy_rejections": [],
-    "posters_missing": [],
+    "posters_missing": [
+      "Mind Game"
+    ],
     "obsession_audit": null
   },
   "warnings": [

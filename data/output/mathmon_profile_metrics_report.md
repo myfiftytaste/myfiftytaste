@@ -38,7 +38,7 @@
 ## Radar scores
 
 - Mainstreamness: 4 / 5
-- Oldness: 2 / 5
+- Oldness: 4 / 5
 - Endurance: 2 / 5
 - Reviewness: 2 / 5
 - Reviewness label: Critique sélectif

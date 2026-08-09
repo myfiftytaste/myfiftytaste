@@ -33,7 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "data" / "output"
 CACHE_DIR = BASE_DIR / "data" / "cache"
 DISPLAY_CONFIG_JSON = BASE_DIR / "data" / "config" / "display_config.json"
-RADAR_ARCHETYPES_JSON = BASE_DIR / "data" / "config" / "radar_archetypes_20.json"
+RADAR_ARCHETYPES_JSON = BASE_DIR / "data" / "config" / "radar_archetypes.json"
 SUPPLEMENTAL_JSON = BASE_DIR / "data" / "processed" / "supplemental_metadata.json"
 TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p"
 
@@ -665,8 +665,8 @@ def load_radar_archetypes() -> tuple[dict[str, Any], list[str]]:
                 continue
             if not payload.get("title") or not payload.get("one_line"):
                 warnings.append(f"Incomplete radar archetype level: {axis_id}.{level}")
-    if total_levels != 20:
-        warnings.append(f"Expected 20 radar archetype levels, found {total_levels}.")
+    if total_levels != 15:
+        warnings.append(f"Expected 15 radar archetype levels, found {total_levels}.")
     return data, warnings
 
 

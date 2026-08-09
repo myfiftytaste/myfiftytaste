@@ -4,7 +4,7 @@
     "wrapped": "data\\output\\mathmon_wrapped.json",
     "profile_metrics": "data\\output\\mathmon_profile_metrics.json",
     "display_config": "data\\config\\display_config.json",
-    "radar_archetypes": "data\\config\\radar_archetypes_20.json"
+    "radar_archetypes": "data\\config\\radar_archetypes.json"
   },
   "hero": {
     "username": "mathmon",
@@ -41,7 +41,7 @@
       "confidence": "low"
     },
     "oldness": {
-      "value_5": 2,
+      "value_5": 4,
       "raw_value": 10.61999999999989,
       "average_year": 2015.38,
       "label": "Âge moyen",
@@ -87,19 +87,19 @@
         "axis_id": "oldness",
         "technical_axis_id": "oldness",
         "label": "Époque",
-        "title": "Éternel nostalgique",
-        "one_line": "Belmondo et Redford sont pour toi des petits jeunots, tu erres dans les limbes du XXe siècle comme Toto dans Cinema Paradiso.",
-        "cran": 2,
+        "title": "Aficionado d’avant-premières",
+        "one_line": "Tu renouvelles tes demandes d’accréditation à Cannes chaque année, aucun Dupieux ne reste au cinéma plus de 3 jours avant que tu ailles le voir.",
+        "cran": 4,
         "image": null,
         "image_src": null,
         "illustration": null
       },
       "endurance": {
-        "axis_id": "staminess",
+        "axis_id": "endurance",
         "technical_axis_id": "endurance",
         "label": "Durée",
-        "title": "TDAH contenu",
-        "one_line": "Les films qui te tiennent plus d’une heure et demie intéressé partent directement en 5 étoiles et tu as mis un an à envisager d'aller voir Le Parrain.",
+        "title": "Endurance",
+        "one_line": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
         "cran": 2,
         "image": null,
         "image_src": null,

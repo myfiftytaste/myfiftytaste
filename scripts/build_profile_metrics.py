@@ -677,12 +677,11 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         3 if mainstream_normalized <= 70 else
         4 if mainstream_normalized <= 90 else 5
     )
-    average_age_normalized = max(0, average_age or 0)
     oldness_value = (
-        1 if average_age_normalized <= 10 else
-        2 if average_age_normalized <= 22 else
-        3 if average_age_normalized <= 35 else
-        4 if average_age_normalized <= 50 else 5
+        1 if average_year is None or average_year < 1975 else
+        2 if average_year <= 1989 else
+        3 if average_year <= 2004 else
+        4 if average_year <= 2016 else 5
     )
     endurance_value = score_from_thresholds(
         int(round(runtime_average or 0)),

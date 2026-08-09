@@ -38,7 +38,7 @@
 ## Radar scores
 
 - Mainstreamness: 5 / 5
-- Oldness: 2 / 5
+- Oldness: 4 / 5
 - Endurance: 4 / 5
 - Reviewness: 3 / 5
 - Reviewness label: Carnet régulier

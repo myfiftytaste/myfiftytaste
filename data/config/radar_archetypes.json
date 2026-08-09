@@ -49,34 +49,6 @@
       }
     }
   },
-  "staminess": {
-    "public_axis_label": "Durée",
-    "technical_aliases": [
-      "endurance"
-    ],
-    "levels": {
-      "1": {
-        "title": "Supôt de TikTok & Netflix",
-        "one_line": "TikTok t’a eu toi et ta capacité de concentration… Une fois après 30 minutes de film tu as tenté de scroller vers le haut, je t’ai vu."
-      },
-      "2": {
-        "title": "TDAH contenu",
-        "one_line": "Les films qui te tiennent plus d’une heure et demie intéressé partent directement en 5 étoiles et tu as mis un an à envisager d'aller voir Le Parrain."
-      },
-      "3": {
-        "title": "Consommateur mesuré",
-        "one_line": "Tu es juste et parcimonieux, tu notes les films indépendamment de leur longueur… tu es un bot ?"
-      },
-      "4": {
-        "title": "Prof de cinéma",
-        "one_line": "Tu méprises les gens qui partent avant la fin du générique final, soit tu es en cavale, soit tu as beaucoup de temps à tuer."
-      },
-      "5": {
-        "title": "Zombie strapontinesque",
-        "one_line": "Une fois le gérant du cinéma a dû te sortir de force parce que tu ne voulais pas partir… Pour toi c’est mieux si un film est divisé en trois opus de 3h, tu n’as que Sátántangó dans tes films favoris."
-      }
-    }
-  },
   "reviewness": {
     "public_axis_label": "Trace écrite",
     "levels": {

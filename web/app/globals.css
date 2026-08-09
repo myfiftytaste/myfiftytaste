@@ -712,7 +712,7 @@ h1 {
 .radar-figure {
   width: 100%;
   max-width: 700px;
-  aspect-ratio: 1.44 / 1;
+  aspect-ratio: 1.656 / 1;
   display: grid;
   place-items: center;
   justify-self: center;
@@ -796,8 +796,8 @@ h1 {
   min-height: 0;
   align-self: stretch;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
@@ -1906,7 +1906,6 @@ a.highlightItem:hover {
 
   .cardsGrid,
   .highlightGrid,
-  .radar-score-list,
   .recommendations-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1917,6 +1916,7 @@ a.highlightItem:hover {
 
   .radar-score-list {
     height: auto;
+    grid-template-rows: none;
   }
 
   .radar-score-item {

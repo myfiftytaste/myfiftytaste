@@ -10,7 +10,6 @@ type RadarScore = {
 type RadarScores = {
   mainstreamness?: RadarScore;
   oldness?: RadarScore;
-  endurance?: RadarScore;
   reviewness?: RadarScore;
 };
 
@@ -59,12 +58,6 @@ const axes: RadarAxis[] = [
     svgSubtitle: "À quel point as-tu vu des films récents ?",
   },
   {
-    id: "endurance",
-    axisId: "staminess",
-    svgTitle: "staminess",
-    svgSubtitle: "À quel point as-tu aimé des films longs ?",
-  },
-  {
     id: "reviewness",
     axisId: "reviewness",
     svgTitle: "reviewness",
@@ -74,13 +67,13 @@ const axes: RadarAxis[] = [
 
 const radarBackCopy: Record<keyof RadarScores, RadarBackCopy> = {
   mainstreamness: {
-    intro: "Mesuré à partir de la popularité moyenne de tes films, selon leur volume de vues.",
+    intro: "Chaque film reçoit un score de popularité (0 à 100) sur une échelle logarithmique entre 1 000 vues (très niche) et 1 million de vues (très mainstream), puis on fait la moyenne sur tes films.",
     steps: [
-      "1/5 : moins de 25 k vues en moyenne",
-      "2/5 : de 25 k à 100 k",
-      "3/5 : de 100 k à 300 k",
-      "4/5 : de 300 k à 900 k",
-      "5/5 : plus de 900 k",
+      "1/5 : score moyen de 0 à 25/100",
+      "2/5 : score moyen de 26 à 50/100",
+      "3/5 : score moyen de 51 à 70/100",
+      "4/5 : score moyen de 71 à 90/100",
+      "5/5 : score moyen de 91 à 100/100",
     ],
   },
   oldness: {
@@ -93,30 +86,20 @@ const radarBackCopy: Record<keyof RadarScores, RadarBackCopy> = {
       "5/5 : moyenne à partir de 2017",
     ],
   },
-  endurance: {
-    intro: "Mesuré à partir de la durée moyenne des films que tu as le mieux notés.",
-    steps: [
-      "1/5 : moins de 95 min",
-      "2/5 : de 95 à 104 min",
-      "3/5 : de 105 à 114 min",
-      "4/5 : de 115 à 124 min",
-      "5/5 : 125 min et plus",
-    ],
-  },
   reviewness: {
     intro: "Mesuré à partir du nombre de films accompagnés d’une review parmi tes 50 derniers logs.",
     steps: [
-      "1/5 : 0 à 11 reviews",
-      "2/5 : 12 à 22 reviews",
-      "3/5 : 23 à 32 reviews",
-      "4/5 : 33 à 42 reviews",
+      "1/5 : 0 à 8 reviews",
+      "2/5 : 9 à 17 reviews",
+      "3/5 : 18 à 29 reviews",
+      "4/5 : 30 à 42 reviews",
       "5/5 : 43 à 50 reviews",
     ],
   },
 };
 
 const radarSectionTitle = "Qui es-tu vraiment ?";
-const radarSectionSubtitle = "Quatre axes, quatre archétypes : voyons ton rapport récent aux films.";
+const radarSectionSubtitle = "Trois axes, trois archétypes : voyons ton rapport récent aux films.";
 
 const center = 260;
 const radius = 150;
@@ -219,7 +202,7 @@ export default function RadarChart({
 
       <div className="radar-card">
         <div className="radar-figure">
-          <svg viewBox="-125 -28 770 578" role="img" width="620" height="430">
+          <svg viewBox="-125 -28 770 465" role="img" width="620" height="346">
             {[1, 2, 3, 4, 5].map((step) => (
               <polygon
                 className="radar-grid"

@@ -4,7 +4,7 @@
     "wrapped": "data\\output\\tanguytare_wrapped.json",
     "profile_metrics": "data\\output\\tanguytare_profile_metrics.json",
     "display_config": "data\\config\\display_config.json",
-    "radar_archetypes": "data\\config\\radar_archetypes_20.json"
+    "radar_archetypes": "data\\config\\radar_archetypes.json"
   },
   "hero": {
     "username": "tanguytare",
@@ -95,11 +95,11 @@
         "illustration": null
       },
       "endurance": {
-        "axis_id": "staminess",
+        "axis_id": "endurance",
         "technical_axis_id": "endurance",
         "label": "Durée",
-        "title": "Consommateur mesuré",
-        "one_line": "Tu es juste et parcimonieux, tu notes les films indépendamment de leur longueur… tu es un bot ?",
+        "title": "Endurance",
+        "one_line": "Tendance dérivée de la durée moyenne de tes films avec métadonnées confirmées.",
         "cran": 3,
         "image": null,
         "image_src": null,
