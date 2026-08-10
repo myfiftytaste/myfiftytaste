@@ -4,9 +4,10 @@ import Image from "next/image";
 /* eslint-disable @next/next/no-img-element */
 import AverageRatingCard from "./AverageRatingCard";
 import GenreBubbles from "./GenreBubbles";
-import LogTimeArc from "./LogTimeArc";
+import LogTimeMini from "./LogTimeMini";
 import RadarChart from "./RadarChart";
 import Recommendations from "./Recommendations";
+import RuntimeFilmstrip from "./RuntimeFilmstrip";
 import SeverityGauge from "./SeverityGauge";
 import WorldMap from "./WorldMap";
 import { useVisualTheme } from "./VisualThemeProvider";
@@ -132,7 +133,7 @@ export type DisplayProfile = {
   radar_scores?: {
     mainstreamness?: { value_5?: number; label?: string };
     oldness?: { value_5?: number; label?: string };
-    endurance?: { value_5?: number; label?: string };
+    endurance?: { value_5?: number; label?: string; raw_value?: number | null };
     reviewness?: { value_5?: number; label?: string };
   };
   radar_editorial?: {
@@ -300,7 +301,8 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
   const averageRatingScale = profile.average_rating_summary?.scale;
   const letterboxdProfileUrl = `https://letterboxd.com/${hero.username}/`;
   const ratingCard = cards.find((card) => card.id === "rating_personality") ?? null;
-  const remainingCards = cards.filter((card) => card.id !== "rating_personality");
+  const runtimeCard = cards.find((card) => card.id === "runtime_profile") ?? null;
+  const averageRuntimeMinutes = radar_scores?.endurance?.raw_value;
 
   return (
     <main className="pageShell">
@@ -361,8 +363,6 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
 
       <RadarChart radarScores={radar_scores} radarEditorial={radar_editorial} />
 
-      <LogTimeArc logTimeProfile={log_time_profile} />
-
       <GenreBubbles genreBubbles={genre_bubbles} detectedFilmsCount={detectedFilmsCount} />
 
       <WorldMap countryMap={country_map} />
@@ -399,16 +399,8 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
           <h2>{cards_section?.title ?? "At a glance…"}</h2>
         </div>
         <div className="cardsGrid">
-          {remainingCards.map((card) => (
-            <article className="metricCard" key={card.id}>
-              <div className="cardTopline">
-                <h3>{card.title}</h3>
-              </div>
-              <p className="cardValue">{card.value ?? "n/a"}</p>
-              <p className="cardDescription">{card.description}</p>
-              <p className="dataSource">{card.data_source}</p>
-            </article>
-          ))}
+          <LogTimeMini logTimeProfile={log_time_profile} />
+          <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} />
         </div>
       </section>
 

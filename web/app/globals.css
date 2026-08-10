@@ -88,7 +88,6 @@ body {
 .profileUnavailableShell,
 .heroTopWithTheme,
 .radar-card,
-.log-time-card,
 .genre-bubbles-card,
 .world-map-card {
   min-width: 0;
@@ -932,189 +931,6 @@ h1 {
   line-height: 1.35;
 }
 
-.log-time-section {
-  padding: 42px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.log-time-section .sectionHeading {
-  max-width: 1040px;
-}
-
-.log-time-section .sectionHeading h2 {
-  max-width: 1000px;
-}
-
-.log-time-section .sectionHeading p:last-child {
-  max-width: 720px;
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.65;
-}
-
-.log-time-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
-  align-items: center;
-  gap: 24px;
-  margin-top: 26px;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(247, 238, 220, 0.055);
-}
-
-.log-time-visual {
-  min-height: 315px;
-  display: grid;
-  place-items: center;
-  border-radius: 6px;
-  background:
-    radial-gradient(circle at 50% 72%, rgba(217, 164, 65, 0.12), transparent 46%),
-    rgba(16, 16, 14, 0.34);
-}
-
-.log-time-visual svg {
-  width: min(100%, 620px);
-  height: auto;
-  display: block;
-  overflow: visible;
-}
-
-.log-time-track {
-  fill: none;
-  stroke: rgba(247, 238, 220, 0.13);
-  stroke-linecap: round;
-  stroke-width: 10;
-}
-
-.log-time-glow {
-  fill: none;
-  stroke: rgba(217, 164, 65, 0.7);
-  stroke-linecap: round;
-  stroke-width: 5;
-  filter: drop-shadow(0 0 10px rgba(217, 164, 65, 0.2));
-}
-
-.log-time-tick {
-  fill: var(--bg);
-  stroke: rgba(217, 164, 65, 0.68);
-  stroke-width: 2;
-}
-
-.log-time-tick-label {
-  fill: var(--paper);
-  font-size: 0.72rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.log-time-tick-detail {
-  fill: var(--muted);
-  font-size: 0.68rem;
-  font-weight: 700;
-}
-
-.log-time-sun circle {
-  fill: rgba(217, 164, 65, 0.1);
-  stroke: rgba(217, 164, 65, 0.74);
-  stroke-width: 2;
-}
-
-.log-time-sun line {
-  stroke: rgba(247, 238, 220, 0.58);
-  stroke-linecap: round;
-  stroke-width: 1.6;
-}
-
-.log-time-moon {
-  fill: rgba(247, 238, 220, 0.1);
-  stroke: rgba(247, 238, 220, 0.62);
-  stroke-linejoin: round;
-  stroke-width: 2;
-}
-
-.log-time-center {
-  fill: rgba(242, 230, 207, 0.9);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.55rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  filter: drop-shadow(0 0 12px rgba(217, 164, 65, 0.16));
-}
-
-.log-time-marker {
-  animation: marker-rise 520ms ease-out both;
-}
-
-.log-time-marker circle:first-child {
-  fill: rgba(217, 164, 65, 0.2);
-  stroke: var(--accent);
-  stroke-width: 2;
-  filter: drop-shadow(0 0 14px rgba(217, 164, 65, 0.35));
-}
-
-.log-time-marker circle:last-child {
-  fill: var(--paper);
-}
-
-.log-time-copy {
-  display: grid;
-  gap: 16px;
-  align-content: center;
-}
-
-.log-time-average {
-  margin: 0;
-  color: var(--accent);
-  font-size: 0.84rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.log-time-copy strong {
-  color: var(--paper);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4vw, 3.45rem);
-  font-weight: 500;
-  line-height: 0.98;
-}
-
-.log-time-copy p:not(.log-time-average) {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.55;
-}
-
-.log-time-copy small,
-.log-time-unavailable {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.log-time-unavailable {
-  margin-top: 26px;
-  padding: 18px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(247, 238, 220, 0.035);
-}
-
-@keyframes marker-rise {
-  from {
-    opacity: 0;
-    transform: translateY(12px) scale(0.92);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
 .genre-bubbles-section {
   padding: 42px 0;
   border-bottom: 1px solid var(--line);
@@ -1757,6 +1573,144 @@ a.recommendation-card:hover {
   border-top: 1px solid var(--line);
 }
 
+/* Compact "En bref" log-time card: replaces the old full-width LogTimeArc
+   section. Same arc geometry, shrunk, with a single sun/moon icon centered in
+   the hollow (day 6:30–18:30 = sun, night = moon) instead of two static
+   bookend icons, and a scroll-triggered reveal (marker slides in once). */
+.logTimeMiniRow {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex: 1;
+}
+
+.logTimeMiniArc {
+  flex: 0 0 auto;
+  width: 40%;
+  max-width: 148px;
+}
+
+.logTimeMiniArc svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.logTimeMiniBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.logTimeMiniValue {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  line-height: 0.95;
+}
+
+.logTimeMiniLabel {
+  margin: 0 0 8px;
+  color: var(--paper);
+  font-weight: 600;
+}
+
+.logTimeMiniDesc {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.arcTrack {
+  fill: none;
+  stroke: rgba(247, 238, 220, 0.14);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.arcGlow {
+  fill: none;
+  stroke: #e2b24a;
+  stroke-width: 5;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 5px rgba(217, 164, 65, 0.35));
+}
+
+.arcMarkerOuter {
+  fill: rgba(16, 16, 14, 1);
+  stroke: #e2b24a;
+  stroke-width: 2.5;
+}
+
+.arcMarkerInner {
+  fill: #e2b24a;
+}
+
+.sunIcon circle {
+  fill: #e2b24a;
+}
+
+.sunIcon line {
+  stroke: #e2b24a;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+}
+
+.moonIcon {
+  fill: rgba(242, 230, 207, 0.5);
+}
+
+/* Runtime filmstrip card (option B — one continuous wavy ribbon) */
+.filmstripValue {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.9rem;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.filmstripVisual {
+  width: 100%;
+}
+
+.filmstripVisual svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.filmstripEnds {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 0.68rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+
+.ribbonBase {
+  fill: #17130f;
+  stroke: rgba(242, 230, 207, 0.1);
+  stroke-width: 1;
+}
+
+.ribbonFill {
+  fill: url(#runtimeRibbonGoldGrad);
+}
+
+.ribbonHole {
+  fill: rgba(242, 230, 207, 0.55);
+}
+
+.ribbonTick {
+  stroke: rgba(242, 230, 207, 0.12);
+  stroke-width: 1;
+}
+
 .highlightsSection {
   padding: 42px 0;
   border-top: 1px solid var(--line);
@@ -1923,10 +1877,6 @@ a.highlightItem:hover {
     min-height: 190px;
   }
 
-  .log-time-card {
-    grid-template-columns: 1fr;
-  }
-
   .genre-bubbles-card {
     grid-template-columns: 1fr;
     width: min(100%, 620px);
@@ -2016,10 +1966,6 @@ a.highlightItem:hover {
     padding: 32px 0;
   }
 
-  .log-time-section {
-    padding: 32px 0;
-  }
-
   .recommendations-section {
     padding: 32px 0;
   }
@@ -2060,22 +2006,6 @@ a.highlightItem:hover {
 
   .world-map-card {
     padding: 16px;
-  }
-
-  .log-time-card {
-    padding: 16px;
-  }
-
-  .log-time-visual {
-    min-height: 230px;
-  }
-
-  .log-time-tick-label {
-    font-size: 0.68rem;
-  }
-
-  .log-time-tick-detail {
-    font-size: 0.64rem;
   }
 
   .world-map-panel {
