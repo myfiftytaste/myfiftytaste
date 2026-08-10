@@ -410,7 +410,7 @@ h1 {
 .heroPanel {
   display: grid;
   gap: 18px;
-  padding: 22px;
+  padding: 28px 26px;
   border: 1px solid var(--theme-border-tint);
   border-radius: 8px;
   background: linear-gradient(180deg, rgba(16, 16, 14, 0.72), rgba(16, 16, 14, 0.9));
@@ -513,6 +513,42 @@ h1 {
   line-height: 1.15;
 }
 
+.heroCoverageLine {
+  position: relative;
+  margin: 0;
+  padding: 0 2px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  cursor: help;
+  width: fit-content;
+}
+
+.heroCoverageTooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 2px;
+  padding: 7px 12px;
+  border: 1px solid var(--theme-border-tint);
+  border-radius: 6px;
+  background: rgba(12, 12, 11, 0.96);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  color: var(--paper);
+  font-size: 0.76rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.heroCoverageLine:hover .heroCoverageTooltip,
+.heroCoverageLine:focus-visible .heroCoverageTooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .heroWelcomePlain a {
   color: var(--ink);
   text-decoration: none;
@@ -534,32 +570,20 @@ h1 {
 
 .severityEyebrow {
   margin: 0;
-  color: var(--muted);
-  font-size: 0.78rem;
+  color: var(--theme-accent);
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
-.severityHead {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-}
-
 .severityValue {
+  display: block;
   color: var(--paper);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.9rem, 3vw, 2.3rem);
   font-weight: 500;
   line-height: 1;
-}
-
-.severityLabel {
-  color: var(--theme-accent);
-  font-size: 0.95rem;
-  font-weight: 600;
 }
 
 .severityDesc {
@@ -617,36 +641,6 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-}
-
-.coverageRows {
-  display: flex;
-  gap: 14px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-}
-
-.coverageRows > div {
-  display: flex;
-  flex: 1;
-  min-width: 0;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.coverageRows span {
-  color: var(--muted);
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
-.coverageRows strong {
-  color: var(--paper);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.15rem;
-  font-weight: 500;
 }
 
 .sampleWarning {
@@ -2068,11 +2062,5 @@ a.highlightItem:hover {
 
   .highlightPoster {
     min-height: 130px;
-  }
-
-  .coverageRows div {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
   }
 }

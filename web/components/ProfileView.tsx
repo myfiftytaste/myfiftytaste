@@ -333,24 +333,15 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
               @{hero.username}
             </a>
           </p>
+          <p className="heroCoverageLine" tabIndex={0}>
+            {detectedFilmsCount}/{targetFilmsCount} films analysés, {formatPercent(hero.metadata_coverage)}{" "}
+            couverts par l&apos;algorithme &quot;Fifty&quot;
+            <span className="heroCoverageTooltip" role="tooltip">
+              Fiabilité&nbsp;: {ratingCard?.confidence_label ?? "—"}
+            </span>
+          </p>
           <aside className="heroPanel" aria-label="Profile coverage">
             <SeverityGauge card={ratingCard} />
-            <div className="coverageRows">
-              <div>
-                <span>Films analysés</span>
-                <strong>
-                  {detectedFilmsCount}/{targetFilmsCount}
-                </strong>
-              </div>
-              <div>
-                <span>Couverture algorithme</span>
-                <strong>{formatPercent(hero.metadata_coverage)}</strong>
-              </div>
-              <div>
-                <span>Fiabilité</span>
-                <strong>{ratingCard?.confidence_label ?? "—"}</strong>
-              </div>
-            </div>
           </aside>
         </div>
       </section>
