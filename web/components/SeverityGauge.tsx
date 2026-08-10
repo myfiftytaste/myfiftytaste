@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Card } from "./ProfileView";
 
 const MAX_ABS_GAP = 1.5;
@@ -25,36 +25,49 @@ export default function SeverityGauge({ card }: { card?: Card | null }) {
   const hasValue = Number.isFinite(rawValue);
   const targetPosition = hasValue ? gaugePosition(rawValue) : 50;
   const [markerPosition, setMarkerPosition] = useState(50);
+  const cardRef = useRef<HTMLDivElement>(null);
 
+  // Replays every time the gauge re-enters view (not just once on mount), so
+  // scrolling away and back shows the marker slide in again.
   useEffect(() => {
     if (!hasValue) return;
+    const node = cardRef.current;
+    if (!node) return;
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setMarkerPosition(targetPosition);
       return;
     }
 
-    const duration = 1000;
-    const delay = 150;
     let rafId = 0;
-    const timeoutId = window.setTimeout(() => {
-      const startTime = performance.now();
-      function tick(now: number) {
-        const t = Math.min(1, (now - startTime) / duration);
-        setMarkerPosition(50 + (targetPosition - 50) * easeOutCubic(t));
-        if (t < 1) rafId = requestAnimationFrame(tick);
-      }
-      rafId = requestAnimationFrame(tick);
-    }, delay);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          cancelAnimationFrame(rafId);
+          setMarkerPosition(50);
+          const duration = 1000;
+          const startTime = performance.now();
+          function tick(now: number) {
+            const t = Math.max(0, Math.min(1, (now - startTime) / duration));
+            setMarkerPosition(50 + (targetPosition - 50) * easeOutCubic(t));
+            if (t < 1) rafId = requestAnimationFrame(tick);
+          }
+          rafId = requestAnimationFrame(tick);
+        });
+      },
+      { threshold: 0.4 },
+    );
+    observer.observe(node);
 
     return () => {
-      window.clearTimeout(timeoutId);
+      observer.disconnect();
       cancelAnimationFrame(rafId);
     };
   }, [hasValue, targetPosition]);
 
   return (
-    <div className="severityCard" aria-label="Sévérité de notation">
+    <div className="severityCard" aria-label="Sévérité de notation" ref={cardRef}>
       {hasValue ? (
         <>
           <p className="severityEyebrow">{card?.title}</p>

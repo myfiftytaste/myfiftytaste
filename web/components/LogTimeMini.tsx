@@ -54,7 +54,6 @@ export default function LogTimeMini({ logTimeProfile }: { logTimeProfile?: LogTi
   const markerOuterRef = useRef<SVGCircleElement>(null);
   const markerInnerRef = useRef<SVGCircleElement>(null);
   const glowRef = useRef<SVGPathElement>(null);
-  const hasPlayedRef = useRef(false);
 
   const hourDecimal = logTimeProfile?.average_hour_decimal;
   const hasData =
@@ -81,25 +80,32 @@ export default function LogTimeMini({ logTimeProfile }: { logTimeProfile?: LogTi
     }
 
     setFraction(0);
+    let rafId = 0;
+    // Replays every time the card re-enters view, not just once: scrolling
+    // away and back should show the reveal again.
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (!entry.isIntersecting || hasPlayedRef.current) return;
-          hasPlayedRef.current = true;
+          if (!entry.isIntersecting) return;
+          cancelAnimationFrame(rafId);
+          setFraction(0);
           const duration = 1200;
           const startTime = performance.now();
           function tick(now: number) {
-            const t = Math.min(1, (now - startTime) / duration);
+            const t = Math.max(0, Math.min(1, (now - startTime) / duration));
             setFraction(easeOutCubic(t) * targetFraction);
-            if (t < 1) requestAnimationFrame(tick);
+            if (t < 1) rafId = requestAnimationFrame(tick);
           }
-          requestAnimationFrame(tick);
+          rafId = requestAnimationFrame(tick);
         });
       },
       { threshold: 0.4 },
     );
     observer.observe(node);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(rafId);
+    };
   }, [hasData, targetFraction]);
 
   if (!hasData) {

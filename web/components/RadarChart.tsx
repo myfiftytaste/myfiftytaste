@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type RadarScore = {
   value_5?: number;
@@ -148,6 +148,10 @@ function polygonPoints(value: number) {
     .join(" ");
 }
 
+function easeOutCubic(t: number) {
+  return 1 - Math.pow(1 - t, 3);
+}
+
 function labelPoint(index: number) {
   const angle = -Math.PI / 2 + (index * Math.PI * 2) / axes.length;
   const distance = radius + 76;
@@ -165,6 +169,8 @@ export default function RadarChart({
   radarEditorial?: RadarEditorial;
 }) {
   const [flippedCards, setFlippedCards] = useState<Partial<Record<keyof RadarScores, boolean>>>({});
+  const [progress, setProgress] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
   const values = axes.map((axis) => clampScore(radarScores?.[axis.id]?.value_5));
   const hasAllScores = values.every((value) => value !== null);
 
@@ -174,6 +180,45 @@ export default function RadarChart({
       [axisId]: !current[axisId],
     }));
   }
+
+  // Points slide out from the center each time the chart enters view — not just
+  // once: scrolling away and back replays it, so a visitor scrolling back up
+  // sees it again.
+  useEffect(() => {
+    if (!hasAllScores) return;
+    const node = sectionRef.current;
+    if (!node) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setProgress(1);
+      return;
+    }
+
+    let rafId = 0;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          cancelAnimationFrame(rafId);
+          setProgress(0);
+          const duration = 1000;
+          const startTime = performance.now();
+          function tick(now: number) {
+            const t = Math.max(0, Math.min(1, (now - startTime) / duration));
+            setProgress(easeOutCubic(t));
+            if (t < 1) rafId = requestAnimationFrame(tick);
+          }
+          rafId = requestAnimationFrame(tick);
+        });
+      },
+      { threshold: 0.35 },
+    );
+    observer.observe(node);
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(rafId);
+    };
+  }, [hasAllScores]);
 
   if (!hasAllScores) {
     return (
@@ -187,13 +232,14 @@ export default function RadarChart({
     );
   }
 
-  const shapePoints = values
-    .map((value, index) => pointFor(index, value ?? 0))
+  const animatedValues = values.map((value) => (value ?? 0) * progress);
+  const shapePoints = animatedValues
+    .map((value, index) => pointFor(index, value))
     .map((point) => `${point.x},${point.y}`)
     .join(" ");
 
   return (
-    <section className="radar-section" aria-label="Profil radar">
+    <section className="radar-section" aria-label="Profil radar" ref={sectionRef}>
       <div className="sectionHeading">
         <p className="eyebrow">PROFIL RADAR</p>
         <h2>{radarSectionTitle}</h2>
@@ -236,7 +282,7 @@ export default function RadarChart({
               strokeWidth="2"
             />
             {values.map((value, index) => {
-              const point = pointFor(index, value ?? 0);
+              const point = pointFor(index, animatedValues[index]);
               const axis = axes[index];
               const editorial =
                 radarEditorial?.axes?.[axis.id] ||

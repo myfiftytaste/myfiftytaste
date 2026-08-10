@@ -25,37 +25,50 @@ export default function AverageRatingCard({
 }) {
   const clipId = useId();
   const clipRectRef = useRef<SVGRectElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const ratingScale = typeof scale === "number" && Number.isFinite(scale) && scale > 0 ? scale : 5;
   const clampedAverage =
     typeof average === "number" && Number.isFinite(average) ? Math.max(0, Math.min(ratingScale, average)) : 0;
   const fillPercent = (clampedAverage / ratingScale) * 100;
 
+  // Replays every time the star re-enters view (not just once on mount), so
+  // scrolling away and back shows the fill animate in again.
   useEffect(() => {
     if (typeof average !== "number" || !Number.isFinite(average)) return;
+    const node = sectionRef.current;
     const rect = clipRectRef.current;
-    if (!rect) return;
+    if (!node || !rect) return;
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       rect.setAttribute("width", String(fillPercent));
       return;
     }
 
-    const duration = 1100;
-    const delay = 150;
+    rect.setAttribute("width", "0");
     let rafId = 0;
-    const timeoutId = window.setTimeout(() => {
-      const startTime = performance.now();
-      function tick(now: number) {
-        const t = Math.min(1, (now - startTime) / duration);
-        rect?.setAttribute("width", String(easeOutCubic(t) * fillPercent));
-        if (t < 1) rafId = requestAnimationFrame(tick);
-      }
-      rafId = requestAnimationFrame(tick);
-    }, delay);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          cancelAnimationFrame(rafId);
+          rect.setAttribute("width", "0");
+          const duration = 1100;
+          const startTime = performance.now();
+          function tick(now: number) {
+            const t = Math.max(0, Math.min(1, (now - startTime) / duration));
+            rect?.setAttribute("width", String(easeOutCubic(t) * fillPercent));
+            if (t < 1) rafId = requestAnimationFrame(tick);
+          }
+          rafId = requestAnimationFrame(tick);
+        });
+      },
+      { threshold: 0.4 },
+    );
+    observer.observe(node);
 
     return () => {
-      window.clearTimeout(timeoutId);
+      observer.disconnect();
       cancelAnimationFrame(rafId);
     };
   }, [average, fillPercent]);
@@ -80,7 +93,7 @@ export default function AverageRatingCard({
       : "50 derniers films vus";
 
   return (
-    <section className="averageRatingCard" aria-label="Note moyenne">
+    <section className="averageRatingCard" aria-label="Note moyenne" ref={sectionRef}>
       <svg className="averageStarSvg" viewBox="0 0 100 100" aria-hidden="true">
         <defs>
           <clipPath id={clipId}>
