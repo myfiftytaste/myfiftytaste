@@ -46,7 +46,7 @@ export default function SeverityGauge({ card }: { card?: Card | null }) {
           if (!entry.isIntersecting) return;
           cancelAnimationFrame(rafId);
           setMarkerPosition(50);
-          const duration = 1000;
+          const duration = 1500;
           const startTime = performance.now();
           function tick(now: number) {
             const t = Math.max(0, Math.min(1, (now - startTime) / duration));

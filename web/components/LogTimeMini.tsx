@@ -89,7 +89,7 @@ export default function LogTimeMini({ logTimeProfile }: { logTimeProfile?: LogTi
           if (!entry.isIntersecting) return;
           cancelAnimationFrame(rafId);
           setFraction(0);
-          const duration = 1200;
+          const duration = 1600;
           const startTime = performance.now();
           function tick(now: number) {
             const t = Math.max(0, Math.min(1, (now - startTime) / duration));

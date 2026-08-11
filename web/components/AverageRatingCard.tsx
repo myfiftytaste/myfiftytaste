@@ -53,7 +53,7 @@ export default function AverageRatingCard({
           if (!entry.isIntersecting) return;
           cancelAnimationFrame(rafId);
           rect.setAttribute("width", "0");
-          const duration = 1100;
+          const duration = 1500;
           const startTime = performance.now();
           function tick(now: number) {
             const t = Math.max(0, Math.min(1, (now - startTime) / duration));

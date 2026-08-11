@@ -201,7 +201,7 @@ export default function HighlightsCarousel({
               const depth = Math.cos(rad);
               const isActive = index === activeIndex;
               const opacity = Math.max(0, Math.min(1, (depth + 0.35) / 1.35));
-              const scale = 0.72 + 0.28 * Math.max(0, depth);
+              const scale = 0.68 + 0.22 * Math.max(0, depth);
               const cardContent = (
                 <CardFace
                   label={slide.label}

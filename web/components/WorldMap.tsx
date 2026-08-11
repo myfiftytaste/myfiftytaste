@@ -214,8 +214,8 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
           if (!entry.isIntersecting) return;
           cancelAnimationFrame(rafId);
           setWidths(0);
-          const duration = 900;
-          const stagger = 70;
+          const duration = 1200;
+          const stagger = 90;
           const startTime = performance.now();
           function tick(now: number) {
             let stillRunning = false;
