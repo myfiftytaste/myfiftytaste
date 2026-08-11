@@ -2,7 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import { useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
+import { useMemo, useState } from "react";
 
 type FilmHighlight = {
   title: string | null;
@@ -95,6 +95,14 @@ function CardFace({
   );
 }
 
+// Shortest signed offset (in slide units) from the current active slide to a
+// given absolute index, e.g. with 7 slides, index 6 seen from active 0 is -1
+// (one step back) rather than +6 (six steps forward around the ring).
+function shortestOffset(fromIndex: number, toIndex: number, count: number): number {
+  const raw = toIndex - fromIndex;
+  return ((raw + count / 2 + count) % count) - count / 2;
+}
+
 export default function HighlightsCarousel({
   highlights,
   copy,
@@ -102,9 +110,10 @@ export default function HighlightsCarousel({
   highlights: Highlights;
   copy?: HighlightsCopy;
 }) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const stageRef = useRef<HTMLDivElement>(null);
-  const dragState = useRef({ isDown: false, startX: 0, startY: 0, moved: false, pointerId: 0 });
+  // `step` is an unbounded counter (never wrapped) so the ring always keeps
+  // spinning the same direction on repeated clicks instead of occasionally
+  // snapping backwards when the active index wraps from last to first.
+  const [step, setStep] = useState(0);
 
   const labels = copy?.labels ?? {};
 
@@ -160,50 +169,14 @@ export default function HighlightsCarousel({
 
   const count = slides.length;
   const segmentAngle = 360 / count;
+  const activeIndex = ((step % count) + count) % count;
 
-  function goTo(index: number) {
-    setActiveIndex(((index % count) + count) % count);
+  function goByOffset(offset: number) {
+    setStep((current) => current + offset);
   }
 
-  function onPointerDown(event: ReactPointerEvent<HTMLDivElement>) {
-    const stage = stageRef.current;
-    if (!stage) return;
-    dragState.current = {
-      isDown: true,
-      startX: event.clientX,
-      startY: event.clientY,
-      moved: false,
-      pointerId: event.pointerId,
-    };
-    stage.setPointerCapture(event.pointerId);
-  }
-
-  function onPointerMove(event: ReactPointerEvent<HTMLDivElement>) {
-    const state = dragState.current;
-    if (!state.isDown) return;
-    const deltaX = event.clientX - state.startX;
-    const deltaY = event.clientY - state.startY;
-    if (Math.abs(deltaX) > 6 && Math.abs(deltaX) > Math.abs(deltaY)) {
-      state.moved = true;
-    }
-  }
-
-  function onPointerUp(event: ReactPointerEvent<HTMLDivElement>) {
-    const stage = stageRef.current;
-    const state = dragState.current;
-    if (!state.isDown) return;
-    if (stage) {
-      try {
-        stage.releasePointerCapture(state.pointerId);
-      } catch {
-        // pointer already released
-      }
-    }
-    const deltaX = event.clientX - state.startX;
-    if (state.moved && Math.abs(deltaX) > 40) {
-      goTo(activeIndex + (deltaX < 0 ? 1 : -1));
-    }
-    dragState.current.isDown = false;
+  function goToIndex(index: number) {
+    goByOffset(shortestOffset(activeIndex, index, count));
   }
 
   return (
@@ -213,31 +186,17 @@ export default function HighlightsCarousel({
           type="button"
           className="highlightsArrow highlights3dArrowPrev"
           aria-label="Précédent"
-          onClick={() => goTo(activeIndex - 1)}
+          onClick={() => goByOffset(-1)}
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M14.5 5l-7 7 7 7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
 
-        <div
-          className="highlights3dViewport"
-          ref={stageRef}
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={onPointerUp}
-          onPointerLeave={onPointerUp}
-        >
-          <div
-            className="highlights3dRing"
-            style={{ transform: `rotateY(${-activeIndex * segmentAngle}deg)` }}
-          >
+        <div className="highlights3dViewport">
+          <div className="highlights3dRing" style={{ transform: `rotateY(${-step * segmentAngle}deg)` }}>
             {slides.map((slide, index) => {
-              const relative = (() => {
-                const raw = index - activeIndex;
-                const wrapped = ((raw + count / 2 + count) % count) - count / 2;
-                return wrapped;
-              })();
+              const relative = shortestOffset(activeIndex, index, count);
               const rad = (relative * segmentAngle * Math.PI) / 180;
               const depth = Math.cos(rad);
               const isActive = index === activeIndex;
@@ -265,15 +224,10 @@ export default function HighlightsCarousel({
                     pointerEvents: opacity < 0.15 ? "none" : "auto",
                   }}
                   onClickCapture={(event) => {
-                    if (dragState.current.moved) {
-                      event.preventDefault();
-                      event.stopPropagation();
-                      return;
-                    }
                     if (!isActive) {
                       event.preventDefault();
                       event.stopPropagation();
-                      goTo(index);
+                      goToIndex(index);
                     }
                   }}
                 >
@@ -301,7 +255,7 @@ export default function HighlightsCarousel({
           type="button"
           className="highlightsArrow highlights3dArrowNext"
           aria-label="Suivant"
-          onClick={() => goTo(activeIndex + 1)}
+          onClick={() => goByOffset(1)}
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M9.5 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -316,7 +270,7 @@ export default function HighlightsCarousel({
             type="button"
             className={`highlights3dDot${index === activeIndex ? " isActive" : ""}`}
             aria-label={slide.label}
-            onClick={() => goTo(index)}
+            onClick={() => goToIndex(index)}
           />
         ))}
       </div>

@@ -1930,12 +1930,6 @@ a.recommendation-card:hover {
   height: clamp(300px, 38vw, 420px);
   perspective: 1400px;
   perspective-origin: 50% 42%;
-  touch-action: pan-y;
-  cursor: grab;
-}
-
-.highlights3dViewport:active {
-  cursor: grabbing;
 }
 
 .highlights3dRing {
@@ -2009,9 +2003,10 @@ a.recommendation-card:hover {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 16px 14px 14px;
-  background: linear-gradient(to top, rgba(8, 8, 7, 0.92) 10%, rgba(8, 8, 7, 0.55) 55%, transparent 100%);
+  gap: 4px;
+  padding: 10px 12px;
+  background: rgba(8, 8, 7, 0.94);
+  border-top: 1px solid rgba(217, 164, 65, 0.25);
 }
 
 .highlight3dLabel {
