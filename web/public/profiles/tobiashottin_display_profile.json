@@ -1235,119 +1235,162 @@
   "recommendations": [
     {
       "slot": "safe_pick",
-      "title": "The Long Goodbye",
-      "year": null,
-      "slug": "the-long-goodbye",
-      "letterboxd_url": "https://letterboxd.com/film/the-long-goodbye",
-      "score": 0.8352,
+      "title": "Elsa & Fred",
+      "year": 2014,
+      "slug": "tmdb-268171-2014",
+      "letterboxd_url": "https://letterboxd.com/search/films/Elsa%20%26%20Fred%202014/",
+      "score": 0.3767,
       "reason_codes": [
         "genre_match",
         "country_match",
         "runtime_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal"
+        "low_popularity_gem"
       ],
-      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "reason_text": "Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.",
       "genres": [
-        "Crime",
-        "Thriller",
-        "Mystery",
         "Drama",
-        "Comedy"
+        "Comedy",
+        "Romance"
       ],
       "countries": [
         "USA"
       ],
-      "runtime": 112.0,
-      "average_rating": 4.18,
-      "watches": 155427.0,
-      "fans": 3800.0,
-      "director": "Robert Altman",
+      "runtime": 97.0,
+      "average_rating": 2.96,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Michael Radford",
+      "tmdb_id": 268171,
+      "tmdb_popularity": 2.35,
+      "tmdb_vote_count": 99.0,
       "directors": [
-        "Robert Altman"
+        "Michael Radford"
       ],
       "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
-    },
-    {
-      "slot": "deep_cut",
-      "title": "Mind Game",
-      "year": null,
-      "slug": "mind-game",
-      "letterboxd_url": "https://letterboxd.com/film/mind-game",
-      "score": 0.7449,
-      "reason_codes": [
-        "genre_match",
-        "runtime_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "deep_cut"
-      ],
-      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
-      "genres": [
-        "Animation",
-        "Drama",
-        "Comedy",
-        "Romance",
-        "Fantasy"
-      ],
-      "countries": [
-        "Japan"
-      ],
-      "runtime": 103.0,
-      "average_rating": 4.18,
-      "watches": 59191.0,
-      "fans": 2300.0,
-      "director": "Masaaki Yuasa",
-      "directors": [
-        "Masaaki Yuasa"
-      ],
-      "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
+      "poster_path": "/yNzVwtlqOmPLVKD5zZIzAME9vYc.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/yNzVwtlqOmPLVKD5zZIzAME9vYc.jpg",
+      "backdrop_path": "/90bWsjR6Yo48Es1p5VsOhd4CpMM.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/90bWsjR6Yo48Es1p5VsOhd4CpMM.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 268171,
+        "tmdb_title": "Elsa & Fred",
+        "tmdb_original_title": "Elsa & Fred",
+        "tmdb_year": 2014,
+        "expected_title": "Elsa & Fred",
+        "expected_year": 2014,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
     },
     {
       "slot": "wild_card",
-      "title": "Interstellar",
-      "year": null,
-      "slug": "interstellar",
-      "letterboxd_url": "https://letterboxd.com/film/interstellar",
-      "score": 0.5912,
+      "title": "Remarkably Bright Creatures",
+      "year": 2026,
+      "slug": "tmdb-1330021-2026",
+      "letterboxd_url": "https://letterboxd.com/search/films/Remarkably%20Bright%20Creatures%202026/",
+      "score": 0.7694,
       "reason_codes": [
         "genre_match",
         "country_match",
+        "runtime_match",
         "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "wild_card_contrast"
+        "decade_shift",
+        "fresh_acclaimed"
       ],
-      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
+      "reason_text": "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.",
       "genres": [
-        "Science Fiction",
         "Drama",
-        "Adventure"
+        "Mystery"
       ],
       "countries": [
-        "UK",
         "USA"
       ],
-      "runtime": 169.0,
-      "average_rating": 4.41,
-      "watches": 5044987.0,
-      "fans": 326000.0,
-      "director": "Christopher Nolan",
+      "runtime": 114.0,
+      "average_rating": 4.24,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Olivia Newman",
+      "tmdb_id": 1330021,
+      "tmdb_popularity": 19.45,
+      "tmdb_vote_count": 820.0,
       "directors": [
-        "Christopher Nolan"
+        "Olivia Newman"
       ],
       "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
+      "poster_path": "/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "backdrop_path": "/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 1330021,
+        "tmdb_title": "Remarkably Bright Creatures",
+        "tmdb_original_title": "Remarkably Bright Creatures",
+        "tmdb_year": 2026,
+        "expected_title": "Remarkably Bright Creatures",
+        "expected_year": 2026,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    },
+    {
+      "slot": "deep_cut",
+      "title": "Maria Full of Grace",
+      "year": 2004,
+      "slug": "tmdb-436-2004",
+      "letterboxd_url": "https://letterboxd.com/search/films/Maria%20Full%20of%20Grace%202004/",
+      "score": 0.319,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "non_us_angle",
+        "new_country_discovery"
+      ],
+      "reason_text": "Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "Colombia",
+        "USA"
+      ],
+      "runtime": 101.0,
+      "average_rating": 3.6,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Joshua Marston",
+      "tmdb_id": 436,
+      "tmdb_popularity": 2.75,
+      "tmdb_vote_count": 435.0,
+      "directors": [
+        "Joshua Marston"
+      ],
+      "director_source": "film_normalized",
+      "poster_path": "/30CImATfvHWLXy6a3KmHXnYXB6c.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/30CImATfvHWLXy6a3KmHXnYXB6c.jpg",
+      "backdrop_path": "/q6xEN0Lx214QUXXXlQfLaoJS7EB.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/q6xEN0Lx214QUXXXlQfLaoJS7EB.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 436,
+        "tmdb_title": "Maria Full of Grace",
+        "tmdb_original_title": "María, llena eres de gracia",
+        "tmdb_year": 2004,
+        "expected_title": "Maria Full of Grace",
+        "expected_year": 2004,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
     }
   ],
   "recommendations_status": {
@@ -1360,14 +1403,14 @@
     "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
     "unavailable_text": "Recommandations indisponibles pour ce profil.",
     "slot_labels": {
-      "safe_pick": "Le choix sûr",
+      "safe_pick": "La pépite",
       "deep_cut": "Le détour",
       "wild_card": "Le pari"
     },
     "slot_descriptions": {
-      "safe_pick": "Un film populaire proche de tes genres préférés.",
-      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
-      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+      "safe_pick": "Un film confidentiel et plus ancien, proche de tes genres préférés.",
+      "deep_cut": "Un film d’un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts.",
+      "wild_card": "Un film récent et bien accueilli, qui change un peu d’angle par rapport à tes habitudes."
     }
   },
   "cards": [
@@ -1597,18 +1640,15 @@
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
     "items_checked": 8,
-    "posters_verified": 5,
+    "posters_verified": 8,
     "posters_ambiguous": 0,
-    "posters_missing_count": 3,
+    "posters_missing_count": 0,
     "verified_by_source": {
+      "tmdb_search": 3,
       "letterboxd_rss": 5
     },
     "homonymy_rejections": [],
-    "posters_missing": [
-      "The Long Goodbye",
-      "Mind Game",
-      "Interstellar"
-    ],
+    "posters_missing": [],
     "obsession_audit": null
   },
   "warnings": [

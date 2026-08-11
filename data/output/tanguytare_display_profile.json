@@ -1322,142 +1322,162 @@
   "recommendations": [
     {
       "slot": "safe_pick",
-      "title": "Parasite",
-      "year": 2019,
-      "slug": "parasite-2019",
-      "letterboxd_url": "https://letterboxd.com/film/parasite-2019",
-      "score": 0.8042,
+      "title": "The Curve",
+      "year": 1998,
+      "slug": "tmdb-44625-1998",
+      "letterboxd_url": "https://letterboxd.com/search/films/The%20Curve%201998/",
+      "score": 0.3782,
       "reason_codes": [
         "genre_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal",
-        "non_us_angle",
-        "decade_shift"
+        "country_match",
+        "runtime_match",
+        "low_popularity_gem"
       ],
-      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "reason_text": "Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.",
       "genres": [
-        "Comedy",
-        "Thriller",
-        "Drama"
+        "Drama",
+        "Horror",
+        "Mystery",
+        "Thriller"
       ],
       "countries": [
-        "South Korea"
+        "USA"
       ],
-      "runtime": 133.0,
-      "average_rating": 4.55,
-      "watches": 5015041.0,
-      "fans": 121000.0,
-      "director": "Bong Joon Ho",
+      "runtime": 91.0,
+      "average_rating": 2.71,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Dan Rosen",
+      "tmdb_id": 44625,
+      "tmdb_popularity": 4.14,
+      "tmdb_vote_count": 86.0,
       "directors": [
-        "Bong Joon Ho"
+        "Dan Rosen"
       ],
       "director_source": "film_normalized",
-      "tmdb_id": 496243,
-      "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-      "poster_url": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-      "backdrop_path": "/8eihUxjQsJ7WvGySkVMC0EwbPAD.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w780/8eihUxjQsJ7WvGySkVMC0EwbPAD.jpg",
+      "poster_path": "/a4Ql4swnnosHQoOSObHiHToPKOm.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/a4Ql4swnnosHQoOSObHiHToPKOm.jpg",
+      "backdrop_path": "/krThHPMyhnE2SyLtLRjGOJzI9km.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/krThHPMyhnE2SyLtLRjGOJzI9km.jpg",
       "poster_status": "verified",
       "poster_source": "tmdb_search",
       "poster_match": {
-        "tmdb_id": 496243,
-        "tmdb_title": "Parasite",
-        "tmdb_original_title": "기생충",
-        "tmdb_year": 2019,
-        "expected_title": "Parasite",
-        "expected_year": 2019,
+        "tmdb_id": 44625,
+        "tmdb_title": "The Curve",
+        "tmdb_original_title": "The Curve",
+        "tmdb_year": 1998,
+        "expected_title": "The Curve",
+        "expected_year": 1998,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    },
+    {
+      "slot": "wild_card",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "year": 2025,
+      "slug": "tmdb-1311031-2025",
+      "letterboxd_url": "https://letterboxd.com/search/films/Demon%20Slayer%3A%20Kimetsu%20no%20Yaiba%20Infinity%20Castle%202025/",
+      "score": 0.7697,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "high_community_rating",
+        "non_us_angle",
+        "decade_shift",
+        "fresh_acclaimed"
+      ],
+      "reason_text": "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.",
+      "genres": [
+        "Animation",
+        "Action",
+        "Fantasy"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "runtime": 156.0,
+      "average_rating": 4.34,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Haruo Sotozaki",
+      "tmdb_id": 1311031,
+      "tmdb_popularity": 142.19,
+      "tmdb_vote_count": 1774.0,
+      "directors": [
+        "Haruo Sotozaki"
+      ],
+      "director_source": "film_normalized",
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 1311031,
+        "tmdb_title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+        "tmdb_original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+        "tmdb_year": 2025,
+        "expected_title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+        "expected_year": 2025,
         "confidence": 1.0,
         "year_delta": 0
       }
     },
     {
       "slot": "deep_cut",
-      "title": "Mind Game",
-      "year": null,
-      "slug": "mind-game",
-      "letterboxd_url": "https://letterboxd.com/film/mind-game",
-      "score": 0.8683,
+      "title": "The Devil's Backbone",
+      "year": 2001,
+      "slug": "tmdb-1433-2001",
+      "letterboxd_url": "https://letterboxd.com/film/the-devils-backbone",
+      "score": 0.3407,
       "reason_codes": [
         "genre_match",
         "country_match",
         "runtime_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal",
         "non_us_angle",
-        "deep_cut"
+        "new_country_discovery"
       ],
-      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
+      "reason_text": "Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.",
       "genres": [
-        "Animation",
+        "Fantasy",
         "Drama",
-        "Comedy",
-        "Romance",
-        "Fantasy"
+        "Horror",
+        "Thriller"
       ],
       "countries": [
-        "Japan"
+        "Spain",
+        "Mexico"
       ],
-      "runtime": 103.0,
-      "average_rating": 4.18,
-      "watches": 59191.0,
-      "fans": 2300.0,
-      "director": "Masaaki Yuasa",
+      "runtime": 108.0,
+      "average_rating": 3.64,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Guillermo del Toro",
+      "tmdb_id": 1433,
+      "tmdb_popularity": 4.33,
+      "tmdb_vote_count": 1384.0,
       "directors": [
-        "Masaaki Yuasa"
+        "Guillermo del Toro"
       ],
       "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
-    },
-    {
-      "slot": "wild_card",
-      "title": "The Cure",
-      "year": 1995,
-      "slug": "the-cure-1995",
-      "letterboxd_url": "https://letterboxd.com/film/the-cure-1995",
-      "score": 0.6129,
-      "reason_codes": [
-        "genre_match",
-        "country_match",
-        "runtime_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "wild_card_contrast"
-      ],
-      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
-      "genres": [
-        "Drama",
-        "Family"
-      ],
-      "countries": [
-        "USA"
-      ],
-      "runtime": 97.0,
-      "average_rating": 3.87,
-      "watches": 19174.0,
-      "fans": 739.0,
-      "director": "Peter Horton",
-      "directors": [
-        "Peter Horton"
-      ],
-      "director_source": "film_normalized",
-      "tmdb_id": 6715,
-      "poster_path": "/irl4zGq3rh8UF0Ra0gvNg7mY5my.jpg",
-      "poster_url": "https://image.tmdb.org/t/p/w500/irl4zGq3rh8UF0Ra0gvNg7mY5my.jpg",
-      "backdrop_path": "/cXliQvK1xSi9lSqP7qaBUyED1Az.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w780/cXliQvK1xSi9lSqP7qaBUyED1Az.jpg",
+      "poster_path": "/iP1z1aJzPnkP8FHg77TS7ukqoEZ.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/iP1z1aJzPnkP8FHg77TS7ukqoEZ.jpg",
+      "backdrop_path": "/iUFylO8khUHGiSJanUZQfzZYyXI.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/iUFylO8khUHGiSJanUZQfzZYyXI.jpg",
       "poster_status": "verified",
       "poster_source": "tmdb_search",
       "poster_match": {
-        "tmdb_id": 6715,
-        "tmdb_title": "The Cure",
-        "tmdb_original_title": "The Cure",
-        "tmdb_year": 1995,
-        "expected_title": "The Cure",
-        "expected_year": 1995,
+        "tmdb_id": 1433,
+        "tmdb_title": "The Devil's Backbone",
+        "tmdb_original_title": "El espinazo del diablo",
+        "tmdb_year": 2001,
+        "expected_title": "The Devil's Backbone",
+        "expected_year": 2001,
         "confidence": 1.0,
         "year_delta": 0
       }
@@ -1473,14 +1493,14 @@
     "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
     "unavailable_text": "Recommandations indisponibles pour ce profil.",
     "slot_labels": {
-      "safe_pick": "Le choix sûr",
+      "safe_pick": "La pépite",
       "deep_cut": "Le détour",
       "wild_card": "Le pari"
     },
     "slot_descriptions": {
-      "safe_pick": "Un film populaire proche de tes genres préférés.",
-      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
-      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+      "safe_pick": "Un film confidentiel et plus ancien, proche de tes genres préférés.",
+      "deep_cut": "Un film d’un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts.",
+      "wild_card": "Un film récent et bien accueilli, qui change un peu d’angle par rapport à tes habitudes."
     }
   },
   "cards": [
@@ -1710,17 +1730,15 @@
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
     "items_checked": 8,
-    "posters_verified": 7,
+    "posters_verified": 8,
     "posters_ambiguous": 0,
-    "posters_missing_count": 1,
+    "posters_missing_count": 0,
     "verified_by_source": {
-      "tmdb_search": 2,
+      "tmdb_search": 3,
       "letterboxd_rss": 5
     },
     "homonymy_rejections": [],
-    "posters_missing": [
-      "Mind Game"
-    ],
+    "posters_missing": [],
     "obsession_audit": null
   },
   "warnings": [

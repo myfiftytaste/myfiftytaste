@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: The Dark Knight (0.8539)
-- deep_cut: The Young Girls of Rochefort (0.8322)
-- wild_card: Pride (0.6681)
+- safe_pick: Secret Beyond the Door (0.4456)
+- wild_card: Swapped (0.8268)
+- deep_cut: The Baader Meinhof Complex (0.477)
 
 ## Cards
 
@@ -103,9 +103,9 @@
 
 ## Poster verification
 
-- Posters verified: 6
+- Posters verified: 8
 - Posters ambiguous: 0
-- Posters missing: 2
+- Posters missing: 0
 - Homonymy rejections: None
 
 ## Highlight metadata audit

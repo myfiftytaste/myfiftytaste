@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: Parasite (0.8042)
-- deep_cut: Mind Game (0.8683)
-- wild_card: The Cure (0.6129)
+- safe_pick: The Curve (0.3782)
+- wild_card: Demon Slayer: Kimetsu no Yaiba Infinity Castle (0.7697)
+- deep_cut: The Devil's Backbone (0.3407)
 
 ## Cards
 
@@ -103,9 +103,9 @@
 
 ## Poster verification
 
-- Posters verified: 7
+- Posters verified: 8
 - Posters ambiguous: 0
-- Posters missing: 1
+- Posters missing: 0
 - Homonymy rejections: None
 
 ## Highlight metadata audit

@@ -106,14 +106,14 @@
     "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
     "unavailable_text": "Recommandations indisponibles pour ce profil.",
     "slot_labels": {
-      "safe_pick": "Le choix sûr",
+      "safe_pick": "La pépite",
       "deep_cut": "Le détour",
       "wild_card": "Le pari"
     },
     "slot_descriptions": {
-      "safe_pick": "Un film populaire proche de tes genres préférés.",
-      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
-      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+      "safe_pick": "Un film confidentiel et plus ancien, proche de tes genres préférés.",
+      "deep_cut": "Un film d’un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts.",
+      "wild_card": "Un film récent et bien accueilli, qui change un peu d’angle par rapport à tes habitudes."
     }
   },
   "data_sources": {

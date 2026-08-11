@@ -2,116 +2,96 @@
 
 ## Scoring notes
 
-- Candidates are Megabank films not present in the user's last 50 RSS films.
-- Compatibility combines genre, country, language, runtime, era, mainstream fit, community rating, fans/watches, repeat director, and title redundancy.
-- safe_pick boosts global compatibility and community rating.
-- deep_cut boosts niche score and fans/watches, with a penalty for very high watch counts.
-- wild_card uses partial compatibility plus secondary/oblique signals instead of selecting the third-best global score.
+- Candidates come from a live TMDB pool (seed similar/recommendations, profile-based discover, now_playing/upcoming/trending) not present in the user's last 50 RSS films.
+- safe_pick ("La Pépite"): strong genre/country/director proximity, low popularity within this run's pool, released 3+ years ago.
+- wild_card ("Le Pari"): departs from usual habits, well-rated with enough votes to trust the rating, popularity a notch above safe_pick, released this year or last.
+- deep_cut ("Le Détour"): a production country the user hasn't seen yet, filtered to picks that still fit their usual genre/country taste, with a quality floor.
+- Each slot relaxes its own criteria progressively (popularity/date first, thematic proximity preserved longest) if nothing satisfies the full criteria -- see candidate_pool_stats and diversity_checks.relaxation_used (0 = no relaxation needed).
 
 ## Slot rationale
 
-- safe_pick: Parasite — highest-confidence fit for the current profile.
-  Countries: South Korea (non-USA).
-  Primary genres: Comedy, Thriller.
-  Popularity: high (watches=5015041.0).
-  Difference: director=Bong Joon Ho, runtime=133.0, year=2019.
-- deep_cut: Mind Game — compatible pick with a less obvious popularity profile.
-  Countries: Japan (non-USA).
-  Primary genres: Animation, Drama.
-  Popularity: low (watches=59191.0).
-  Difference: director=Masaaki Yuasa, runtime=103.0, year=None.
-- wild_card: The Cure — contrast pick with wild_card_contrast_score=6.
+- safe_pick: The Curve — low-popularity, older pick close to the user's usual genres/countries ("La Pépite").
   Countries: USA (USA).
-  Primary genres: Drama, Family.
-  Popularity: low (watches=19174.0).
-  Difference: director=Peter Horton, runtime=97.0, year=1995.
+  Primary genres: Drama, Horror.
+  Popularity: low (tmdb_vote_count=86.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Dan Rosen, runtime=91.0, year=1998.
+- wild_card: Demon Slayer: Kimetsu no Yaiba Infinity Castle — recent, well-rated pick that departs a bit from usual habits ("Le Pari").
+  Countries: Japan (non-USA).
+  Primary genres: Animation, Action.
+  Popularity: high (tmdb_vote_count=1774.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Haruo Sotozaki, runtime=156.0, year=2025.
+- deep_cut: The Devil's Backbone — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
+  Countries: Spain, Mexico (non-USA).
+  Primary genres: Fantasy, Drama.
+  Popularity: high (tmdb_vote_count=1384.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Guillermo del Toro, runtime=108.0, year=2001.
 
 ## Diversity checks
 
 - Distinct directors: yes
-- Non-USA recommendation sought: yes
 - Non-USA recommendation found: yes
-- Wild card contrast score: 6
-- Directors: Bong Joon Ho, Masaaki Yuasa, Peter Horton
-- Primary genres: Comedy, Thriller | Animation, Drama | Drama, Family
-- Duplicate director rejections: Tokyo! (Bong Joon Ho), Barking Dogs Never Bite (Bong Joon Ho), Mother (Bong Joon Ho), Memories of Murder (Bong Joon Ho), Okja (Bong Joon Ho), Snowpiercer (Bong Joon Ho), Okja (Bong Joon Ho), Memories of Murder (Bong Joon Ho), Tokyo! (Bong Joon Ho), Mother (Bong Joon Ho), Barking Dogs Never Bite (Bong Joon Ho), Snowpiercer (Bong Joon Ho)
-- Title/franchise proximity rejections: Parasite, Parasite
-
-### Rejected candidates
-
-- deep_cut: Tokyo! | Bong Joon Ho | France, Germany, Japan, South Korea | 0.6495 | duplicate_director
-- deep_cut: Barking Dogs Never Bite | Bong Joon Ho | South Korea | 0.6201 | duplicate_director
-- deep_cut: Mother | Bong Joon Ho | South Korea | 0.6108 | duplicate_director
-- deep_cut: Memories of Murder | Bong Joon Ho | South Korea | 0.5061 | duplicate_director
-- deep_cut: Parasite | Charles Band | USA | 0.4924 | title_or_franchise_proximity
-- deep_cut: Okja | Bong Joon Ho | South Korea, USA | 0.4454 | duplicate_director
-- deep_cut: Snowpiercer | Bong Joon Ho | South Korea | 0.2684 | duplicate_director
-- wild_card: Parasite | Charles Band | USA | 0.4177 | title_or_franchise_proximity
-- wild_card: Okja | Bong Joon Ho | South Korea, USA | 0.5056 | duplicate_director
-- wild_card: Memories of Murder | Bong Joon Ho | South Korea | 0.5756 | duplicate_director
-- wild_card: Tokyo! | Bong Joon Ho | France, Germany, Japan, South Korea | 0.4823 | duplicate_director
-- wild_card: Mother | Bong Joon Ho | South Korea | 0.5312 | duplicate_director
-- wild_card: Barking Dogs Never Bite | Bong Joon Ho | South Korea | 0.4308 | duplicate_director
-- wild_card: Snowpiercer | Bong Joon Ho | South Korea | 0.4341 | duplicate_director
-
-### Notable eligibility exclusions
-
-- Twin Peaks | twin-peaks | tv_or_series_signal
+- Directors: Dan Rosen, Haruo Sotozaki, Guillermo del Toro
+- Primary genres: Drama, Horror | Animation, Action | Fantasy, Drama
+- Duplicate director rejections: None
+- Title/franchise proximity rejections: None
 
 ### Eligibility exclusions
 
-- #1 Fan: A Darkomentary | 1-fan-a-darkomentary | short_runtime
-- 12 Angry Men | 12-angry-men-1997 | tv_movie_genre
-- 12th Assistant Deacon | 12th-assistant-deacon | short_runtime
-- 7 Days in Hell | 7-days-in-hell | tv_movie_genre
-- 8 Ball Bunny | 8-ball-bunny | short_runtime
-- 8: SIDA | 8-sida | short_runtime
-- 9 | 9-2005 | short_runtime
-- A Beautiful Planet | a-beautiful-planet | short_runtime
-- A Brief History of John Baldessari | a-brief-history-of-john-baldessari | short_runtime
-- A Charlie Brown Christmas | a-charlie-brown-christmas | tv_movie_genre
-- A Charlie Brown Thanksgiving | a-charlie-brown-thanksgiving | tv_movie_genre
-- A Christmas Carol | a-christmas-carol-2004 | tv_movie_genre
-- A Close Shave | a-close-shave-1995 | short_runtime
-- A Cold Night's Death | a-cold-nights-death | tv_movie_genre
-- A Fairly Odd Movie: Grow Up, Timmy Turner! | a-fairly-odd-movie-grow-up-timmy-turner | tv_movie_genre
-- A Girl in the River: The Price of Forgiveness | a-girl-in-the-river-the-price-of-forgiveness | short_runtime
-- A Hypnotic Television Experience | a-hypnotic-television-experience | short_runtime
-- A Is for Acid | a-is-for-acid | tv_movie_genre
-- A Killer Among Friends | a-killer-among-friends | tv_movie_genre
-- A Kitten for Hitler | a-kitten-for-hitler | short_runtime
+- Walker, Texas Ranger: Trial by Fire | tmdb-6958-2005 | tv_movie_genre
+- Green Light | tmdb-1190460-2023 | short_runtime
+- Aging Out | tmdb-1194366-2023 | short_runtime
+- Nights and Days | tmdb-1564187-2025 | short_runtime
+- En La Cima | tmdb-1390381-2024 | short_runtime
+- Currents | tmdb-1567691-2025 | short_runtime
+- Cigarettes | tmdb-1591457-2025 | short_runtime
+- 2CRUNK | tmdb-1594290-2025 | short_runtime
+- SO36 | tmdb-1415489-2026 | short_runtime
+- Party Invitation | tmdb-1205710 | short_runtime
+- The Stroller | tmdb-1205372-2023 | short_runtime
+- Boys In The Better Land | tmdb-1027149-2020 | short_runtime
+- The Sun Rises Differently | tmdb-1029279-2022 | short_runtime
+- Night of Our Lives | tmdb-1222523-2023 | short_runtime
+- Cluedo | tmdb-1211471-2022 | short_runtime
+- Cannabis Cannibals | tmdb-1413793-2017 | short_runtime
+- Chime | tmdb-1219556-2024 | short_runtime
+- Beast | tmdb-1189352-2023 | short_runtime
+- South Park (Not Suitable for Children) | tmdb-1219926-2023 | tv_movie_genre
+- South Park: The End of Obesity | tmdb-1290938-2024 | tv_movie_genre
 
 ## Picks
 
-### safe_pick: Parasite
+### safe_pick: The Curve
 
-- Score: 0.8042
-- Year: 2019
-- Slug: parasite-2019
-- Genres: Comedy, Thriller, Drama
-- Countries: South Korea
-- Director: Bong Joon Ho
-- Reason codes: genre_match, high_community_rating, director_affinity, fans_watches_signal, non_us_angle, decade_shift
-- Reason: Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.
-
-### deep_cut: Mind Game
-
-- Score: 0.8683
-- Year: None
-- Slug: mind-game
-- Genres: Animation, Drama, Comedy, Romance, Fantasy
-- Countries: Japan
-- Director: Masaaki Yuasa
-- Reason codes: genre_match, country_match, runtime_match, high_community_rating, director_affinity, fans_watches_signal, non_us_angle, deep_cut
-- Reason: Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.
-
-### wild_card: The Cure
-
-- Score: 0.6129
-- Year: 1995
-- Slug: the-cure-1995
-- Genres: Drama, Family
+- Score: 0.3782
+- Year: 1998
+- Slug: tmdb-44625-1998
+- Genres: Drama, Horror, Mystery, Thriller
 - Countries: USA
-- Director: Peter Horton
-- Reason codes: genre_match, country_match, runtime_match, high_community_rating, fans_watches_signal, wild_card_contrast
-- Reason: Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.
+- Director: Dan Rosen
+- Reason codes: genre_match, country_match, runtime_match, low_popularity_gem
+- Reason: Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.
+
+### wild_card: Demon Slayer: Kimetsu no Yaiba Infinity Castle
+
+- Score: 0.7697
+- Year: 2025
+- Slug: tmdb-1311031-2025
+- Genres: Animation, Action, Fantasy
+- Countries: Japan
+- Director: Haruo Sotozaki
+- Reason codes: genre_match, country_match, high_community_rating, non_us_angle, decade_shift, fresh_acclaimed
+- Reason: Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.
+
+### deep_cut: The Devil's Backbone
+
+- Score: 0.3407
+- Year: 2001
+- Slug: tmdb-1433-2001
+- Genres: Fantasy, Drama, Horror, Thriller
+- Countries: Spain, Mexico
+- Director: Guillermo del Toro
+- Reason codes: genre_match, country_match, runtime_match, non_us_angle, new_country_discovery
+- Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.

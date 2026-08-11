@@ -1379,129 +1379,164 @@
   "recommendations": [
     {
       "slot": "safe_pick",
-      "title": "The Dark Knight",
-      "year": null,
-      "slug": "the-dark-knight",
-      "letterboxd_url": "https://letterboxd.com/film/the-dark-knight",
-      "score": 0.8539,
+      "title": "Secret Beyond the Door",
+      "year": 1947,
+      "slug": "tmdb-560-1947",
+      "letterboxd_url": "https://letterboxd.com/film/secret-beyond-the-door",
+      "score": 0.4456,
       "reason_codes": [
         "genre_match",
         "country_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal",
-        "non_us_angle"
+        "decade_shift",
+        "low_popularity_gem"
       ],
-      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "reason_text": "Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.",
       "genres": [
-        "Action",
-        "Drama",
+        "Mystery",
         "Thriller",
-        "Crime"
+        "Drama",
+        "Romance"
       ],
       "countries": [
-        "UK",
         "USA"
       ],
-      "runtime": 152.0,
-      "average_rating": 4.48,
-      "watches": 4488171.0,
-      "fans": 110000.0,
-      "director": "Christopher Nolan",
+      "runtime": 99.0,
+      "average_rating": 3.23,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Fritz Lang",
+      "tmdb_id": 560,
+      "tmdb_popularity": 2.2,
+      "tmdb_vote_count": 165.0,
       "directors": [
-        "Christopher Nolan"
+        "Fritz Lang"
       ],
       "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
-    },
-    {
-      "slot": "deep_cut",
-      "title": "The Young Girls of Rochefort",
-      "year": null,
-      "slug": "the-young-girls-of-rochefort",
-      "letterboxd_url": "https://letterboxd.com/film/the-young-girls-of-rochefort",
-      "score": 0.8322,
-      "reason_codes": [
-        "genre_match",
-        "country_match",
-        "runtime_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "deep_cut"
-      ],
-      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
-      "genres": [
-        "Romance",
-        "Comedy",
-        "Drama"
-      ],
-      "countries": [
-        "France"
-      ],
-      "runtime": 126.0,
-      "average_rating": 4.32,
-      "watches": 117024.0,
-      "fans": 6300.0,
-      "director": "Jacques Demy",
-      "directors": [
-        "Jacques Demy"
-      ],
-      "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
-    },
-    {
-      "slot": "wild_card",
-      "title": "Pride",
-      "year": 2014,
-      "slug": "pride-2014",
-      "letterboxd_url": "https://letterboxd.com/film/pride-2014",
-      "score": 0.6681,
-      "reason_codes": [
-        "genre_match",
-        "country_match",
-        "runtime_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "wild_card_contrast"
-      ],
-      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
-      "genres": [
-        "Drama",
-        "Comedy"
-      ],
-      "countries": [
-        "France",
-        "UK"
-      ],
-      "runtime": 120.0,
-      "average_rating": 4.13,
-      "watches": 166225.0,
-      "fans": 4600.0,
-      "director": "Matthew Warchus",
-      "directors": [
-        "Matthew Warchus"
-      ],
-      "director_source": "film_normalized",
-      "tmdb_id": 234200,
-      "poster_path": "/Kc3vbqO0X4VRnjACGNoWLNQvHo.jpg",
-      "poster_url": "https://image.tmdb.org/t/p/w500/Kc3vbqO0X4VRnjACGNoWLNQvHo.jpg",
-      "backdrop_path": "/tqLjEqOELHek2zfZ1d3vknG7Dfu.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w780/tqLjEqOELHek2zfZ1d3vknG7Dfu.jpg",
+      "poster_path": "/uVBEwjzXweHWjCFjAs7eJzH9in6.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/uVBEwjzXweHWjCFjAs7eJzH9in6.jpg",
+      "backdrop_path": "/xMZJwdGMDEQWKavwMWB4Lpkuixg.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/xMZJwdGMDEQWKavwMWB4Lpkuixg.jpg",
       "poster_status": "verified",
       "poster_source": "tmdb_search",
       "poster_match": {
-        "tmdb_id": 234200,
-        "tmdb_title": "Pride",
-        "tmdb_original_title": "Pride",
-        "tmdb_year": 2014,
-        "expected_title": "Pride",
-        "expected_year": 2014,
+        "tmdb_id": 560,
+        "tmdb_title": "Secret Beyond the Door",
+        "tmdb_original_title": "Secret Beyond the Door",
+        "tmdb_year": 1947,
+        "expected_title": "Secret Beyond the Door",
+        "expected_year": 1947,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    },
+    {
+      "slot": "wild_card",
+      "title": "Swapped",
+      "year": 2026,
+      "slug": "tmdb-1007757-2026",
+      "letterboxd_url": "https://letterboxd.com/search/films/Swapped%202026/",
+      "score": 0.8268,
+      "reason_codes": [
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "non_us_angle",
+        "fresh_acclaimed"
+      ],
+      "reason_text": "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.",
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Family",
+        "Fantasy"
+      ],
+      "countries": [
+        "USA",
+        "Spain"
+      ],
+      "runtime": 102.0,
+      "average_rating": 4.44,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Nathan Greno",
+      "tmdb_id": 1007757,
+      "tmdb_popularity": 62.26,
+      "tmdb_vote_count": 2085.0,
+      "directors": [
+        "Nathan Greno"
+      ],
+      "director_source": "film_normalized",
+      "poster_path": "/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 1007757,
+        "tmdb_title": "Swapped",
+        "tmdb_original_title": "Swapped",
+        "tmdb_year": 2026,
+        "expected_title": "Swapped",
+        "expected_year": 2026,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    },
+    {
+      "slot": "deep_cut",
+      "title": "The Baader Meinhof Complex",
+      "year": 2008,
+      "slug": "tmdb-6968-2008",
+      "letterboxd_url": "https://letterboxd.com/film/the-baader-meinhof-complex",
+      "score": 0.477,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "non_us_angle",
+        "new_country_discovery"
+      ],
+      "reason_text": "Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.",
+      "genres": [
+        "Action",
+        "Crime",
+        "Drama",
+        "History",
+        "Thriller"
+      ],
+      "countries": [
+        "Czech Republic",
+        "France",
+        "Germany"
+      ],
+      "runtime": 149.0,
+      "average_rating": 3.48,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Uli Edel",
+      "tmdb_id": 6968,
+      "tmdb_popularity": 4.11,
+      "tmdb_vote_count": 662.0,
+      "directors": [
+        "Uli Edel"
+      ],
+      "director_source": "film_normalized",
+      "poster_path": "/36Y0UT6bXnkHBGmmVFWGEnEh8nI.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/36Y0UT6bXnkHBGmmVFWGEnEh8nI.jpg",
+      "backdrop_path": "/6vspNQNWrtoXQMqjsBhouCVsozG.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/6vspNQNWrtoXQMqjsBhouCVsozG.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 6968,
+        "tmdb_title": "The Baader Meinhof Complex",
+        "tmdb_original_title": "Der Baader Meinhof Komplex",
+        "tmdb_year": 2008,
+        "expected_title": "The Baader Meinhof Complex",
+        "expected_year": 2008,
         "confidence": 1.0,
         "year_delta": 0
       }
@@ -1517,14 +1552,14 @@
     "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
     "unavailable_text": "Recommandations indisponibles pour ce profil.",
     "slot_labels": {
-      "safe_pick": "Le choix sûr",
+      "safe_pick": "La pépite",
       "deep_cut": "Le détour",
       "wild_card": "Le pari"
     },
     "slot_descriptions": {
-      "safe_pick": "Un film populaire proche de tes genres préférés.",
-      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
-      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+      "safe_pick": "Un film confidentiel et plus ancien, proche de tes genres préférés.",
+      "deep_cut": "Un film d’un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts.",
+      "wild_card": "Un film récent et bien accueilli, qui change un peu d’angle par rapport à tes habitudes."
     }
   },
   "cards": [
@@ -1754,18 +1789,15 @@
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
     "items_checked": 8,
-    "posters_verified": 6,
+    "posters_verified": 8,
     "posters_ambiguous": 0,
-    "posters_missing_count": 2,
+    "posters_missing_count": 0,
     "verified_by_source": {
-      "tmdb_search": 1,
+      "tmdb_search": 3,
       "letterboxd_rss": 5
     },
     "homonymy_rejections": [],
-    "posters_missing": [
-      "The Dark Knight",
-      "The Young Girls of Rochefort"
-    ],
+    "posters_missing": [],
     "obsession_audit": null
   },
   "warnings": [

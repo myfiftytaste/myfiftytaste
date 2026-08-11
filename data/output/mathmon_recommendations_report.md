@@ -2,122 +2,96 @@
 
 ## Scoring notes
 
-- Candidates are Megabank films not present in the user's last 50 RSS films.
-- Compatibility combines genre, country, language, runtime, era, mainstream fit, community rating, fans/watches, repeat director, and title redundancy.
-- safe_pick boosts global compatibility and community rating.
-- deep_cut boosts niche score and fans/watches, with a penalty for very high watch counts.
-- wild_card uses partial compatibility plus secondary/oblique signals instead of selecting the third-best global score.
+- Candidates come from a live TMDB pool (seed similar/recommendations, profile-based discover, now_playing/upcoming/trending) not present in the user's last 50 RSS films.
+- safe_pick ("La Pépite"): strong genre/country/director proximity, low popularity within this run's pool, released 3+ years ago.
+- wild_card ("Le Pari"): departs from usual habits, well-rated with enough votes to trust the rating, popularity a notch above safe_pick, released this year or last.
+- deep_cut ("Le Détour"): a production country the user hasn't seen yet, filtered to picks that still fit their usual genre/country taste, with a quality floor.
+- Each slot relaxes its own criteria progressively (popularity/date first, thematic proximity preserved longest) if nothing satisfies the full criteria -- see candidate_pool_stats and diversity_checks.relaxation_used (0 = no relaxation needed).
 
 ## Slot rationale
 
-- safe_pick: In the Mood for Love — highest-confidence fit for the current profile.
-  Countries: Hong Kong, France (non-USA).
-  Primary genres: Drama, Romance.
-  Popularity: mid (watches=876907.0).
-  Difference: director=Wong Kar-wai, runtime=99.0, year=None.
-- deep_cut: The Young Girls of Rochefort — compatible pick with a less obvious popularity profile.
-  Countries: France (non-USA).
-  Primary genres: Romance, Comedy.
-  Popularity: low (watches=117024.0).
-  Difference: director=Jacques Demy, runtime=126.0, year=None.
-- wild_card: Mulholland Drive — contrast pick with wild_card_contrast_score=5.
-  Countries: France, USA (non-USA).
-  Primary genres: Mystery, Drama.
-  Popularity: high (watches=1172795.0).
-  Difference: director=David Lynch, runtime=147.0, year=None.
+- safe_pick: Love Lesson — low-popularity, older pick close to the user's usual genres/countries ("La Pépite").
+  Countries: South Korea (non-USA).
+  Primary genres: Romance, Drama.
+  Popularity: low (tmdb_vote_count=43.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Ko Kyeong-Ah, runtime=80.0, year=2013.
+- wild_card: Avatar Aang: The Last Airbender — recent, well-rated pick that departs a bit from usual habits ("Le Pari").
+  Countries: USA, South Korea, Australia (non-USA).
+  Primary genres: Animation, Action.
+  Popularity: mid (tmdb_vote_count=798.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Lauren Montgomery, runtime=99.0, year=2026.
+- deep_cut: The Lobster — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
+  Countries: France, Greece, Ireland, Netherlands, UK (non-USA).
+  Primary genres: Comedy, Drama.
+  Popularity: high (tmdb_vote_count=6996.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Yorgos Lanthimos, runtime=119.0, year=2015.
 
 ## Diversity checks
 
 - Distinct directors: yes
-- Non-USA recommendation sought: yes
 - Non-USA recommendation found: yes
-- Wild card contrast score: 5
-- Directors: Wong Kar-wai, Jacques Demy, David Lynch
-- Primary genres: Drama, Romance | Romance, Comedy | Mystery, Drama
-- Duplicate director rejections: As Tears Go By (Wong Kar-wai), My Blueberry Nights (Wong Kar-wai), Fallen Angels (Wong Kar-wai), 2046 (Wong Kar-wai), The Umbrellas of Cherbourg (Jacques Demy), 2046 (Wong Kar-wai), Fallen Angels (Wong Kar-wai), As Tears Go By (Wong Kar-wai), My Blueberry Nights (Wong Kar-wai)
-- Title/franchise proximity rejections: In the Mood, For the Love of Spock, Love, I Am Love, The 33, The 7.39, The V.I.P.s, The Ex, Love, For the Love of Spock, In the Mood, The 33, I Am Love, The 7.39, The Ex, The V.I.P.s
-
-### Rejected candidates
-
-- deep_cut: As Tears Go By | Wong Kar-wai | Hong Kong | 0.658 | duplicate_director
-- deep_cut: My Blueberry Nights | Wong Kar-wai | China, France, Hong Kong | 0.6492 | duplicate_director
-- deep_cut: Fallen Angels | Wong Kar-wai | Hong Kong | 0.64 | duplicate_director
-- deep_cut: 2046 | Wong Kar-wai | China, France, Germany, Hong Kong, Italy | 0.6285 | duplicate_director
-- deep_cut: In the Mood | Phil Alden Robinson | USA | 0.5365 | title_or_franchise_proximity
-- deep_cut: For the Love of Spock | Adam Nimoy | Canada, USA | 0.4939 | title_or_franchise_proximity
-- deep_cut: Love | Gaspar Noé | Belgium, France | 0.464 | title_or_franchise_proximity
-- deep_cut: I Am Love | Luca Guadagnino | Italy | 0.4475 | title_or_franchise_proximity
-- deep_cut: The 33 | Patricia Riggen | Chile, Colombia, Spain, USA | 0.3999 | title_or_franchise_proximity
-- deep_cut: The 7.39 | John Alexander | UK, USA | 0.3789 | title_or_franchise_proximity
-- deep_cut: The V.I.P.s | Anthony Asquith | UK | 0.3672 | title_or_franchise_proximity
-- deep_cut: The Ex | Jesse Peretz | USA | 0.3311 | title_or_franchise_proximity
-- wild_card: Love | Gaspar Noé | Belgium, France | 0.4284 | title_or_franchise_proximity
-- wild_card: The Umbrellas of Cherbourg | Jacques Demy | France, Germany | 0.5748 | duplicate_director
-- wild_card: 2046 | Wong Kar-wai | China, France, Germany, Hong Kong, Italy | 0.4782 | duplicate_director
-- wild_card: Fallen Angels | Wong Kar-wai | Hong Kong | 0.5817 | duplicate_director
-- wild_card: For the Love of Spock | Adam Nimoy | Canada, USA | 0.4302 | title_or_franchise_proximity
-- wild_card: In the Mood | Phil Alden Robinson | USA | 0.3954 | title_or_franchise_proximity
-- wild_card: As Tears Go By | Wong Kar-wai | Hong Kong | 0.4255 | duplicate_director
-- wild_card: My Blueberry Nights | Wong Kar-wai | China, France, Hong Kong | 0.4721 | duplicate_director
-
-### Notable eligibility exclusions
-
-- Twin Peaks | twin-peaks | tv_or_series_signal
+- Directors: Ko Kyeong-Ah, Lauren Montgomery, Yorgos Lanthimos
+- Primary genres: Romance, Drama | Animation, Action | Comedy, Drama
+- Duplicate director rejections: None
+- Title/franchise proximity rejections: None
 
 ### Eligibility exclusions
 
-- #1 Fan: A Darkomentary | 1-fan-a-darkomentary | short_runtime
-- 12 Angry Men | 12-angry-men-1997 | tv_movie_genre
-- 12th Assistant Deacon | 12th-assistant-deacon | short_runtime
-- 7 Days in Hell | 7-days-in-hell | tv_movie_genre
-- 8 Ball Bunny | 8-ball-bunny | short_runtime
-- 8: SIDA | 8-sida | short_runtime
-- 9 | 9-2005 | short_runtime
-- A Beautiful Planet | a-beautiful-planet | short_runtime
-- A Brief History of John Baldessari | a-brief-history-of-john-baldessari | short_runtime
-- A Charlie Brown Christmas | a-charlie-brown-christmas | tv_movie_genre
-- A Charlie Brown Thanksgiving | a-charlie-brown-thanksgiving | tv_movie_genre
-- A Christmas Carol | a-christmas-carol-2004 | tv_movie_genre
-- A Close Shave | a-close-shave-1995 | short_runtime
-- A Cold Night's Death | a-cold-nights-death | tv_movie_genre
-- A Fairly Odd Movie: Grow Up, Timmy Turner! | a-fairly-odd-movie-grow-up-timmy-turner | tv_movie_genre
-- A Girl in the River: The Price of Forgiveness | a-girl-in-the-river-the-price-of-forgiveness | short_runtime
-- A Hypnotic Television Experience | a-hypnotic-television-experience | short_runtime
-- A Is for Acid | a-is-for-acid | tv_movie_genre
-- A Killer Among Friends | a-killer-among-friends | tv_movie_genre
-- A Kitten for Hitler | a-kitten-for-hitler | short_runtime
+- Blue Lagoon: The Awakening | tmdb-115290-2012 | tv_movie_genre
+- Big City Greens the Movie: Spacecation | tmdb-929563-2024 | tv_movie_genre
+- JLA Adventures: Trapped in Time | tmdb-251768-2014 | short_runtime
+- La Jetée | tmdb-662-1962 | short_runtime
+- Going Bananas | tmdb-1559297-2024 | short_runtime
+- Owners of Time | tmdb-1189208-2024 | short_runtime
+- The Hatchling | tmdb-1191058-2023 | short_runtime
+- Genius Loci | tmdb-663881-2020 | short_runtime
+- The Hunchback | tmdb-148636-1997 | tv_movie_genre
+- Joseph | tmdb-2405-1995 | tv_movie_genre
+- Shedding Blood For China | tmdb-1003419-1980 | short_runtime
+- Return Home | tmdb-1003436-1983 | short_runtime
+- Hide and Seek | tmdb-1559353-2025 | short_runtime
+- Ximen Family | tmdb-1003426-1989 | short_runtime
+- Kill A Criminal in His Marriage Ceremony | tmdb-1003430-1987 | short_runtime
+- Cobalt Blue | tmdb-622161-2019 | short_runtime
+- Tombé du ciel | tmdb-1564831-2026 | short_runtime
+- Tad and The Magic Lamp | tmdb-1187326-2026 | short_runtime
+- La Nirvana | tmdb-1566470-2026 | short_runtime
+- Milky☆Subway: The Galactic Limited Express - the Movie | tmdb-1598785-2026 | short_runtime
 
 ## Picks
 
-### safe_pick: In the Mood for Love
+### safe_pick: Love Lesson
 
-- Score: 0.8422
-- Year: None
-- Slug: in-the-mood-for-love
-- Genres: Drama, Romance
-- Countries: Hong Kong, France
-- Director: Wong Kar-wai
-- Reason codes: genre_match, country_match, runtime_match, high_community_rating, director_affinity, fans_watches_signal, non_us_angle
-- Reason: Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.
+- Score: 0.4083
+- Year: 2013
+- Slug: tmdb-286687-2013
+- Genres: Romance, Drama, Comedy
+- Countries: South Korea
+- Director: Ko Kyeong-Ah
+- Reason codes: genre_match, non_us_angle, low_popularity_gem
+- Reason: Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.
 
-### deep_cut: The Young Girls of Rochefort
+### wild_card: Avatar Aang: The Last Airbender
 
-- Score: 0.8311
-- Year: None
-- Slug: the-young-girls-of-rochefort
-- Genres: Romance, Comedy, Drama
-- Countries: France
-- Director: Jacques Demy
-- Reason codes: genre_match, country_match, high_community_rating, fans_watches_signal, non_us_angle, deep_cut
-- Reason: Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.
+- Score: 0.8214
+- Year: 2026
+- Slug: tmdb-980431-2026
+- Genres: Animation, Action, Adventure, Fantasy
+- Countries: USA, South Korea, Australia
+- Director: Lauren Montgomery
+- Reason codes: country_match, runtime_match, high_community_rating, non_us_angle, fresh_acclaimed
+- Reason: Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.
 
-### wild_card: Mulholland Drive
+### deep_cut: The Lobster
 
-- Score: 0.6217
-- Year: None
-- Slug: mulholland-drive
-- Genres: Mystery, Drama, Thriller
-- Countries: France, USA
-- Director: David Lynch
-- Reason codes: genre_match, country_match, high_community_rating, fans_watches_signal, non_us_angle, wild_card_contrast
-- Reason: Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.
+- Score: 0.4663
+- Year: 2015
+- Slug: tmdb-254320-2015
+- Genres: Comedy, Drama, Romance
+- Countries: France, Greece, Ireland, Netherlands, UK
+- Director: Yorgos Lanthimos
+- Reason codes: genre_match, country_match, runtime_match, non_us_angle, new_country_discovery
+- Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.

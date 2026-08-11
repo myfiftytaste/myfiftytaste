@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: In the Mood for Love (0.8422)
-- deep_cut: The Young Girls of Rochefort (0.8311)
-- wild_card: Mulholland Drive (0.6217)
+- safe_pick: Love Lesson (0.4083)
+- wild_card: Avatar Aang: The Last Airbender (0.8214)
+- deep_cut: The Lobster (0.4663)
 
 ## Cards
 
@@ -103,9 +103,9 @@
 
 ## Poster verification
 
-- Posters verified: 5
+- Posters verified: 8
 - Posters ambiguous: 0
-- Posters missing: 3
+- Posters missing: 0
 - Homonymy rejections: None
 
 ## Highlight metadata audit

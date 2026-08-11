@@ -2,122 +2,96 @@
 
 ## Scoring notes
 
-- Candidates are Megabank films not present in the user's last 49 RSS films.
-- Compatibility combines genre, country, language, runtime, era, mainstream fit, community rating, fans/watches, repeat director, and title redundancy.
-- safe_pick boosts global compatibility and community rating.
-- deep_cut boosts niche score and fans/watches, with a penalty for very high watch counts.
-- wild_card uses partial compatibility plus secondary/oblique signals instead of selecting the third-best global score.
+- Candidates come from a live TMDB pool (seed similar/recommendations, profile-based discover, now_playing/upcoming/trending) not present in the user's last 49 RSS films.
+- safe_pick ("La Pépite"): strong genre/country/director proximity, low popularity within this run's pool, released 3+ years ago.
+- wild_card ("Le Pari"): departs from usual habits, well-rated with enough votes to trust the rating, popularity a notch above safe_pick, released this year or last.
+- deep_cut ("Le Détour"): a production country the user hasn't seen yet, filtered to picks that still fit their usual genre/country taste, with a quality floor.
+- Each slot relaxes its own criteria progressively (popularity/date first, thematic proximity preserved longest) if nothing satisfies the full criteria -- see candidate_pool_stats and diversity_checks.relaxation_used (0 = no relaxation needed).
 
 ## Slot rationale
 
-- safe_pick: The Dark Knight — highest-confidence fit for the current profile.
-  Countries: UK, USA (non-USA).
-  Primary genres: Action, Drama.
-  Popularity: high (watches=4488171.0).
-  Difference: director=Christopher Nolan, runtime=152.0, year=None.
-- deep_cut: The Young Girls of Rochefort — compatible pick with a less obvious popularity profile.
-  Countries: France (non-USA).
-  Primary genres: Romance, Comedy.
-  Popularity: low (watches=117024.0).
-  Difference: director=Jacques Demy, runtime=126.0, year=None.
-- wild_card: Pride — contrast pick with wild_card_contrast_score=5.
-  Countries: France, UK (non-USA).
-  Primary genres: Drama, Comedy.
-  Popularity: low (watches=166225.0).
-  Difference: director=Matthew Warchus, runtime=120.0, year=2014.
+- safe_pick: Secret Beyond the Door — low-popularity, older pick close to the user's usual genres/countries ("La Pépite").
+  Countries: USA (USA).
+  Primary genres: Mystery, Thriller.
+  Popularity: low (tmdb_vote_count=165.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Fritz Lang, runtime=99.0, year=1947.
+- wild_card: Swapped — recent, well-rated pick that departs a bit from usual habits ("Le Pari").
+  Countries: USA, Spain (non-USA).
+  Primary genres: Adventure, Animation.
+  Popularity: high (tmdb_vote_count=2085.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Nathan Greno, runtime=102.0, year=2026.
+- deep_cut: The Baader Meinhof Complex — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
+  Countries: Czech Republic, France, Germany (non-USA).
+  Primary genres: Action, Crime.
+  Popularity: mid (tmdb_vote_count=662.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Uli Edel, runtime=149.0, year=2008.
 
 ## Diversity checks
 
 - Distinct directors: yes
-- Non-USA recommendation sought: yes
 - Non-USA recommendation found: yes
-- Wild card contrast score: 5
-- Directors: Christopher Nolan, Jacques Demy, Matthew Warchus
-- Primary genres: Action, Drama | Romance, Comedy | Drama, Comedy
-- Duplicate director rejections: Insomnia (Christopher Nolan), Following (Christopher Nolan), The Prestige (Christopher Nolan), Interstellar (Christopher Nolan), Memento (Christopher Nolan), Dunkirk (Christopher Nolan), The Dark Knight Rises (Christopher Nolan), Tenet (Christopher Nolan), Oppenheimer (Christopher Nolan), The Umbrellas of Cherbourg (Jacques Demy), Insomnia (Christopher Nolan), Memento (Christopher Nolan), Oppenheimer (Christopher Nolan), Interstellar (Christopher Nolan), Following (Christopher Nolan), The Prestige (Christopher Nolan), Dunkirk (Christopher Nolan), The Dark Knight Rises (Christopher Nolan), Tenet (Christopher Nolan)
-- Title/franchise proximity rejections: Batman: The Dark Knight Returns, Part 2, Batman: The Dark Knight Returns, Part 1, The 33, The 7.39, The V.I.P.s, The Ex, Batman: The Dark Knight Returns, Part 2, Batman: The Dark Knight Returns, Part 1, The 33, The V.I.P.s, The 7.39, The Ex
-
-### Rejected candidates
-
-- deep_cut: Insomnia | Christopher Nolan | USA | 0.6356 | duplicate_director
-- deep_cut: Following | Christopher Nolan | UK, USA | 0.5867 | duplicate_director
-- deep_cut: Batman: The Dark Knight Returns, Part 2 | Jay Oliva | USA | 0.4972 | title_or_franchise_proximity
-- deep_cut: Batman: The Dark Knight Returns, Part 1 | Jay Oliva | USA | 0.4847 | title_or_franchise_proximity
-- deep_cut: The Prestige | Christopher Nolan | UK, USA | 0.4503 | duplicate_director
-- deep_cut: The 33 | Patricia Riggen | Chile, Colombia, Spain, USA | 0.4388 | title_or_franchise_proximity
-- deep_cut: The 7.39 | John Alexander | UK, USA | 0.4116 | title_or_franchise_proximity
-- deep_cut: The V.I.P.s | Anthony Asquith | UK | 0.3941 | title_or_franchise_proximity
-- deep_cut: Interstellar | Christopher Nolan | UK, USA | 0.3604 | duplicate_director
-- deep_cut: Memento | Christopher Nolan | USA | 0.3551 | duplicate_director
-- deep_cut: Dunkirk | Christopher Nolan | UK, USA | 0.3546 | duplicate_director
-- deep_cut: The Dark Knight Rises | Christopher Nolan | UK, USA | 0.3064 | duplicate_director
-- deep_cut: The Ex | Jesse Peretz | USA | 0.2972 | title_or_franchise_proximity
-- deep_cut: Tenet | Christopher Nolan | UK, USA | 0.2583 | duplicate_director
-- deep_cut: Oppenheimer | Christopher Nolan | UK, USA | 0.2264 | duplicate_director
-- wild_card: The Umbrellas of Cherbourg | Jacques Demy | France, Germany | 0.5575 | duplicate_director
-- wild_card: Batman: The Dark Knight Returns, Part 2 | Jay Oliva | USA | 0.4593 | title_or_franchise_proximity
-- wild_card: Batman: The Dark Knight Returns, Part 1 | Jay Oliva | USA | 0.4461 | title_or_franchise_proximity
-- wild_card: Insomnia | Christopher Nolan | USA | 0.513 | duplicate_director
-- wild_card: Memento | Christopher Nolan | USA | 0.5637 | duplicate_director
-
-### Notable eligibility exclusions
-
-- Twin Peaks | twin-peaks | tv_or_series_signal
+- Directors: Fritz Lang, Nathan Greno, Uli Edel
+- Primary genres: Mystery, Thriller | Adventure, Animation | Action, Crime
+- Duplicate director rejections: None
+- Title/franchise proximity rejections: None
 
 ### Eligibility exclusions
 
-- #1 Fan: A Darkomentary | 1-fan-a-darkomentary | short_runtime
-- 12 Angry Men | 12-angry-men-1997 | tv_movie_genre
-- 12th Assistant Deacon | 12th-assistant-deacon | short_runtime
-- 7 Days in Hell | 7-days-in-hell | tv_movie_genre
-- 8 Ball Bunny | 8-ball-bunny | short_runtime
-- 8: SIDA | 8-sida | short_runtime
-- 9 | 9-2005 | short_runtime
-- A Beautiful Planet | a-beautiful-planet | short_runtime
-- A Brief History of John Baldessari | a-brief-history-of-john-baldessari | short_runtime
-- A Charlie Brown Christmas | a-charlie-brown-christmas | tv_movie_genre
-- A Charlie Brown Thanksgiving | a-charlie-brown-thanksgiving | tv_movie_genre
-- A Christmas Carol | a-christmas-carol-2004 | tv_movie_genre
-- A Close Shave | a-close-shave-1995 | short_runtime
-- A Cold Night's Death | a-cold-nights-death | tv_movie_genre
-- A Fairly Odd Movie: Grow Up, Timmy Turner! | a-fairly-odd-movie-grow-up-timmy-turner | tv_movie_genre
-- A Girl in the River: The Price of Forgiveness | a-girl-in-the-river-the-price-of-forgiveness | short_runtime
-- A Hypnotic Television Experience | a-hypnotic-television-experience | short_runtime
-- A Is for Acid | a-is-for-acid | tv_movie_genre
-- A Killer Among Friends | a-killer-among-friends | tv_movie_genre
-- A Kitten for Hitler | a-kitten-for-hitler | short_runtime
+- The Devil's Arithmetic | tmdb-22509-1999 | tv_movie_genre
+- Uprising | tmdb-31010-2001 | tv_movie_genre
+- On Top of the Earth | tmdb-441014-2007 | short_runtime
+- The Moth | tmdb-1559375-2025 | short_runtime
+- The Last Harvest | tmdb-1559486-2024 | short_runtime
+- The God Can | tmdb-1189477-2021 | short_runtime
+- LOCALS | tmdb-1188134-2023 | short_runtime
+- AI Junko | tmdb-1380614-2024 | short_runtime
+- Artemio's Loneliness Vol. 1 | tmdb-620583-2020 | short_runtime
+- Alexandra | tmdb-1380525-2023 | short_runtime
+- INT. CAFÉ – NIGHT | tmdb-440003-2014 | short_runtime
+- Tombé du ciel | tmdb-1564831-2026 | short_runtime
+- Tad and The Magic Lamp | tmdb-1187326-2026 | short_runtime
+- La Nirvana | tmdb-1566470-2026 | short_runtime
+- Milky☆Subway: The Galactic Limited Express - the Movie | tmdb-1598785-2026 | short_runtime
+- Miraculous World: Tokyo, Stellar Force | tmdb-1147411-2025 | short_runtime
+- Louis Theroux: The Settlers | tmdb-1466013-2025 | tv_movie_genre
+- Squid Game: Making Season 2 | tmdb-1412113-2025 | tv_or_series_signal
+- The Punisher: One Last Kill | tmdb-1439930-2026 | short_runtime
+- Versa | tmdb-1500099-2025 | short_runtime
 
 ## Picks
 
-### safe_pick: The Dark Knight
+### safe_pick: Secret Beyond the Door
 
-- Score: 0.8539
-- Year: None
-- Slug: the-dark-knight
-- Genres: Action, Drama, Thriller, Crime
-- Countries: UK, USA
-- Director: Christopher Nolan
-- Reason codes: genre_match, country_match, high_community_rating, director_affinity, fans_watches_signal, non_us_angle
-- Reason: Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.
+- Score: 0.4456
+- Year: 1947
+- Slug: tmdb-560-1947
+- Genres: Mystery, Thriller, Drama, Romance
+- Countries: USA
+- Director: Fritz Lang
+- Reason codes: genre_match, country_match, decade_shift, low_popularity_gem
+- Reason: Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.
 
-### deep_cut: The Young Girls of Rochefort
+### wild_card: Swapped
 
-- Score: 0.8322
-- Year: None
-- Slug: the-young-girls-of-rochefort
-- Genres: Romance, Comedy, Drama
-- Countries: France
-- Director: Jacques Demy
-- Reason codes: genre_match, country_match, runtime_match, high_community_rating, fans_watches_signal, non_us_angle, deep_cut
-- Reason: Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.
+- Score: 0.8268
+- Year: 2026
+- Slug: tmdb-1007757-2026
+- Genres: Adventure, Animation, Family, Fantasy
+- Countries: USA, Spain
+- Director: Nathan Greno
+- Reason codes: country_match, runtime_match, high_community_rating, non_us_angle, fresh_acclaimed
+- Reason: Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.
 
-### wild_card: Pride
+### deep_cut: The Baader Meinhof Complex
 
-- Score: 0.6681
-- Year: 2014
-- Slug: pride-2014
-- Genres: Drama, Comedy
-- Countries: France, UK
-- Director: Matthew Warchus
-- Reason codes: genre_match, country_match, runtime_match, high_community_rating, fans_watches_signal, non_us_angle, wild_card_contrast
-- Reason: Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.
+- Score: 0.477
+- Year: 2008
+- Slug: tmdb-6968-2008
+- Genres: Action, Crime, Drama, History, Thriller
+- Countries: Czech Republic, France, Germany
+- Director: Uli Edel
+- Reason codes: genre_match, country_match, non_us_angle, new_country_discovery
+- Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.

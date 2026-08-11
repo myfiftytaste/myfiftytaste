@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: Dog Day Afternoon (0.797)
-- deep_cut: Mind Game (0.74)
-- wild_card: Nowhere (0.6224)
+- safe_pick: No Code of Conduct (0.3319)
+- wild_card: Remarkably Bright Creatures (0.7662)
+- deep_cut: Boyka: Undisputed IV (0.4218)
 
 ## Cards
 
@@ -103,9 +103,9 @@
 
 ## Poster verification
 
-- Posters verified: 5
+- Posters verified: 8
 - Posters ambiguous: 0
-- Posters missing: 3
+- Posters missing: 0
 - Homonymy rejections: None
 
 ## Highlight metadata audit

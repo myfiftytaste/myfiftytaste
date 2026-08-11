@@ -1396,142 +1396,167 @@
   "recommendations": [
     {
       "slot": "safe_pick",
-      "title": "Whiplash",
-      "year": 2014,
-      "slug": "whiplash-2014",
-      "letterboxd_url": "https://letterboxd.com/film/whiplash-2014",
-      "score": 0.8526,
+      "title": "Lowlife",
+      "year": 2017,
+      "slug": "tmdb-461773-2017",
+      "letterboxd_url": "https://letterboxd.com/search/films/Lowlife%202017/",
+      "score": 0.45,
       "reason_codes": [
         "genre_match",
         "country_match",
-        "runtime_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal"
+        "low_popularity_gem"
       ],
-      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "reason_text": "Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.",
       "genres": [
-        "Drama",
-        "Music"
+        "Crime",
+        "Thriller",
+        "Comedy",
+        "Horror",
+        "Drama"
       ],
       "countries": [
         "USA"
       ],
-      "runtime": 107.0,
-      "average_rating": 4.42,
-      "watches": 3925603.0,
-      "fans": 154000.0,
-      "director": "Damien Chazelle",
+      "runtime": 98.0,
+      "average_rating": 3.06,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Ryan Prows",
+      "tmdb_id": 461773,
+      "tmdb_popularity": 2.75,
+      "tmdb_vote_count": 82.0,
       "directors": [
-        "Damien Chazelle"
+        "Ryan Prows"
       ],
       "director_source": "film_normalized",
-      "tmdb_id": 244786,
-      "poster_path": "/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
-      "poster_url": "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
-      "backdrop_path": "/wbQa0EnWUyRzQ5d1pHLNRlmsCUP.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w780/wbQa0EnWUyRzQ5d1pHLNRlmsCUP.jpg",
+      "poster_path": "/5tquk3KoKtVo5D40gZYjlWWr0mt.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/5tquk3KoKtVo5D40gZYjlWWr0mt.jpg",
+      "backdrop_path": "/3WLyIZ2O7it00l8Af7tFCMSOhI9.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/3WLyIZ2O7it00l8Af7tFCMSOhI9.jpg",
       "poster_status": "verified",
       "poster_source": "tmdb_search",
       "poster_match": {
-        "tmdb_id": 244786,
-        "tmdb_title": "Whiplash",
-        "tmdb_original_title": "Whiplash",
-        "tmdb_year": 2014,
-        "expected_title": "Whiplash",
-        "expected_year": 2014,
+        "tmdb_id": 461773,
+        "tmdb_title": "Lowlife",
+        "tmdb_original_title": "Lowlife",
+        "tmdb_year": 2017,
+        "expected_title": "Lowlife",
+        "expected_year": 2017,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    },
+    {
+      "slot": "wild_card",
+      "title": "Avatar Aang: The Last Airbender",
+      "year": 2026,
+      "slug": "tmdb-980431-2026",
+      "letterboxd_url": "https://letterboxd.com/search/films/Avatar%20Aang%3A%20The%20Last%20Airbender%202026/",
+      "score": 0.8545,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "high_community_rating",
+        "non_us_angle",
+        "fresh_acclaimed"
+      ],
+      "reason_text": "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "countries": [
+        "USA",
+        "South Korea",
+        "Australia"
+      ],
+      "runtime": 99.0,
+      "average_rating": 4.64,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Lauren Montgomery",
+      "tmdb_id": 980431,
+      "tmdb_popularity": 164.88,
+      "tmdb_vote_count": 798.0,
+      "directors": [
+        "Lauren Montgomery"
+      ],
+      "director_source": "film_normalized",
+      "poster_path": "/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "backdrop_path": "/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 980431,
+        "tmdb_title": "Avatar Aang: The Last Airbender",
+        "tmdb_original_title": "Avatar Aang: The Last Airbender",
+        "tmdb_year": 2026,
+        "expected_title": "Avatar Aang: The Last Airbender",
+        "expected_year": 2026,
         "confidence": 1.0,
         "year_delta": 0
       }
     },
     {
       "slot": "deep_cut",
-      "title": "Wings of Desire",
-      "year": null,
-      "slug": "wings-of-desire",
-      "letterboxd_url": "https://letterboxd.com/film/wings-of-desire",
-      "score": 0.8039,
+      "title": "The Last Circus",
+      "year": 2010,
+      "slug": "tmdb-56812-2010",
+      "letterboxd_url": "https://letterboxd.com/search/films/The%20Last%20Circus%202010/",
+      "score": 0.4135,
       "reason_codes": [
         "genre_match",
         "country_match",
         "runtime_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal",
         "non_us_angle",
-        "deep_cut"
+        "new_country_discovery"
       ],
-      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
+      "reason_text": "Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.",
       "genres": [
+        "Adventure",
+        "Comedy",
         "Drama",
-        "Romance",
-        "Fantasy"
+        "Horror",
+        "Thriller"
       ],
       "countries": [
+        "Belgium",
         "France",
-        "Germany"
+        "Italy",
+        "Spain"
       ],
-      "runtime": 128.0,
-      "average_rating": 4.31,
-      "watches": 204338.0,
-      "fans": 9400.0,
-      "director": "Wim Wenders",
+      "runtime": 106.0,
+      "average_rating": 3.33,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Álex de la Iglesia",
+      "tmdb_id": 56812,
+      "tmdb_popularity": 2.85,
+      "tmdb_vote_count": 449.0,
       "directors": [
-        "Wim Wenders"
+        "Álex de la Iglesia"
       ],
       "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
-    },
-    {
-      "slot": "wild_card",
-      "title": "Waves",
-      "year": 2019,
-      "slug": "waves-2019",
-      "letterboxd_url": "https://letterboxd.com/film/waves-2019",
-      "score": 0.6426,
-      "reason_codes": [
-        "genre_match",
-        "country_match",
-        "runtime_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "wild_card_contrast"
-      ],
-      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
-      "genres": [
-        "Romance",
-        "Drama"
-      ],
-      "countries": [
-        "Canada",
-        "USA"
-      ],
-      "runtime": 135.0,
-      "average_rating": 3.92,
-      "watches": 407861.0,
-      "fans": 25000.0,
-      "director": "Trey Edward Shults",
-      "directors": [
-        "Trey Edward Shults"
-      ],
-      "director_source": "film_normalized",
-      "tmdb_id": 533444,
-      "poster_path": "/3xbjL0z8iH8e8L3USyeKGQrBfuZ.jpg",
-      "poster_url": "https://image.tmdb.org/t/p/w500/3xbjL0z8iH8e8L3USyeKGQrBfuZ.jpg",
-      "backdrop_path": "/jQ06O9JAFN0VfDS4ezE09pfoj2h.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w780/jQ06O9JAFN0VfDS4ezE09pfoj2h.jpg",
+      "poster_path": "/rbpp2G4cpGG8jqCqhEBwvjQ0Y6C.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/rbpp2G4cpGG8jqCqhEBwvjQ0Y6C.jpg",
+      "backdrop_path": "/dbspMNCXsezL0V1a5NX4WD9AadY.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/dbspMNCXsezL0V1a5NX4WD9AadY.jpg",
       "poster_status": "verified",
       "poster_source": "tmdb_search",
       "poster_match": {
-        "tmdb_id": 533444,
-        "tmdb_title": "Waves",
-        "tmdb_original_title": "Waves",
-        "tmdb_year": 2019,
-        "expected_title": "Waves",
-        "expected_year": 2019,
+        "tmdb_id": 56812,
+        "tmdb_title": "The Last Circus",
+        "tmdb_original_title": "Balada triste de trompeta",
+        "tmdb_year": 2010,
+        "expected_title": "The Last Circus",
+        "expected_year": 2010,
         "confidence": 1.0,
         "year_delta": 0
       }
@@ -1547,14 +1572,14 @@
     "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
     "unavailable_text": "Recommandations indisponibles pour ce profil.",
     "slot_labels": {
-      "safe_pick": "Le choix sûr",
+      "safe_pick": "La pépite",
       "deep_cut": "Le détour",
       "wild_card": "Le pari"
     },
     "slot_descriptions": {
-      "safe_pick": "Un film populaire proche de tes genres préférés.",
-      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
-      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+      "safe_pick": "Un film confidentiel et plus ancien, proche de tes genres préférés.",
+      "deep_cut": "Un film d’un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts.",
+      "wild_card": "Un film récent et bien accueilli, qui change un peu d’angle par rapport à tes habitudes."
     }
   },
   "cards": [
@@ -1784,17 +1809,15 @@
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
     "items_checked": 8,
-    "posters_verified": 7,
+    "posters_verified": 8,
     "posters_ambiguous": 0,
-    "posters_missing_count": 1,
+    "posters_missing_count": 0,
     "verified_by_source": {
-      "tmdb_search": 2,
+      "tmdb_search": 3,
       "letterboxd_rss": 5
     },
     "homonymy_rejections": [],
-    "posters_missing": [
-      "Wings of Desire"
-    ],
+    "posters_missing": [],
     "obsession_audit": null
   },
   "warnings": [

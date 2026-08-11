@@ -1,4 +1,5 @@
-"""Build deterministic film recommendations from Megabank and profile metrics.
+"""Build deterministic film recommendations from a live TMDB candidate pool
+and profile metrics.
 
 Usage:
     python scripts/build_recommendations.py <letterboxd_username>
@@ -6,7 +7,7 @@ Usage:
 Inputs:
     data/output/<username>_wrapped.json
     data/output/<username>_profile_metrics.json
-    data/processed/megabank_clean.json
+    TMDB (live, cached under data/cache/) via recommendation_candidates_tmdb.py
 
 Outputs:
     data/output/<username>_recommendations.json
@@ -15,19 +16,28 @@ Outputs:
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import re
 import sys
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 from statistics import mean, median
 from typing import Any, Optional
+from urllib.parse import quote
+
+from recommendation_candidates_tmdb import fetch_candidate_pool
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "data" / "output"
+# Reference-only now: used to look up a verified Letterboxd link for a
+# candidate that happens to still be in the old bank, never as a candidate
+# source (that's recommendation_candidates_tmdb.py's job).
 MEGABANK_JSON = BASE_DIR / "data" / "processed" / "megabank_clean.json"
+CURRENT_YEAR = datetime.now(timezone.utc).year
 
 COUNTRY_NAME_MAP = {
     "US": "USA",
@@ -170,6 +180,87 @@ def parse_year_from_slug(slug: Any) -> Optional[int]:
     return year if 1870 <= year <= 2100 else None
 
 
+def load_megabank_url_lookup() -> dict[str, Any]:
+    """Verified Letterboxd URLs from the old bank, read-only reference (not a
+    candidate source): a TMDB candidate that happens to still be in the old
+    bank gets its real, already-verified Letterboxd link instead of a search
+    fallback. No network call involved.
+
+    Most Megabank slugs carry NO year suffix at all (Letterboxd only adds
+    "-YYYY" to disambiguate a title collision), so a (title, year) key alone
+    misses the common case. Two tiers instead:
+      - by_title_year: keyed on (title, year) for slugs that do carry a
+        parseable year, for the homonym case (e.g. two different-era
+        "Nosferatu" entries).
+      - by_title_only: keyed on title alone, but only for titles that are
+        unique across the whole bank -- ambiguous titles are dropped from
+        this tier rather than risk resolving to the wrong film.
+    """
+    if not MEGABANK_JSON.exists():
+        return {"by_title_year": {}, "by_title_only": {}}
+    try:
+        records = json.loads(MEGABANK_JSON.read_text(encoding="utf-8"))
+    except Exception:
+        return {"by_title_year": {}, "by_title_only": {}}
+
+    by_title_year: dict[tuple[str, int], str] = {}
+    title_occurrences: dict[str, list[str]] = {}
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+        url = record.get("letterboxd_url")
+        title = record.get("title")
+        if not url or not title:
+            continue
+        norm_title = normalize_title(title)
+        title_occurrences.setdefault(norm_title, []).append(str(url))
+        year = parse_year_from_slug(record.get("letterboxd_slug"))
+        if year is not None:
+            by_title_year[(norm_title, year)] = str(url)
+
+    by_title_only = {
+        norm_title: urls[0] for norm_title, urls in title_occurrences.items() if len(urls) == 1
+    }
+    return {"by_title_year": by_title_year, "by_title_only": by_title_only}
+
+
+def letterboxd_search_url(title: str, year: Optional[int] = None) -> str:
+    # Including the year in the query text helps Letterboxd's own search
+    # disambiguate homonyms (two different films sharing a title) -- we
+    # can't know their internal slug/ranking logic, but their search does
+    # match against a film's displayed year, so this narrows the results the
+    # user lands on instead of a bare, ambiguous title search.
+    query = f"{title} {year}" if year else str(title)
+    return f"https://letterboxd.com/search/films/{quote(query)}/"
+
+
+def resolve_letterboxd_url(
+    record: dict[str, Any],
+    year: Optional[int],
+    megabank_lookup: dict[str, Any],
+) -> str:
+    """Always returns a working link: a verified old-bank URL when we have
+    one, otherwise Letterboxd's own search (never a guessed /film/{slug}/,
+    since Letterboxd's disambiguation suffix for common titles can't be
+    predicted offline without scraping). Pure string lookup/formatting --
+    no network call, safe to run for every candidate during batch generation;
+    the actual "does this page exist" resolution happens in the user's
+    browser at click time, on Letterboxd's own servers.
+    """
+    title = record.get("title")
+    if not title:
+        return ""
+    norm_title = normalize_title(title)
+    by_title_year = megabank_lookup.get("by_title_year") or {}
+    by_title_only = megabank_lookup.get("by_title_only") or {}
+    # by_title_only is already restricted to titles unique across the whole
+    # bank (built in load_megabank_url_lookup), so it can never resolve a
+    # homonym to the wrong film -- a genuine homonym just falls through to
+    # the year-qualified search below.
+    known = (by_title_year.get((norm_title, year)) if year is not None else None) or by_title_only.get(norm_title)
+    return known or letterboxd_search_url(str(title), year)
+
+
 def list_values(value: Any) -> list[Any]:
     return value if isinstance(value, list) else []
 
@@ -308,8 +399,14 @@ def score_candidate(record: dict[str, Any], context: dict[str, Any]) -> dict[str
     directors = [str(value) for value in list_values(record.get("directors")) if value]
     runtime = safe_float(record.get("runtime"))
     year = parse_year_from_slug(record.get("letterboxd_slug"))
-    watches = safe_float(record.get("watches"))
+    # TMDB candidates carry no Letterboxd watches/fans counts (dropped from
+    # the Megabank in this build); popularity/vote_count are the TMDB-native
+    # stand-ins, compared against the candidate pool's own median rather than
+    # the user's Letterboxd watch history, since the two live on unrelated
+    # numeric scales.
+    vote_count = safe_float(record.get("tmdb_vote_count"))
     fans = safe_float(record.get("fans"))
+    watches = safe_float(record.get("watches"))
     average_rating = safe_float(record.get("average_rating"))
 
     genre_score = weighted_overlap(genres, context["genre_weights"])
@@ -322,9 +419,15 @@ def score_candidate(record: dict[str, Any], context: dict[str, Any]) -> dict[str
     if year is not None and context["average_year"]:
         year_score = clamp(1 - abs(year - context["average_year"]) / 45)
     mainstream_target = safe_float(context["radar"].get("mainstreamness", {}).get("value_5")) or 3
-    mainstream_value = clamp((math.log10(watches or 1) - 3) / 3) if watches else 0.45
+    pool_vote_count_median = context.get("tmdb_vote_count_median")
+    mainstream_value = clamp(1 - niche_score(vote_count, pool_vote_count_median)) if vote_count else 0.45
     mainstream_score = clamp(1 - abs(mainstream_value - (mainstream_target / 5)))
-    rating_score = normalized_rating(average_rating)
+    # Fresh/upcoming TMDB candidates can carry a vote_average built from a
+    # handful of votes (a single 5-star rating reads as a perfect score
+    # otherwise). Blend toward the neutral baseline as vote_count drops so a
+    # barely-rated new release can't look like a critically acclaimed pick.
+    rating_confidence = clamp((vote_count or 0.0) / 50.0)
+    rating_score = normalized_rating(average_rating) * rating_confidence + 0.45 * (1 - rating_confidence)
     cult_bonus = clamp(fans_ratio(fans, watches) / 0.04)
     director_bonus = 1.0 if any(director in context["directors"] for director in directors) else 0.0
     redundancy = redundancy_penalty(record, context["watched_title_tokens"])
@@ -353,7 +456,7 @@ def score_candidate(record: dict[str, Any], context: dict[str, Any]) -> dict[str
         "cult_bonus": cult_bonus,
         "director_bonus": director_bonus,
         "redundancy_penalty": redundancy,
-        "niche_score": niche_score(watches, context["watches_median"]),
+        "niche_score": niche_score(vote_count, pool_vote_count_median),
         "fans_ratio": fans_ratio(fans, watches),
         "year": year,
     }
@@ -378,29 +481,33 @@ def reason_codes_for(record: dict[str, Any], score: dict[str, Any], context: dic
         codes.append("non_us_angle")
     if score.get("year") and context.get("average_year") and abs(score["year"] - context["average_year"]) >= 15:
         codes.append("decade_shift")
-    if slot == "deep_cut":
-        codes.append("deep_cut")
+    if slot == "safe_pick":
+        codes.append("low_popularity_gem")
     if slot == "wild_card":
-        codes.append("wild_card_contrast")
+        codes.append("fresh_acclaimed")
+    if slot == "deep_cut":
+        codes.append("new_country_discovery")
     return codes
 
 
 def reason_text(slot: str, record: dict[str, Any], context: dict[str, Any]) -> str:
     if slot == "safe_pick":
-        return "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes."
+        return "Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert."
     if slot == "deep_cut":
-        return "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles."
-    return "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents."
+        return "Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels."
+    return "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes."
 
 
 def recommendation_payload(slot: str, record: dict[str, Any], score_value: float, score: dict[str, Any], context: dict[str, Any]) -> dict[str, Any]:
     directors = list_values(record.get("directors"))
+    year = score.get("year")
+    megabank_lookup = context.get("megabank_url_lookup") or {}
     return {
         "slot": slot,
         "title": record.get("title"),
-        "year": score.get("year"),
+        "year": year,
         "slug": record.get("letterboxd_slug"),
-        "letterboxd_url": record.get("letterboxd_url"),
+        "letterboxd_url": resolve_letterboxd_url(record, year, megabank_lookup),
         "score": rounded(score_value, 4),
         "reason_codes": reason_codes_for(record, score, context, slot),
         "reason_text": reason_text(slot, record, context),
@@ -408,9 +515,13 @@ def recommendation_payload(slot: str, record: dict[str, Any], score_value: float
         "countries": [normalize_country_name(value) for value in list_values(record.get("countries")) if normalize_country_name(value)],
         "runtime": rounded(record.get("runtime"), 0),
         "average_rating": rounded(record.get("average_rating"), 2),
+        "rating_source": "tmdb",
         "watches": rounded(record.get("watches"), 0),
         "fans": rounded(record.get("fans"), 0),
         "director": directors[0] if directors else None,
+        "tmdb_id": record.get("tmdb_id"),
+        "tmdb_popularity": rounded(record.get("tmdb_popularity"), 2),
+        "tmdb_vote_count": rounded(record.get("tmdb_vote_count"), 0),
     }
 
 
@@ -458,66 +569,186 @@ def countries_set(record: dict[str, Any]) -> set[str]:
     }
 
 
-def has_non_us_country(record: dict[str, Any]) -> bool:
-    countries = countries_set(record)
-    return any(country != "USA" for country in countries)
-
-
 def popularity_bucket(record: dict[str, Any], context: dict[str, Any]) -> str:
-    watches = safe_float(record.get("watches"))
-    median_watches = context.get("watches_median")
-    if watches is None or watches <= 0 or not median_watches:
+    vote_count = safe_float(record.get("tmdb_vote_count"))
+    median_vote_count = context.get("tmdb_vote_count_median")
+    if vote_count is None or vote_count <= 0 or not median_vote_count:
         return "unknown"
-    if watches >= median_watches * 2.0:
+    if vote_count >= median_vote_count * 2.0:
         return "high"
-    if watches <= median_watches * 0.45:
+    if vote_count <= median_vote_count * 0.45:
         return "low"
     return "mid"
 
 
-def primary_genre(record: dict[str, Any]) -> Optional[str]:
-    genres = list_values(record.get("genres"))
-    return str(genres[0]) if genres else None
 
 
-def wild_card_contrast_score(item: dict[str, Any], chosen_items: list[dict[str, Any]], context: dict[str, Any]) -> int:
-    if not chosen_items:
-        return 0
-    record = item["record"]
-    score = item["score"]
-    reference = chosen_items[0]
-    reference_record = reference["record"]
-    reference_score = reference["score"]
-    contrast = 0
+# --- Slot 1 "safe_pick" ("La Pépite"): strong thematic proximity, low
+# popularity within this run's own pool, older release. ---
+SLOT1_POPULARITY_PERCENTILE_MAX = 0.35
+SLOT1_MAX_RELEASE_YEAR = CURRENT_YEAR - 3
 
-    if countries_set(record) and countries_set(record) != countries_set(reference_record):
-        contrast += 1
-    if score.get("year") is not None and reference_score.get("year") is not None:
-        if abs(score["year"] - reference_score["year"]) >= 12:
-            contrast += 1
-    if primary_genre(record) and primary_genre(record) != primary_genre(reference_record):
-        contrast += 1
-    if popularity_bucket(record, context) != popularity_bucket(reference_record, context):
-        contrast += 1
-    if primary_director(record) and primary_director(record) != primary_director(reference_record):
-        contrast += 1
-    runtime = safe_float(record.get("runtime"))
-    reference_runtime = safe_float(reference_record.get("runtime"))
-    if runtime is not None and reference_runtime is not None and abs(runtime - reference_runtime) >= 25:
-        contrast += 1
-    return contrast
+# --- Slot 2 "wild_card" ("Le Pari"): departs from habits, well-rated (with
+# enough votes to trust the rating), popularity a notch above slot 1, recent. ---
+SLOT2_POPULARITY_PERCENTILE_MIN = 0.35
+SLOT2_POPULARITY_PERCENTILE_MAX = 0.85
+SLOT2_MIN_RELEASE_YEAR = CURRENT_YEAR - 1
+SLOT2_MIN_RATING_SCORE = 0.65
+SLOT2_MIN_VOTE_COUNT = 30
+WILD_CARD_TOP_K = 5
+
+# --- Slot 3 "deep_cut" ("Le Détour"): a country the user hasn't seen yet,
+# filtered down to picks that still fit their usual taste. ---
+SLOT3_MIN_THEMATIC_PROXIMITY = 0.15
+SLOT3_MIN_RATING_SCORE = 0.4
+SLOT3_MIN_VOTE_COUNT = 10
 
 
-def wild_card_has_contrast(item: dict[str, Any], chosen_items: list[dict[str, Any]], context: dict[str, Any]) -> bool:
-    return wild_card_contrast_score(item, chosen_items, context) >= 2
+def thematic_proximity(score: dict[str, Any]) -> float:
+    return clamp(score["genre_score"] * 0.7 + score["country_score"] * 0.15 + score["director_bonus"] * 0.15)
+
+
+def assign_popularity_percentiles(items: list[dict[str, Any]]) -> None:
+    """Ranks each item's TMDB vote_count within this run's own candidate
+    pool (0 = least popular, 1 = most) -- "low popularity" is always relative
+    to the pool, never a fixed watch-count threshold (Letterboxd's watches
+    has no TMDB equivalent to threshold against)."""
+    ranked = sorted(items, key=lambda item: safe_float(item["record"].get("tmdb_vote_count")) or 0)
+    count = len(ranked)
+    for index, item in enumerate(ranked):
+        item["popularity_percentile"] = index / (count - 1) if count > 1 else 0.5
+
+
+def seen_countries_from_context(context: dict[str, Any]) -> set[str]:
+    # country_weights already covers every country in the user's watched
+    # films with metadata (built in build_profile_context), unlike
+    # profile_metrics.json's country_passport.top_countries, which is
+    # truncated -- using the truncated list here would wrongly treat an
+    # already-seen country as "new".
+    return {country for country in context.get("country_weights", {}) if country}
+
+
+def has_unseen_country(record: dict[str, Any], seen_countries: set[str]) -> bool:
+    return bool(countries_set(record) - seen_countries)
+
+
+def first_nonempty(pool: list[dict[str, Any]], filters: list[Any]) -> tuple[list[dict[str, Any]], int]:
+    """Tries each filter in order, strictest first; returns the first
+    non-empty subset and how many relaxation steps were needed to get there."""
+    for level, predicate in enumerate(filters):
+        subset = [item for item in pool if predicate(item)]
+        if subset:
+            return subset, level
+    return [], len(filters)
+
+
+def slot1_candidates(pool: list[dict[str, Any]], context: dict[str, Any]) -> tuple[list[dict[str, Any]], int]:
+    def strict(item: dict[str, Any]) -> bool:
+        year = item["score"].get("year")
+        return (
+            item["popularity_percentile"] <= SLOT1_POPULARITY_PERCENTILE_MAX
+            and year is not None and year <= SLOT1_MAX_RELEASE_YEAR
+        )
+
+    def relax_popularity(item: dict[str, Any]) -> bool:
+        year = item["score"].get("year")
+        return year is not None and year <= SLOT1_MAX_RELEASE_YEAR
+
+    def relax_date_too(_item: dict[str, Any]) -> bool:
+        return True
+
+    subset, level = first_nonempty(pool, [strict, relax_popularity, relax_date_too])
+    subset.sort(key=lambda item: (item["thematic_proximity"], item["score"]["compatibility"]), reverse=True)
+    return subset, level
+
+
+def wild_card_rank(item: dict[str, Any]) -> float:
+    # Quality stays dominant (matches the brief's "tri: note décroissante"),
+    # but a pure rating sort has zero personalization: the single
+    # best-rated film in the pool would win this slot for every profile,
+    # which is exactly the "everyone gets the same film" problem this was
+    # meant to avoid. Blending in a compatibility share lets different
+    # users land on different picks once several candidates clear the
+    # quality bar, without letting a mediocre-but-compatible film beat a
+    # clearly better-rated one.
+    return item["score"]["rating_score"] * 0.7 + item["score"]["compatibility"] * 0.3
+
+
+def slot2_candidates(pool: list[dict[str, Any]], context: dict[str, Any]) -> tuple[list[dict[str, Any]], int]:
+    def quality_ok(item: dict[str, Any]) -> bool:
+        vote_count = safe_float(item["record"].get("tmdb_vote_count")) or 0
+        return item["score"]["rating_score"] >= SLOT2_MIN_RATING_SCORE and vote_count >= SLOT2_MIN_VOTE_COUNT
+
+    def strict(item: dict[str, Any]) -> bool:
+        year = item["score"].get("year")
+        return (
+            SLOT2_POPULARITY_PERCENTILE_MIN <= item["popularity_percentile"] <= SLOT2_POPULARITY_PERCENTILE_MAX
+            and year is not None and year >= SLOT2_MIN_RELEASE_YEAR
+            and quality_ok(item)
+        )
+
+    def relax_popularity(item: dict[str, Any]) -> bool:
+        year = item["score"].get("year")
+        return year is not None and year >= SLOT2_MIN_RELEASE_YEAR and quality_ok(item)
+
+    def relax_date_too(item: dict[str, Any]) -> bool:
+        return quality_ok(item)
+
+    def relax_quality_too(_item: dict[str, Any]) -> bool:
+        return True
+
+    subset, level = first_nonempty(pool, [strict, relax_popularity, relax_date_too, relax_quality_too])
+    subset.sort(key=lambda item: (wild_card_rank(item), item["score"]["rating_score"]), reverse=True)
+    return subset, level
+
+
+def slot3_candidates(pool: list[dict[str, Any]], context: dict[str, Any]) -> tuple[list[dict[str, Any]], int]:
+    seen_countries = seen_countries_from_context(context)
+
+    def quality_ok(item: dict[str, Any]) -> bool:
+        vote_count = safe_float(item["record"].get("tmdb_vote_count")) or 0
+        return item["score"]["rating_score"] >= SLOT3_MIN_RATING_SCORE and vote_count >= SLOT3_MIN_VOTE_COUNT
+
+    def strict(item: dict[str, Any]) -> bool:
+        return (
+            has_unseen_country(item["record"], seen_countries)
+            and item["thematic_proximity"] >= SLOT3_MIN_THEMATIC_PROXIMITY
+            and quality_ok(item)
+        )
+
+    def relax_quality(item: dict[str, Any]) -> bool:
+        return has_unseen_country(item["record"], seen_countries) and item["thematic_proximity"] >= SLOT3_MIN_THEMATIC_PROXIMITY
+
+    def relax_thematic_floor_too(item: dict[str, Any]) -> bool:
+        return has_unseen_country(item["record"], seen_countries)
+
+    def relax_country_too(_item: dict[str, Any]) -> bool:
+        # Absolute last resort so the slot is never empty: if the pool
+        # somehow has no unseen-country candidate left, still return the
+        # closest-taste film rather than leaving the slot unfilled.
+        return True
+
+    subset, level = first_nonempty(pool, [strict, relax_quality, relax_thematic_floor_too, relax_country_too])
+    subset.sort(key=lambda item: (item["thematic_proximity"], item["score"]["compatibility"]), reverse=True)
+    return subset, level
+
+
+SLOT_CANDIDATE_BUILDERS = {
+    "safe_pick": slot1_candidates,
+    "wild_card": slot2_candidates,
+    "deep_cut": slot3_candidates,
+}
+SLOT_SCORE_KEY = {
+    "safe_pick": lambda item: item["thematic_proximity"],
+    "wild_card": wild_card_rank,
+    "deep_cut": lambda item: item["thematic_proximity"],
+}
 
 
 def diversity_reject_reason(
     item: dict[str, Any],
     chosen_items: list[dict[str, Any]],
-    slot: str,
     used_directors: set[str],
-    context: dict[str, Any],
 ) -> Optional[str]:
     record = item["record"]
     director = primary_director(record)
@@ -530,87 +761,89 @@ def diversity_reject_reason(
         existing_signatures = [genre_signature(chosen["record"]) for chosen in chosen_items]
         if all(candidate_signature == signature for signature in existing_signatures):
             return "duplicate_genre_signature"
-    if slot == "wild_card" and chosen_items and not wild_card_has_contrast(item, chosen_items, context):
-        return "wild_card_lacks_contrast"
     return None
 
 
+def deterministic_pick_index(username: Optional[str], count: int) -> int:
+    if count <= 1 or not username:
+        return 0
+    digest = hashlib.sha256(username.encode("utf-8")).hexdigest()
+    return int(digest, 16) % count
+
+
 def select_diverse_recommendations(scored: list[dict[str, Any]], context: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    assign_popularity_percentiles(scored)
+    for item in scored:
+        item["thematic_proximity"] = thematic_proximity(item["score"])
+
     chosen_items: list[dict[str, Any]] = []
     used_directors: set[str] = set()
     rejected: list[dict[str, Any]] = []
-    non_us_recommendation_sought = (context.get("non_us_share") or 0) >= 0.55
+    relaxation_used: dict[str, int] = {}
+    username = context.get("username")
 
-    for item in scored:
-        item["context_secondary_genres"] = context.get("secondary_genres", [])
-
-    for slot in ["safe_pick", "deep_cut", "wild_card"]:
+    for slot in ["safe_pick", "wild_card", "deep_cut"]:
         chosen_slugs = {chosen["record"].get("letterboxd_slug") for chosen in chosen_items}
+        available = [item for item in scored if item["record"].get("letterboxd_slug") not in chosen_slugs]
+        pool, relaxation_level = SLOT_CANDIDATE_BUILDERS[slot](available, context)
+        relaxation_used[slot] = relaxation_level
 
-        def slot_rank(item: dict[str, Any]) -> tuple[float, float, str]:
-            contrast = wild_card_contrast_score(item, chosen_items, context) if slot == "wild_card" else 0
-            item["wild_card_contrast_score"] = contrast
-            return (
-                item[slot] + (contrast * 0.075 if slot == "wild_card" else 0),
-                item["score"]["compatibility"],
-                item["record"].get("title") or "",
-            )
-
-        ranked = sorted(
-            (item for item in scored if item["record"].get("letterboxd_slug") not in chosen_slugs),
-            key=slot_rank,
-            reverse=True,
-        )
-        selected = None
-        eligible_items = []
-        for item in ranked:
-            reason = diversity_reject_reason(item, chosen_items, slot, used_directors, context)
+        eligible: list[dict[str, Any]] = []
+        for item in pool:
+            reason = diversity_reject_reason(item, chosen_items, used_directors)
             if reason:
                 rejected.append({
                     "slot": slot,
                     "title": item["record"].get("title"),
                     "director": primary_director(item["record"]),
                     "countries": sorted(countries_set(item["record"])),
-                    "score": rounded(item.get(slot), 4),
+                    "score": rounded(SLOT_SCORE_KEY[slot](item), 4),
                     "reason": reason,
                 })
                 continue
-            eligible_items.append(item)
-        if eligible_items:
-            selected = eligible_items[0]
-            has_non_us_selected = any(has_non_us_country(chosen["record"]) for chosen in chosen_items)
-            should_seek_non_us = non_us_recommendation_sought and not has_non_us_selected and slot in {"deep_cut", "wild_card"}
-            if should_seek_non_us:
-                threshold = selected[slot] * 0.8
-                non_us_options = [item for item in eligible_items if has_non_us_country(item["record"]) and item[slot] >= threshold]
-                if non_us_options:
-                    selected = max(non_us_options, key=slot_rank)
-                    rejected.append({
-                        "slot": slot,
-                        "title": eligible_items[0]["record"].get("title"),
-                        "director": primary_director(eligible_items[0]["record"]),
-                        "countries": sorted(countries_set(eligible_items[0]["record"])),
-                        "score": rounded(eligible_items[0].get(slot), 4),
-                        "reason": "replaced_by_non_us_diversity",
-                    })
-        if selected is None:
-            selected = ranked[0]
+            eligible.append(item)
+            if slot != "wild_card" and len(eligible) >= 1:
+                break
+            if slot == "wild_card" and len(eligible) >= WILD_CARD_TOP_K:
+                break
+
+        selected = None
+        if eligible:
+            if slot == "wild_card":
+                # All top-K candidates already cleared the quality gate (see
+                # slot2_candidates), so this only decides *which* excellent
+                # film this specific user sees -- without it, the single
+                # best-rated film in the pool would win this slot for every
+                # profile, since rating dominates the ranking by design.
+                # Hashing the username keeps it deterministic (same user,
+                # same re-run -> same pick) while spreading different users
+                # across the top-K instead of all converging on #1.
+                selected = eligible[deterministic_pick_index(username, len(eligible))]
+            else:
+                selected = eligible[0]
+        if selected is None and pool:
+            # Every candidate failed the diversity checks: "toujours 3 recos"
+            # wins over strict diversity in the worst case.
+            selected = pool[0]
             rejected.append({
                 "slot": slot,
                 "title": selected["record"].get("title"),
                 "director": primary_director(selected["record"]),
                 "countries": sorted(countries_set(selected["record"])),
-                "score": rounded(selected.get(slot), 4),
+                "score": rounded(SLOT_SCORE_KEY[slot](selected), 4),
                 "reason": "fallback_without_full_diversity",
             })
+        if selected is None:
+            continue
         selected["selected_slot"] = slot
+        selected["slot_score"] = SLOT_SCORE_KEY[slot](selected)
         chosen_items.append(selected)
         director = primary_director(selected["record"])
         if director:
             used_directors.add(director)
 
     recommendations = [
-        recommendation_payload(item["selected_slot"], item["record"], item[item["selected_slot"]], item["score"], context)
+        recommendation_payload(item["selected_slot"], item["record"], item["slot_score"], item["score"], context)
         for item in chosen_items
     ]
     diversity = {
@@ -619,9 +852,8 @@ def select_diverse_recommendations(scored: list[dict[str, Any]], context: dict[s
         "primary_genres": [list_values(item["record"].get("genres"))[:2] for item in chosen_items],
         "countries": [recommendation.get("countries") for recommendation in recommendations],
         "popularity": [popularity_bucket(item["record"], context) for item in chosen_items],
-        "non_us_recommendation_sought": non_us_recommendation_sought,
         "non_us_recommendation_found": any(any(country != "USA" for country in rec.get("countries", [])) for rec in recommendations),
-        "wild_card_contrast_score": next((item.get("wild_card_contrast_score", 0) for item in chosen_items if item.get("selected_slot") == "wild_card"), 0),
+        "relaxation_used": relaxation_used,
         "rejected": rejected,
     }
     return recommendations, diversity
@@ -634,19 +866,26 @@ def build_recommendations(username: str) -> tuple[Path, Path]:
         raise FileNotFoundError(f"Missing wrapped JSON: {wrapped_path}")
     if not metrics_path.exists():
         raise FileNotFoundError(f"Missing profile metrics JSON: {metrics_path}")
-    if not MEGABANK_JSON.exists():
-        raise FileNotFoundError(f"Missing Megabank JSON: {MEGABANK_JSON}")
 
     wrapped = json.loads(wrapped_path.read_text(encoding="utf-8"))
     metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
-    megabank = json.loads(MEGABANK_JSON.read_text(encoding="utf-8"))
     films = wrapped.get("films") or []
     seen_slugs = {film.get("letterboxd_slug") for film in films if film.get("letterboxd_slug")}
     context = build_profile_context(wrapped, metrics)
 
+    candidate_pool, pool_stats = fetch_candidate_pool(wrapped, metrics)
+    pool_vote_counts = [
+        value
+        for value in (safe_float(record.get("tmdb_vote_count")) for record in candidate_pool)
+        if value is not None and value > 0
+    ]
+    context["tmdb_vote_count_median"] = median(pool_vote_counts) if pool_vote_counts else None
+    context["megabank_url_lookup"] = load_megabank_url_lookup()
+    context["username"] = username
+
     scored = []
     eligibility_excluded = []
-    for record in megabank:
+    for record in candidate_pool:
         if not isinstance(record, dict):
             continue
         eligible, eligibility_reason = is_recommendation_eligible(record)
@@ -660,46 +899,26 @@ def build_recommendations(username: str) -> tuple[Path, Path]:
         if not is_candidate(record, seen_slugs):
             continue
         score = score_candidate(record, context)
-        watches = safe_float(record.get("watches"))
-        rating = safe_float(record.get("average_rating"))
-        safe_score = score["compatibility"] + normalized_rating(rating) * 0.18 - score["niche_score"] * 0.08
-        deep_score = score["compatibility"] * 0.72 + score["niche_score"] * 0.22 + score["cult_bonus"] * 0.18
-        if watches is not None and context["watches_median"]:
-            if watches > context["watches_median"] * 4.0:
-                deep_score -= 0.28
-            elif watches > context["watches_median"] * 1.8:
-                deep_score -= 0.18
-            elif watches > context["watches_median"]:
-                deep_score -= 0.06
-        wild_score = (
-            score["compatibility"] * 0.42
-            + (1 - min(score["genre_score"], 1)) * 0.14
-            + score["country_score"] * 0.16
-            + score["year_score"] * 0.08
-            + normalized_rating(rating) * 0.12
-            + score["cult_bonus"] * 0.08
-        )
-        scored.append({
-            "record": record,
-            "score": score,
-            "safe_pick": safe_score,
-            "deep_cut": deep_score,
-            "wild_card": wild_score,
-        })
+        scored.append({"record": record, "score": score})
 
     if len(scored) < 3:
+        if not pool_stats.get("tmdb_available"):
+            reason = "TMDB was unavailable for this run, so no candidate pool could be built."
+        else:
+            reason = (
+                f"Not enough eligible TMDB candidates after excluding watched films "
+                f"({len(scored)} candidate{'s' if len(scored) != 1 else ''} available)."
+            )
         output = {
             "user": username,
             "source_files": {
                 "wrapped": str(wrapped_path.relative_to(BASE_DIR)),
                 "profile_metrics": str(metrics_path.relative_to(BASE_DIR)),
-                "megabank": str(MEGABANK_JSON.relative_to(BASE_DIR)),
+                "tmdb_candidates_cache": "data/cache/tmdb_candidates_cache.json",
             },
             "recommendations": [],
-            "unavailable_reason": (
-                f"Not enough eligible Megabank candidates after excluding watched films "
-                f"({len(scored)} candidate{'s' if len(scored) != 1 else ''} available)."
-            ),
+            "unavailable_reason": reason,
+            "candidate_pool_stats": pool_stats,
             "scoring_notes": [
                 "Recommendations are optional and may be unavailable for small or sparse profiles.",
             ],
@@ -721,18 +940,25 @@ def build_recommendations(username: str) -> tuple[Path, Path]:
         "source_files": {
             "wrapped": str(wrapped_path.relative_to(BASE_DIR)),
             "profile_metrics": str(metrics_path.relative_to(BASE_DIR)),
-            "megabank": str(MEGABANK_JSON.relative_to(BASE_DIR)),
+            "tmdb_candidates_cache": "data/cache/tmdb_candidates_cache.json",
         },
         "recommendations": chosen,
         "diversity_checks": diversity_checks,
         "eligibility_excluded": eligibility_excluded[:100],
         "notable_eligibility_excluded": notable_eligibility_excluded,
+        "candidate_pool_stats": pool_stats,
         "scoring_notes": [
-            f"Candidates are Megabank films not present in the user's last {len(films)} RSS films.",
-            "Compatibility combines genre, country, language, runtime, era, mainstream fit, community rating, fans/watches, repeat director, and title redundancy.",
-            "safe_pick boosts global compatibility and community rating.",
-            "deep_cut boosts niche score and fans/watches, with a penalty for very high watch counts.",
-            "wild_card uses partial compatibility plus secondary/oblique signals instead of selecting the third-best global score.",
+            f"Candidates come from a live TMDB pool (seed similar/recommendations, profile-based discover, "
+            f"now_playing/upcoming/trending) not present in the user's last {len(films)} RSS films.",
+            "safe_pick (\"La Pépite\"): strong genre/country/director proximity, low popularity within this "
+            "run's pool, released 3+ years ago.",
+            "wild_card (\"Le Pari\"): departs from usual habits, well-rated with enough votes to trust the "
+            "rating, popularity a notch above safe_pick, released this year or last.",
+            "deep_cut (\"Le Détour\"): a production country the user hasn't seen yet, filtered to picks that "
+            "still fit their usual genre/country taste, with a quality floor.",
+            "Each slot relaxes its own criteria progressively (popularity/date first, thematic proximity "
+            "preserved longest) if nothing satisfies the full criteria -- see candidate_pool_stats and "
+            "diversity_checks.relaxation_used (0 = no relaxation needed).",
         ],
     }
 
@@ -759,17 +985,19 @@ def render_report(output: dict[str, Any]) -> str:
         countries = rec.get("countries") or []
         non_us_label = "non-USA" if any(country != "USA" for country in countries) else "USA"
         popularity = popularities[index] if index < len(popularities) else "unknown"
+        relaxation = (diversity.get("relaxation_used") or {}).get(rec.get("slot"), 0)
         if rec.get("slot") == "safe_pick":
-            role = "highest-confidence fit for the current profile."
+            role = "low-popularity, older pick close to the user's usual genres/countries (\"La Pépite\")."
         elif rec.get("slot") == "deep_cut":
-            role = "compatible pick with a less obvious popularity profile."
+            role = "a production country new to the user, filtered to stay close to their usual taste (\"Le Détour\")."
         else:
-            role = f"contrast pick with wild_card_contrast_score={diversity.get('wild_card_contrast_score', 0)}."
+            role = "recent, well-rated pick that departs a bit from usual habits (\"Le Pari\")."
         lines.extend([
             f"- {rec.get('slot')}: {rec.get('title')} — {role}",
             f"  Countries: {', '.join(countries) or 'Unknown'} ({non_us_label}).",
             f"  Primary genres: {', '.join((rec.get('genres') or [])[:2]) or 'Unknown'}.",
-            f"  Popularity: {popularity} (watches={rec.get('watches')}).",
+            f"  Popularity: {popularity} (tmdb_vote_count={rec.get('tmdb_vote_count')}).",
+            f"  Relaxation steps used: {relaxation} (0 = full criteria satisfied).",
             f"  Difference: director={rec.get('director')}, runtime={rec.get('runtime')}, year={rec.get('year')}.",
         ])
     lines.extend([
@@ -777,9 +1005,7 @@ def render_report(output: dict[str, Any]) -> str:
         "## Diversity checks",
         "",
         f"- Distinct directors: {'yes' if diversity.get('distinct_directors') else 'no'}",
-        f"- Non-USA recommendation sought: {'yes' if diversity.get('non_us_recommendation_sought') else 'no'}",
         f"- Non-USA recommendation found: {'yes' if diversity.get('non_us_recommendation_found') else 'no'}",
-        f"- Wild card contrast score: {diversity.get('wild_card_contrast_score', 0)}",
         "- Directors: " + ", ".join(str(value) for value in diversity.get("directors", [])),
         "- Primary genres: "
         + " | ".join(", ".join(str(genre) for genre in genres) for genres in diversity.get("primary_genres", [])),

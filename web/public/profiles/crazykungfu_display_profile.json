@@ -1353,117 +1353,161 @@
   "recommendations": [
     {
       "slot": "safe_pick",
-      "title": "Dog Day Afternoon",
-      "year": null,
-      "slug": "dog-day-afternoon",
-      "letterboxd_url": "https://letterboxd.com/film/dog-day-afternoon",
-      "score": 0.797,
+      "title": "No Code of Conduct",
+      "year": 1999,
+      "slug": "tmdb-1711-1999",
+      "letterboxd_url": "https://letterboxd.com/search/films/No%20Code%20of%20Conduct%201999/",
+      "score": 0.3319,
       "reason_codes": [
         "genre_match",
         "country_match",
-        "runtime_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal"
+        "low_popularity_gem"
       ],
-      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "reason_text": "Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.",
       "genres": [
-        "Crime",
+        "Action",
         "Drama",
         "Thriller"
       ],
       "countries": [
         "USA"
       ],
-      "runtime": 125.0,
-      "average_rating": 4.31,
-      "watches": 480772.0,
-      "fans": 9400.0,
-      "director": "Sidney Lumet",
+      "runtime": 93.0,
+      "average_rating": 2.71,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Bret Michaels",
+      "tmdb_id": 1711,
+      "tmdb_popularity": 2.37,
+      "tmdb_vote_count": 36.0,
       "directors": [
-        "Sidney Lumet"
+        "Bret Michaels"
       ],
       "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
-    },
-    {
-      "slot": "deep_cut",
-      "title": "Mind Game",
-      "year": null,
-      "slug": "mind-game",
-      "letterboxd_url": "https://letterboxd.com/film/mind-game",
-      "score": 0.74,
-      "reason_codes": [
-        "genre_match",
-        "runtime_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "deep_cut"
-      ],
-      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
-      "genres": [
-        "Animation",
-        "Drama",
-        "Comedy",
-        "Romance",
-        "Fantasy"
-      ],
-      "countries": [
-        "Japan"
-      ],
-      "runtime": 103.0,
-      "average_rating": 4.18,
-      "watches": 59191.0,
-      "fans": 2300.0,
-      "director": "Masaaki Yuasa",
-      "directors": [
-        "Masaaki Yuasa"
-      ],
-      "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
+      "poster_path": "/9Ml1UUzLvoB5BjDvwFyMVvdstiH.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/9Ml1UUzLvoB5BjDvwFyMVvdstiH.jpg",
+      "backdrop_path": "/yqwxYu9UoPMYYNJFs9l12ID9qze.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/yqwxYu9UoPMYYNJFs9l12ID9qze.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 1711,
+        "tmdb_title": "No Code of Conduct",
+        "tmdb_original_title": "No Code of Conduct",
+        "tmdb_year": 1999,
+        "expected_title": "No Code of Conduct",
+        "expected_year": 1999,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
     },
     {
       "slot": "wild_card",
-      "title": "Nowhere",
-      "year": null,
-      "slug": "nowhere",
-      "letterboxd_url": "https://letterboxd.com/film/nowhere",
-      "score": 0.6224,
+      "title": "Remarkably Bright Creatures",
+      "year": 2026,
+      "slug": "tmdb-1330021-2026",
+      "letterboxd_url": "https://letterboxd.com/search/films/Remarkably%20Bright%20Creatures%202026/",
+      "score": 0.7662,
       "reason_codes": [
         "genre_match",
         "country_match",
+        "runtime_match",
         "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "wild_card_contrast"
+        "decade_shift",
+        "fresh_acclaimed"
       ],
-      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
+      "reason_text": "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.",
       "genres": [
         "Drama",
-        "Comedy",
-        "Science Fiction"
+        "Mystery"
       ],
       "countries": [
-        "France",
         "USA"
       ],
-      "runtime": 83.0,
-      "average_rating": 3.99,
-      "watches": 101094.0,
-      "fans": 5900.0,
-      "director": "Gregg Araki",
+      "runtime": 114.0,
+      "average_rating": 4.24,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Olivia Newman",
+      "tmdb_id": 1330021,
+      "tmdb_popularity": 19.45,
+      "tmdb_vote_count": 820.0,
       "directors": [
-        "Gregg Araki"
+        "Olivia Newman"
       ],
       "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
+      "poster_path": "/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "backdrop_path": "/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 1330021,
+        "tmdb_title": "Remarkably Bright Creatures",
+        "tmdb_original_title": "Remarkably Bright Creatures",
+        "tmdb_year": 2026,
+        "expected_title": "Remarkably Bright Creatures",
+        "expected_year": 2026,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    },
+    {
+      "slot": "deep_cut",
+      "title": "Boyka: Undisputed IV",
+      "year": 2016,
+      "slug": "tmdb-348893-2016",
+      "letterboxd_url": "https://letterboxd.com/search/films/Boyka%3A%20Undisputed%20IV%202016/",
+      "score": 0.4218,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "non_us_angle",
+        "new_country_discovery"
+      ],
+      "reason_text": "Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.",
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "Bulgaria",
+        "USA"
+      ],
+      "runtime": 87.0,
+      "average_rating": 3.61,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Todor Chapkanov",
+      "tmdb_id": 348893,
+      "tmdb_popularity": 14.24,
+      "tmdb_vote_count": 1485.0,
+      "directors": [
+        "Todor Chapkanov"
+      ],
+      "director_source": "film_normalized",
+      "poster_path": "/7QGdIJWWTkPhVjpQ0zA6z69khod.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/7QGdIJWWTkPhVjpQ0zA6z69khod.jpg",
+      "backdrop_path": "/tCsYQTkQx7vknDmTw666K1XxAdx.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/tCsYQTkQx7vknDmTw666K1XxAdx.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 348893,
+        "tmdb_title": "Boyka: Undisputed IV",
+        "tmdb_original_title": "Boyka: Undisputed IV",
+        "tmdb_year": 2016,
+        "expected_title": "Boyka: Undisputed IV",
+        "expected_year": 2016,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
     }
   ],
   "recommendations_status": {
@@ -1476,14 +1520,14 @@
     "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
     "unavailable_text": "Recommandations indisponibles pour ce profil.",
     "slot_labels": {
-      "safe_pick": "Le choix sûr",
+      "safe_pick": "La pépite",
       "deep_cut": "Le détour",
       "wild_card": "Le pari"
     },
     "slot_descriptions": {
-      "safe_pick": "Un film populaire proche de tes genres préférés.",
-      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
-      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+      "safe_pick": "Un film confidentiel et plus ancien, proche de tes genres préférés.",
+      "deep_cut": "Un film d’un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts.",
+      "wild_card": "Un film récent et bien accueilli, qui change un peu d’angle par rapport à tes habitudes."
     }
   },
   "cards": [
@@ -1714,18 +1758,15 @@
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
     "items_checked": 8,
-    "posters_verified": 5,
+    "posters_verified": 8,
     "posters_ambiguous": 0,
-    "posters_missing_count": 3,
+    "posters_missing_count": 0,
     "verified_by_source": {
+      "tmdb_search": 3,
       "letterboxd_rss": 5
     },
     "homonymy_rejections": [],
-    "posters_missing": [
-      "Dog Day Afternoon",
-      "Mind Game",
-      "Nowhere"
-    ],
+    "posters_missing": [],
     "obsession_audit": null
   },
   "warnings": [

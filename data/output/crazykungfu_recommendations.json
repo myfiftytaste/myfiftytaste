@@ -3,122 +3,127 @@
   "source_files": {
     "wrapped": "data\\output\\crazykungfu_wrapped.json",
     "profile_metrics": "data\\output\\crazykungfu_profile_metrics.json",
-    "megabank": "data\\processed\\megabank_clean.json"
+    "tmdb_candidates_cache": "data/cache/tmdb_candidates_cache.json"
   },
   "recommendations": [
     {
       "slot": "safe_pick",
-      "title": "Dog Day Afternoon",
-      "year": null,
-      "slug": "dog-day-afternoon",
-      "letterboxd_url": "https://letterboxd.com/film/dog-day-afternoon",
-      "score": 0.797,
+      "title": "No Code of Conduct",
+      "year": 1999,
+      "slug": "tmdb-1711-1999",
+      "letterboxd_url": "https://letterboxd.com/search/films/No%20Code%20of%20Conduct%201999/",
+      "score": 0.3319,
       "reason_codes": [
         "genre_match",
         "country_match",
-        "runtime_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal"
+        "low_popularity_gem"
       ],
-      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "reason_text": "Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.",
       "genres": [
-        "Crime",
+        "Action",
         "Drama",
         "Thriller"
       ],
       "countries": [
         "USA"
       ],
-      "runtime": 125.0,
-      "average_rating": 4.31,
-      "watches": 480772.0,
-      "fans": 9400.0,
-      "director": "Sidney Lumet"
-    },
-    {
-      "slot": "deep_cut",
-      "title": "Mind Game",
-      "year": null,
-      "slug": "mind-game",
-      "letterboxd_url": "https://letterboxd.com/film/mind-game",
-      "score": 0.74,
-      "reason_codes": [
-        "genre_match",
-        "runtime_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "deep_cut"
-      ],
-      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
-      "genres": [
-        "Animation",
-        "Drama",
-        "Comedy",
-        "Romance",
-        "Fantasy"
-      ],
-      "countries": [
-        "Japan"
-      ],
-      "runtime": 103.0,
-      "average_rating": 4.18,
-      "watches": 59191.0,
-      "fans": 2300.0,
-      "director": "Masaaki Yuasa"
+      "runtime": 93.0,
+      "average_rating": 2.71,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Bret Michaels",
+      "tmdb_id": 1711,
+      "tmdb_popularity": 2.37,
+      "tmdb_vote_count": 36.0
     },
     {
       "slot": "wild_card",
-      "title": "Nowhere",
-      "year": null,
-      "slug": "nowhere",
-      "letterboxd_url": "https://letterboxd.com/film/nowhere",
-      "score": 0.6224,
+      "title": "Remarkably Bright Creatures",
+      "year": 2026,
+      "slug": "tmdb-1330021-2026",
+      "letterboxd_url": "https://letterboxd.com/search/films/Remarkably%20Bright%20Creatures%202026/",
+      "score": 0.7662,
       "reason_codes": [
         "genre_match",
         "country_match",
+        "runtime_match",
         "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "wild_card_contrast"
+        "decade_shift",
+        "fresh_acclaimed"
       ],
-      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
+      "reason_text": "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.",
       "genres": [
         "Drama",
-        "Comedy",
-        "Science Fiction"
+        "Mystery"
       ],
       "countries": [
-        "France",
         "USA"
       ],
-      "runtime": 83.0,
-      "average_rating": 3.99,
-      "watches": 101094.0,
-      "fans": 5900.0,
-      "director": "Gregg Araki"
+      "runtime": 114.0,
+      "average_rating": 4.24,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Olivia Newman",
+      "tmdb_id": 1330021,
+      "tmdb_popularity": 19.45,
+      "tmdb_vote_count": 820.0
+    },
+    {
+      "slot": "deep_cut",
+      "title": "Boyka: Undisputed IV",
+      "year": 2016,
+      "slug": "tmdb-348893-2016",
+      "letterboxd_url": "https://letterboxd.com/search/films/Boyka%3A%20Undisputed%20IV%202016/",
+      "score": 0.4218,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "non_us_angle",
+        "new_country_discovery"
+      ],
+      "reason_text": "Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.",
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "Bulgaria",
+        "USA"
+      ],
+      "runtime": 87.0,
+      "average_rating": 3.61,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Todor Chapkanov",
+      "tmdb_id": 348893,
+      "tmdb_popularity": 14.24,
+      "tmdb_vote_count": 1485.0
     }
   ],
   "diversity_checks": {
     "directors": [
-      "Sidney Lumet",
-      "Masaaki Yuasa",
-      "Gregg Araki"
+      "Bret Michaels",
+      "Olivia Newman",
+      "Todor Chapkanov"
     ],
     "distinct_directors": true,
     "primary_genres": [
       [
-        "Crime",
-        "Drama"
-      ],
-      [
-        "Animation",
+        "Action",
         "Drama"
       ],
       [
         "Drama",
-        "Comedy"
+        "Mystery"
+      ],
+      [
+        "Action",
+        "Drama"
       ]
     ],
     "countries": [
@@ -126,1050 +131,222 @@
         "USA"
       ],
       [
-        "Japan"
+        "USA"
       ],
       [
-        "France",
+        "Bulgaria",
         "USA"
       ]
     ],
     "popularity": [
-      "high",
       "low",
-      "mid"
+      "high",
+      "high"
     ],
-    "non_us_recommendation_sought": true,
     "non_us_recommendation_found": true,
-    "wild_card_contrast_score": 5,
-    "rejected": [
-      {
-        "slot": "deep_cut",
-        "title": "The Anderson Tapes",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.6672,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "Family Business",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.6285,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "Prince of the City",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.6201,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "Before the Devil Knows You're Dead",
-        "director": "Sidney Lumet",
-        "countries": [
-          "UK",
-          "USA"
-        ],
-        "score": 0.5938,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "Guilty as Sin",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5932,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "The Hill",
-        "director": "Sidney Lumet",
-        "countries": [
-          "UK"
-        ],
-        "score": 0.5862,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "The Wiz",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5825,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "Murder on the Orient Express",
-        "director": "Sidney Lumet",
-        "countries": [
-          "UK"
-        ],
-        "score": 0.5333,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "Network",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.528,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "Serpico",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4814,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "12 Angry Men",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.3507,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "deep_cut",
-        "title": "Paid in Full",
-        "director": "Charles Stone III",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.7904,
-        "reason": "replaced_by_non_us_diversity"
-      },
-      {
-        "slot": "wild_card",
-        "title": "12 Angry Men",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.6599,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Network",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5881,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Before the Devil Knows You're Dead",
-        "director": "Sidney Lumet",
-        "countries": [
-          "UK",
-          "USA"
-        ],
-        "score": 0.5267,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Shawshank Redemption",
-        "director": "Frank Darabont",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.6006,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Serpico",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.525,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Murder on the Orient Express",
-        "director": "Sidney Lumet",
-        "countries": [
-          "UK"
-        ],
-        "score": 0.4388,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Wiz",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5061,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Hill",
-        "director": "Sidney Lumet",
-        "countries": [
-          "UK"
-        ],
-        "score": 0.428,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Se7en",
-        "director": "David Fincher",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5752,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "No Country for Old Men",
-        "director": "Joel Coen",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5616,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Prince of the City",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4828,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Anderson Tapes",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4728,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Heathers",
-        "director": "Michael Lehmann",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5195,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Family Business",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4424,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Guilty as Sin",
-        "director": "Sidney Lumet",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4342,
-        "reason": "duplicate_director"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Insomnia",
-        "director": "Christopher Nolan",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.5042,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Hell or High Water",
-        "director": "David Mackenzie",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4958,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Saw",
-        "director": "James Wan",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4932,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Focus",
-        "director": "John Requa",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4906,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Murder on the Orient Express",
-        "director": "Kenneth Branagh",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4833,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Promising Young Woman",
-        "director": "Emerald Fennell",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4833,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Equalizer",
-        "director": "Antoine Fuqua",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4709,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "From Dusk Till Dawn",
-        "director": "Robert Rodriguez",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4633,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "El Camino: A Breaking Bad Movie",
-        "director": "Vince Gilligan",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4541,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Fast Five",
-        "director": "Justin Lin",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4501,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Ocean's Eight",
-        "director": "Gary Ross",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4497,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Miss Congeniality",
-        "director": "Donald Petrie",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4477,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Face/Off",
-        "director": "John Woo",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4475,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "21 Jump Street",
-        "director": "Phil Lord",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4474,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Scream VI",
-        "director": "Matt Bettinelli-Olpin",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4408,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "22 Jump Street",
-        "director": "Phil Lord",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4388,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Ocean's Thirteen",
-        "director": "Steven Soderbergh",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4386,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "John Wick: Chapter 2",
-        "director": "Chad Stahelski",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4379,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Fast & Furious 6",
-        "director": "Justin Lin",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4331,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "Sherlock Holmes: A Game of Shadows",
-        "director": "Guy Ritchie",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4269,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "American Hustle",
-        "director": "David O. Russell",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4209,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Other Guys",
-        "director": "Adam McKay",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.4047,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "The Fate of the Furious",
-        "director": "F. Gary Gray",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.3704,
-        "reason": "wild_card_lacks_contrast"
-      },
-      {
-        "slot": "wild_card",
-        "title": "F9",
-        "director": "Justin Lin",
-        "countries": [
-          "USA"
-        ],
-        "score": 0.3474,
-        "reason": "wild_card_lacks_contrast"
-      }
-    ]
+    "relaxation_used": {
+      "safe_pick": 0,
+      "wild_card": 0,
+      "deep_cut": 0
+    },
+    "rejected": []
   },
   "eligibility_excluded": [
     {
-      "title": "#1 Fan: A Darkomentary",
-      "slug": "1-fan-a-darkomentary",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "12 Angry Men",
-      "slug": "12-angry-men-1997",
+      "title": "Fail Safe",
+      "slug": "tmdb-31067-2000",
       "reason": "tv_movie_genre"
     },
     {
-      "title": "12th Assistant Deacon",
-      "slug": "12th-assistant-deacon",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "7 Days in Hell",
-      "slug": "7-days-in-hell",
+      "title": "By Dawn's Early Light",
+      "slug": "tmdb-20674-1990",
       "reason": "tv_movie_genre"
     },
     {
-      "title": "8 Ball Bunny",
-      "slug": "8-ball-bunny",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "8: SIDA",
-      "slug": "8-sida",
-      "reason": "short_runtime"
-    },
-    {
-      "title": 9,
-      "slug": "9-2005",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "A Beautiful Planet",
-      "slug": "a-beautiful-planet",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "A Brief History of John Baldessari",
-      "slug": "a-brief-history-of-john-baldessari",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "A Charlie Brown Christmas",
-      "slug": "a-charlie-brown-christmas",
+      "title": "The Scarlet and the Black",
+      "slug": "tmdb-44691-1983",
       "reason": "tv_movie_genre"
     },
     {
-      "title": "A Charlie Brown Thanksgiving",
-      "slug": "a-charlie-brown-thanksgiving",
+      "title": "Path to War",
+      "slug": "tmdb-31018-2003",
       "reason": "tv_movie_genre"
     },
     {
-      "title": "A Christmas Carol",
-      "slug": "a-christmas-carol-2004",
+      "title": "Girl in the Basement",
+      "slug": "tmdb-801335-2021",
       "reason": "tv_movie_genre"
     },
     {
-      "title": "A Close Shave",
-      "slug": "a-close-shave-1995",
+      "title": "Memento Mori",
+      "slug": "tmdb-631427-2019",
       "reason": "short_runtime"
     },
     {
-      "title": "A Cold Night's Death",
-      "slug": "a-cold-nights-death",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "A Fairly Odd Movie: Grow Up, Timmy Turner!",
-      "slug": "a-fairly-odd-movie-grow-up-timmy-turner",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "A Girl in the River: The Price of Forgiveness",
-      "slug": "a-girl-in-the-river-the-price-of-forgiveness",
+      "title": "Butterfly in the Typewriter",
+      "slug": "tmdb-451091",
       "reason": "short_runtime"
     },
     {
-      "title": "A Hypnotic Television Experience",
-      "slug": "a-hypnotic-television-experience",
+      "title": "Hulk vs. Wolverine",
+      "slug": "tmdb-15257-2009",
       "reason": "short_runtime"
     },
     {
-      "title": "A Is for Acid",
-      "slug": "a-is-for-acid",
+      "title": "Hellboy Animated: Sword of Storms",
+      "slug": "tmdb-16774-2006",
       "reason": "tv_movie_genre"
     },
     {
-      "title": "A Killer Among Friends",
-      "slug": "a-killer-among-friends",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "A Kitten for Hitler",
-      "slug": "a-kitten-for-hitler",
+      "title": "Le dos au mur",
+      "slug": "tmdb-451185-2001",
       "reason": "short_runtime"
     },
     {
-      "title": "A Pest in the House",
-      "slug": "a-pest-in-the-house",
+      "title": "Chaos Core",
+      "slug": "tmdb-819133-2021",
       "reason": "short_runtime"
     },
     {
-      "title": "A Short Vision",
-      "slug": "a-short-vision",
+      "title": "Illumination 7 Mini-Movie Collection",
+      "slug": "tmdb-269250-2014",
       "reason": "short_runtime"
     },
     {
-      "title": "A Star Is Born World Premiere",
-      "slug": "a-star-is-born-world-premiere",
+      "title": "The Aeronauts",
+      "slug": "tmdb-451025-2016",
       "reason": "short_runtime"
     },
     {
-      "title": "A Trip to the Moon",
-      "slug": "a-trip-to-the-moon",
+      "title": "Salvation Has No Name",
+      "slug": "tmdb-1012243-2022",
       "reason": "short_runtime"
     },
     {
-      "title": "A Very Murray Christmas",
-      "slug": "a-very-murray-christmas",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "A Young Couple",
-      "slug": "a-young-couple",
+      "title": "At Both Ends",
+      "slug": "tmdb-1200225-2023",
       "reason": "short_runtime"
     },
     {
-      "title": "Actus",
-      "slug": "actus",
+      "title": "PUSSYCAT",
+      "slug": "tmdb-451692-2010",
       "reason": "short_runtime"
     },
     {
-      "title": "Addams Family Reunion",
-      "slug": "addams-family-reunion",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Afro Samurai: Resurrection",
-      "slug": "afro-samurai-resurrection",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Aftermath",
-      "slug": "aftermath",
+      "title": "Avatar: The Deep Dive - A Special Edition of 20/20",
+      "slug": "tmdb-1059673-2022",
       "reason": "short_runtime"
     },
     {
-      "title": "Aladdin",
-      "slug": "aladdin-1993-1",
+      "title": "Being James Bond",
+      "slug": "tmdb-869250-2021",
       "reason": "short_runtime"
     },
     {
-      "title": "Alaya",
-      "slug": "alaya",
+      "title": "The Walking Dead: The Return",
+      "slug": "tmdb-1246596-2024",
       "reason": "short_runtime"
     },
     {
-      "title": "Albert",
-      "slug": "albert-2016",
+      "title": "Andre the Giant",
+      "slug": "tmdb-446663-2018",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "Hart to Hart: Home Is Where the Hart Is",
+      "slug": "tmdb-259562-1994",
+      "reason": "tv_movie_genre"
+    },
+    {
+      "title": "By Any Means",
+      "slug": "tmdb-1380417-2026",
       "reason": "short_runtime"
     },
     {
-      "title": "Ali Baba Bunny",
-      "slug": "ali-baba-bunny",
+      "title": "LSD: Trip to Where?",
+      "slug": "tmdb-440018-1968",
       "reason": "short_runtime"
     },
     {
-      "title": "Alice in Russialand",
-      "slug": "alice-in-russialand",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Alone Time",
-      "slug": "alone-time",
+      "title": "Ensemble",
+      "slug": "tmdb-262062-2010",
       "reason": "short_runtime"
     },
     {
-      "title": "And the Oscar Goes To...",
-      "slug": "and-the-oscar-goes-to",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Aningaaq",
-      "slug": "aningaaq",
+      "title": "كيف تتخلص من زوجتك",
+      "slug": "tmdb-1188251-1969",
       "reason": "short_runtime"
     },
     {
-      "title": "Annihilator",
-      "slug": "annihilator",
+      "title": "Tombé du ciel",
+      "slug": "tmdb-1564831-2026",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Tad and The Magic Lamp",
+      "slug": "tmdb-1187326-2026",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "La Nirvana",
+      "slug": "tmdb-1566470-2026",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Milky☆Subway: The Galactic Limited Express - the Movie",
+      "slug": "tmdb-1598785-2026",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Miraculous World: Tokyo, Stellar Force",
+      "slug": "tmdb-1147411-2025",
+      "reason": "short_runtime"
+    },
+    {
+      "title": "Louis Theroux: The Settlers",
+      "slug": "tmdb-1466013-2025",
       "reason": "tv_movie_genre"
     },
     {
-      "title": "Apology",
-      "slug": "apology",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Archie: To Riverdale and Back Again",
-      "slug": "archie-to-riverdale-and-back-again",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Artemis '81",
-      "slug": "artemis-81",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "As Good as Dead",
-      "slug": "as-good-as-dead-1995",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Atomic Rulers",
-      "slug": "atomic-rulers",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Attack from Space",
-      "slug": "attack-from-space",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Attack of the 50 Ft. Woman",
-      "slug": "attack-of-the-50-ft-woman",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Bad Ronald",
-      "slug": "bad-ronald",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Bangkok Hilton",
-      "slug": "bangkok-hilton",
+      "title": "Squid Game: Making Season 2",
+      "slug": "tmdb-1412113-2025",
       "reason": "tv_or_series_signal"
     },
     {
-      "title": "Bao",
-      "slug": "bao-2018",
+      "title": "The Punisher: One Last Kill",
+      "slug": "tmdb-1439930-2026",
       "reason": "short_runtime"
     },
     {
-      "title": "Baoh: The Visitor",
-      "slug": "baoh-the-visitor",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Bare Essentials",
-      "slug": "bare-essentials",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Basically",
-      "slug": "basically",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Baton Bunny",
-      "slug": "baton-bunny",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Bayard & Me",
-      "slug": "bayard-me",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Baywatch: Forbidden Paradise",
-      "slug": "baywatch-forbidden-paradise",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "BBStory: An American Film Renaissance",
-      "slug": "bbstory-an-american-film-renaissance",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Beau",
-      "slug": "beau",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Beauty and the Beast",
-      "slug": "beauty-and-the-beast-1976",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Beep, Beep",
-      "slug": "beep-beep",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Benny's Bathtub",
-      "slug": "bennys-bathtub",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Bewitched Bunny",
-      "slug": "bewitched-bunny",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Big Top Bunny",
-      "slug": "big-top-bunny",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Black Mirror: Bandersnatch",
-      "slug": "black-mirror-bandersnatch",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Black Mirror: Hang the DJ",
-      "slug": "black-mirror-hang-the-dj",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Black Mirror: Joan Is Awful",
-      "slug": "black-mirror-joan-is-awful",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Black Mirror: Metalhead",
-      "slug": "black-mirror-metalhead",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Black Mirror: San Junipero",
-      "slug": "black-mirror-san-junipero",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Black Mirror: White Christmas",
-      "slug": "black-mirror-white-christmas",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Blindfold: Acts of Obsession",
-      "slug": "blindfold-acts-of-obsession",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Blindsided",
-      "slug": "blindsided-2016",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Blood Lake: Attack of the Killer Lampreys",
-      "slug": "blood-lake-attack-of-the-killer-lampreys",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Blood: The Last Vampire",
-      "slug": "blood-the-last-vampire",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Body Bags",
-      "slug": "body-bags",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Bonnie & Clyde",
-      "slug": "bonnie-clyde-2013",
-      "reason": "tv_or_series_signal"
-    },
-    {
-      "title": "Breaking Social Distancing",
-      "slug": "breaking-social-distancing",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Brideless Groom",
-      "slug": "brideless-groom",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Brief Encounter",
-      "slug": "brief-encounter-1974",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Broom-Stick Bunny",
-      "slug": "broom-stick-bunny",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Brothers",
-      "slug": "brothers-2013-1",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Bugs Bunny and the Three Bears",
-      "slug": "bugs-bunny-and-the-three-bears",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Bully for Bugs",
-      "slug": "bully-for-bugs",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Bunny Hugged",
-      "slug": "bunny-hugged",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Californy 'Er Bust",
-      "slug": "californy-er-bust",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Cancel",
-      "slug": "cancel",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Cannon Fodder",
-      "slug": "cannon-fodder",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Caricaturana",
-      "slug": "caricaturana",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Carne",
-      "slug": "carne",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Cartoon All-Stars to the Rescue",
-      "slug": "cartoon-all-stars-to-the-rescue",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Cast a Deadly Spell",
-      "slug": "cast-a-deadly-spell",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Castello Cavalcanti",
-      "slug": "castello-cavalcanti",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Celebrating Marvel's Stan Lee",
-      "slug": "celebrating-marvels-stan-lee",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "C'est la Vie",
-      "slug": "cest-la-vie-2016",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Charles Bronson: The Spirit of Masculinity",
-      "slug": "charles-bronson-the-spirit-of-masculinity",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Charles II: The Power and The Passion",
-      "slug": "charles-ii-the-power-and-the-passion",
-      "reason": "tv_or_series_signal"
-    },
-    {
-      "title": "Charlie",
-      "slug": "charlie-2013",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Charlie",
-      "slug": "charlie-2018",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Children of Shatila",
-      "slug": "children-of-shatila",
-      "reason": "short_runtime"
-    },
-    {
-      "title": "Chris Gethard: Career Suicide",
-      "slug": "chris-gethard-career-suicide",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Christmas Harmony",
-      "slug": "christmas-harmony",
-      "reason": "tv_movie_genre"
-    },
-    {
-      "title": "Cigarette Candy",
-      "slug": "cigarette-candy",
+      "title": "Versa",
+      "slug": "tmdb-1500099-2025",
       "reason": "short_runtime"
     }
   ],
-  "notable_eligibility_excluded": [
-    {
-      "title": "Twin Peaks",
-      "slug": "twin-peaks",
-      "reason": "tv_or_series_signal"
-    }
-  ],
+  "notable_eligibility_excluded": [],
+  "candidate_pool_stats": {
+    "tmdb_available": true,
+    "seed_films_used": 6,
+    "seed_tmdb_ids_resolved": 6,
+    "raw_ids": {
+      "seed": 220,
+      "discover": 40,
+      "freshness": 51,
+      "quality_recent": 60
+    },
+    "unique_ids_considered": 353,
+    "details_fetched": 0,
+    "details_cache_hits": 353,
+    "candidates_after_normalize": 349,
+    "candidates_excluded_seen": 4,
+    "requests_made": 20,
+    "errors": 0
+  },
   "scoring_notes": [
-    "Candidates are Megabank films not present in the user's last 50 RSS films.",
-    "Compatibility combines genre, country, language, runtime, era, mainstream fit, community rating, fans/watches, repeat director, and title redundancy.",
-    "safe_pick boosts global compatibility and community rating.",
-    "deep_cut boosts niche score and fans/watches, with a penalty for very high watch counts.",
-    "wild_card uses partial compatibility plus secondary/oblique signals instead of selecting the third-best global score."
+    "Candidates come from a live TMDB pool (seed similar/recommendations, profile-based discover, now_playing/upcoming/trending) not present in the user's last 50 RSS films.",
+    "safe_pick (\"La Pépite\"): strong genre/country/director proximity, low popularity within this run's pool, released 3+ years ago.",
+    "wild_card (\"Le Pari\"): departs from usual habits, well-rated with enough votes to trust the rating, popularity a notch above safe_pick, released this year or last.",
+    "deep_cut (\"Le Détour\"): a production country the user hasn't seen yet, filtered to picks that still fit their usual genre/country taste, with a quality floor.",
+    "Each slot relaxes its own criteria progressively (popularity/date first, thematic proximity preserved longest) if nothing satisfies the full criteria -- see candidate_pool_stats and diversity_checks.relaxation_used (0 = no relaxation needed)."
   ]
 }

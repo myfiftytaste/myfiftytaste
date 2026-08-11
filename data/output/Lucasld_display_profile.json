@@ -1345,141 +1345,168 @@
   "recommendations": [
     {
       "slot": "safe_pick",
-      "title": "Parasite",
-      "year": 2019,
-      "slug": "parasite-2019",
-      "letterboxd_url": "https://letterboxd.com/film/parasite-2019",
-      "score": 0.8404,
+      "title": "Lupin the Third: Farewell to Nostradamus",
+      "year": 1995,
+      "slug": "tmdb-31049-1995",
+      "letterboxd_url": "https://letterboxd.com/search/films/Lupin%20the%20Third%3A%20Farewell%20to%20Nostradamus%201995/",
+      "score": 0.4383,
       "reason_codes": [
         "genre_match",
         "runtime_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal",
-        "non_us_angle"
+        "non_us_angle",
+        "low_popularity_gem"
       ],
-      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "reason_text": "Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.",
       "genres": [
-        "Comedy",
-        "Thriller",
-        "Drama"
+        "Animation",
+        "Action",
+        "Adventure",
+        "Drama",
+        "Crime",
+        "Comedy"
       ],
       "countries": [
-        "South Korea"
+        "Japan"
       ],
-      "runtime": 133.0,
-      "average_rating": 4.55,
-      "watches": 5015041.0,
-      "fans": 121000.0,
-      "director": "Bong Joon Ho",
+      "runtime": 100.0,
+      "average_rating": 3.25,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Takeshi Shirato",
+      "tmdb_id": 31049,
+      "tmdb_popularity": 2.44,
+      "tmdb_vote_count": 69.0,
       "directors": [
-        "Bong Joon Ho"
+        "Takeshi Shirato"
       ],
       "director_source": "film_normalized",
-      "tmdb_id": 496243,
-      "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-      "poster_url": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-      "backdrop_path": "/8eihUxjQsJ7WvGySkVMC0EwbPAD.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w780/8eihUxjQsJ7WvGySkVMC0EwbPAD.jpg",
+      "poster_path": "/zd6ItdUDgxLtf7Yp6MVvWp0G9Y9.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/zd6ItdUDgxLtf7Yp6MVvWp0G9Y9.jpg",
+      "backdrop_path": "/xo2ryu4VQC1e4KGpvHnxm1Y71kZ.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/xo2ryu4VQC1e4KGpvHnxm1Y71kZ.jpg",
       "poster_status": "verified",
       "poster_source": "tmdb_search",
       "poster_match": {
-        "tmdb_id": 496243,
-        "tmdb_title": "Parasite",
-        "tmdb_original_title": "기생충",
-        "tmdb_year": 2019,
-        "expected_title": "Parasite",
-        "expected_year": 2019,
+        "tmdb_id": 31049,
+        "tmdb_title": "Lupin the Third: Farewell to Nostradamus",
+        "tmdb_original_title": "ルパン三世 くたばれ!ノストラダムス",
+        "tmdb_year": 1995,
+        "expected_title": "Lupin the Third: Farewell to Nostradamus",
+        "expected_year": 1995,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    },
+    {
+      "slot": "wild_card",
+      "title": "Remarkably Bright Creatures",
+      "year": 2026,
+      "slug": "tmdb-1330021-2026",
+      "letterboxd_url": "https://letterboxd.com/search/films/Remarkably%20Bright%20Creatures%202026/",
+      "score": 0.7676,
+      "reason_codes": [
+        "genre_match",
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "decade_shift",
+        "fresh_acclaimed"
+      ],
+      "reason_text": "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 114.0,
+      "average_rating": 4.24,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Olivia Newman",
+      "tmdb_id": 1330021,
+      "tmdb_popularity": 19.45,
+      "tmdb_vote_count": 820.0,
+      "directors": [
+        "Olivia Newman"
+      ],
+      "director_source": "film_normalized",
+      "poster_path": "/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "backdrop_path": "/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 1330021,
+        "tmdb_title": "Remarkably Bright Creatures",
+        "tmdb_original_title": "Remarkably Bright Creatures",
+        "tmdb_year": 2026,
+        "expected_title": "Remarkably Bright Creatures",
+        "expected_year": 2026,
         "confidence": 1.0,
         "year_delta": 0
       }
     },
     {
       "slot": "deep_cut",
-      "title": "Phantom of the Paradise",
-      "year": null,
-      "slug": "phantom-of-the-paradise",
-      "letterboxd_url": "https://letterboxd.com/film/phantom-of-the-paradise",
-      "score": 0.8927,
+      "title": "The 100 Year-Old Man Who Climbed Out the Window and Disappeared",
+      "year": 2013,
+      "slug": "tmdb-145247-2013",
+      "letterboxd_url": "https://letterboxd.com/search/films/The%20100%20Year-Old%20Man%20Who%20Climbed%20Out%20the%20Window%20and%20Disappeared%202013/",
+      "score": 0.4207,
       "reason_codes": [
         "genre_match",
         "country_match",
-        "director_affinity",
-        "fans_watches_signal",
-        "deep_cut"
+        "runtime_match",
+        "non_us_angle",
+        "new_country_discovery"
       ],
-      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
+      "reason_text": "Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.",
       "genres": [
-        "Drama",
+        "Adventure",
         "Comedy",
-        "Horror",
-        "Fantasy",
-        "Thriller",
-        "Music",
-        "Romance"
-      ],
-      "countries": [
-        "USA"
-      ],
-      "runtime": 92.0,
-      "average_rating": null,
-      "watches": 137565.0,
-      "fans": 6200.0,
-      "director": "Brian De Palma",
-      "directors": [
-        "Brian De Palma"
-      ],
-      "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
-    },
-    {
-      "slot": "wild_card",
-      "title": "Heat",
-      "year": 1995,
-      "slug": "heat-1995",
-      "letterboxd_url": "https://letterboxd.com/film/heat-1995",
-      "score": 0.6491,
-      "reason_codes": [
-        "genre_match",
-        "country_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "wild_card_contrast"
-      ],
-      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
-      "genres": [
-        "Crime",
-        "Action",
         "Drama"
       ],
       "countries": [
-        "USA"
+        "Sweden",
+        "Hungary",
+        "Croatia",
+        "Turkey",
+        "Denmark",
+        "Netherlands",
+        "USA",
+        "France"
       ],
-      "runtime": 170.0,
-      "average_rating": 4.28,
-      "watches": 968046.0,
-      "fans": 25000.0,
-      "director": "Michael Mann",
+      "runtime": 115.0,
+      "average_rating": 3.41,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Felix Herngren",
+      "tmdb_id": 145247,
+      "tmdb_popularity": 3.48,
+      "tmdb_vote_count": 1029.0,
       "directors": [
-        "Michael Mann"
+        "Felix Herngren"
       ],
       "director_source": "film_normalized",
-      "tmdb_id": 949,
-      "poster_path": "/e09dLw1Ljtccd2P4NsuUvVtS5du.jpg",
-      "poster_url": "https://image.tmdb.org/t/p/w500/e09dLw1Ljtccd2P4NsuUvVtS5du.jpg",
-      "backdrop_path": "/xKsnZDERG1dk95wuZ5q9iks3OL3.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w780/xKsnZDERG1dk95wuZ5q9iks3OL3.jpg",
+      "poster_path": "/eexokDJNgyfpdTH30s102lSuc9A.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/eexokDJNgyfpdTH30s102lSuc9A.jpg",
+      "backdrop_path": "/pf4SWYA5LH0Byho5PusLTtfZljq.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/pf4SWYA5LH0Byho5PusLTtfZljq.jpg",
       "poster_status": "verified",
       "poster_source": "tmdb_search",
       "poster_match": {
-        "tmdb_id": 949,
-        "tmdb_title": "Heat",
-        "tmdb_original_title": "Heat",
-        "tmdb_year": 1995,
-        "expected_title": "Heat",
-        "expected_year": 1995,
+        "tmdb_id": 145247,
+        "tmdb_title": "The 100 Year-Old Man Who Climbed Out the Window and Disappeared",
+        "tmdb_original_title": "Hundraåringen som klev ut genom fönstret och försvann",
+        "tmdb_year": 2013,
+        "expected_title": "The 100 Year-Old Man Who Climbed Out the Window and Disappeared",
+        "expected_year": 2013,
         "confidence": 1.0,
         "year_delta": 0
       }
@@ -1495,14 +1522,14 @@
     "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
     "unavailable_text": "Recommandations indisponibles pour ce profil.",
     "slot_labels": {
-      "safe_pick": "Le choix sûr",
+      "safe_pick": "La pépite",
       "deep_cut": "Le détour",
       "wild_card": "Le pari"
     },
     "slot_descriptions": {
-      "safe_pick": "Un film populaire proche de tes genres préférés.",
-      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
-      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+      "safe_pick": "Un film confidentiel et plus ancien, proche de tes genres préférés.",
+      "deep_cut": "Un film d’un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts.",
+      "wild_card": "Un film récent et bien accueilli, qui change un peu d’angle par rapport à tes habitudes."
     }
   },
   "cards": [
@@ -1733,17 +1760,15 @@
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
     "items_checked": 8,
-    "posters_verified": 7,
+    "posters_verified": 8,
     "posters_ambiguous": 0,
-    "posters_missing_count": 1,
+    "posters_missing_count": 0,
     "verified_by_source": {
-      "tmdb_search": 2,
+      "tmdb_search": 3,
       "letterboxd_rss": 5
     },
     "homonymy_rejections": [],
-    "posters_missing": [
-      "Phantom of the Paradise"
-    ],
+    "posters_missing": [],
     "obsession_audit": null
   },
   "warnings": [

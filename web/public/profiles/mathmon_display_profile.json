@@ -1433,116 +1433,167 @@
   "recommendations": [
     {
       "slot": "safe_pick",
-      "title": "In the Mood for Love",
-      "year": null,
-      "slug": "in-the-mood-for-love",
-      "letterboxd_url": "https://letterboxd.com/film/in-the-mood-for-love",
-      "score": 0.8422,
+      "title": "Love Lesson",
+      "year": 2013,
+      "slug": "tmdb-286687-2013",
+      "letterboxd_url": "https://letterboxd.com/search/films/Love%20Lesson%202013/",
+      "score": 0.4083,
+      "reason_codes": [
+        "genre_match",
+        "non_us_angle",
+        "low_popularity_gem"
+      ],
+      "reason_text": "Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.",
+      "genres": [
+        "Romance",
+        "Drama",
+        "Comedy"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "runtime": 80.0,
+      "average_rating": 3.41,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Ko Kyeong-Ah",
+      "tmdb_id": 286687,
+      "tmdb_popularity": 15.22,
+      "tmdb_vote_count": 43.0,
+      "directors": [
+        "Ko Kyeong-Ah"
+      ],
+      "director_source": "film_normalized",
+      "poster_path": "/yUQg6yvZIRQUSyQ36TQo0Tp1gzr.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/yUQg6yvZIRQUSyQ36TQo0Tp1gzr.jpg",
+      "backdrop_path": "/4fza1QWpGAoxReiEsnvdFBeMyfX.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/4fza1QWpGAoxReiEsnvdFBeMyfX.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 286687,
+        "tmdb_title": "Love Lesson",
+        "tmdb_original_title": "화려한 외출",
+        "tmdb_year": 2013,
+        "expected_title": "Love Lesson",
+        "expected_year": 2013,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    },
+    {
+      "slot": "wild_card",
+      "title": "Avatar Aang: The Last Airbender",
+      "year": 2026,
+      "slug": "tmdb-980431-2026",
+      "letterboxd_url": "https://letterboxd.com/search/films/Avatar%20Aang%3A%20The%20Last%20Airbender%202026/",
+      "score": 0.8214,
+      "reason_codes": [
+        "country_match",
+        "runtime_match",
+        "high_community_rating",
+        "non_us_angle",
+        "fresh_acclaimed"
+      ],
+      "reason_text": "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "countries": [
+        "USA",
+        "South Korea",
+        "Australia"
+      ],
+      "runtime": 99.0,
+      "average_rating": 4.64,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Lauren Montgomery",
+      "tmdb_id": 980431,
+      "tmdb_popularity": 164.88,
+      "tmdb_vote_count": 798.0,
+      "directors": [
+        "Lauren Montgomery"
+      ],
+      "director_source": "film_normalized",
+      "poster_path": "/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "backdrop_path": "/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 980431,
+        "tmdb_title": "Avatar Aang: The Last Airbender",
+        "tmdb_original_title": "Avatar Aang: The Last Airbender",
+        "tmdb_year": 2026,
+        "expected_title": "Avatar Aang: The Last Airbender",
+        "expected_year": 2026,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
+    },
+    {
+      "slot": "deep_cut",
+      "title": "The Lobster",
+      "year": 2015,
+      "slug": "tmdb-254320-2015",
+      "letterboxd_url": "https://letterboxd.com/film/the-lobster",
+      "score": 0.4663,
       "reason_codes": [
         "genre_match",
         "country_match",
         "runtime_match",
-        "high_community_rating",
-        "director_affinity",
-        "fans_watches_signal",
-        "non_us_angle"
+        "non_us_angle",
+        "new_country_discovery"
       ],
-      "reason_text": "Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.",
+      "reason_text": "Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.",
       "genres": [
+        "Comedy",
         "Drama",
         "Romance"
       ],
       "countries": [
-        "Hong Kong",
-        "France"
-      ],
-      "runtime": 99.0,
-      "average_rating": 4.39,
-      "watches": 876907.0,
-      "fans": 51000.0,
-      "director": "Wong Kar-wai",
-      "directors": [
-        "Wong Kar-wai"
-      ],
-      "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
-    },
-    {
-      "slot": "deep_cut",
-      "title": "The Young Girls of Rochefort",
-      "year": null,
-      "slug": "the-young-girls-of-rochefort",
-      "letterboxd_url": "https://letterboxd.com/film/the-young-girls-of-rochefort",
-      "score": 0.8311,
-      "reason_codes": [
-        "genre_match",
-        "country_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "deep_cut"
-      ],
-      "reason_text": "Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.",
-      "genres": [
-        "Romance",
-        "Comedy",
-        "Drama"
-      ],
-      "countries": [
-        "France"
-      ],
-      "runtime": 126.0,
-      "average_rating": 4.32,
-      "watches": 117024.0,
-      "fans": 6300.0,
-      "director": "Jacques Demy",
-      "directors": [
-        "Jacques Demy"
-      ],
-      "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
-    },
-    {
-      "slot": "wild_card",
-      "title": "Mulholland Drive",
-      "year": null,
-      "slug": "mulholland-drive",
-      "letterboxd_url": "https://letterboxd.com/film/mulholland-drive",
-      "score": 0.6217,
-      "reason_codes": [
-        "genre_match",
-        "country_match",
-        "high_community_rating",
-        "fans_watches_signal",
-        "non_us_angle",
-        "wild_card_contrast"
-      ],
-      "reason_text": "Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.",
-      "genres": [
-        "Mystery",
-        "Drama",
-        "Thriller"
-      ],
-      "countries": [
         "France",
-        "USA"
+        "Greece",
+        "Ireland",
+        "Netherlands",
+        "UK"
       ],
-      "runtime": 147.0,
-      "average_rating": 4.26,
-      "watches": 1172795.0,
-      "fans": 54000.0,
-      "director": "David Lynch",
+      "runtime": 119.0,
+      "average_rating": 3.51,
+      "rating_source": "tmdb",
+      "watches": null,
+      "fans": null,
+      "director": "Yorgos Lanthimos",
+      "tmdb_id": 254320,
+      "tmdb_popularity": 11.57,
+      "tmdb_vote_count": 6996.0,
       "directors": [
-        "David Lynch"
+        "Yorgos Lanthimos"
       ],
       "director_source": "film_normalized",
-      "poster_status": "missing",
-      "poster_source": null,
-      "poster_match": null
+      "poster_path": "/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg",
+      "backdrop_path": "/iH2esZUZvt8qlJgu74WBvibDnfF.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w780/iH2esZUZvt8qlJgu74WBvibDnfF.jpg",
+      "poster_status": "verified",
+      "poster_source": "tmdb_search",
+      "poster_match": {
+        "tmdb_id": 254320,
+        "tmdb_title": "The Lobster",
+        "tmdb_original_title": "The Lobster",
+        "tmdb_year": 2015,
+        "expected_title": "The Lobster",
+        "expected_year": 2015,
+        "confidence": 1.0,
+        "year_delta": 0
+      }
     }
   ],
   "recommendations_status": {
@@ -1555,14 +1606,14 @@
     "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
     "unavailable_text": "Recommandations indisponibles pour ce profil.",
     "slot_labels": {
-      "safe_pick": "Le choix sûr",
+      "safe_pick": "La pépite",
       "deep_cut": "Le détour",
       "wild_card": "Le pari"
     },
     "slot_descriptions": {
-      "safe_pick": "Un film populaire proche de tes genres préférés.",
-      "deep_cut": "Un film moins évident, retenu car proche de tes habitudes mais un peu moins célèbre.",
-      "wild_card": "Un film plus décalé, il change d’angle tout en restant proche de tes thèmes d’affection."
+      "safe_pick": "Un film confidentiel et plus ancien, proche de tes genres préférés.",
+      "deep_cut": "Un film d’un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts.",
+      "wild_card": "Un film récent et bien accueilli, qui change un peu d’angle par rapport à tes habitudes."
     }
   },
   "cards": [
@@ -1792,18 +1843,15 @@
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
     "items_checked": 8,
-    "posters_verified": 5,
+    "posters_verified": 8,
     "posters_ambiguous": 0,
-    "posters_missing_count": 3,
+    "posters_missing_count": 0,
     "verified_by_source": {
+      "tmdb_search": 3,
       "letterboxd_rss": 5
     },
     "homonymy_rejections": [],
-    "posters_missing": [
-      "In the Mood for Love",
-      "The Young Girls of Rochefort",
-      "Mulholland Drive"
-    ],
+    "posters_missing": [],
     "obsession_audit": null
   },
   "warnings": [

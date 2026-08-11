@@ -2,122 +2,96 @@
 
 ## Scoring notes
 
-- Candidates are Megabank films not present in the user's last 50 RSS films.
-- Compatibility combines genre, country, language, runtime, era, mainstream fit, community rating, fans/watches, repeat director, and title redundancy.
-- safe_pick boosts global compatibility and community rating.
-- deep_cut boosts niche score and fans/watches, with a penalty for very high watch counts.
-- wild_card uses partial compatibility plus secondary/oblique signals instead of selecting the third-best global score.
+- Candidates come from a live TMDB pool (seed similar/recommendations, profile-based discover, now_playing/upcoming/trending) not present in the user's last 50 RSS films.
+- safe_pick ("La Pépite"): strong genre/country/director proximity, low popularity within this run's pool, released 3+ years ago.
+- wild_card ("Le Pari"): departs from usual habits, well-rated with enough votes to trust the rating, popularity a notch above safe_pick, released this year or last.
+- deep_cut ("Le Détour"): a production country the user hasn't seen yet, filtered to picks that still fit their usual genre/country taste, with a quality floor.
+- Each slot relaxes its own criteria progressively (popularity/date first, thematic proximity preserved longest) if nothing satisfies the full criteria -- see candidate_pool_stats and diversity_checks.relaxation_used (0 = no relaxation needed).
 
 ## Slot rationale
 
-- safe_pick: Parasite — highest-confidence fit for the current profile.
-  Countries: South Korea (non-USA).
-  Primary genres: Comedy, Thriller.
-  Popularity: high (watches=5015041.0).
-  Difference: director=Bong Joon Ho, runtime=133.0, year=2019.
-- deep_cut: Phantom of the Paradise — compatible pick with a less obvious popularity profile.
+- safe_pick: Lupin the Third: Farewell to Nostradamus — low-popularity, older pick close to the user's usual genres/countries ("La Pépite").
+  Countries: Japan (non-USA).
+  Primary genres: Animation, Action.
+  Popularity: low (tmdb_vote_count=69.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Takeshi Shirato, runtime=100.0, year=1995.
+- wild_card: Remarkably Bright Creatures — recent, well-rated pick that departs a bit from usual habits ("Le Pari").
   Countries: USA (USA).
-  Primary genres: Drama, Comedy.
-  Popularity: low (watches=137565.0).
-  Difference: director=Brian De Palma, runtime=92.0, year=None.
-- wild_card: Heat — contrast pick with wild_card_contrast_score=6.
-  Countries: USA (USA).
-  Primary genres: Crime, Action.
-  Popularity: mid (watches=968046.0).
-  Difference: director=Michael Mann, runtime=170.0, year=1995.
+  Primary genres: Drama, Mystery.
+  Popularity: mid (tmdb_vote_count=820.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Olivia Newman, runtime=114.0, year=2026.
+- deep_cut: The 100 Year-Old Man Who Climbed Out the Window and Disappeared — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
+  Countries: Sweden, Hungary, Croatia, Turkey, Denmark, Netherlands, USA, France (non-USA).
+  Primary genres: Adventure, Comedy.
+  Popularity: high (tmdb_vote_count=1029.0).
+  Relaxation steps used: 0 (0 = full criteria satisfied).
+  Difference: director=Felix Herngren, runtime=115.0, year=2013.
 
 ## Diversity checks
 
 - Distinct directors: yes
-- Non-USA recommendation sought: no
 - Non-USA recommendation found: yes
-- Wild card contrast score: 6
-- Directors: Bong Joon Ho, Brian De Palma, Michael Mann
-- Primary genres: Comedy, Thriller | Drama, Comedy | Crime, Action
-- Duplicate director rejections: Mother (Bong Joon Ho), Tokyo! (Bong Joon Ho), Barking Dogs Never Bite (Bong Joon Ho), Okja (Bong Joon Ho), The Host (Bong Joon Ho), Snowpiercer (Bong Joon Ho), Scarface (Brian De Palma), Carrie (Brian De Palma), Dressed to Kill (Brian De Palma), Blow Out (Brian De Palma), Sisters (Brian De Palma), Snake Eyes (Brian De Palma), The Untouchables (Brian De Palma), Body Double (Brian De Palma), Obsession (Brian De Palma), The Fury (Brian De Palma), Okja (Bong Joon Ho), Passion (Brian De Palma), Femme Fatale (Brian De Palma), Mother (Bong Joon Ho), Tokyo! (Bong Joon Ho), The Host (Bong Joon Ho), Snowpiercer (Bong Joon Ho), Barking Dogs Never Bite (Bong Joon Ho)
-- Title/franchise proximity rejections: Parasite, Parasite, Paradise, The Phantom, The 7.39, The 33, Paradise, The Ex, The V.I.P.s
-
-### Rejected candidates
-
-- deep_cut: Mother | Bong Joon Ho | South Korea | 0.673 | duplicate_director
-- deep_cut: Tokyo! | Bong Joon Ho | France, Germany, Japan, South Korea | 0.6529 | duplicate_director
-- deep_cut: Barking Dogs Never Bite | Bong Joon Ho | South Korea | 0.6267 | duplicate_director
-- deep_cut: Okja | Bong Joon Ho | South Korea, USA | 0.6131 | duplicate_director
-- deep_cut: The Host | Bong Joon Ho | South Korea | 0.5684 | duplicate_director
-- deep_cut: Snowpiercer | Bong Joon Ho | South Korea | 0.5229 | duplicate_director
-- deep_cut: Parasite | Charles Band | USA | 0.4624 | title_or_franchise_proximity
-- wild_card: Scarface | Brian De Palma | USA | 0.627 | duplicate_director
-- wild_card: Carrie | Brian De Palma | USA | 0.572 | duplicate_director
-- wild_card: Dressed to Kill | Brian De Palma | USA | 0.5475 | duplicate_director
-- wild_card: Blow Out | Brian De Palma | USA | 0.5646 | duplicate_director
-- wild_card: Sisters | Brian De Palma | USA | 0.5389 | duplicate_director
-- wild_card: Snake Eyes | Brian De Palma | USA | 0.5286 | duplicate_director
-- wild_card: The Untouchables | Brian De Palma | USA | 0.5891 | duplicate_director
-- wild_card: Body Double | Brian De Palma | USA | 0.5888 | duplicate_director
-- wild_card: Obsession | Brian De Palma | USA | 0.4248 | duplicate_director
-- wild_card: Parasite | Charles Band | USA | 0.4691 | title_or_franchise_proximity
-- wild_card: The Fury | Brian De Palma | USA | 0.5337 | duplicate_director
-- wild_card: Paradise | Diablo Cody | USA | 0.4387 | title_or_franchise_proximity
-- wild_card: Okja | Bong Joon Ho | South Korea, USA | 0.583 | duplicate_director
-
-### Notable eligibility exclusions
-
-- Twin Peaks | twin-peaks | tv_or_series_signal
+- Directors: Takeshi Shirato, Olivia Newman, Felix Herngren
+- Primary genres: Animation, Action | Drama, Mystery | Adventure, Comedy
+- Duplicate director rejections: None
+- Title/franchise proximity rejections: None
 
 ### Eligibility exclusions
 
-- #1 Fan: A Darkomentary | 1-fan-a-darkomentary | short_runtime
-- 12 Angry Men | 12-angry-men-1997 | tv_movie_genre
-- 12th Assistant Deacon | 12th-assistant-deacon | short_runtime
-- 7 Days in Hell | 7-days-in-hell | tv_movie_genre
-- 8 Ball Bunny | 8-ball-bunny | short_runtime
-- 8: SIDA | 8-sida | short_runtime
-- 9 | 9-2005 | short_runtime
-- A Beautiful Planet | a-beautiful-planet | short_runtime
-- A Brief History of John Baldessari | a-brief-history-of-john-baldessari | short_runtime
-- A Charlie Brown Christmas | a-charlie-brown-christmas | tv_movie_genre
-- A Charlie Brown Thanksgiving | a-charlie-brown-thanksgiving | tv_movie_genre
-- A Christmas Carol | a-christmas-carol-2004 | tv_movie_genre
-- A Close Shave | a-close-shave-1995 | short_runtime
-- A Cold Night's Death | a-cold-nights-death | tv_movie_genre
-- A Fairly Odd Movie: Grow Up, Timmy Turner! | a-fairly-odd-movie-grow-up-timmy-turner | tv_movie_genre
-- A Girl in the River: The Price of Forgiveness | a-girl-in-the-river-the-price-of-forgiveness | short_runtime
-- A Hypnotic Television Experience | a-hypnotic-television-experience | short_runtime
-- A Is for Acid | a-is-for-acid | tv_movie_genre
-- A Killer Among Friends | a-killer-among-friends | tv_movie_genre
-- A Kitten for Hitler | a-kitten-for-hitler | short_runtime
+- 180 | tmdb-1659087-2026 | tv_movie_genre
+- My Super Heroine | tmdb-1380356-2024 | short_runtime
+- Star Wars: Episode II - Attack of the Clones | tmdb-1894-2002 | tv_or_series_signal
+- Dead Man's Folly | tmdb-6105-1986 | tv_movie_genre
+- LOCALS | tmdb-1188134-2023 | short_runtime
+- CHASE | tmdb-1558114-2025 | short_runtime
+- Murder, But Epic! | tmdb-1380186-2024 | short_runtime
+- Astarté | tmdb-1187769-2023 | short_runtime
+- Nový život | tmdb-1187705-1973 | short_runtime
+- Conspiracy of Silence | tmdb-223235-1993 | tv_movie_genre
+- Mordnacht | tmdb-1174422-2024 | tv_movie_genre
+- The Miracle Season | tmdb-425373-2018 | tv_or_series_signal
+- Cheaters | tmdb-15869-2000 | tv_movie_genre
+- Hide and Seek | tmdb-1559353-2025 | short_runtime
+- Dû bist mîn ich bin dîn | tmdb-1559387-2024 | short_runtime
+- Ring of the Nibelungs | tmdb-11188-2004 | tv_movie_genre
+- Game with Me | tmdb-1190963-2023 | short_runtime
+- The Ewok Adventure | tmdb-1884-1984 | tv_movie_genre
+- Wizards of Waverly Place: The Movie | tmdb-26736-2009 | tv_movie_genre
+- The Suite Life Movie | tmdb-60803-2011 | tv_movie_genre
 
 ## Picks
 
-### safe_pick: Parasite
+### safe_pick: Lupin the Third: Farewell to Nostradamus
 
-- Score: 0.8404
-- Year: 2019
-- Slug: parasite-2019
-- Genres: Comedy, Thriller, Drama
-- Countries: South Korea
-- Director: Bong Joon Ho
-- Reason codes: genre_match, runtime_match, high_community_rating, director_affinity, fans_watches_signal, non_us_angle
-- Reason: Un choix proche de ton profil récent, avec des genres et une réception qui collent bien à tes habitudes.
-
-### deep_cut: Phantom of the Paradise
-
-- Score: 0.8927
-- Year: None
-- Slug: phantom-of-the-paradise
-- Genres: Drama, Comedy, Horror, Fantasy, Thriller, Music, Romance
-- Countries: USA
-- Director: Brian De Palma
-- Reason codes: genre_match, country_match, director_affinity, fans_watches_signal, deep_cut
-- Reason: Un détour moins évident, retenu parce qu’il garde des points communs avec ton profil sans répéter les choix les plus visibles.
-
-### wild_card: Heat
-
-- Score: 0.6491
+- Score: 0.4383
 - Year: 1995
-- Slug: heat-1995
-- Genres: Crime, Action, Drama
+- Slug: tmdb-31049-1995
+- Genres: Animation, Action, Adventure, Drama, Crime, Comedy
+- Countries: Japan
+- Director: Takeshi Shirato
+- Reason codes: genre_match, runtime_match, non_us_angle, low_popularity_gem
+- Reason: Un film proche de tes genres favoris, plus confidentiel et sorti depuis un moment — mérite d’être redécouvert.
+
+### wild_card: Remarkably Bright Creatures
+
+- Score: 0.7676
+- Year: 2026
+- Slug: tmdb-1330021-2026
+- Genres: Drama, Mystery
 - Countries: USA
-- Director: Michael Mann
-- Reason codes: genre_match, country_match, high_community_rating, fans_watches_signal, wild_card_contrast
-- Reason: Un pari plus oblique : il change d’angle tout en gardant un point d’accroche avec tes goûts récents.
+- Director: Olivia Newman
+- Reason codes: genre_match, country_match, runtime_match, high_community_rating, decade_shift, fresh_acclaimed
+- Reason: Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes.
+
+### deep_cut: The 100 Year-Old Man Who Climbed Out the Window and Disappeared
+
+- Score: 0.4207
+- Year: 2013
+- Slug: tmdb-145247-2013
+- Genres: Adventure, Comedy, Drama
+- Countries: Sweden, Hungary, Croatia, Turkey, Denmark, Netherlands, USA, France
+- Director: Felix Herngren
+- Reason codes: genre_match, country_match, runtime_match, non_us_angle, new_country_discovery
+- Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.

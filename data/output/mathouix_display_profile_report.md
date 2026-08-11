@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: Whiplash (0.8526)
-- deep_cut: Wings of Desire (0.8039)
-- wild_card: Waves (0.6426)
+- safe_pick: Lowlife (0.45)
+- wild_card: Avatar Aang: The Last Airbender (0.8545)
+- deep_cut: The Last Circus (0.4135)
 
 ## Cards
 
@@ -103,9 +103,9 @@
 
 ## Poster verification
 
-- Posters verified: 7
+- Posters verified: 8
 - Posters ambiguous: 0
-- Posters missing: 1
+- Posters missing: 0
 - Homonymy rejections: None
 
 ## Highlight metadata audit

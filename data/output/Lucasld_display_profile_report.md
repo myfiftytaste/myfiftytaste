@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: Parasite (0.8404)
-- deep_cut: Phantom of the Paradise (0.8927)
-- wild_card: Heat (0.6491)
+- safe_pick: Lupin the Third: Farewell to Nostradamus (0.4383)
+- wild_card: Remarkably Bright Creatures (0.7676)
+- deep_cut: The 100 Year-Old Man Who Climbed Out the Window and Disappeared (0.4207)
 
 ## Cards
 
@@ -103,9 +103,9 @@
 
 ## Poster verification
 
-- Posters verified: 7
+- Posters verified: 8
 - Posters ambiguous: 0
-- Posters missing: 1
+- Posters missing: 0
 - Homonymy rejections: None
 
 ## Highlight metadata audit

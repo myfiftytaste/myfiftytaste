@@ -47,9 +47,9 @@
 
 ## Recommendations
 
-- safe_pick: The Long Goodbye (0.8352)
-- deep_cut: Mind Game (0.7449)
-- wild_card: Interstellar (0.5912)
+- safe_pick: Elsa & Fred (0.3767)
+- wild_card: Remarkably Bright Creatures (0.7694)
+- deep_cut: Maria Full of Grace (0.319)
 
 ## Cards
 
@@ -103,9 +103,9 @@
 
 ## Poster verification
 
-- Posters verified: 5
+- Posters verified: 8
 - Posters ambiguous: 0
-- Posters missing: 3
+- Posters missing: 0
 - Homonymy rejections: None
 
 ## Highlight metadata audit

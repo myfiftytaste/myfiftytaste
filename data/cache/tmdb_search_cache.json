@@ -14810,5 +14810,4402 @@
       "vote_average": 8.0,
       "vote_count": 3
     }
+  ],
+  "strict:v2:the usual suspects|1995": [
+    {
+      "adult": false,
+      "backdrop_path": "/hy0Hx9fMPk2fmw26Li60z1S2giU.jpg",
+      "genre_ids": [
+        18,
+        80,
+        53
+      ],
+      "id": 629,
+      "title": "The Usual Suspects",
+      "original_language": "en",
+      "original_title": "The Usual Suspects",
+      "overview": "Held in an L.A. interrogation room, Verbal Kint attempts to convince the feds that a mythic crime lord, Keyser Soze, not only exists, but was also responsible for drawing him and his four partners into a multi-million dollar heist that ended with an explosion in San Pedro harbor – leaving few survivors. Verbal lures his interrogators with an incredible story of the crime lord's almost supernatural prowess.",
+      "popularity": 18.94,
+      "poster_path": "/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg",
+      "release_date": "1995-07-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.2,
+      "vote_count": 11595
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 990589,
+      "title": "FIP The Usual Suspects",
+      "original_language": "en",
+      "original_title": "FIP The Usual Suspects",
+      "overview": "April 22, 2005 in Brandon, Florida",
+      "popularity": 0.7029,
+      "poster_path": "/4pVoNtMyWJWuKUiVNuv1ISzseGG.jpg",
+      "release_date": "2005-04-22",
+      "softcore": false,
+      "video": true,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 412627,
+      "title": "Doin’ Time with The Usual Suspects",
+      "original_language": "en",
+      "original_title": "Doin’ Time with The Usual Suspects",
+      "overview": "Doin’ Time with The Usual Suspects gives a look behind the scenes, with special attention for the production of the movie. The special feature also contains interviews with the director and actors and footage of the film.",
+      "popularity": 1.1076,
+      "poster_path": null,
+      "release_date": "2002-04-29",
+      "softcore": false,
+      "video": true,
+      "vote_average": 6.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 687408,
+      "title": "Round Up: Deposing 'The Usual Suspects'",
+      "original_language": "en",
+      "original_title": "Round Up: Deposing 'The Usual Suspects'",
+      "overview": "Documentary that includes interviews with Singer as well as the rest of the cast - mainly Spacey. There is no \"plot\" or \"promotional\" elements to this documentary - all of the information offered is substantial and informative as we are let in on all the details of trying to seek out the right actors for the parts, as well as the thoughts of the actors about joining an independent production helmed by a young director. Part 2  is a more interesting look at the production itself, complete with the problems and obstacles that faced the low-budget feature, as well as the happier memories of the work that the cast and crew went through. There's a lot of discussion of the infamous laughter during the lineup sequence, complete with a few outtakes of the scene.",
+      "popularity": 1.3839,
+      "poster_path": "/x5UJ9YbjGInsTOPt7OjxMPpFWz7.jpg",
+      "release_date": "2002-04-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99,
+        10770
+      ],
+      "id": 1242423,
+      "title": "Nothing Is What It Seems:  The Making Of 'The Usual Suspects'",
+      "original_language": "en",
+      "original_title": "Nothing Is What It Seems:  The Making Of 'The Usual Suspects'",
+      "overview": "Documentary about the origins and making of the 1995 Oscar-winning suspense thriller.  Includes rare unseen footage and revisits many of the film's iconic LA locations",
+      "popularity": 0.8785,
+      "poster_path": "/jkvtU9tKa5GnguwnznhCZdJqWEB.jpg",
+      "release_date": "1998-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 920522,
+      "title": "Call the Usual Suspects: The Craft of the Character Actor",
+      "original_language": "en",
+      "original_title": "Call the Usual Suspects: The Craft of the Character Actor",
+      "overview": "A documentary on classic character actors",
+      "popularity": 0.4041,
+      "poster_path": null,
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10402,
+        99
+      ],
+      "id": 177660,
+      "title": "The Unusual Suspects: Once Upon A Time In House Music",
+      "original_language": "en",
+      "original_title": "The Unusual Suspects: Once Upon A Time In House Music",
+      "overview": "The Unusual Suspects: Once Upon a Time in House Music recounts the history and origins of the genre of dance music known as house. The documentary takes a comprehensive look beginning with disco, the mother of house music, to legendary nightclubs such as the Warehouse and The Loft. Lifestyles and the general culture of house fans are also explored. Featured interviewees include Jesse Saunders, Robert Owens, Joe Smooth, Frankie Knuckles, Julius The Mad Thinker, Steve Silk Hurley, Loleatta Holloway, Larry Heard (aka Mr. Fingers), Carl Bias (Master C&amp;J), Jere McCallister and many more.",
+      "popularity": 0.4882,
+      "poster_path": "/kQZ2sHUnMyzFpn3k4AGCXbva8fV.jpg",
+      "release_date": "2009-09-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 9.0,
+      "vote_count": 1
+    }
+  ],
+  "strict:v2:retribution|2007": [
+    {
+      "adult": false,
+      "backdrop_path": "/yOPlxFSHKgrnB9KofFJBaKkWx5M.jpg",
+      "genre_ids": [
+        53,
+        27,
+        9648
+      ],
+      "id": 46164,
+      "title": "Retribution",
+      "original_language": "ja",
+      "original_title": "叫",
+      "overview": "A detective investigates a series of murders. A possible serial killer might be on a rampage, since the crimes are in the same vicinity, by the same method. However, as evidence points towards the detective, a ghost in red follows him, and he begins questioning his identity. His realization of what seems to be reality results in something far larger and more sinister.",
+      "popularity": 1.775,
+      "poster_path": "/sAFaKQv2tgGffy4y4cpxPzPmcYH.jpg",
+      "release_date": "2007-02-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.477,
+      "vote_count": 111
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wM4FpdzRMizjZQrQg66zYLeK0fX.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        37
+      ],
+      "id": 37018,
+      "title": "Retribution Road",
+      "original_language": "en",
+      "original_title": "Retribution Road",
+      "overview": "A bank robbery gone wrong leads to a horrific crime and the capture of the most relentless outlaw in Texas...the infamous Johnny Rios. Incarcerated, Rios ups the ante with a daring ultimatum that gives the sleepy town of Wardlaw a rude awakening as their courageous Sheriff prepares for the shoot-out of a lifetime - one that could either put this town on the map or annihilate it all together. The laws they live by are the laws they’ll die by on RETRIBUTION ROAD.",
+      "popularity": 0.8894,
+      "poster_path": "/gwdM5FIWvYZBPpX2gFBMnFTQd3.jpg",
+      "release_date": "2007-10-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 1.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/d5jcaZ9czVEDqN3ks9gUytQfmxg.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 39178,
+      "title": "Motives 2 : Retribution",
+      "original_language": "en",
+      "original_title": "Motives 2 : Retribution",
+      "overview": "Vivica A. Fox and Shemar Moore return for this thrilling sequel to Motives that picks up three years after the events of the original film. Innocent convict Emery Simms is serving time for a crime he didn't commit; while most convict's claims of innocence are shoddy at best, Emery has every reason to protest his wrongful incarceration. Meanwhile, in the outside world, Emery's ex-wife (Fox) has married his best friend and the pair is struggling to build a normal life together. When Emery is killed in prison and his brother Donovan (Brian J. White) discovers the truth about what killed his ill-fated sibling, his quest to cut through the complex web of lies and deceit which previously ensnared Emery threatens to bring about deadly consequences.",
+      "popularity": 1.4089,
+      "poster_path": "/dsbmWCEd09QwWjlmdgeDCAbgpMz.jpg",
+      "release_date": "2007-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.067,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yQvjqIvOwpawVZje41Wno365kR.jpg",
+      "genre_ids": [
+        53,
+        28,
+        12
+      ],
+      "id": 762430,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "When a mysterious caller plants a bomb under his car seat, a bank executive begins a high-speed chase across the city to complete a specific series of tasks — all with his kids trapped in the back seat.",
+      "popularity": 7.4491,
+      "poster_path": "/oUmmY7QWWn7OhKlcPOnirHJpP1F.jpg",
+      "release_date": "2023-08-23",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.517,
+      "vote_count": 1403
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4YDkxb4CSbk2pgfUTl6mv9UaR8E.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 645942,
+      "title": "Retribution",
+      "original_language": "fa",
+      "original_title": "کیفر",
+      "overview": "After the execution of a man, his brother tries to find those responsible for the death of his brother.",
+      "popularity": 0.6661,
+      "poster_path": "/5YNNdaOEkttJ5o2mVDpRYoFguBC.jpg",
+      "release_date": "2010-06-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vkMTwptspOFn9tFytRkZnyW1DDI.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 82315,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "After a depressed artist miraculously survives a suicide attempt, a series of horrific murders leads him to realize he may have been possessed by the vengeful spirit of a murdered gangster.",
+      "popularity": 1.8991,
+      "poster_path": "/5syhJI9wAWjES01c6Dr3tn81eQV.jpg",
+      "release_date": "1987-10-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 38
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 870299,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "A queer, Latinx Army Airborne officer returns from deployment to marry her longtime girlfriend but a hit and run accident on the eve of their engagement changes their lives forever. When they fail to get justice from the court system, the officer must decide whether or not to take matters into her own hands to make things right.",
+      "popularity": 1.0132,
+      "poster_path": "/vdqwdUaR0zdqWmDvRNn766flfdV.jpg",
+      "release_date": "2020-10-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/m5vQk718eAXTQOpTE61uel3vygc.jpg",
+      "genre_ids": [
+        10770,
+        53
+      ],
+      "id": 165845,
+      "title": "Retribution",
+      "original_language": "fr",
+      "original_title": "Retribution",
+      "overview": "Karen is shopping at a convenience store during which a robbery occurs. Her niece is kidnapped and left seriously injured in hospital. When one of the perpetrators is released, Karen decides to go on a murderous trail of revenge.",
+      "popularity": 1.3036,
+      "poster_path": "/vOhG3WntqzD40BZTEXTQ0cPVYv6.jpg",
+      "release_date": "2012-11-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/g1AKuu59k5tC9Cukjns0VmH1wiI.jpg",
+      "genre_ids": [
+        53,
+        18
+      ],
+      "id": 351145,
+      "title": "Retribution",
+      "original_language": "es",
+      "original_title": "El desconocido",
+      "overview": "While Carlos, a banking executive, takes his two kids to school in his car, he gets a phone call telling him that there is a bomb under the seats and he must to gather a large amount of money; otherwise, his car will blow up.",
+      "popularity": 3.0807,
+      "poster_path": "/s8L5mN9USLpuSM9Pl7c5UC9unYj.jpg",
+      "release_date": "2015-09-21",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.716,
+      "vote_count": 463
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2BUOolr9rlEX5pprS1iOMIC3dfs.jpg",
+      "genre_ids": [
+        10752,
+        12,
+        10770
+      ],
+      "id": 100931,
+      "title": "Hornblower: Retribution",
+      "original_language": "en",
+      "original_title": "Hornblower: Retribution",
+      "overview": "Hornblower and the other officers of the Renown must return to Jamaica to face a court-martial and possible execution for their actions in relieving their unstable captain.",
+      "popularity": 1.4541,
+      "poster_path": "/i0Zu9O5Pi4tUY8kmPK9Q8NYVsoc.jpg",
+      "release_date": "2001-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 43
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cOHQYSh0LHliTidHxBWV9RRnMvN.jpg",
+      "genre_ids": [
+        53,
+        80,
+        18
+      ],
+      "id": 413332,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "A hardened debt-collector goes on a 24-hour rampage through London in an attempt to avenge the brutal attack on his teenage daughter.",
+      "popularity": 1.2557,
+      "poster_path": "/thBDJdutALUzNOYkBU31YgHZlnE.jpg",
+      "release_date": "2017-07-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 7
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rJBxDVWbiLQOqFlRfcdl5KWOLJF.jpg",
+      "genre_ids": [
+        18,
+        10752
+      ],
+      "id": 203720,
+      "title": "Retribution",
+      "original_language": "ru",
+      "original_title": "Возмездие",
+      "overview": "The continuation of a story started by Alexander Stolper epic movie \"The Alive and the Dead\".",
+      "popularity": 0.7337,
+      "poster_path": "/sDjBjjIbzfSt3TVecm8QsRLUh4L.jpg",
+      "release_date": "1969-05-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 3.5,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 443559,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "Henry B. Walthall made his talkie debut in this 10-minute short from Vitaphone. In the film he plays a once rich man who has found himself in the dumps due to drug abuse and other issues. He goes to see a former friend (Tom McGuire), now a Senator, and he's not too open to giving the man a second chance.",
+      "popularity": 0.5678,
+      "poster_path": "/AuLuyBTQs0ecbQXnSHwcKRnn6Qo.jpg",
+      "release_date": "1928-06-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        37
+      ],
+      "id": 940354,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "Dorothy and her father have staked all their hopes on their mine. While they are awaiting the arrival of Mr. Reid, who is to report on the value of the mine, Pedro, a Mexican, makes familiar advances to Dorothy and is sternly repulsed. Reid arrives and a mutual attraction springs up between himself and Dorothy, to the chagrin of Pedro.",
+      "popularity": 1.1624,
+      "poster_path": null,
+      "release_date": "1913-12-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xcuCOdtznCYhJDN2oW0kuRrzd1k.jpg",
+      "genre_ids": [
+        10749,
+        18,
+        14
+      ],
+      "id": 464872,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "A suicidal girl falls in love with a fallen angel.",
+      "popularity": 1.0584,
+      "poster_path": "/h5zIG4iXIoEUjFzooOUF3xPTMkY.jpg",
+      "release_date": "2017-09-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28
+      ],
+      "id": 1431994,
+      "title": "Retribution for Cory",
+      "original_language": "en",
+      "original_title": "Retribution for Cory",
+      "overview": "A retired military officer must confront his violent past to protect his niece after she witnesses the murder of her mother and Army pilot father.",
+      "popularity": 0.8599,
+      "poster_path": "/5s7jB9Cayb6mKKg8UGimb2mt8n9.jpg",
+      "release_date": "2024-10-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28
+      ],
+      "id": 1247230,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "Everyone is vulnerable in this high stakes game of mistrust. The charisma of the record business unravels, with all of its treachery, consuming everything in its vicious path. The record industry has become a jungle and survival of the fittest and dirtiest is now the mandate. Love, lust and power rule as gangster and the criminal element rip the jaws of justice, dictating who lives and who dies. It's all about payback... it's all about Retribution!",
+      "popularity": 0.5729,
+      "poster_path": "/aoyoUkZLSQhUTE7p0lglpbRx6ei.jpg",
+      "release_date": "2003-10-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 10.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        80
+      ],
+      "id": 806410,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "After a diamond heist goes fatally wrong, four criminals hide out in a disused building. As they wait for their boss to appear, they try to work out who is to blame.",
+      "popularity": 0.6254,
+      "poster_path": null,
+      "release_date": "2016-04-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        27
+      ],
+      "id": 444944,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "A gypsy is falsely accused of theft and put to death by German Party members in 1938. But her anguished spirit returns to exact revenge by possessing the body of her granddaughter and kidnapping, torturing and then killing the ancestors of her accusers.",
+      "popularity": 0.6224,
+      "poster_path": null,
+      "release_date": "1999-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4zc0QlWmjgrhSYP4Bw3yIKo7KOz.jpg",
+      "genre_ids": [
+        27,
+        878,
+        53
+      ],
+      "id": 118332,
+      "title": "Total Retribution",
+      "original_language": "en",
+      "original_title": "Total Retribution",
+      "overview": "Trapped on a space station orbiting Earth, a small army of human survivors battle the undead in order to prevent the destruction of Earth.",
+      "popularity": 0.7984,
+      "poster_path": "/kC8fe9UyXrUONuhfDWCoNfi4L2f.jpg",
+      "release_date": "2011-02-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 1.857,
+      "vote_count": 14
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        80,
+        18
+      ],
+      "id": 1643870,
+      "title": "Retribution",
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "Four friends' plans spiral completely out of control when they commit a crime.",
+      "popularity": 4.0044,
+      "poster_path": "/3GChnt65h5St9GeNZ46dwswMl3K.jpg",
+      "release_date": "2015-05-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 744200,
+      "title": "Retribution",
+      "original_language": "it",
+      "original_title": "Retribution",
+      "overview": "",
+      "popularity": 1.3753,
+      "poster_path": "/nmukJ9JGLO070CiNb1kQYLqH6UK.jpg",
+      "release_date": "1922-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 9.0,
+      "vote_count": 2
+    }
+  ],
+  "strict:v2:avatar aang: the last airbender|2026": [
+    {
+      "adult": false,
+      "backdrop_path": "/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "id": 980431,
+      "title": "Avatar Aang: The Last Airbender",
+      "original_language": "en",
+      "original_title": "Avatar Aang: The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "popularity": 164.8829,
+      "poster_path": "/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "release_date": "2026-07-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 9.274,
+      "vote_count": 796
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gU5cR9LKtDD8YvzE7T7GvmzCEAA.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "id": 10196,
+      "title": "The Last Airbender",
+      "original_language": "en",
+      "original_title": "The Last Airbender",
+      "overview": "A century has passed since the Fire Nation declared war on the other three nations of air, water, and earth in its attempt for global domination. Aang, the long-lost Avatar, is found by Water Tribe siblings Katara and Sokka and must learn to master water, earth, and fire bending to defeat the Fire Nation and restore balance to the world.",
+      "popularity": 16.4746,
+      "poster_path": "/kl9JJ8288bNsY8oqT1SpQh1w2mb.jpg",
+      "release_date": "2010-06-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.643,
+      "vote_count": 4322
+    }
+  ],
+  "strict:v2:goodfellas|1990": [
+    {
+      "adult": false,
+      "backdrop_path": "/gILte6Zd7m1YneIr6MVhh30S9pr.jpg",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "id": 769,
+      "title": "GoodFellas",
+      "original_language": "en",
+      "original_title": "GoodFellas",
+      "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+      "popularity": 26.6736,
+      "poster_path": "/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg",
+      "release_date": "1990-09-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.45,
+      "vote_count": 14596
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kCBEFEvzNyJIkcPTn8oTgHO1TuR.jpg",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "id": 1483873,
+      "title": "Goodfellas (Sweded)",
+      "original_language": "en",
+      "original_title": "Goodfellas (Sweded)",
+      "overview": "A Sweded version of Martin Scorsese's film Goodfellas",
+      "popularity": 0.6332,
+      "poster_path": "/gM25efi3OgyoDlWTaC5Qh0lYyD4.jpg",
+      "release_date": "2025-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2nGyD5TAolYa7bsfs9dmqgF5GwX.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1229191,
+      "title": "Getting Made: The Making of 'GoodFellas'",
+      "original_language": "en",
+      "original_title": "Getting Made: The Making of 'GoodFellas'",
+      "overview": "A documentary that presents a brief yet detailed account on the making of Martin Scorsese's \"GoodFellas\" (1990), the successful film that redefined the mafia on the big screen. Featuring interviews with cast and crew and clips from the movie, this retrospective documentary reveals the behind-the-scenes experiences of what would turn out to be one of the greatest films ever made.",
+      "popularity": 1.6588,
+      "poster_path": "/uvw78wROV9gQJA3fe6amvrLrzx.jpg",
+      "release_date": "2004-08-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ejXpa4ZExgjNhZeJKuHXQx9iKgy.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1479220,
+      "title": "GoodFellas: Behind Closed Doors",
+      "original_language": "en",
+      "original_title": "GoodFellas: Behind Closed Doors",
+      "overview": "Documentary detailing the behind the scenes of GoodFellas.",
+      "popularity": 1.0795,
+      "poster_path": "/2bWdy6YFBZfCjpT1nKpKTCp1fNG.jpg",
+      "release_date": "2020-09-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 696842,
+      "title": "Scorsese's GoodFellas",
+      "original_language": "en",
+      "original_title": "Scorsese's GoodFellas",
+      "overview": "In this produced by Brett Ratner new retrospective documentary we hear from cast members and additional participants include Harvey Keitel, Leonardo DiCaprio and Terence Winter, creator of Boardwalk Empire and screenwriter of The Wolf of Wall Street. The program gives us thoughts about Scorsese's approach to the material, casting, characters, and performances, costumes and period details, photography, music, and retrospective thoughts about the film. It is filled with memorable stories and observations from a wide array of commentators.",
+      "popularity": 1.3748,
+      "poster_path": "/9CZo35KHJDRbPyN64XsPU1LZxQB.jpg",
+      "release_date": "2015-05-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.3,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bVUC8D2iHWmivsDy9tGMvc3uAGk.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1229192,
+      "title": "Made Men: The 'GoodFellas' Legacy",
+      "original_language": "en",
+      "original_title": "Made Men: The 'GoodFellas' Legacy",
+      "overview": "A group of filmmakers talk about their appreciation for \"GoodFellas\" (1990) and how it has influenced their work. Jon Favreau, Allan and Albert Hughes, Joe Carnahan, Richard Linklater, Antoine Fuqua and Frank Darabont are interviewed about the film.",
+      "popularity": 1.2826,
+      "poster_path": "/mR3eP0fHhxZh2yy2rvSNRvLhTSj.jpg",
+      "release_date": "2004-08-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.667,
+      "vote_count": 3
+    }
+  ],
+  "strict:v2:the rivals of amziah king|2026": [
+    {
+      "adult": false,
+      "backdrop_path": "/npoKL5WS5nzetVkTUEPbu26Yezu.jpg",
+      "genre_ids": [
+        80,
+        18,
+        53
+      ],
+      "id": 1124142,
+      "title": "The Rivals of Amziah King",
+      "original_language": "en",
+      "original_title": "The Rivals of Amziah King",
+      "overview": "Amziah King, beekeeper, musician, and anchor of his community, reunites with former foster daughter Kateri after many years apart, and fends off threats to his honey business.",
+      "popularity": 5.013,
+      "poster_path": "/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
+      "release_date": "2026-08-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 10.0,
+      "vote_count": 1
+    }
+  ],
+  "strict:v2:wolfwalkers|2020": [
+    {
+      "adult": false,
+      "backdrop_path": "/3zTbERSBLh7waK9811RTKGAcG86.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        12,
+        14
+      ],
+      "id": 441130,
+      "title": "Wolfwalkers",
+      "original_language": "en",
+      "original_title": "Wolfwalkers",
+      "overview": "In a time of superstition and magic, when wolves are seen as demonic and nature an evil to be tamed, a young apprentice hunter comes to Ireland with her father to wipe out the last pack. But when she saves a wild native girl, their friendship leads her to discover the world of the Wolfwalkers and transform her into the very thing her father is tasked to destroy.",
+      "popularity": 9.3669,
+      "poster_path": "/vqGiNbdc2sDwsnivMMYzwAoSSu6.jpg",
+      "release_date": "2020-10-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.173,
+      "vote_count": 1429
+    }
+  ],
+  "strict:v2:castle freak|1996": [
+    {
+      "adult": false,
+      "backdrop_path": "/gggdkmSWasCCwtEItnvQw9NpFLi.jpg",
+      "genre_ids": [
+        53,
+        18,
+        27,
+        9648
+      ],
+      "id": 18256,
+      "title": "Castle Freak",
+      "original_language": "en",
+      "original_title": "Castle Freak",
+      "overview": "John Reilly discovers that his family's newly inherited castle in Italy is haunted by a relentless, bloodthirsty creature.",
+      "popularity": 4.3045,
+      "poster_path": "/rZv3aUkNngyZeiCgAjOEF5n0tve.jpg",
+      "release_date": "1996-04-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.109,
+      "vote_count": 243
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1WDITmJAHz4rAnjVv1XYN4IfjKq.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 593655,
+      "title": "Castle Freak",
+      "original_language": "en",
+      "original_title": "Castle Freak",
+      "overview": "After she’s permanently blinded in a tragic car accident, Rebecca receives some bizarre news: her long-lost mother has recently passed away, leaving her their family’s ancestral castle in rural Albania. Traveling to the estate with a group of friends, Rebecca hopes it will be an opportunity for her to reconnect with a past she never knew and a mother who seemingly left her behind. When mysterious events begin to occur and her friends begin to die, Rebecca must unravel the secrets of her family’s history before she too falls prey to the Castle Freak.",
+      "popularity": 2.3584,
+      "poster_path": "/HJEosQRIdBzAHEdZJCUF7e5FmF.jpg",
+      "release_date": "2020-12-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.338,
+      "vote_count": 80
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        27,
+        99
+      ],
+      "id": 1121872,
+      "title": "Videozone: The Making of \"Castle Freak\"",
+      "original_language": "en",
+      "original_title": "Videozone: The Making of \"Castle Freak\"",
+      "overview": "Go behind the scenes of the horror classic with director Stuart Gordon, get Jeffrey Combs’ take on the castle, and share gossip with Barbara Crampton.",
+      "popularity": 0.7661,
+      "poster_path": "/hlPf4FOKUaaHXQgAWBsUEZp1Z0h.jpg",
+      "release_date": "1995-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 83010,
+      "title": "Cinematic Titanic: Frankenstein's Castle of Freaks",
+      "original_language": "en",
+      "original_title": "Cinematic Titanic: Frankenstein's Castle of Freaks",
+      "overview": "Things get a bit randy in this version of Mary Shelley's immortal classic about... immortality. Just as our resident mad scientist is about to bring his creature back to life, he is forced to use a sub-standard brain. The Cinematic Titanic crew offer more hilarious commentary as they set their sights on a Frankenstein's castle chock full of angry villagers, grave robbers, and skinny dippers.",
+      "popularity": 0.5914,
+      "poster_path": "/4bMZDDIx4aWMDevGU4uahLlNfTL.jpg",
+      "release_date": "2008-11-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qoTRtiXznXlvWlgZz6rDMdB0hse.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 3159,
+      "title": "Frankenstein's Castle of Freaks",
+      "original_language": "it",
+      "original_title": "Terror! Il castello delle donne maledette",
+      "overview": "Mad Dr Frankenstein recruits an evil dwarf, a Neanderthal man, and others to help him put a brain in the body of a brute.",
+      "popularity": 1.1466,
+      "poster_path": "/r0CX7tL90LNjSG6ewsoQgaf9XMW.jpg",
+      "release_date": "1974-02-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.3,
+      "vote_count": 38
+    }
+  ],
+  "strict:v2:the devil's backbone|2001": [
+    {
+      "adult": false,
+      "backdrop_path": "/iUFylO8khUHGiSJanUZQfzZYyXI.jpg",
+      "genre_ids": [
+        14,
+        18,
+        27,
+        53
+      ],
+      "id": 1433,
+      "title": "The Devil's Backbone",
+      "original_language": "es",
+      "original_title": "El espinazo del diablo",
+      "overview": "Spain, 1939. In the last days of the Spanish Civil War, the young Carlos arrives at the Santa Lucía orphanage, where he will make friends and enemies as he follows the quiet footsteps of a mysterious presence eager for revenge.",
+      "popularity": 4.3324,
+      "poster_path": "/iP1z1aJzPnkP8FHg77TS7ukqoEZ.jpg",
+      "release_date": "2001-04-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.282,
+      "vote_count": 1384
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1682479,
+      "title": "The Devil's Backbone: Behind the Scenes",
+      "original_language": "en",
+      "original_title": "The Devil's Backbone: Behind the Scenes",
+      "overview": "The elaborate sets of The Devil's Backbone and gathers several interviews with Guilermo Del Toro, Eduardo Noriega, Marisa Paredes, and Federico Luppi, amongst others",
+      "popularity": 0.6222,
+      "poster_path": null,
+      "release_date": "2001-06-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 399322,
+      "title": "Que es un Fantasma?: The Making of 'The Devil's Backbone'",
+      "original_language": "es",
+      "original_title": "Que es un Fantasma?: The Making of 'The Devil's Backbone'",
+      "overview": "The making of “The Devil’s Backbone” by Guillermo del Toro.",
+      "popularity": 0.7446,
+      "poster_path": "/lauLEU0X2g38Q4ZujzrFgF9jYww.jpg",
+      "release_date": "2004-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xKjLkcyTnKqauB6CM2NMMgRwrEI.jpg",
+      "genre_ids": [
+        28,
+        37
+      ],
+      "id": 149690,
+      "title": "The Deserter",
+      "original_language": "en",
+      "original_title": "La spina dorsale del diavolo",
+      "overview": "A young cavalry officer finds his woman tortured by the Apaches and blames the Army for not properly protecting the outpost, so becomes a deserter and an avenger, stalking and killing Indians without warning.",
+      "popularity": 1.7913,
+      "poster_path": "/4WQtUfT2mBFgKDYwICfKGiOLI69.jpg",
+      "release_date": "1970-12-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 6
+    }
+  ],
+  "strict:v2:lowlife|2017": [
+    {
+      "adult": false,
+      "backdrop_path": "/3WLyIZ2O7it00l8Af7tFCMSOhI9.jpg",
+      "genre_ids": [
+        80,
+        53,
+        35,
+        27,
+        18
+      ],
+      "id": 461773,
+      "title": "Lowlife",
+      "original_language": "en",
+      "original_title": "Lowlife",
+      "overview": "The sordid lives of an addict, an ex-con, and a luchador collide when an organ harvesting caper goes very, very wrong.",
+      "popularity": 2.7457,
+      "poster_path": "/5tquk3KoKtVo5D40gZYjlWWr0mt.jpg",
+      "release_date": "2017-07-21",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.111,
+      "vote_count": 82
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cJbD05kmKK6dBoqffnaKquuEodm.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 488981,
+      "title": "The Lowlife",
+      "original_language": "ja",
+      "original_title": "最低。",
+      "overview": "Based on a 2016 novel by Mana Sakura, “The Lowlife” shows the stories of three women who work in Japan’s adult video industry.",
+      "popularity": 2.1155,
+      "poster_path": "/yoAto9LMjYFmdgrKvnSdgsRtHRv.jpg",
+      "release_date": "2017-11-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 18
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qDhnpNVftWnbuzW64t1Y8vvCOjr.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 362101,
+      "title": "Lowlife Love",
+      "original_language": "ja",
+      "original_title": "下衆の愛",
+      "overview": "Tetsuo is a lowlife. A film director with a small indie hit many years back, yet he has never gotten any further as he refuses to go against his 'artistic integrity'.",
+      "popularity": 1.5678,
+      "poster_path": "/5P7YvAokuJJ6ataCtznRLE2H5qV.jpg",
+      "release_date": "2016-04-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.047,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/msw8MO6WXCb3tuU3KGbzF7PxNPT.jpg",
+      "genre_ids": [
+        18,
+        14,
+        9648
+      ],
+      "id": 144013,
+      "title": "Lowlife",
+      "original_language": "en",
+      "original_title": "Lowlife",
+      "overview": "A lonely musician's descent into the shadowy world of a living drug leads to a mysterious island where a battle of body and soul is waged.",
+      "popularity": 1.915,
+      "poster_path": "/dxRunD39WmD9Kz78pYLCO8Jj2CI.jpg",
+      "release_date": "2012-11-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.25,
+      "vote_count": 7
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10402
+      ],
+      "id": 1613462,
+      "title": "New Order: Low-Life",
+      "original_language": "en",
+      "original_title": "New Order: Low-Life",
+      "overview": "The Low‑Life (Definitive Edition) set expands New Order’s 1985 album with restored audio and a curated selection of archival material. The edition is anchored by a DVD featuring rare live performances from the 1984–1985 era, capturing the band’s evolving sound in raw, energetic form. Additional video content, including period‑specific footage and promotional material, provides further context for the album’s creative environment.",
+      "popularity": 0.7108,
+      "poster_path": "/cpnpvYAZBwSgw6kJhfWQlHlUekj.jpg",
+      "release_date": "1985-05-01",
+      "softcore": false,
+      "video": true,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9AbL76J8pCKNhyNzdEg8e2SQ4LJ.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1272890,
+      "title": "Lowlifes",
+      "original_language": "en",
+      "original_title": "Lowlifes",
+      "overview": "The survival instincts of a road-tripping family are put to the test when they have no other choice but to stay the night at a remote homestead.",
+      "popularity": 2.7057,
+      "poster_path": "/vxTyYoIRgutvzMpB97XAC8FhJiH.jpg",
+      "release_date": "2024-04-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.311,
+      "vote_count": 103
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mqIheOKqtRD7Z9l4kEmic7BDqEZ.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 152599,
+      "title": "The Immigrant",
+      "original_language": "en",
+      "original_title": "The Immigrant",
+      "overview": "1921 New York. An immigrant woman is tricked into a life of burlesque and vaudeville until a dazzling magician tries to save her and reunite her with her sister who is being held in the confines of Ellis Island.",
+      "popularity": 4.5414,
+      "poster_path": "/ArWRRQYeXL3nG4jYpMOPoBvgmy9.jpg",
+      "release_date": "2013-11-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.322,
+      "vote_count": 886
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/l8FLDoMdWtLrabXkv5LkvnxZiNX.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 566114,
+      "title": "Bad Company",
+      "original_language": "en",
+      "original_title": "Bad Company",
+      "overview": "Troubled teens in a 2nd chance 'bootcamp' program encounter a group of terrorists trying to take out a rural nuclear power plant. Stuck in remote area with no skills or communication to the outside world, the teens find they are the only thing that can stop a nuclear threat.",
+      "popularity": 1.2,
+      "poster_path": "/fcFBOC4cTAPtoQLaSrDsknotMcQ.jpg",
+      "release_date": "2018-08-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.375,
+      "vote_count": 8
+    }
+  ],
+  "strict:v2:the last circus|2010": [
+    {
+      "adult": false,
+      "backdrop_path": "/dbspMNCXsezL0V1a5NX4WD9AadY.jpg",
+      "genre_ids": [
+        12,
+        35,
+        18,
+        27,
+        53
+      ],
+      "id": 56812,
+      "title": "The Last Circus",
+      "original_language": "es",
+      "original_title": "Balada triste de trompeta",
+      "overview": "A trapeze artist must decide between her lust for Sergio, the Happy Clown, or her affection for Javier, the Sad Clown, both of whom are deeply disturbed.",
+      "popularity": 2.8463,
+      "poster_path": "/rbpp2G4cpGG8jqCqhEBwvjQ0Y6C.jpg",
+      "release_date": "2010-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.66,
+      "vote_count": 449
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uETSwIud6TRC7XFW3hLQK5meMg3.jpg",
+      "genre_ids": [
+        16,
+        18,
+        878,
+        53
+      ],
+      "id": 1667198,
+      "title": "The Amazing Digital Circus: The Last Act",
+      "original_language": "en",
+      "original_title": "The Amazing Digital Circus: The Last Act",
+      "overview": "With Caine gone and the circus dark, the cast are left with only the mistakes and traumas of their pasts to keep them company. As the prospect of eternity closes in around them, they discover the truth about the Digital Circus and its history. Will they come to terms with what they uncover, or will they make... the other choice? Also, presumably at some point someone says something funny, because this ending can’t be THAT depressing, can it? A theatrical screening of episode 8 and the all new, hour-long episode 9.",
+      "popularity": 8.9867,
+      "poster_path": "/uoZeXWuUS2z2F7VaC1iS5RS5cnk.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": true,
+      "vote_average": 8.8,
+      "vote_count": 264
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eRAURmxZx2NUwBZJyKCuhVFaWYg.jpg",
+      "genre_ids": [
+        16
+      ],
+      "id": 959537,
+      "title": "The Last Circus",
+      "original_language": "en",
+      "original_title": "The Last Circus",
+      "overview": "Short by Vera Neubauer.",
+      "popularity": 0.6926,
+      "poster_path": "/2KISZOlr8T42KWzchxmgvO4nnI1.jpg",
+      "release_date": "2007-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 748630,
+      "title": "The Last Great Circus Flyer",
+      "original_language": "en",
+      "original_title": "The Last Great Circus Flyer",
+      "overview": "“The Last Great Circus Flyer” follows the career of trapeze performer Miguel Vazquez who, at the age of 17, achieved the “Impossible'” quadruple somersault during a 1982 Ringling Bros. performance. Vazquez's “Quad” was a premiere attraction of Ringling Bros. and the largest circuses in Europe until, in 1994, at the apex of his career, Vazquez unexpectedly quit flying. Filmed over a 6 year period, the documentary addresses the triumphs, dangers, fears and oftentimes tragedies of trapeze performers.",
+      "popularity": 0.5157,
+      "poster_path": "/5CmOCBVbc9MqENARZ1jF1ozJuzp.jpg",
+      "release_date": "2015-04-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 669268,
+      "title": "The Last Circus Princess",
+      "original_language": "sv",
+      "original_title": "Den sista cirkusprinsessan",
+      "overview": "The film tells a story about a dying artform and a young girl, Simona. She has been living and working in the circus her whole life. A couple of years back they were three generations traveling with the circus. Will Simona be the last?",
+      "popularity": 0.5354,
+      "poster_path": "/9jKluOvzJoSj5hfumWmMz4jtU1R.jpg",
+      "release_date": "2020-03-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1713358,
+      "title": "The Last Days of The Circus",
+      "original_language": "en",
+      "original_title": "آخر أيام السيرك",
+      "overview": "An independent experimental Arab film",
+      "popularity": 0.4,
+      "poster_path": null,
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w5qaTHK7SIx7k6ijfHpZY9bGuCi.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 293363,
+      "title": "The Balloon Vendor",
+      "original_language": "it",
+      "original_title": "Il venditore di palloncini",
+      "overview": "A young boy tries to make living out of a puppet show when his mother abandons him and his father.",
+      "popularity": 1.1544,
+      "poster_path": "/WGdXET4VOc9u072JewewaSQk5W.jpg",
+      "release_date": "1974-12-21",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 3
+    }
+  ],
+  "strict:v2:no code of conduct|1999": [
+    {
+      "adult": false,
+      "backdrop_path": "/yqwxYu9UoPMYYNJFs9l12ID9qze.jpg",
+      "genre_ids": [
+        28,
+        18,
+        53
+      ],
+      "id": 1711,
+      "title": "No Code of Conduct",
+      "original_language": "en",
+      "original_title": "No Code of Conduct",
+      "overview": "A cop, his partner, and his father uncover a plot by city elders to smuggle drugs from Mexico into Phoenix, Arizona.",
+      "popularity": 2.3686,
+      "poster_path": "/9Ml1UUzLvoB5BjDvwFyMVvdstiH.jpg",
+      "release_date": "1999-03-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.417,
+      "vote_count": 36
+    }
+  ],
+  "strict:v2:boyka: undisputed iv|2016": [
+    {
+      "adult": false,
+      "backdrop_path": "/tCsYQTkQx7vknDmTw666K1XxAdx.jpg",
+      "genre_ids": [
+        28,
+        18,
+        53,
+        80
+      ],
+      "id": 348893,
+      "title": "Boyka: Undisputed IV",
+      "original_language": "en",
+      "original_title": "Boyka: Undisputed IV",
+      "overview": "In the fourth installment of the fighting franchise, Boyka is shooting for the big leagues when an accidental death in the ring makes him question everything he stands for. When he finds out the wife of the man he accidentally killed is in trouble, Boyka offers to fight in a series of impossible battles to free her from a life of servitude.",
+      "popularity": 14.239,
+      "poster_path": "/7QGdIJWWTkPhVjpQ0zA6z69khod.jpg",
+      "release_date": "2016-08-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.214,
+      "vote_count": 1485
+    }
+  ],
+  "strict:v2:12.12: the day|2023": [
+    {
+      "adult": false,
+      "backdrop_path": "/yOn8w3aGd6Rf9JYki7XaC9ZiyDg.jpg",
+      "genre_ids": [
+        18,
+        53,
+        28,
+        10752,
+        36,
+        80
+      ],
+      "id": 919207,
+      "title": "12.12: The Day",
+      "original_language": "ko",
+      "original_title": "서울의 봄",
+      "overview": "After the assassination of President Park, martial law has been declared. A coup d'état bursts out by Defense Security Commander Chun Doo-gwang and a private band of officers following him. Capital Defense Commander Lee Tae-shin, an obstinate soldier who believes the military should not take political actions, fights against Chun Doo-gwang to stop him. The conflict between the two grows while military leaders are holding their decision and Defense Minister is gone. In the midst of chaos, the spring of Seoul that everyone longed for heads to unexpected direction.",
+      "popularity": 5.5622,
+      "poster_path": "/vy14tKxsbJYdDyFl6kQuVkK2s44.jpg",
+      "release_date": "2023-11-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 148
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vQrFlOLzuD0MeXiDfwsdO9GYhBl.jpg",
+      "genre_ids": [
+        10770,
+        35,
+        14
+      ],
+      "id": 1034168,
+      "title": "The 12 Days of Christmas Eve",
+      "original_language": "en",
+      "original_title": "The 12 Days of Christmas Eve",
+      "overview": "When Brian Conway, a successful businessman whose family relationships have suffered, gets in a car accident on Christmas Eve, Santa gives him twelve chances to redo the day and repair the relationships in his life, including with his daughter Michelle.",
+      "popularity": 1.5459,
+      "poster_path": "/ozGEBpK6BtLoQhEM4WkGnqBmT0W.jpg",
+      "release_date": "2022-11-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.927,
+      "vote_count": 41
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 221643,
+      "title": "The Extra Day",
+      "original_language": "en",
+      "original_title": "The Extra Day",
+      "overview": "Director William Fairchild's 1956 British comedy takes a peek into the private lives of various performers employed as extras in a new film that's currently shooting.",
+      "popularity": 0.9171,
+      "poster_path": "/op6YsTBFxkM9HbNRmG4w55QPvMD.jpg",
+      "release_date": "1956-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99,
+        36
+      ],
+      "id": 1720999,
+      "title": "9 12 The Day After",
+      "original_language": "en",
+      "original_title": "9 12 The Day After",
+      "overview": "In commemoration of the 10th anniversary of 9/11, this documentary short chronicles the streets of New York City on September 12th, 2001, the day after the attacks. Directed by Alexander Baack & released to Vimeo.",
+      "popularity": 0.5531,
+      "poster_path": "/nUxrmQWJE0lg7fnSAVq6pxBvcis.jpg",
+      "release_date": "",
+      "softcore": false,
+      "video": true,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lVcjPoHLC1k17ZynmsDqJYpnKpu.jpg",
+      "genre_ids": [
+        35,
+        10402,
+        18
+      ],
+      "id": 243027,
+      "title": "On the Twelfth Day...",
+      "original_language": "en",
+      "original_title": "On the Twelfth Day...",
+      "overview": "A proper Edwardian lady patiently endures the ever-increasing disruption to her quiet household when her Truelove gives her all the items from the song \"The Twelve Days of Christmas.\"",
+      "popularity": 0.7791,
+      "poster_path": "/2KJpP1HREYyudjOPWtizU8L4cqQ.jpg",
+      "release_date": "1955-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.9,
+      "vote_count": 10
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749
+      ],
+      "id": 1402652,
+      "title": "The Last 12 Days",
+      "original_language": "tl",
+      "original_title": "The Last 12 Days",
+      "overview": "The Last 12 Days is the third installment in The 12 Days Saga, a heartfelt trilogy by Filipino filmmaker CJ Santos. This emotionally gripping drama centers on Camille and Daniel, a young couple navigating the complexities of love and illness. As Daniel faces a life-threatening health crisis, their relationship is pushed to its limits, exposing their deepest fears and vulnerabilities while highlighting the unbreakable strength of their connection.",
+      "popularity": 0.8117,
+      "poster_path": "/21wyQ90LagX9sjEFRXFcNDrM0kE.jpg",
+      "release_date": "2024-12-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35,
+        14,
+        10751
+      ],
+      "id": 1477548,
+      "title": "The 12 Days of Christmas",
+      "original_language": "en",
+      "original_title": "The 12 Days of Christmas",
+      "overview": "A widower receives strange Christmas gifts from a mysterious stranger.",
+      "popularity": 0.887,
+      "poster_path": null,
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/s3IC0whrmvz4ga1oSTD7Q2UTAIx.jpg",
+      "genre_ids": [],
+      "id": 1680028,
+      "title": "NJPW Best of the Super Junior 33 - Day 12",
+      "original_language": "ja",
+      "original_title": "NJPW Best of the Super Junior 33 - Day 12",
+      "overview": "The twelfth night of Best of Super Junior 33 took place on June 3, 2026 at Korakuen Hall in Tokyo, Japan.",
+      "popularity": 0.9185,
+      "poster_path": "/tCNjKhAcZwUMAq2KloMjCr0Fvs9.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": true,
+      "vote_average": 7.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xrMU5WYhHybpmq5aFKK9tQZqf4n.jpg",
+      "genre_ids": [],
+      "id": 704698,
+      "title": "The Next 12 Days",
+      "original_language": "en",
+      "original_title": "The Next 12 Days",
+      "overview": "One year after the events of 12 Days to Destiny, Camille and Daniel celebrates their anniversary. Challenged by Lola Bridge's lessons in life, the couple must face obstacles and situations that will test their faith, courage and love bringing Camille and Daniel's relationship to a whole new level.",
+      "popularity": 0.6791,
+      "poster_path": "/wRfIedxpccftFd47SmgHmWVZhQR.jpg",
+      "release_date": "2020-05-08",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99,
+        36
+      ],
+      "id": 992538,
+      "title": "The 12th Tokyo May Day",
+      "original_language": "ja",
+      "original_title": "第12回東京メーデー",
+      "overview": "On May 1st, unions all over Japan celebrate May Day, the international day for workers. Workers gather together at parks and hold demonstrations and parades. May Day has its origins in a strike that occurred in the United States on May 1, 1886, a strike that called for an eight-hour workday. Prokino recorded the May Day every year from 1927 to 1932. Among these films, this work is the only one that has survived. However, only its first part has survived. The original film depicts the march to the Ueno Park where the rally was dismissed. Iwasaki Akira coordinated the entire Tokyo Prokino organization as it photographed the 1931 May Day celebrations. They shot in both 16mm and 35mm (other 35mm productions were planned, but this is the only one that achieved completion). A 16mm print was circulated around the countryside by mobile projection units, and a 35mm print was shown at Soviet film nights in Tokyo and Osaka.",
+      "popularity": 0.7113,
+      "poster_path": "/yRzKqT5xKeRnMWFAx8fCjmtuUYm.jpg",
+      "release_date": "1931-05-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99,
+        27
+      ],
+      "id": 741261,
+      "title": "The 12 Days of Black Christmas",
+      "original_language": "en",
+      "original_title": "The 12 Days of Black Christmas",
+      "overview": "An interview with the cast and crew of the cult horror film Black Christmas (1974), hosted by John Saxon, who starred in the film. Included are stories about the making of the picture and what many of the participants have been doing since then.",
+      "popularity": 0.8547,
+      "poster_path": "/f3fZgH7MH8EczbvV5TYrgwxs27Z.jpg",
+      "release_date": "2006-12-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 1657937,
+      "title": "The 12 Days of Christine",
+      "original_language": "en",
+      "original_title": "The 12 Days of Christine",
+      "overview": "Christine Clarke brings a new man back to her flat from a New Year's Eve party, and immediately her life starts to unravel. Who is the terrifying stranger that keeps appearing in the flat at night?",
+      "popularity": 1.2737,
+      "poster_path": "/l2QbEuxSwKfi5FZ3bcZjpmTHaT9.jpg",
+      "release_date": "2015-04-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1061698,
+      "title": "The 12 Days of Newness",
+      "original_language": "en",
+      "original_title": "The 12 Days of Newness",
+      "overview": "Each day Beau Miles does something he's never done before.",
+      "popularity": 0.4605,
+      "poster_path": null,
+      "release_date": "2022-12-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        16,
+        10402
+      ],
+      "id": 535405,
+      "title": "The 12 Days of Christmas",
+      "original_language": "en",
+      "original_title": "The 12 Days of Christmas",
+      "overview": "A short Christmas animation produced by Sheila Graber based on the traditional carol ‘The Twelve Days of Christmas’. The film focuses on Santa Claus as he introduces each of the twelve days to comic effect.",
+      "popularity": 0.5001,
+      "poster_path": "/52TFKPhiAu8uqKJ7raflFeObBI5.jpg",
+      "release_date": "1975-12-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tyUKpCpEnZpKLPldNgxc2oIOWGV.jpg",
+      "genre_ids": [
+        35,
+        16
+      ],
+      "id": 637115,
+      "title": "The 12 Days of Christmas: A Tale of Avian Misery",
+      "original_language": "en",
+      "original_title": "The 12 Days of Christmas: A Tale of Avian Misery",
+      "overview": "A young woman receives all the gifts from the song The 12 Days Of Christmas from her boyfriend.",
+      "popularity": 0.6379,
+      "poster_path": "/rI1qeoV45Bh3VqhWMhUUAXm1H7W.jpg",
+      "release_date": "2016-12-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zzcGS6A65d7Ks0SZyucwQxYFzgi.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 528779,
+      "title": "The Perfect Day",
+      "original_language": "fr",
+      "original_title": "12 juillet 1998, le jour parfait",
+      "overview": "French soccer fans, celebrities and athletes retrace the exhilarating events of July 12, 1998, as France earned a historic win in the World Cup final.",
+      "popularity": 1.0783,
+      "poster_path": "/fl5CwdEcWCTAHCtaEeuyX11mdI.jpg",
+      "release_date": "2018-06-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 12
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1659408,
+      "title": "One Day in Mahanayim",
+      "original_language": "he",
+      "original_title": "יומן הקיבוץ המאוחד מס' 12 - יום אחד במחניים",
+      "overview": "A glimpse of a kibbutznik rest day, if there can be one at all, at Kibbutz Mahanaim. A visit to the barn with a white shirt leads straight to a visit to the kibbutz warehouse, and from there to the children’s home, orchards, and garage, and in the afternoon a cup of friendly coffee with the fishermen.",
+      "popularity": 0.4762,
+      "poster_path": null,
+      "release_date": "1958-02-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1616659,
+      "title": "The Day, December 3, 2024 'Fabricated Insurrection, Hidden Truth'",
+      "original_language": "ko",
+      "original_title": "2024.12.03 그날 조작된 내란, 감춰진 진실",
+      "overview": "On the night of December 3, 2024, South Korea was thrown into chaos. What the public first heard as \"an insurrection\" quickly became one of the most polarising political events in modern Korean history. This documentary revisits that night and asks a deeper question: Was it really a coup attempt or the result of a calculated political trap? Through interviews, legal analysis, and evidence, the film investigates the impeachment of President Yoon Suk-yeol and the rapid collapse of his administration. It explores claims that an overwhelming opposition majority, built through alleged election manipulation, enabled a form of \"legislative dictatorship\" that mirrored the path that led to President Park Geun-hye's impeachment eight years earlier.",
+      "popularity": 1.3491,
+      "poster_path": "/byE19t7hJBQ5BeUSIIGwzmLjs9k.jpg",
+      "release_date": "2026-02-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vTevRxMGwZpsKEpPmSCLYY3desv.jpg",
+      "genre_ids": [
+        878
+      ],
+      "id": 763223,
+      "title": "The 12 Day Tale of the Monster that Died in 8",
+      "original_language": "ja",
+      "original_title": "８日で死んだ怪獣の１２日の物語 －劇場版－",
+      "overview": "An actor who has lost his job due to the coronavirus buys capsule monsters online and begins to raise them.",
+      "popularity": 1.1812,
+      "poster_path": "/mh6CMdvqYFqoZVxjb9YYJeA8rga.jpg",
+      "release_date": "2020-07-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eOI4aC1ZqYgHcJIPmi9YcAolrAd.jpg",
+      "genre_ids": [
+        16,
+        18,
+        14
+      ],
+      "id": 1017204,
+      "title": "Naruto OVA 12: The Day Naruto Became Hokage",
+      "original_language": "ja",
+      "original_title": "ナルトが火影になった日",
+      "overview": "Depicts the day that Naruto Uzumaki became the 7th Hokage.",
+      "popularity": 2.5181,
+      "poster_path": "/7Zp4LaCbFNd1hxfxRDTdFqMzqxi.jpg",
+      "release_date": "2016-07-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.453,
+      "vote_count": 64
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jS6cuNFxZyS4mCJRyrtR0vPFOed.jpg",
+      "genre_ids": [
+        10749,
+        10770
+      ],
+      "id": 366631,
+      "title": "On the Twelfth Day of Christmas",
+      "original_language": "en",
+      "original_title": "On the Twelfth Day of Christmas",
+      "overview": "Maggie Chalke is torn between her journalistic integrity and helping her long time crush Mitch O'Grady when her boss orders her to write a story for the paper about the Secret Santa gifts she's been sending Mitch to help him relearn his love for Christmas.",
+      "popularity": 1.5275,
+      "poster_path": "/cXRhRMJ0PrlU0vfchjmcKS1uypx.jpg",
+      "release_date": "2015-12-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 64
+    }
+  ],
+  "strict:v2:michael|2026": [
+    {
+      "adult": false,
+      "backdrop_path": "/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "id": 936075,
+      "title": "Michael",
+      "original_language": "en",
+      "original_title": "Michael",
+      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "popularity": 102.5479,
+      "poster_path": "/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+      "release_date": "2026-04-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.688,
+      "vote_count": 3964
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zJEGBiV1rhnnUo2IxQ1oKMHLqCY.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 55587,
+      "title": "Michael",
+      "original_language": "de",
+      "original_title": "Michael",
+      "overview": "A mature and visually elegant period romance that remains one of the earliest and most compassionate overtly gay-themed films in movie history. Based upon Herman Bang's 1902 novel, Dreyer's Michael refashions the classical Greek myth of Jupiter and Ganymede into a love triangle between an aging artist, Zoret, his protagonist Michael, and Princess Zamikoff, an aristocratic femme fatale as entranced by Michael’s youthful beauty as Zoret is.",
+      "popularity": 1.4974,
+      "poster_path": "/uE5CcZ7wJFLxxRSo2XKuhAYHy0R.jpg",
+      "release_date": "1924-09-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 53
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hP7snoME9lumckt7NpOMIZJDOmP.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 272692,
+      "title": "The Possession of Michael King",
+      "original_language": "en",
+      "original_title": "The Possession of Michael King",
+      "overview": "The film tells the story of documentary filmmaker Michael King (Shane Johnson), who doesn’t believe in God or the Devil. Following the sudden death of his wife, Michael decides to make his next film about the search for the existence of the supernatural, making himself the center of the experiment – allowing demonologists, necromancers, and various practitioners of the occult to try the deepest and darkest spells and rituals they can find on him – in the hopes that when they fail, he’ll once and for all have proof that religion, spiritualism, and the paranormal are nothing more than myth. But something does happen. An evil and horrifying force has taken over Michael King. And it will not let him go.",
+      "popularity": 2.1772,
+      "poster_path": "/r1LrvbUsQHn8ByJIOoeI76F6jR0.jpg",
+      "release_date": "2014-08-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 444
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2uJdtaLUJcvo6tDFK01LMoMDn8O.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 610729,
+      "title": "Killing Michael Jackson",
+      "original_language": "en",
+      "original_title": "Killing Michael Jackson",
+      "overview": "Interviews with the detectives involved in investigating the global star, Michael Jackson’s, death. They reveal fascinating insights into the events surrounding the day he died.",
+      "popularity": 1.3622,
+      "poster_path": "/efKB7PTHCUSESMyGRSRUNiMkK8d.jpg",
+      "release_date": "2019-10-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.2,
+      "vote_count": 6
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gexBuHngzhegi0Dgu1xOHu4Q1Z7.jpg",
+      "genre_ids": [
+        35,
+        12
+      ],
+      "id": 1737249,
+      "title": "Me and Michael",
+      "original_language": "he",
+      "original_title": "אני ומייקל",
+      "overview": "Yoav and Michael learn that their Film Class is set to be shut down unless at least five more students join by the end of the month - a situation arising because no one else has signed up (they are the only ones who truly care about it). Throughout the film, they attempt to recruit people - or rather, coerce and bribe them - to prevent the class they love from closing. As they search, they realize that they are the only ones who care about the class and that recruiting at least five potential students is proving to be a bit harder than they had imagined.",
+      "popularity": 0.5556,
+      "poster_path": "/1ewfiHze68OEnK81JeJ9APMxNTp.jpg",
+      "release_date": "2026-06-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 10.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ygVfiGnlpm19BjWP6YGnTMh21Xq.jpg",
+      "genre_ids": [
+        99,
+        10402
+      ],
+      "id": 1395701,
+      "title": "Michael Jackson: Ungloved",
+      "original_language": "en",
+      "original_title": "Michael Jackson: Ungloved",
+      "overview": "From modest childhood beginnings to international fame, this is the journey of the 'King of Pop,' Michael Jackson's complicated world. Unquestioned talent transcends years of scrutiny over the real superstar wearing the symbolic glove.",
+      "popularity": 0.8794,
+      "poster_path": "/rphNalgEcruHnDTliA2qunuvJF5.jpg",
+      "release_date": "2024-08-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28,
+        14,
+        878,
+        27
+      ],
+      "id": 1647483,
+      "title": "Judge Michael - Rise of the Law",
+      "original_language": "en",
+      "original_title": "Judge Michael - Rise of the Law",
+      "overview": "A new enemy has risen on mega city one, his name is Voss Kane \" The Ripper \" bringing chaos to the streets, now a new judge has emerged from the hall of justice teached by Dredd himself, to uphold the law and bring justice to the streets.",
+      "popularity": 1.1522,
+      "poster_path": "/whIl2GjeULi03pimd24Y5mqkMok.jpg",
+      "release_date": "2026-06-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2HlrU79vqnnBApQqRPhTPOtHi6V.jpg",
+      "genre_ids": [
+        10402
+      ],
+      "id": 1649403,
+      "title": "George Michael: The Faith Tour",
+      "original_language": "en",
+      "original_title": "George Michael: The Faith Tour",
+      "overview": "A stunning delve into George Michael's 1988 Faith Tour, as shot live at the famous Palais Omnisports de Paris-Bercy. This exclusive footage, assembled from a 14-camera shoot captured on 35mm over two nights (30–31 May 1988), features the 24-year-old pop star at the height of his powers.",
+      "popularity": 1.2446,
+      "poster_path": null,
+      "release_date": "2026-11-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/s5PpgA9WoPkQs9NiwEpU1VqJNVF.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1578278,
+      "title": "Nikita Tszyu vs. Michael Zerafa",
+      "original_language": "en",
+      "original_title": "Nikita Tszyu vs. Michael Zerafa",
+      "overview": "There's bad blood between the Tszyu's and Zerafa. Now it is time for a fight for the ages. Years in the making, Nikita Tszyu vs Michael Zerafa will take place 16th January 2026.",
+      "popularity": 2.1747,
+      "poster_path": "/vHaCZ7siITwFhDYBhlCXz68NxZR.jpg",
+      "release_date": "2026-01-16",
+      "softcore": false,
+      "video": true,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5RPI2SSQoObn8lxgMcUy2gjQ1hG.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1615037,
+      "title": "The Trial of Michael Jackson",
+      "original_language": "en",
+      "original_title": "The Trial of Michael Jackson",
+      "overview": "This documentary examines the trial of Michael Jackson that took place in Santa Barbara county in California and gripped the world for four months.",
+      "popularity": 1.1374,
+      "poster_path": "/4SV7N3SQPuZ0MSUcyfKJr3lixk6.jpg",
+      "release_date": "2026-01-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10402,
+        99
+      ],
+      "id": 1656018,
+      "title": "Michael Jackson: A Life in Music",
+      "original_language": "en",
+      "original_title": "Michael Jackson: A Life in Music",
+      "overview": "The legendary journey of Michael Jackson, from his early days with the Jackson 5 to his breakthrough albums and live concerts.",
+      "popularity": 2.0985,
+      "poster_path": "/aekwk423LleTvQDV9t2Z0NLG0PO.jpg",
+      "release_date": "2026-08-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hfRkAn9TUnALAmSTDWreWpRgGSF.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1678758,
+      "title": "Dmitry Bivol vs. Michael Eifert",
+      "original_language": "en",
+      "original_title": "Dmitry Bivol vs. Michael Eifert",
+      "overview": "Unified Light Heavyweight champion Dmitry Bivol defends his belts against IBF mandatory challenger, Michael Eifert (13-1, 5 KOs) at the UMMC Arena in Ekaterinburg, Russia.",
+      "popularity": 0.6022,
+      "poster_path": "/3odJgsH0d1H7IogoeWXX5mYzhjd.jpg",
+      "release_date": "2026-05-30",
+      "softcore": false,
+      "video": true,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eHBdio9PunpOG2Pljc0d4OqZHqY.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1630251,
+      "title": "Michael Conlan vs. Kevin Walsh",
+      "original_language": "en",
+      "original_title": "Michael Conlan vs. Kevin Walsh",
+      "overview": "Mick Conlan makes his long-awaited homecoming, looking to deliver another statement performance as he takes on Kevin Walsh for the WBC International Featherweight Title",
+      "popularity": 1.1155,
+      "poster_path": "/8zvBJ1z1EKgq3eSS3aCQFdq6QPB.jpg",
+      "release_date": "2026-03-20",
+      "softcore": false,
+      "video": true,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7I3xAv1jpGM7gFVFnp8DVutBqP7.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1673862,
+      "title": "Ryan Garner vs. Michael Magnesi",
+      "original_language": "en",
+      "original_title": "Ryan Garner vs. Michael Magnesi",
+      "overview": "Ryan Garner (19-0) enjoys a dream headline slot in his home-city, taking on Michael Magnesi (26-2) inside Southampton's St Mary's Stadium. With the WBC 'interim' super featherweight title at stake, can 'The Piranha' set up a shot at world honours?",
+      "popularity": 1.5517,
+      "poster_path": "/ramqNBSjJ5NSL4K5zc3HHpSBGC1.jpg",
+      "release_date": "2026-06-20",
+      "softcore": false,
+      "video": true,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 844089,
+      "title": "George Michael: The Trojan Souls",
+      "original_language": "en",
+      "original_title": "George Michael: The Trojan Souls",
+      "overview": "The conversation that never finished.  In 1993, Andros Georgiou — lifelong best friend and brother to George Michael — began assembling the greatest collaborative album ever conceived. Eight of the most iconic artists in history all said yes. The album was never made. Until now, the footage has never been seen. This is Trojan Souls — the film that tells the story of what almost was.",
+      "popularity": 0.5505,
+      "poster_path": "/6ZZ7aGLZsvyzz13J1y3oErKwk0J.jpg",
+      "release_date": "2026-07-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 1681644,
+      "title": "Michael the Band the Derby the Movie",
+      "original_language": "en",
+      "original_title": "Michael the Band the Derby the Movie",
+      "overview": "parker and jacob devise a plan to play at the starkville weiner derby",
+      "popularity": 0.6435,
+      "poster_path": "/qhbbINbgM9F29eIofBZepoUV6IO.jpg",
+      "release_date": "2026-04-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 10.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fbfE8nKUcRhL6lRc8MoliD4kV8D.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 1564482,
+      "title": "Michael Cruz Kayne: Sorry For Your Loss",
+      "original_language": "en",
+      "original_title": "Michael Cruz Kayne: Sorry For Your Loss",
+      "overview": "Michael Cruz Kayne reflects on his son's death and society's relationship with grief.",
+      "popularity": 0.6146,
+      "poster_path": "/rsrOIYTDawmJ64azGAiLQBuSzRs.jpg",
+      "release_date": "2026-03-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9WXLSrk4sHRckpMimZ01UUa9EH9.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1728001,
+      "title": "Michael Ghanem's Distracted",
+      "original_language": "en",
+      "original_title": "Michael Ghanem's Distracted",
+      "overview": "As an important exam draws near, a teenager's day is consumed by social media, television, and endless distractions. When he finally decides to study, he discovers that time has slipped away faster than he ever imagined, forcing him to confront the consequences of procrastination.",
+      "popularity": 0.7761,
+      "poster_path": "/iX4vHaSfcXrIxEqKMH5RITSCnXV.jpg",
+      "release_date": "2026-07-07",
+      "softcore": false,
+      "video": true,
+      "vote_average": 6.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1718566,
+      "title": "Michael J Fox: Actor, Activist, Optimist",
+      "original_language": "en",
+      "original_title": "Michael J Fox: Actor, Activist, Optimist",
+      "overview": "No one could predict the kind of life Michael J Fox would live. From his meteoric rise to movie stardom to the tragedy of contracting Parkinson's at just 29, his life, in a way, has been a movie in itself.",
+      "popularity": 0.7853,
+      "poster_path": null,
+      "release_date": "2026-04-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1523410,
+      "title": "Michaël Hirsch - Je pionce donc je suis",
+      "original_language": "fr",
+      "original_title": "Michaël Hirsch - Je pionce donc je suis",
+      "overview": "",
+      "popularity": 0.9987,
+      "poster_path": "/nocEAk9DcZw82voiyZpCGgg618t.jpg",
+      "release_date": "2025-11-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4t6pIZqQPet9NU2MAz2kzlJYYvS.jpg",
+      "genre_ids": [
+        10402,
+        99
+      ],
+      "id": 1685561,
+      "title": "Michael Jackson : Les derniers secrets du roi de la Pop",
+      "original_language": "fr",
+      "original_title": "Michael Jackson : Les derniers secrets du roi de la Pop",
+      "overview": "",
+      "popularity": 1.2607,
+      "poster_path": "/5vv7G1ckFvMNoL8bkoIGtAHht84.jpg",
+      "release_date": "2026-04-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qBDMOCSHzxqi2rQzB1CK0TWwcH6.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1711592,
+      "title": "Don't Stop Til' You Get Enough: The Making of Michael",
+      "original_language": "en",
+      "original_title": "Don't Stop Til' You Get Enough: The Making of Michael",
+      "overview": "",
+      "popularity": 0.8046,
+      "poster_path": "/iH0jFKECMu27xlxEr4aiSCFKgMm.jpg",
+      "release_date": "2026-06-08",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1686108,
+      "title": "There'll Likely be Michael Jackson Vigils Throughout the Night",
+      "original_language": "en",
+      "original_title": "There'll Likely be Michael Jackson Vigils Throughout the Night",
+      "overview": "Through nearly a thousand found footage videos from the early internet, filmmaker Marcus Batto recreates the day of Michael Jackson's passing, assembling a vast, fragmented portrait of the cultural earthquake. Equal parts elegy, musical, and excavation into the death of the King of Pop from the lens of strangers, critics and bystanders.",
+      "popularity": 0.4088,
+      "poster_path": "/vo0TaHa9M98t1F9QvgBoYCnTn8O.jpg",
+      "release_date": "2026-07-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4Wzv9bL6ci72EM05v0TChszvBwm.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1686942,
+      "title": "Stacy Prewitt Marries Michael Jordan (Not the Basketball Player, a Different Guy)",
+      "original_language": "en",
+      "original_title": "Stacy Prewitt Marries Michael Jordan (Not the Basketball Player, a Different Guy)",
+      "overview": "After her father dies, Stacy Prewitt tries desperately to bring him back through unconventional means.",
+      "popularity": 1.1268,
+      "poster_path": "/wfTTK9vRFuKiJiTXkFbJnxc7TE5.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mFpmzT1anCtFahE4SS5EUHc73k2.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1663942,
+      "title": "The Heartbreak Kid: Becoming Shawn Michaels",
+      "original_language": "en",
+      "original_title": "The Heartbreak Kid: Becoming Shawn Michaels",
+      "overview": "Follows the life and career of WWE performer Shawn Michaels, tracing his rise, personal struggles, and eventual comeback with an unfiltered look at his journey.",
+      "popularity": 1.7869,
+      "poster_path": "/xDOIl6WfUQFJOIjUP2HJBPbwEcJ.jpg",
+      "release_date": "2026-04-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/a2mLpDZr4CgU2ppx2KsHvPYnvua.jpg",
+      "genre_ids": [
+        99,
+        80
+      ],
+      "id": 1173476,
+      "title": "Michael Jackson: Faking It",
+      "original_language": "en",
+      "original_title": "Michael Jackson: Faking It",
+      "overview": "Before his death in 2009, Michael Jackson was the biggest pop star on the planet. But his private life was marred by allegations of child sex abuse. Experts in body language, speech and forensic psychology explore whether he was \"faking it\" on camera.",
+      "popularity": 1.8629,
+      "poster_path": "/aZbRJYyj9bSJpFI5SvnrE5565qJ.jpg",
+      "release_date": "2023-09-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.2,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wz1eLrNxK77xAY7JYi4iYrtiMEd.jpg",
+      "genre_ids": [
+        99,
+        10402
+      ],
+      "id": 78192,
+      "title": "Michael Jackson: The Life of an Icon",
+      "original_language": "en",
+      "original_title": "Michael Jackson: The Life of an Icon",
+      "overview": "See Michael Jackson, one of the most recognizable and popular entertainers of all time, like never before in the feature-length tribute Michael Jackson: The Life of an Icon. Known to millions of fans worldwide for his record-breaking albums, groundbreaking music videos, mesmerizing dance moves and humanitarian efforts, his true story has never really been told...until now. This unprecedented look into the King of Pop's fascinating life includes all-new interviews with his mother Katherine Jackson as well as siblings Tito and Rebbie Jackson,  his nephew  Jaafar Jackson and niece Tahkyah brings plenty Jackson and Friends ends and music legends such as Smokey Robinson, Dionne Warwick and  his 3 children and many more.",
+      "popularity": 2.7924,
+      "poster_path": "/tOCYV9JCXXFtb7YehKXJBMKI4aD.jpg",
+      "release_date": "2011-11-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.084,
+      "vote_count": 191
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8j6GP3wOkUDIC7DZDsAyaDsr1el.jpg",
+      "genre_ids": [
+        18,
+        53,
+        80
+      ],
+      "id": 4566,
+      "title": "Michael Clayton",
+      "original_language": "en",
+      "original_title": "Michael Clayton",
+      "overview": "A law firm brings in its \"fixer\" to remedy the situation after a lawyer has a breakdown while representing a chemical company that he knows is guilty in a multi-billion dollar class action suit.",
+      "popularity": 6.7051,
+      "poster_path": "/hhkW4yVIGo8Bee3UITKvqOvhNMG.jpg",
+      "release_date": "2007-09-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.791,
+      "vote_count": 2023
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/f50cssF1I4Mxr6s1Z6HO4wPOrmY.jpg",
+      "genre_ids": [
+        35,
+        18,
+        14
+      ],
+      "id": 2928,
+      "title": "Michael",
+      "original_language": "en",
+      "original_title": "Michael",
+      "overview": "Tabloid reporters are sent by their editor to investigate after the paper recieves a letter from a woman claiming an angel is living with her.",
+      "popularity": 3.0534,
+      "poster_path": "/3XdsHncNxOSMOITeQBC8ML9ADky.jpg",
+      "release_date": "1996-12-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.712,
+      "vote_count": 697
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/A4Ikk4bR7R16rMFrDUsbUrurEHM.jpg",
+      "genre_ids": [
+        10752,
+        18,
+        53,
+        36
+      ],
+      "id": 1770,
+      "title": "Michael Collins",
+      "original_language": "en",
+      "original_title": "Michael Collins",
+      "overview": "Michael Collins plays a crucial role in the establishment of the Irish Free State in the 1920s, but becomes vilified by those hoping to create a completely independent Irish republic.",
+      "popularity": 3.8769,
+      "poster_path": "/brIBbU6t9glEGAKRTJ4PMj9OiDC.jpg",
+      "release_date": "1996-10-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 528
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/c9woVMyzX8Po9ZdAvwvSU2Tu0OI.jpg",
+      "genre_ids": [
+        18,
+        12
+      ],
+      "id": 77418,
+      "title": "Michael Strogoff",
+      "original_language": "fr",
+      "original_title": "Michel Strogoff",
+      "overview": "When Emir Feofar Khan, leader of the Tartar hordes, takes up arms and invades the steppes of Eastern Siberia, Czar Alexander II of Russia entrusts the brave officer Michael Strogoff with a dangerous mission.",
+      "popularity": 2.1197,
+      "poster_path": "/88PdFuBXAH9DtqpLigL3bPfOleg.jpg",
+      "release_date": "1956-12-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 34
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aVefEnQsfNPUrgsuMszTDt165P0.jpg",
+      "genre_ids": [
+        27,
+        10402,
+        53
+      ],
+      "id": 92060,
+      "title": "Michael Jackson's Thriller",
+      "original_language": "en",
+      "original_title": "Michael Jackson's Thriller",
+      "overview": "A night at the movies turns terrifying when Michael and his date are attacked by zombies. Released at the height of Thriller’s success, the short film redefined the music video, broke racial barriers, and became the first inducted into the U.S. National Film Registry.",
+      "popularity": 8.4616,
+      "poster_path": "/tVd95TdfXybhhzGBHSlPiuaHs1y.jpg",
+      "release_date": "1983-11-21",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.257,
+      "vote_count": 786
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 52900,
+      "title": "Michael Jackson Memorial",
+      "original_language": "de",
+      "original_title": "Michael Jackson Memorial",
+      "overview": "A live telecast of the public memorial service for the king of pop, Michael Jackson.",
+      "popularity": 1.527,
+      "poster_path": "/kzcsTkgQjt7DDYqHf7PQcaw21z1.jpg",
+      "release_date": "2009-07-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.974,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kYzgPgfAqx1HPIXKntNvgC4l3A3.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 481984,
+      "title": "Michael Inside",
+      "original_language": "en",
+      "original_title": "Michael Inside",
+      "overview": "An 18-year-old man, living on a Dublin housing estate with his grandfather, is caught holding drugs for his friend's older brother and sentenced to 3 months in prison.",
+      "popularity": 0.8661,
+      "poster_path": "/lSLHXGzLjGGn3wdIbxPdlJesi7F.jpg",
+      "release_date": "2018-04-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.643,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/A8K7IIPiQykcZ3iNr4iE3oJNLc7.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 866198,
+      "title": "Michael",
+      "original_language": "ta",
+      "original_title": "மைக்கேல்",
+      "overview": "Set in the early 1990s, Michael, a simple yet daring boy from the south moves to Bombay with a personal strong motive, grow under the wings of Gurunath, a dreaded gangster. Michael is assigned with a task of killing the man involved in the attempted assassination of Gurunath. Things take a turn as he falls in love with the target's daughter, Theera, in Delhi.",
+      "popularity": 1.3344,
+      "poster_path": "/1HChuuIpOungXAtotqVfhCBZUBK.jpg",
+      "release_date": "2023-02-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.429,
+      "vote_count": 7
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/omAcS3PpAhvrG10tE9qTLlw8qyh.jpg",
+      "genre_ids": [
+        10402,
+        28
+      ],
+      "id": 460508,
+      "title": "Munna Michael",
+      "original_language": "hi",
+      "original_title": "मुन्ना माइकल",
+      "overview": "An expert dancer Munna who idolizes the king of pop, reluctantly tutors a gangster until their developing bond gets disrupted by their common romantic interest towards the same woman.",
+      "popularity": 1.6659,
+      "poster_path": "/p1tdHXmGGLc8o8kTImZi5iPXcu3.jpg",
+      "release_date": "2017-07-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.74,
+      "vote_count": 48
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ecksst0Cb1AO1CZwmGjJu11bfUo.jpg",
+      "genre_ids": [
+        18,
+        10770
+      ],
+      "id": 458293,
+      "title": "Michael Jackson: Searching for Neverland",
+      "original_language": "en",
+      "original_title": "Michael Jackson: Searching for Neverland",
+      "overview": "Based on the best-selling book, Remember the Time: Protecting Michael Jackson in His Final Days, and told through the eyes of Jackson's trusted bodyguards, Bill Whitfield and Javon Beard. The movie will reveal firsthand the devotion Michael Jackson had to his children, and the hidden drama that took place during the last two years of his life.",
+      "popularity": 3.162,
+      "poster_path": "/mRZIiG4vJiCgJh4v2EPUVVTznC8.jpg",
+      "release_date": "2017-05-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 115
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7OFw4NIC6RPQtKonm8kU6yR2VC5.jpg",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "id": 186971,
+      "title": "Age of Uprising: The Legend of Michael Kohlhaas",
+      "original_language": "fr",
+      "original_title": "Michael Kohlhaas",
+      "overview": "In the 16th century in the Cévennes, a horse dealer by the name of Michael Kohlhaas leads a happy and prosperous family life. When a lord treats him unjustly, this pious, upstanding man raises an army and puts the country to fire and sword in order to have his rights restored.",
+      "popularity": 2.5897,
+      "poster_path": "/hlLec0D9nq9TSv5OjbgqPqEDGKK.jpg",
+      "release_date": "2013-08-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.885,
+      "vote_count": 234
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1GEAX8f4glSfLH73tRuvQoaAEEE.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 291869,
+      "title": "I Am Michael",
+      "original_language": "en",
+      "original_title": "I Am Michael",
+      "overview": "The controversial true story of a gay activist who rejects his homosexuality and becomes a Christian pastor.",
+      "popularity": 2.4323,
+      "poster_path": "/sO9Z55Js4sEuXXe9qQjCULiPjg8.jpg",
+      "release_date": "2015-01-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 218
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/28WbvmgQqU6gZnO0COjElNLGUYF.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 198667,
+      "title": "Michael Kohlhaas - The Rebel",
+      "original_language": "de",
+      "original_title": "Michael Kohlhaas - Der Rebell",
+      "overview": "In medieval times, a horse merchant is forced by a noble to leave part of his stock as payment for crossing his land. Upon returning, he finds his horses near death, and when the noble refuses to compensate him, the merchant fights unsuccessfully against the injustice.",
+      "popularity": 1.4298,
+      "poster_path": "/bojyx1KvENdBWCzd6kHzyuf96G8.jpg",
+      "release_date": "1969-04-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28,
+        16,
+        878,
+        18,
+        27
+      ],
+      "id": 928274,
+      "title": "St. Michael Academy",
+      "original_language": "ja",
+      "original_title": "聖ミカエラ学園漂流記",
+      "overview": "Reborn as a woman named Aiko, the soldier rises as the military leader of a new crusade, successfully unites the world, and abolishes all religion. Haunted by memories of a past life, Aiko travels backward in time and finds herself caught in an incredible battle to save the future.",
+      "popularity": 0.8756,
+      "poster_path": "/dOyEKRwfvvYsZ75dkaykAeHCgKa.jpg",
+      "release_date": "1990-06-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 2.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9KGNTdK1jMWx0M8bHK2zVyY3brn.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 332841,
+      "title": "My Michael",
+      "original_language": "en",
+      "original_title": "Michael Sheli",
+      "overview": "Based on a novel by Amos Oz. A couple in Jerusalem before the six day war in 1967, fall in love, get married, have a child and drift apart. With Michael away at war, his wife starts fantasizing about twin Arabs she used to play with as a child.",
+      "popularity": 0.6266,
+      "poster_path": "/7eDlpCMtzaEnHpuYaPi0J0txXuQ.jpg",
+      "release_date": "1974-05-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99,
+        35
+      ],
+      "id": 30398,
+      "title": "Being Michael Madsen",
+      "original_language": "en",
+      "original_title": "Being Michael Madsen",
+      "overview": "Actor Michael Madsen turns the tables on notorious paparazzo, Billy Dant, by hiring a trio of documentary filmmakers to chronicle Dant's life, loves, and troubles.",
+      "popularity": 1.7585,
+      "poster_path": "/7XFI67uVviE2ESjQqXIo44N3yiK.jpg",
+      "release_date": "2007-09-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 11
+    }
+  ],
+  "strict:v2:the baader meinhof complex|2008": [
+    {
+      "adult": false,
+      "backdrop_path": "/6vspNQNWrtoXQMqjsBhouCVsozG.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        36,
+        53
+      ],
+      "id": 6968,
+      "title": "The Baader Meinhof Complex",
+      "original_language": "de",
+      "original_title": "Der Baader Meinhof Komplex",
+      "overview": "When German police viciously quell a protest against the shah of Iran, popular journalist Ulrike Meinhof rebels against her dishonest marriage, walks away from her children and joins radical anarchist Andreas Baader. Together with Baader's girlfriend, Gudrun Ensslin, they form the violent Red Faction Army, and together perpetrate a slew of terrorist attacks as a way of disrupting the fabric of what they see as an increasingly fascist state.",
+      "popularity": 4.107,
+      "poster_path": "/36Y0UT6bXnkHBGmmVFWGEnEh8nI.jpg",
+      "release_date": "2008-09-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.964,
+      "vote_count": 662
+    }
+  ],
+  "strict:v2:intacto|2001": [
+    {
+      "adult": false,
+      "backdrop_path": "/orCqFI2ROrtr1ajUTIolzMmQiqP.jpg",
+      "genre_ids": [
+        28,
+        35,
+        18,
+        10749,
+        878,
+        53
+      ],
+      "id": 10856,
+      "title": "Intacto",
+      "original_language": "es",
+      "original_title": "Intacto",
+      "overview": "An enigmatic tale of four people whose lives are intertwined by destiny are subject to the laws of fate. They discover that luck is something they cannot afford to be without as they gamble with the highest stakes possible in a deadly game from which only one of them will emerge intact.",
+      "popularity": 2.462,
+      "poster_path": "/gAe6KmVojjHLmdhPZhYDMTmaiM1.jpg",
+      "release_date": "2001-11-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 209
+    }
+  ],
+  "strict:v2:maria full of grace|2004": [
+    {
+      "adult": false,
+      "backdrop_path": "/q6xEN0Lx214QUXXXlQfLaoJS7EB.jpg",
+      "genre_ids": [
+        18,
+        53,
+        80
+      ],
+      "id": 436,
+      "title": "Maria Full of Grace",
+      "original_language": "es",
+      "original_title": "María, llena eres de gracia",
+      "overview": "A pregnant Colombian teenager becomes a drug mule to make some desperately needed money for her family.",
+      "popularity": 2.7539,
+      "poster_path": "/30CImATfvHWLXy6a3KmHXnYXB6c.jpg",
+      "release_date": "2004-04-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.205,
+      "vote_count": 435
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7MBx6qSQURshCa9niPVuDWd5nY5.jpg",
+      "genre_ids": [
+        18,
+        36,
+        10751
+      ],
+      "id": 381828,
+      "title": "Full of Grace",
+      "original_language": "en",
+      "original_title": "Full of Grace",
+      "overview": "Follows Mary of Nazareth in her last earthly days as she helps the fractious early Church regain their original encounter with The Lord.",
+      "popularity": 1.099,
+      "poster_path": "/aPaz6rlTs6dOyPbGVsM57n9g0A0.jpg",
+      "release_date": "2017-02-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 21
+    }
+  ],
+  "strict:v2:pokémon the movie: diancie and the cocoon of destruction|2014": [
+    {
+      "adult": false,
+      "backdrop_path": "/k5OFuW1NdI1Lt57nzXEjxwd8zGv.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        12,
+        28,
+        35,
+        18
+      ],
+      "id": 303903,
+      "title": "Pokémon the Movie: Diancie and the Cocoon of Destruction",
+      "original_language": "ja",
+      "original_title": "ポケモン・ザ・ムービーXY 破壊の繭とディアンシー",
+      "overview": "In the underground Diamond Domain, where many Carbink live, the Mythical Pokémon Diancie serves as ruler. The Heart Diamond that sustains the land is beginning to fall apart, and Diancie is not yet strong enough to create a new one. While seeking help from the Legendary Pokémon Xerneas, Diancie encounters a group of thieves who want to take control of its diamond-producing power–and who awaken the Legendary Pokémon Yveltal from its cocoon in the process! Can Ash and his friends help Diancie discover its true power, stop Yveltal’s rampage, and save the Diamond Domain?",
+      "popularity": 4.3027,
+      "poster_path": "/rA0KbJZbBt2fMmZs8bwPZnzFfDc.jpg",
+      "release_date": "2014-07-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.694,
+      "vote_count": 204
+    }
+  ],
+  "strict:v2:the 100 year-old man who climbed out the window and disappeared|2013": [
+    {
+      "adult": false,
+      "backdrop_path": "/pf4SWYA5LH0Byho5PusLTtfZljq.jpg",
+      "genre_ids": [
+        12,
+        35,
+        18
+      ],
+      "id": 145247,
+      "title": "The 100 Year-Old Man Who Climbed Out the Window and Disappeared",
+      "original_language": "sv",
+      "original_title": "Hundraåringen som klev ut genom fönstret och försvann",
+      "overview": "After living a long and colorful life, Allan Karlsson finds himself stuck in a nursing home. On his 100th birthday, he leaps out a window and begins an unexpected journey.",
+      "popularity": 3.4791,
+      "poster_path": "/eexokDJNgyfpdTH30s102lSuc9A.jpg",
+      "release_date": "2013-12-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.818,
+      "vote_count": 1029
+    }
+  ],
+  "strict:v2:love lesson|2013": [
+    {
+      "adult": false,
+      "backdrop_path": "/4fza1QWpGAoxReiEsnvdFBeMyfX.jpg",
+      "genre_ids": [
+        10749,
+        18,
+        35
+      ],
+      "id": 286687,
+      "title": "Love Lesson",
+      "original_language": "ko",
+      "original_title": "화려한 외출",
+      "overview": "Korea's most popular song writer Hee-soo runs into a nineteen-year-old boy in the elevator. Hee-soo is inspired by a new song watching him shake at her figure. She starts to tell him about women under the excuse that she's teaching him music. They fall for each other but things get complicated when her life teacher, Joon-ho who taught her about life and music comes back.",
+      "popularity": 15.2233,
+      "poster_path": "/yUQg6yvZIRQUSyQ36TQo0Tp1gzr.jpg",
+      "release_date": "2013-12-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.814,
+      "vote_count": 43
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        27
+      ],
+      "id": 340820,
+      "title": "Lessons in Love",
+      "original_language": "en",
+      "original_title": "Lessons in Love",
+      "overview": "The story is about a woman who is abducted and forced to watch footage of captives getting molested. She doesn't know whether the sexual torture is amateur porn, or if these are sex crimes caught on tape. As she is exposed to more of the disturbing images, her captor starts changing his behavior. She senses that time is running out for her but escape seems impossible ……",
+      "popularity": 0.5899,
+      "poster_path": "/oIxLXk7YOmqxob0mEuNjDrutKIj.jpg",
+      "release_date": "2013-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 2.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/z9F50fEfdi4E1XzUINJBhPWgJGL.jpg",
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "id": 230217,
+      "title": "Soof",
+      "original_language": "nl",
+      "original_title": "Soof",
+      "overview": "Soof is reaching 40 and has everything she ever wanted: three children, a small catering business, a sweet husband Kasper and a lovely home. Until she starts asking herself: 'is this all there is'?",
+      "popularity": 1.2078,
+      "poster_path": "/jPh9PLlIlzmnp0jwzovBwuXiLeG.jpg",
+      "release_date": "2013-12-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 71
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6NsUCdgCuTD3aFVZZIX8w5eD6bT.jpg",
+      "genre_ids": [
+        10749,
+        35,
+        18
+      ],
+      "id": 84306,
+      "title": "Liberal Arts",
+      "original_language": "en",
+      "original_title": "Liberal Arts",
+      "overview": "Newly single, 35, and uninspired by his job, Jesse Fisher worries that his best days are behind him. But no matter how much he buries his head in a book, life keeps pulling Jesse back. When his favorite college professor invites him to campus to speak at his retirement dinner, Jesse jumps at the chance.",
+      "popularity": 3.8281,
+      "poster_path": "/yEEEQoJQ1fGT11faLPBfHXkds9E.jpg",
+      "release_date": "2012-09-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.462,
+      "vote_count": 583
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4Y0RX8ByzDXeeDmVUKdh8rVx1m8.jpg",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "id": 214075,
+      "title": "Words and Pictures",
+      "original_language": "en",
+      "original_title": "Words and Pictures",
+      "overview": "An art instructor and an English teacher form a rivalry that ends up with a competition at their school in which students decide whether words or pictures are more important.",
+      "popularity": 2.9204,
+      "poster_path": "/lm7kJm4mZ5NuFF3iMRXDaGzqItn.jpg",
+      "release_date": "2014-05-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 243
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 336113,
+      "title": "A Lesson Of Love",
+      "original_language": "en",
+      "original_title": "A Lesson Of Love",
+      "overview": "A widowed teacher from Los Angeles is recruited to a small Appalachian college and falls in love with a deeply religious local woman. The unlikely love is torn apart by one's commitment to faith and the other's devotion to reason.",
+      "popularity": 1.4506,
+      "poster_path": "/8xpwVoOOC6ufzDqSZQshB59RiJv.jpg",
+      "release_date": "2014-09-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 270640,
+      "title": "Lesson Before Love",
+      "original_language": "en",
+      "original_title": "Lesson Before Love",
+      "overview": "Eric, Alexis, Cullen and Janae are all single and unsatisfied living their monochromatic lives. The contentious, first time meeting between on-line chat buddies, Eric and Alexis, brings about a torrent of emotion as they all meet up for a night on the town. After which, they begin to experience love lessons that force them to search their own hearts and passion for the love that has long eluded them.",
+      "popularity": 0.5824,
+      "poster_path": "/rBhlB5jfZbknZU6Mdn4dgk7XQeM.jpg",
+      "release_date": "2011-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cubfO64c09vzPuICCOawDO287jX.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 279613,
+      "title": "Love Lesson",
+      "original_language": "pt",
+      "original_title": "Lição de Amor",
+      "overview": "A German governess is hired to give German and piano lessons to the teenager son of a rich traditional family, in the 20s. But soon they get involved, and she teaches him love lessons instead.",
+      "popularity": 0.8915,
+      "poster_path": "/hzLiV2i1UU8MoWk3XBPj0Qlcf6l.jpg",
+      "release_date": "1975-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.6,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 387701,
+      "title": "The Love Lesson",
+      "original_language": "en",
+      "original_title": "The Love Lesson",
+      "overview": "Seventeen years ago Camille, a gallery owner, and Grace, a civil servant, made a verbal adoption agreement: Grace would raise Camille's son Christopher with the provision that all three live in close proximity, and that the existence of the arrangement be kept from the child forever. This triangle changes drastically when Christopher, now a heterosexual teenager, becomes HIV-positive through sex and drugs and is thrown into maturity much too early. Camille lives her life in the New York art world, and poets and writers regularly gather at her apartment to read their work. The poets' voices echoing across the common courtyard to Chris become the continuous physical bridge between their lives. Via courtyard windows and the resonance of sound, a mystical link forms as Camille steps into a role in his life that she never really wanted nor would have imagined.",
+      "popularity": 0.4522,
+      "poster_path": null,
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1263270,
+      "title": "Otoko mai: Love lesson",
+      "original_language": "ja",
+      "original_title": "男舞　ラブ・レッスン",
+      "overview": "Popular idol duo Shinji and Shigeru. He retired from the entertainment industry after an injury incident five years ago. A few years later, Shigeru, now the production president, brings a new idol, Takuma, to Shinji, who is now a popular choreographer. At first, Takuma was at odds with Shinji who was giving him harsh lessons, but gradually Takuma's passion got through to him and they started to trust each other.",
+      "popularity": 0.6928,
+      "poster_path": "/84oO3zmT2Hq8j2ryCAaIjlHnc5X.jpg",
+      "release_date": "1998-05-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 2.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 863137,
+      "title": "A Lesson About Love",
+      "original_language": "en",
+      "original_title": "A Lesson About Love",
+      "overview": "On August 10th I went to JRSInvestigations in Delray Beach, FL.",
+      "popularity": 0.6972,
+      "poster_path": "/jpEn4yQKektqW7rR632Xz4GKV4g.jpg",
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 156436,
+      "title": "A Lesson in Love",
+      "original_language": "en",
+      "original_title": "A Lesson in Love",
+      "overview": "Helen Kane stars as  a college student who has a crush on her psychology teacher.",
+      "popularity": 0.7151,
+      "poster_path": null,
+      "release_date": "1931-09-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5PCxYu0vlR7sjPVE4IFQtoScyIP.jpg",
+      "genre_ids": [
+        878,
+        10749
+      ],
+      "id": 88104,
+      "title": "Emmanuelle in Space 3: A Lesson in Love",
+      "original_language": "en",
+      "original_title": "Emmanuelle in Space 3: A Lesson in Love",
+      "overview": "Emmanuelle escorts one of the female aliens to Earth for a very personal lesson in love.",
+      "popularity": 2.4859,
+      "poster_path": "/dOGzeQzqV0l8UwvaeEsADUKCJrz.jpg",
+      "release_date": "1994-08-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.125,
+      "vote_count": 16
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        14
+      ],
+      "id": 1067233,
+      "title": "Cinderella's Love Lesson",
+      "original_language": "en",
+      "original_title": "Cinderella's Love Lesson",
+      "overview": "Strip Queen Lili St. Cyr magically undresses in the Burlesque Novelty Short: Cinderella’s Love Lesson! (SWV)",
+      "popularity": 0.6346,
+      "poster_path": "/wbv0Hu0tK0s3lXFEUYEohV5lE53.jpg",
+      "release_date": "1953-10-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u8C3cbk6UgDNp0sZN4DROp8kQXy.jpg",
+      "genre_ids": [
+        35,
+        10749,
+        18
+      ],
+      "id": 64782,
+      "title": "A Lesson in Love",
+      "original_language": "sv",
+      "original_title": "En lektion i kärlek",
+      "overview": "After fifteen years of marriage and mutual infidelity, a couple on the brink of divorce unexpectedly confront their unresolved love during a journey to Copenhagen. Blending farce with emotional reflection, the film is Ingmar Bergman’s first sustained venture into marital comedy.",
+      "popularity": 1.6814,
+      "poster_path": "/y2033AA89qdxgJMASAfmuZ17GoA.jpg",
+      "release_date": "1954-10-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.717,
+      "vote_count": 76
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 928538,
+      "title": "Waking Up: A Lesson In Love",
+      "original_language": "en",
+      "original_title": "Waking Up: A Lesson In Love",
+      "overview": "When Susan tells Donna her dream, she finds it may not have been a dream at all, but a dream come true. After her first lesbian love, Susan begins a whirl of one night stands, leaving her partners wanting more. That is, until she falls for the mysterious Claudia, who outdoes Susan at her own game. Ultimately, a wiser more mature Susan finds her source of confidence and sexuality within her own strong woman centered self.",
+      "popularity": 0.6448,
+      "poster_path": "/qpMInhO8LrBQ80W9Q8Y543Erq8o.jpg",
+      "release_date": "1988-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bQEyQmpEYDm8GZJrftsYLc1D1Ti.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 400910,
+      "title": "First Lesson in Love",
+      "original_language": "he",
+      "original_title": "שיעור ראשון באהבה",
+      "overview": "A chance meeting of two worlds leads to a love story between a 17 year old religious girl named Tom and a non observant street musician named Razi at a train station in Jerusalem.",
+      "popularity": 0.8301,
+      "poster_path": "/kpukx1qg0NgmzSMusQzYuReUDKO.jpg",
+      "release_date": "2014-01-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/o2A7Y5V8xYwxPYxMACWn7mwwJSz.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 843733,
+      "title": "A Little Lesson in Love",
+      "original_language": "fr",
+      "original_title": "Petite leçon d'amour",
+      "overview": "Julie and Mathieu, soon after meeting for the first time, embark in a quest across Paris to stop one of Mathieu’s pupil at school from doing anything stupid after finding a troubling love letter. Inside Mathieu’s old little car, the two characters mix like oil and water, with the math teacher’s carelessness for others not going so well with Julie’s larger than life personality. The more Mathieu discovers some fragility under Julie’s exuberance, the more the two become inseparable.",
+      "popularity": 1.4192,
+      "poster_path": "/1ad7JsiX68eP4zHB7bXth3mV1zP.jpg",
+      "release_date": "2022-05-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.156,
+      "vote_count": 16
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2Lahyif82kQan8249iHfXQUrb8h.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 100054,
+      "title": "The First Lesson of True Love",
+      "original_language": "th",
+      "original_title": "รักแท้บทที่ 1",
+      "overview": "Ranbil, a man who is afraid of love and is studying about love from a book. Including from friends around him, with Thip, a young woman who was once disappointed in love and who was Ranbil's first love, to make Ranbil test his true love lesson.",
+      "popularity": 0.6228,
+      "poster_path": "/aNe8c3LtCG9H4a524HU93jKT5l1.jpg",
+      "release_date": "1995-08-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5hIRQifVfMiSN4nd2QyuO2lRbTx.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 618207,
+      "title": "Lessons of Love",
+      "original_language": "it",
+      "original_title": "Lessons of Love",
+      "overview": "Thirty-year-old Yuri and his father run the last farm left in a small, remote mountain village. Desperate to find love, Yuri meets a young woman in a strip club. Chiara Campara's fiction film debut takes a hyperreal approach to portray forgotten members of society, giving the story an incredibly authentic feel.",
+      "popularity": 0.9656,
+      "poster_path": "/l3nzNG2Fw20q90JWLgME6HRePNH.jpg",
+      "release_date": "2019-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/matUO5O6Aprw5X2hrue3xdsR6wi.jpg",
+      "genre_ids": [
+        18,
+        10770
+      ],
+      "id": 104613,
+      "title": "Love Lessons",
+      "original_language": "en",
+      "original_title": "Love Lessons",
+      "overview": "An older couple are about to retire, when they find out that they're about to be parents all over again.",
+      "popularity": 0.7223,
+      "poster_path": "/u0WV2I60BtJmUzr9jEVYfgRBRzY.jpg",
+      "release_date": "2000-11-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 1086993,
+      "title": "Love Lessons",
+      "original_language": "en",
+      "original_title": "Love Lessons",
+      "overview": "Two couples face adversities in their relationships. Ethan refuses to give Mia a child. Tariq and Ava struggle to see eye to eye about life. Self awareness forces tough lessons and they quickly learn what they put in, is what they get out of it.",
+      "popularity": 0.7214,
+      "poster_path": "/oNxDGg7vIHBVSSovO3rtVBiwHo9.jpg",
+      "release_date": "2019-06-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 1306291,
+      "title": "Love Lessons",
+      "original_language": "fr",
+      "original_title": "Demain, je tombe amoureux",
+      "overview": "On the eve of retirement, Émile delivers one final lesson about love and literature, urging his students to become the poets of their own lives. But is he still in love with himself?",
+      "popularity": 1.4151,
+      "poster_path": "/tzskjFMOVPGtWpsRSgJYZAyHm61.jpg",
+      "release_date": "2026-11-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1512911,
+      "title": "Love Lessons",
+      "original_language": "en",
+      "original_title": "Love Lessons",
+      "overview": "When 4th grade teacher Jonah Stein falls for the girl his mother sets him up with, he finally seems to have love all figured out--that is, until an unexpected attraction to a fellow teacher forces Jonah to deal head on with his faith, his family, and his quest for true love.",
+      "popularity": 0.4959,
+      "poster_path": null,
+      "release_date": "2005-03-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 1
+    }
+  ],
+  "strict:v2:the lobster|2015": [
+    {
+      "adult": false,
+      "backdrop_path": "/iH2esZUZvt8qlJgu74WBvibDnfF.jpg",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "id": 254320,
+      "title": "The Lobster",
+      "original_language": "en",
+      "original_title": "The Lobster",
+      "overview": "In a dystopian near future, single people, according to the laws of The City, are taken to The Hotel, where they are obliged to find a romantic partner in forty-five days or are transformed into animals and sent off into The Woods.",
+      "popularity": 11.5741,
+      "poster_path": "/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg",
+      "release_date": "2015-10-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.022,
+      "vote_count": 6996
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 460689,
+      "title": "The Lobster Kid",
+      "original_language": "en",
+      "original_title": "The Lobster Kid",
+      "overview": "A 13 years old girl who works for a gang as a street vendor. Her dream is to move to a place in the south for pursuit of a better life. One day, when she attempts to secretly get on a train, her boss notices and gets rid of her train ticket. When she feels like there's no way out, she meets a street monk, who begs for money on the street in a vow of silence. Intrigued by his silent kindness and in order to fulfill her duty as the street vendor, she joins the monk traveling door to door for later to find their partnership is mutually beneficial. But the fun journey with the monk spirals into something unexpected.",
+      "popularity": 0.4444,
+      "poster_path": "/aoytwHg66ttbvAVfRCTXYFF2krI.jpg",
+      "release_date": "2015-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/q8FMWQkpCVQeDjpM0oWdNP3lhHp.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1308729,
+      "title": "The Lobster Shift",
+      "original_language": "en",
+      "original_title": "The Lobster Shift",
+      "overview": "Angus, a lonely grocery store worker, finds an unlikely friend in a lobster after working a long night shift.",
+      "popularity": 0.9474,
+      "poster_path": "/vbjpGlBgwlLgEuOEtVGPhOhb1mw.jpg",
+      "release_date": "2023-05-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7Wo07k5pQnigYm4PHbxvCfA0QSD.jpg",
+      "genre_ids": [
+        35,
+        16
+      ],
+      "id": 534308,
+      "title": "The Fresh Lobster",
+      "original_language": "en",
+      "original_title": "The Fresh Lobster",
+      "overview": "A man has a surreal nightmare after snacking too late.",
+      "popularity": 0.7365,
+      "poster_path": "/gm8K4jrqnEUpKSwuYINRTsCDuHN.jpg",
+      "release_date": "1928-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 9.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35,
+        878,
+        53
+      ],
+      "id": 431002,
+      "title": "The Lobster Circle",
+      "original_language": "en",
+      "original_title": "The Lobster Circle",
+      "overview": "A teen named Brian Gregaraki is suffering delusions of grandeur. Meanwhile, his friends Doug and Tom discover that the VCR they just bought for 5 bucks can summon objects from films into the real world.",
+      "popularity": 0.7693,
+      "poster_path": "/jepgQp7PYpgruyfhd55bmbdJDJA.jpg",
+      "release_date": "2016-11-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        27,
+        35
+      ],
+      "id": 1589996,
+      "title": "The White Lobster",
+      "original_language": "en",
+      "original_title": "The White Lobster",
+      "overview": "A young lobster fisherman catches a white lobster but when he ignores warnings of a curse for keeping such a catch, strange things start to happen.",
+      "popularity": 0.4319,
+      "poster_path": null,
+      "release_date": "2025-11-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 265414,
+      "title": "The Blue Lobster",
+      "original_language": "es",
+      "original_title": "La langosta azul",
+      "overview": "Surrealist experimental film in which a foreign secret agent called \"El Gringo,\" investigates the presence of radioactivity in some lobsters caught in a fishing village in the Caribbean. While taking a break at the hotel, a cat steals his lobster.",
+      "popularity": 0.7306,
+      "poster_path": "/xWys62NWtVpmVhUwIXqMaIGZXNy.jpg",
+      "release_date": "1954-06-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.333,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1273837,
+      "title": "Last Night at the Lobster",
+      "original_language": "en",
+      "original_title": "Last Night at the Lobster",
+      "overview": "The Red Lobster perched in the far corner of a run-down New England mall hasn't been making its numbers and headquarters has pulled the plug. But manager Manny DeLeon still needs to navigate a tricky last shift with a near-mutinous staff. All the while, he's wondering how to handle the waitress he's still in love with, what to do about his pregnant girlfriend, and where to find the present that will make everything better.",
+      "popularity": 1.3158,
+      "poster_path": null,
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1027016,
+      "title": "The Violin and the Lobster",
+      "original_language": "it",
+      "original_title": "The Violin and the Lobster",
+      "overview": "",
+      "popularity": 0.4357,
+      "poster_path": null,
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1304735,
+      "title": "The Lesbian Lobster Song",
+      "original_language": "en",
+      "original_title": "The Lesbian Lobster Song",
+      "overview": "Each spring, the rural lesbians of Nova Scotia’s North Shore gather to celebrate lobster season—and their voracious appetites—with feast and song.",
+      "popularity": 0.4396,
+      "poster_path": "/sDSf0pMsKtAbjbHxKGvpgWo9e0b.jpg",
+      "release_date": "2024-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7yKqjpMyVuFSGdykEh79VbSx33G.jpg",
+      "genre_ids": [
+        99,
+        35
+      ],
+      "id": 46030,
+      "title": "Sympathy for the Lobster",
+      "original_language": "it",
+      "original_title": "Le ragioni dell'aragosta",
+      "overview": "The actors of Avanzi reunite after 15 years in Su Pallosu, a small village in Sardinia. They have decided to put together a show to support the cause of the local fishermen who are having great difficulty because of fish depopulation.",
+      "popularity": 0.6223,
+      "poster_path": "/7W4e66FCyo8eYsnkygB4EJ2N43M.jpg",
+      "release_date": "2007-09-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 10
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1318053,
+      "title": "Conversations with the Lobster Lady",
+      "original_language": "en",
+      "original_title": "Conversations with the Lobster Lady",
+      "overview": "The extended version of the popular short film. Filmmakers Wayne Gray and Dale Schierholt spend time with 100 year-old Virginia Oliver, locally known as The Lobster Lady.",
+      "popularity": 0.4271,
+      "poster_path": null,
+      "release_date": "2021-05-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749,
+        10770
+      ],
+      "id": 1586177,
+      "title": "The Laughter of the Lobster",
+      "original_language": "ru",
+      "original_title": "Смех лангусты",
+      "overview": "The play tells the story of the last year of the life of the legendary French actress Sarah Bernhardt. Sarah's life is coming to an end. She must hurry to tell the truth about herself, so she writes her memoirs.",
+      "popularity": 1.5648,
+      "poster_path": "/3VmOWEfmSaZ2m6kCIY0uAHvSs3U.jpg",
+      "release_date": "1991-02-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1284600,
+      "title": "In the Grip of the Lobster Claw",
+      "original_language": "en",
+      "original_title": "In the Grip of the Lobster Claw",
+      "overview": "Lost Jack Smith film",
+      "popularity": 0.7895,
+      "poster_path": null,
+      "release_date": "1966-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ic6K3pZTYtxuEtdvzmAJ9o6XOTN.jpg",
+      "genre_ids": [
+        28,
+        35,
+        10749
+      ],
+      "id": 1300844,
+      "title": "The Rise of Kung Fu Lobster",
+      "original_language": "zh",
+      "original_title": "功夫龙虾之崛起",
+      "overview": "",
+      "popularity": 1.0512,
+      "poster_path": "/latnWw10GzZc2EtIy4x6mxm8EOr.jpg",
+      "release_date": "2024-06-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 385853,
+      "title": "Simone, the Lobster and the Sardine",
+      "original_language": "de",
+      "original_title": "Simone, der Hummer und die Ölsardine",
+      "overview": "",
+      "popularity": 0.6047,
+      "poster_path": null,
+      "release_date": "1965-12-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 466263,
+      "title": "The Lobster's Cry",
+      "original_language": "fr",
+      "original_title": "Le Cri du Homard",
+      "overview": "A Russian soldier returns from war service in Chechnya. Though greeted warmly by his family, he seems unable to adjust.",
+      "popularity": 0.8463,
+      "poster_path": "/dcjPzhWzyNcUmMRXMfdO9o0k37.jpg",
+      "release_date": "2012-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.2,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zoLOUF4YZHLTt20nhgU8qyK2ARG.jpg",
+      "genre_ids": [
+        878,
+        16
+      ],
+      "id": 469477,
+      "title": "Invasion of the Space Lobsters",
+      "original_language": "en",
+      "original_title": "Invasion of the Space Lobsters",
+      "overview": "When an advanced race of giant lobsters from outer space land on Earth, no one can figure out why they've come. A complete failure to communicate on both ends leads to panic and pandemonium. Why are they here? What do they want? In this clever throwback to the ‘50s B-movie, a small neighbourhood learns the value of clear communication.",
+      "popularity": 0.8495,
+      "poster_path": "/lyNZ9rtqMSQX1XeCxyLSP2TLA3S.jpg",
+      "release_date": "2005-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/srUf1xoByWfirQf7cJfe8r0U1k.jpg",
+      "genre_ids": [
+        10752,
+        12,
+        10770
+      ],
+      "id": 37067,
+      "title": "Hornblower: The Frogs and the Lobsters",
+      "original_language": "en",
+      "original_title": "Hornblower: The Frogs and the Lobsters",
+      "overview": "Lieutenant Hornblower and his shipmates are sent to accompany a doomed royalist invasion of revolutionary France.",
+      "popularity": 1.71,
+      "poster_path": "/ujgdXCaBoUtsz5WzQcVcsviiEgU.jpg",
+      "release_date": "1999-04-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 52
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iPWb0K2sUhuj8GZ2r3MgtwHgHGb.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 451745,
+      "title": "Dolphinman Battles the Sex Lobsters",
+      "original_language": "en",
+      "original_title": "Dolphinman Battles the Sex Lobsters",
+      "overview": "Sgt. Kabukiman NYPD contracts a deadly new STD, The Sex Lobsters, and unknowingly spreads it around town while visiting Tromaville's best orgy spots. Only Dolphinman can find the cure and save the day!",
+      "popularity": 1.0897,
+      "poster_path": "/kAlfjlydcW3zHoIUHMDrOTeAlGv.jpg",
+      "release_date": "2016-06-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 1
+    }
+  ],
+  "strict:v2:the curve|1998": [
+    {
+      "adult": false,
+      "backdrop_path": "/krThHPMyhnE2SyLtLRjGOJzI9km.jpg",
+      "genre_ids": [
+        18,
+        27,
+        9648,
+        53
+      ],
+      "id": 44625,
+      "title": "The Curve",
+      "original_language": "en",
+      "original_title": "The Curve",
+      "overview": "Two roommates plan to kill a third to take advantage of college policy giving a 4.0 grade to a suicide's roommates.",
+      "popularity": 4.142,
+      "poster_path": "/a4Ql4swnnosHQoOSObHiHToPKOm.jpg",
+      "release_date": "1998-01-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.424,
+      "vote_count": 86
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xuLACLWoIDdPgoOq4mVB5jagAiO.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 409830,
+      "title": "Shucking the Curve",
+      "original_language": "en",
+      "original_title": "Shucking the Curve",
+      "overview": "Suzanne Fountain moves to NYC and plummets headlong into a twisted wonderland.",
+      "popularity": 0.5385,
+      "poster_path": "/efsNryfZt8JMZNp4en5p6ROFX6K.jpg",
+      "release_date": "1998-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.625,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ivndXrpSYpCSuu2S5OrUvzAetCc.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 87825,
+      "title": "Trouble with the Curve",
+      "original_language": "en",
+      "original_title": "Trouble with the Curve",
+      "overview": "Slowed by age and failing eyesight, crack baseball scout Gus Lobel takes his grown daughter along as he checks out the final prospect of his career. Along the way, the two renew their bond, and she catches the eye of a young player-turned-scout.",
+      "popularity": 4.7341,
+      "poster_path": "/zLZQVmxOj5kICbS5Pq7rB1cbPvP.jpg",
+      "release_date": "2012-09-21",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.984,
+      "vote_count": 1722
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/imRVEUDwJdISrfckUllkBQHUkc8.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 520777,
+      "title": "Behind the Curve",
+      "original_language": "en",
+      "original_title": "Behind the Curve",
+      "overview": "Meet the growing, worldwide community of theorists who defend the belief that the Earth is flat while living in a society who vehemently rejects it.",
+      "popularity": 2.13,
+      "poster_path": "/mOJrtSMmUpfFytvxlUEA8hej2At.jpg",
+      "release_date": "2018-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.278,
+      "vote_count": 315
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18,
+        35,
+        80
+      ],
+      "id": 465619,
+      "title": "The Conway Curve",
+      "original_language": "en",
+      "original_title": "The Conway Curve",
+      "overview": "When Natalie Conway's father passes away, she believes she will forever be on her own. So when her long lost brother, Luke, returns after a twenty-year hiatus she's elated. He's a missing piece to a familial puzzle that she believed lost. There's only one problem - Luke is a notorious scam-artist, and Natalie is the sole heir to their family's small fortune. Her feelings and his motives collide as brother and sister vie to get what they desire.",
+      "popularity": 1.1363,
+      "poster_path": "/y9srOOFnObXwYP5I9EDnO3JP27d.jpg",
+      "release_date": "2017-07-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 128116,
+      "title": "The Curve",
+      "original_language": "bs",
+      "original_title": "Krivina",
+      "overview": "A Bosnian immigrant who fled to Toronto after the civil war returns to his homeland in search of a missing friend who has been implicated in war crimes, in this quietly chilling and finely surreal meditation on confronting traumas of the past. (TIFF)",
+      "popularity": 0.9652,
+      "poster_path": "/hhj4JaMp2omGL76EM53pFhuzVGH.jpg",
+      "release_date": "2012-09-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 762768,
+      "title": "The Curve",
+      "original_language": "en",
+      "original_title": "The Curve",
+      "overview": "An investigative documentary examining America's response to the COVID-19 pandemic.",
+      "popularity": 0.819,
+      "poster_path": "/sDy4nALHjqXeMkYOh7GMvrhneg1.jpg",
+      "release_date": "2020-10-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        80,
+        18,
+        53
+      ],
+      "id": 57743,
+      "title": "The Learning Curve",
+      "original_language": "en",
+      "original_title": "The Learning Curve",
+      "overview": "Paul and Georgia are lovers, soul mates...and partners in crime. But when this duplicitous duo tries to dupe the wrong man, they are ensnared in a world more dangerous than they could ever have imagined. Seduced into working for him on dangerous jobs beyond their small-time capability, Paul and Georgia suddenly have everything they've ever wanted...and even more to lose.",
+      "popularity": 0.803,
+      "poster_path": "/v7KKkf5wbcZpcjJdsNrIzkc9QfF.jpg",
+      "release_date": "2001-10-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 75448,
+      "title": "The Curve",
+      "original_language": "fr",
+      "original_title": "La cambrure",
+      "overview": "An art student meets his grandfather, a sculptor, and both exchange ideas about that part of the woman that is so alluring -- the curve of her back.",
+      "popularity": 0.6648,
+      "poster_path": "/6zbAjpUnXsU0cvxyJlqpfAh8fbX.jpg",
+      "release_date": "1999-05-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.2,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nHns4k6S8dFzBtyiNUy8cIl54HY.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        12
+      ],
+      "id": 533690,
+      "title": "The Curve",
+      "original_language": "ar",
+      "original_title": "المنعطف",
+      "overview": "Radi, who leads a reclusive life in his own van, finds himself on a road trip with three strangers, which alters his clockwork and very private lifestyle.",
+      "popularity": 0.7791,
+      "poster_path": "/oLyECEGPoNUx01qE5SrOue2hH67.jpg",
+      "release_date": "2015-12-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ioKRkbJh8Y683RTpoF7wuIW9VXX.jpg",
+      "genre_ids": [
+        18,
+        10402
+      ],
+      "id": 36127,
+      "title": "The Line, the Cross & the Curve",
+      "original_language": "en",
+      "original_title": "The Line, the Cross & the Curve",
+      "overview": "A singer struggles to dance well in rehearsal with her band. A power outage leaves her alone in the studio, reviewing her life, when a mysterious woman appears through the mirror and gives her a pair of Red Shoes. The cursed shoes dance beautifully, but endlessly. The singer is drawn irresistibly into the fey world beyond the mirror, where she must redeem three magic symbols from the mysterious woman in order to obtain release from the cursed shoes.",
+      "popularity": 0.949,
+      "poster_path": "/xd2zaDZGDQ7bCOHrFJPiL0onhSE.jpg",
+      "release_date": "1994-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.211,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7atUAscnKtDNglfNmMd2UejuYba.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 365241,
+      "title": "The Learning Curve",
+      "original_language": "en",
+      "original_title": "The Learning Curve",
+      "overview": "This is an adaptation of an essay by New York Times Best Selling essayist David Sedaris. It follows his attempts to teach creative writing at an art institute.",
+      "popularity": 0.7521,
+      "poster_path": "/m0GEv04dWAaXgDNu5DAUt96V4iz.jpg",
+      "release_date": "2014-03-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 2.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 407294,
+      "title": "The Curve",
+      "original_language": "en",
+      "original_title": "A Curva",
+      "overview": "A group of young people are searching for a location to shoot their next movie. They see a girl on the road and give her a ride. The girl has something mysterious about her.",
+      "popularity": 0.4844,
+      "poster_path": "/6el3rCbxlbh5O5Xkz49KvbMeMGU.jpg",
+      "release_date": "2004-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 891209,
+      "title": "Curve the Night Sky",
+      "original_language": "en",
+      "original_title": "Curve the Night Sky",
+      "overview": "The summer of 2020 I spent most nights outdoors alone transfixed by the theater of the stars and the dance of the fireflies. My sense of time expanded and slowed but the time-lapse camera condenses and speeds up the experience, in seeming contradiction. I waved my arms to trip the neighbors’ motion-sensitive lights to magical effect on the trees in my backyard.",
+      "popularity": 0.4574,
+      "poster_path": "/yQqVZUzc292GUmxexVMht19nrvb.jpg",
+      "release_date": "2021-10-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 973249,
+      "title": "Flatten The Curve",
+      "original_language": "en",
+      "original_title": "Flatten The Curve",
+      "overview": "When Profesionals like Pilots , Engineers, Marines , & Navy Question The Shape Of The Earth !!!",
+      "popularity": 0.4601,
+      "poster_path": "/nsF9o1Qz4wooxdsZimQVqM6CiFt.jpg",
+      "release_date": "2022-02-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3kam5LdyDqIE8RHW1ZuW8Y0lyKe.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 716156,
+      "title": "Ahead of the Curve",
+      "original_language": "en",
+      "original_title": "Ahead of the Curve",
+      "overview": "With a fist full of credit cards, a lucky run at the horse track, and a title that called to mind a certain French film star, Franco Stevens launched the best-selling lesbian lifestyle magazine ever published, connecting her community in an unprecedented way. AHEAD OF THE CURVE is a new feature documentary about the extraordinary woman who started Curve magazine, and by doing so helped accelerate the political and social evolution of the nation.",
+      "popularity": 0.8299,
+      "poster_path": "/7teEp9imsGYIKC2vL65CIDZ1tWh.jpg",
+      "release_date": "2021-05-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.333,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 596968,
+      "title": "Taking The Curve",
+      "original_language": "en",
+      "original_title": "Taking The Curve",
+      "overview": "Flat Earth, is it a myth? Before the modern era of science, the Earth was thought to be a flat surface, miles across. Were we right? Many believers in the Flat Earth community are misunderstood. This motion picture showcases the everyday stories Flat Earth believers experience. Watch now and learn about our planet and learn why so many people support a theory that Earth is flat.",
+      "popularity": 0.4129,
+      "poster_path": "/ohzi9KzqW3VH5Q7AmLJt8W1dwLS.jpg",
+      "release_date": "2018-09-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 2.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 658404,
+      "title": "The Bell Curve",
+      "original_language": "en",
+      "original_title": "The Bell Curve",
+      "overview": "Based off of the book \"The Bell Curve: Intelligence and Class Structure in American Life\"  by psychologist Richard J. Herrnstein and political scientist Charles Murray  Book synopsis - \"...in which the authors argue that human intelligence is substantially influenced by both inherited and environmental factors and that it is a better predictor of many personal outcomes, including financial income, job performance, birth out of wedlock, and involvement in crime than are an individual's parental socioeconomic status. They also argue that those with high intelligence, the \"cognitive elite\", are becoming separated from those of average and below-average intelligence. The book was controversial, especially where the authors wrote about racial differences in intelligence and discussed the implications of those differences.\" - Wikipedia",
+      "popularity": 0.4063,
+      "poster_path": null,
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 1019116,
+      "title": "Beyond the Curve",
+      "original_language": "hu",
+      "original_title": "Kanyaron túl",
+      "overview": "Szilvi deals in drugs and cannot decide between Tamas who offers her love in this world and the priest who offers her the chance of ethereal harmony.",
+      "popularity": 0.6304,
+      "poster_path": "/z1i8bW93wRo6KIiesjFqy0hXL3M.jpg",
+      "release_date": "2002-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 509347,
+      "title": "The Happiness Curve",
+      "original_language": "es",
+      "original_title": "La curva de la felicidad",
+      "overview": "A lonely middle-aged writer, overwhelmed by selling his apartment after a breakup, finds companionship with three unexpected new roommates.",
+      "popularity": 1.953,
+      "poster_path": "/92eylDAfGUw6fVFBKPqj3E2K109.jpg",
+      "release_date": "2011-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.0,
+      "vote_count": 1
+    }
+  ],
+  "strict:v2:demon slayer: kimetsu no yaiba infinity castle|2025": [
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 142.195,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.681,
+      "vote_count": 1772
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xPpXYnCWfjkt3zzE0dpCNME1pXF.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 635302,
+      "title": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限列車編",
+      "overview": "Tanjiro Kamado, joined with Inosuke Hashibira, a boy raised by boars who wears a boar's head, and Zenitsu Agatsuma, a scared boy who reveals his true power when he sleeps, boards the Infinity Train on a new mission with the Fire Hashira, Kyojuro Rengoku, to defeat a demon who has been tormenting the people and killing the demon slayers who oppose it!",
+      "popularity": 16.2296,
+      "poster_path": "/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg",
+      "release_date": "2020-10-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.224,
+      "vote_count": 4621
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uj34SgTkO994yU1KckBHvzNjfHV.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311034,
+      "title": "Demon Slayer: Kimetsu no Yaiba - Infinity Castle 2",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 2",
+      "overview": "Plot TBA. The second installment in the Infinity Castle story arc.",
+      "popularity": 5.0292,
+      "poster_path": "/8uYxx23KyDnbDkA3eQSNECVeOiS.jpg",
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311035,
+      "title": "Demon Slayer: Kimetsu no Yaiba - Infinity Castle 3",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 3",
+      "overview": "Plot TBA. The third and final installment in the Infinity Castle story arc.",
+      "popularity": 2.021,
+      "poster_path": null,
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    }
+  ],
+  "strict:v2:remarkably bright creatures|2026": [
+    {
+      "adult": false,
+      "backdrop_path": "/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "genre_ids": [
+        18,
+        9648
+      ],
+      "id": 1330021,
+      "title": "Remarkably Bright Creatures",
+      "original_language": "en",
+      "original_title": "Remarkably Bright Creatures",
+      "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
+      "popularity": 19.4544,
+      "poster_path": "/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "release_date": "2026-05-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.47,
+      "vote_count": 819
+    }
+  ],
+  "strict:v2:secret beyond the door|1947": [
+    {
+      "adult": false,
+      "backdrop_path": "/xMZJwdGMDEQWKavwMWB4Lpkuixg.jpg",
+      "genre_ids": [
+        9648,
+        53,
+        18,
+        10749
+      ],
+      "id": 560,
+      "title": "Secret Beyond the Door",
+      "original_language": "en",
+      "original_title": "Secret Beyond the Door",
+      "overview": "After a whirlwind romance in Mexico, a beautiful heiress marries a man she barely knows with hardly a second thought. She finds his New York home full of his strange relations, and macabre rooms that are replicas of famous murder sites. One locked room contains the secret to her husband's obsession, and the truth about what happened to his first wife.",
+      "popularity": 2.2,
+      "poster_path": "/uVBEwjzXweHWjCFjAs7eJzH9in6.jpg",
+      "release_date": "1947-12-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.461,
+      "vote_count": 165
+    }
+  ],
+  "strict:v2:swapped|2026": [
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        10751,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "popularity": 62.2614,
+      "poster_path": "/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.887,
+      "vote_count": 2088
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iRFNKHfO5P5CdAOriZCzbFCsQa0.jpg",
+      "genre_ids": [
+        14,
+        9648,
+        35
+      ],
+      "id": 1740080,
+      "title": "Swapped!",
+      "original_language": "en",
+      "original_title": "Swapped!",
+      "overview": "When TTRPGS go... wrong? An Elf in our world, a modern human in theirs. What could possiblly go wrong?",
+      "popularity": 0.6254,
+      "poster_path": "/kTnDe0H3UO3HN9Z4KO3sLBYsxF2.jpg",
+      "release_date": "2026-07-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 1007813,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "Cyril and Amara are a happily married couple, but hard times are the true test of love.",
+      "popularity": 2.3247,
+      "poster_path": "/d4Y7auieACqFt4zBKyTyznBZtry.jpg",
+      "release_date": "2020-04-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 1411303,
+      "title": "Swapped",
+      "original_language": "de",
+      "original_title": "Swapped",
+      "overview": "Ever thought of swapping your Dad for a couple of goldfish?",
+      "popularity": 0.8076,
+      "poster_path": "/iP1BO3iC97fG13lEMeViP3w7PKy.jpg",
+      "release_date": "2002-10-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 9.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/b14PY32O6AYT7XxlRrcU99IVmwI.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1490298,
+      "title": "Swapped Funerals",
+      "original_language": "ko",
+      "original_title": "두 번의 장례",
+      "overview": "Se-Young and her family are preparing to cremate her grandmother when they discover that her coffin has been mistakenly switched with another. As the two grieving families navigate the funeral process once again, unexpected conflicts arise.",
+      "popularity": 1.1218,
+      "poster_path": "/rz6EFk6ZhOoZux38SH9E29Y82XD.jpg",
+      "release_date": "2025-06-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1487355,
+      "title": "Swapped at Length",
+      "original_language": "en",
+      "original_title": "Swapped at Length",
+      "overview": "Two guys who swapped bodies without rhyme or reason, and have been stuck that way for 5 months, grapple with whether or not to reveal their predicament to their friends and family.",
+      "popularity": 1.043,
+      "poster_path": "/nwfQx9EjP8Qv4FKfSgRu5c9ZXdC.jpg",
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bHerwmldTJZMTmTnJxE7KfvkHVG.jpg",
+      "genre_ids": [
+        10751,
+        14
+      ],
+      "id": 209471,
+      "title": "The Swapped Queen",
+      "original_language": "de",
+      "original_title": "Die vertauschte Königin",
+      "overview": "A tale about the evil queen who gets swapped with a simple and nice woman.",
+      "popularity": 0.6237,
+      "poster_path": "/dvHQh8yT55LPtr3S9QuEupiMvDn.jpg",
+      "release_date": "1984-05-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18,
+        10770
+      ],
+      "id": 551342,
+      "title": "They Swapped My Baby",
+      "original_language": "fr",
+      "original_title": "Ils ont échangé mon enfant",
+      "overview": "The true story of Sophie Serrano, a single mother whose ex protests paternity of the eldest. The DNA tests will reveal the unthinkable: Manon isn't theirs. Her biological child has been exchanged at birth to the maternity ward's error.",
+      "popularity": 0.8419,
+      "poster_path": "/j4gsVmPcwy41RFXAIdS5PJcpyGE.jpg",
+      "release_date": "2018-09-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.38,
+      "vote_count": 25
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qVisYJzr4JS4krshda0UgvPIZMZ.jpg",
+      "genre_ids": [
+        878
+      ],
+      "id": 889186,
+      "title": "I Swapped Faces with My Friend",
+      "original_language": "zh",
+      "original_title": "换脸校花",
+      "overview": "",
+      "popularity": 0.7157,
+      "poster_path": "/6Qo45KS9x4r7noTLNQ2Ilvu448f.jpg",
+      "release_date": "2018-04-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 329267,
+      "title": "When Bengt and Anders Swapped Wives",
+      "original_language": "sv",
+      "original_title": "När Bengt och Anders bytte hustrur",
+      "overview": "Two neighbours, each with a small plot of land, hate each other. Both are dissatisfied with his wife.",
+      "popularity": 1.1084,
+      "poster_path": "/mcFOiAMUzgnRfhx5LlE1x2UwF9b.jpg",
+      "release_date": "1950-12-23",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 1609973,
+      "title": "When Bengt and Anders Swapped Wives",
+      "original_language": "sv",
+      "original_title": "När Bengt och Anders bytte hustrur",
+      "overview": "Anders on Blåsekulla and Bengt at Snibben are neighbors. Both have a miserable time with their wives.",
+      "popularity": 0.873,
+      "poster_path": "/x62xe57l12xRIdlhwTKkS317Y00.jpg",
+      "release_date": "1925-10-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1730311,
+      "title": "Swapped to a Beggar But He is Apollo",
+      "original_language": "en",
+      "original_title": "Swapped to a Beggar But He is Apollo",
+      "overview": "Tricked by her stepsister into a marriage swap, Irene marries a poor wandering bard—hidden in mortal form is Apollo, the Light God. Her cruel family pushes her to despair, igniting his divine fury. Apollo unleashes holy wrath to destroy Athens’ nobles, then lifts his wronged mortal bride to the Light Queen’s throne with supreme divine glory",
+      "popularity": 1.4471,
+      "poster_path": null,
+      "release_date": "",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    }
+  ],
+  "strict:v2:elsa & fred|2014": [
+    {
+      "adult": false,
+      "backdrop_path": "/90bWsjR6Yo48Es1p5VsOhd4CpMM.jpg",
+      "genre_ids": [
+        18,
+        35,
+        10749
+      ],
+      "id": 268171,
+      "title": "Elsa & Fred",
+      "original_language": "en",
+      "original_title": "Elsa & Fred",
+      "overview": "After his daughter persuades him to move into a new apartment, aged widower Fred strikes up a friendship with his eccentric 74-year-old neighbour Elsa, who convinces him it's never too late to keep enjoying life. Although he seemed resigned to a miserable bedridden existence, Fred embraces Elsa's youthful enthusiasm as she introduces him to the path of life and entertains him with outlandish stories about her past life. But when he discovers Elsa's terminally ill, Fred decides to accompany her on the trip of her dreams to the eternal city of Rome to help her fulfil a lifelong ambition.",
+      "popularity": 2.3518,
+      "poster_path": "/yNzVwtlqOmPLVKD5zZIzAME9vYc.jpg",
+      "release_date": "2014-03-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.929,
+      "vote_count": 99
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6yFMU0CrBSBWCbnxPkIj3z2ghFx.jpg",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "id": 22916,
+      "title": "Elsa & Fred",
+      "original_language": "es",
+      "original_title": "Elsa y Fred",
+      "overview": "When the retired seventy-seven years old hypochondriac widower Fred moves to an apartment in Madrid, his temperamental daughter Cuca has an incident with his next door neighbor, the elder Argentinean Elsa. Later, they meet each other and Elsa seduces Fred with her reckless behavior and view of life and they have a romance.",
+      "popularity": 1.793,
+      "poster_path": "/4xjfBIP8BCCkKDmSBlAfguUiW8N.jpg",
+      "release_date": "2005-07-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.753,
+      "vote_count": 91
+    }
+  ],
+  "strict:v2:lupin the third: farewell to nostradamus|1995": [
+    {
+      "adult": false,
+      "backdrop_path": "/xo2ryu4VQC1e4KGpvHnxm1Y71kZ.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        18,
+        80,
+        35
+      ],
+      "id": 31049,
+      "title": "Lupin the Third: Farewell to Nostradamus",
+      "original_language": "ja",
+      "original_title": "ルパン三世 くたばれ!ノストラダムス",
+      "overview": "A simple diamond heist leads Lupin into the machinations of a bizarre cult based around the prophecies of Nostradamus. They kidnap Julia, the daughter of Douglas, a wealthy American who is seeking the presidency, along with Lupin's diamond. At stake is the lost book of prophecy Douglas holds in the vault at the top of his skyscraper.",
+      "popularity": 2.4444,
+      "poster_path": "/zd6ItdUDgxLtf7Yp6MVvWp0G9Y9.jpg",
+      "release_date": "1995-04-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.493,
+      "vote_count": 69
+    }
   ]
 }
