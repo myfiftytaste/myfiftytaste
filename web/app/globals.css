@@ -1000,10 +1000,39 @@ h1 {
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
 
+/* Ball-pit drop: bigger bubbles (lower index, shorter --fall-delay) land
+   first, smaller ones fall in after and settle on top of the pile. Removed
+   via onAnimationEnd so the transform is free again for the hover scale. */
+.genre-bubble-drop {
+  animation: genreBubbleFall 820ms cubic-bezier(0.18, 0.86, 0.36, 1) both;
+  animation-delay: var(--fall-delay, 0ms);
+}
+
+@keyframes genreBubbleFall {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-240px) scale(0.86);
+  }
+  55% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(9px) scale(1.05);
+  }
+  72% {
+    transform: translate(-50%, -50%) translateY(-5px) scale(0.985);
+  }
+  87% {
+    transform: translate(-50%, -50%) translateY(2px) scale(1.012);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0) scale(1);
+  }
+}
+
 .genre-bubble:hover,
 .genre-bubble:focus-visible,
 .genre-bubble-active {
-  transform: translate(-50%, -50%) scale(1.04);
+  transform: translate(-50%, -50%) scale(0.93);
   border-color: rgba(217, 164, 65, 0.65);
   background: rgba(217, 164, 65, 0.16);
   box-shadow:
@@ -1108,37 +1137,66 @@ h1 {
   margin-right: 0;
 }
 
-.genre-row {
+.genre-bar-row {
   display: grid;
-  grid-template-columns: 1fr auto auto;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 0;
+  gap: 8px;
+  padding: 11px 0;
   border-bottom: 1px solid var(--line);
 }
 
-.genre-row:last-child {
+.genre-bar-row:last-child {
   border-bottom: 0;
 }
 
-.genre-row span {
+.genre-bar-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.genre-bar-heading > span {
   color: var(--paper);
   font-weight: 800;
 }
 
-.genre-row strong {
+.genre-bar-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.genre-bar-meta strong {
   color: var(--accent);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.35rem;
   font-weight: 500;
 }
 
-.genre-row small {
-  min-width: 38px;
+.genre-bar-meta small {
+  min-width: 32px;
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 800;
   text-align: right;
+}
+
+.genre-bar-track {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(247, 238, 220, 0.08);
+  overflow: hidden;
+}
+
+.genre-bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(217, 164, 65, 0.55), rgba(217, 164, 65, 0.95));
+  box-shadow: 0 0 12px rgba(217, 164, 65, 0.25);
 }
 
 .world-map-section {

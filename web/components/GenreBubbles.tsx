@@ -49,6 +49,10 @@ function clamp(value: number, min: number, max: number) {
   return Math.max(min, Math.min(max, value));
 }
 
+function easeOutCubic(t: number) {
+  return 1 - Math.pow(1 - t, 3);
+}
+
 export default function GenreBubbles({
   genreBubbles,
   detectedFilmsCount = 50,
@@ -57,11 +61,15 @@ export default function GenreBubbles({
   detectedFilmsCount?: number;
 }) {
   const cloudRef = useRef<HTMLDivElement | null>(null);
+  const listRef = useRef<HTMLDivElement | null>(null);
+  const barRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [tooltip, setTooltip] = useState<{
     bubble: GenreBubble;
     x: number;
     y: number;
   } | null>(null);
+  const [isDropping, setIsDropping] = useState(false);
+  const dropTimeoutRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     function handlePointerDown(event: globalThis.PointerEvent) {
@@ -81,11 +89,98 @@ export default function GenreBubbles({
     return () => window.removeEventListener("pointerdown", handlePointerDown);
   }, [tooltip]);
 
+  // Re-triggers the bubble drop every time the cloud re-enters view (not just
+  // once, and only on scroll, never on hover), so scrolling away and back
+  // replays the ball-pit fall. isDropping is plain state (not an imperative
+  // classList tweak) so unrelated re-renders, like a hover-triggered tooltip,
+  // can never resurrect the animation class after it has finished.
+  useEffect(() => {
+    const node = cloudRef.current;
+    if (!node || !genreBubbles || genreBubbles.length === 0) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const bubbleCount = Math.min(genreBubbles.length, 8);
+    const totalDuration = 820 + (bubbleCount - 1) * 90 + 120;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          window.clearTimeout(dropTimeoutRef.current);
+          setIsDropping(false);
+          requestAnimationFrame(() => {
+            setIsDropping(true);
+            dropTimeoutRef.current = window.setTimeout(() => setIsDropping(false), totalDuration);
+          });
+        });
+      },
+      { threshold: 0.3 },
+    );
+    observer.observe(node);
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(dropTimeoutRef.current);
+    };
+  }, [genreBubbles]);
+
+  // Slides each bar in proportionally to its share, replaying on every
+  // re-entry like the rest of the site's one-shot animations.
+  useEffect(() => {
+    const node = listRef.current;
+    if (!node || !genreBubbles || genreBubbles.length === 0) return;
+
+    const targets = genreBubbles.slice(0, 6).map((bubble) => clamp((bubble.share ?? 0) * 100, 0, 100));
+
+    function setWidths(fractionOfTarget: number) {
+      barRefs.current.forEach((el, index) => {
+        el?.style.setProperty("width", `${targets[index] * fractionOfTarget}%`);
+      });
+    }
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setWidths(1);
+      return;
+    }
+
+    setWidths(0);
+    let rafId = 0;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          cancelAnimationFrame(rafId);
+          setWidths(0);
+          const duration = 900;
+          const stagger = 70;
+          const startTime = performance.now();
+          function tick(now: number) {
+            let stillRunning = false;
+            barRefs.current.forEach((el, index) => {
+              const elapsed = now - startTime - index * stagger;
+              const t = clamp(elapsed / duration, 0, 1);
+              if (elapsed < duration) stillRunning = true;
+              el?.style.setProperty("width", `${targets[index] * easeOutCubic(t)}%`);
+            });
+            if (stillRunning) rafId = requestAnimationFrame(tick);
+          }
+          rafId = requestAnimationFrame(tick);
+        });
+      },
+      { threshold: 0.4 },
+    );
+    observer.observe(node);
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(rafId);
+    };
+  }, [genreBubbles]);
+
   if (!genreBubbles || genreBubbles.length === 0) {
     return null;
   }
 
   const displayedBubbles = genreBubbles.slice(0, 8);
+  const listBubbles = genreBubbles.slice(0, 6);
 
   function tooltipPosition(clientX: number, clientY: number) {
     const rect = cloudRef.current?.getBoundingClientRect();
@@ -166,11 +261,12 @@ export default function GenreBubbles({
               "--bubble-x": position.x,
               "--bubble-y": position.y,
               "--bubble-z": position.z,
+              "--fall-delay": `${index * 90}ms`,
             } as CSSProperties;
             const isActive = tooltip?.bubble.genre === bubble.genre;
             return (
               <div
-                className={`genre-bubble${isActive ? " genre-bubble-active" : ""}`}
+                className={`genre-bubble${isDropping ? " genre-bubble-drop" : ""}${isActive ? " genre-bubble-active" : ""}`}
                 key={bubble.genre}
                 style={style}
                 role="button"
@@ -217,14 +313,24 @@ export default function GenreBubbles({
           ) : null}
         </div>
 
-        <div className="genre-bubbles-list">
-          {displayedBubbles.map((bubble) => (
-            <div className="genre-row" key={bubble.genre}>
-              <span>{bubble.genre}</span>
-              <strong>{bubble.count}</strong>
-              <small>{formatShare(bubble.share) ?? "n/a"}</small>
-            </div>
-          ))}
+        <div className="genre-bubbles-list" ref={listRef}>
+          {(() => {
+            barRefs.current = [];
+            return listBubbles.map((bubble, index) => (
+              <div className="genre-bar-row" key={bubble.genre}>
+                <div className="genre-bar-heading">
+                  <span>{bubble.genre}</span>
+                  <span className="genre-bar-meta">
+                    <strong>{bubble.count}</strong>
+                    <small>{formatShare(bubble.share) ?? "n/a"}</small>
+                  </span>
+                </div>
+                <div className="genre-bar-track">
+                  <div className="genre-bar-fill" ref={(el) => { barRefs.current[index] = el; }} />
+                </div>
+              </div>
+            ));
+          })()}
         </div>
       </div>
     </section>
