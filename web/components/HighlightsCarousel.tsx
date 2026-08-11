@@ -2,12 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import {
-  useRef,
-  useState,
-  type MouseEvent as ReactMouseEvent,
-  type PointerEvent as ReactPointerEvent,
-} from "react";
+import { useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 
 type FilmHighlight = {
   title: string | null;
@@ -67,79 +62,37 @@ function DirectorIcon() {
   );
 }
 
-function HighlightItem({ label, item }: { label: string; item: FilmHighlight | null }) {
-  const title = item?.title || item?.rss_title || "Unavailable";
-  const hasVerifiedPoster = item?.poster_status === "verified" && item?.poster_url;
-  const content = (
+function CardFace({
+  label,
+  title,
+  subtitle,
+  posterUrl,
+  hasPoster,
+  isDirector,
+}: {
+  label: string;
+  title: string;
+  subtitle: string | null;
+  posterUrl: string | null;
+  hasPoster: boolean;
+  isDirector?: boolean;
+}) {
+  return (
     <>
-      {hasVerifiedPoster ? (
-        <img className="highlightPoster" src={item.poster_url ?? ""} alt="" loading="lazy" />
+      {hasPoster && posterUrl ? (
+        <img className="highlight3dPoster" src={posterUrl} alt="" loading="lazy" draggable={false} />
       ) : (
-        <div className="highlightPoster highlightPosterFallback" aria-hidden="true">
-          <span>{title.slice(0, 1)}</span>
+        <div className="highlight3dPoster highlight3dPosterFallback" aria-hidden="true">
+          {isDirector ? <DirectorIcon /> : <span>{title.slice(0, 1)}</span>}
         </div>
       )}
-      <div className="highlightText">
-        <span>{label}</span>
-        <div className="highlightMain">
-          <strong>{title}</strong>
-          {item?.value_label ? (
-            <small className="highlightValue">{item.value_label}</small>
-          ) : (
-            <small className={item?.director ? undefined : "highlightMetaMuted"}>
-              {item?.director || "Réalisateur non renseigné"}
-            </small>
-          )}
-        </div>
+      <div className="highlight3dOverlay">
+        <span className="highlight3dLabel">{label}</span>
+        <strong className="highlight3dTitle">{title}</strong>
+        {subtitle ? <span className="highlight3dSubtitle">{subtitle}</span> : null}
       </div>
     </>
   );
-
-  if (item?.url) {
-    return (
-      <a className="highlightItem" href={item.url} target="_blank" rel="noreferrer" draggable={false}>
-        {content}
-      </a>
-    );
-  }
-
-  return <div className="highlightItem">{content}</div>;
-}
-
-function DirectorHighlightItem({ label, item }: { label: string; item: DirectorHighlight | null }) {
-  const films = item?.films ?? [];
-  const filmNames = films.slice(0, 3).map((film) => film.title).filter(Boolean);
-  const suffix = films.length > 3 ? " · …" : "";
-  const content = (
-    <>
-      <div className="highlightPoster highlightPosterFallback" aria-hidden="true">
-        <DirectorIcon />
-      </div>
-      <div className="highlightText">
-        <span>{label}</span>
-        <div className="highlightMain">
-          <strong>{item?.director ?? "Unavailable"}</strong>
-          <small>{filmNames.length ? `${filmNames.join(" · ")}${suffix}` : `${item?.count ?? 0} films`}</small>
-        </div>
-      </div>
-    </>
-  );
-
-  if (item?.letterboxd_url) {
-    return (
-      <a
-        className="highlightItem highlightDirectorItem"
-        href={item.letterboxd_url}
-        target="_blank"
-        rel="noreferrer"
-        draggable={false}
-      >
-        {content}
-      </a>
-    );
-  }
-
-  return <div className="highlightItem highlightDirectorItem">{content}</div>;
 }
 
 export default function HighlightsCarousel({
@@ -149,131 +102,223 @@ export default function HighlightsCarousel({
   highlights: Highlights;
   copy?: HighlightsCopy;
 }) {
-  const trackRef = useRef<HTMLDivElement>(null);
-  const dragState = useRef({ isDown: false, startX: 0, scrollLeft: 0, moved: false });
-  const [isDragging, setIsDragging] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const dragState = useRef({ isDown: false, startX: 0, startY: 0, moved: false, pointerId: 0 });
 
   const labels = copy?.labels ?? {};
 
-  function scrollByAmount(direction: 1 | -1) {
-    const track = trackRef.current;
-    if (!track) return;
-    track.scrollBy({ left: track.clientWidth * 0.82 * direction, behavior: "smooth" });
+  const slides = useMemo(() => {
+    const items: {
+      key: string;
+      href: string | null;
+      label: string;
+      title: string;
+      subtitle: string | null;
+      posterUrl: string | null;
+      hasPoster: boolean;
+      isDirector?: boolean;
+    }[] = [];
+
+    const pushFilm = (key: keyof Highlights, defaultLabel: string) => {
+      const item = highlights[key] as FilmHighlight | null;
+      const title = item?.title || item?.rss_title || "Indisponible";
+      items.push({
+        key,
+        href: item?.url ?? null,
+        label: labels[key] ?? defaultLabel,
+        title,
+        subtitle: item?.value_label ?? item?.director ?? null,
+        posterUrl: item?.poster_url ?? null,
+        hasPoster: item?.poster_status === "verified" && Boolean(item?.poster_url),
+      });
+    };
+
+    pushFilm("most_niche", "Le plus niche");
+    pushFilm("most_mainstream", "Le plus mainstream");
+    pushFilm("best_rated", "Le mieux noté");
+    pushFilm("worst_rated", "Le moins bien noté");
+    pushFilm("longest", "Le plus long");
+    pushFilm("shortest", "Le plus court");
+
+    const director = highlights.most_repeated_director;
+    const films = director?.films ?? [];
+    const filmNames = films.slice(0, 2).map((film) => film.title).filter(Boolean);
+    items.push({
+      key: "most_repeated_director",
+      href: director?.letterboxd_url ?? null,
+      label: labels.most_repeated_director ?? "Ta réalisatrice récurrente / Ton réalisateur récurrent",
+      title: director?.director ?? "Indisponible",
+      subtitle: filmNames.length ? filmNames.join(" · ") : director ? `${director.count} films` : null,
+      posterUrl: null,
+      hasPoster: false,
+      isDirector: true,
+    });
+
+    return items;
+  }, [highlights, labels]);
+
+  const count = slides.length;
+  const segmentAngle = 360 / count;
+
+  function goTo(index: number) {
+    setActiveIndex(((index % count) + count) % count);
   }
 
   function onPointerDown(event: ReactPointerEvent<HTMLDivElement>) {
-    if (event.pointerType !== "mouse") return;
-    const track = trackRef.current;
-    if (!track) return;
-    dragState.current = { isDown: true, startX: event.clientX, scrollLeft: track.scrollLeft, moved: false };
-    track.setPointerCapture(event.pointerId);
-    setIsDragging(true);
+    const stage = stageRef.current;
+    if (!stage) return;
+    dragState.current = {
+      isDown: true,
+      startX: event.clientX,
+      startY: event.clientY,
+      moved: false,
+      pointerId: event.pointerId,
+    };
+    stage.setPointerCapture(event.pointerId);
   }
 
   function onPointerMove(event: ReactPointerEvent<HTMLDivElement>) {
-    const track = trackRef.current;
     const state = dragState.current;
-    if (!state.isDown || !track) return;
-    const delta = event.clientX - state.startX;
-    if (Math.abs(delta) > 4) {
+    if (!state.isDown) return;
+    const deltaX = event.clientX - state.startX;
+    const deltaY = event.clientY - state.startY;
+    if (Math.abs(deltaX) > 6 && Math.abs(deltaX) > Math.abs(deltaY)) {
       state.moved = true;
     }
-    track.scrollLeft = state.scrollLeft - delta;
   }
 
-  function endDrag(event: ReactPointerEvent<HTMLDivElement>) {
-    const track = trackRef.current;
-    if (track && dragState.current.isDown) {
-      track.releasePointerCapture(event.pointerId);
+  function onPointerUp(event: ReactPointerEvent<HTMLDivElement>) {
+    const stage = stageRef.current;
+    const state = dragState.current;
+    if (!state.isDown) return;
+    if (stage) {
+      try {
+        stage.releasePointerCapture(state.pointerId);
+      } catch {
+        // pointer already released
+      }
+    }
+    const deltaX = event.clientX - state.startX;
+    if (state.moved && Math.abs(deltaX) > 40) {
+      goTo(activeIndex + (deltaX < 0 ? 1 : -1));
     }
     dragState.current.isDown = false;
-    setIsDragging(false);
   }
-
-  function onClickCapture(event: ReactMouseEvent<HTMLDivElement>) {
-    if (dragState.current.moved) {
-      event.preventDefault();
-      event.stopPropagation();
-      dragState.current.moved = false;
-    }
-  }
-
-  const slides: { key: string; node: JSX.Element }[] = [
-    {
-      key: "most_niche",
-      node: <HighlightItem label={labels.most_niche ?? "Le plus niche"} item={highlights.most_niche} />,
-    },
-    {
-      key: "most_mainstream",
-      node: (
-        <HighlightItem label={labels.most_mainstream ?? "Le plus mainstream"} item={highlights.most_mainstream} />
-      ),
-    },
-    {
-      key: "best_rated",
-      node: <HighlightItem label={labels.best_rated ?? "Le mieux noté"} item={highlights.best_rated} />,
-    },
-    {
-      key: "worst_rated",
-      node: <HighlightItem label={labels.worst_rated ?? "Le moins bien noté"} item={highlights.worst_rated} />,
-    },
-    {
-      key: "longest",
-      node: <HighlightItem label={labels.longest ?? "Le plus long"} item={highlights.longest} />,
-    },
-    {
-      key: "shortest",
-      node: <HighlightItem label={labels.shortest ?? "Le plus court"} item={highlights.shortest} />,
-    },
-    {
-      key: "most_repeated_director",
-      node: (
-        <DirectorHighlightItem
-          label={labels.most_repeated_director ?? "Ta réalisatrice récurrente / Ton réalisateur récurrent"}
-          item={highlights.most_repeated_director}
-        />
-      ),
-    },
-  ];
 
   return (
     <div className="highlightsCarousel">
-      <div
-        className={`highlightsTrack${isDragging ? " isDragging" : ""}`}
-        ref={trackRef}
-        onPointerDown={onPointerDown}
-        onPointerMove={onPointerMove}
-        onPointerUp={endDrag}
-        onPointerLeave={endDrag}
-        onClickCapture={onClickCapture}
-      >
-        {slides.map((slide) => (
-          <div className="highlightSlide" key={slide.key}>
-            {slide.node}
-          </div>
-        ))}
-      </div>
-      <div className="highlightsControls">
+      <div className="highlights3dStage">
         <button
           type="button"
-          className="highlightsArrow"
+          className="highlightsArrow highlights3dArrowPrev"
           aria-label="Précédent"
-          onClick={() => scrollByAmount(-1)}
+          onClick={() => goTo(activeIndex - 1)}
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M14.5 5l-7 7 7 7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
+
+        <div
+          className="highlights3dViewport"
+          ref={stageRef}
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={onPointerUp}
+          onPointerLeave={onPointerUp}
+        >
+          <div
+            className="highlights3dRing"
+            style={{ transform: `rotateY(${-activeIndex * segmentAngle}deg)` }}
+          >
+            {slides.map((slide, index) => {
+              const relative = (() => {
+                const raw = index - activeIndex;
+                const wrapped = ((raw + count / 2 + count) % count) - count / 2;
+                return wrapped;
+              })();
+              const rad = (relative * segmentAngle * Math.PI) / 180;
+              const depth = Math.cos(rad);
+              const isActive = index === activeIndex;
+              const opacity = Math.max(0, Math.min(1, (depth + 0.35) / 1.35));
+              const scale = 0.72 + 0.28 * Math.max(0, depth);
+              const cardContent = (
+                <CardFace
+                  label={slide.label}
+                  title={slide.title}
+                  subtitle={slide.subtitle}
+                  posterUrl={slide.posterUrl}
+                  hasPoster={slide.hasPoster}
+                  isDirector={slide.isDirector}
+                />
+              );
+
+              return (
+                <div
+                  className="highlights3dItem"
+                  key={slide.key}
+                  style={{
+                    transform: `rotateY(${index * segmentAngle}deg) translateZ(var(--carousel-radius)) scale(${scale})`,
+                    opacity,
+                    zIndex: Math.round((depth + 1) * 100),
+                    pointerEvents: opacity < 0.15 ? "none" : "auto",
+                  }}
+                  onClickCapture={(event) => {
+                    if (dragState.current.moved) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      return;
+                    }
+                    if (!isActive) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      goTo(index);
+                    }
+                  }}
+                >
+                  {slide.href ? (
+                    <a
+                      className={`highlights3dCard${isActive ? " isActive" : ""}`}
+                      href={slide.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      draggable={false}
+                      tabIndex={isActive ? 0 : -1}
+                    >
+                      {cardContent}
+                    </a>
+                  ) : (
+                    <div className={`highlights3dCard${isActive ? " isActive" : ""}`}>{cardContent}</div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
         <button
           type="button"
-          className="highlightsArrow highlightsArrowNext"
+          className="highlightsArrow highlights3dArrowNext"
           aria-label="Suivant"
-          onClick={() => scrollByAmount(1)}
+          onClick={() => goTo(activeIndex + 1)}
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M9.5 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
+      </div>
+
+      <div className="highlights3dDots">
+        {slides.map((slide, index) => (
+          <button
+            key={slide.key}
+            type="button"
+            className={`highlights3dDot${index === activeIndex ? " isActive" : ""}`}
+            aria-label={slide.label}
+            onClick={() => goTo(index)}
+          />
+        ))}
       </div>
     </div>
   );

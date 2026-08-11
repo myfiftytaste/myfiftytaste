@@ -494,7 +494,6 @@ h1 {
   max-width: 320px;
 }
 
-.highlightItem span,
 .dataSource {
   color: var(--muted);
   font-size: 0.78rem;
@@ -1670,8 +1669,7 @@ a.recommendation-card:hover {
   border-top: 1px solid var(--line);
 }
 
-.metricCard,
-.highlightItem {
+.metricCard {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--card);
@@ -1897,43 +1895,144 @@ a.recommendation-card:hover {
 }
 
 .highlightsCarousel {
+  --carousel-radius: clamp(230px, 30vw, 360px);
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  align-items: center;
+  gap: 22px;
 }
 
-.highlightsTrack {
+.highlights3dStage {
+  position: relative;
+  width: 100%;
   display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  scroll-snap-type: x proximity;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  cursor: grab;
-  padding: 2px 2px 6px;
-  margin: -2px -2px -6px;
+  align-items: center;
+  justify-content: center;
 }
 
-.highlightsTrack.isDragging {
+.highlights3dStage::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  width: min(560px, 70%);
+  height: 120px;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(217, 164, 65, 0.22), transparent 72%);
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.highlights3dViewport {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  height: clamp(300px, 38vw, 420px);
+  perspective: 1400px;
+  perspective-origin: 50% 42%;
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.highlights3dViewport:active {
   cursor: grabbing;
-  scroll-snap-type: none;
+}
+
+.highlights3dRing {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transition: transform 700ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.highlights3dItem {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: clamp(190px, 22vw, 250px);
+  aspect-ratio: 3 / 4;
+  margin: calc(clamp(190px, 22vw, 250px) * -4 / 3 / 2) 0 0 calc(clamp(190px, 22vw, 250px) / -2);
+  transform-style: preserve-3d;
+  transition: transform 700ms cubic-bezier(0.22, 0.61, 0.36, 1), opacity 700ms ease;
   user-select: none;
 }
 
-.highlightsTrack::-webkit-scrollbar {
-  display: none;
+.highlights3dCard {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
 }
 
-.highlightSlide {
-  flex: 0 0 auto;
-  width: min(320px, 78vw);
-  scroll-snap-align: start;
+.highlights3dCard.isActive {
+  border-color: rgba(217, 164, 65, 0.55);
+  box-shadow: 0 34px 70px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(217, 164, 65, 0.35);
 }
 
-.highlightsControls {
+.highlight3dPoster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.88) contrast(0.97);
+}
+
+.highlight3dPosterFallback {
+  display: grid;
+  place-items: center;
+  color: rgba(217, 164, 65, 0.72);
+  background: rgba(217, 164, 65, 0.1);
+}
+
+.highlight3dPosterFallback span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+}
+
+.highlightDirectorIcon {
+  width: 38%;
+  height: auto;
+  color: rgba(217, 164, 65, 0.72);
+}
+
+.highlight3dOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 14px 14px;
+  background: linear-gradient(to top, rgba(8, 8, 7, 0.92) 10%, rgba(8, 8, 7, 0.55) 55%, transparent 100%);
+}
+
+.highlight3dLabel {
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.highlight3dTitle {
+  color: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.highlight3dSubtitle {
+  color: rgba(247, 238, 220, 0.62);
+  font-size: 0.78rem;
 }
 
 .highlightsArrow {
@@ -1947,6 +2046,7 @@ a.recommendation-card:hover {
   color: var(--paper);
   cursor: pointer;
   transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+  flex: 0 0 auto;
 }
 
 .highlightsArrow svg {
@@ -1961,101 +2061,33 @@ a.recommendation-card:hover {
   color: var(--accent);
 }
 
-.highlightsArrowNext {
+.highlights3dArrowPrev,
+.highlights3dArrowNext {
+  position: relative;
+  z-index: 200;
   border-color: var(--accent);
   color: var(--accent);
+  margin: 0 8px;
 }
 
-.highlightItem {
-  min-height: 176px;
-  height: 100%;
-  display: grid;
-  grid-template-columns: minmax(96px, 40%) minmax(0, 1fr);
-  align-items: stretch;
-  gap: 16px;
-  padding: 14px;
-  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
-}
-
-.highlightPoster {
-  width: 100%;
-  height: 100%;
-  min-height: 148px;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-  border: 1px solid rgba(242, 230, 207, 0.18);
-  border-radius: 6px;
-  filter: saturate(0.86) contrast(0.96);
-}
-
-.highlightPosterFallback {
-  display: grid;
-  place-items: center;
-  color: rgba(217, 164, 65, 0.72);
-  background: rgba(217, 164, 65, 0.08);
-}
-
-.highlightPosterFallback span {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.4rem;
-}
-
-.highlightDirectorIcon {
-  width: 42%;
-  height: auto;
-  color: rgba(217, 164, 65, 0.72);
-}
-
-.highlightText {
-  min-width: 0;
+.highlights3dDots {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 4px 0;
+  gap: 8px;
 }
 
-a.highlightItem:hover {
-  border-color: rgba(217, 164, 65, 0.55);
-  background: var(--card-strong);
-  transform: translateY(-2px);
+.highlights3dDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(247, 238, 220, 0.22);
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
 }
 
-.highlightMain {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.highlightText strong {
-  color: var(--paper);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
-  font-weight: 500;
-  line-height: 1.08;
-}
-
-.highlightText small {
-  color: var(--accent);
-  font-size: 0.82rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.highlightText .highlightMetaMuted {
-  color: rgba(247, 238, 220, 0.42);
-}
-
-.highlightText .highlightValue {
-  color: var(--paper);
-  background: var(--accent-soft);
-  border: 1px solid var(--gold-border);
-  border-radius: 999px;
-  padding: 3px 10px;
-  width: fit-content;
-  font-size: 0.78rem;
-  letter-spacing: 0.02em;
+.highlights3dDot.isActive {
+  background: var(--accent);
+  transform: scale(1.25);
 }
 
 .siteFooter {
@@ -2306,14 +2338,17 @@ a.highlightItem:hover {
     min-height: 240px;
   }
 
-  .highlightItem {
-    grid-template-columns: minmax(92px, 34%) minmax(0, 1fr);
-    min-height: 154px;
-    gap: 12px;
-    padding: 12px;
+  .highlightsCarousel {
+    --carousel-radius: clamp(150px, 42vw, 220px);
   }
 
-  .highlightPoster {
-    min-height: 130px;
+  .highlights3dViewport {
+    height: clamp(260px, 62vw, 340px);
+  }
+
+  .highlights3dArrowPrev,
+  .highlights3dArrowNext {
+    width: 34px;
+    height: 34px;
   }
 }
