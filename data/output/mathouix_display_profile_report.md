@@ -96,14 +96,15 @@
 
 - most_niche: 964 Pinocchio (964-pinocchio)
 - most_mainstream: The Dark Knight (the-dark-knight)
-- most_cult: La La Land (la-la-land)
+- best_rated: The Godfather (the-godfather)
+- worst_rated: Punch-Drunk Love (punch-drunk-love)
 - longest: Avatar: Fire and Ash (avatar-fire-and-ash)
 - shortest: Perfect Blue (perfect-blue)
 - most_repeated_director: Paul Thomas Anderson (2 films)
 
 ## Poster verification
 
-- Posters verified: 8
+- Posters verified: 9
 - Posters ambiguous: 0
 - Posters missing: 0
 - Homonymy rejections: None
@@ -112,7 +113,8 @@
 
 - most_niche: 964 Pinocchio | slug: 964-pinocchio | director: Shozin Fukui | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - most_mainstream: The Dark Knight | slug: the-dark-knight | director: Christopher Nolan | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
-- most_cult: La La Land | slug: la-la-land | director: Damien Chazelle | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- best_rated: The Godfather | slug: the-godfather | director: Francis Ford Coppola | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- worst_rated: Punch-Drunk Love | slug: punch-drunk-love | director: Paul Thomas Anderson | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - longest: Avatar: Fire and Ash | slug: avatar-fire-and-ash | director: James Cameron | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - shortest: Perfect Blue | slug: perfect-blue | director: Satoshi Kon | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 

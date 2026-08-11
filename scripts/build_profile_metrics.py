@@ -485,6 +485,9 @@ def build_metrics(username: str) -> tuple[Path, Path]:
     niche_scores = [niche_score_for_watches(value) for value in watches]
     niche_index = mean(niche_scores) if niche_scores else None
 
+    best_rated = pick_best(films, lambda film: safe_float(film.get("user_rating")))
+    worst_rated = pick_worst(films, lambda film: safe_float(film.get("user_rating")))
+
     cult_entries = []
     for film in social_films:
         fans = safe_float(film.get("fans"))
@@ -777,6 +780,12 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "niche_index": niche_index,
             "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score.",
         },
+        "rating_extremes": {
+            "best_rated_film": best_rated,
+            "best_rated_value": safe_float(best_rated.get("user_rating")) if best_rated else None,
+            "worst_rated_film": worst_rated,
+            "worst_rated_value": safe_float(worst_rated.get("user_rating")) if worst_rated else None,
+        },
         "cult_profile": {
             "best_cult_film": best_cult_entry["film"] if best_cult_entry else None,
             "best_cult_ratio": best_cult_entry["ratio"] if best_cult_entry else None,
@@ -837,6 +846,7 @@ def render_report(username: str, metrics: dict[str, Any]) -> str:
     radar = metrics["radar_scores"]
     rating = metrics["rating_personality"]
     niche = metrics["niche_profile"]
+    rating_extremes = metrics["rating_extremes"]
     cult = metrics["cult_profile"]
     runtime = metrics["runtime_profile"]
     log_time = metrics.get("log_time_profile") or {}
@@ -881,6 +891,13 @@ def render_report(username: str, metrics: dict[str, Any]) -> str:
         f"- Most mainstream film: {film_title(niche['most_mainstream_film'])}",
         f"- Niche index: {rounded(niche['niche_index'], 1)} / 100",
         f"- Formula: {niche['formula']}",
+        "",
+        "## Rating extremes",
+        "",
+        f"- Best rated film: {film_title(rating_extremes['best_rated_film'])}",
+        f"- Best rated value: {rounded(rating_extremes['best_rated_value'], 1)} / 5",
+        f"- Worst rated film: {film_title(rating_extremes['worst_rated_film'])}",
+        f"- Worst rated value: {rounded(rating_extremes['worst_rated_value'], 1)} / 5",
         "",
         "## Radar scores",
         "",

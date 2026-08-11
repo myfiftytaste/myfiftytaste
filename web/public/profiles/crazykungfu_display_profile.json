@@ -1583,14 +1583,15 @@
   },
   "highlights_copy": {
     "eyebrow": "HIGHLIGHTS",
-    "title": "Toi, en 5 films et 1 réal",
+    "title": "Toi, en 6 films clés et 1 réal",
     "labels": {
       "most_niche": "Le plus niche",
       "most_mainstream": "Le plus mainstream",
-      "most_cult": "Le plus culte",
+      "worst_rated": "Le moins bien noté",
+      "best_rated": "Le mieux noté",
       "longest": "Le plus long",
       "shortest": "Le plus court",
-      "most_repeated_director": "Ton réalisateur récurrent"
+      "most_repeated_director": "Ta réalisatrice récurrente / Ton réalisateur récurrent"
     }
   },
   "highlights": {
@@ -1650,31 +1651,62 @@
         "confidence": 1.0
       }
     },
-    "most_cult": {
-      "title": "The Face of Another",
-      "rss_title": "The Face of Another, 1966 - ★★★★½",
-      "slug": "the-face-of-another",
-      "url": "https://letterboxd.com/crazykungfu/film/the-face-of-another/",
+    "best_rated": {
+      "title": "Fail Safe",
+      "rss_title": "Fail Safe, 1964 - ★★★★★",
+      "slug": "fail-safe",
+      "url": "https://letterboxd.com/crazykungfu/film/fail-safe/",
       "source": "megabank",
-      "year": 1966,
-      "director": "Hiroshi Teshigahara",
+      "year": 1964,
+      "director": "Sidney Lumet",
       "directors": [
-        "Hiroshi Teshigahara"
+        "Sidney Lumet"
       ],
       "director_source": "megabank",
-      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/fz/b0/yq/rh/h1rbLyfFP9xOXzJt5ODqVfxBWic-0-600-0-900-crop.jpg?v=ba593ea4fd",
-      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/fz/b0/yq/rh/h1rbLyfFP9xOXzJt5ODqVfxBWic-0-600-0-900-crop.jpg?v=ba593ea4fd",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/6/0/8/51608-fail-safe-0-600-0-900-crop.jpg?v=2eabe8a26d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/6/0/8/51608-fail-safe-0-600-0-900-crop.jpg?v=2eabe8a26d",
       "tmdb_id": null,
       "poster_path": null,
-      "poster_url": "https://a.ltrbxd.com/resized/sm/upload/fz/b0/yq/rh/h1rbLyfFP9xOXzJt5ODqVfxBWic-0-600-0-900-crop.jpg?v=ba593ea4fd",
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/6/0/8/51608-fail-safe-0-600-0-900-crop.jpg?v=2eabe8a26d",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "5,0/5",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
-        "letterboxd_slug": "the-face-of-another",
-        "expected_title": "The Face of Another",
-        "expected_year": 1966,
+        "letterboxd_slug": "fail-safe",
+        "expected_title": "Fail Safe",
+        "expected_year": 1964,
+        "confidence": 1.0
+      }
+    },
+    "worst_rated": {
+      "title": "TRENTE",
+      "rss_title": "TRENTE, 2026 - ½",
+      "slug": "trente",
+      "url": "https://letterboxd.com/crazykungfu/film/trente/",
+      "source": "supplemental",
+      "year": 2026,
+      "director": "Sébastien Frit",
+      "directors": [
+        "Sébastien Frit",
+        "Jeremie Levypon"
+      ],
+      "director_source": "tmdb_details_cache",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "tmdb_id": 1687834,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "value_label": "0,5/5",
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "trente",
+        "expected_title": "TRENTE",
+        "expected_year": 2026,
         "confidence": 1.0
       }
     },
@@ -1697,6 +1729,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/sm/upload/1e/n7/st/bb/eQpVD55Kqhx0l4HGvZasYWEMXXJ-0-600-0-900-crop.jpg?v=fc2b368c4e",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "2h35",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1726,6 +1759,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/sm/upload/wc/8v/37/hl/cOW5Oc3vnjD2QgK68BUvm6GGLZ4-0-600-0-900-crop.jpg?v=afc2876405",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "1h18",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1756,13 +1790,13 @@
   },
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
-    "items_checked": 8,
-    "posters_verified": 8,
+    "items_checked": 9,
+    "posters_verified": 9,
     "posters_ambiguous": 0,
     "posters_missing_count": 0,
     "verified_by_source": {
       "tmdb_search": 3,
-      "letterboxd_rss": 5
+      "letterboxd_rss": 6
     },
     "homonymy_rejections": [],
     "posters_missing": [],

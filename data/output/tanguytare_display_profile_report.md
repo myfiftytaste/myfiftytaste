@@ -96,14 +96,15 @@
 
 - most_niche: L'Argent (largent-1983)
 - most_mainstream: The Menu (the-menu-2022)
-- most_cult: Cinema Paradiso (cinema-paradiso)
+- best_rated: Sexy Beast (sexy-beast)
+- worst_rated: TRENTE (trente)
 - longest: The Godfather Part II (the-godfather-part-ii)
 - shortest: Adgwa-Ata (adgwa-ata)
 - most_repeated_director: Mamoru Oshii (2 films)
 
 ## Poster verification
 
-- Posters verified: 8
+- Posters verified: 9
 - Posters ambiguous: 0
 - Posters missing: 0
 - Homonymy rejections: None
@@ -112,7 +113,8 @@
 
 - most_niche: L'Argent | slug: largent-1983 | director: Robert Bresson | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - most_mainstream: The Menu | slug: the-menu-2022 | director: Mark Mylod | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
-- most_cult: Cinema Paradiso | slug: cinema-paradiso | director: Giuseppe Tornatore | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- best_rated: Sexy Beast | slug: sexy-beast | director: Jonathan Glazer | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- worst_rated: TRENTE | slug: trente | director: Sébastien Frit | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - longest: The Godfather Part II | slug: the-godfather-part-ii | director: Francis Ford Coppola | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - shortest: Adgwa-Ata | slug: adgwa-ata | director: Zsuzsanna Kreif | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 

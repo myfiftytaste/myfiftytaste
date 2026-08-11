@@ -1670,14 +1670,15 @@
   },
   "highlights_copy": {
     "eyebrow": "HIGHLIGHTS",
-    "title": "Toi, en 5 films et 1 réal",
+    "title": "Toi, en 6 films clés et 1 réal",
     "labels": {
       "most_niche": "Le plus niche",
       "most_mainstream": "Le plus mainstream",
-      "most_cult": "Le plus culte",
+      "worst_rated": "Le moins bien noté",
+      "best_rated": "Le mieux noté",
       "longest": "Le plus long",
       "shortest": "Le plus court",
-      "most_repeated_director": "Ton réalisateur récurrent"
+      "most_repeated_director": "Ta réalisatrice récurrente / Ton réalisateur récurrent"
     }
   },
   "highlights": {
@@ -1737,31 +1738,61 @@
         "confidence": 1.0
       }
     },
-    "most_cult": {
-      "title": "Chungking Express",
-      "rss_title": "Chungking Express, 1994 - ★★★★½",
-      "slug": "chungking-express",
-      "url": "https://letterboxd.com/mathmon/film/chungking-express/",
+    "best_rated": {
+      "title": "Thelma & Louise",
+      "rss_title": "Thelma & Louise, 1991 - ★★★★★",
+      "slug": "thelma-louise",
+      "url": "https://letterboxd.com/mathmon/film/thelma-louise/",
       "source": "megabank",
-      "year": 1994,
-      "director": "Wong Kar-wai",
+      "year": 1991,
+      "director": "Ridley Scott",
       "directors": [
-        "Wong Kar-wai"
+        "Ridley Scott"
       ],
       "director_source": "megabank",
-      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/6/0/2/45602-chungking-express-0-600-0-900-crop.jpg?v=9475abb05b",
-      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/6/0/2/45602-chungking-express-0-600-0-900-crop.jpg?v=9475abb05b",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/wt/r4/hc/iz/pnzuLoE52EiTfjfqRex2uTkH7LB-0-600-0-900-crop.jpg?v=5c24b21874",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/wt/r4/hc/iz/pnzuLoE52EiTfjfqRex2uTkH7LB-0-600-0-900-crop.jpg?v=5c24b21874",
       "tmdb_id": null,
       "poster_path": null,
-      "poster_url": "https://a.ltrbxd.com/resized/film-poster/4/5/6/0/2/45602-chungking-express-0-600-0-900-crop.jpg?v=9475abb05b",
+      "poster_url": "https://a.ltrbxd.com/resized/sm/upload/wt/r4/hc/iz/pnzuLoE52EiTfjfqRex2uTkH7LB-0-600-0-900-crop.jpg?v=5c24b21874",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "5,0/5",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
-        "letterboxd_slug": "chungking-express",
-        "expected_title": "Chungking Express",
-        "expected_year": 1994,
+        "letterboxd_slug": "thelma-louise",
+        "expected_title": "Thelma & Louise",
+        "expected_year": 1991,
+        "confidence": 1.0
+      }
+    },
+    "worst_rated": {
+      "title": "Titane",
+      "rss_title": "Titane, 2021 - ½",
+      "slug": "titane",
+      "url": "https://letterboxd.com/mathmon/film/titane/",
+      "source": "megabank",
+      "year": 2021,
+      "director": "Julia Ducournau",
+      "directors": [
+        "Julia Ducournau"
+      ],
+      "director_source": "megabank",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/5/6/5/5/3/556553-titane-0-600-0-900-crop.jpg?v=1383f3a942",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/5/6/5/5/3/556553-titane-0-600-0-900-crop.jpg?v=1383f3a942",
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/5/5/6/5/5/3/556553-titane-0-600-0-900-crop.jpg?v=1383f3a942",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "value_label": "0,5/5",
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "titane",
+        "expected_title": "Titane",
+        "expected_year": 2021,
         "confidence": 1.0
       }
     },
@@ -1784,6 +1815,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/film-poster/1/1/0/4/3/4/8/1104348-the-secret-agent-2025-0-600-0-900-crop.jpg?v=3bcd2a3e02",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "2h41",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1812,6 +1844,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/film-poster/6/6/5/8/7/7/665877-sukar-0-600-0-900-crop.jpg?v=fde56a4cc7",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "0h10",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1842,13 +1875,13 @@
   },
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
-    "items_checked": 8,
-    "posters_verified": 8,
+    "items_checked": 9,
+    "posters_verified": 9,
     "posters_ambiguous": 0,
     "posters_missing_count": 0,
     "verified_by_source": {
       "tmdb_search": 3,
-      "letterboxd_rss": 5
+      "letterboxd_rss": 6
     },
     "homonymy_rejections": [],
     "posters_missing": [],

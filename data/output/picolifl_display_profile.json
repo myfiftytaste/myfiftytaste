@@ -1616,14 +1616,15 @@
   },
   "highlights_copy": {
     "eyebrow": "HIGHLIGHTS",
-    "title": "Toi, en 5 films et 1 réal",
+    "title": "Toi, en 6 films clés et 1 réal",
     "labels": {
       "most_niche": "Le plus niche",
       "most_mainstream": "Le plus mainstream",
-      "most_cult": "Le plus culte",
+      "worst_rated": "Le moins bien noté",
+      "best_rated": "Le mieux noté",
       "longest": "Le plus long",
       "shortest": "Le plus court",
-      "most_repeated_director": "Ton réalisateur récurrent"
+      "most_repeated_director": "Ta réalisatrice récurrente / Ton réalisateur récurrent"
     }
   },
   "highlights": {
@@ -1683,31 +1684,61 @@
         "confidence": 1.0
       }
     },
-    "most_cult": {
-      "title": "Paris, Texas",
-      "rss_title": "Paris, Texas, 1984 - ★★★★½",
-      "slug": "paris-texas",
-      "url": "https://letterboxd.com/picolifl/film/paris-texas/",
-      "source": "megabank",
-      "year": 1984,
-      "director": "Wim Wenders",
+    "best_rated": {
+      "title": "Life Is Beautiful",
+      "rss_title": "Life Is Beautiful, 1997 - ★★★★★",
+      "slug": "life-is-beautiful",
+      "url": "https://letterboxd.com/picolifl/film/life-is-beautiful/",
+      "source": "supplemental",
+      "year": 1997,
+      "director": "Roberto Benigni",
       "directors": [
-        "Wim Wenders"
+        "Roberto Benigni"
       ],
-      "director_source": "megabank",
-      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
-      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
-      "tmdb_id": null,
+      "director_source": "tmdb_details_cache",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/8/7/51487-life-is-beautiful-0-600-0-900-crop.jpg?v=90ed0e667e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/8/7/51487-life-is-beautiful-0-600-0-900-crop.jpg?v=90ed0e667e",
+      "tmdb_id": 637,
       "poster_path": null,
-      "poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/6/9/51469-paris-texas-0-600-0-900-crop.jpg?v=c8f2743612",
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/8/7/51487-life-is-beautiful-0-600-0-900-crop.jpg?v=90ed0e667e",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "5,0/5",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
-        "letterboxd_slug": "paris-texas",
-        "expected_title": "Paris, Texas",
-        "expected_year": 1984,
+        "letterboxd_slug": "life-is-beautiful",
+        "expected_title": "Life Is Beautiful",
+        "expected_year": 1997,
+        "confidence": 1.0
+      }
+    },
+    "worst_rated": {
+      "title": "Hiroshima Mon Amour",
+      "rss_title": "Hiroshima Mon Amour, 1959 - ★★",
+      "slug": "hiroshima-mon-amour",
+      "url": "https://letterboxd.com/picolifl/film/hiroshima-mon-amour/",
+      "source": "megabank",
+      "year": 1959,
+      "director": "Alain Resnais",
+      "directors": [
+        "Alain Resnais"
+      ],
+      "director_source": "megabank",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/d4/0z/wv/pr/xmW3o49z7iExUsren4R4QyN890H-0-600-0-900-crop.jpg?v=03127fc33b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/d4/0z/wv/pr/xmW3o49z7iExUsren4R4QyN890H-0-600-0-900-crop.jpg?v=03127fc33b",
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/sm/upload/d4/0z/wv/pr/xmW3o49z7iExUsren4R4QyN890H-0-600-0-900-crop.jpg?v=03127fc33b",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "value_label": "2,0/5",
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "hiroshima-mon-amour",
+        "expected_title": "Hiroshima Mon Amour",
+        "expected_year": 1959,
         "confidence": 1.0
       }
     },
@@ -1730,6 +1761,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/film-poster/1/9/7/0/1/2/197012-the-hateful-eight-0-600-0-900-crop.jpg?v=0428be5b84",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "3h08",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1758,6 +1790,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/film-poster/6/3/5/2/3/7/635237-the-speech-0-600-0-900-crop.jpg?v=49776ab9be",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "0h25",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1788,13 +1821,13 @@
   },
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
-    "items_checked": 8,
-    "posters_verified": 8,
+    "items_checked": 9,
+    "posters_verified": 9,
     "posters_ambiguous": 0,
     "posters_missing_count": 0,
     "verified_by_source": {
       "tmdb_search": 3,
-      "letterboxd_rss": 5
+      "letterboxd_rss": 6
     },
     "homonymy_rejections": [],
     "posters_missing": [],

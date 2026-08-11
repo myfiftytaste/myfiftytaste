@@ -96,14 +96,15 @@
 
 - most_niche: Moebius (moebius-2013)
 - most_mainstream: The Devil Wears Prada (the-devil-wears-prada)
-- most_cult: Mulholland Drive (mulholland-drive)
+- best_rated: Jim Queen and the Quest for Chloroqueer (jim-queen)
+- worst_rated: Crescendo (crescendo-2026-2)
 - longest: The Leopard (the-leopard)
 - shortest: A Close Shave (a-close-shave-1995)
 - most_repeated_director: Luchino Visconti (2 films)
 
 ## Poster verification
 
-- Posters verified: 8
+- Posters verified: 9
 - Posters ambiguous: 0
 - Posters missing: 0
 - Homonymy rejections: None
@@ -112,7 +113,8 @@
 
 - most_niche: Moebius | slug: moebius-2013 | director: Kim Ki-duk | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - most_mainstream: The Devil Wears Prada | slug: the-devil-wears-prada | director: David Frankel | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
-- most_cult: Mulholland Drive | slug: mulholland-drive | director: David Lynch | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- best_rated: Jim Queen and the Quest for Chloroqueer | slug: jim-queen | director: Marco Nguyen | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- worst_rated: Crescendo | slug: crescendo-2026-2 | director: Agnès Jaoui | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - longest: The Leopard | slug: the-leopard | director: Luchino Visconti | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - shortest: A Close Shave | slug: a-close-shave-1995 | director: Nick Park | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 

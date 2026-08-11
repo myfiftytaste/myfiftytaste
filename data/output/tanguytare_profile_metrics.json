@@ -169,6 +169,90 @@
     "niche_index": 15.800870506855626,
     "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
   },
+  "rating_extremes": {
+    "best_rated_film": {
+      "rss_title": "Sexy Beast, 2000 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/sexy-beast/",
+      "letterboxd_slug": "sexy-beast",
+      "watched_at": "Thu, 2 Jul 2026 06:28:35 +1200",
+      "logged_at_raw": "Thu, 2 Jul 2026 06:28:35 +1200",
+      "logged_at_iso": "2026-07-01T18:28:35+00:00",
+      "logged_hour": 18,
+      "logged_minute": 28,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/0i/uu/90/yq/t1nDiWheu0HlOZA8thaESVCXpHr-0-600-0-900-crop.jpg?v=e8429aa8b3",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/0i/uu/90/yq/t1nDiWheu0HlOZA8thaESVCXpHr-0-600-0-900-crop.jpg?v=e8429aa8b3",
+      "user_rating": 5.0,
+      "year": 2000,
+      "has_review": true,
+      "review_word_count": 352,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Sexy Beast",
+      "directors": [
+        "Jonathan Glazer"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "countries": [
+        "Spain",
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 89.0,
+      "average_rating": 3.93,
+      "watches": 148014,
+      "likes": 46598,
+      "fans": 1200,
+      "total_ratings": 109400,
+      "director": "Jonathan Glazer",
+      "director_source": "megabank"
+    },
+    "best_rated_value": 5.0,
+    "worst_rated_film": {
+      "rss_title": "TRENTE, 2026 - ★",
+      "letterboxd_url": "https://letterboxd.com/tanguytare/film/trente/1/",
+      "letterboxd_slug": "trente",
+      "watched_at": "Wed, 27 May 2026 08:58:20 +1200",
+      "logged_at_raw": "Wed, 27 May 2026 08:58:20 +1200",
+      "logged_at_iso": "2026-05-26T20:58:20+00:00",
+      "logged_hour": 20,
+      "logged_minute": 58,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "user_rating": 1.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 282,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "TRENTE",
+      "directors": [
+        "Sébastien Frit",
+        "Jeremie Levypon"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "countries": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1687834,
+      "director_source": "tmdb_details_cache",
+      "director": "Sébastien Frit"
+    },
+    "worst_rated_value": 1.0
+  },
   "cult_profile": {
     "best_cult_film": {
       "rss_title": "Cinema Paradiso, 1988 - ★★★★",

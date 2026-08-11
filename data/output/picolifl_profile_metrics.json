@@ -170,6 +170,88 @@
     "niche_index": 8.073412671210614,
     "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
   },
+  "rating_extremes": {
+    "best_rated_film": {
+      "rss_title": "Life Is Beautiful, 1997 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/life-is-beautiful/",
+      "letterboxd_slug": "life-is-beautiful",
+      "watched_at": "Tue, 28 Apr 2026 08:11:21 +1200",
+      "logged_at_raw": "Tue, 28 Apr 2026 08:11:21 +1200",
+      "logged_at_iso": "2026-04-27T20:11:21+00:00",
+      "logged_hour": 20,
+      "logged_minute": 11,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/8/7/51487-life-is-beautiful-0-600-0-900-crop.jpg?v=90ed0e667e",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/4/8/7/51487-life-is-beautiful-0-600-0-900-crop.jpg?v=90ed0e667e",
+      "user_rating": 5.0,
+      "year": 1997,
+      "has_review": true,
+      "review_word_count": 18,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Life Is Beautiful",
+      "directors": [
+        "Roberto Benigni"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "Italy"
+      ],
+      "original_language": "it",
+      "runtime": 116,
+      "tmdb_id": 637,
+      "director_source": "tmdb_details_cache",
+      "director": "Roberto Benigni"
+    },
+    "best_rated_value": 5.0,
+    "worst_rated_film": {
+      "rss_title": "Hiroshima Mon Amour, 1959 - ★★",
+      "letterboxd_url": "https://letterboxd.com/picolifl/film/hiroshima-mon-amour/",
+      "letterboxd_slug": "hiroshima-mon-amour",
+      "watched_at": "Sat, 4 Apr 2026 00:52:35 +1300",
+      "logged_at_raw": "Sat, 4 Apr 2026 00:52:35 +1300",
+      "logged_at_iso": "2026-04-03T11:52:35+00:00",
+      "logged_hour": 11,
+      "logged_minute": 52,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/d4/0z/wv/pr/xmW3o49z7iExUsren4R4QyN890H-0-600-0-900-crop.jpg?v=03127fc33b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/d4/0z/wv/pr/xmW3o49z7iExUsren4R4QyN890H-0-600-0-900-crop.jpg?v=03127fc33b",
+      "user_rating": 2.0,
+      "year": 1959,
+      "has_review": true,
+      "review_word_count": 26,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Hiroshima Mon Amour",
+      "directors": [
+        "Alain Resnais"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "History"
+      ],
+      "countries": [
+        "France",
+        "Japan"
+      ],
+      "original_language": "French",
+      "runtime": 92.0,
+      "average_rating": 4.17,
+      "watches": 164994,
+      "likes": 54812,
+      "fans": 3300,
+      "total_ratings": 110376,
+      "director": "Alain Resnais",
+      "director_source": "megabank"
+    },
+    "worst_rated_value": 2.0
+  },
   "cult_profile": {
     "best_cult_film": {
       "rss_title": "Paris, Texas, 1984 - ★★★★½",

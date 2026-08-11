@@ -166,6 +166,85 @@
     "niche_index": 26.397372614161597,
     "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
   },
+  "rating_extremes": {
+    "best_rated_film": {
+      "rss_title": "Jim Queen, 2026 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/jim-queen/",
+      "letterboxd_slug": "jim-queen",
+      "watched_at": "Tue, 23 Jun 2026 21:04:08 +1200",
+      "logged_at_raw": "Tue, 23 Jun 2026 21:04:08 +1200",
+      "logged_at_iso": "2026-06-23T09:04:08+00:00",
+      "logged_hour": 9,
+      "logged_minute": 4,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/9/5/7/3/8/0/957380-jim-queen-0-600-0-900-crop.jpg?v=3ee7026b1b",
+      "user_rating": 5.0,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 410,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Jim Queen and the Quest for Chloroqueer",
+      "directors": [
+        "Marco Nguyen",
+        "Nicolas Athané"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "countries": [
+        "France",
+        "Belgium"
+      ],
+      "original_language": "fr",
+      "runtime": 85,
+      "tmdb_id": 1061798,
+      "director_source": "tmdb_details_cache",
+      "director": "Marco Nguyen"
+    },
+    "best_rated_value": 5.0,
+    "worst_rated_film": {
+      "rss_title": "Crescendo, 2026 - ½",
+      "letterboxd_url": "https://letterboxd.com/tobiashottin/film/crescendo-2026-2/",
+      "letterboxd_slug": "crescendo-2026-2",
+      "watched_at": "Tue, 2 Jun 2026 21:46:30 +1200",
+      "logged_at_raw": "Tue, 2 Jun 2026 21:46:30 +1200",
+      "logged_at_iso": "2026-06-02T09:46:30+00:00",
+      "logged_hour": 9,
+      "logged_minute": 46,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/4/3/0/8/1/1343081-crescendo-2026-2-0-600-0-900-crop.jpg?v=27325c4745",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/3/4/3/0/8/1/1343081-crescendo-2026-2-0-600-0-900-crop.jpg?v=27325c4745",
+      "user_rating": 0.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 1046,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Crescendo",
+      "directors": [
+        "Agnès Jaoui"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "countries": [
+        "France",
+        "Belgium"
+      ],
+      "original_language": "fr",
+      "runtime": 133,
+      "tmdb_id": 1466123,
+      "director_source": "tmdb_details_cache",
+      "director": "Agnès Jaoui"
+    },
+    "worst_rated_value": 0.5
+  },
   "cult_profile": {
     "best_cult_film": {
       "rss_title": "Mulholland Drive, 2001 - ★★★★",

@@ -1636,14 +1636,15 @@
   },
   "highlights_copy": {
     "eyebrow": "HIGHLIGHTS",
-    "title": "Toi, en 5 films et 1 réal",
+    "title": "Toi, en 6 films clés et 1 réal",
     "labels": {
       "most_niche": "Le plus niche",
       "most_mainstream": "Le plus mainstream",
-      "most_cult": "Le plus culte",
+      "worst_rated": "Le moins bien noté",
+      "best_rated": "Le mieux noté",
       "longest": "Le plus long",
       "shortest": "Le plus court",
-      "most_repeated_director": "Ton réalisateur récurrent"
+      "most_repeated_director": "Ta réalisatrice récurrente / Ton réalisateur récurrent"
     }
   },
   "highlights": {
@@ -1703,31 +1704,61 @@
         "confidence": 1.0
       }
     },
-    "most_cult": {
-      "title": "La La Land",
-      "rss_title": "La La Land, 2016 - ★★★½",
-      "slug": "la-la-land",
-      "url": "https://letterboxd.com/mathouix/film/la-la-land/",
+    "best_rated": {
+      "title": "The Godfather",
+      "rss_title": "The Godfather, 1972 - ★★★★★",
+      "slug": "the-godfather",
+      "url": "https://letterboxd.com/mathouix/film/the-godfather/",
       "source": "megabank",
-      "year": 2016,
-      "director": "Damien Chazelle",
+      "year": 1972,
+      "director": "Francis Ford Coppola",
       "directors": [
-        "Damien Chazelle"
+        "Francis Ford Coppola"
       ],
       "director_source": "megabank",
-      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
-      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-600-0-900-crop.jpg?v=bca8b67402",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-600-0-900-crop.jpg?v=bca8b67402",
       "tmdb_id": null,
       "poster_path": null,
-      "poster_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84",
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-600-0-900-crop.jpg?v=bca8b67402",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "5,0/5",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
-        "letterboxd_slug": "la-la-land",
-        "expected_title": "La La Land",
-        "expected_year": 2016,
+        "letterboxd_slug": "the-godfather",
+        "expected_title": "The Godfather",
+        "expected_year": 1972,
+        "confidence": 1.0
+      }
+    },
+    "worst_rated": {
+      "title": "Punch-Drunk Love",
+      "rss_title": "Punch-Drunk Love, 2002 - ★",
+      "slug": "punch-drunk-love",
+      "url": "https://letterboxd.com/mathouix/film/punch-drunk-love/",
+      "source": "megabank",
+      "year": 2002,
+      "director": "Paul Thomas Anderson",
+      "directors": [
+        "Paul Thomas Anderson"
+      ],
+      "director_source": "megabank",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/9/1/4/47914-punch-drunk-love-0-600-0-900-crop.jpg?v=032fc20313",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/9/1/4/47914-punch-drunk-love-0-600-0-900-crop.jpg?v=032fc20313",
+      "tmdb_id": null,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/9/1/4/47914-punch-drunk-love-0-600-0-900-crop.jpg?v=032fc20313",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "value_label": "1,0/5",
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "punch-drunk-love",
+        "expected_title": "Punch-Drunk Love",
+        "expected_year": 2002,
         "confidence": 1.0
       }
     },
@@ -1750,6 +1781,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "3h18",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1778,6 +1810,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/film-poster/4/6/1/7/5/46175-perfect-blue-0-600-0-900-crop.jpg?v=1ed5878cce",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "1h22",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1808,13 +1841,13 @@
   },
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
-    "items_checked": 8,
-    "posters_verified": 8,
+    "items_checked": 9,
+    "posters_verified": 9,
     "posters_ambiguous": 0,
     "posters_missing_count": 0,
     "verified_by_source": {
       "tmdb_search": 3,
-      "letterboxd_rss": 5
+      "letterboxd_rss": 6
     },
     "homonymy_rejections": [],
     "posters_missing": [],

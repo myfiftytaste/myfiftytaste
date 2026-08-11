@@ -35,6 +35,13 @@
 - Niche index: 4.8 / 100
 - Formula: Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score.
 
+## Rating extremes
+
+- Best rated film: Kill Bill: Vol. 2 (kill-bill-vol-2)
+- Best rated value: 5.0 / 5
+- Worst rated film: Nikita (nikita)
+- Worst rated value: 2.5 / 5
+
 ## Radar scores
 
 - Mainstreamness: 5 / 5

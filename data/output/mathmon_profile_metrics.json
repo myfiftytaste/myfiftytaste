@@ -169,6 +169,96 @@
     "niche_index": 14.085329944311468,
     "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
   },
+  "rating_extremes": {
+    "best_rated_film": {
+      "rss_title": "Thelma & Louise, 1991 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathmon/film/thelma-louise/",
+      "letterboxd_slug": "thelma-louise",
+      "watched_at": "Mon, 26 Jan 2026 12:23:05 +1300",
+      "logged_at_raw": "Mon, 26 Jan 2026 12:23:05 +1300",
+      "logged_at_iso": "2026-01-25T23:23:05+00:00",
+      "logged_hour": 23,
+      "logged_minute": 23,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/wt/r4/hc/iz/pnzuLoE52EiTfjfqRex2uTkH7LB-0-600-0-900-crop.jpg?v=5c24b21874",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/wt/r4/hc/iz/pnzuLoE52EiTfjfqRex2uTkH7LB-0-600-0-900-crop.jpg?v=5c24b21874",
+      "user_rating": 5.0,
+      "year": 1991,
+      "has_review": true,
+      "review_word_count": 250,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Thelma & Louise",
+      "directors": [
+        "Ridley Scott"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Adventure",
+        "Crime"
+      ],
+      "countries": [
+        "UK",
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 130.0,
+      "average_rating": 4.17,
+      "watches": 568032,
+      "likes": 194136,
+      "fans": 12000,
+      "total_ratings": 366360,
+      "director": "Ridley Scott",
+      "director_source": "megabank"
+    },
+    "best_rated_value": 5.0,
+    "worst_rated_film": {
+      "rss_title": "Titane, 2021 - ½",
+      "letterboxd_url": "https://letterboxd.com/mathmon/film/titane/",
+      "letterboxd_slug": "titane",
+      "watched_at": "Mon, 2 Mar 2026 11:57:41 +1300",
+      "logged_at_raw": "Mon, 2 Mar 2026 11:57:41 +1300",
+      "logged_at_iso": "2026-03-01T22:57:41+00:00",
+      "logged_hour": 22,
+      "logged_minute": 57,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/5/6/5/5/3/556553-titane-0-600-0-900-crop.jpg?v=1383f3a942",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/5/6/5/5/3/556553-titane-0-600-0-900-crop.jpg?v=1383f3a942",
+      "user_rating": 0.5,
+      "year": 2021,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Titane",
+      "directors": [
+        "Julia Ducournau"
+      ],
+      "genres": [
+        "Thriller",
+        "Horror",
+        "Science Fiction",
+        "Drama"
+      ],
+      "countries": [
+        "Belgium",
+        "France"
+      ],
+      "original_language": "French",
+      "runtime": 108.0,
+      "average_rating": 3.59,
+      "watches": 461869,
+      "likes": 122101,
+      "fans": 4400,
+      "total_ratings": 356892,
+      "director": "Julia Ducournau",
+      "director_source": "megabank"
+    },
+    "worst_rated_value": 0.5
+  },
   "cult_profile": {
     "best_cult_film": {
       "rss_title": "Chungking Express, 1994 - ★★★★½",

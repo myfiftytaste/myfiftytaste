@@ -167,6 +167,87 @@
     "niche_index": 24.998501441292568,
     "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
   },
+  "rating_extremes": {
+    "best_rated_film": {
+      "rss_title": "Fail Safe, 1964 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/fail-safe/",
+      "letterboxd_slug": "fail-safe",
+      "watched_at": "Sun, 24 May 2026 04:58:28 +1200",
+      "logged_at_raw": "Sun, 24 May 2026 04:58:28 +1200",
+      "logged_at_iso": "2026-05-23T16:58:28+00:00",
+      "logged_hour": 16,
+      "logged_minute": 58,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/6/0/8/51608-fail-safe-0-600-0-900-crop.jpg?v=2eabe8a26d",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/6/0/8/51608-fail-safe-0-600-0-900-crop.jpg?v=2eabe8a26d",
+      "user_rating": 5.0,
+      "year": 1964,
+      "has_review": true,
+      "review_word_count": 110,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Fail Safe",
+      "directors": [
+        "Sidney Lumet"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "War"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 112.0,
+      "average_rating": 4.22,
+      "watches": 34254,
+      "likes": 11308,
+      "fans": 283,
+      "total_ratings": 25319,
+      "director": "Sidney Lumet",
+      "director_source": "megabank"
+    },
+    "best_rated_value": 5.0,
+    "worst_rated_film": {
+      "rss_title": "TRENTE, 2026 - ½",
+      "letterboxd_url": "https://letterboxd.com/crazykungfu/film/trente/",
+      "letterboxd_slug": "trente",
+      "watched_at": "Wed, 17 Jun 2026 04:07:42 +1200",
+      "logged_at_raw": "Wed, 17 Jun 2026 04:07:42 +1200",
+      "logged_at_iso": "2026-06-16T16:07:42+00:00",
+      "logged_hour": 16,
+      "logged_minute": 7,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/1/5/5/0/6/4/7/1550647-trente-0-600-0-900-crop.jpg?v=6ec3c5879a",
+      "user_rating": 0.5,
+      "year": 2026,
+      "has_review": true,
+      "review_word_count": 36,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "TRENTE",
+      "directors": [
+        "Sébastien Frit",
+        "Jeremie Levypon"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "countries": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "runtime": 0,
+      "tmdb_id": 1687834,
+      "director_source": "tmdb_details_cache",
+      "director": "Sébastien Frit"
+    },
+    "worst_rated_value": 0.5
+  },
   "cult_profile": {
     "best_cult_film": {
       "rss_title": "The Face of Another, 1966 - ★★★★½",

@@ -96,14 +96,15 @@
 
 - most_niche: Colette (colette-2018)
 - most_mainstream: Eternal Sunshine of the Spotless Mind (eternal-sunshine-of-the-spotless-mind)
-- most_cult: Chungking Express (chungking-express)
+- best_rated: Thelma & Louise (thelma-louise)
+- worst_rated: Titane (titane)
 - longest: The Secret Agent (the-secret-agent-2025)
 - shortest: Sukar (sukar)
 - most_repeated_director: Agnès Jaoui (2 films)
 
 ## Poster verification
 
-- Posters verified: 8
+- Posters verified: 9
 - Posters ambiguous: 0
 - Posters missing: 0
 - Homonymy rejections: None
@@ -112,7 +113,8 @@
 
 - most_niche: Colette | slug: colette-2018 | director: Wash Westmoreland | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - most_mainstream: Eternal Sunshine of the Spotless Mind | slug: eternal-sunshine-of-the-spotless-mind | director: Michel Gondry | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
-- most_cult: Chungking Express | slug: chungking-express | director: Wong Kar-wai | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- best_rated: Thelma & Louise | slug: thelma-louise | director: Ridley Scott | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- worst_rated: Titane | slug: titane | director: Julia Ducournau | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - longest: The Secret Agent | slug: the-secret-agent-2025 | director: Kleber Mendonça Filho | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - shortest: Sukar | slug: sukar | director: Ilias Dupuis-El Faris | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 

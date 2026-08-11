@@ -4,6 +4,7 @@ import Image from "next/image";
 /* eslint-disable @next/next/no-img-element */
 import AverageRatingCard from "./AverageRatingCard";
 import GenreBubbles from "./GenreBubbles";
+import HighlightsCarousel, { type Highlights } from "./HighlightsCarousel";
 import LogTimeMini from "./LogTimeMini";
 import RadarChart from "./RadarChart";
 import Recommendations from "./Recommendations";
@@ -21,31 +22,6 @@ export type Card = {
   confidence: "high" | "medium" | "low" | string;
   confidence_label?: string;
   data_source: string;
-};
-
-type FilmHighlight = {
-  title: string | null;
-  rss_title: string | null;
-  slug: string | null;
-  url: string | null;
-  source: string | null;
-  director?: string | null;
-  directors?: string[];
-  poster_url?: string | null;
-  backdrop_url?: string | null;
-  poster_status?: "verified" | "ambiguous" | "missing" | string | null;
-};
-
-type DirectorHighlight = {
-  director: string;
-  count: number;
-  director_slug?: string | null;
-  letterboxd_url?: string | null;
-  films?: {
-    title?: string | null;
-    slug?: string | null;
-    year?: number | null;
-  }[];
 };
 
 type GenreBubble = {
@@ -178,102 +154,12 @@ export type DisplayProfile = {
     title?: string;
   };
   cards: Card[];
-  highlights: {
-    most_niche: FilmHighlight | null;
-    most_mainstream: FilmHighlight | null;
-    most_cult: FilmHighlight | null;
-    longest: FilmHighlight | null;
-    shortest: FilmHighlight | null;
-    most_repeated_director: DirectorHighlight | null;
-  };
+  highlights: Highlights;
   warnings: string[];
 };
 
 function formatPercent(value: number) {
   return `${Math.round(value * 100)}%`;
-}
-
-function HighlightItem({
-  label,
-  item,
-}: {
-  label: string;
-  item: FilmHighlight | null;
-}) {
-  const title = item?.title || item?.rss_title || "Unavailable";
-  const hasVerifiedPoster = item?.poster_status === "verified" && item?.poster_url;
-  const content = (
-    <>
-      {hasVerifiedPoster ? (
-        <img className="highlightPoster" src={item.poster_url ?? ""} alt="" loading="lazy" />
-      ) : (
-        <div className="highlightPoster highlightPosterFallback" aria-hidden="true">
-          <span>{title.slice(0, 1)}</span>
-        </div>
-      )}
-      <div className="highlightText">
-        <span>{label}</span>
-        <div className="highlightMain">
-          <strong>{title}</strong>
-          <small className={item?.director ? undefined : "highlightMetaMuted"}>
-            {item?.director || "Réalisateur non renseigné"}
-          </small>
-        </div>
-      </div>
-    </>
-  );
-
-  if (item?.url) {
-    return (
-      <a className="highlightItem" href={item.url} target="_blank" rel="noreferrer">
-        {content}
-      </a>
-    );
-  }
-
-  return <div className="highlightItem">{content}</div>;
-}
-
-function DirectorHighlightItem({
-  label,
-  item,
-}: {
-  label: string;
-  item: DirectorHighlight | null;
-}) {
-  const films = item?.films ?? [];
-  const filmNames = films.slice(0, 3).map((film) => film.title).filter(Boolean);
-  const suffix = films.length > 3 ? " · …" : "";
-  const content = (
-    <>
-      <div className="highlightPoster highlightPosterFallback" aria-hidden="true">
-        <span>R</span>
-      </div>
-      <div className="highlightText">
-        <span>{label}</span>
-        <div className="highlightMain">
-          <strong>{item?.director ?? "Unavailable"}</strong>
-          <small>
-            {filmNames.length ? `${filmNames.join(" · ")}${suffix}` : `${item?.count ?? 0} films`}
-          </small>
-        </div>
-      </div>
-    </>
-  );
-
-  if (item?.letterboxd_url) {
-    return (
-      <a className="highlightItem highlightDirectorItem" href={item.letterboxd_url} target="_blank" rel="noreferrer">
-        {content}
-      </a>
-    );
-  }
-
-  return (
-    <div className="highlightItem highlightDirectorItem">
-      {content}
-    </div>
-  );
 }
 
 export default function ProfileView({ profile }: { profile: DisplayProfile }) {
@@ -368,20 +254,9 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
       <section className="highlightsSection" aria-label="Highlights">
         <div className="sectionHeading">
           <p className="eyebrow">{highlights_copy?.eyebrow ?? "HIGHLIGHTS"}</p>
-          <h2>{highlights_copy?.title ?? "Toi, en 5 films et 1 réal"}</h2>
+          <h2>{highlights_copy?.title ?? "Toi, en 6 films clés et 1 réal"}</h2>
         </div>
-        <div className="highlightGrid">
-          <HighlightItem label={highlights_copy?.labels?.most_niche ?? "Le plus niche"} item={highlights.most_niche} />
-          <HighlightItem label={highlights_copy?.labels?.most_mainstream ?? "Le plus mainstream"} item={highlights.most_mainstream} />
-          {/* Cultness is no longer a radar axis; most_cult remains a separate social highlight based on fans / watches. */}
-          <HighlightItem label={highlights_copy?.labels?.most_cult ?? "Le plus culte"} item={highlights.most_cult} />
-          <HighlightItem label={highlights_copy?.labels?.longest ?? "Le plus long"} item={highlights.longest} />
-          <HighlightItem label={highlights_copy?.labels?.shortest ?? "Le plus court"} item={highlights.shortest} />
-          <DirectorHighlightItem
-            label={highlights_copy?.labels?.most_repeated_director ?? "Ton réalisateur récurrent"}
-            item={highlights.most_repeated_director}
-          />
-        </div>
+        <HighlightsCarousel highlights={highlights} copy={highlights_copy} />
       </section>
 
       <section className="cardsSection" aria-label={cards_section?.title ?? "Summary"}>

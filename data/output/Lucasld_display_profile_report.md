@@ -96,14 +96,15 @@
 
 - most_niche: Hard Boiled (hard-boiled)
 - most_mainstream: Barbie (barbie)
-- most_cult: Dead Poets Society (dead-poets-society)
+- best_rated: Kill Bill: Vol. 2 (kill-bill-vol-2)
+- worst_rated: Nikita (nikita)
 - longest: Avatar: Fire and Ash (avatar-fire-and-ash)
 - shortest: Alice in Wonderland (alice-in-wonderland-1951)
 - most_repeated_director: Pierre Coffin (2 films)
 
 ## Poster verification
 
-- Posters verified: 8
+- Posters verified: 9
 - Posters ambiguous: 0
 - Posters missing: 0
 - Homonymy rejections: None
@@ -112,7 +113,8 @@
 
 - most_niche: Hard Boiled | slug: hard-boiled | director: John Woo | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - most_mainstream: Barbie | slug: barbie | director: Greta Gerwig | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
-- most_cult: Dead Poets Society | slug: dead-poets-society | director: Peter Weir | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- best_rated: Kill Bill: Vol. 2 | slug: kill-bill-vol-2 | director: Quentin Tarantino | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- worst_rated: Nikita | slug: nikita | director: Luc Besson | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - longest: Avatar: Fire and Ash | slug: avatar-fire-and-ash | director: James Cameron | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - shortest: Alice in Wonderland | slug: alice-in-wonderland-1951 | director: Clyde Geronimi | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 

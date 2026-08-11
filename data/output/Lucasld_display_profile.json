@@ -1585,14 +1585,15 @@
   },
   "highlights_copy": {
     "eyebrow": "HIGHLIGHTS",
-    "title": "Toi, en 5 films et 1 réal",
+    "title": "Toi, en 6 films clés et 1 réal",
     "labels": {
       "most_niche": "Le plus niche",
       "most_mainstream": "Le plus mainstream",
-      "most_cult": "Le plus culte",
+      "worst_rated": "Le moins bien noté",
+      "best_rated": "Le mieux noté",
       "longest": "Le plus long",
       "shortest": "Le plus court",
-      "most_repeated_director": "Ton réalisateur récurrent"
+      "most_repeated_director": "Ta réalisatrice récurrente / Ton réalisateur récurrent"
     }
   },
   "highlights": {
@@ -1652,31 +1653,61 @@
         "confidence": 1.0
       }
     },
-    "most_cult": {
-      "title": "Dead Poets Society",
-      "rss_title": "Dead Poets Society, 1989 - ★★★★★",
-      "slug": "dead-poets-society",
-      "url": "https://letterboxd.com/lucasld/film/dead-poets-society/",
+    "best_rated": {
+      "title": "Kill Bill: Vol. 2",
+      "rss_title": "Kill Bill: Vol. 2, 2004 - ★★★★★",
+      "slug": "kill-bill-vol-2",
+      "url": "https://letterboxd.com/lucasld/film/kill-bill-vol-2/",
       "source": "megabank",
-      "year": 1989,
-      "director": "Peter Weir",
+      "year": 2004,
+      "director": "Quentin Tarantino",
       "directors": [
-        "Peter Weir"
+        "Quentin Tarantino"
       ],
       "director_source": "megabank",
-      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
-      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730",
       "tmdb_id": null,
       "poster_path": null,
-      "poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7",
+      "poster_url": "https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "5,0/5",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
-        "letterboxd_slug": "dead-poets-society",
-        "expected_title": "Dead Poets Society",
-        "expected_year": 1989,
+        "letterboxd_slug": "kill-bill-vol-2",
+        "expected_title": "Kill Bill: Vol. 2",
+        "expected_year": 2004,
+        "confidence": 1.0
+      }
+    },
+    "worst_rated": {
+      "title": "Nikita",
+      "rss_title": "Nikita, 1990 - ★★½",
+      "slug": "nikita",
+      "url": "https://letterboxd.com/lucasld/film/nikita/",
+      "source": "supplemental",
+      "year": 1990,
+      "director": "Luc Besson",
+      "directors": [
+        "Luc Besson"
+      ],
+      "director_source": "tmdb_details_cache",
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/1/47271-la-femme-nikita-0-600-0-900-crop.jpg?v=f7d1131cfb",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/1/47271-la-femme-nikita-0-600-0-900-crop.jpg?v=f7d1131cfb",
+      "tmdb_id": 9322,
+      "poster_path": null,
+      "poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/1/47271-la-femme-nikita-0-600-0-900-crop.jpg?v=f7d1131cfb",
+      "backdrop_path": null,
+      "backdrop_url": null,
+      "value_label": "2,5/5",
+      "poster_status": "verified",
+      "poster_source": "letterboxd_rss",
+      "poster_match": {
+        "letterboxd_slug": "nikita",
+        "expected_title": "Nikita",
+        "expected_year": 1990,
         "confidence": 1.0
       }
     },
@@ -1699,6 +1730,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/film-poster/7/0/0/0/7/70007-avatar-fire-and-ash-0-600-0-900-crop.jpg?v=5d2f8b35b1",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "3h18",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1728,6 +1760,7 @@
       "poster_url": "https://a.ltrbxd.com/resized/sm/upload/p5/63/wj/c3/AdwfqyNiH8UqeYKFYoiKhwTtjAb-0-600-0-900-crop.jpg?v=f9c56785d4",
       "backdrop_path": null,
       "backdrop_url": null,
+      "value_label": "1h15",
       "poster_status": "verified",
       "poster_source": "letterboxd_rss",
       "poster_match": {
@@ -1758,13 +1791,13 @@
   },
   "media_enrichment": {
     "tmdb_lookup_source": "server_cache_or_api",
-    "items_checked": 8,
-    "posters_verified": 8,
+    "items_checked": 9,
+    "posters_verified": 9,
     "posters_ambiguous": 0,
     "posters_missing_count": 0,
     "verified_by_source": {
       "tmdb_search": 3,
-      "letterboxd_rss": 5
+      "letterboxd_rss": 6
     },
     "homonymy_rejections": [],
     "posters_missing": [],

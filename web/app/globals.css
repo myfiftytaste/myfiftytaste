@@ -1896,14 +1896,79 @@ a.recommendation-card:hover {
   line-height: 1;
 }
 
-.highlightGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.highlightsCarousel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.highlightsTrack {
+  display: flex;
   gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  cursor: grab;
+  padding: 2px 2px 6px;
+  margin: -2px -2px -6px;
+}
+
+.highlightsTrack.isDragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+}
+
+.highlightsTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.highlightSlide {
+  flex: 0 0 auto;
+  width: min(320px, 78vw);
+  scroll-snap-align: start;
+}
+
+.highlightsControls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.highlightsArrow {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--paper);
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.highlightsArrow svg {
+  width: 18px;
+  height: 18px;
+}
+
+.highlightsArrow:hover,
+.highlightsArrow:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.highlightsArrowNext {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .highlightItem {
   min-height: 176px;
+  height: 100%;
   display: grid;
   grid-template-columns: minmax(96px, 40%) minmax(0, 1fr);
   align-items: stretch;
@@ -1933,6 +1998,12 @@ a.recommendation-card:hover {
 .highlightPosterFallback span {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 2.4rem;
+}
+
+.highlightDirectorIcon {
+  width: 42%;
+  height: auto;
+  color: rgba(217, 164, 65, 0.72);
 }
 
 .highlightText {
@@ -1974,6 +2045,17 @@ a.highlightItem:hover {
 
 .highlightText .highlightMetaMuted {
   color: rgba(247, 238, 220, 0.42);
+}
+
+.highlightText .highlightValue {
+  color: var(--paper);
+  background: var(--accent-soft);
+  border: 1px solid var(--gold-border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  width: fit-content;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
 }
 
 .siteFooter {
@@ -2026,7 +2108,6 @@ a.highlightItem:hover {
   }
 
   .cardsGrid,
-  .highlightGrid,
   .recommendations-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2115,7 +2196,6 @@ a.highlightItem:hover {
   }
 
   .cardsGrid,
-  .highlightGrid,
   .radar-score-list,
   .recommendations-grid {
     grid-template-columns: 1fr;

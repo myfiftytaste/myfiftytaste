@@ -171,6 +171,91 @@
     "niche_index": 7.082362822728477,
     "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
   },
+  "rating_extremes": {
+    "best_rated_film": {
+      "rss_title": "The Godfather, 1972 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/the-godfather/",
+      "letterboxd_slug": "the-godfather",
+      "watched_at": "Sun, 22 Feb 2026 12:05:52 +1300",
+      "logged_at_raw": "Sun, 22 Feb 2026 12:05:52 +1300",
+      "logged_at_iso": "2026-02-21T23:05:52+00:00",
+      "logged_hour": 23,
+      "logged_minute": 5,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-600-0-900-crop.jpg?v=bca8b67402",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-600-0-900-crop.jpg?v=bca8b67402",
+      "user_rating": 5.0,
+      "year": 1972,
+      "has_review": true,
+      "review_word_count": 16,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "The Godfather",
+      "directors": [
+        "Francis Ford Coppola"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 175.0,
+      "average_rating": 4.54,
+      "watches": 2701868,
+      "likes": 1073044,
+      "fans": 89000,
+      "total_ratings": 1818500,
+      "director": "Francis Ford Coppola",
+      "director_source": "megabank"
+    },
+    "best_rated_value": 5.0,
+    "worst_rated_film": {
+      "rss_title": "Punch-Drunk Love, 2002 - ★",
+      "letterboxd_url": "https://letterboxd.com/mathouix/film/punch-drunk-love/",
+      "letterboxd_slug": "punch-drunk-love",
+      "watched_at": "Wed, 21 Jan 2026 04:17:45 +1300",
+      "logged_at_raw": "Wed, 21 Jan 2026 04:17:45 +1300",
+      "logged_at_iso": "2026-01-20T15:17:45+00:00",
+      "logged_hour": 15,
+      "logged_minute": 17,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/9/1/4/47914-punch-drunk-love-0-600-0-900-crop.jpg?v=032fc20313",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/9/1/4/47914-punch-drunk-love-0-600-0-900-crop.jpg?v=032fc20313",
+      "user_rating": 1.0,
+      "year": 2002,
+      "has_review": true,
+      "review_word_count": 2,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Punch-Drunk Love",
+      "directors": [
+        "Paul Thomas Anderson"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "Comedy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 96.0,
+      "average_rating": 3.98,
+      "watches": 660446,
+      "likes": 216672,
+      "fans": 11000,
+      "total_ratings": 470834,
+      "director": "Paul Thomas Anderson",
+      "director_source": "megabank"
+    },
+    "worst_rated_value": 1.0
+  },
   "cult_profile": {
     "best_cult_film": {
       "rss_title": "La La Land, 2016 - ★★★½",

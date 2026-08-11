@@ -96,14 +96,15 @@
 
 - most_niche: Summer of 85 (summer-of-85)
 - most_mainstream: Inception (inception)
-- most_cult: Paris, Texas (paris-texas)
+- best_rated: Life Is Beautiful (life-is-beautiful)
+- worst_rated: Hiroshima Mon Amour (hiroshima-mon-amour)
 - longest: The Hateful Eight (the-hateful-eight)
 - shortest: The Speech (the-speech-2020-1)
 - most_repeated_director: Joel Coen (2 films)
 
 ## Poster verification
 
-- Posters verified: 8
+- Posters verified: 9
 - Posters ambiguous: 0
 - Posters missing: 0
 - Homonymy rejections: None
@@ -112,7 +113,8 @@
 
 - most_niche: Summer of 85 | slug: summer-of-85 | director: François Ozon | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - most_mainstream: Inception | slug: inception | director: Christopher Nolan | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
-- most_cult: Paris, Texas | slug: paris-texas | director: Wim Wenders | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- best_rated: Life Is Beautiful | slug: life-is-beautiful | director: Roberto Benigni | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
+- worst_rated: Hiroshima Mon Amour | slug: hiroshima-mon-amour | director: Alain Resnais | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - longest: The Hateful Eight | slug: the-hateful-eight | director: Quentin Tarantino | director_source: megabank | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 - shortest: The Speech | slug: the-speech-2020-1 | director: Haohao Yan | director_source: tmdb_details_cache | poster_status: verified | poster_source: letterboxd_rss | poster_url: yes
 

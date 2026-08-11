@@ -72,14 +72,15 @@ DEFAULT_CONFIG = {
     },
     "highlights": {
         "eyebrow": "HIGHLIGHTS",
-        "title": "Toi, en 5 films et 1 réal",
+        "title": "Toi, en 6 films clés et 1 réal",
         "labels": {
             "most_niche": "Le plus niche",
             "most_mainstream": "Le plus mainstream",
-            "most_cult": "Le plus culte",
+            "worst_rated": "Le moins bien noté",
+            "best_rated": "Le mieux noté",
             "longest": "Le plus long",
             "shortest": "Le plus court",
-            "most_repeated_director": "Ton réalisateur récurrent",
+            "most_repeated_director": "Ta réalisatrice récurrente / Ton réalisateur récurrent",
         },
     },
     "recommendations": {
@@ -835,6 +836,22 @@ def format_duration(minutes: Any) -> Optional[str]:
     return f"{hours}h{remaining_minutes:02d}" if hours else f"{remaining_minutes} min"
 
 
+def format_duration_hm(minutes: Any) -> Optional[str]:
+    value = safe_float(minutes)
+    if value is None or value <= 0:
+        return None
+    total_minutes = int(round(value))
+    hours, remaining_minutes = divmod(total_minutes, 60)
+    return f"{hours}h{remaining_minutes:02d}"
+
+
+def format_rating_value(value: Any) -> Optional[str]:
+    number = safe_float(value)
+    if number is None:
+        return None
+    return f"{number:.1f}".replace(".", ",") + "/5"
+
+
 COUNTRY_DISPLAY_NAMES_FR = {
     "USA": "Les États-Unis",
     "France": "La France",
@@ -1062,7 +1079,7 @@ def build_recommendations_copy(config: dict[str, Any]) -> dict[str, Any]:
 
 def build_highlights(metrics: dict[str, Any]) -> dict[str, Any]:
     niche = metrics["niche_profile"]
-    cult = metrics["cult_profile"]
+    rating_extremes = metrics.get("rating_extremes") or {}
     runtime = metrics["runtime_profile"]
     directors = metrics["director_recurrence"]
     repeated_director = directors.get("most_repeated_director")
@@ -1075,12 +1092,27 @@ def build_highlights(metrics: dict[str, Any]) -> dict[str, Any]:
             repeated_director["director_slug"] = director_slug
         if director_slug and not repeated_director.get("letterboxd_url"):
             repeated_director["letterboxd_url"] = f"https://letterboxd.com/director/{director_slug}/"
+
+    best_rated = film_ref(rating_extremes.get("best_rated_film"))
+    if best_rated is not None:
+        best_rated["value_label"] = format_rating_value(rating_extremes.get("best_rated_value"))
+    worst_rated = film_ref(rating_extremes.get("worst_rated_film"))
+    if worst_rated is not None:
+        worst_rated["value_label"] = format_rating_value(rating_extremes.get("worst_rated_value"))
+    longest = film_ref(runtime.get("longest_film"))
+    if longest is not None:
+        longest["value_label"] = format_duration_hm((runtime.get("longest_film") or {}).get("runtime"))
+    shortest = film_ref(runtime.get("shortest_film"))
+    if shortest is not None:
+        shortest["value_label"] = format_duration_hm((runtime.get("shortest_film") or {}).get("runtime"))
+
     return {
         "most_niche": film_ref(niche.get("most_niche_film")),
         "most_mainstream": film_ref(niche.get("most_mainstream_film")),
-        "most_cult": film_ref(cult.get("best_cult_film")),
-        "longest": film_ref(runtime.get("longest_film")),
-        "shortest": film_ref(runtime.get("shortest_film")),
+        "best_rated": best_rated,
+        "worst_rated": worst_rated,
+        "longest": longest,
+        "shortest": shortest,
         "most_repeated_director": repeated_director,
     }
 

@@ -169,6 +169,88 @@
     "niche_index": 4.830326112206657,
     "formula": "Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score."
   },
+  "rating_extremes": {
+    "best_rated_film": {
+      "rss_title": "Kill Bill: Vol. 2, 2004 - ★★★★★",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/kill-bill-vol-2/",
+      "letterboxd_slug": "kill-bill-vol-2",
+      "watched_at": "Thu, 26 Feb 2026 12:24:12 +1300",
+      "logged_at_raw": "Thu, 26 Feb 2026 12:24:12 +1300",
+      "logged_at_iso": "2026-02-25T23:24:12+00:00",
+      "logged_hour": 23,
+      "logged_minute": 24,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730",
+      "user_rating": 5.0,
+      "year": 2004,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "megabank",
+      "has_social_stats": true,
+      "has_metadata": true,
+      "title": "Kill Bill: Vol. 2",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "genres": [
+        "Thriller",
+        "Action",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "original_language": "English",
+      "runtime": 136.0,
+      "average_rating": null,
+      "watches": 1760722,
+      "likes": 550225,
+      "fans": 9000,
+      "total_ratings": 1114672,
+      "director": "Quentin Tarantino",
+      "director_source": "megabank"
+    },
+    "best_rated_value": 5.0,
+    "worst_rated_film": {
+      "rss_title": "Nikita, 1990 - ★★½",
+      "letterboxd_url": "https://letterboxd.com/lucasld/film/nikita/",
+      "letterboxd_slug": "nikita",
+      "watched_at": "Wed, 18 Feb 2026 13:35:36 +1300",
+      "logged_at_raw": "Wed, 18 Feb 2026 13:35:36 +1300",
+      "logged_at_iso": "2026-02-18T00:35:36+00:00",
+      "logged_hour": 0,
+      "logged_minute": 35,
+      "rss_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/1/47271-la-femme-nikita-0-600-0-900-crop.jpg?v=f7d1131cfb",
+      "letterboxd_poster_url": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/1/47271-la-femme-nikita-0-600-0-900-crop.jpg?v=f7d1131cfb",
+      "user_rating": 2.5,
+      "year": 1990,
+      "has_review": false,
+      "review_word_count": 0,
+      "matched": true,
+      "source": "supplemental",
+      "has_social_stats": false,
+      "has_metadata": true,
+      "title": "Nikita",
+      "directors": [
+        "Luc Besson"
+      ],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "countries": [
+        "France",
+        "Italy"
+      ],
+      "original_language": "fr",
+      "runtime": 117,
+      "tmdb_id": 9322,
+      "director_source": "tmdb_details_cache",
+      "director": "Luc Besson"
+    },
+    "worst_rated_value": 2.5
+  },
   "cult_profile": {
     "best_cult_film": {
       "rss_title": "Dead Poets Society, 1989 - ★★★★★",

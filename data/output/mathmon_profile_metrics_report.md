@@ -35,6 +35,13 @@
 - Niche index: 14.1 / 100
 - Formula: Average per-film score on social films: clamp((log10(1,000,000) - log10(watches)) / (log10(1,000,000) - log10(1,000)) * 100, 0, 100). Lower watches means a higher niche score.
 
+## Rating extremes
+
+- Best rated film: Thelma & Louise (thelma-louise)
+- Best rated value: 5.0 / 5
+- Worst rated film: Titane (titane)
+- Worst rated value: 0.5 / 5
+
 ## Radar scores
 
 - Mainstreamness: 4 / 5
