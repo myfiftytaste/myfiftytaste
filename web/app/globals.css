@@ -1140,12 +1140,31 @@ h1 {
 .genre-bar-row {
   display: grid;
   gap: 8px;
-  padding: 11px 0;
+  padding: 11px 10px;
+  margin: 0 -10px;
   border-bottom: 1px solid var(--line);
+  border-radius: 6px;
+  transition: background 180ms ease;
 }
 
 .genre-bar-row:last-child {
   border-bottom: 0;
+}
+
+.genre-bar-row-linked {
+  background: rgba(217, 164, 65, 0.1);
+}
+
+.genre-bar-row-linked .genre-bar-heading > span {
+  color: rgba(255, 217, 143, 1);
+}
+
+.genre-bar-row-linked .genre-bar-track {
+  background: rgba(217, 164, 65, 0.16);
+}
+
+.genre-bar-row-linked .genre-bar-fill {
+  box-shadow: 0 0 16px rgba(217, 164, 65, 0.45);
 }
 
 .genre-bar-heading {
@@ -1215,6 +1234,7 @@ h1 {
 .world-map-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
+  align-items: start;
   gap: 24px;
   margin-top: 26px;
   padding: 24px;
@@ -1225,9 +1245,8 @@ h1 {
 
 .world-map-panel {
   position: relative;
-  display: grid;
-  gap: 14px;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
   min-height: 360px;
   padding: 18px;
   border-radius: 6px;
@@ -1236,9 +1255,15 @@ h1 {
     rgba(16, 16, 14, 0.34);
 }
 
+.world-map-svg-wrap {
+  flex: 1;
+  min-height: 0;
+  aspect-ratio: 960 / 460;
+}
+
 .world-map-svg {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   overflow: visible;
 }
@@ -1250,9 +1275,8 @@ h1 {
 }
 
 .world-country {
-  stroke: rgba(242, 230, 207, 0.09);
-  stroke-width: 0.65;
-  opacity: 0.42;
+  stroke: rgba(168, 163, 152, 0.24);
+  stroke-width: 0.7;
   transition: fill 160ms ease, stroke 160ms ease, filter 160ms ease;
 }
 
@@ -1260,16 +1284,53 @@ h1 {
   stroke: rgba(242, 230, 207, 0.34);
   stroke-width: 0.85;
   opacity: 1;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  transition: transform 220ms cubic-bezier(0.22, 0.8, 0.32, 1), stroke 160ms ease, stroke-width 160ms ease,
+    filter 220ms ease;
 }
 
-.world-country-active:hover {
-  stroke: rgba(242, 230, 207, 0.82);
-  stroke-width: 1.25;
-  filter: drop-shadow(0 0 10px rgba(217, 164, 65, 0.34));
+.world-country-active:hover,
+.world-country-active:focus-visible,
+.world-country-active.world-country-hovered {
+  transform: perspective(500px) translate(3px, -5px) scale(1.07);
+  stroke: rgba(242, 230, 207, 0.85);
+  stroke-width: 1.1;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 12px rgba(217, 164, 65, 0.4));
+}
+
+/* Each colored country falls from the sky toward the viewer (large,
+   foreground) then shrinks and tilts flat into its true place on the map
+   with a small bounce. Bigger countries (lower --country-delay rank) land
+   first. isDropping is plain React state (see WorldMap.tsx), so hover/
+   tooltip re-renders can never resurrect this class after the animation
+   has finished. */
+.world-country-drop {
+  animation: worldCountryDrop 1400ms cubic-bezier(0.22, 0.8, 0.32, 1) both;
+  animation-delay: var(--country-delay, 0ms);
+}
+
+@keyframes worldCountryDrop {
+  0% {
+    opacity: 0;
+    transform: perspective(900px) translateY(-64px) rotateX(22deg) scale(1.8);
+  }
+  55% {
+    opacity: 1;
+    transform: perspective(900px) translateY(4px) rotateX(-4deg) scale(0.97);
+  }
+  76% {
+    transform: perspective(900px) translateY(-2px) rotateX(2deg) scale(1.012);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(900px) translateY(0) rotateX(0deg) scale(1);
+  }
 }
 
 .world-map-legend {
-  justify-self: end;
+  align-self: flex-end;
+  margin-top: 14px;
   display: grid;
   gap: 5px;
   width: min(100%, 180px);
@@ -1376,37 +1437,85 @@ h1 {
   gap: 10px;
 }
 
-.country-row {
+.country-bar-row {
   display: grid;
-  grid-template-columns: 1fr auto auto;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 0;
+  gap: 8px;
+  padding: 11px 10px;
+  margin: 0 -10px;
   border-bottom: 1px solid var(--line);
+  border-radius: 6px;
+  transition: background 180ms ease;
 }
 
-.country-row:last-child {
+.country-bar-row:last-child {
   border-bottom: 0;
 }
 
-.country-row span {
+.country-bar-row-linked {
+  background: rgba(217, 164, 65, 0.1);
+}
+
+.country-bar-row-linked .country-bar-heading > span {
+  color: rgba(255, 217, 143, 1);
+}
+
+.country-bar-row-linked .country-bar-track {
+  background: rgba(217, 164, 65, 0.16);
+}
+
+.country-bar-row-linked .country-bar-fill {
+  box-shadow: 0 0 16px rgba(217, 164, 65, 0.45);
+}
+
+.country-bar-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.country-bar-heading > span {
   color: var(--paper);
   font-weight: 800;
 }
 
-.country-row strong {
+.country-bar-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.country-bar-meta strong {
   color: var(--accent);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.35rem;
   font-weight: 500;
 }
 
-.country-row small {
-  min-width: 38px;
+.country-bar-meta small {
+  min-width: 32px;
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 800;
   text-align: right;
+}
+
+.country-bar-track {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(247, 238, 220, 0.08);
+  overflow: hidden;
+}
+
+.country-bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(217, 164, 65, 0.55), rgba(217, 164, 65, 0.95));
+  box-shadow: 0 0 12px rgba(217, 164, 65, 0.25);
 }
 
 .recommendations-section {

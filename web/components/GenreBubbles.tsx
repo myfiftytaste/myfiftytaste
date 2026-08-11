@@ -62,13 +62,14 @@ export default function GenreBubbles({
 }) {
   const cloudRef = useRef<HTMLDivElement | null>(null);
   const listRef = useRef<HTMLDivElement | null>(null);
-  const barRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const barRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   const [tooltip, setTooltip] = useState<{
     bubble: GenreBubble;
     x: number;
     y: number;
   } | null>(null);
   const [isDropping, setIsDropping] = useState(false);
+  const [hoveredGenre, setHoveredGenre] = useState<string | null>(null);
   const dropTimeoutRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
@@ -129,11 +130,13 @@ export default function GenreBubbles({
     const node = listRef.current;
     if (!node || !genreBubbles || genreBubbles.length === 0) return;
 
-    const targets = genreBubbles.slice(0, 6).map((bubble) => clamp((bubble.share ?? 0) * 100, 0, 100));
+    const barBubbles = genreBubbles.slice(0, 6);
+    const targets = barBubbles.map((bubble) => clamp((bubble.share ?? 0) * 100, 0, 100));
+    const keys = barBubbles.map((bubble) => bubble.genre);
 
     function setWidths(fractionOfTarget: number) {
-      barRefs.current.forEach((el, index) => {
-        el?.style.setProperty("width", `${targets[index] * fractionOfTarget}%`);
+      keys.forEach((key, index) => {
+        barRefs.current.get(key)?.style.setProperty("width", `${targets[index] * fractionOfTarget}%`);
       });
     }
 
@@ -155,11 +158,11 @@ export default function GenreBubbles({
           const startTime = performance.now();
           function tick(now: number) {
             let stillRunning = false;
-            barRefs.current.forEach((el, index) => {
+            keys.forEach((key, index) => {
               const elapsed = now - startTime - index * stagger;
               const t = clamp(elapsed / duration, 0, 1);
               if (elapsed < duration) stillRunning = true;
-              el?.style.setProperty("width", `${targets[index] * easeOutCubic(t)}%`);
+              barRefs.current.get(key)?.style.setProperty("width", `${targets[index] * easeOutCubic(t)}%`);
             });
             if (stillRunning) rafId = requestAnimationFrame(tick);
           }
@@ -242,6 +245,19 @@ export default function GenreBubbles({
     setTooltip(null);
   }
 
+  function enterBubble(
+    bubble: GenreBubble,
+    event: ReactPointerEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>,
+  ) {
+    showTooltip(bubble, event);
+    setHoveredGenre(bubble.genre);
+  }
+
+  function leaveBubble() {
+    closeTooltip();
+    setHoveredGenre(null);
+  }
+
   return (
     <section className="genre-bubbles-section" aria-label="Constellation des genres">
       <div className="sectionHeading">
@@ -263,7 +279,7 @@ export default function GenreBubbles({
               "--bubble-z": position.z,
               "--fall-delay": `${index * 90}ms`,
             } as CSSProperties;
-            const isActive = tooltip?.bubble.genre === bubble.genre;
+            const isActive = tooltip?.bubble.genre === bubble.genre || hoveredGenre === bubble.genre;
             return (
               <div
                 className={`genre-bubble${isDropping ? " genre-bubble-drop" : ""}${isActive ? " genre-bubble-active" : ""}`}
@@ -272,12 +288,15 @@ export default function GenreBubbles({
                 role="button"
                 tabIndex={0}
                 aria-label={`${bubble.genre}: ${bubble.count} occurrences${share ? `, ${share}` : ""}`}
-                onPointerEnter={(event) => showTooltip(bubble, event)}
+                onPointerEnter={(event) => enterBubble(bubble, event)}
                 onPointerMove={moveTooltip}
-                onPointerLeave={closeTooltip}
-                onClick={(event) => showTooltip(bubble, event)}
-                onFocus={(event) => showTooltipFromElement(bubble, event.currentTarget)}
-                onBlur={closeTooltip}
+                onPointerLeave={leaveBubble}
+                onClick={(event) => enterBubble(bubble, event)}
+                onFocus={(event) => {
+                  showTooltipFromElement(bubble, event.currentTarget);
+                  setHoveredGenre(bubble.genre);
+                }}
+                onBlur={leaveBubble}
               >
                 <strong>{bubbleLabel(bubble.genre)}</strong>
                 <span>{bubble.count}</span>
@@ -314,23 +333,31 @@ export default function GenreBubbles({
         </div>
 
         <div className="genre-bubbles-list" ref={listRef}>
-          {(() => {
-            barRefs.current = [];
-            return listBubbles.map((bubble, index) => (
-              <div className="genre-bar-row" key={bubble.genre}>
-                <div className="genre-bar-heading">
-                  <span>{bubble.genre}</span>
-                  <span className="genre-bar-meta">
-                    <strong>{bubble.count}</strong>
-                    <small>{formatShare(bubble.share) ?? "n/a"}</small>
-                  </span>
-                </div>
-                <div className="genre-bar-track">
-                  <div className="genre-bar-fill" ref={(el) => { barRefs.current[index] = el; }} />
-                </div>
+          {listBubbles.map((bubble) => (
+            <div
+              className={`genre-bar-row${hoveredGenre === bubble.genre ? " genre-bar-row-linked" : ""}`}
+              key={bubble.genre}
+              onMouseEnter={() => setHoveredGenre(bubble.genre)}
+              onMouseLeave={() => setHoveredGenre(null)}
+            >
+              <div className="genre-bar-heading">
+                <span>{bubble.genre}</span>
+                <span className="genre-bar-meta">
+                  <strong>{bubble.count}</strong>
+                  <small>{formatShare(bubble.share) ?? "n/a"}</small>
+                </span>
               </div>
-            ));
-          })()}
+              <div className="genre-bar-track">
+                <div
+                  className="genre-bar-fill"
+                  ref={(el) => {
+                    if (el) barRefs.current.set(bubble.genre, el);
+                    else barRefs.current.delete(bubble.genre);
+                  }}
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
