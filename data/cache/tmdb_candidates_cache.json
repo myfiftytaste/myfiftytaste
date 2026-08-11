@@ -43915,5 +43915,29 @@
     "overview": "Sophie is both attracted to boys and girls. She is torn between Nicolas and Mathilde.",
     "adult": false,
     "fetched_at": 1786481461.0896604
+  },
+  "25095": {
+    "tmdb_id": 25095,
+    "title": "Wuthering Heights",
+    "release_date": "1992-10-16",
+    "runtime": 105,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "original_language": "English",
+    "directors": [
+      "Peter Kosminsky"
+    ],
+    "vote_average": 6.6,
+    "vote_count": 320,
+    "popularity": 5.7863,
+    "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
+    "adult": false,
+    "fetched_at": 1786482922.0591488
   }
 }

@@ -23,7 +23,7 @@
   Relaxation steps used: 0 (0 = full criteria satisfied).
   Difference: director=Haruo Sotozaki, runtime=156.0, year=2025.
 - deep_cut: The Devil's Backbone — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
-  Countries: Spain, Mexico (non-USA).
+  Countries: Mexico, Spain (non-USA).
   Primary genres: Fantasy, Drama.
   Popularity: high (tmdb_vote_count=1384.0).
   Relaxation steps used: 0 (0 = full criteria satisfied).
@@ -91,7 +91,7 @@
 - Year: 2001
 - Slug: tmdb-1433-2001
 - Genres: Fantasy, Drama, Horror, Thriller
-- Countries: Spain, Mexico
+- Countries: Mexico, Spain
 - Director: Guillermo del Toro
 - Reason codes: genre_match, country_match, runtime_match, non_us_angle, new_country_discovery
 - Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.

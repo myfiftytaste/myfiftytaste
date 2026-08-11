@@ -92,8 +92,7 @@
         "Crime"
       ],
       "countries": [
-        "Colombia",
-        "USA"
+        "Colombia"
       ],
       "runtime": 101.0,
       "average_rating": 3.6,
@@ -135,8 +134,7 @@
         "USA"
       ],
       [
-        "Colombia",
-        "USA"
+        "Colombia"
       ]
     ],
     "popularity": [

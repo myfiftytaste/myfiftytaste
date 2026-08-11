@@ -23,7 +23,7 @@
   Relaxation steps used: 0 (0 = full criteria satisfied).
   Difference: director=Olivia Newman, runtime=114.0, year=2026.
 - deep_cut: The 100 Year-Old Man Who Climbed Out the Window and Disappeared — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
-  Countries: Sweden, Hungary, Croatia, Turkey, Denmark, Netherlands, USA, France (non-USA).
+  Countries: Sweden, Hungary, Croatia, Turkey, Denmark, Netherlands, France (non-USA).
   Primary genres: Adventure, Comedy.
   Popularity: high (tmdb_vote_count=1029.0).
   Relaxation steps used: 0 (0 = full criteria satisfied).
@@ -91,7 +91,7 @@
 - Year: 2013
 - Slug: tmdb-145247-2013
 - Genres: Adventure, Comedy, Drama
-- Countries: Sweden, Hungary, Croatia, Turkey, Denmark, Netherlands, USA, France
+- Countries: Sweden, Hungary, Croatia, Turkey, Denmark, Netherlands, France
 - Director: Felix Herngren
 - Reason codes: genre_match, country_match, runtime_match, non_us_angle, new_country_discovery
 - Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.

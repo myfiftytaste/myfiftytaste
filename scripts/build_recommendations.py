@@ -498,6 +498,17 @@ def reason_text(slot: str, record: dict[str, Any], context: dict[str, Any]) -> s
     return "Un pari récent et bien accueilli, qui prend un peu de distance avec tes habitudes."
 
 
+def display_countries(record: dict[str, Any], slot: str, context: dict[str, Any]) -> list[str]:
+    countries = [normalize_country_name(value) for value in list_values(record.get("countries")) if normalize_country_name(value)]
+    if slot != "deep_cut" or len(countries) <= 1:
+        return countries
+    seen_countries = seen_countries_from_context(context)
+    unseen = [country for country in countries if country not in seen_countries]
+    filtered = [country for country in countries if country != "USA"] or countries
+    ordered = unseen + [country for country in filtered if country not in unseen]
+    return ordered or countries
+
+
 def recommendation_payload(slot: str, record: dict[str, Any], score_value: float, score: dict[str, Any], context: dict[str, Any]) -> dict[str, Any]:
     directors = list_values(record.get("directors"))
     year = score.get("year")
@@ -512,7 +523,7 @@ def recommendation_payload(slot: str, record: dict[str, Any], score_value: float
         "reason_codes": reason_codes_for(record, score, context, slot),
         "reason_text": reason_text(slot, record, context),
         "genres": list_values(record.get("genres")),
-        "countries": [normalize_country_name(value) for value in list_values(record.get("countries")) if normalize_country_name(value)],
+        "countries": display_countries(record, slot, context),
         "runtime": rounded(record.get("runtime"), 0),
         "average_rating": rounded(record.get("average_rating"), 2),
         "rating_source": "tmdb",

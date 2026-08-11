@@ -1559,9 +1559,9 @@
         "Romance"
       ],
       "countries": [
+        "Ireland",
         "France",
         "Greece",
-        "Ireland",
         "Netherlands",
         "UK"
       ],
@@ -1611,9 +1611,9 @@
       "wild_card": "Le pari"
     },
     "slot_descriptions": {
-      "safe_pick": "Un film confidentiel et plus ancien, proche de tes genres préférés.",
-      "deep_cut": "Un film d’un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts.",
-      "wild_card": "Un film récent et bien accueilli, qui change un peu d’angle par rapport à tes habitudes."
+      "safe_pick": "Un film proche de tes thèmes d'affection",
+      "deep_cut": "Un film d'un pays que tu n'as pas encore exploré",
+      "wild_card": "Un film récent, un peu décalé par rapport à tes goûts"
     }
   },
   "cards": [

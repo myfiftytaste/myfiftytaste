@@ -23,7 +23,7 @@
   Relaxation steps used: 0 (0 = full criteria satisfied).
   Difference: director=Lauren Montgomery, runtime=99.0, year=2026.
 - deep_cut: The Lobster — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
-  Countries: France, Greece, Ireland, Netherlands, UK (non-USA).
+  Countries: Ireland, France, Greece, Netherlands, UK (non-USA).
   Primary genres: Comedy, Drama.
   Popularity: high (tmdb_vote_count=6996.0).
   Relaxation steps used: 0 (0 = full criteria satisfied).
@@ -91,7 +91,7 @@
 - Year: 2015
 - Slug: tmdb-254320-2015
 - Genres: Comedy, Drama, Romance
-- Countries: France, Greece, Ireland, Netherlands, UK
+- Countries: Ireland, France, Greece, Netherlands, UK
 - Director: Yorgos Lanthimos
 - Reason codes: genre_match, country_match, runtime_match, non_us_angle, new_country_discovery
 - Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.

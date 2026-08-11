@@ -98,9 +98,9 @@
         "Thriller"
       ],
       "countries": [
+        "Italy",
         "Belgium",
         "France",
-        "Italy",
         "Spain"
       ],
       "runtime": 106.0,
@@ -145,9 +145,9 @@
         "Australia"
       ],
       [
+        "Italy",
         "Belgium",
         "France",
-        "Italy",
         "Spain"
       ]
     ],
@@ -338,11 +338,11 @@
       "quality_recent": 60
     },
     "unique_ids_considered": 353,
-    "details_fetched": 0,
-    "details_cache_hits": 353,
+    "details_fetched": 1,
+    "details_cache_hits": 352,
     "candidates_after_normalize": 350,
     "candidates_excluded_seen": 3,
-    "requests_made": 20,
+    "requests_made": 21,
     "errors": 0
   },
   "scoring_notes": [

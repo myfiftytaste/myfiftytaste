@@ -23,7 +23,7 @@
   Relaxation steps used: 0 (0 = full criteria satisfied).
   Difference: director=Lauren Montgomery, runtime=99.0, year=2026.
 - deep_cut: The Last Circus — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
-  Countries: Belgium, France, Italy, Spain (non-USA).
+  Countries: Italy, Belgium, France, Spain (non-USA).
   Primary genres: Adventure, Comedy.
   Popularity: high (tmdb_vote_count=449.0).
   Relaxation steps used: 0 (0 = full criteria satisfied).
@@ -91,7 +91,7 @@
 - Year: 2010
 - Slug: tmdb-56812-2010
 - Genres: Adventure, Comedy, Drama, Horror, Thriller
-- Countries: Belgium, France, Italy, Spain
+- Countries: Italy, Belgium, France, Spain
 - Director: Álex de la Iglesia
 - Reason codes: genre_match, country_match, runtime_match, non_us_angle, new_country_discovery
 - Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.

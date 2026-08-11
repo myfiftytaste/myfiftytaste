@@ -23,7 +23,7 @@
   Relaxation steps used: 0 (0 = full criteria satisfied).
   Difference: director=Olivia Newman, runtime=114.0, year=2026.
 - deep_cut: Maria Full of Grace — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
-  Countries: Colombia, USA (non-USA).
+  Countries: Colombia (non-USA).
   Primary genres: Drama, Thriller.
   Popularity: mid (tmdb_vote_count=435.0).
   Relaxation steps used: 0 (0 = full criteria satisfied).
@@ -91,7 +91,7 @@
 - Year: 2004
 - Slug: tmdb-436-2004
 - Genres: Drama, Thriller, Crime
-- Countries: Colombia, USA
+- Countries: Colombia
 - Director: Joshua Marston
 - Reason codes: genre_match, country_match, runtime_match, non_us_angle, new_country_discovery
 - Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.

@@ -116,7 +116,6 @@ export default function Recommendations({
                 <p>{slotDescriptions[recommendation.slot] ?? recommendation.reason_text}</p>
                 <div className="recommendation-footer">
                   {recommendation.director ? <span>{recommendation.director}</span> : <span>{recommendation.slug}</span>}
-                  {recommendation.average_rating ? <strong>{recommendation.average_rating.toFixed(2)}</strong> : null}
                 </div>
               </div>
             </>

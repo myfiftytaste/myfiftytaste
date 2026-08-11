@@ -23,7 +23,7 @@
   Relaxation steps used: 0 (0 = full criteria satisfied).
   Difference: director=Olivia Newman, runtime=114.0, year=2026.
 - deep_cut: Boyka: Undisputed IV — a production country new to the user, filtered to stay close to their usual taste ("Le Détour").
-  Countries: Bulgaria, USA (non-USA).
+  Countries: Bulgaria (non-USA).
   Primary genres: Action, Drama.
   Popularity: high (tmdb_vote_count=1485.0).
   Relaxation steps used: 0 (0 = full criteria satisfied).
@@ -91,7 +91,7 @@
 - Year: 2016
 - Slug: tmdb-348893-2016
 - Genres: Action, Drama, Thriller, Crime
-- Countries: Bulgaria, USA
+- Countries: Bulgaria
 - Director: Todor Chapkanov
 - Reason codes: genre_match, country_match, non_us_angle, new_country_discovery
 - Reason: Un détour vers un pays que tu n’as pas encore exploré, tout en restant proche de tes goûts habituels.
