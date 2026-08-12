@@ -2471,3 +2471,262 @@ a.recommendation-card:hover {
   cursor: default;
   transform: none;
 }
+
+/* ---- /hall-of-fame page ---- */
+.hof-shell {
+  background: var(--hof-bg);
+  min-height: 100vh;
+  color: var(--hof-cream);
+}
+
+.hof-shell .siteHeader {
+  justify-content: center;
+}
+
+.hofMasthead {
+  text-align: center;
+  padding: 12px 0 40px;
+}
+
+.hofMastheadTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: clamp(2.2rem, 4vw, 2.9rem);
+  color: var(--hof-cream);
+  margin: 0;
+}
+
+.hofLedeCentered {
+  margin: 12px auto 0;
+}
+
+.hofSeasonMeta {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 22px;
+  font-size: 12px;
+  color: var(--hof-muted-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  flex-wrap: wrap;
+}
+
+.hofSeasonMeta b {
+  color: var(--hof-gold);
+  font-weight: 600;
+}
+
+.hofMapNote {
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--hof-muted-dim);
+  font-style: italic;
+  margin-top: 16px;
+}
+
+.hofEmptySeason {
+  text-align: center;
+  padding: 40px 0 60px;
+  color: var(--hof-muted);
+  font-size: 14px;
+}
+
+.hofPodiumPair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin-top: 8px;
+  padding-bottom: 40px;
+}
+
+.hofPodiumBlock {
+  background: var(--hof-bg-card);
+  border: 1px solid var(--hof-line);
+  padding: 30px 26px 26px;
+  position: relative;
+}
+
+.hofPodiumBlock h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 19px;
+  text-align: center;
+  color: var(--hof-cream);
+  margin: 0;
+}
+
+.hofPodiumSub {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--hof-muted);
+  margin: 6px 0 0;
+}
+
+.hofPodiumEmpty {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--hof-muted-dim);
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.hofPodium {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+  position: relative;
+  min-height: 170px;
+}
+
+.hofPodium::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 180px;
+  height: 160px;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, var(--hof-gold-dim), transparent 75%);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.hofStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.hofStep:hover .hofPseudo {
+  color: var(--hof-gold-bright);
+  text-decoration: underline;
+}
+
+.hofStep:hover .hofAvatar {
+  filter: brightness(1.15);
+}
+
+.hofAvatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #141008;
+  background: var(--hof-muted);
+  margin-bottom: 10px;
+  border: 2px solid var(--hof-bg-card);
+  box-shadow: 0 0 0 1px var(--hof-line);
+}
+
+.hofPseudo {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--hof-cream);
+  text-align: center;
+}
+
+.hofMetric {
+  font-size: 11px;
+  color: var(--hof-muted);
+  margin-top: 2px;
+  text-align: center;
+}
+
+.hofRiser {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 2px 2px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  position: relative;
+}
+
+.hofRiser span {
+  font-size: 20px;
+}
+
+.hofStep1 .hofAvatar {
+  background: var(--hof-gold-bright);
+}
+
+.hofStep1 .hofRiser {
+  height: 118px;
+  background: linear-gradient(180deg, var(--hof-gold), #8a6c2c);
+  color: #141008;
+  animation: hofFloat 5.2s ease-in-out infinite;
+}
+
+.hofStep2 .hofAvatar {
+  background: var(--hof-silver);
+}
+
+.hofStep2 .hofRiser {
+  height: 80px;
+  background: linear-gradient(180deg, #52493a, #2c261c);
+  color: var(--hof-silver);
+  animation: hofFloat 5.6s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.hofStep3 .hofAvatar {
+  background: var(--hof-bronze);
+}
+
+.hofStep3 .hofRiser {
+  height: 58px;
+  background: linear-gradient(180deg, #4a3a29, #29211a);
+  color: var(--hof-bronze);
+  animation: hofFloat 4.8s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+.hofStep1 {
+  order: 2;
+}
+
+.hofStep2 {
+  order: 1;
+}
+
+.hofStep3 {
+  order: 3;
+}
+
+@keyframes hofFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hofRiser {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .hofPodiumPair {
+    grid-template-columns: 1fr;
+  }
+}
