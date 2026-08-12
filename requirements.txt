@@ -3,3 +3,4 @@ python-dotenv
 feedparser
 pandas
 openpyxl
+psycopg[binary]
