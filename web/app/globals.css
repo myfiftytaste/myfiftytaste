@@ -2730,3 +2730,101 @@ a.recommendation-card:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---- Hall of Fame continent map ---- */
+.hofContinentsSection {
+  padding-bottom: 52px;
+}
+
+.hofContinentsIntro {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.hofContinentsTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--hof-cream);
+  margin: 0;
+}
+
+.hofMapWrap {
+  margin-top: 32px;
+  background: var(--hof-bg-card);
+  border: 1px solid var(--hof-line);
+  padding: 22px;
+}
+
+.hofWorldMap {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hofGraticule line {
+  stroke: var(--hof-line-soft);
+  stroke-width: 1;
+}
+
+.hofZone {
+  fill: rgba(201, 162, 75, 0.05);
+  stroke: var(--hof-line);
+  stroke-width: 1.2;
+}
+
+.hofZoneLabel {
+  fill: var(--hof-muted-dim);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-anchor: middle;
+}
+
+.hofPin {
+  cursor: pointer;
+}
+
+.hofPinRing {
+  fill: var(--hof-gold);
+  stroke: var(--hof-bg-card);
+  stroke-width: 2;
+  transition: transform 150ms ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.hofPin:hover .hofPinRing {
+  transform: scale(1.15);
+}
+
+.hofPinInitial {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 13px;
+  fill: #141008;
+  text-anchor: middle;
+}
+
+.hofPinName {
+  font-size: 10px;
+  fill: var(--hof-cream);
+  text-anchor: middle;
+  font-weight: 600;
+}
+
+.hofPin:hover .hofPinName {
+  fill: var(--hof-gold-bright);
+  text-decoration: underline;
+}
+
+.hofPinMetric {
+  font-size: 8.5px;
+  fill: var(--hof-muted);
+  text-anchor: middle;
+}
+
+@media (max-width: 760px) {
+  .hofZoneLabel {
+    font-size: 7.5px;
+  }
+}

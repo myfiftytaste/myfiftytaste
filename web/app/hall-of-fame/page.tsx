@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ContinentMap from "../../components/hall-of-fame/ContinentMap";
 import Podium from "../../components/hall-of-fame/Podium";
 import { currentMonth, getMonthlyRankings, nextMonthLabel, seasonTitle } from "../../lib/hallOfFame";
 
@@ -87,6 +88,19 @@ export default async function HallOfFamePage() {
           </div>
         </section>
       )}
+
+      {rankings.participantCount > 0 ? (
+        <section className="hofContinentsSection" aria-label="Cinéma du monde par continent">
+          <div className="hofContinentsIntro">
+            <h2 className="hofContinentsTitle">Le cinéma du monde, par continent</h2>
+            <p className="hofLede hofLedeCentered">
+              Basé sur la provenance des films regardés — pas sur la localisation du profil Letterboxd. Un seul
+              cinéphile mis en avant par continent, seulement s’il y a une consommation claire.
+            </p>
+          </div>
+          <ContinentMap winners={rankings.continentWinners} />
+        </section>
+      ) : null}
     </main>
   );
 }

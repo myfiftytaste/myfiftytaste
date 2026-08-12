@@ -119,10 +119,45 @@ function formatPercent(value: number): string {
   return `${Math.round(value)}%`;
 }
 
+export const CONTINENTS = ["Europe", "Asie", "Afrique", "Amérique du Nord", "Amérique du Sud", "Océanie"] as const;
+export type Continent = (typeof CONTINENTS)[number];
+
+export type ContinentWinner = {
+  username: string;
+  filmCount: number;
+};
+
+function continentWinners(snapshots: MonthlySnapshot[]): Partial<Record<Continent, ContinentWinner>> {
+  const winners: Partial<Record<Continent, ContinentWinner>> = {};
+
+  for (const continent of CONTINENTS) {
+    let best: { snapshot: MonthlySnapshot; value: number } | null = null;
+    for (const snapshot of snapshots) {
+      const value = snapshot.continent_consumption?.[continent] ?? 0;
+      if (value <= 0) continue;
+      if (
+        !best ||
+        value > best.value ||
+        (value === best.value && snapshot.first_seen_at.localeCompare(best.snapshot.first_seen_at) < 0)
+      ) {
+        best = { snapshot, value };
+      }
+    }
+    // A continent nobody watched a film from this month gets no winner —
+    // never an invented/default attribution (brief section 26).
+    if (best) {
+      winners[continent] = { username: best.snapshot.username, filmCount: best.value };
+    }
+  }
+
+  return winners;
+}
+
 export type MonthlyRankings = {
   month: string;
   participantCount: number;
   podiums: PodiumCategory[];
+  continentWinners: Partial<Record<Continent, ContinentWinner>>;
 };
 
 export async function getMonthlyRankings(month: string): Promise<MonthlyRankings> {
@@ -174,5 +209,5 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
     },
   ];
 
-  return { month, participantCount: optedIn.length, podiums };
+  return { month, participantCount: optedIn.length, podiums, continentWinners: continentWinners(optedIn) };
 }
