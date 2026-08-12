@@ -8,11 +8,14 @@ import HallOfFameCTA from "./hall-of-fame/HallOfFameCTA";
 import HighlightsCarousel, { type Highlights } from "./HighlightsCarousel";
 import LogTimeMini from "./LogTimeMini";
 import RadarChart from "./RadarChart";
+import DiscoveryTipCard from "./recap/DiscoveryTipCard";
+import ProfileBadgesHeader from "./recap/ProfileBadgesHeader";
 import Recommendations from "./Recommendations";
 import RuntimeFilmstrip from "./RuntimeFilmstrip";
 import SeverityGauge from "./SeverityGauge";
 import WorldMap from "./WorldMap";
 import { useVisualTheme } from "./VisualThemeProvider";
+import type { Badge } from "../lib/badgeSelection";
 
 export type Card = {
   id: string;
@@ -163,7 +166,7 @@ function formatPercent(value: number) {
   return `${Math.round(value * 100)}%`;
 }
 
-export default function ProfileView({ profile }: { profile: DisplayProfile }) {
+export default function ProfileView({ profile, badges = [] }: { profile: DisplayProfile; badges?: Badge[] }) {
   const {
     hero,
     radar_scores,
@@ -207,6 +210,11 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
         </div>
       </header>
 
+      <section className="headerBand" aria-label="Profil et astuce de découverte">
+        <ProfileBadgesHeader username={hero.username} letterboxdUrl={letterboxdProfileUrl} badges={badges} />
+        <DiscoveryTipCard />
+      </section>
+
       <section className="heroTop heroTopWithTheme">
         <AverageRatingCard
           average={averageRating}
@@ -214,12 +222,6 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
           detectedFilmsCount={detectedFilmsCount}
         />
         <div className="heroPanelWrap">
-          <p className="heroWelcomePlain">
-            Bienvenue,{" "}
-            <a href={letterboxdProfileUrl} rel="noreferrer" target="_blank">
-              @{hero.username}
-            </a>
-          </p>
           <p className="heroCoverageLine" tabIndex={0}>
             {detectedFilmsCount}/{targetFilmsCount} films analysés, {formatPercent(hero.metadata_coverage)}{" "}
             couverts par l&apos;algorithme &quot;Fifty&quot;

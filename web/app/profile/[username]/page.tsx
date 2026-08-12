@@ -1,16 +1,18 @@
 import Image from "next/image";
 import ProfileView from "../../../components/ProfileView";
+import { getBadgesForUser } from "../../../lib/badges";
 import { getAvailableUsernames, getProfile } from "../../../lib/profiles";
 
 export function generateStaticParams() {
   return getAvailableUsernames().map((username) => ({ username }));
 }
 
-export default function ProfilePage({ params }: { params: { username: string } }) {
+export default async function ProfilePage({ params }: { params: { username: string } }) {
   const profile = getProfile(decodeURIComponent(params.username));
 
   if (profile) {
-    return <ProfileView profile={profile} />;
+    const badges = await getBadgesForUser(profile.hero.username);
+    return <ProfileView profile={profile} badges={badges} />;
   }
 
   return (

@@ -508,16 +508,6 @@ h1 {
   min-width: 0;
 }
 
-.heroWelcomePlain {
-  margin: 0;
-  padding: 0 2px;
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.3rem, 2vw, 1.7rem);
-  font-weight: 500;
-  line-height: 1.15;
-}
-
 .heroCoverageLine {
   position: relative;
   margin: 0;
@@ -554,17 +544,142 @@ h1 {
   transform: translateY(0);
 }
 
-.heroWelcomePlain a {
-  color: var(--ink);
-  text-decoration: none;
-  border-bottom: 1px solid var(--line);
-  transition: color 160ms ease, border-color 160ms ease;
+/* ---- New top-of-recap header: badges (left) + discovery tip (right) ---- */
+.headerBand {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
 }
 
-.heroWelcomePlain a:hover,
-.heroWelcomePlain a:focus-visible {
+.headerCard {
+  flex: 1 1 320px;
+  max-width: 480px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 26px 24px;
+}
+
+.headerCardIdentity {
+  text-align: center;
+}
+
+.headerAvatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: #141008;
+  background: var(--accent);
+}
+
+.headerPseudo {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  color: var(--paper);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.headerPseudo:hover,
+.headerPseudo:focus-visible {
   color: var(--accent);
   border-color: var(--accent);
+}
+
+.headerCardTip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerCardTip h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--paper);
+  margin: 8px 0 0;
+}
+
+.headerTipText {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+
+.badgeRow {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.badgePlaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 108px;
+  padding: 14px 8px 11px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(201, 162, 75, 0.13), rgba(201, 162, 75, 0.02));
+  border: 1px solid rgba(201, 162, 75, 0.28);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.badgePlaque::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background: #c9a24b;
+}
+
+.badgePlaque:hover {
+  transform: translateY(-3px);
+  border-color: #eccb7d;
+  box-shadow: 0 10px 26px -10px rgba(201, 162, 75, 0.4);
+}
+
+.badgeIcon {
+  width: 18px;
+  height: 18px;
+  fill: #eccb7d;
+}
+
+.badgeLabel {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 11.5px;
+  color: var(--paper);
+  text-align: center;
+  line-height: 1.25;
+}
+
+.badgeMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  font-size: 11px;
 }
 
 .severityCard {
