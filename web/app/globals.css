@@ -2865,10 +2865,67 @@ a.recommendation-card:hover {
 }
 
 .hofMapWrap {
+  position: relative;
   margin-top: 32px;
   background: var(--hof-bg-card);
   border: 1px solid var(--hof-line);
   padding: 22px;
+}
+
+.hofPinTooltip {
+  position: absolute;
+  z-index: 5;
+  width: min(220px, 60%);
+  transform: translate(-50%, calc(-100% - 20px));
+  padding: 12px 13px;
+  border: 1px solid rgba(217, 164, 65, 0.34);
+  border-radius: 8px;
+  background: linear-gradient(145deg, rgba(217, 164, 65, 0.1), transparent 48%), rgba(11, 10, 8, 0.97);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.45);
+  color: var(--hof-cream);
+  pointer-events: none;
+}
+
+.hofPinTooltip strong {
+  display: block;
+  color: var(--hof-cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.05;
+}
+
+.hofPinTooltip > span {
+  display: block;
+  margin-top: 5px;
+  color: var(--hof-gold);
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.hofPinTooltip ul {
+  display: grid;
+  gap: 4px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--hof-muted);
+  font-size: 0.76rem;
+  line-height: 1.32;
+}
+
+.hofPinTooltip li::before {
+  content: "•";
+  margin-right: 7px;
+  color: var(--hof-gold);
+}
+
+.hofPinTooltip em {
+  margin-left: 6px;
+  color: rgba(237, 228, 211, 0.48);
+  font-style: normal;
 }
 
 .hofWorldMap {

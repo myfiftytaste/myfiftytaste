@@ -1,7 +1,7 @@
 {
   "month": "2026-08",
   "username": "picolifl",
-  "first_seen_at": "2026-08-12T11:00:16.387917+00:00",
+  "first_seen_at": "2026-08-12T11:24:19.930564+00:00",
   "opted_in": null,
   "opted_in_at": null,
   "metrics_snapshot": {
@@ -20,5 +20,138 @@
     "Amérique du Nord": 20,
     "Amérique du Sud": 1,
     "Océanie": 0
+  },
+  "continent_films": {
+    "Europe": [
+      {
+        "title": "De Gaulle: Résistance",
+        "year": 2026,
+        "slug": "de-gaulle-resistance"
+      },
+      {
+        "title": "Jim Queen and the Quest for Chloroqueer",
+        "year": 2026,
+        "slug": "jim-queen"
+      },
+      {
+        "title": "Inception",
+        "year": 2010,
+        "slug": "inception"
+      },
+      {
+        "title": "Inside Llewyn Davis",
+        "year": 2013,
+        "slug": "inside-llewyn-davis"
+      },
+      {
+        "title": "Now You See Me",
+        "year": 2013,
+        "slug": "now-you-see-me"
+      },
+      {
+        "title": "The Favourite",
+        "year": 2018,
+        "slug": "the-favourite"
+      },
+      {
+        "title": "Burn After Reading",
+        "year": 2008,
+        "slug": "burn-after-reading"
+      },
+      {
+        "title": "Persepolis",
+        "year": 2007,
+        "slug": "persepolis"
+      }
+    ],
+    "Asie": [
+      {
+        "title": "Decision to Leave",
+        "year": 2022,
+        "slug": "decision-to-leave"
+      },
+      {
+        "title": "It Was Just an Accident",
+        "year": 2025,
+        "slug": "it-was-just-an-accident"
+      },
+      {
+        "title": "Train to Busan",
+        "year": 2016,
+        "slug": "train-to-busan"
+      },
+      {
+        "title": "How to Make Millions Before Grandma Dies",
+        "year": 2024,
+        "slug": "how-to-make-millions-before-grandma-dies"
+      },
+      {
+        "title": "Hiroshima Mon Amour",
+        "year": 1959,
+        "slug": "hiroshima-mon-amour"
+      },
+      {
+        "title": "The Departed",
+        "year": 2006,
+        "slug": "the-departed"
+      }
+    ],
+    "Afrique": [
+      {
+        "title": "Omar Killed Me",
+        "year": 2011,
+        "slug": "omar-killed-me"
+      }
+    ],
+    "Amérique du Nord": [
+      {
+        "title": "De Gaulle: Résistance",
+        "year": 2026,
+        "slug": "de-gaulle-resistance"
+      },
+      {
+        "title": "Inception",
+        "year": 2010,
+        "slug": "inception"
+      },
+      {
+        "title": "Now You See Me",
+        "year": 2013,
+        "slug": "now-you-see-me"
+      },
+      {
+        "title": "The Favourite",
+        "year": 2018,
+        "slug": "the-favourite"
+      },
+      {
+        "title": "Burn After Reading",
+        "year": 2008,
+        "slug": "burn-after-reading"
+      },
+      {
+        "title": "Sully",
+        "year": 2016,
+        "slug": "sully"
+      },
+      {
+        "title": "Obsession",
+        "year": 2025,
+        "slug": "obsession-2025"
+      },
+      {
+        "title": "Persepolis",
+        "year": 2007,
+        "slug": "persepolis"
+      }
+    ],
+    "Amérique du Sud": [
+      {
+        "title": "I'm Still Here",
+        "year": 2024,
+        "slug": "im-still-here-2024"
+      }
+    ],
+    "Océanie": []
   }
 }

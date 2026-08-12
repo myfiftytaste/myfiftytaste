@@ -1,7 +1,7 @@
 {
   "month": "2026-08",
   "username": "tanguytare",
-  "first_seen_at": "2026-08-12T11:00:15.058010+00:00",
+  "first_seen_at": "2026-08-12T11:24:18.433722+00:00",
   "opted_in": null,
   "opted_in_at": null,
   "metrics_snapshot": {
@@ -20,5 +20,147 @@
     "Amérique du Nord": 22,
     "Amérique du Sud": 2,
     "Océanie": 0
+  },
+  "continent_films": {
+    "Europe": [
+      {
+        "title": "Adgwa-Ata",
+        "year": 2026,
+        "slug": "adgwa-ata"
+      },
+      {
+        "title": "Vertiginous",
+        "year": 2026,
+        "slug": "vertiginous"
+      },
+      {
+        "title": "Ghost in the Shell",
+        "year": 1995,
+        "slug": "ghost-in-the-shell"
+      },
+      {
+        "title": "Jim Queen and the Quest for Chloroqueer",
+        "year": 2026,
+        "slug": "jim-queen"
+      },
+      {
+        "title": "Suspiria",
+        "year": 1977,
+        "slug": "suspiria"
+      },
+      {
+        "title": "Slumdog Millionaire",
+        "year": 2008,
+        "slug": "slumdog-millionaire"
+      },
+      {
+        "title": "Persona",
+        "year": 1966,
+        "slug": "persona"
+      },
+      {
+        "title": "Enemy",
+        "year": 2013,
+        "slug": "enemy"
+      }
+    ],
+    "Asie": [
+      {
+        "title": "Minions & Monsters",
+        "year": 2026,
+        "slug": "minions-monsters-2026"
+      },
+      {
+        "title": "Ghost in the Shell",
+        "year": 1995,
+        "slug": "ghost-in-the-shell"
+      },
+      {
+        "title": "The Host",
+        "year": 2006,
+        "slug": "the-host"
+      },
+      {
+        "title": "Look Back",
+        "year": 2024,
+        "slug": "look-back-2024"
+      },
+      {
+        "title": "Night Is Short, Walk On Girl",
+        "year": 2017,
+        "slug": "night-is-short-walk-on-girl"
+      },
+      {
+        "title": "Pulse",
+        "year": 2001,
+        "slug": "pulse-2001"
+      },
+      {
+        "title": "Millennium Actress",
+        "year": 2001,
+        "slug": "millennium-actress"
+      },
+      {
+        "title": "Angel's Egg",
+        "year": 1985,
+        "slug": "angels-egg"
+      }
+    ],
+    "Afrique": [],
+    "Amérique du Nord": [
+      {
+        "title": "The Lighthouse",
+        "year": 2019,
+        "slug": "the-lighthouse-2019"
+      },
+      {
+        "title": "Disclosure Day",
+        "year": 2026,
+        "slug": "disclosure-day"
+      },
+      {
+        "title": "Backrooms",
+        "year": 2026,
+        "slug": "backrooms-2026"
+      },
+      {
+        "title": "Minions & Monsters",
+        "year": 2026,
+        "slug": "minions-monsters-2026"
+      },
+      {
+        "title": "Carlito's Way",
+        "year": 1993,
+        "slug": "carlitos-way"
+      },
+      {
+        "title": "The Menu",
+        "year": 2022,
+        "slug": "the-menu-2022"
+      },
+      {
+        "title": "Boogie Nights",
+        "year": 1997,
+        "slug": "boogie-nights"
+      },
+      {
+        "title": "Enemy",
+        "year": 2013,
+        "slug": "enemy"
+      }
+    ],
+    "Amérique du Sud": [
+      {
+        "title": "The Lighthouse",
+        "year": 2019,
+        "slug": "the-lighthouse-2019"
+      },
+      {
+        "title": "The Little Panda Fighter",
+        "year": 2008,
+        "slug": "the-little-panda-fighter"
+      }
+    ],
+    "Océanie": []
   }
 }

@@ -1,7 +1,7 @@
 {
   "month": "2026-08",
   "username": "tobiashottin",
-  "first_seen_at": "2026-08-12T11:00:16.707742+00:00",
+  "first_seen_at": "2026-08-12T11:24:20.498605+00:00",
   "opted_in": null,
   "opted_in_at": null,
   "metrics_snapshot": {
@@ -20,5 +20,153 @@
     "Amérique du Nord": 21,
     "Amérique du Sud": 1,
     "Océanie": 0
+  },
+  "continent_films": {
+    "Europe": [
+      {
+        "title": "Rocco and His Brothers",
+        "year": 1960,
+        "slug": "rocco-and-his-brothers"
+      },
+      {
+        "title": "Jim Queen and the Quest for Chloroqueer",
+        "year": 2026,
+        "slug": "jim-queen"
+      },
+      {
+        "title": "DJ Ahmet",
+        "year": 2025,
+        "slug": "dj-ahmet"
+      },
+      {
+        "title": "One Day in the Life of Andrei Arsenevich",
+        "year": 1999,
+        "slug": "one-day-in-the-life-of-andrei-arsenevich"
+      },
+      {
+        "title": "Bitter Christmas",
+        "year": 2026,
+        "slug": "bitter-christmas"
+      },
+      {
+        "title": "The Swimmer",
+        "year": 1968,
+        "slug": "the-swimmer"
+      },
+      {
+        "title": "Crescendo",
+        "year": 2026,
+        "slug": "crescendo-2026-2"
+      },
+      {
+        "title": "Mulholland Drive",
+        "year": 2001,
+        "slug": "mulholland-drive"
+      }
+    ],
+    "Asie": [
+      {
+        "title": "Minions & Monsters",
+        "year": 2026,
+        "slug": "minions-monsters-2026"
+      },
+      {
+        "title": "Moebius",
+        "year": 2013,
+        "slug": "moebius-2013"
+      },
+      {
+        "title": "A City of Sadness",
+        "year": 1989,
+        "slug": "a-city-of-sadness"
+      },
+      {
+        "title": "Junk World",
+        "year": 2025,
+        "slug": "junk-world"
+      },
+      {
+        "title": "The World of Love",
+        "year": 2025,
+        "slug": "the-world-of-love"
+      },
+      {
+        "title": "Mirrored Mind",
+        "year": 2005,
+        "slug": "mirrored-mind"
+      },
+      {
+        "title": "The Longest Nite",
+        "year": 1998,
+        "slug": "the-longest-nite"
+      },
+      {
+        "title": "Bullet in the Head",
+        "year": 1990,
+        "slug": "bullet-in-the-head"
+      }
+    ],
+    "Afrique": [
+      {
+        "title": "Hen",
+        "year": 2025,
+        "slug": "hen-2025"
+      },
+      {
+        "title": "My Father's Shadow",
+        "year": 2025,
+        "slug": "my-fathers-shadow-2025"
+      }
+    ],
+    "Amérique du Nord": [
+      {
+        "title": "Backrooms",
+        "year": 2026,
+        "slug": "backrooms-2026"
+      },
+      {
+        "title": "Minions & Monsters",
+        "year": 2026,
+        "slug": "minions-monsters-2026"
+      },
+      {
+        "title": "Obsession",
+        "year": 2025,
+        "slug": "obsession-2025"
+      },
+      {
+        "title": "Pirates of the Caribbean: Dead Man's Chest",
+        "year": 2006,
+        "slug": "pirates-of-the-caribbean-dead-mans-chest"
+      },
+      {
+        "title": "The French Connection",
+        "year": 1971,
+        "slug": "the-french-connection"
+      },
+      {
+        "title": "The Swimmer",
+        "year": 1968,
+        "slug": "the-swimmer"
+      },
+      {
+        "title": "Twelve Monkeys",
+        "year": 1995,
+        "slug": "twelve-monkeys"
+      },
+      {
+        "title": "Mulholland Drive",
+        "year": 2001,
+        "slug": "mulholland-drive"
+      }
+    ],
+    "Amérique du Sud": [
+      {
+        "title": "Fitzcarraldo",
+        "year": 1982,
+        "slug": "fitzcarraldo"
+      }
+    ],
+    "Océanie": []
   }
 }

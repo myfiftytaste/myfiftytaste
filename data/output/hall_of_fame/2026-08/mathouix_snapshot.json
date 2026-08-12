@@ -1,7 +1,7 @@
 {
   "month": "2026-08",
   "username": "mathouix",
-  "first_seen_at": "2026-08-12T11:00:15.420735+00:00",
+  "first_seen_at": "2026-08-12T11:24:18.858284+00:00",
   "opted_in": null,
   "opted_in_at": null,
   "metrics_snapshot": {
@@ -20,5 +20,132 @@
     "Amérique du Nord": 28,
     "Amérique du Sud": 1,
     "Océanie": 0
+  },
+  "continent_films": {
+    "Europe": [
+      {
+        "title": "Jim Queen and the Quest for Chloroqueer",
+        "year": 2026,
+        "slug": "jim-queen"
+      },
+      {
+        "title": "I Swear",
+        "year": 2025,
+        "slug": "i-swear"
+      },
+      {
+        "title": "Alter Ego",
+        "year": 2026,
+        "slug": "alter-ego-2026"
+      },
+      {
+        "title": "Song of the Sea",
+        "year": 2014,
+        "slug": "song-of-the-sea"
+      },
+      {
+        "title": "Sundays",
+        "year": 2025,
+        "slug": "sundays-2025"
+      },
+      {
+        "title": "Submarine",
+        "year": 2010,
+        "slug": "submarine"
+      },
+      {
+        "title": "Hamnet",
+        "year": 2025,
+        "slug": "hamnet"
+      },
+      {
+        "title": "The Secret Agent",
+        "year": 2025,
+        "slug": "the-secret-agent-2025"
+      }
+    ],
+    "Asie": [
+      {
+        "title": "964 Pinocchio",
+        "year": 1991,
+        "slug": "964-pinocchio"
+      },
+      {
+        "title": "Perfect Days",
+        "year": 2023,
+        "slug": "perfect-days-2023"
+      },
+      {
+        "title": "Monster",
+        "year": 2023,
+        "slug": "monster-2023"
+      },
+      {
+        "title": "Oldboy",
+        "year": 2003,
+        "slug": "oldboy"
+      },
+      {
+        "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+        "year": 2025,
+        "slug": "demon-slayer-kimetsu-no-yaiba-infinity-castle"
+      },
+      {
+        "title": "Perfect Blue",
+        "year": 1997,
+        "slug": "perfect-blue"
+      }
+    ],
+    "Afrique": [],
+    "Amérique du Nord": [
+      {
+        "title": "Phantom of the Paradise",
+        "year": 1974,
+        "slug": "phantom-of-the-paradise"
+      },
+      {
+        "title": "Hoppers",
+        "year": 2026,
+        "slug": "hoppers"
+      },
+      {
+        "title": "Primal",
+        "year": 2019,
+        "slug": "primal-2019-1"
+      },
+      {
+        "title": "After Hours",
+        "year": 1985,
+        "slug": "after-hours"
+      },
+      {
+        "title": "The Godfather",
+        "year": 1972,
+        "slug": "the-godfather"
+      },
+      {
+        "title": "Hamnet",
+        "year": 2025,
+        "slug": "hamnet"
+      },
+      {
+        "title": "Punch-Drunk Love",
+        "year": 2002,
+        "slug": "punch-drunk-love"
+      },
+      {
+        "title": "Fargo",
+        "year": 1996,
+        "slug": "fargo"
+      }
+    ],
+    "Amérique du Sud": [
+      {
+        "title": "The Secret Agent",
+        "year": 2025,
+        "slug": "the-secret-agent-2025"
+      }
+    ],
+    "Océanie": []
   }
 }

@@ -31,7 +31,7 @@ from typing import Any, Optional
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_profile_metrics import normalize_country_name  # noqa: E402
-from hall_of_fame_common import CONTINENTS, continent_consumption_for_films  # noqa: E402
+from hall_of_fame_common import continent_breakdown_for_films  # noqa: E402
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "data" / "output"
@@ -98,6 +98,7 @@ def build_snapshot(username: str, month: str) -> dict[str, Any]:
 
     display_username = safe_get(display_profile, "hero", "username") or username
     films = wrapped.get("films") or []
+    continent_films = continent_breakdown_for_films(films, normalize_country_name)
 
     return {
         "month": month,
@@ -106,7 +107,8 @@ def build_snapshot(username: str, month: str) -> dict[str, Any]:
         "opted_in": None,
         "opted_in_at": None,
         "metrics_snapshot": build_metrics_snapshot(metrics, display_profile, wrapped, month),
-        "continent_consumption": continent_consumption_for_films(films, normalize_country_name),
+        "continent_consumption": {continent: len(items) for continent, items in continent_films.items()},
+        "continent_films": {continent: items[:8] for continent, items in continent_films.items()},
     }
 
 

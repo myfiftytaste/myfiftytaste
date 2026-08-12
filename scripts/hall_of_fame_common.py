@@ -241,12 +241,14 @@ def continent_for_country(raw_name: object, normalize) -> str | None:
     return COUNTRY_TO_CONTINENT.get(normalized) or COUNTRY_TO_CONTINENT.get(str(raw_name).strip())
 
 
-def continent_consumption_for_films(films: list[dict], normalize) -> dict[str, int]:
-    """Count, per continent, how many films had at least one production
-    country in that continent. A film with countries spanning several
-    continents counts once for each (never more than once per continent).
+def continent_breakdown_for_films(films: list[dict], normalize) -> dict[str, list[dict]]:
+    """Group films by continent (a film with countries spanning several
+    continents appears once under each — never double-counted within one
+    continent). Films keep their display order (most recently logged first,
+    same as the wrapped film list) so "first 4 films" downstream means
+    something consistent.
     """
-    counts: dict[str, int] = {continent: 0 for continent in CONTINENTS}
+    by_continent: dict[str, list[dict]] = {continent: [] for continent in CONTINENTS}
     for film in films:
         raw_countries = film.get("countries")
         if not isinstance(raw_countries, list):
@@ -257,5 +259,20 @@ def continent_consumption_for_films(films: list[dict], normalize) -> dict[str, i
             if continent:
                 continents_touched.add(continent)
         for continent in continents_touched:
-            counts[continent] += 1
-    return counts
+            by_continent[continent].append(
+                {
+                    "title": film.get("title") or film.get("rss_title"),
+                    "year": film.get("year"),
+                    "slug": film.get("letterboxd_slug"),
+                }
+            )
+    return by_continent
+
+
+def continent_consumption_for_films(films: list[dict], normalize) -> dict[str, int]:
+    """Count, per continent, how many films had at least one production
+    country in that continent. A film with countries spanning several
+    continents counts once for each (never more than once per continent).
+    """
+    breakdown = continent_breakdown_for_films(films, normalize)
+    return {continent: len(films_in_continent) for continent, films_in_continent in breakdown.items()}

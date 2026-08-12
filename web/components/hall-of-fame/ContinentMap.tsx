@@ -1,4 +1,7 @@
-import { CONTINENTS, type Continent, type ContinentWinner } from "../../lib/hallOfFame";
+"use client";
+
+import { useState } from "react";
+import { CONTINENTS, type Continent, type ContinentWinner } from "../../lib/hallOfFameTypes";
 
 // Six simplified, non-geographic zones (no per-country borders) — just
 // enough shape to read as "a map" while staying decorative. Anchor points
@@ -58,6 +61,9 @@ const PIN_ANCHORS: Record<Continent, { x: number; y: number }> = {
   Océanie: { x: 628, y: 292 },
 };
 
+const VIEWBOX_WIDTH = 760;
+const VIEWBOX_HEIGHT = 380;
+
 function initials(name: string): string {
   const cleaned = name.replace(/[._-]/g, " ").trim();
   return (cleaned[0] ?? "?").toUpperCase();
@@ -68,11 +74,20 @@ export default function ContinentMap({
 }: {
   winners: Partial<Record<Continent, ContinentWinner>>;
 }) {
+  const [hoveredContinent, setHoveredContinent] = useState<Continent | null>(null);
   const hasAnyWinner = CONTINENTS.some((continent) => winners[continent]);
+  const hoveredWinner = hoveredContinent ? winners[hoveredContinent] : null;
+  const hoveredAnchor = hoveredContinent ? PIN_ANCHORS[hoveredContinent] : null;
 
   return (
     <div className="hofMapWrap">
-      <svg className="hofWorldMap" viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cinéma du monde par continent">
+      <svg
+        className="hofWorldMap"
+        viewBox={`0 0 ${VIEWBOX_WIDTH} ${VIEWBOX_HEIGHT}`}
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Cinéma du monde par continent"
+      >
         <g className="hofGraticule">
           <line x1="0" y1="95" x2="760" y2="95" />
           <line x1="0" y1="190" x2="760" y2="190" />
@@ -101,6 +116,10 @@ export default function ContinentMap({
               href={`/profile/${encodeURIComponent(winner.username)}`}
               className="hofPin"
               transform={`translate(${anchor.x}, ${anchor.y})`}
+              onMouseEnter={() => setHoveredContinent(continent)}
+              onMouseLeave={() => setHoveredContinent((current) => (current === continent ? null : current))}
+              onFocus={() => setHoveredContinent(continent)}
+              onBlur={() => setHoveredContinent((current) => (current === continent ? null : current))}
             >
               <circle r="15" className="hofPinRing" />
               <text className="hofPinInitial" y="1" dominantBaseline="central">
@@ -116,6 +135,28 @@ export default function ContinentMap({
           );
         })}
       </svg>
+
+      {hoveredWinner && hoveredAnchor && hoveredWinner.films.length > 0 ? (
+        <div
+          className="hofPinTooltip"
+          style={{
+            left: `${(hoveredAnchor.x / VIEWBOX_WIDTH) * 100}%`,
+            top: `${(hoveredAnchor.y / VIEWBOX_HEIGHT) * 100}%`,
+          }}
+        >
+          <strong>{hoveredWinner.username}</strong>
+          <span>Classé·e grâce à ces films</span>
+          <ul>
+            {hoveredWinner.films.map((film) => (
+              <li key={`${film.slug ?? film.title}-${film.year}`}>
+                {film.title}
+                {film.year ? <em>{film.year}</em> : null}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
       {!hasAnyWinner ? (
         <p className="hofMapNote">Pas encore de consommation claire par continent ce mois-ci.</p>
       ) : null}

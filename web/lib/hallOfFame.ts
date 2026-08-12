@@ -1,5 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
+import { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
+
+export { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
 
 // Mirrors scripts/hall_of_fame_common.py + scripts/build_monthly_snapshot.py.
 // Rankings are recomputed on every page load straight from the frozen
@@ -27,6 +30,7 @@ export type MonthlySnapshot = {
   opted_in_at: string | null;
   metrics_snapshot: MetricsSnapshot;
   continent_consumption: Record<string, number>;
+  continent_films?: Record<string, ContinentFilmRef[]>;
 };
 
 export type PodiumEntry = {
@@ -119,14 +123,6 @@ function formatPercent(value: number): string {
   return `${Math.round(value)}%`;
 }
 
-export const CONTINENTS = ["Europe", "Asie", "Afrique", "Amérique du Nord", "Amérique du Sud", "Océanie"] as const;
-export type Continent = (typeof CONTINENTS)[number];
-
-export type ContinentWinner = {
-  username: string;
-  filmCount: number;
-};
-
 function continentWinners(snapshots: MonthlySnapshot[]): Partial<Record<Continent, ContinentWinner>> {
   const winners: Partial<Record<Continent, ContinentWinner>> = {};
 
@@ -146,7 +142,11 @@ function continentWinners(snapshots: MonthlySnapshot[]): Partial<Record<Continen
     // A continent nobody watched a film from this month gets no winner —
     // never an invented/default attribution (brief section 26).
     if (best) {
-      winners[continent] = { username: best.snapshot.username, filmCount: best.value };
+      winners[continent] = {
+        username: best.snapshot.username,
+        filmCount: best.value,
+        films: (best.snapshot.continent_films?.[continent] ?? []).slice(0, 4),
+      };
     }
   }
 

@@ -1,7 +1,7 @@
 {
   "month": "2026-08",
   "username": "crazykungfu",
-  "first_seen_at": "2026-08-12T11:00:15.906380+00:00",
+  "first_seen_at": "2026-08-12T11:24:19.423636+00:00",
   "opted_in": null,
   "opted_in_at": null,
   "metrics_snapshot": {
@@ -20,5 +20,147 @@
     "Amérique du Nord": 24,
     "Amérique du Sud": 0,
     "Océanie": 0
+  },
+  "continent_films": {
+    "Europe": [
+      {
+        "title": "Vertiginous",
+        "year": 2026,
+        "slug": "vertiginous"
+      },
+      {
+        "title": "Jim Queen and the Quest for Chloroqueer",
+        "year": 2026,
+        "slug": "jim-queen"
+      },
+      {
+        "title": "TRENTE",
+        "year": 2026,
+        "slug": "trente"
+      },
+      {
+        "title": "The Old Gun",
+        "year": 1975,
+        "slug": "the-old-gun"
+      },
+      {
+        "title": "Gomorrah",
+        "year": 2008,
+        "slug": "gomorrah"
+      },
+      {
+        "title": "Bone Tomahawk",
+        "year": 2015,
+        "slug": "bone-tomahawk"
+      },
+      {
+        "title": "[REC]",
+        "year": 2007,
+        "slug": "rec"
+      },
+      {
+        "title": "The Night Eats the World",
+        "year": 2018,
+        "slug": "the-night-eats-the-world"
+      }
+    ],
+    "Asie": [
+      {
+        "title": "Minions & Monsters",
+        "year": 2026,
+        "slug": "minions-monsters-2026"
+      },
+      {
+        "title": "The 36th Chamber of Shaolin",
+        "year": 1978,
+        "slug": "the-36th-chamber-of-shaolin"
+      },
+      {
+        "title": "The Face of Another",
+        "year": 1966,
+        "slug": "the-face-of-another"
+      },
+      {
+        "title": "The Plague",
+        "year": 2025,
+        "slug": "the-plague-2025"
+      },
+      {
+        "title": "A Hero Never Dies",
+        "year": 1998,
+        "slug": "a-hero-never-dies"
+      },
+      {
+        "title": "Triangle of Sadness",
+        "year": 2022,
+        "slug": "triangle-of-sadness"
+      },
+      {
+        "title": "No Other Land",
+        "year": 2024,
+        "slug": "no-other-land"
+      },
+      {
+        "title": "The Chaser",
+        "year": 2008,
+        "slug": "the-chaser"
+      }
+    ],
+    "Afrique": [
+      {
+        "title": "Untamable",
+        "year": 2025,
+        "slug": "untamable"
+      },
+      {
+        "title": "My Father's Shadow",
+        "year": 2025,
+        "slug": "my-fathers-shadow-2025"
+      }
+    ],
+    "Amérique du Nord": [
+      {
+        "title": "Minions & Monsters",
+        "year": 2026,
+        "slug": "minions-monsters-2026"
+      },
+      {
+        "title": "Disclosure Day",
+        "year": 2026,
+        "slug": "disclosure-day"
+      },
+      {
+        "title": "Backrooms",
+        "year": 2026,
+        "slug": "backrooms-2026"
+      },
+      {
+        "title": "Tombstone",
+        "year": 1993,
+        "slug": "tombstone"
+      },
+      {
+        "title": "Bone Tomahawk",
+        "year": 2015,
+        "slug": "bone-tomahawk"
+      },
+      {
+        "title": "Obsession",
+        "year": 2025,
+        "slug": "obsession-2025"
+      },
+      {
+        "title": "The Plague",
+        "year": 2025,
+        "slug": "the-plague-2025"
+      },
+      {
+        "title": "The Taking of Pelham One Two Three",
+        "year": 1974,
+        "slug": "the-taking-of-pelham-one-two-three"
+      }
+    ],
+    "Amérique du Sud": [],
+    "Océanie": []
   }
 }

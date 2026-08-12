@@ -1,7 +1,7 @@
 {
   "month": "2026-08",
   "username": "mathmon",
-  "first_seen_at": "2026-08-12T11:00:17.630688+00:00",
+  "first_seen_at": "2026-08-12T11:24:21.616092+00:00",
   "opted_in": null,
   "opted_in_at": null,
   "metrics_snapshot": {
@@ -20,5 +20,169 @@
     "Amérique du Nord": 15,
     "Amérique du Sud": 2,
     "Océanie": 1
+  },
+  "continent_films": {
+    "Europe": [
+      {
+        "title": "Crescendo",
+        "year": 2026,
+        "slug": "crescendo-2026-2"
+      },
+      {
+        "title": "Parallel Tales",
+        "year": 2026,
+        "slug": "parallel-tales"
+      },
+      {
+        "title": "The Taste of Others",
+        "year": 2000,
+        "slug": "the-taste-of-others"
+      },
+      {
+        "title": "Jules and Jim",
+        "year": 1962,
+        "slug": "jules-and-jim"
+      },
+      {
+        "title": "Just an Illusion",
+        "year": 2026,
+        "slug": "just-an-illusion-2026"
+      },
+      {
+        "title": "All That's Left of You",
+        "year": 2025,
+        "slug": "all-thats-left-of-you"
+      },
+      {
+        "title": "The History of Sound",
+        "year": 2025,
+        "slug": "the-history-of-sound"
+      },
+      {
+        "title": "Family Resemblances",
+        "year": 1996,
+        "slug": "family-resemblances"
+      }
+    ],
+    "Asie": [
+      {
+        "title": "Parallel Tales",
+        "year": 2026,
+        "slug": "parallel-tales"
+      },
+      {
+        "title": "All That's Left of You",
+        "year": 2025,
+        "slug": "all-thats-left-of-you"
+      },
+      {
+        "title": "The Torch",
+        "year": 2022,
+        "slug": "the-torch-2022"
+      },
+      {
+        "title": "Chungking Express",
+        "year": 1994,
+        "slug": "chungking-express"
+      },
+      {
+        "title": "Resurrection",
+        "year": 2025,
+        "slug": "resurrection-2025"
+      },
+      {
+        "title": "Eagles of the Republic",
+        "year": 2025,
+        "slug": "eagles-of-the-republic"
+      },
+      {
+        "title": "Hard Boiled",
+        "year": 1992,
+        "slug": "hard-boiled"
+      }
+    ],
+    "Afrique": [
+      {
+        "title": "All That's Left of You",
+        "year": 2025,
+        "slug": "all-thats-left-of-you"
+      },
+      {
+        "title": "Six and Twelve",
+        "year": 1968,
+        "slug": "six-and-twelve"
+      },
+      {
+        "title": "Sukar",
+        "year": 2020,
+        "slug": "sukar"
+      },
+      {
+        "title": "The Stranger",
+        "year": 2025,
+        "slug": "the-stranger-2025-1"
+      }
+    ],
+    "Amérique du Nord": [
+      {
+        "title": "Parallel Tales",
+        "year": 2026,
+        "slug": "parallel-tales"
+      },
+      {
+        "title": "Project Hail Mary",
+        "year": 2026,
+        "slug": "project-hail-mary"
+      },
+      {
+        "title": "The Drama",
+        "year": 2026,
+        "slug": "the-drama"
+      },
+      {
+        "title": "All That's Left of You",
+        "year": 2025,
+        "slug": "all-thats-left-of-you"
+      },
+      {
+        "title": "Marty Supreme",
+        "year": 2025,
+        "slug": "marty-supreme"
+      },
+      {
+        "title": "The History of Sound",
+        "year": 2025,
+        "slug": "the-history-of-sound"
+      },
+      {
+        "title": "The Torch",
+        "year": 2022,
+        "slug": "the-torch-2022"
+      },
+      {
+        "title": "Uncut Gems",
+        "year": 2019,
+        "slug": "uncut-gems"
+      }
+    ],
+    "Amérique du Sud": [
+      {
+        "title": "The Secret Agent",
+        "year": 2025,
+        "slug": "the-secret-agent-2025"
+      },
+      {
+        "title": "A Poet",
+        "year": 2025,
+        "slug": "a-poet"
+      }
+    ],
+    "Océanie": [
+      {
+        "title": "The Flame",
+        "year": 2020,
+        "slug": "the-flame-2020-2"
+      }
+    ]
   }
 }

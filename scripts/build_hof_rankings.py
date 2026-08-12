@@ -126,7 +126,12 @@ def rank_continents(snapshots: list[dict[str, Any]]) -> dict[str, dict[str, Any]
         # A continent with zero consumption across every opted-in profile
         # gets no winner this month — never an invented/default attribution.
         if best_snapshot is not None and best_value > 0:
-            winners[continent] = {"username": best_snapshot["username"], "film_count": best_value}
+            films = (best_snapshot.get("continent_films") or {}).get(continent, [])
+            winners[continent] = {
+                "username": best_snapshot["username"],
+                "film_count": best_value,
+                "films": films[:4],
+            }
     return winners
 
 

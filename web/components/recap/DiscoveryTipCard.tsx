@@ -3,10 +3,9 @@
 export default function DiscoveryTipCard() {
   return (
     <div className="headerCard headerCardTip">
-      <p className="eyebrow">À savoir</p>
-      <h3>Cette page se découvre</h3>
+      <h3>Avis aux curieuses et curieux !</h3>
       <p className="headerTipText">
-        Clique, survole, retourne et fais glisser les éléments de cette page pour en apprendre plus.
+        Clique, survole, retourne et fais glisser les éléments de cette page pour en apprendre plus :)
       </p>
     </div>
   );
