@@ -61,6 +61,30 @@ export default async function HallOfFamePage() {
             />
             <Podium title={podiumsByKey.niche.title} sub={podiumsByKey.niche.sub} entries={podiumsByKey.niche.entries} />
           </div>
+          <div className="hofPodiumPair">
+            <Podium
+              title={podiumsByKey.critique.title}
+              sub={podiumsByKey.critique.sub}
+              entries={podiumsByKey.critique.entries}
+            />
+            <Podium
+              title={podiumsByKey.fantome.title}
+              sub={podiumsByKey.fantome.sub}
+              entries={podiumsByKey.fantome.entries}
+            />
+          </div>
+          <div className="hofPodiumPair">
+            <Podium
+              title={podiumsByKey.nostalgique.title}
+              sub={podiumsByKey.nostalgique.sub}
+              entries={podiumsByKey.nostalgique.entries}
+            />
+            <Podium
+              title={podiumsByKey.sorties_annee.title}
+              sub={podiumsByKey.sorties_annee.sub}
+              entries={podiumsByKey.sorties_annee.entries}
+            />
+          </div>
         </section>
       )}
     </main>
