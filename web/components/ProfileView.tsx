@@ -4,6 +4,7 @@ import Image from "next/image";
 /* eslint-disable @next/next/no-img-element */
 import AverageRatingCard from "./AverageRatingCard";
 import GenreBubbles from "./GenreBubbles";
+import HallOfFameCTA from "./hall-of-fame/HallOfFameCTA";
 import HighlightsCarousel, { type Highlights } from "./HighlightsCarousel";
 import LogTimeMini from "./LogTimeMini";
 import RadarChart from "./RadarChart";
@@ -269,6 +270,8 @@ export default function ProfileView({ profile }: { profile: DisplayProfile }) {
           <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} />
         </div>
       </section>
+
+      <HallOfFameCTA username={hero.username} />
 
       <footer className="siteFooter" aria-label="Informations sur MyFiftyTaste">
         <p>

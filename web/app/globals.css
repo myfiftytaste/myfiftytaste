@@ -2350,3 +2350,124 @@ a.recommendation-card:hover {
     height: 34px;
   }
 }
+
+/* ================= Hall of Fame ================= */
+/* Deliberately theme-independent: fixed near-black + gold palette, never the
+   active Akira/Hana-Bi/Grande Bellezza accent, since the Hall of Fame is a
+   shared social space rather than a per-visit themed page. */
+.hofCtaSection,
+.hof-shell {
+  --hof-bg: #0b0a08;
+  --hof-bg-soft: #141210;
+  --hof-bg-card: #17140f;
+  --hof-line: #2a2519;
+  --hof-line-soft: rgba(237, 228, 211, 0.08);
+  --hof-gold: #c9a24b;
+  --hof-gold-bright: #eccb7d;
+  --hof-gold-dim: rgba(201, 162, 75, 0.28);
+  --hof-cream: #ede4d3;
+  --hof-muted: #9a9080;
+  --hof-muted-dim: #665f50;
+  --hof-silver: #b7b0a0;
+  --hof-bronze: #ad7a4c;
+}
+
+.hofCtaSection {
+  padding: 52px 0 12px;
+}
+
+.hofCtaCard {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(180deg, var(--hof-bg-card), var(--hof-bg-soft));
+  border: 1px solid var(--hof-line);
+  padding: 44px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hofCtaCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(420px 160px at 50% 0%, var(--hof-gold-dim), transparent 70%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hofEyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--hof-gold);
+  margin: 0 0 14px;
+  position: relative;
+}
+
+.hofCtaTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--hof-cream);
+  margin: 6px 0 10px;
+  position: relative;
+}
+
+.hofLede {
+  color: var(--hof-muted);
+  font-size: 15px;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  line-height: 1.55;
+}
+
+.hofCtaActions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 28px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hofBtn {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  padding: 13px 26px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 150ms ease, opacity 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.hofBtnPrimary {
+  background: var(--hof-gold);
+  color: #141008;
+  border: 1px solid var(--hof-gold);
+}
+
+.hofBtnPrimary:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.hofBtnGhost {
+  background: transparent;
+  color: var(--hof-muted);
+  border: 1px solid var(--hof-line);
+}
+
+.hofBtnGhost:hover {
+  color: var(--hof-cream);
+  border-color: var(--hof-muted-dim);
+}
+
+.hofBtn:disabled {
+  opacity: 0.55;
+  cursor: default;
+  transform: none;
+}
