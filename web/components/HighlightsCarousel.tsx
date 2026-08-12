@@ -115,7 +115,7 @@ export default function HighlightsCarousel({
   // snapping backwards when the active index wraps from last to first.
   const [step, setStep] = useState(0);
 
-  const labels = copy?.labels ?? {};
+  const labels = useMemo(() => copy?.labels ?? {}, [copy?.labels]);
 
   const slides = useMemo(() => {
     const items: {

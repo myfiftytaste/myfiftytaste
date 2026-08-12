@@ -111,27 +111,27 @@ export default function ContinentMap({
           if (!winner) return null;
           const anchor = PIN_ANCHORS[continent];
           return (
-            <a
-              key={continent}
-              href={`/profile/${encodeURIComponent(winner.username)}`}
-              className="hofPin"
-              transform={`translate(${anchor.x}, ${anchor.y})`}
-              onMouseEnter={() => setHoveredContinent(continent)}
-              onMouseLeave={() => setHoveredContinent((current) => (current === continent ? null : current))}
-              onFocus={() => setHoveredContinent(continent)}
-              onBlur={() => setHoveredContinent((current) => (current === continent ? null : current))}
-            >
-              <circle r="15" className="hofPinRing" />
-              <text className="hofPinInitial" y="1" dominantBaseline="central">
-                {initials(winner.username)}
-              </text>
-              <text className="hofPinName" y="26">
-                {winner.username}
-              </text>
-              <text className="hofPinMetric" y="38">
-                {winner.filmCount} film{winner.filmCount > 1 ? "s" : ""}
-              </text>
-            </a>
+            <g key={continent} transform={`translate(${anchor.x}, ${anchor.y})`}>
+              <a
+                href={`/profile/${encodeURIComponent(winner.username)}`}
+                className="hofPin"
+                onMouseEnter={() => setHoveredContinent(continent)}
+                onMouseLeave={() => setHoveredContinent((current) => (current === continent ? null : current))}
+                onFocus={() => setHoveredContinent(continent)}
+                onBlur={() => setHoveredContinent((current) => (current === continent ? null : current))}
+              >
+                <circle r="15" className="hofPinRing" />
+                <text className="hofPinInitial" y="1" dominantBaseline="central">
+                  {initials(winner.username)}
+                </text>
+                <text className="hofPinName" y="26">
+                  {winner.username}
+                </text>
+                <text className="hofPinMetric" y="38">
+                  {winner.filmCount} film{winner.filmCount > 1 ? "s" : ""}
+                </text>
+              </a>
+            </g>
           );
         })}
       </svg>

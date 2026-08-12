@@ -3,7 +3,7 @@
 import worldTopology from "world-atlas/countries-110m.json";
 import { geoNaturalEarth1, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
-import { useEffect, useRef, useState, type CSSProperties, type MouseEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent } from "react";
 
 type CountryMapEntry = {
   name: string;
@@ -150,7 +150,7 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
   const [isDropping, setIsDropping] = useState(false);
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
   const dropTimeoutRef = useRef<number | undefined>(undefined);
-  const countries = countryMap?.countries ?? [];
+  const countries = useMemo(() => countryMap?.countries ?? [], [countryMap]);
 
   // Drops the colored countries onto the map every time the panel re-enters
   // view (scroll-triggered only, replays on re-entry, never on hover — same
