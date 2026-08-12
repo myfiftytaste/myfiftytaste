@@ -175,7 +175,7 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
     {
       key: "niche",
       title: "Top Niche",
-      sub: "A creusé le plus loin dans les films confidentiels",
+      sub: "A creusé le plus loin dans les films niche",
       entries: ranked(optedIn, (s) => s.metrics_snapshot.niche_pct, "desc", (v) => `${formatPercent(v)} niche`),
     },
     {
@@ -204,7 +204,7 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
         optedIn,
         (s) => s.metrics_snapshot.current_year_release_pct,
         "desc",
-        (v) => `${formatPercent(v)} de ${currentYear}`,
+        (v) => `${formatPercent(v)} de films sortis en ${currentYear}`,
       ),
     },
   ];

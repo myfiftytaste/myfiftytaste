@@ -46,7 +46,7 @@ PODIUM_DEFS: list[dict[str, Any]] = [
     {
         "key": "niche",
         "title": "Top Niche",
-        "sub": "A creusé le plus loin dans les films confidentiels",
+        "sub": "A creusé le plus loin dans les films niche",
         "metric": lambda s: s["metrics_snapshot"].get("niche_pct"),
         "direction": "desc",
         "format": lambda v: f"{round(v)}% niche",
@@ -160,7 +160,7 @@ def build_rankings(month: str) -> dict[str, Any]:
                 opted_in,
                 lambda s: s["metrics_snapshot"].get("current_year_release_pct"),
                 "desc",
-                lambda v, year=sorties_annee_year: f"{round(v)}% de {year}",
+                lambda v, year=sorties_annee_year: f"{round(v)}% de films sortis en {year}",
             ),
         }
     )
