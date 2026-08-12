@@ -1,0 +1,24 @@
+{
+  "month": "2026-08",
+  "username": "tobiashottin",
+  "first_seen_at": "2026-08-12T10:14:33.116406+00:00",
+  "opted_in": null,
+  "opted_in_at": null,
+  "metrics_snapshot": {
+    "detected_films_count": 50,
+    "mainstream_pct": 73.6,
+    "niche_pct": 26.4,
+    "review_count": 49,
+    "average_release_year": 2002.0,
+    "current_year_release_pct": 20.0,
+    "current_year_release_count": 10
+  },
+  "continent_consumption": {
+    "Europe": 20,
+    "Asie": 8,
+    "Afrique": 2,
+    "Amérique du Nord": 21,
+    "Amérique du Sud": 1,
+    "Océanie": 0
+  }
+}

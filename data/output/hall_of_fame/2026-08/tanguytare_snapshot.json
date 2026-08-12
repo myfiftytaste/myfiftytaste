@@ -1,0 +1,24 @@
+{
+  "month": "2026-08",
+  "username": "tanguytare",
+  "first_seen_at": "2026-08-12T10:14:31.779345+00:00",
+  "opted_in": null,
+  "opted_in_at": null,
+  "metrics_snapshot": {
+    "detected_films_count": 50,
+    "mainstream_pct": 84.2,
+    "niche_pct": 15.8,
+    "review_count": 37,
+    "average_release_year": 2002.6,
+    "current_year_release_pct": 18.0,
+    "current_year_release_count": 9
+  },
+  "continent_consumption": {
+    "Europe": 20,
+    "Asie": 10,
+    "Afrique": 0,
+    "Amérique du Nord": 22,
+    "Amérique du Sud": 2,
+    "Océanie": 0
+  }
+}
