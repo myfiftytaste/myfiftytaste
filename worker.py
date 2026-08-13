@@ -22,13 +22,14 @@ Root Directory Railway (phase 3 du runbook) : ce fichier vit à la racine du
 dépôt, comme scripts/, data/ et requirements.txt — pas de sous-dossier
 "moteur" séparé du monorepo. Start command : `python worker.py`.
 
-Classification des erreurs : la robustesse complète (retry/backoff sur les
-429, distinction fine des cas d'échec, jobs zombies) est prévue phase 6 du
-runbook — volontairement absente ici. Mais la contrainte SQL
-job_error_has_code impose un error_code dès qu'un job passe en 'error', donc
-un classement minimal est fait à partir des messages déjà émis par les
-scripts existants (build_user_wrapped.py notamment), plutôt que de tout
-renvoyer en internal_error par facilité.
+Classification des erreurs : distinction fine des 5 error_code à partir des
+messages émis par les scripts existants (build_user_wrapped.py notamment) —
+voir classify_error(). Le retry/backoff sur les 429 et erreurs réseau vit
+dans scripts/build_user_wrapped.py (fetch_rss), pas ici : c'est l'étape qui
+parle à Letterboxd.
+
+Jobs zombies (phase 6 du runbook) : sweep_zombie_jobs(), appelé à chaque tour
+de la boucle ci-dessous.
 """
 
 from __future__ import annotations
@@ -60,6 +61,14 @@ from build_full_profile import PIPELINE_STEPS, USERNAME_RE  # noqa: E402
 
 POLL_INTERVAL_SECONDS = 3
 
+# Un job 'running' depuis plus longtemps que ça est considéré zombie (le
+# worker qui le traitait a été tué, typiquement par un redéploiement Railway
+# en plein pipeline) et repasse en 'error'. 15 min = marge au-dessus du pire
+# cas réaliste : 2 fetch Letterboxd avec leur backoff plafonné (jusqu'à
+# ~30 s chacun) + l'enrichissement TMDB de 50 films. 10 min s'est révélé trop
+# juste et risquait de tuer des jobs encore légitimes.
+ZOMBIE_JOB_TIMEOUT_MINUTES = 15
+
 # error_code candidats, dans l'ordre de verification. Le premier motif qui
 # matche le stderr d'une etape en echec l'emporte.
 RSS_STATUS_RE = re.compile(r"RSS fetch failed \((\d+)\)")
@@ -76,6 +85,12 @@ NO_FILMS_MARKERS = (
 
 
 def classify_error(stderr: str) -> str:
+    # Retry/backoff épuisé (429 ou erreurs réseau à répétition) : marqueur
+    # posé par fetch_rss() dans scripts/build_user_wrapped.py, à vérifier
+    # avant la regex de statut HTTP ci-dessous (les deux peuvent apparaître
+    # dans le même message).
+    if "(rate_limited)" in stderr:
+        return "rate_limited"
     match = RSS_STATUS_RE.search(stderr)
     if match:
         return RSS_STATUS_TO_ERROR_CODE.get(int(match.group(1)), "internal_error")
@@ -123,6 +138,32 @@ def claim_next_job(conn: psycopg.Connection) -> Optional[dict[str, Any]]:
         RETURNING id, username, display_username
         """
     ).fetchone()
+
+
+def sweep_zombie_jobs(conn: psycopg.Connection) -> None:
+    """Repasse en 'error' tout job 'running' depuis plus de
+    ZOMBIE_JOB_TIMEOUT_MINUTES : sans ça, un redéploiement Railway en plein
+    job laisse l'utilisateur devant un écran de chargement éternel, puisque
+    plus aucun worker ne mettra jamais ce job à jour.
+
+    Appelé à chaque tour de boucle plutôt qu'un cron séparé : le nouveau
+    worker qui démarre après un redéploiement s'auto-guérit dès son premier
+    passage, sans infra supplémentaire. UPDATE ... WHERE utilise l'index
+    partiel job_running_started_at_idx (migrations/001_initial_schema.sql),
+    posé pour cet usage.
+    """
+    zombies = conn.execute(
+        """
+        UPDATE job
+        SET status = 'error', error_code = 'internal_error', finished_at = now()
+        WHERE status = 'running'
+          AND started_at < now() - (%s * interval '1 minute')
+        RETURNING id, username
+        """,
+        (ZOMBIE_JOB_TIMEOUT_MINUTES,),
+    ).fetchall()
+    for zombie in zombies:
+        print(f"[job {zombie['id']}] zombie ({zombie['username']}) repassé en error", file=sys.stderr, flush=True)
 
 
 def update_progress(conn: psycopg.Connection, job_id: str, index: int, label: str) -> None:
@@ -235,6 +276,7 @@ def main() -> None:
     print("Worker démarré, en attente de jobs 'queued'..." + (" (mode --once)" if once else ""), flush=True)
 
     while not _shutdown_requested:
+        sweep_zombie_jobs(conn)
         job = claim_next_job(conn)
         if job is None:
             if once:

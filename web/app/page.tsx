@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useVisualTheme } from "../components/VisualThemeProvider";
-import { postProfile } from "../lib/apiClient";
+import { ApiError, postProfile } from "../lib/apiClient";
 
 function cleanUsername(value: string) {
   return value.trim().replace(/^@+/, "").replace(/\s+/g, "");
@@ -38,9 +38,14 @@ export default function Home() {
         // sans re-poster.
         router.push(`/profile/${encodeURIComponent(cleanedUsername)}?job=${encodeURIComponent(result.job_id)}`);
       }
-    } catch {
+    } catch (err) {
       setPending(false);
-      setError("Impossible de lancer la génération du profil. Réessaie dans un instant.");
+      // Le 429 (rate limit) renvoie un message explicite et rassurant côté
+      // route (web/lib/db.ts withinRateLimit) : on l'affiche tel quel plutôt
+      // que de l'écraser par un message générique.
+      setError(
+        err instanceof ApiError ? err.message : "Impossible de lancer la génération du profil. Réessaie dans un instant.",
+      );
     }
   }
 

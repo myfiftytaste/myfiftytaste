@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getPool, isFresh, normalizeUsername, USERNAME_PATTERN } from "../../../lib/db";
+import { clientIp, getPool, isFresh, normalizeUsername, USERNAME_PATTERN, withinRateLimit } from "../../../lib/db";
 
 // POST /api/profile — architecture-v1-dynamique.md section 3.
 //
@@ -57,9 +57,24 @@ export async function POST(request: NextRequest) {
     });
   }
 
-  // 2. Pas de cache frais : réutiliser un job actif s'il en existe déjà un
-  // pour ce pseudo, sinon en créer un. Une seule requête ferme la fenêtre de
-  // concurrence entre deux requêtes simultanées : l'INSERT tente sa chance,
+  // 2. Pas de cache frais : avant de créer un job (l'opération coûteuse, pas
+  // la lecture de cache ci-dessus), vérifier que cette IP n'en abuse pas.
+  // Message volontairement rassurant : une IP peut être partagée par
+  // plusieurs personnes (box, réseau d'entreprise), ce n'est pas forcément
+  // la faute de qui la reçoit.
+  if (!(await withinRateLimit(pool, clientIp(request)))) {
+    return NextResponse.json(
+      {
+        error:
+          "Beaucoup de monde génère un profil en ce moment depuis cette connexion. Patiente quelques minutes et réessaie — rien n'est perdu.",
+      },
+      { status: 429 },
+    );
+  }
+
+  // 3. Réutiliser un job actif s'il en existe déjà un pour ce pseudo, sinon
+  // en créer un. Une seule requête ferme la fenêtre de concurrence entre
+  // deux requêtes simultanées : l'INSERT tente sa chance,
   // et s'il entre en conflit avec l'index unique partiel
   // (job_one_active_per_username_idx), ON CONFLICT DO NOTHING le laisse
   // passer sans erreur ni ligne créée — on relit alors le job existant.

@@ -3260,7 +3260,7 @@ a.recommendation-card:hover {
   }
 }
 
-/* ---- écran d'erreur générique (phase 6 affinera par error_code) ---- */
+/* ---- écrans d'erreur, un par error_code (architecture-v1-dynamique.md §6) ---- */
 
 .loadingErrorCard {
   background: var(--loading-bg-card);
@@ -3287,13 +3287,31 @@ a.recommendation-card:hover {
   margin: 0 0 24px;
 }
 
-.loadingErrorCard a {
+.loadingErrorActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.loadingErrorActions a {
+  text-decoration: none;
+}
+
+.loadingErrorPrimary {
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
   padding: 12px 24px;
   background: var(--loading-gold);
   color: #141008;
-  text-decoration: none;
   border-radius: 1px;
+}
+
+.loadingErrorSecondary {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--loading-muted);
+  border-bottom: 1px solid var(--loading-muted-dim);
 }

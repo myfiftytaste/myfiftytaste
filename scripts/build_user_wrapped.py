@@ -1,6 +1,8 @@
 import json
 import math
 import re
+import sys
+import time
 from html import unescape
 from html.parser import HTMLParser
 from collections import Counter, defaultdict
@@ -21,6 +23,34 @@ OUTPUT_DIR = BASE_DIR / "data" / "output"
 SUPPLEMENTAL_JSON = BASE_DIR / "data" / "processed" / "supplemental_metadata.json"
 SUPPLEMENTAL_OVERRIDES_JSON = BASE_DIR / "data" / "processed" / "supplemental_overrides.json"
 TMDB_DETAILS_CACHE_JSON = BASE_DIR / "data" / "cache" / "tmdb_details_cache.json"
+
+# --- Rate limiting Letterboxd (architecture-v1-dynamique.md §4, runbook phase 6) ---
+#
+# fetch_rss() est le seul point de contact avec Letterboxd de tout le
+# pipeline (appelé aux étapes 1 et 4 par build_full_profile.PIPELINE_STEPS).
+# Chaque étape tourne dans son propre sous-processus Python (worker.py les
+# lance via subprocess.run), donc un simple timestamp en mémoire ne
+# suffirait pas à espacer deux appels : on le persiste dans un fichier pour
+# qu'il survive d'un sous-processus à l'autre.
+#
+# Hypothèse implicite : un seul worker actif à la fois. Le fichier n'est pas
+# verrouillé (pas de lock inter-processus) parce que l'architecture V1
+# garantit déjà l'absence de concurrence — un seul worker Railway, qui ne
+# traite qu'un job à la fois, et exécute ses étapes en séquence (jamais deux
+# subprocess Letterboxd en vol simultanément). Avec plusieurs workers en
+# parallèle, ce fichier deviendrait inopérant comme garde-fou (deux process
+# pourraient lire le même timestamp avant que l'un des deux l'ait mis à
+# jour) : il faudrait alors une vraie file partagée (verrou Postgres par
+# exemple), pas un fichier local à chaque instance.
+LETTERBOXD_RATE_LIMIT_STATE_FILE = BASE_DIR / "data" / "cache" / ".letterboxd_last_request"
+MIN_LETTERBOXD_REQUEST_INTERVAL_SECONDS = 1.5
+
+# Retry avec backoff exponentiel sur 429 et erreurs réseau uniquement : les
+# codes 404/403/410 sont définitifs (mauvais pseudo, compte privé), les
+# retenter ne changerait rien et ne ferait que retarder l'erreur affichée.
+LETTERBOXD_MAX_RETRY_ATTEMPTS = 4
+LETTERBOXD_BACKOFF_BASE_SECONDS = 2.0
+LETTERBOXD_RETRYABLE_STATUS_CODES = {429}
 
 
 COUNTRY_NAME_MAP = {
@@ -93,13 +123,57 @@ LANGUAGE_NAME_MAP = {
 }
 
 
+def _wait_for_letterboxd_slot() -> None:
+    """Espace deux requêtes Letterboxd d'au moins MIN_LETTERBOXD_REQUEST_INTERVAL_SECONDS,
+    en s'appuyant sur un timestamp persisté sur disque (cf. commentaire en tête de fichier
+    sur l'hypothèse mono-worker)."""
+    LETTERBOXD_RATE_LIMIT_STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    now = time.time()
+    try:
+        last = float(LETTERBOXD_RATE_LIMIT_STATE_FILE.read_text(encoding="utf-8").strip())
+    except (OSError, ValueError):
+        last = None
+    if last is not None:
+        wait = MIN_LETTERBOXD_REQUEST_INTERVAL_SECONDS - (now - last)
+        if wait > 0:
+            time.sleep(wait)
+    LETTERBOXD_RATE_LIMIT_STATE_FILE.write_text(str(time.time()), encoding="utf-8")
+
+
 def fetch_rss(username: str) -> feedparser.FeedParserDict:
     url = f"https://letterboxd.com/{username}/rss/"
-    resp = requests.get(url, timeout=10)
-    if resp.status_code != 200:
-        raise RuntimeError(f"RSS fetch failed ({resp.status_code}) for {url}")
-    feed = feedparser.parse(resp.text)
-    return feed
+    last_error = "raison inconnue"
+
+    for attempt in range(1, LETTERBOXD_MAX_RETRY_ATTEMPTS + 2):  # 1 essai + N retries
+        _wait_for_letterboxd_slot()
+        try:
+            resp = requests.get(url, timeout=10)
+        except requests.exceptions.RequestException as exc:
+            last_error = f"erreur réseau : {exc}"
+        else:
+            if resp.status_code == 200:
+                return feedparser.parse(resp.text)
+            if resp.status_code not in LETTERBOXD_RETRYABLE_STATUS_CODES:
+                # Définitif (404, 403, 410...) : pas de retry, on classe tout de suite.
+                raise RuntimeError(f"RSS fetch failed ({resp.status_code}) for {url}")
+            last_error = f"HTTP {resp.status_code}"
+
+        if attempt <= LETTERBOXD_MAX_RETRY_ATTEMPTS:
+            delay = LETTERBOXD_BACKOFF_BASE_SECONDS * (2 ** (attempt - 1))
+            print(
+                f"[fetch_rss] tentative {attempt} échouée ({last_error}), nouvel essai dans {delay:.0f}s",
+                file=sys.stderr,
+                flush=True,
+            )
+            time.sleep(delay)
+
+    total_attempts = LETTERBOXD_MAX_RETRY_ATTEMPTS + 1
+    # Marqueur "(rate_limited)" lu tel quel par worker.classify_error() : les
+    # 429 et les erreurs réseau épuisées finissent dans le même error_code,
+    # comme demandé par l'architecture (§4).
+    raise RuntimeError(
+        f"RSS fetch failed after {total_attempts} attempts (rate_limited) for {url} : {last_error}"
+    )
 
 
 def parse_logged_at(entry: Dict[str, Any], raw_value: Optional[str]) -> Dict[str, Any]:
@@ -1085,7 +1159,10 @@ def main():
         print(f"Wrote {out_json}")
         print(f"Wrote {out_md}")
     except Exception as e:
-        print("Error:", e)
+        # sur stderr, pas stdout : worker.py.classify_error() (phase 6) ne lit
+        # que stderr pour distinguer user_not_found / profile_private /
+        # no_films / rate_limited d'un internal_error générique.
+        print("Error:", e, file=sys.stderr)
         raise SystemExit(1)
 
 

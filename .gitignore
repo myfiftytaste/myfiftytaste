@@ -17,6 +17,10 @@ test-results/
 __pycache__/
 *.pyc
 
+# État local du rate limiter Letterboxd (worker.py, un timestamp réécrit en
+# continu) : rien à versionner, contrairement aux autres caches de data/cache/.
+data/cache/.letterboxd_last_request
+
 .DS_Store
 
 .chrome-css-check/

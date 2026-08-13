@@ -1,3 +1,4 @@
+import { NextRequest } from "next/server";
 import { Pool } from "pg";
 
 // Serveur uniquement (module "pg"). Ne jamais importer ce fichier depuis un
@@ -56,4 +57,44 @@ export const PROFILE_FRESHNESS_HOURS = 24;
 export function isFresh(generatedAt: Date): boolean {
   const ageMs = Date.now() - generatedAt.getTime();
   return ageMs < PROFILE_FRESHNESS_HOURS * 60 * 60 * 1000;
+}
+
+// Rate limit par IP sur la création de job (architecture-v1-dynamique.md
+// §4, runbook phase 6) : ne protège que la création de job, pas les lectures
+// de cache (une visite répétée de son propre profil ne coûte rien au
+// pipeline, inutile de la freiner). Fenêtre fixe, ajustable comme
+// PROFILE_FRESHNESS_HOURS ci-dessus. Une IP peut être partagée par plusieurs
+// personnes (box, réseau d'entreprise) : garder la limite large plutôt que
+// stricte, et un message qui ne fait pas peser la faute sur l'utilisateur.
+export const RATE_LIMIT_MAX_REQUESTS = 5;
+export const RATE_LIMIT_WINDOW_MINUTES = 10;
+
+/** x-forwarded-for est posé de façon fiable par Vercel ; ce n'est pas exploitable côté
+ * navigateur (jamais exposé au client), donc pas de risque de usurpation depuis le front. */
+export function clientIp(request: NextRequest): string {
+  const forwarded = request.headers.get("x-forwarded-for");
+  if (forwarded) return forwarded.split(",")[0].trim();
+  return "unknown";
+}
+
+/** Incrémente le compteur de la fenêtre courante pour cette IP (la remet à 1 si la
+ * fenêtre précédente est expirée) et renvoie true si la requête reste sous la limite. */
+export async function withinRateLimit(pool: Pool, ip: string): Promise<boolean> {
+  const result = await pool.query<{ request_count: number }>(
+    `INSERT INTO api_rate_limit (ip_address, window_start, request_count)
+     VALUES ($1, now(), 1)
+     ON CONFLICT (ip_address) DO UPDATE SET
+       request_count = CASE
+         WHEN api_rate_limit.window_start < now() - ($2 * interval '1 minute') THEN 1
+         ELSE api_rate_limit.request_count + 1
+       END,
+       window_start = CASE
+         WHEN api_rate_limit.window_start < now() - ($2 * interval '1 minute') THEN now()
+         ELSE api_rate_limit.window_start
+       END
+     RETURNING request_count`,
+    [ip, RATE_LIMIT_WINDOW_MINUTES],
+  );
+  const count = result.rows[0]?.request_count ?? 0;
+  return count <= RATE_LIMIT_MAX_REQUESTS;
 }

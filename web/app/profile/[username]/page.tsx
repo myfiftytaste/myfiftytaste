@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import ErrorScreen from "../../../components/ErrorScreen";
 import LoadingScreen from "../../../components/LoadingScreen";
 import ProfileView from "../../../components/ProfileView";
-import { fetchCachedProfile, getJobStatus, postProfile, type CachedProfilePayload } from "../../../lib/apiClient";
+import { ApiError, fetchCachedProfile, getJobStatus, postProfile, type CachedProfilePayload } from "../../../lib/apiClient";
 
 // Intervalle de polling de GET /api/job/{id} — dans la fourchette demandée
 // (1,5 à 2 s).
@@ -27,6 +27,7 @@ export default function ProfilePage({
   const [phase, setPhase] = useState<Phase>("checking");
   const [jobId, setJobId] = useState<string | null>(searchParams.job ?? null);
   const [profile, setProfile] = useState<CachedProfilePayload | null>(null);
+  const [errorCode, setErrorCode] = useState<string | undefined>(undefined);
   const mergeDoneRef = useRef(false);
   const profileRef = useRef<CachedProfilePayload | null>(null);
 
@@ -59,8 +60,13 @@ export default function ProfilePage({
           setJobId(result.job_id);
           setPhase("loading");
         }
-      } catch {
-        if (!cancelled) setPhase("error");
+      } catch (err) {
+        if (cancelled) return;
+        // Un 429 ici vient du rate limit IP de POST /api/profile (pas d'un
+        // job) : pas d'error_code en base, on réutilise directement la même
+        // clé côté écran pour afficher le même message rassurant.
+        if (err instanceof ApiError && err.status === 429) setErrorCode("rate_limited");
+        setPhase("error");
       }
     }
 
@@ -84,6 +90,7 @@ export default function ProfilePage({
         if (status.status === "done") {
           setPhase("merging");
         } else if (status.status === "error") {
+          setErrorCode(status.error_code);
           setPhase("error");
         }
       } catch {
@@ -132,7 +139,7 @@ export default function ProfilePage({
   }
 
   if (phase === "error") {
-    return <ErrorScreen />;
+    return <ErrorScreen username={username} errorCode={errorCode} />;
   }
 
   if (phase === "ready" && profile) {
