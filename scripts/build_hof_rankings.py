@@ -5,18 +5,21 @@ Usage:
 
     month defaults to the current UTC month ("YYYY-MM").
 
-Inputs:
-    data/output/hall_of_fame/<month>/<username>_snapshot.json
+Input:
+    Postgres monthly_snapshot table (month = <month>).
 
 Output:
     data/output/hall_of_fame/<month>/_rankings.json
     data/output/hall_of_fame/<month>/_rankings_report.md
+    (local report files only — the data source itself is live Postgres, not
+    local files; useful as a standalone reporting/debug tool.)
 
 This is the offline/CLI counterpart of web/lib/hallOfFame.ts, which the
 live /hall-of-fame page uses to recompute rankings on every request (see
 that file's header comment for why: rankings depend on live opt-in state,
 so a cached artifact would go stale the moment someone opts in or out).
-Both implementations follow the same rules; keep them in sync.
+Both implementations follow the same rules and now read the same table;
+keep them in sync.
 """
 
 from __future__ import annotations
@@ -29,7 +32,7 @@ from typing import Any, Callable, Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from hall_of_fame_common import CONTINENTS  # noqa: E402
+from hall_of_fame_common import CONTINENTS, connect  # noqa: E402
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 HOF_DIR = BASE_DIR / "data" / "output" / "hall_of_fame"
@@ -83,16 +86,31 @@ def current_month() -> str:
 
 
 def load_snapshots(month: str) -> list[dict[str, Any]]:
-    month_dir = HOF_DIR / month
-    if not month_dir.exists():
-        return []
-    snapshots = []
-    for path in sorted(month_dir.glob("*_snapshot.json")):
-        try:
-            snapshots.append(json.loads(path.read_text(encoding="utf-8")))
-        except Exception:
-            continue
-    return snapshots
+    conn = connect()
+    rows = conn.execute(
+        """
+        SELECT username, display_username, first_seen_at, opted_in,
+               metrics_snapshot, continent_consumption, continent_films
+        FROM monthly_snapshot
+        WHERE month = %s
+        """,
+        (month,),
+    ).fetchall()
+    # display_username preserve la casse d'origine Letterboxd (meme fallback
+    # que profile_cache / GET /api/profile ailleurs) ; first_seen_at converti
+    # en ISO string, le tri ci-dessous compare des chaines (herite du format
+    # JSON d'origine, inchange pour ne pas toucher a cette logique deja testee).
+    return [
+        {
+            "username": row["display_username"] or row["username"],
+            "first_seen_at": row["first_seen_at"].isoformat(),
+            "opted_in": row["opted_in"],
+            "metrics_snapshot": row["metrics_snapshot"] or {},
+            "continent_consumption": row["continent_consumption"] or {},
+            "continent_films": row["continent_films"] or {},
+        }
+        for row in rows
+    ]
 
 
 def rank_podium(

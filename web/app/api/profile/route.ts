@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getBadgesForUser } from "../../../lib/badges";
 import { clientIp, getPool, isFresh, normalizeUsername, USERNAME_PATTERN, withinRateLimit } from "../../../lib/db";
 
 // POST /api/profile — architecture-v1-dynamique.md section 3.
@@ -53,6 +54,7 @@ export async function POST(request: NextRequest) {
         metrics: cachedRow.metrics,
         recommendations: cachedRow.recommendations,
         generated_at: cachedRow.generated_at,
+        badges: await getBadgesForUser(username),
       },
     });
   }

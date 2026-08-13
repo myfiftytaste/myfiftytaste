@@ -145,7 +145,7 @@ export default function ProfilePage({
   if (phase === "ready" && profile) {
     return (
       <div className="profileReveal">
-        <ProfileView profile={profile.display_profile} />
+        <ProfileView profile={profile.display_profile} badges={profile.badges} />
       </div>
     );
   }

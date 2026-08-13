@@ -9,6 +9,39 @@ since a film's `countries` list in `{username}_wrapped.json` is stored
 
 from __future__ import annotations
 
+import os
+from pathlib import Path
+
+import psycopg
+from psycopg.rows import dict_row
+
+try:
+    from dotenv import load_dotenv
+except ImportError:  # pragma: no cover
+    load_dotenv = None
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+def database_url() -> str:
+    """Meme convention que worker.py et scripts/migrate.py : DATABASE_URL via
+    l'environnement (.env en local), jamais en dur. Partagee ici plutot que
+    dupliquee une troisieme fois dans build_hof_rankings.py et
+    attribute_badges.py, les deux seuls scripts HOF qui parlent a la base."""
+    if load_dotenv is not None:
+        load_dotenv(BASE_DIR / ".env")
+    url = (os.environ.get("DATABASE_URL") or "").strip()
+    if not url:
+        raise SystemExit("DATABASE_URL n'est pas définie (voir README.md).")
+    if url.startswith("postgres://"):
+        url = "postgresql://" + url[len("postgres://") :]
+    return url
+
+
+def connect() -> psycopg.Connection:
+    return psycopg.connect(database_url(), autocommit=True, row_factory=dict_row)
+
+
 CONTINENTS: list[str] = [
     "Europe",
     "Asie",

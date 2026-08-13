@@ -1,16 +1,13 @@
-import { promises as fs } from "fs";
-import path from "path";
+import { getPool } from "./db";
 import { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
 
 export { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
 
-// Mirrors scripts/hall_of_fame_common.py + scripts/build_monthly_snapshot.py.
-// Rankings are recomputed on every page load straight from the frozen
-// snapshots on disk (cheap: at most a few hundred small JSON files), rather
-// than cached — see the Hall of Fame brief, section 3.2: no scheduler needed
-// for launch.
-
-const HOF_DIR = path.join(process.cwd(), "..", "data", "output", "hall_of_fame");
+// Mirrors scripts/hall_of_fame_common.py + scripts/build_monthly_snapshot.py
+// (offline/CLI counterpart, kept in sync by hand — see that script's header).
+// Rankings are recomputed on every page load straight from monthly_snapshot
+// (cheap: at most a few hundred rows for one month), rather than cached —
+// see the Hall of Fame brief, section 3.2: no scheduler needed for launch.
 
 export type MetricsSnapshot = {
   detected_films_count: number | null;
@@ -71,28 +68,40 @@ export function seasonTitle(month: string): string {
 }
 
 async function readSnapshotsForMonth(month: string): Promise<MonthlySnapshot[]> {
-  const monthDir = path.join(HOF_DIR, month);
-  let files: string[];
-  try {
-    files = await fs.readdir(monthDir);
-  } catch {
-    return [];
-  }
-
-  const snapshots = await Promise.all(
-    files
-      .filter((file) => file.endsWith("_snapshot.json"))
-      .map(async (file) => {
-        try {
-          const raw = await fs.readFile(path.join(monthDir, file), "utf-8");
-          return JSON.parse(raw) as MonthlySnapshot;
-        } catch {
-          return null;
-        }
-      }),
+  const pool = getPool();
+  const result = await pool.query<{
+    username: string;
+    display_username: string | null;
+    first_seen_at: Date;
+    opted_in: boolean | null;
+    opted_in_at: Date | null;
+    metrics_snapshot: MetricsSnapshot;
+    continent_consumption: Record<string, number>;
+    continent_films: Record<string, ContinentFilmRef[]> | null;
+  }>(
+    `SELECT username, display_username, first_seen_at, opted_in, opted_in_at,
+            metrics_snapshot, continent_consumption, continent_films
+     FROM monthly_snapshot
+     WHERE month = $1`,
+    [month],
   );
 
-  return snapshots.filter((snapshot): snapshot is MonthlySnapshot => snapshot !== null);
+  // display_username préserve la casse d'origine Letterboxd pour l'affichage
+  // (podiums, poinçons) — même fallback que profile_cache/GET /api/profile
+  // ailleurs dans le code. first_seen_at converti en ISO string : le reste
+  // de ce fichier (tri, tiebreak) compare des chaînes avec localeCompare,
+  // hérité du format JSON d'origine — inchangé pour ne pas toucher à cette
+  // logique déjà testée.
+  return result.rows.map((row) => ({
+    month,
+    username: row.display_username ?? row.username,
+    first_seen_at: row.first_seen_at.toISOString(),
+    opted_in: row.opted_in,
+    opted_in_at: row.opted_in_at ? row.opted_in_at.toISOString() : null,
+    metrics_snapshot: row.metrics_snapshot,
+    continent_consumption: row.continent_consumption ?? {},
+    continent_films: row.continent_films ?? undefined,
+  }));
 }
 
 function ranked(

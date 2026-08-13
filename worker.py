@@ -58,6 +58,7 @@ OUTPUT_DIR = BASE_DIR / "data" / "output"
 
 sys.path.insert(0, str(BASE_DIR / "scripts"))
 from build_full_profile import PIPELINE_STEPS, USERNAME_RE  # noqa: E402
+from build_monthly_snapshot import build_snapshot, current_month  # noqa: E402
 
 POLL_INTERVAL_SECONDS = 3
 
@@ -215,6 +216,48 @@ def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: st
             "UPDATE job SET status = 'done', finished_at = now() WHERE id = %s",
             (job["id"],),
         )
+
+    # Best-effort, hors de la transaction ci-dessus : le Hall of Fame est une
+    # fonctionnalité secondaire (Hall of Fame brief), un bug ici ne doit
+    # jamais faire échouer une génération de profil par ailleurs réussie.
+    try:
+        freeze_monthly_snapshot(conn, job, username)
+    except Exception as error:  # noqa: BLE001 - best-effort assumé, voir commentaire ci-dessus
+        print(f"[job {job['id']}] échec du gel du snapshot HOF (non bloquant) : {error}", file=sys.stderr, flush=True)
+
+
+def freeze_monthly_snapshot(conn: psycopg.Connection, job: dict[str, Any], username: str) -> None:
+    """Gèle un monthly_snapshot pour le mois en cours, la première fois qu'un
+    profil est généré ce mois-ci (Hall of Fame brief, section 3.2 : "whichever
+    values were true the first time someone showed up this month are the
+    values that count"). ON CONFLICT DO NOTHING sur la PK (month, username) :
+    les visites suivantes du même mois ne recalculent jamais un snapshot déjà
+    gelé, exactement comme le faisait l'ancienne version fichier
+    (build_monthly_snapshot.main : "already exists — returning it unchanged").
+
+    build_snapshot() lit les mêmes fichiers data/output/{username}_*.json que
+    finalize_success() vient de lire pour profile_cache : le pipeline venant
+    de réussir, ils sont garantis présents.
+    """
+    month = current_month()
+    snapshot = build_snapshot(username, month)
+    conn.execute(
+        """
+        INSERT INTO monthly_snapshot
+            (month, username, display_username, first_seen_at, metrics_snapshot, continent_consumption, continent_films)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        ON CONFLICT (month, username) DO NOTHING
+        """,
+        (
+            month,
+            username.lower(),
+            username,
+            snapshot["first_seen_at"],
+            Jsonb(snapshot["metrics_snapshot"]),
+            Jsonb(snapshot["continent_consumption"]),
+            Jsonb(snapshot["continent_films"]),
+        ),
+    )
 
 
 def finalize_error(conn: psycopg.Connection, job: dict[str, Any], error_code: str, message: str) -> None:
