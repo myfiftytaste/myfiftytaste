@@ -291,23 +291,24 @@ a {
 }
 
 .siteHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0 0 30px;
 }
 
 .siteBranding {
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 
+/* Même mécanisme de centrage que .hofLede et le reste du contenu en dessous
+   (bloc + margin: 0 auto dans le même conteneur .pageShell) plutôt qu'un
+   centrage flex indépendant sur .siteBranding : les deux finissaient par
+   coïncider la plupart du temps, mais restaient deux calculs distincts
+   pouvant dériver l'un de l'autre de quelques pixels selon le contenu. */
 .siteLogo {
   width: min(300px, 72vw);
   height: auto;
   object-fit: contain;
   display: block;
+  margin: 0 auto;
   filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.42));
 }
 

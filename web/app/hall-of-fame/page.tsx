@@ -33,7 +33,7 @@ export default async function HallOfFamePage() {
       <section className="hofMasthead">
         <p className="hofEyebrow">Hall of Fame</p>
         <h1 className="hofMastheadTitle">Saison {seasonTitle(month)}</h1>
-        <p className="hofLede hofLedeCentered">Les cinéphiles du mois, classés, figés, célébrés.</p>
+        <p className="hofLede hofLedeCentered">Regarder un film est éphémère... les honneurs sont immortels</p>
         <div className="hofSeasonMeta">
           <span>
             <b>{rankings.participantCount}</b> profil{rankings.participantCount === 1 ? "" : "s"} figé
