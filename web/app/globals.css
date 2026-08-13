@@ -3000,3 +3000,300 @@ a.recommendation-card:hover {
     font-size: 7.5px;
   }
 }
+
+/* ---- Écran de chargement (loading-screen-mockup.html) ---- */
+
+.loadingShell {
+  --loading-bg: #0b0a08;
+  --loading-bg-card: #17140f;
+  --loading-line: #2a2519;
+  --loading-gold: #c9a24b;
+  --loading-gold-bright: #eccb7d;
+  --loading-cream: #ede4d3;
+  --loading-muted: #9a9080;
+  --loading-muted-dim: #665f50;
+  --lb-orange: #ff8000;
+  --lb-green: #00e054;
+  --lb-blue: #40bcf4;
+  --loading-r: 58px; /* rayon d'orbite */
+  --loading-flat: 0.38; /* aplatissement des ellipses */
+  --loading-unflat: 2.63; /* inverse, pour que les points restent ronds */
+
+  /* Plein viewport, opaque : masque totalement le fond thématique du site
+     derrière (Akira/Hana-Bi/Grande Bellezza), quels que soient la largeur et
+     le padding du conteneur de page qui l'englobe. */
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  background: var(--loading-bg);
+}
+
+.loadingStage {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  padding: 0 24px;
+  text-align: center;
+  color: var(--loading-cream);
+}
+
+.loadingLoader {
+  transition: opacity 0.5s ease;
+}
+
+.loadingAtom {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.loadingOrbit {
+  position: absolute;
+  inset: 0;
+}
+
+.loadingOrbitA {
+  transform: rotate(0deg) scaleY(var(--loading-flat));
+}
+
+.loadingOrbitB {
+  transform: rotate(60deg) scaleY(var(--loading-flat));
+}
+
+.loadingOrbitC {
+  transform: rotate(-60deg) scaleY(var(--loading-flat));
+}
+
+.loadingOrbit::after {
+  content: "";
+  position: absolute;
+  inset: 32px;
+  border: 1px solid rgba(237, 228, 211, 0.06);
+  border-radius: 50%;
+}
+
+.loadingSpin {
+  position: absolute;
+  inset: 0;
+  animation: loadingSpin 3.2s linear infinite;
+}
+
+.loadingOrbitB .loadingSpin {
+  animation-duration: 4.1s;
+  animation-direction: reverse;
+}
+
+.loadingOrbitC .loadingSpin {
+  animation-duration: 3.6s;
+}
+
+.loadingDot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  margin: -6.5px 0 0 -6.5px;
+  border-radius: 50%;
+  transform: translateX(var(--loading-r)) scaleY(var(--loading-unflat));
+}
+
+.loadingDotOrange {
+  background: var(--lb-orange);
+  box-shadow: 0 0 14px rgba(255, 128, 0, 0.45);
+}
+
+.loadingDotGreen {
+  background: var(--lb-green);
+  box-shadow: 0 0 14px rgba(0, 224, 84, 0.4);
+}
+
+.loadingDotBlue {
+  background: var(--lb-blue);
+  box-shadow: 0 0 14px rgba(64, 188, 244, 0.4);
+}
+
+@keyframes loadingSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingCore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  margin: -7.5px 0 0 -7.5px;
+  border-radius: 50%;
+  background: var(--loading-gold-bright);
+  transform: scale(0);
+  opacity: 0;
+  box-shadow: 0 0 26px rgba(236, 203, 125, 0.85);
+}
+
+.loadingHalo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(236, 203, 125, 0.55) 0%, rgba(201, 162, 75, 0.16) 45%, transparent 70%);
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loadingCaption {
+  margin-top: 46px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  color: var(--loading-muted);
+  min-height: 26px;
+  transition: opacity 0.45s ease;
+}
+
+.loadingCaption.loadingFading {
+  opacity: 0;
+}
+
+.loadingPatience {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--loading-muted-dim);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.loadingPatience.loadingShow {
+  opacity: 1;
+}
+
+/* ---- séquence de fin : convergence puis irradiation ---- */
+
+.loadingAtom.loadingDone .loadingSpin {
+  animation-play-state: paused;
+}
+
+.loadingAtom.loadingDone .loadingDot {
+  animation: loadingConverge 0.75s cubic-bezier(0.6, 0, 0.3, 1) forwards;
+}
+
+.loadingAtom.loadingDone .loadingCore {
+  animation: loadingCoreIn 0.35s 0.62s forwards;
+}
+
+.loadingAtom.loadingDone .loadingHalo {
+  animation: loadingIrradiate 1.15s 0.88s cubic-bezier(0.3, 0, 0.2, 1) forwards;
+}
+
+.loadingLoader.loadingDone .loadingCaption,
+.loadingLoader.loadingDone .loadingPatience {
+  opacity: 0;
+}
+
+@keyframes loadingConverge {
+  to {
+    transform: translateX(0) scaleY(var(--loading-unflat));
+    background: var(--loading-gold-bright);
+    box-shadow: 0 0 20px rgba(236, 203, 125, 0.7);
+  }
+}
+
+@keyframes loadingCoreIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes loadingIrradiate {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  18% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: scale(58);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loadingSpin {
+    animation: none;
+  }
+  .loadingDot {
+    transform: translateX(var(--loading-r)) scaleY(var(--loading-unflat));
+  }
+  .loadingAtom.loadingDone .loadingHalo {
+    animation-duration: 0.4s;
+  }
+}
+
+/* ---- transition douce vers le profil une fois le chargement termine ---- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .profileReveal {
+    animation: profileFadeIn 0.6s ease both;
+  }
+}
+
+@keyframes profileFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---- écran d'erreur générique (phase 6 affinera par error_code) ---- */
+
+.loadingErrorCard {
+  background: var(--loading-bg-card);
+  border: 1px solid var(--loading-line);
+  border-radius: 12px;
+  padding: 40px 32px;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.loadingErrorCard h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--loading-cream);
+  margin: 0 0 12px;
+}
+
+.loadingErrorCard p {
+  color: var(--loading-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.loadingErrorCard a {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 24px;
+  background: var(--loading-gold);
+  color: #141008;
+  text-decoration: none;
+  border-radius: 1px;
+}
