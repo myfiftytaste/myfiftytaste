@@ -89,7 +89,8 @@ OPTIONAL_MEDIA_FIELDS = [
 FILM_HIGHLIGHT_KEYS = [
     "most_niche",
     "most_mainstream",
-    "most_cult",
+    "best_rated",
+    "worst_rated",
     "longest",
     "shortest",
 ]

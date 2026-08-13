@@ -2754,5 +2754,166 @@
     "tmdb_score": 1.0,
     "status": "confirmed",
     "needs_manual_review": false
+  },
+  "case-137-2025": {
+    "letterboxd_slug": "case-137-2025",
+    "title": "Case 137",
+    "original_title": "Dossier 137",
+    "year": "2025",
+    "runtime": 115,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1294698,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-running-man-2025": {
+    "letterboxd_slug": "the-running-man-2025",
+    "title": "The Running Man",
+    "original_title": "The Running Man",
+    "year": "2025",
+    "runtime": 133,
+    "genres": [
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "countries": [
+      "United States of America",
+      "United Kingdom"
+    ],
+    "original_language": "en",
+    "tmdb_id": 798645,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "dog-51": {
+    "letterboxd_slug": "dog-51",
+    "title": "Dog 51",
+    "original_title": "Chien 51",
+    "year": "2025",
+    "runtime": 100,
+    "genres": [
+      "Thriller",
+      "Science Fiction",
+      "Action"
+    ],
+    "countries": [
+      "France",
+      "Belgium"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 1266798,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "fame": {
+    "letterboxd_slug": "fame",
+    "title": "Fame",
+    "original_title": "Fame",
+    "year": "1980",
+    "runtime": 134,
+    "genres": [
+      "Drama",
+      "Music"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 3537,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "winnie-the-pooh-blood-and-honey": {
+    "letterboxd_slug": "winnie-the-pooh-blood-and-honey",
+    "title": "Winnie the Pooh: Blood and Honey",
+    "original_title": "Winnie the Pooh: Blood and Honey",
+    "year": "2023",
+    "runtime": 84,
+    "genres": [
+      "Horror"
+    ],
+    "countries": [
+      "United Kingdom"
+    ],
+    "original_language": "en",
+    "tmdb_id": 980078,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "the-odyssey-2026": {
+    "letterboxd_slug": "the-odyssey-2026",
+    "title": "The Odyssey",
+    "original_title": "The Odyssey",
+    "year": "2026",
+    "runtime": 173,
+    "genres": [
+      "Adventure",
+      "Action",
+      "Fantasy"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "original_language": "en",
+    "tmdb_id": 1368337,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "in-waves": {
+    "letterboxd_slug": "in-waves",
+    "title": "In Waves",
+    "original_title": "In Waves",
+    "year": "2026",
+    "runtime": 91,
+    "genres": [
+      "Animation",
+      "Romance",
+      "Drama"
+    ],
+    "countries": [
+      "France",
+      "Belgium",
+      "United States of America"
+    ],
+    "original_language": "fr",
+    "tmdb_id": 947502,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
+  },
+  "blue-giant": {
+    "letterboxd_slug": "blue-giant",
+    "title": "Blue Giant",
+    "original_title": "BLUE GIANT",
+    "year": "2023",
+    "runtime": 120,
+    "genres": [
+      "Animation",
+      "Drama",
+      "Music"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "original_language": "ja",
+    "tmdb_id": 887870,
+    "tmdb_score": 1.0,
+    "status": "confirmed",
+    "needs_manual_review": false
   }
 }

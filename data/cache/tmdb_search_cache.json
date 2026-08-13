@@ -19207,5 +19207,718 @@
       "vote_average": 6.493,
       "vote_count": 69
     }
+  ],
+  "Case 137|||2025": [
+    {
+      "adult": false,
+      "backdrop_path": "/kjKxmpuPIvXjDP4reWCkMaeK2Es.jpg",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "id": 1294698,
+      "title": "Case 137",
+      "original_language": "fr",
+      "original_title": "Dossier 137",
+      "overview": "Stéphanie, a police officer working for Internal Affairs, is assigned to a case involving a young man severely wounded during a tense and chaotic demonstration in Paris. While she finds no evidence of illegitimate police violence, the case takes a personal turn when she discovers the victim is from her hometown.",
+      "popularity": 3.9583,
+      "poster_path": "/t93h1ptV098Q6vzl9gfEymJQ6Qp.jpg",
+      "release_date": "2025-11-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.947,
+      "vote_count": 263
+    }
+  ],
+  "The Legendaries|||2025": [
+    {
+      "adult": false,
+      "backdrop_path": "/vLEr8t7m5JXCZzmhjq9ZROq7dtr.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        35,
+        10751,
+        14
+      ],
+      "id": 677561,
+      "title": "The Legendaries",
+      "original_language": "fr",
+      "original_title": "Les Légendaires",
+      "overview": "They are brave, intrepid, indomitable, and they turned back to children! While fighting the terrible sorcerer Darkhell, the official heros of Alysia: The Legendaries accidentally broke the Jovenia stone, the one of eternal youth. This is how the whole kingdom of Alysia, and especially our champions, has fallen back into childhood. No more birth, but people keep on dying of accident or sickness… Humanity is then doomed to extinction. A real curse! And quite a blow to the myth of \"The Legendaries\". The five warriors, formerly admired, have now to lie low… Today blamed and discredited, they are well decided to break the spell and fix their mistake. \"Nothing is impossible for a willing heart\"… Even at 10!",
+      "popularity": 3.6512,
+      "poster_path": "/AlfndBQucnWC7igEIG2L0sk6tiF.jpg",
+      "release_date": "2026-01-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.077,
+      "vote_count": 26
+    }
+  ],
+  "The Running Man|||2025": [
+    {
+      "adult": false,
+      "backdrop_path": "/aHj7d7wSLqrg5cjAcgHhiGr97Ih.jpg",
+      "genre_ids": [
+        28,
+        53,
+        878
+      ],
+      "id": 798645,
+      "title": "The Running Man",
+      "original_language": "en",
+      "original_title": "The Running Man",
+      "overview": "Desperate to save his sick daughter, working-class Ben Richards is convinced by The Running Man's charming but ruthless producer to enter the deadly competition game as a last resort. But Ben's defiance, instincts, and grit turn him into an unexpected fan favorite — and a threat to the entire system. As ratings skyrocket, so does the danger, and Ben must outwit not just the Hunters, but a nation addicted to watching him fall.",
+      "popularity": 32.8676,
+      "poster_path": "/dKL78O9zxczVgjtNcQ9UkbYLzqX.jpg",
+      "release_date": "2025-11-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.749,
+      "vote_count": 1844
+    }
+  ],
+  "Dog 51|||2025": [
+    {
+      "adult": false,
+      "backdrop_path": "/OO75q1cTWWXDmy52bB79yzpxBt.jpg",
+      "genre_ids": [
+        53,
+        878,
+        28
+      ],
+      "id": 1266798,
+      "title": "Dog 51",
+      "original_language": "fr",
+      "original_title": "Chien 51",
+      "overview": "In the near future, Paris is divided into three zones that separate social classes, and no one can escape ALMA, a predictive AI that has revolutionized law enforcement. When ALMA’s creator is assassinated, Salia, a top agent, and Zem, a jaded cop, are forced to work together to solve a murder that may expose the dark secrets of the system they serve.",
+      "popularity": 5.3537,
+      "poster_path": "/olMvhbCRuhTbf6EMKxKGHi2on3L.jpg",
+      "release_date": "2025-10-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.112,
+      "vote_count": 330
+    }
+  ],
+  "Fame|||1980": [
+    {
+      "adult": false,
+      "backdrop_path": "/jekdv0OUnppLnpbPdBIkwCoeENo.jpg",
+      "genre_ids": [
+        18,
+        10402
+      ],
+      "id": 3537,
+      "title": "Fame",
+      "original_language": "en",
+      "original_title": "Fame",
+      "overview": "A chronicle of the lives of several teenagers who attend a New York high school for students gifted in the performing arts.",
+      "popularity": 3.6271,
+      "poster_path": "/ewuGn4kxsqbYfgSO8Y5kzYlBcKE.jpg",
+      "release_date": "1980-05-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.425,
+      "vote_count": 524
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1247620,
+      "title": "On Location with: FAME",
+      "original_language": "en",
+      "original_title": "On Location with: FAME",
+      "overview": "A short film about the making of the movie \"Fame\" (1980).",
+      "popularity": 0.9117,
+      "poster_path": null,
+      "release_date": "1980-12-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.667,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8CdC61bvZTEwDlgFrXyYubjyMWc.jpg",
+      "genre_ids": [
+        10751,
+        18,
+        10770
+      ],
+      "id": 38602,
+      "title": "Little Lord Fauntleroy",
+      "original_language": "en",
+      "original_title": "Little Lord Fauntleroy",
+      "overview": "Young Cedric Errol and his widowed mother live in genteel poverty in 1880s Brooklyn after the death of his father. Cedric's grandfather, the Earl of Dorincourt, has long ago disowned his son for marrying an American. But after the death of the Earl's remaining son, he decides to accept Cedric as his heir.",
+      "popularity": 2.7238,
+      "poster_path": "/7rLhBRseh1ZVNMQIFUxhy9IcWvi.jpg",
+      "release_date": "1980-12-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.348,
+      "vote_count": 320
+    }
+  ],
+  "Winnie the Pooh: Blood and Honey|||2023": [
+    {
+      "adult": false,
+      "backdrop_path": "/jEybIB7yl3zgEdTHukaiR8b9yJp.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 980078,
+      "title": "Winnie the Pooh: Blood and Honey",
+      "original_language": "en",
+      "original_title": "Winnie the Pooh: Blood and Honey",
+      "overview": "After Christopher Robin abandons them for college, Pooh and Piglet embark on a bloody rampage as they search for a new source of food.",
+      "popularity": 4.5349,
+      "poster_path": "/y3iPrVHicDBcx2N6eamv0jbHH6H.jpg",
+      "release_date": "2023-01-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.934,
+      "vote_count": 1592
+    }
+  ],
+  "The Odyssey|||2026": [
+    {
+      "adult": false,
+      "backdrop_path": "/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "genre_ids": [
+        12,
+        28,
+        14
+      ],
+      "id": 1368337,
+      "title": "The Odyssey",
+      "original_language": "en",
+      "original_title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "popularity": 819.0049,
+      "poster_path": "/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "release_date": "2026-07-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.994,
+      "vote_count": 2651
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rOIaKlAX0SeNC25dFbM0y1mFsH6.jpg",
+      "genre_ids": [
+        12,
+        14,
+        28
+      ],
+      "id": 1698863,
+      "title": "The Odyssey",
+      "original_language": "en",
+      "original_title": "The Odyssey",
+      "overview": "Based on the Ancient Greek epic. After ten years of war, King Odysseus sets sail for Ithaca, eager to reunite with his beloved. But his journey home is far more treacherous than the battlefield, as he must face deadly monsters and vengeful gods to survive.",
+      "popularity": 165.1631,
+      "poster_path": "/xBHCRB7zLIW41w8QskfwJhm32YF.jpg",
+      "release_date": "2026-07-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.469,
+      "vote_count": 16
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fXUxAL8w724dI9yT5UbwJuk29K9.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1731494,
+      "title": "The Odyssey: The Making of an Epic",
+      "original_language": "en",
+      "original_title": "The Odyssey: The Making of an Epic",
+      "overview": "Go behind the scenes of Christopher Nolan's mythic action epic, The Odyssey. This special documentary explores the monumental undertaking of adapting Homer’s foundational saga for the big screen, charting a grueling 91-day principal photography schedule across six countries. From the revolutionary use of brand-new IMAX film technology to the massive coordination of over 5,300 custom-designed costumes, discover how a star-studded cast led by Matt Damon, Tom Holland, and Anne Hathaway brought the dangerous, timeless world of ancient Greek gods and monsters to life.",
+      "popularity": 3.1356,
+      "poster_path": "/nEWsCyE488tG85P8Cg3HbVbMvqQ.jpg",
+      "release_date": "2026-07-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 14
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ilyYc1rLvk8BX8PmgKZ4zoL2KAi.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1716056,
+      "title": "The Odyssey: The Real Story",
+      "original_language": "en",
+      "original_title": "The Odyssey: The Real Story",
+      "overview": "After the fall of Troy, warrior-king Odysseus begins a perilous voyage home, only to be thrown into a decade of wandering across a world ruled by gods and monsters. He outwits cyclopes, resists enchantresses, and descends into the realm of the dead, while his family fights to survive in his absence.",
+      "popularity": 1.3976,
+      "poster_path": "/nLHcQmxza5uGEfShdCFMd1zlMJh.jpg",
+      "release_date": "2026-06-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        12
+      ],
+      "id": 1747185,
+      "title": "The Odyssey",
+      "original_language": "en",
+      "original_title": "The Odyssey",
+      "overview": "Telemachus is in search for his father, Odysseus, who disappeared 20 years ago.",
+      "popularity": 0.1793,
+      "poster_path": "/7r341YaHxbEHsgExMQt19rPBuE5.jpg",
+      "release_date": "2026-08-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1743113,
+      "title": "The Odyssey of N",
+      "original_language": "en",
+      "original_title": "The Odyssey of N",
+      "overview": "an experimental film about a trip to Italy made by the director, filmed with a camcorder",
+      "popularity": 0.5249,
+      "poster_path": "/sDnyCvbJsfeXb7ye0FB10613P5b.jpg",
+      "release_date": "2026-08-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pnCvO6ZXEZEX4uqQI4j7p6yi4or.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1733891,
+      "title": "The Odyssey with Dan Snow",
+      "original_language": "en",
+      "original_title": "The Odyssey with Dan Snow",
+      "overview": "Dan Snow sets sail across the Mediterranean in the wake of Homer's The Odyssey. This epic was written down almost 3,000 years ago, and it has been loved by generations of filmmakers, artists, authors and historians since. Now Dan re-tells the story visiting the harbours, mysterious islands and incredible ancient locations across Greece that inspired The Odyssey.",
+      "popularity": 1.0984,
+      "poster_path": "/n94AMTmvATI0VDx24Z9KQxk20WZ.jpg",
+      "release_date": "2026-07-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tEoxmN0BoYEhqms22wTQhnf3D3I.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1732799,
+      "title": "The Elephant Odyssey",
+      "original_language": "zh",
+      "original_title": "象行记",
+      "overview": "The highly unusual trek by a herd of elephants as they diverted from their usual habitat and marched over 1,000 km in China across remote Yunnan Province. They attracted global attention, including live-streamed drone footage.",
+      "popularity": 0.6535,
+      "poster_path": "/frLlMYq98hKOxtAF8MOu6jU6PYq.jpg",
+      "release_date": "2026-10-23",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1713195,
+      "title": "Life Beyond Odyssey (The Film)",
+      "original_language": "en",
+      "original_title": "Life Beyond Odyssey (The Film)",
+      "overview": "Life Beyond Odyssey is a cinematic, introspective journey that explores what happens after the end of a long, defining chapter. Blending emotion, storytelling, and sound, it reflects on identity, growth, and the uncertainty of moving forward when the path that once defined you disappears. It’s not just an ending, it’s a transition into something unknown, where the past echoes but no longer leads.",
+      "popularity": 0.4059,
+      "poster_path": "/6bkFDOoOYlYYDZ0drMVzEOr9OIH.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ttSpxCOdwhhDSgdVWkfyU46jI4b.jpg",
+      "genre_ids": [
+        16
+      ],
+      "id": 1613992,
+      "title": "The Odyssey of the Honeycrisp Apple",
+      "original_language": "fr",
+      "original_title": "L’Odyssée de la Pomme d’Api",
+      "overview": "In the midst of a social gathering, Bubulle, a small and shy individual looking for a bit of socialisation, inserts himself in the conversation of a group of cool kids. They are talking about the Honeycrisp Apple. Bubulle has never tasted it and goes on a journey to find the Honeycrisp Apple and discover what it’s all about.",
+      "popularity": 0.8817,
+      "poster_path": "/ddMrkQ0ZYuwbWQgVVUBZMxxYNYQ.jpg",
+      "release_date": "2026-01-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
+      "genre_ids": [
+        878,
+        9648,
+        12
+      ],
+      "id": 62,
+      "title": "2001: A Space Odyssey",
+      "original_language": "en",
+      "original_title": "2001: A Space Odyssey",
+      "overview": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
+      "popularity": 21.7395,
+      "poster_path": "/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+      "release_date": "1968-04-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.047,
+      "vote_count": 12802
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        16
+      ],
+      "id": 1728740,
+      "title": "Isle Navigator: The Buried Baby",
+      "original_language": "zh",
+      "original_title": "奇談島航：埋葬的孩子",
+      "overview": "The quake stole a mother's memory, but her child never forgot. Buried deep underground, how will he find a way to restore the memories she has lost? A segment of the Taiwanese animated anthology Isle Navigator, the film had its world premiere as a standalone short at the 30th Fantasia International Film Festival, where it was selected for the Satoshi Kon Award competition.",
+      "popularity": 0.82,
+      "poster_path": "/a5mRoIBiviqeWDj1TGHtzWQZQF6.jpg",
+      "release_date": "2026-08-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/osRk1LHcchuSm160br0b5hDEihu.jpg",
+      "genre_ids": [
+        12,
+        18,
+        35,
+        37
+      ],
+      "id": 1713882,
+      "title": "Crash",
+      "original_language": "en",
+      "original_title": "Crash",
+      "overview": "After surviving a tragic car accident, a man with a learner's licence and a dead phone must find his way home while battling the grief of losing his cousin.",
+      "popularity": 0.7285,
+      "poster_path": "/r7xWhjthlKr16InOOsFrkjQHMiz.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    }
+  ],
+  "Junk Head|||2017": [
+    {
+      "adult": false,
+      "backdrop_path": "/c3sfYdDKVpM9dyPeKgm980e3GRf.jpg",
+      "genre_ids": [
+        16,
+        878,
+        12
+      ],
+      "id": 464768,
+      "title": "Junk Head",
+      "original_language": "ja",
+      "original_title": "JUNK HEAD",
+      "overview": "Mankind can no longer reproduce because of gene manipulation aimed at making life longer. The clones ruling the bottomless underworld may have become fertile. Parton is selected to go on a mission through a subterranean labyrinth crawling with monsters to secure humanity's future.",
+      "popularity": 2.2196,
+      "poster_path": "/t1pHIeZZGmr8TWMyn7r1TGoMnMo.jpg",
+      "release_date": "2022-02-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.566,
+      "vote_count": 61
+    }
+  ],
+  "In Waves|||2026": [
+    {
+      "adult": false,
+      "backdrop_path": "/imMuGhPpbCKdukzFigcDVH0c0PA.jpg",
+      "genre_ids": [
+        16,
+        10749,
+        18
+      ],
+      "id": 947502,
+      "title": "In Waves",
+      "original_language": "fr",
+      "original_title": "In Waves",
+      "overview": "In Los Angeles, AJ, a shy teenager, meets Kristen. She lives for surfing; he loves skateboarding and drawing. They fall madly in love, and a happy future seems within reach. But everything changes when Kristen faces a sudden illness. Together, they face adversity, driven by the strength of their love, their friends, and their newly shared passion for surfing and the ocean.",
+      "popularity": 2.3611,
+      "poster_path": "/ry9Kj3maM9WllIe9T6C7EnS5kxI.jpg",
+      "release_date": "2026-07-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wfRJKnnq3KR8OOdHJK56UdMoFCC.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1497958,
+      "title": "It Comes in Waves",
+      "original_language": "en",
+      "original_title": "It Comes in Waves",
+      "overview": "The film centres on a family from Rwanda, who are reestablishing their lives after moving to Ottawa, Ontario as refugees, with Akai being forced to step up and take care of his younger sister Zera after their mother's health takes an unexpected decline.",
+      "popularity": 1.0783,
+      "poster_path": "/vLz2QrTQkoUyVztpJFZ6oTyNsZy.jpg",
+      "release_date": "2025-06-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        27,
+        878
+      ],
+      "id": 1620061,
+      "title": "It Comes in Waves",
+      "original_language": "en",
+      "original_title": "It Comes in Waves",
+      "overview": "A man is desolate and obsessed with a mysterious transmission from another place and he will desperately tune through the static until he finds it again. Or it finds him.",
+      "popularity": 0.5165,
+      "poster_path": "/v5k2YEkL2qMh32w8SsjumODCXqR.jpg",
+      "release_date": "2026-01-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1738826,
+      "title": "It Comes in Waves",
+      "original_language": "en",
+      "original_title": "It Comes in Waves",
+      "overview": "Look through this kaleidoscope. What do you see? A small town in India, once colonised, now free. The world evolves each day, and so do we.",
+      "popularity": 0.3998,
+      "poster_path": null,
+      "release_date": "2026-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1625001,
+      "title": "In Between Waves",
+      "original_language": "nl",
+      "original_title": "Tussen de golven",
+      "overview": "A six-week surf therapy programme sets schoolgirl Sana free.",
+      "popularity": 0.4235,
+      "poster_path": "/h0amzcVNbbrXV3Wy99MSSR5Bf5P.jpg",
+      "release_date": "2026-02-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    }
+  ],
+  "Mektoub, My Love: Canto Uno|||2017": [
+    {
+      "adult": false,
+      "backdrop_path": "/jyvbxKsmIIYTQsjOCjnRYWyUEsa.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 337676,
+      "title": "Mektoub, My Love: Canto Uno",
+      "original_language": "fr",
+      "original_title": "Mektoub, My Love: Canto Uno",
+      "overview": "Amin, an aspiring screenwriter living in Paris, returns home for the summer, in Sète, South of France. It is a time of reconnecting with his family and his childhood friends. Together with his cousin Tony and his best friend Ophélie, he spends his time between the Tunisian restaurant run by his parents, the local bars and the beaches frequented by girls on holiday.",
+      "popularity": 3.7143,
+      "poster_path": "/jJLL0E243c8CBTlryvYh69rQQV9.jpg",
+      "release_date": "2018-03-21",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.666,
+      "vote_count": 341
+    }
+  ],
+  "Blue Giant|||2023": [
+    {
+      "adult": false,
+      "backdrop_path": "/pRfBBi7q8cvM4NiKCh9cGmQdocV.jpg",
+      "genre_ids": [
+        16,
+        18,
+        10402
+      ],
+      "id": 887870,
+      "title": "Blue Giant",
+      "original_language": "ja",
+      "original_title": "BLUE GIANT",
+      "overview": "High school student Dai Miyamoto has his life is turned upside down the day he discovers jazz. Picking up a saxophone and leaving his sleepy hometown for the bustling nightclubs of Tokyo, Dai will find that the life of a professional musician isn’t for the faint of heart, as he must confront what it truly means to be great.",
+      "popularity": 4.1253,
+      "poster_path": "/7LxbzvDvdeU7lBzB92JShURa0cM.jpg",
+      "release_date": "2023-02-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.792,
+      "vote_count": 96
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/stXyO1gITPss9E3cMguPq3n4C1l.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1147747,
+      "title": "Blue Whales: Return of the Giants",
+      "original_language": "en",
+      "original_title": "Blue Whales: Return of the Giants",
+      "overview": "Blue Whales: Return of the Giants 3D takes viewers on a journey of a lifetime to explore the world of the magnificent blue whale, a species rebounding from the brink of extinction. Following two scientific expeditions—one to find a missing population of blues off the exotic Seychelles Islands, the other to chronicle whale families in Mexico’s stunning Gulf of California—the film is an inspirational story that transforms our understanding of the largest animal ever to have lived.",
+      "popularity": 1.1408,
+      "poster_path": "/hM8yRTvPy7JUqOU1t9OHaaYJBY4.jpg",
+      "release_date": "2023-05-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    }
+  ],
+  "strict:v2:the green elephant|1999": [
+    {
+      "adult": false,
+      "backdrop_path": "/evUhOMCfzM6fGhGnpcUYHnYyshJ.jpg",
+      "genre_ids": [
+        18,
+        53,
+        27,
+        35
+      ],
+      "id": 132030,
+      "title": "The Green Elephant",
+      "original_language": "ru",
+      "original_title": "Зелёный слоник",
+      "overview": "Two Russian prisoners are abused mentally and physically.",
+      "popularity": 3.0225,
+      "poster_path": "/ziIQkTkfG2kSBFDWDva7XAao47.jpg",
+      "release_date": "1999-12-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.804,
+      "vote_count": 107
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18,
+        27,
+        53,
+        80
+      ],
+      "id": 445429,
+      "title": "The Green Elephant Part 2",
+      "original_language": "ru",
+      "original_title": "The Green Elephant Part 2",
+      "overview": "A sequel to the 1999's movie \"The Green Elephant\"",
+      "popularity": 0.4063,
+      "poster_path": null,
+      "release_date": "2017-05-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        878,
+        28,
+        35,
+        12,
+        80,
+        53
+      ],
+      "id": 966629,
+      "title": "The Green Elephant 2: The Notorious generation",
+      "original_language": "ru",
+      "original_title": "Зелёный Слоник 2: Пресловутое поколение",
+      "overview": "Yaroslav Oktiabrev is a simple guy who works as a freelancer. But then fate presents him with a gift — it is necessary to consult online a former military man with the call sign \"Brother\", so that he takes old documents from an abandoned building, and you can forget about money problems in life. However, the military turns out to be an uncontrollable schizophrenic, and only a former colleague, crazy blogger Gennady Gorin, knows how to settle him down. On top of that, the customer begins to threaten Yaroslav with violence if he does not have time to do everything in a couple of hours. A seemingly trivial task suddenly turns into a real disaster, because of which the Person is already at risk of losing not only his job, but also his own life.",
+      "popularity": 0.6917,
+      "poster_path": "/vZAXgMqbqLO89gl3bpA4lKmijwp.jpg",
+      "release_date": "2023-02-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.5,
+      "vote_count": 2
+    }
+  ],
+  "strict:v2:the zone of interest|2023": [
+    {
+      "adult": false,
+      "backdrop_path": "/pnTSOKcYnvdpQNQElAtJM1rWOxH.jpg",
+      "genre_ids": [
+        18,
+        36,
+        10752
+      ],
+      "id": 467244,
+      "title": "The Zone of Interest",
+      "original_language": "en",
+      "original_title": "The Zone of Interest",
+      "overview": "The commandant of Auschwitz, Rudolf Höss, and his wife Hedwig, strive to build a dream life for their family in a house and garden next to the camp.",
+      "popularity": 15.3341,
+      "poster_path": "/hUu9zyZmDd8VZegKi1iK1Vk0RYS.jpg",
+      "release_date": "2023-12-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.013,
+      "vote_count": 2691
+    }
   ]
 }

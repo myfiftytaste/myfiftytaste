@@ -104,3 +104,20 @@ python scripts/build_full_profile.py <pseudo>
 ```
 
 Enchaîne les 8 étapes et écrit dans `data/output/`.
+
+## Worker (V1 dynamique)
+
+```bash
+python worker.py
+```
+
+Boucle infinie : prend le plus ancien job `queued` en base (verrouillage
+atomique, deux workers ne peuvent jamais récupérer le même job), exécute les
+8 étapes du pipeline en mettant à jour `current_step`/`step_label` au fil de
+l'eau, puis écrit le résultat dans `profile_cache`. `python worker.py --once`
+traite un seul job puis s'arrête — pratique pour vérifier en local sans
+laisser tourner la boucle.
+
+C'est ce process qui tourne comme service Railway en production
+(`DATABASE_URL` en chaîne **directe**, `TMDB_API_KEY`, aucun domaine public
+attribué : il ne reçoit aucune requête HTTP, il consomme la file en base).
