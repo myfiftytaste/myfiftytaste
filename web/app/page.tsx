@@ -5,10 +5,13 @@ import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useVisualTheme } from "../components/VisualThemeProvider";
 import { ApiError, postProfile } from "../lib/apiClient";
+import { USERNAME_PATTERN } from "../lib/username";
 
 function cleanUsername(value: string) {
   return value.trim().replace(/^@+/, "").replace(/\s+/g, "");
 }
+
+const USERNAME_HINT = "Un pseudo Letterboxd contient entre 2 et 15 lettres, chiffres ou _, rien d'autre.";
 
 export default function Home() {
   const router = useRouter();
@@ -21,6 +24,15 @@ export default function Home() {
     event.preventDefault();
     const cleanedUsername = cleanUsername(username);
     if (!cleanedUsername || pending) return;
+
+    // Validation immédiate, sans appel réseau : mêmes règles que côté
+    // serveur (lib/username.ts, partagé), mais un aller-retour économisé
+    // pour un format qu'on sait déjà invalide plutôt que d'attendre la
+    // réponse 400 de POST /api/profile.
+    if (!USERNAME_PATTERN.test(cleanedUsername)) {
+      setError(USERNAME_HINT);
+      return;
+    }
 
     setPending(true);
     setError(null);

@@ -20,7 +20,15 @@ from typing import Any
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "data" / "output"
 AUDIT_DIR = BASE_DIR / "data" / "audit"
-USERNAME_RE = re.compile(r"^[A-Za-z0-9_-]+$")
+
+# Regle officielle Letterboxd (api-docs.letterboxd.com, propriete `username`
+# de l'objet Member) : "Usernames must be between 2 and 15 characters long
+# and may only contain upper or lowercase letters, numbers or the
+# underscore (_) character." Ni tiret ni point - verifie aussi en direct sur
+# le formulaire d'inscription ("Use a-z, 0-9 or _ only") et par des essais
+# RSS reels sur des pseudos a point plausibles (tous 404). Les pseudos a
+# point de la maquette Hall of Fame etaient decoratifs, pas de vrais comptes.
+USERNAME_RE = re.compile(r"^[A-Za-z0-9_]{2,15}$")
 
 PIPELINE_STEPS = [
     ("Construction initiale du wrapped", "build_user_wrapped.py", []),
@@ -53,7 +61,7 @@ def parse_args() -> argparse.Namespace:
     )
     args = parser.parse_args()
     if not USERNAME_RE.fullmatch(args.username):
-        parser.error("Le username ne peut contenir que lettres, chiffres, _ et -.")
+        parser.error("Le username doit contenir entre 2 et 15 lettres, chiffres ou _, rien d'autre.")
     return args
 
 

@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
 
   if (!USERNAME_PATTERN.test(username)) {
     return NextResponse.json(
-      { error: "Le pseudo ne peut contenir que lettres, chiffres, _ et -." },
+      { error: "Un pseudo Letterboxd contient entre 2 et 15 lettres, chiffres ou _, rien d'autre." },
       { status: 400 },
     );
   }

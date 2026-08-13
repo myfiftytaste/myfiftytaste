@@ -1,6 +1,8 @@
 import { NextRequest } from "next/server";
 import { Pool } from "pg";
 
+export { normalizeUsername, USERNAME_PATTERN } from "./username";
+
 // Serveur uniquement (module "pg"). Ne jamais importer ce fichier depuis un
 // composant "use client" — même piège que web/lib/badges.ts avec "fs" :
 // webpack embarquerait le driver Postgres dans le bundle navigateur et le
@@ -39,15 +41,6 @@ export function getPool(): Pool {
   }
   return pool;
 }
-
-/** Normalise un pseudo comme le reste du système : trim, @ initial retiré, minuscules. */
-export function normalizeUsername(raw: string): string {
-  return raw.trim().replace(/^@+/, "").toLowerCase();
-}
-
-// Même règle que job.username / profile_cache.username côté base
-// (contrainte CHECK) et que USERNAME_RE dans scripts/build_full_profile.py.
-export const USERNAME_PATTERN = /^[A-Za-z0-9_-]+$/;
 
 // Règle "profil frais" volontairement simple et explicite (pas de vrai
 // système de TTL/cache pour l'instant — prévu phase 6 du runbook). Ajuster
