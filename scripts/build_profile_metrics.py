@@ -513,6 +513,13 @@ def build_metrics(username: str) -> tuple[Path, Path]:
     runtime_excluded_count = total_films - runtime_included_count
     runtime_invalid_metadata_count = len(metadata_films) - runtime_included_count
     runtime_average = mean(runtimes) if runtimes else None
+    # Vrai total (pas une approximation moyenne x nombre) : reutilise la
+    # meme liste de durees individuelles que runtime_average, juste sum()
+    # au lieu de mean(). generation_log (worker.py) en a besoin pour rester
+    # exact - c'est ce chiffre qui alimentera un futur classement Hall of
+    # Fame "le plus de minutes regardees", ou une approximation fausserait
+    # le classement.
+    runtime_total = sum(runtimes) if runtimes else None
     def positive_runtime(film: dict[str, Any]) -> Optional[float]:
         value = safe_float(film.get("runtime"))
         return value if value is not None and value > 0 else None
@@ -530,6 +537,8 @@ def build_metrics(username: str) -> tuple[Path, Path]:
     current_year = datetime.now(UTC).year
     average_year = mean(years) if years else None
     average_age = (current_year - average_year) if average_year is not None else None
+    earliest_year = int(min(years)) if years else None
+    latest_year = int(max(years)) if years else None
 
     genre_counter = counter_from_list_fields(metadata_films, "genres")
     top_genres = genre_counter.most_common(10)
@@ -714,6 +723,8 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "value_5": oldness_value,
             "raw_value": average_age,
             "average_year": average_year,
+            "earliest_year": earliest_year,
+            "latest_year": latest_year,
             "label": "Âge moyen",
             "description": f"Tendance dérivée de l'année moyenne de sortie de tes {total_films} films détectés.",
             "data_source": rss_data_source,
@@ -795,6 +806,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         },
         "runtime_profile": {
             "runtime_average": runtime_average,
+            "runtime_total": runtime_total,
             "runtime_included_count": runtime_included_count,
             "runtime_excluded_count": runtime_excluded_count,
             "runtime_invalid_metadata_count": runtime_invalid_metadata_count,
@@ -918,6 +930,7 @@ def render_report(username: str, metrics: dict[str, Any]) -> str:
         "## Runtime profile",
         "",
         f"- Runtime average: {rounded(runtime['runtime_average'], 1)} min",
+        f"- Runtime total: {rounded(runtime.get('runtime_total'), 0)} min",
         f"- Runtime included count: {runtime.get('runtime_included_count')}",
         f"- Runtime excluded count: {runtime.get('runtime_excluded_count')}",
         f"- Shortest film: {film_title(runtime['shortest_film'])}",

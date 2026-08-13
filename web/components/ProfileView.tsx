@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 /* eslint-disable @next/next/no-img-element */
 import AverageRatingCard from "./AverageRatingCard";
 import GenreBubbles from "./GenreBubbles";
@@ -183,6 +185,11 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
     highlights,
   } = profile;
   const theme = useVisualTheme();
+  // document.referrer reste vide pour une navigation Next.js côté client
+  // (Link ne déclenche pas un vrai rechargement) : on passe la page d'origine
+  // en query param plutôt que de compter dessus.
+  const pathname = usePathname();
+  const feedbackHref = pathname ? `/feedback?from=${encodeURIComponent(pathname)}` : "/feedback";
   const detectedFilmsCount =
     profile.profile_quality?.detected_films_count ?? hero.detected_films_count ?? 50;
   const targetFilmsCount = profile.profile_quality?.target_films_count ?? hero.target_films_count ?? 50;
@@ -285,7 +292,7 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
           <a href="https://letterboxd.com/tanguytare/" target="_blank" rel="noreferrer">
             Tanguytare
           </a>{" "}
-          · Projet indépendant, non affilié à Letterboxd
+          · Projet indépendant, non affilié à Letterboxd · <Link href={feedbackHref}>Donner mon avis</Link>
         </p>
       </footer>
     </main>

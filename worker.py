@@ -217,13 +217,112 @@ def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: st
             (job["id"],),
         )
 
-    # Best-effort, hors de la transaction ci-dessus : le Hall of Fame est une
-    # fonctionnalité secondaire (Hall of Fame brief), un bug ici ne doit
-    # jamais faire échouer une génération de profil par ailleurs réussie.
+    # Best-effort, hors de la transaction ci-dessus : le Hall of Fame et le
+    # journal de génération sont des fonctionnalités secondaires, un bug
+    # dans l'une ne doit jamais faire échouer une génération de profil par
+    # ailleurs réussie, ni bloquer l'autre. Deux try/except séparés plutôt
+    # qu'un seul.
     try:
         freeze_monthly_snapshot(conn, job, username)
     except Exception as error:  # noqa: BLE001 - best-effort assumé, voir commentaire ci-dessus
         print(f"[job {job['id']}] échec du gel du snapshot HOF (non bloquant) : {error}", file=sys.stderr, flush=True)
+
+    try:
+        write_generation_log(conn, username, display_profile, metrics)
+    except Exception as error:  # noqa: BLE001 - best-effort assumé, voir commentaire ci-dessus
+        print(f"[job {job['id']}] échec de l'écriture generation_log (non bloquant) : {error}", file=sys.stderr, flush=True)
+
+
+def write_generation_log(
+    conn: psycopg.Connection, username: str, display_profile: dict[str, Any], metrics: Optional[dict[str, Any]]
+) -> None:
+    """Écrit une ligne append-only dans generation_log (migrations/003) : jamais
+    modifiée ni supprimée ensuite, une par génération réussie. Une colonne par
+    métrique plutôt que du JSON — pensé pour un SELECT * exporté tel quel en CSV
+    (voir aussi la vue v_generation_export, qui reformate pour l'export).
+
+    Ne recharge aucun fichier : réutilise display_profile/metrics déjà chargés
+    par finalize_success() pour profile_cache, aucune raison de relire le disque
+    une seconde fois pour les mêmes données.
+    """
+
+    def top_names(pairs: Optional[list[list[Any]]], limit: int = 5) -> Optional[str]:
+        # pairs vient de Counter.most_common() côté pipeline : [[nom, count], ...].
+        # Chaîne texte jointe par virgules plutôt que du JSON, comme demandé.
+        if not pairs:
+            return None
+        return ", ".join(str(name) for name, _count in pairs[:limit])
+
+    hero = display_profile.get("hero") or {}
+    quality = display_profile.get("profile_quality") or {}
+    avg_rating = (display_profile.get("average_rating_summary") or {}).get("value")
+
+    metrics = metrics or {}
+    radar = metrics.get("radar_scores") or {}
+    mainstream = radar.get("mainstreamness") or {}
+    oldness = radar.get("oldness") or {}
+    endurance = radar.get("endurance") or {}
+    reviewness = radar.get("reviewness") or {}
+    rating_personality = metrics.get("rating_personality") or {}
+    niche_profile = metrics.get("niche_profile") or {}
+    genre_dna = metrics.get("genre_dna") or {}
+    country_passport = metrics.get("country_passport") or {}
+    runtime_profile = metrics.get("runtime_profile") or {}
+    most_repeated_director = (metrics.get("director_recurrence") or {}).get("most_repeated_director") or {}
+
+    conn.execute(
+        """
+        INSERT INTO generation_log (
+            username, display_username, detected_films_count, profile_quality_status,
+            primary_archetype, average_rating, rating_gap_vs_letterboxd,
+            mainstreamness_pct, mainstreamness_score,
+            average_release_year, oldness_score, earliest_film_year, latest_film_year,
+            average_runtime_minutes, endurance_score, total_runtime_minutes,
+            review_count, reviewness_score, niche_index,
+            dominant_genre, dominant_genre_share, top_genres,
+            dominant_country, top_countries,
+            most_repeated_director, most_repeated_director_film_count
+        ) VALUES (
+            %s, %s, %s, %s,
+            %s, %s, %s,
+            %s, %s,
+            %s, %s, %s, %s,
+            %s, %s, %s,
+            %s, %s, %s,
+            %s, %s, %s,
+            %s, %s,
+            %s, %s
+        )
+        """,
+        (
+            username.lower(),
+            username,
+            hero.get("detected_films_count"),
+            quality.get("status"),
+            hero.get("primary_archetype"),
+            avg_rating,
+            rating_personality.get("paired_average_difference"),
+            mainstream.get("raw_value"),
+            mainstream.get("value_5"),
+            oldness.get("average_year"),
+            oldness.get("value_5"),
+            oldness.get("earliest_year"),
+            oldness.get("latest_year"),
+            runtime_profile.get("runtime_average"),
+            endurance.get("value_5"),
+            runtime_profile.get("runtime_total"),
+            reviewness.get("review_count"),
+            reviewness.get("value_5"),
+            niche_profile.get("niche_index"),
+            genre_dna.get("dominant_genre"),
+            genre_dna.get("dominant_genre_share"),
+            top_names(genre_dna.get("top_genres")),
+            country_passport.get("dominant_country"),
+            top_names(country_passport.get("top_countries")),
+            most_repeated_director.get("director"),
+            most_repeated_director.get("count"),
+        ),
+    )
 
 
 def freeze_monthly_snapshot(conn: psycopg.Connection, job: dict[str, Any], username: str) -> None:

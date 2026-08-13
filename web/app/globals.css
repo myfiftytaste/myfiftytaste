@@ -2472,7 +2472,8 @@ a.recommendation-card:hover {
    active Akira/Hana-Bi/Grande Bellezza accent, since the Hall of Fame is a
    shared social space rather than a per-visit themed page. */
 .hofCtaSection,
-.hof-shell {
+.hof-shell,
+.feedback-shell {
   --hof-bg: #0b0a08;
   --hof-bg-soft: #141210;
   --hof-bg-card: #17140f;
@@ -3000,6 +3001,199 @@ a.recommendation-card:hover {
   .hofZoneLabel {
     font-size: 7.5px;
   }
+}
+
+/* ---- /feedback page (feedback-et-note-maj-mockup.html, bloc 3 uniquement —
+   les blocs 1/2 de la maquette, note de mise à jour, sont hors périmètre) ---- */
+
+.feedback-shell {
+  background: var(--hof-bg);
+  min-height: 100vh;
+  color: var(--hof-cream);
+}
+
+.feedbackMasthead {
+  text-align: center;
+  padding: 12px 0 8px;
+}
+
+.feedbackTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--hof-cream);
+  margin: 0;
+}
+
+.feedbackForm {
+  max-width: 560px;
+  margin: 30px auto 0;
+  background: var(--hof-bg-card);
+  border: 1px solid var(--hof-line);
+  padding: 34px 32px;
+}
+
+.feedbackField {
+  margin-bottom: 26px;
+}
+
+.feedbackField:last-of-type {
+  margin-bottom: 0;
+}
+
+.feedbackLabel {
+  font-size: 13px;
+  color: var(--hof-cream);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.feedbackLabelOptional {
+  color: var(--hof-muted-dim);
+  font-weight: 400;
+}
+
+.feedbackHint {
+  font-size: 11.5px;
+  color: var(--hof-muted-dim);
+  margin-bottom: 12px;
+}
+
+.feedbackTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.feedbackTag {
+  font-size: 12px;
+  padding: 8px 14px;
+  border: 1px solid var(--hof-line);
+  color: var(--hof-muted);
+  background: transparent;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.feedbackTag:hover {
+  color: var(--hof-cream);
+  border-color: var(--hof-muted-dim);
+}
+
+.feedbackTagOn {
+  border-color: var(--hof-gold);
+  color: var(--hof-gold-bright);
+  background: rgba(201, 162, 75, 0.09);
+}
+
+.feedbackDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.feedbackDetail {
+  margin-top: 14px;
+  padding-left: 13px;
+  border-left: 2px solid var(--hof-gold-dim);
+  animation: feedbackSlideIn 220ms ease;
+}
+
+@keyframes feedbackSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.feedbackDetailLabel {
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--hof-gold);
+  margin-bottom: 7px;
+}
+
+.feedbackTextarea,
+.feedbackInput {
+  width: 100%;
+  background: var(--hof-bg-soft);
+  border: 1px solid var(--hof-line);
+  color: var(--hof-cream);
+  font-size: 13.5px;
+  font-family: inherit;
+}
+
+.feedbackTextarea {
+  min-height: 130px;
+  padding: 13px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.feedbackDetail .feedbackTextarea {
+  min-height: 78px;
+}
+
+.feedbackInput {
+  padding: 11px 13px;
+}
+
+.feedbackTextarea:focus,
+.feedbackInput:focus {
+  outline: none;
+  border-color: var(--hof-gold-dim);
+}
+
+.feedbackScale {
+  display: flex;
+  gap: 8px;
+}
+
+.feedbackScale .feedbackTag {
+  flex: 1;
+  text-align: center;
+}
+
+.feedbackSubmit {
+  width: 100%;
+  margin-top: 6px;
+  padding: 13px;
+  background: var(--hof-gold);
+  color: #141008;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.feedbackSubmit:hover {
+  opacity: 0.92;
+}
+
+.feedbackSubmit:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.feedbackFoot {
+  text-align: center;
+  font-size: 11px;
+  color: var(--hof-muted-dim);
+  margin-top: 14px;
+}
+
+.feedbackSentCard {
+  max-width: 560px;
+  margin: 30px auto 0;
+  background: var(--hof-bg-card);
+  border: 1px solid var(--hof-line);
+  padding: 40px 32px;
+  text-align: center;
 }
 
 /* ---- Écran de chargement (loading-screen-mockup.html) ---- */
