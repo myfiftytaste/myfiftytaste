@@ -11,6 +11,9 @@ export type Badge = {
   rank: number | null;
   month: string | null;
   created_at: string;
+  // Facultative (migrations/004) : affichée au survol/tap, jamais générée
+  // automatiquement — NULL pour la plupart des badges gagnés.
+  description: string | null;
 };
 
 export type DisplayBadges = {

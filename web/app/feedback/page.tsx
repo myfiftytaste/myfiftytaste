@@ -112,12 +112,12 @@ export default function FeedbackPage() {
 
   return (
     <main className="feedback-shell pageShell">
-      <header className="siteHeader" aria-label="MyFiftyTaste">
+      <header className="siteHeader" aria-label="Fifty">
         <div className="siteBranding">
           <Link href="/">
             <Image
               src="/branding/logoV1-transparent.png"
-              alt="MyFiftyTaste"
+              alt="Fifty"
               width={1013}
               height={708}
               priority

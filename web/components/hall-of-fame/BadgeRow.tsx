@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { Badge } from "../../lib/badgeSelection";
 
 function BadgeIcon() {
@@ -9,11 +12,34 @@ function BadgeIcon() {
 }
 
 function BadgePlaque({ badge }: { badge: Badge }) {
+  const [expanded, setExpanded] = useState(false);
+
+  // Sans description : rien à afficher au survol/tap, pas la peine d'en
+  // faire un bouton interactif.
+  if (!badge.description) {
+    return (
+      <div className="badgePlaque">
+        <BadgeIcon />
+        <span className="badgeLabel">{badge.label}</span>
+      </div>
+    );
+  }
+
+  // title = survol desktop natif. Mais un survol ne se déclenche jamais au
+  // tactile — sans le bouton + l'état "expanded" ci-dessous, la description
+  // resterait invisible sur mobile.
   return (
-    <div className="badgePlaque">
+    <button
+      type="button"
+      className="badgePlaque badgePlaqueInteractive"
+      title={badge.description}
+      aria-expanded={expanded}
+      onClick={() => setExpanded((current) => !current)}
+    >
       <BadgeIcon />
       <span className="badgeLabel">{badge.label}</span>
-    </div>
+      {expanded ? <span className="badgeDescription">{badge.description}</span> : null}
+    </button>
   );
 }
 

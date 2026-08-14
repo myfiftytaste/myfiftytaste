@@ -204,11 +204,11 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
   return (
     <main className="pageShell">
       <div className="pageThemeLabel">{theme.label}</div>
-      <header className="siteHeader" aria-label="MyFiftyTaste">
+      <header className="siteHeader" aria-label="Fifty">
         <div className="siteBranding">
           <Image
             src="/branding/logoV1-transparent.png"
-            alt="MyFiftyTaste"
+            alt="Fifty"
             width={1013}
             height={708}
             priority
@@ -231,7 +231,7 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
         <div className="heroPanelWrap">
           <p className="heroCoverageLine" tabIndex={0}>
             {detectedFilmsCount}/{targetFilmsCount} films analysés, {formatPercent(hero.metadata_coverage)}{" "}
-            couverts par l&apos;algorithme &quot;Fifty&quot;
+            couverts par l&apos;analyse
             <span className="heroCoverageTooltip" role="tooltip">
               Fiabilité&nbsp;: {ratingCard?.confidence_label ?? "—"}
             </span>
@@ -282,9 +282,9 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
 
       <HallOfFameCTA username={hero.username} />
 
-      <footer className="siteFooter" aria-label="Informations sur MyFiftyTaste">
+      <footer className="siteFooter" aria-label="Informations sur Fifty">
         <p>
-          MyFiftyTaste · Profil généré à partir des 50 derniers films loggés par
+          Fifty · Profil généré à partir des 50 derniers films loggés par
           l&apos;utilisateur sur Letterboxd
         </p>
         <p>

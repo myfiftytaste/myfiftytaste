@@ -67,7 +67,7 @@ export default function Home() {
       <section className="homePanel" aria-labelledby="home-title">
         <Image
           src="/branding/logoV1-transparent.png"
-          alt="MyFiftyTaste"
+          alt="Fifty"
           width={1013}
           height={708}
           priority

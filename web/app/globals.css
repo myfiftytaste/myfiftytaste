@@ -656,6 +656,24 @@ h1 {
   box-shadow: 0 10px 26px -10px rgba(201, 162, 75, 0.4);
 }
 
+/* Badge avec description (migrations/004) : plaque devenue un <button> pour
+   rester accessible au tap sur mobile, où :hover / title ne se déclenchent
+   jamais — voir BadgeRow.tsx. */
+.badgePlaqueInteractive {
+  appearance: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.badgeDescription {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.35;
+  text-align: center;
+  margin-top: 2px;
+}
+
 .badgeIcon {
   width: 18px;
   height: 18px;

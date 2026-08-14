@@ -18,8 +18,9 @@ export async function getBadgesForUser(username: string): Promise<Badge[]> {
     rank: number | null;
     month: string | null;
     created_at: Date;
+    description: string | null;
   }>(
-    "SELECT type, label, category, rank, month, created_at FROM badge WHERE username = $1",
+    "SELECT type, label, category, rank, month, created_at, description FROM badge WHERE username = $1",
     [normalizeUsername(username)],
   );
   return result.rows.map((row) => ({ ...row, created_at: row.created_at.toISOString() }));
