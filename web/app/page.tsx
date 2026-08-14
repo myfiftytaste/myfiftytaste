@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useVisualTheme } from "../components/VisualThemeProvider";
 import { ApiError, postProfile } from "../lib/apiClient";
 import { USERNAME_PATTERN } from "../lib/username";
+import UpdateNote from "../components/UpdateNote";
 
 function cleanUsername(value: string) {
   return value.trim().replace(/^@+/, "").replace(/\s+/g, "");
@@ -101,6 +102,7 @@ export default function Home() {
           <small id="username-hint">{error ?? "Le @ est facultatif."}</small>
         </form>
       </section>
+      <UpdateNote />
     </main>
   );
 }

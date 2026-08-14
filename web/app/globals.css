@@ -112,6 +112,12 @@ a {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  /* Explicite plutôt que la valeur par défaut : garantit que le groupe de
+     lignes reste centré verticalement même quand un second enfant
+     s'ajoute (UpdateNote en mobile, position: static) — sans ça, deux
+     lignes de grille implicites s'empilent depuis le haut au lieu de
+     rester centrées ensemble. */
+  align-content: center;
   margin: 0 auto;
   padding: 72px 0;
 }
@@ -246,6 +252,222 @@ a {
 .usernameForm small {
   color: rgba(247, 238, 220, 0.48);
   font-size: 0.72rem;
+}
+
+/* ---- Note de mise à jour (feedback-et-note-maj-mockup_1.html, blocs 1/2) :
+   voir components/UpdateNote.tsx pour le contenu et le pourquoi d'un seul
+   fichier autonome. Tokens papier/encre propres à cette note : --paper et
+   --ink existent déjà globalement dans ce fichier mais désignent tout
+   autre chose (tons clairs de texte sur fond sombre) — les redéclarer sous
+   un autre nom évite toute collision. */
+.updateNote,
+.updateNoteOverlay {
+  --note-paper: #f2ece0;
+  --note-paper-shade: #ddd3c0;
+  --note-ink: #2e2a22;
+}
+
+.updateNote {
+  position: absolute;
+  right: 2%;
+  top: 16%;
+  width: 172px;
+  min-height: 196px;
+  padding: 20px 18px;
+  background:
+    linear-gradient(148deg, rgba(255, 255, 255, 0.5) 0%, transparent 26%),
+    linear-gradient(28deg, rgba(0, 0, 0, 0.09) 0%, transparent 32%),
+    linear-gradient(196deg, rgba(0, 0, 0, 0.07) 0%, transparent 22%),
+    linear-gradient(340deg, rgba(255, 255, 255, 0.42) 0%, transparent 30%),
+    var(--note-paper);
+  color: var(--note-ink);
+  font-family: var(--note-font-hand), cursive;
+  font-size: 19px;
+  line-height: 1.32;
+  transform: rotate(-5.5deg);
+  cursor: pointer;
+  box-shadow: 0 16px 32px -14px rgba(0, 0, 0, 0.75), 0 2px 5px rgba(0, 0, 0, 0.35);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  clip-path: polygon(2% 1%, 97% 0, 100% 12%, 99% 47%, 100% 88%, 94% 100%, 42% 99%, 4% 100%, 1% 62%, 0 26%);
+}
+
+.updateNote:hover,
+.updateNote:focus-visible {
+  transform: rotate(-3deg) translateY(-5px) scale(1.03);
+  box-shadow: 0 22px 40px -14px rgba(0, 0, 0, 0.8);
+}
+
+.updateNote:focus-visible {
+  outline: 2px solid var(--hof-gold-bright);
+  outline-offset: 3px;
+}
+
+.updateNote::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(102deg, transparent 47.6%, rgba(0, 0, 0, 0.055) 48%, transparent 48.6%),
+    linear-gradient(64deg, transparent 71.6%, rgba(0, 0, 0, 0.045) 72%, transparent 72.7%),
+    linear-gradient(126deg, transparent 27.7%, rgba(255, 255, 255, 0.5) 28%, transparent 28.6%);
+}
+
+.updateNote b {
+  display: block;
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 7px;
+  border-bottom: 1.5px solid rgba(46, 42, 34, 0.32);
+  padding-bottom: 5px;
+}
+
+.updateNote small {
+  display: block;
+  margin-top: 12px;
+  font-family: system-ui, sans-serif;
+  font-size: 9.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(46, 42, 34, 0.55);
+}
+
+/* Superposition plein écran : mécanisme de révélation adapté (l'accueil
+   n'a pas de second écran à faire défiler comme la page de démonstration
+   de la maquette), le contenu et son habillage restent ceux du bloc
+   ".sheet" de la maquette. */
+.updateNoteOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(11, 10, 8, 0.78);
+  backdrop-filter: blur(2px);
+}
+
+.updateNoteSheet {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 40px 44px 34px;
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.35) 0%, transparent 18%), var(--note-paper);
+  color: var(--note-ink);
+  box-shadow: 0 22px 50px -20px rgba(0, 0, 0, 0.8);
+}
+
+.updateNoteSheet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(96deg, transparent 33.6%, rgba(0, 0, 0, 0.035) 34%, transparent 34.7%),
+    linear-gradient(84deg, transparent 68.6%, rgba(0, 0, 0, 0.03) 69%, transparent 69.7%);
+}
+
+.updateNoteClose {
+  position: sticky;
+  top: 0;
+  left: 100%;
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-bottom: -28px;
+  border: none;
+  background: transparent;
+  color: rgba(46, 42, 34, 0.55);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.updateNoteClose:hover {
+  color: var(--note-ink);
+}
+
+.updateNoteSheet h3 {
+  font-family: var(--note-font-hand), cursive;
+  font-size: 32px;
+  margin: 0 0 4px;
+  font-weight: 600;
+  color: var(--note-ink);
+}
+
+.updateNoteDate {
+  font-family: system-ui, sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(46, 42, 34, 0.5);
+  margin: 0 0 22px;
+}
+
+.updateNoteSheet p {
+  font-family: system-ui, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.72;
+  color: rgba(46, 42, 34, 0.9);
+  margin: 0 0 15px;
+}
+
+.updateNoteSheet h4 {
+  font-family: system-ui, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(46, 42, 34, 0.62);
+  margin: 26px 0 9px;
+  font-weight: 600;
+}
+
+.updateNoteSheet ul {
+  margin: 0 0 15px;
+  padding-left: 17px;
+}
+
+.updateNoteSheet li {
+  font-family: system-ui, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.66;
+  color: rgba(46, 42, 34, 0.88);
+  margin-bottom: 5px;
+}
+
+.updateNoteSign {
+  font-family: var(--note-font-hand), cursive;
+  font-size: 20px;
+  margin-top: 26px;
+  text-align: right;
+  color: rgba(46, 42, 34, 0.75);
+}
+
+.updateNotePs {
+  font-family: system-ui, sans-serif;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: rgba(46, 42, 34, 0.72);
+  margin-top: 22px;
+}
+
+@media (max-width: 760px) {
+  /* Comportement responsive de la maquette : la note quitte le
+     positionnement absolu (qui la ferait flotter par-dessus le champ de
+     saisie sur un écran étroit) pour reprendre le flux normal, sous le
+     panneau d'accueil. */
+  .updateNote {
+    position: static;
+    right: auto;
+    top: auto;
+    margin: 26px auto 0;
+  }
+
+  .updateNoteSheet {
+    padding: 30px 24px;
+  }
 }
 
 .profileUnavailable {
@@ -2491,7 +2713,9 @@ a.recommendation-card:hover {
    shared social space rather than a per-visit themed page. */
 .hofCtaSection,
 .hof-shell,
-.feedback-shell {
+.feedback-shell,
+.updateNote,
+.updateNoteOverlay {
   --hof-bg: #0b0a08;
   --hof-bg-soft: #141210;
   --hof-bg-card: #17140f;
