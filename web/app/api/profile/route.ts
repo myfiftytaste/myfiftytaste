@@ -21,10 +21,13 @@ import { clientIp, getPool, isFresh, normalizeUsername, USERNAME_PATTERN, within
 // 4-5h au lieu de toutes les 5 min). On déclenche donc le workflow à la
 // demande via workflow_dispatch dès qu'un job est créé/retrouvé ici, et le
 // cron ne sert plus que de filet de sécurité. Best-effort strict : si
-// GH_DISPATCH_TOKEN est absent ou si l'appel échoue, on ne bloque jamais la
+// GH_dispatch_token est absent ou si l'appel échoue, on ne bloque jamais la
 // réponse à l'utilisateur — le cron finira par traiter le job de toute façon.
+// Nom de variable en minuscules (GH_dispatch_token, pas GH_DISPATCH_TOKEN) :
+// c'est le nom exact tel que créé côté Vercel, non modifiable depuis là-bas —
+// le code s'aligne dessus plutôt que l'inverse.
 async function triggerWorkerDispatch(): Promise<void> {
-  const token = process.env.GH_DISPATCH_TOKEN;
+  const token = process.env.GH_dispatch_token;
   if (!token) return;
   try {
     await fetch(
