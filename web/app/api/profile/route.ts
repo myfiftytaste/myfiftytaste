@@ -15,6 +15,35 @@ import { clientIp, getPool, isFresh, normalizeUsername, USERNAME_PATTERN, within
 // la plus explicite) : pas de job_id dans la réponse cache=true, puisque
 // aucun job n'existe. À signaler/ajuster si ce n'était pas voulu.
 
+// Réveil du worker GitHub Actions (incident du 19/09/2026, suite du 29/09) :
+// le cron */5 dans .github/workflows/worker.yml n'est pas fiable seul (GitHub
+// le limite fortement sur un repo gratuit — observé à ~1 passage toutes les
+// 4-5h au lieu de toutes les 5 min). On déclenche donc le workflow à la
+// demande via workflow_dispatch dès qu'un job est créé/retrouvé ici, et le
+// cron ne sert plus que de filet de sécurité. Best-effort strict : si
+// GH_DISPATCH_TOKEN est absent ou si l'appel échoue, on ne bloque jamais la
+// réponse à l'utilisateur — le cron finira par traiter le job de toute façon.
+async function triggerWorkerDispatch(): Promise<void> {
+  const token = process.env.GH_DISPATCH_TOKEN;
+  if (!token) return;
+  try {
+    await fetch(
+      "https://api.github.com/repos/myfiftytaste/myfiftytaste/actions/workflows/worker.yml/dispatches",
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github+json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ref: "main" }),
+      },
+    );
+  } catch {
+    // Best-effort assumé, voir commentaire ci-dessus.
+  }
+}
+
 export async function POST(request: NextRequest) {
   let body: { username?: unknown };
   try {
@@ -89,6 +118,7 @@ export async function POST(request: NextRequest) {
   );
 
   if (inserted.rows[0]) {
+    await triggerWorkerDispatch();
     return NextResponse.json({ job_id: inserted.rows[0].id, cached: false });
   }
 
@@ -108,5 +138,6 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  await triggerWorkerDispatch();
   return NextResponse.json({ job_id: existing.rows[0].id, cached: false });
 }
