@@ -26,11 +26,14 @@ import { clientIp, getPool, isFresh, normalizeUsername, USERNAME_PATTERN, within
 // Nom de variable en minuscules (GH_dispatch_token, pas GH_DISPATCH_TOKEN) :
 // c'est le nom exact tel que créé côté Vercel, non modifiable depuis là-bas —
 // le code s'aligne dessus plutôt que l'inverse.
-async function triggerWorkerDispatch(): Promise<void> {
+// Diagnostic (05/10/2026) : la fonction renvoie un court statut ("204" = OK,
+// "no_token", "401 ...", etc.), exposé dans le champ "dispatch" de la réponse
+// pour voir ce que GitHub répond réellement. Aucun secret n'y figure.
+async function triggerWorkerDispatch(): Promise<string> {
   const token = process.env.GH_dispatch_token;
-  if (!token) return;
+  if (!token) return "no_token";
   try {
-    await fetch(
+    const res = await fetch(
       "https://api.github.com/repos/myfiftytaste/myfiftytaste/actions/workflows/worker.yml/dispatches",
       {
         method: "POST",
@@ -38,12 +41,15 @@ async function triggerWorkerDispatch(): Promise<void> {
           Authorization: `Bearer ${token}`,
           Accept: "application/vnd.github+json",
           "Content-Type": "application/json",
+          "User-Agent": "myfiftytaste-web",
         },
         body: JSON.stringify({ ref: "main" }),
       },
     );
+    if (res.ok) return String(res.status);
+    return `${res.status} ${(await res.text()).slice(0, 160)}`;
   } catch {
-    // Best-effort assumé, voir commentaire ci-dessus.
+    return "fetch_error";
   }
 }
 
@@ -121,8 +127,8 @@ export async function POST(request: NextRequest) {
   );
 
   if (inserted.rows[0]) {
-    await triggerWorkerDispatch();
-    return NextResponse.json({ job_id: inserted.rows[0].id, cached: false });
+    const dispatch = await triggerWorkerDispatch();
+    return NextResponse.json({ job_id: inserted.rows[0].id, cached: false, dispatch });
   }
 
   const existing = await pool.query<{ id: string }>(
@@ -141,6 +147,6 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  await triggerWorkerDispatch();
-  return NextResponse.json({ job_id: existing.rows[0].id, cached: false });
+  const dispatch = await triggerWorkerDispatch();
+  return NextResponse.json({ job_id: existing.rows[0].id, cached: false, dispatch });
 }
