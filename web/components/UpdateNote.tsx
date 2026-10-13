@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Caveat } from "next/font/google";
 
 // Note de mise à jour — temporaire par nature (architecture-v1-dynamique.md
 // checklist, "à retirer/remplacer sans toucher au reste de la page"). Un
@@ -17,7 +16,8 @@ import { Caveat } from "next/font/google";
 // ne la référence. Fraunces (--fd dans la maquette) n'est jamais utilisée
 // dans les blocs 1/2 : .sheet h3 y est en Caveat (--fh), pas en Fraunces —
 // inutile de la charger.
-const caveat = Caveat({ subsets: ["latin"], weight: ["400", "600"], variable: "--note-font-hand" });
+// Caveat via next/font/google fait échouer le build (Next 14.2.5 : Google sert désormais une URL de police sans extension, le chargeur plante). Police manuscrite du système en attendant d'auto-héberger Caveat.
+const noteFontStyle = { "--note-font-hand": "'Segoe Script', 'Bradley Hand', 'Comic Sans MS'" } as React.CSSProperties;
 
 export default function UpdateNote() {
   const [open, setOpen] = useState(false);
@@ -32,7 +32,7 @@ export default function UpdateNote() {
   }, [open]);
 
   return (
-    <div className={caveat.variable}>
+    <div style={noteFontStyle}>
       <div
         className="updateNote"
         role="button"
