@@ -23,13 +23,13 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: |
           sed -i 's/datetime(2026, 11, 1, tzinfo=UTC)/datetime(2026, 10, 1, tzinfo=UTC)/' scripts/mainstream_estimate.py
-          for u in tanguytare picolifl mathmon julescall1 tobiashottin; do
-            python scripts/build_full_profile.py $u > /tmp/$u.log 2>&1 || { echo "ECHEC $u"; tail -20 /tmp/$u.log; }
+          for u in julescall1; do
+            python scripts/build_full_profile.py $u > /tmp/$u.log 2>&1 || { echo "ECHEC $u"; tail -40 /tmp/$u.log > data/audit/test_lot4_erreur.txt; }
             sleep 5
           done
           python - <<'PY' > data/audit/test_lot4.md
           import json, pathlib
-          for u in "tanguytare picolifl mathmon julescall1 tobiashottin".split():
+          for u in ["julescall1"]:
               p = pathlib.Path(f"data/output/{u}_profile_metrics.json")
               if not p.exists():
                   print(f"- {u} : pas de métriques"); continue
@@ -43,6 +43,6 @@ jobs:
       - run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add data/audit/test_lot4.md
+          git add data/audit/test_lot4*
           git commit -m "Résultat du test lot 4 [skip ci]"
           git push
