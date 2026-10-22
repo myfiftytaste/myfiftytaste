@@ -185,23 +185,34 @@ def load_json(path: Path) -> Optional[dict[str, Any]]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+CACHED_FILM_FIELDS = (
+    "title", "rss_title", "year", "letterboxd_slug", "letterboxd_url", "rss_poster_url", "rss_tmdb_id",
+    "user_rating", "watched_at", "logged_at_iso", "has_review", "review_word_count",
+    "watches", "average_rating", "runtime", "genres", "countries", "directors", "source",
+)
+
+
 def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: str) -> None:
     display_profile = load_json(OUTPUT_DIR / f"{username}_display_profile.json")
     if display_profile is None:
         raise RuntimeError(f"display_profile introuvable pour '{username}' après un pipeline réussi")
     metrics = load_json(OUTPUT_DIR / f"{username}_profile_metrics.json")
     recommendations = load_json(OUTPUT_DIR / f"{username}_recommendations.json")
+    wrapped_films = (load_json(OUTPUT_DIR / f"{username}_wrapped.json") or {}).get("films") or []
+    # Sous-ensemble utile à l'onglet « Mes 50 films » (lot 14), pas tout le wrapped.
+    films = [{key: film.get(key) for key in CACHED_FILM_FIELDS} for film in wrapped_films]
 
     with conn.transaction():
         conn.execute(
             """
-            INSERT INTO profile_cache (username, display_username, display_profile, metrics, recommendations, generated_at)
-            VALUES (%s, %s, %s, %s, %s, now())
+            INSERT INTO profile_cache (username, display_username, display_profile, metrics, recommendations, films, generated_at)
+            VALUES (%s, %s, %s, %s, %s, %s, now())
             ON CONFLICT (username) DO UPDATE SET
                 display_username = EXCLUDED.display_username,
                 display_profile  = EXCLUDED.display_profile,
                 metrics          = EXCLUDED.metrics,
                 recommendations  = EXCLUDED.recommendations,
+                films            = EXCLUDED.films,
                 generated_at     = now()
             """,
             (
@@ -210,6 +221,7 @@ def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: st
                 Jsonb(display_profile),
                 Jsonb(metrics) if metrics is not None else None,
                 Jsonb(recommendations) if recommendations is not None else None,
+                Jsonb(films),
             ),
         )
         conn.execute(
@@ -228,13 +240,18 @@ def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: st
         print(f"[job {job['id']}] échec du gel du snapshot HOF (non bloquant) : {error}", file=sys.stderr, flush=True)
 
     try:
-        write_generation_log(conn, username, display_profile, metrics)
+        write_generation_log(conn, username, display_profile, metrics, recommendations, wrapped_films)
     except Exception as error:  # noqa: BLE001 - best-effort assumé, voir commentaire ci-dessus
         print(f"[job {job['id']}] échec de l'écriture generation_log (non bloquant) : {error}", file=sys.stderr, flush=True)
 
 
 def write_generation_log(
-    conn: psycopg.Connection, username: str, display_profile: dict[str, Any], metrics: Optional[dict[str, Any]]
+    conn: psycopg.Connection,
+    username: str,
+    display_profile: dict[str, Any],
+    metrics: Optional[dict[str, Any]],
+    recommendations: Optional[dict[str, Any]] = None,
+    films: Optional[list[dict[str, Any]]] = None,
 ) -> None:
     """Écrit une ligne append-only dans generation_log (migrations/003) : jamais
     modifiée ni supprimée ensuite, une par génération réussie. Une colonne par
@@ -269,6 +286,8 @@ def write_generation_log(
     country_passport = metrics.get("country_passport") or {}
     runtime_profile = metrics.get("runtime_profile") or {}
     most_repeated_director = (metrics.get("director_recurrence") or {}).get("most_repeated_director") or {}
+    coverage = metrics.get("coverage") or {}
+    reco_list = (recommendations or {}).get("recommendations") or []
 
     conn.execute(
         """
@@ -282,7 +301,8 @@ def write_generation_log(
             dominant_genre, dominant_genre_share, top_genres,
             dominant_country, top_countries,
             most_repeated_director, most_repeated_director_film_count,
-            mainstream_median_views
+            mainstream_median_views,
+            social_coverage, metadata_coverage, film_slugs, reco_slugs
         ) VALUES (
             %s, %s, %s, %s,
             %s, %s, %s,
@@ -293,7 +313,8 @@ def write_generation_log(
             %s, %s, %s,
             %s, %s,
             %s, %s,
-            %s
+            %s,
+            %s, %s, %s, %s
         )
         """,
         (
@@ -324,6 +345,10 @@ def write_generation_log(
             most_repeated_director.get("director"),
             most_repeated_director.get("count"),
             mainstream.get("median_views"),
+            coverage.get("social_coverage"),
+            coverage.get("confirmed_metadata_coverage"),
+            ",".join(film.get("letterboxd_slug") or "" for film in films or []) or None,
+            ",".join(reco.get("slug") or "" for reco in reco_list) or None,
         ),
     )
 
