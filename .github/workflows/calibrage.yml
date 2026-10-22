@@ -1,0 +1,30 @@
+name: Calibrage mainstream (test, branche calib/mainstream uniquement)
+
+on:
+  push:
+    branches: [calib/mainstream]
+
+permissions:
+  contents: write
+
+jobs:
+  calibrage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Lance le test
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: python scripts/calibrage_mainstream.py lilacos eleonorre lucasld lenrld _thaisss_ yruamacc gordonshumway mathildedortpas juditho victor_lbrn mathouix owen_lczz poele____ lilalouise begumb0 mathmon julescall1 agnorw kimya_ nikomrk machadele eli45 simongelvo regelegorila picolifl tanguytare estherplasar alicemartinsr crazykungfu lisakiwi tobiashottin beowulfthebrave
+      - name: Publie les résultats sur la branche
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add data/audit/calibrage_mainstream*.csv
+          git commit -m "Résultats du calibrage mainstream [skip ci]"
+          git push
