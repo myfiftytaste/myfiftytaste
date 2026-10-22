@@ -1,1 +1,0 @@
-- julescall1 : mainstream cran 3 (film du milieu 227813 vues, 45 films dont 26 estimés ; ancien % 87.8) · époque cran 3 (âge moyen 16.3 ans) · textes : Cinéphile éclectique / Entre deux époques
