@@ -82,6 +82,8 @@ def build_metrics_snapshot(
         "average_release_year": round(average_release_year, 1) if average_release_year is not None else None,
         "current_year_release_pct": current_year_release_pct,
         "current_year_release_count": current_year_release_count,
+        # Podiums Mainstream / Niche à partir de novembre 2026 (scripts/mainstream_estimate.py).
+        "mainstream_median_views": safe_get(metrics, "radar_scores", "mainstreamness", "median_views"),
     }
 
 

@@ -281,7 +281,8 @@ def write_generation_log(
             review_count, reviewness_score, niche_index,
             dominant_genre, dominant_genre_share, top_genres,
             dominant_country, top_countries,
-            most_repeated_director, most_repeated_director_film_count
+            most_repeated_director, most_repeated_director_film_count,
+            mainstream_median_views
         ) VALUES (
             %s, %s, %s, %s,
             %s, %s, %s,
@@ -291,7 +292,8 @@ def write_generation_log(
             %s, %s, %s,
             %s, %s, %s,
             %s, %s,
-            %s, %s
+            %s, %s,
+            %s
         )
         """,
         (
@@ -321,6 +323,7 @@ def write_generation_log(
             top_names(country_passport.get("top_countries")),
             most_repeated_director.get("director"),
             most_repeated_director.get("count"),
+            mainstream.get("median_views"),
         ),
     )
 
