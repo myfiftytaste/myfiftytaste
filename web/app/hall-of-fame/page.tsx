@@ -33,7 +33,10 @@ export default async function HallOfFamePage() {
       <section className="hofMasthead">
         <p className="hofEyebrow">Hall of Fame</p>
         <h1 className="hofMastheadTitle">Saison {seasonTitle(month)}</h1>
-        <p className="hofLede hofLedeCentered">Regarder un film est éphémère... les honneurs sont immortels</p>
+        <p className="hofLede hofLedeCentered">
+          <span className="verbPointer">Clique</span>
+          <span className="verbTouch">Appuie</span> sur les bulles pour découvrir le profil Letterboxd derrière&nbsp;!
+        </p>
         <div className="hofSeasonMeta">
           <span>
             <b>{rankings.participantCount}</b> profil{rankings.participantCount === 1 ? "" : "s"} figé
@@ -43,9 +46,6 @@ export default async function HallOfFamePage() {
             Nouveau tirage le <b>{nextMonthLabel(month)}</b>
           </span>
         </div>
-        {rankings.participantCount > 0 ? (
-          <p className="hofMapNote">Chaque bulle avec un pseudo mène directement à son profil.</p>
-        ) : null}
       </section>
 
       {rankings.participantCount === 0 ? (

@@ -1,4 +1,8 @@
+"use client";
+
 /* eslint-disable @next/next/no-img-element */
+
+import { useState } from "react";
 
 type Recommendation = {
   slot: "safe_pick" | "deep_cut" | "wild_card" | string;
@@ -69,6 +73,7 @@ export default function Recommendations({
   const unavailableText = copy?.unavailable_text ?? "Recommandations indisponibles pour ce profil.";
   const slotLabels = copy?.slot_labels ?? {};
   const slotDescriptions = copy?.slot_descriptions ?? {};
+  const [flipped, setFlipped] = useState<string[]>([]);
 
   if (!recommendations || recommendations.length === 0) {
     if (!unavailableReason) {
@@ -98,47 +103,65 @@ export default function Recommendations({
 
       <div className="recommendations-grid">
         {recommendations.map((recommendation) => {
-          const content = (
+          const isFlipped = flipped.includes(recommendation.slot);
+          const slotLabel = slotLabels[recommendation.slot] ?? recommendation.slot;
+          const meta = [metaList(recommendation.genres, 2), metaList(recommendation.countries, 1)].filter(Boolean).join(" · ");
+          const front = (
             <>
               <Poster recommendation={recommendation} />
-              <div className="recommendation-body">
-                <div className="recommendation-topline">
-                  <span>{slotLabels[recommendation.slot] ?? recommendation.slot}</span>
-                </div>
+              <div className="recommendation-overlay">
+                <span className="recommendation-slot">{slotLabel}</span>
                 <h3>
                   {recommendation.title}
                   {recommendation.year ? <em>{recommendation.year}</em> : null}
                 </h3>
-                <div className="recommendation-meta">
-                  {recommendation.genres?.length ? <span>{metaList(recommendation.genres)}</span> : null}
-                  {recommendation.countries?.length ? <span>{metaList(recommendation.countries, 2)}</span> : null}
-                </div>
-                <p>{slotDescriptions[recommendation.slot] ?? recommendation.reason_text}</p>
-                <div className="recommendation-footer">
-                  {recommendation.director ? <span>{recommendation.director}</span> : <span>{recommendation.slug}</span>}
-                </div>
+                {recommendation.director ? <p className="recommendation-director">Réalisé par {recommendation.director}</p> : null}
+                {meta ? <p className="recommendation-meta">{meta}</p> : null}
               </div>
             </>
           );
 
-          if (recommendation.letterboxd_url) {
-            return (
-              <a
-                className="recommendation-card"
-                href={recommendation.letterboxd_url}
-                key={recommendation.slot}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {content}
-              </a>
-            );
-          }
-
           return (
-            <article className="recommendation-card" key={recommendation.slot}>
-              {content}
-            </article>
+            <div className={`recommendation-flip${isFlipped ? " is-flipped" : ""}`} key={recommendation.slot}>
+              <div className="recommendation-flip-inner">
+                <button
+                  type="button"
+                  className="recommendation-face recommendation-back"
+                  aria-hidden={isFlipped}
+                  tabIndex={isFlipped ? -1 : 0}
+                  onClick={(event) => {
+                    setFlipped((current) => [...current, recommendation.slot]);
+                    // Le bouton devient masqué : le focus clavier passe à la face révélée.
+                    (event.currentTarget.nextElementSibling as HTMLElement | null)?.focus({ preventScroll: true });
+                  }}
+                >
+                  <span className="recommendation-slot">{slotLabel}</span>
+                  <span className="recommendation-back-text">
+                    {slotDescriptions[recommendation.slot] ?? recommendation.reason_text}
+                  </span>
+                  <span className="recommendation-back-hint">
+                    <span className="verbPointer">Clique</span>
+                    <span className="verbTouch">Appuie</span> pour retourner la carte
+                  </span>
+                </button>
+                {recommendation.letterboxd_url ? (
+                  <a
+                    className="recommendation-face recommendation-front"
+                    href={recommendation.letterboxd_url}
+                    rel="noreferrer"
+                    target="_blank"
+                    aria-hidden={!isFlipped}
+                    tabIndex={isFlipped ? 0 : -1}
+                  >
+                    {front}
+                  </a>
+                ) : (
+                  <article className="recommendation-face recommendation-front" aria-hidden={!isFlipped}>
+                    {front}
+                  </article>
+                )}
+              </div>
+            </div>
           );
         })}
       </div>

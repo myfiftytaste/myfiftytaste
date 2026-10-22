@@ -157,8 +157,13 @@ export default function HighlightsCarousel({
       key: "most_repeated_director",
       href: director?.letterboxd_url ?? null,
       label: labels.most_repeated_director ?? "Ta réalisatrice récurrente / Ton réalisateur récurrent",
-      title: director?.director ?? "Indisponible",
-      subtitle: filmNames.length ? filmNames.join(" · ") : director ? `${director.count} films` : null,
+      // Pas de réalisateur répété dans les films analysés : c'est un constat, pas une donnée manquante.
+      title: director?.director ?? "Personne en double",
+      subtitle: filmNames.length
+        ? filmNames.join(" · ")
+        : director
+          ? `${director.count} films`
+          : "Aucun cinéaste ne revient deux fois dans tes films",
       posterUrl: null,
       hasPoster: false,
       isDirector: true,

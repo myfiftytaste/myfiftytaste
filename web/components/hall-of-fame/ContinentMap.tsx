@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CONTINENTS, type Continent, type ContinentWinner } from "../../lib/hallOfFameTypes";
+import { letterboxdProfileUrl } from "../../lib/username";
 
 // Six simplified, non-geographic zones (no per-country borders) — just
 // enough shape to read as "a map" while staying decorative. Anchor points
@@ -113,7 +114,10 @@ export default function ContinentMap({
           return (
             <g key={continent} transform={`translate(${anchor.x}, ${anchor.y})`}>
               <a
-                href={`/profile/${encodeURIComponent(winner.username)}`}
+                href={letterboxdProfileUrl(winner.username)}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${winner.username}, ${winner.filmCount} film${winner.filmCount > 1 ? "s" : ""} : profil Letterboxd (nouvel onglet)`}
                 className="hofPin"
                 onMouseEnter={() => setHoveredContinent(continent)}
                 onMouseLeave={() => setHoveredContinent((current) => (current === continent ? null : current))}
@@ -125,7 +129,7 @@ export default function ContinentMap({
                   {initials(winner.username)}
                 </text>
                 <text className="hofPinName" y="26">
-                  {winner.username}
+                  {winner.username} ↗
                 </text>
                 <text className="hofPinMetric" y="38">
                   {winner.filmCount} film{winner.filmCount > 1 ? "s" : ""}
