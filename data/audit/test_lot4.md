@@ -1,5 +1,1 @@
-- tanguytare : mainstream cran 2 (film du milieu 192501 vues, 47 films dont 33 estimés ; ancien % 83.5) · époque cran 3 (âge moyen 14.1 ans) · textes : Digger de pépites / Entre deux époques
-- picolifl : mainstream cran 2 (film du milieu 191859 vues, 49 films dont 33 estimés ; ancien % 82.7) · époque cran 3 (âge moyen 14.7 ans) · textes : Digger de pépites / Entre deux époques
-- mathmon : mainstream cran 2 (film du milieu 135548 vues, 47 films dont 36 estimés ; ancien % 88.5) · époque cran 4 (âge moyen 10.4 ans) · textes : Digger de pépites / Aficionado d’avant-premières
-- julescall1 : pas de métriques
-- tobiashottin : mainstream cran 1 (film du milieu 103872 vues, 50 films dont 35 estimés ; ancien % 73.1) · époque cran 1 (âge moyen 21.6 ans) · textes : Chasseur d’OVNIs Letterboxd / Rat de cinémathèque
+- julescall1 : mainstream cran 3 (film du milieu 227813 vues, 45 films dont 26 estimés ; ancien % 87.8) · époque cran 3 (âge moyen 16.3 ans) · textes : Cinéphile éclectique / Entre deux époques
