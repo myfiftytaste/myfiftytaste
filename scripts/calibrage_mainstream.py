@@ -24,7 +24,12 @@ import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_profile_metrics import niche_score_for_watches  # noqa: E402
+import build_user_wrapped  # noqa: E402
 from build_user_wrapped import fetch_rss  # noqa: E402
+
+# Premier passage : 19 profils sur 32 refusés par Letterboxd depuis GitHub. On ralentit.
+build_user_wrapped.MIN_LETTERBOXD_REQUEST_INTERVAL_SECONDS = 6
+build_user_wrapped.LETTERBOXD_BACKOFF_BASE_SECONDS = 15
 
 BASE = Path(__file__).resolve().parent.parent
 OUT = BASE / "data" / "audit"
@@ -67,6 +72,19 @@ def main() -> None:
         if f.get("letterboxd_slug") and f.get("watches")
     }
     tmdb: dict[str, tuple[int | None, int | None]] = {}
+    year_rank: dict[tuple[int, int], int] = {}
+
+    def rank_in_year(year: int, votes: int) -> int | None:
+        """Variante C : rang du film parmi les films TMDB de la même année, par votes (1 = le plus voté)."""
+        if (year, votes) not in year_rank:
+            r = requests.get(
+                "https://api.themoviedb.org/3/discover/movie",
+                params={"api_key": key, "primary_release_year": year, "vote_count.gte": votes, "include_adult": "false"},
+                timeout=10,
+            )
+            year_rank[(year, votes)] = r.json().get("total_results") if r.ok else None
+        return year_rank[(year, votes)]
+
     profiles, film_rows = [], []
 
     for username in usernames:
@@ -94,12 +112,15 @@ def main() -> None:
                 lv = math.log10(votes)
                 est_a = 10 ** (CONV_A[0] + CONV_A[1] * lv)
                 est_b = 10 ** (CONV_B_INTERCEPT[era(year)] + CONV_B_SLOPE * lv)
-            films.append((title, year, watches, votes, est_a, est_b))
-            film_rows.append([username, title, year, watches or "", votes or "", round(est_a or 0) or "", round(est_b or 0) or ""])
+            rank = rank_in_year(tmdb_year, votes) if tmdb_year and votes else None
+            films.append((title, year, watches, votes, est_a, est_b, rank))
+            film_rows.append([username, title, year, watches or "", votes or "", round(est_a or 0) or "", round(est_b or 0) or "", rank or ""])
+        print(f"{username}: {len(films)} films", flush=True)
 
-        lb = [w for _, _, w, _, _, _ in films if w]
-        log_a = [math.log10(w or ea) for _, _, w, _, ea, _ in films if w or ea]
-        log_b = [math.log10(w or eb) for _, _, w, _, _, eb in films if w or eb]
+        lb = [w for _, _, w, *_ in films if w]
+        log_a = [math.log10(w or ea) for _, _, w, _, ea, _, _ in films if w or ea]
+        log_b = [math.log10(w or eb) for _, _, w, _, _, eb, _ in films if w or eb]
+        ranks = [r for *_, r in films if r]
         old_pct = 100 - st.mean(niche_score_for_watches(w) for w in lb) if lb else None
         profiles.append({
             "username": username,
@@ -111,17 +132,19 @@ def main() -> None:
             "ancien_cran": old_cran(old_pct) if old_pct is not None else None,
             "vues_medianes_A": round(10 ** st.median(log_a)) if log_a else None,
             "vues_medianes_B": round(10 ** st.median(log_b)) if log_b else None,
+            # Rang brut (1 = le plus voté de son année) ; inversé au classement ci-dessous.
+            "rang_annee_median_C": round(st.median(ranks)) if ranks else None,
         })
 
     ref = [p for p in profiles if p["films"] >= 20 and p["vues_medianes_A"]]
-    for variant in ("A", "B"):
-        values = [math.log10(p[f"vues_medianes_{variant}"]) for p in ref]
+    for variant, field, sign in (("A", "vues_medianes_A", 1), ("B", "vues_medianes_B", 1), ("C", "rang_annee_median_C", -1)):
+        values = [sign * math.log10(p[field]) for p in ref if p[field]]
         cuts = quintile_cuts(values)
         for p in profiles:
-            v = p[f"vues_medianes_{variant}"]
-            p[f"cran_{variant}"] = cran(math.log10(v), cuts) if v else None
-            p[f"plus_mainstream_que_{variant}_pct"] = round(100 * sum(x < math.log10(v) for x in values) / len(values)) if v else None
-        print(f"seuils {variant} (vues médianes) : {[round(10 ** c) for c in cuts]}")
+            v = sign * math.log10(p[field]) if p[field] else None
+            p[f"cran_{variant}"] = cran(v, cuts) if v is not None else None
+            p[f"plus_mainstream_que_{variant}_pct"] = round(100 * sum(x < v for x in values) / len(values)) if v is not None else None
+        print(f"seuils {variant} ({field}) : {[round(10 ** (sign * c)) for c in cuts]}")
 
     OUT.mkdir(parents=True, exist_ok=True)
     with open(OUT / "calibrage_mainstream.csv", "w", newline="", encoding="utf-8") as fh:
@@ -130,7 +153,7 @@ def main() -> None:
         writer.writerows(sorted(profiles, key=lambda p: -(p["vues_medianes_A"] or 0)))
     with open(OUT / "calibrage_mainstream_films.csv", "w", newline="", encoding="utf-8") as fh:
         writer = csv.writer(fh)
-        writer.writerow(["username", "titre", "annee", "vues_letterboxd", "votes_tmdb", "vues_estimees_A", "vues_estimees_B"])
+        writer.writerow(["username", "titre", "annee", "vues_letterboxd", "votes_tmdb", "vues_estimees_A", "vues_estimees_B", "rang_dans_son_annee"])
         writer.writerows(film_rows)
     print(f"{len(profiles)} profils, {len(tmdb)} films TMDB interrogés")
 
