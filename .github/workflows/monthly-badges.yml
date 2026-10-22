@@ -1,0 +1,31 @@
+name: Badges du mois (Hall of Fame)
+
+# Le 1er de chaque mois, attribue les badges du mois qui vient de se terminer
+# (scripts/attribute_badges.py, règles du lot 6). Relançable sans risque :
+# un badge déjà attribué n'est jamais dupliqué. Le bouton « Run workflow »
+# permet aussi de traiter un mois précis à la main.
+on:
+  schedule:
+    - cron: '20 1 1 * *'
+  workflow_dispatch:
+    inputs:
+      month:
+        description: 'Mois à traiter (AAAA-MM) ; vide = le mois précédent'
+        required: false
+        default: ''
+
+jobs:
+  badges:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Attribue les badges
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          MONTH: ${{ github.event.inputs.month }}
+        run: python scripts/attribute_badges.py ${MONTH:+"$MONTH"}
