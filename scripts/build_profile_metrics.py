@@ -24,6 +24,9 @@ from pathlib import Path
 from statistics import mean, median
 from typing import Any, Callable, Optional
 
+import mainstream_estimate
+from recommendation_candidates_tmdb import get_tmdb_client
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "data" / "output"
@@ -696,6 +699,10 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         3 if mainstream_normalized <= 80 else
         4 if mainstream_normalized <= 92 else 5
     )
+    recalibrated = mainstream_estimate.is_active()
+    mainstream_median = mainstream_estimate.median_views(films, get_tmdb_client()) if recalibrated else {}
+    if mainstream_median.get("median_views"):
+        mainstream_value = mainstream_estimate.mainstream_cran(mainstream_median["median_views"])
     # Bucket 4/5 boundary nudged 2016 -> 2015 on 2026-08-09: across the 7 real
     # profiles, mathmon (average_year 2015.38) sat 0.62 year below the old
     # boundary, the closest of anyone to a threshold edge. Shifts only mathmon
@@ -706,6 +713,9 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         3 if average_year <= 2004 else
         4 if average_year <= 2015 else 5
     )
+    if recalibrated and average_year is not None:
+        average_age = mainstream_estimate.fractional_year() - average_year
+        oldness_value = mainstream_estimate.age_cran(average_age)
     endurance_value = score_from_thresholds(
         int(round(runtime_average or 0)),
         [(0, 95, 1), (96, 105, 2), (106, 120, 3), (121, 135, 4), (136, 999, 5)],
@@ -714,6 +724,10 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         "mainstreamness": {
             "value_5": mainstream_value,
             "raw_value": mainstream_raw,
+            # Nouvelle mesure (à partir du 1er novembre 2026) : vues du film du milieu.
+            "median_views": mainstream_median.get("median_views"),
+            "films_counted": mainstream_median.get("films_counted"),
+            "films_estimated": mainstream_median.get("films_estimated"),
             "label": "Popularité moyenne",
             "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
             "data_source": f"{social_count} films with Megabank social stats",

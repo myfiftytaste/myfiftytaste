@@ -37,23 +37,39 @@ from hall_of_fame_common import CONTINENTS, connect  # noqa: E402
 BASE_DIR = Path(__file__).resolve().parent.parent
 HOF_DIR = BASE_DIR / "data" / "output" / "hall_of_fame"
 
+# À partir de novembre 2026, Mainstream / Niche classent par vues Letterboxd du
+# film du milieu (scripts/mainstream_estimate.py) ; les mois d'avant gardent
+# l'ancien pourcentage, figé dans leurs snapshots.
+MEDIAN_VIEWS_FROM_MONTH = "2026-11"
+
+
+def format_views(value: float) -> str:
+    if value >= 1_000_000:
+        return f"{value / 1_000_000:.1f} M".replace(".", ",")
+    return f"{round(value / 1000)} k"
+
+
+def mainstream_podium_defs(month: str) -> list[dict[str, Any]]:
+    if month >= MEDIAN_VIEWS_FROM_MONTH:
+        views = lambda s: s["metrics_snapshot"].get("mainstream_median_views")  # noqa: E731
+        label = lambda v: f"film du milieu : {format_views(v)} vues"  # noqa: E731
+        return [
+            {"key": "mainstream", "title": "Top Mainstream", "sub": "A consommé le plus de blockbusters et succès populaires",
+             "metric": views, "direction": "desc", "format": label},
+            {"key": "niche", "title": "Top Niche", "sub": "A creusé le plus loin dans les films niche",
+             "metric": views, "direction": "asc", "format": label},
+        ]
+    return [
+        {"key": "mainstream", "title": "Top Mainstream", "sub": "A consommé le plus de blockbusters et succès populaires",
+         "metric": lambda s: s["metrics_snapshot"].get("mainstream_pct"), "direction": "desc",
+         "format": lambda v: f"{round(v)}% mainstream"},
+        {"key": "niche", "title": "Top Niche", "sub": "A creusé le plus loin dans les films niche",
+         "metric": lambda s: s["metrics_snapshot"].get("niche_pct"), "direction": "desc",
+         "format": lambda v: f"{round(v)}% niche"},
+    ]
+
+
 PODIUM_DEFS: list[dict[str, Any]] = [
-    {
-        "key": "mainstream",
-        "title": "Top Mainstream",
-        "sub": "A consommé le plus de blockbusters et succès populaires",
-        "metric": lambda s: s["metrics_snapshot"].get("mainstream_pct"),
-        "direction": "desc",
-        "format": lambda v: f"{round(v)}% mainstream",
-    },
-    {
-        "key": "niche",
-        "title": "Top Niche",
-        "sub": "A creusé le plus loin dans les films niche",
-        "metric": lambda s: s["metrics_snapshot"].get("niche_pct"),
-        "direction": "desc",
-        "format": lambda v: f"{round(v)}% niche",
-    },
     {
         "key": "critique",
         "title": "Top Critique",
@@ -158,7 +174,7 @@ def build_rankings(month: str) -> dict[str, Any]:
     opted_in = [snapshot for snapshot in snapshots if snapshot.get("opted_in") is True]
 
     podiums = []
-    for podium_def in PODIUM_DEFS:
+    for podium_def in mainstream_podium_defs(month) + PODIUM_DEFS:
         podiums.append(
             {
                 "key": podium_def["key"],

@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from "react";
 type RadarScore = {
   value_5?: number;
   label?: string;
+  // Présent à partir du 1er novembre 2026 : signale le nouveau calcul (scripts/mainstream_estimate.py).
+  median_views?: number | null;
 };
 
 type RadarScores = {
@@ -94,6 +96,32 @@ const radarBackCopy: Record<keyof RadarScores, RadarBackCopy> = {
       "3/5 : 18 à 29 reviews",
       "4/5 : 30 à 42 reviews",
       "5/5 : 43 à 50 reviews",
+    ],
+  },
+};
+
+// Méthode du recalibrage de novembre 2026 (mainstream + époque), affichée dès
+// que le profil a été calculé avec (champ median_views présent).
+const radarBackCopyRecalibrated: Partial<Record<keyof RadarScores, RadarBackCopy>> = {
+  mainstreamness: {
+    intro:
+      "On prend les vues Letterboxd de chacun de tes films (estimées d’après sa place parmi les films de son année quand on ne les connaît pas), puis celles de ton film « du milieu ». Les crans te situent parmi les profils Fifty.",
+    steps: [
+      "1/5 : film du milieu sous 104 000 vues",
+      "2/5 : de 104 000 à 194 000 vues",
+      "3/5 : de 194 000 à 321 000 vues",
+      "4/5 : de 321 000 à 796 000 vues",
+      "5/5 : au-delà de 796 000 vues",
+    ],
+  },
+  oldness: {
+    intro: "Mesuré à partir de l’âge moyen de tes films (années écoulées depuis leur sortie). Les crans te situent parmi les profils Fifty.",
+    steps: [
+      "1/5 : âge moyen de 19 ans ou plus",
+      "2/5 : de 17 à 19 ans",
+      "3/5 : de 13 à 17 ans",
+      "4/5 : de 10 à 13 ans",
+      "5/5 : moins de 10 ans",
     ],
   },
 };
@@ -339,7 +367,9 @@ export default function RadarChart({
             const scoreMeta = `${editorial.axis_id || axis.axisId} ${displayCran(
               editorial.cran ?? values[index],
             )}`;
-            const backCopy = radarBackCopy[axis.id];
+            const backCopy =
+              (radarScores?.mainstreamness?.median_views ? radarBackCopyRecalibrated[axis.id] : undefined) ??
+              radarBackCopy[axis.id];
             return (
               <button
                 aria-label={`${title}. ${

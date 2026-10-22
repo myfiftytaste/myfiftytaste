@@ -4,11 +4,11 @@
     "levels": {
       "1": {
         "title": "Chasseur d’OVNIs Letterboxd",
-        "one_line": "Tu écumes les listes « weird » du site à la recherche du film que personne n’a jamais vu ; dès qu’un titre dépasse 200 vues, il devient déjà trop mainstream pour toi."
+        "one_line": "Tu écumes les listes « weird » du site à la recherche du film que personne n’a vu ; la moitié de tes films, les autres profils Fifty n’en ont jamais entendu parler."
       },
       "2": {
         "title": "Digger de pépites",
-        "one_line": "Tu traces ton propre chemin à travers les lists Letterboxd obscures ; si un film dépasse 1 000 vues, il est mainstream pour toi… ça y est."
+        "one_line": "Tu traces ton propre chemin à travers les lists Letterboxd obscures ; le film que tout le monde a vu peut attendre, la pépite oubliée, jamais."
       },
       "3": {
         "title": "Cinéphile éclectique",
@@ -28,8 +28,8 @@
     "public_axis_label": "Époque",
     "levels": {
       "1": {
-        "title": "1900’s connoiseurrr",
-        "one_line": "Tu ponces les Chaplin et les Keaton… « De toute façon les films parlant et la couleur c’est surfait. »"
+        "title": "Rat de cinémathèque",
+        "one_line": "Pendant que les autres courent aux avant-premières, toi tu rattrapes les classiques : tes films ont presque vingt ans de moyenne d’âge."
       },
       "2": {
         "title": "Éternel nostalgique",

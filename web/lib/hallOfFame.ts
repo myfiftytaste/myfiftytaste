@@ -17,6 +17,8 @@ export type MetricsSnapshot = {
   average_release_year: number | null;
   current_year_release_pct: number | null;
   current_year_release_count: number | null;
+  // Présent à partir de novembre 2026 (scripts/mainstream_estimate.py).
+  mainstream_median_views?: number | null;
 };
 
 export type MonthlySnapshot = {
@@ -132,6 +134,14 @@ function formatPercent(value: number): string {
   return `${Math.round(value)}%`;
 }
 
+// Même règle que MEDIAN_VIEWS_FROM_MONTH dans scripts/build_hof_rankings.py.
+const MEDIAN_VIEWS_FROM_MONTH = "2026-11";
+
+function formatViews(value: number): string {
+  const text = value >= 1_000_000 ? `${(value / 1_000_000).toFixed(1).replace(".", ",")} M` : `${Math.round(value / 1000)} k`;
+  return `film du milieu : ${text} vues`;
+}
+
 function continentWinners(snapshots: MonthlySnapshot[]): Partial<Record<Continent, ContinentWinner>> {
   const winners: Partial<Record<Continent, ContinentWinner>> = {};
 
@@ -173,19 +183,24 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
   const snapshots = await readSnapshotsForMonth(month);
   const optedIn = snapshots.filter((snapshot) => snapshot.opted_in === true);
   const currentYear = Number(month.split("-")[0]);
+  const byMedianViews = month >= MEDIAN_VIEWS_FROM_MONTH;
 
   const podiums: PodiumCategory[] = [
     {
       key: "mainstream",
       title: "Top Mainstream",
       sub: "A consommé le plus de blockbusters et succès populaires",
-      entries: ranked(optedIn, (s) => s.metrics_snapshot.mainstream_pct, "desc", (v) => `${formatPercent(v)} mainstream`),
+      entries: byMedianViews
+        ? ranked(optedIn, (s) => s.metrics_snapshot.mainstream_median_views ?? null, "desc", formatViews)
+        : ranked(optedIn, (s) => s.metrics_snapshot.mainstream_pct, "desc", (v) => `${formatPercent(v)} mainstream`),
     },
     {
       key: "niche",
       title: "Top Niche",
       sub: "A creusé le plus loin dans les films niche",
-      entries: ranked(optedIn, (s) => s.metrics_snapshot.niche_pct, "desc", (v) => `${formatPercent(v)} niche`),
+      entries: byMedianViews
+        ? ranked(optedIn, (s) => s.metrics_snapshot.mainstream_median_views ?? null, "asc", formatViews)
+        : ranked(optedIn, (s) => s.metrics_snapshot.niche_pct, "desc", (v) => `${formatPercent(v)} niche`),
     },
     {
       key: "critique",

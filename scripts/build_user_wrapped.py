@@ -622,6 +622,8 @@ def build_user_profile(username: str) -> Dict:
             "year": year,
             "has_review": word_count > 0,
             "review_word_count": word_count,
+            # Identifiant TMDB fourni par le flux Letterboxd (tmdb:movieId) : sert au calcul mainstream.
+            "rss_tmdb_id": entry.get("tmdb_movieid"),
         })
         seen_slugs.add(slug)
         if len(items) >= 50:
@@ -690,6 +692,7 @@ def build_user_profile(username: str) -> Dict:
             "year": it["year"],
             "has_review": it["has_review"],
             "review_word_count": it["review_word_count"],
+            "rss_tmdb_id": it.get("rss_tmdb_id"),
             "matched": False,
             "source": "missing",
             "has_social_stats": False,
