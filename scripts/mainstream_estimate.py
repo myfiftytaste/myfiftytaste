@@ -32,6 +32,21 @@ AGE_CUTS = (18.8, 16.8, 13.3, 10.3)
 # log10(vues) = a + b * log10(rang dans l'année), par époque de sortie.
 RANK_TO_VIEWS = {"pre1980": (5.91, -0.74), "1980_99": (6.61, -0.84), "2000_14": (6.86, -0.75), "2015p": (7.17, -0.87)}
 
+# Profils de référence pour « plus / moins … que X % des profils Fifty » : les
+# mêmes que pour les seuils (valeurs anonymes, profils d'au moins 20 films,
+# 22/10/2026). Figées comme les seuils, pour que la phrase ne bouge pas d'un mois à l'autre.
+REFERENCE_MEDIAN_VIEWS = (
+    71720, 92247, 104080, 135814, 163731, 191770, 193239, 194390, 213184, 216487, 220597, 228884, 234819,
+    255337, 279934, 298974, 318193, 321052, 344535, 405112, 477186, 771993, 796013, 860600, 876907, 1484396,
+)
+REFERENCE_AGES = (
+    4.4, 6.3, 10.3, 10.4, 10.4, 10.7, 11.4, 12.3, 13.2, 13.6, 14.1, 14.1, 14.3,
+    14.4, 14.7, 15.2, 15.4, 15.7, 16.9, 17.0, 17.6, 18.2, 18.4, 19.0, 21.6, 25.4,
+)
+REFERENCE_REVIEW_COUNTS = (
+    0, 0, 0, 0, 1, 3, 3, 9, 12, 12, 18, 18, 19, 20, 26, 27, 27, 28, 28, 31, 32, 36, 40, 41, 44, 47, 48, 49, 50,
+)
+
 CACHE_PATH = Path(__file__).resolve().parent.parent / "data" / "cache" / "tmdb_year_rank_cache.json"
 
 
@@ -56,6 +71,15 @@ def mainstream_cran(median_views: float) -> int:
 
 def age_cran(average_age: float) -> int:
     return 1 + sum(average_age < cut for cut in AGE_CUTS)
+
+
+def comparison(value: float, reference: tuple[float, ...], more: str, less: str) -> str:
+    """« Plus mainstream que 77 % des profils Fifty » / « Moins … que 60 % » ; les égalités comptent pour moitié."""
+    below = sum(ref < value for ref in reference) + sum(ref == value for ref in reference) / 2
+    share = round(100 * below / len(reference))
+    if share >= 50:
+        return f"{more} que {share} % des profils Fifty"
+    return f"{less} que {100 - share} % des profils Fifty"
 
 
 def fractional_year(now: Optional[datetime] = None) -> float:
@@ -117,6 +141,9 @@ if __name__ == "__main__":
     assert age_cran(25) == 1 and age_cran(14) == 3 and age_cran(5) == 5
     assert round(views_from_rank(2, 2026)) > round(views_from_rank(100, 2026))
     assert not is_active(datetime(2026, 10, 31, 23, 59, tzinfo=UTC)) and is_active(datetime(2026, 11, 1, tzinfo=UTC))
+    assert comparison(2_000_000, REFERENCE_MEDIAN_VIEWS, "Plus", "Moins") == "Plus que 100 % des profils Fifty"
+    assert comparison(0, REFERENCE_REVIEW_COUNTS, "Plus", "Moins") == "Moins que 93 % des profils Fifty"
+    assert comparison(192501, REFERENCE_MEDIAN_VIEWS, "Plus", "Moins") == "Moins que 77 % des profils Fifty"
 
     class FakeClient:
         def get(self, path: str, params: Optional[dict[str, Any]] = None) -> dict[str, Any]:

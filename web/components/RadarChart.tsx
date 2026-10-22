@@ -7,6 +7,8 @@ type RadarScore = {
   label?: string;
   // Présent à partir du 1er novembre 2026 : signale le nouveau calcul (scripts/mainstream_estimate.py).
   median_views?: number | null;
+  // « Plus mainstream que 77 % des profils Fifty » (scripts/mainstream_estimate.py).
+  comparison?: string | null;
 };
 
 type RadarScores = {
@@ -385,6 +387,7 @@ export default function RadarChart({
                   <span aria-hidden={isFlipped} className="radar-score-face radar-score-front">
                     <strong>{title}</strong>
                     {editorialLine(editorial) ? <p>{editorialLine(editorial)}</p> : null}
+                    {score?.comparison ? <em className="radar-score-comparison">{score.comparison}</em> : null}
                     <small>{scoreMeta}</small>
                   </span>
                   <span aria-hidden={!isFlipped} className="radar-score-face radar-score-back">
