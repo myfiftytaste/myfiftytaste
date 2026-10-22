@@ -1,603 +1,1260 @@
-username,titre,annee,vues_letterboxd,votes_tmdb,vues_estimees_A,vues_estimees_B
-lilacos,Omaha,2025,,39,1591,5477
-lilacos,Spider-Man: Brand New Day,2026,,5949,570295,2249103
-lilacos,PlayTime,1967,120967.0,705,,
-lilacos,Boogie Nights,1997,653574.0,3744,,
-lilacos,The Sheep Detectives,2026,,1829,143480,548113
-lilacos,Just an Illusion,2026,,216,11784,42495
-lilacos,Flow,2024,,3119,267916,1038332
-lilacos,The Drama,2026,,1990,158365,606355
-lilacos,The Traitor,2019,,1451,109434,112077
-lilacos,Project Hail Mary,2026,,8431,857588,3414108
-lilacos,Entering Indifference,2001,,,,
-lilacos,Ici là-bas,1988,,1,22,22
-lilacos,Mobilize,2015,,14,480,433
-lilacos,The Violence of a Civilization without Secrets,2018,,7,213,189
-lilacos,Adolescence,2025,,,,
-lilacos,The Zone of Interest,2023,953664.0,2799,,
-lilacos,Gladiator II,2024,1117085.0,4830,,
-lilacos,Priscilla,2023,,1159,84135,317474
-lilacos,The Boy and the Heron,2023,,2870,243065,939906
-lilacos,The Conjuring,2013,,13213,1450680,1246920
-lilacos,Gladiator,2000,,21716,2594373,2260089
-lilacos,Brokeback Mountain,2005,1484396.0,7782,,
-lilacos,The Avengers,2012,3276575.0,40115,,
-lilacos,Catch Me If You Can,2002,2481032.0,17757,,
-lilacos,Deadpool & Wolverine,2024,,9683,1008397,4029525
-lilacos,The Menu,2022,2978848.0,6798,,
-lilacos,Shutter Island,2010,,26652,3296886,2888009
-lilacos,The Grand Budapest Hotel,2014,3199652.0,16645,,
-lilacos,Inception,2010,4326850.0,40511,,
-lilacos,La La Land,2016,4393174.0,18643,,
-lilacos,In the Mood for Love,2000,876907.0,3425,,
-lilacos,My Neighbor Totoro,1988,2122570.0,9183,,
-lilacos,Grease,1978,1527538.0,7879,,
-lilacos,Pretty Woman,1990,1325171.0,9264,,
-lilacos,Se7en,1995,3263377.0,24037,,
-lilacos,Princess Mononoke,1997,1664452.0,9397,,
-lilacos,The Truman Show,1998,4382819.0,21083,,
-lilacos,In the Mood for Love,2000,876907.0,3425,,
-lilacos,Howl's Moving Castle,2004,2437628.0,11590,,
-lilacos,Brokeback Mountain,2005,1484396.0,7782,,
-lilacos,Pride & Prejudice,2005,1828719.0,9029,,
-lilacos,Pride & Prejudice,2005,1828719.0,9029,,
-lilacos,Ratatouille,2007,4261300.0,19110,,
-lilacos,WALL·E,2008,3418117.0,21070,,
-lilacos,Up,2009,3922213.0,22293,,
-lilacos,Incendies,2010,435299.0,3528,,
-lilacos,I Origins,2014,,3593,316144,262351
-lilacos,La La Land,2016,4393174.0,18643,,
-lilacos,Call Me by Your Name,2017,2946205.0,13009,,
-lilacos,The Shape of Water,2017,1340249.0,13157,,
-eleonorre,The Odyssey,2026,,4215,381077,1488959
-eleonorre,Sense and Sensibility,2026,,45,1880,6500
-eleonorre,The Social Network,2010,3146498.0,13674,,
-eleonorre,Summer Beats,2025,,62,2736,9539
-eleonorre,All of a Sudden,2026,,60,2633,9172
-eleonorre,Another Day,2026,,64,2839,9908
-eleonorre,Sirāt,2025,,789,53651,200355
-eleonorre,Polisse,2011,,1333,99095,80061
-eleonorre,A Woman's Life,2026,,38,1543,5309
-eleonorre,In the Mood for Love,2000,876907.0,3425,,
-eleonorre,Congo Boy,2026,,,,
-eleonorre,Call My Agent! The Movie,2026,,127,6331,22504
-eleonorre,Pacer,2026,,,,
-eleonorre,Iron Boy,2026,,21,771,2610
-eleonorre,The Daughters of Abraham,2026,,,,
-eleonorre,Nothing to Lose,2026,,,,
-eleonorre,The Little Sister,2025,,144,7333,26155
-eleonorre,In Waves,2026,,35,1401,4811
-eleonorre,Nouvelle Vague,2025,,295,16970,61713
-eleonorre,"Sorry, Baby",2025,,370,22121,80935
-eleonorre,Out of Love,2025,,113,5522,19567
-eleonorre,Love Letters,2025,,50,2127,7373
-eleonorre,The Ties That Bind Us,2024,,290,16634,60463
-eleonorre,The Piano,1993,167073.0,1715,,
-eleonorre,Parthenope,2024,,798,54368,203094
-eleonorre,Mulholland Drive,2001,1172795.0,7374,,
-eleonorre,12 Angry Men,1957,1312847.0,10506,,
-eleonorre,La Haine,1995,855997.0,4763,,
-eleonorre,Good Will Hunting,1997,2718747.0,14477,,
-eleonorre,City of God,2002,1036835.0,8549,,
-eleonorre,Aftersun,2022,1365687.0,2019,,
-eleonorre,Just an Illusion,2026,,216,11784,42495
-eleonorre,Standing Tall,2015,,498,31315,31159
-eleonorre,Little Women,2019,2785956.0,7066,,
-eleonorre,"If You Don't Like It, Look Away",2025,,13,440,1470
-eleonorre,Elio,2025,,1164,84560,319114
-eleonorre,Thelma & Louise,1991,568032.0,4051,,
-eleonorre,Sentimental Value,2025,,1154,83711,315835
-eleonorre,The Worst Person in the World,2021,829446.0,2009,,
-eleonorre,Nino,2025,,92,4341,15299
-eleonorre,My Dear Theo,2025,,,,
-eleonorre,Manchester by the Sea,2016,953180.0,6629,,
-eleonorre,Dead Poets Society,1989,2741325.0,13089,,
-eleonorre,Harry Potter and the Goblet of Fire,2005,2998849.0,22805,,
-eleonorre,The Lord of the Rings: The Fellowship of the Ring,2001,3187177.0,28644,,
-eleonorre,The Lord of the Rings: The Return of the King,2003,,27638,3440034,3016362
-eleonorre,The Lord of the Rings: The Two Towers,2002,,24805,3031174,2650107
-eleonorre,One Battle After Another,2025,,4429,403811,1579894
-eleonorre,Rise,2022,,466,28974,28778
-eleonorre,Ride Away,2024,,113,5522,19567
-lucasld,Die Hard,1988,1441829.0,12771,,
-lucasld,Digger,2026,,443,27308,100403
-lucasld,Primetime,2026,,198,10644,38292
-lucasld,Resident Evil,2026,,1023,72703,273414
-lucasld,Creed,2015,789110.0,8189,,
-lucasld,King Creole,1958,,116,5694,6429
-lucasld,Sinners,2025,,5392,508332,1999423
-lucasld,Predator: Badlands,2025,,3815,339116,1321445
-lucasld,Sleep,2023,,269,15234,55260
-lucasld,Sherlock: The Abominable Bride,2016,,2381,195348,202759
-lucasld,Spider-Man: Brand New Day,2026,,5949,570295,2249103
-lucasld,The Odyssey,2026,,4215,381077,1488959
-lucasld,Minions & Monsters,2026,,1305,96664,365920
-lucasld,Surf's Up,2007,,2849,240985,198732
-lucasld,Barbie,2023,5195503.0,11717,,
-lucasld,Portrait of a Lady on Fire,2019,1068012.0,3076,,
-lucasld,The Twilight Saga: Breaking Dawn – Part 1,2011,,9472,982736,837145
-lucasld,Alice in Wonderland,1951,921246.0,6440,,
-lucasld,Victor/Victoria,1982,,468,29120,34142
-lucasld,Obsession,2025,,6257,604990,2389188
-lucasld,Seven Psychopaths,2012,,4463,407440,340097
-lucasld,Dallas Buyers Club,2013,,9343,967095,823516
-lucasld,Project Hail Mary,2026,,8431,857588,3414108
-lucasld,The Young Girls of Rochefort,1967,117024.0,681,,
-lucasld,Those Happy Days,2006,,1134,82016,65974
-lucasld,The Devil Wears Prada,2006,2701050.0,14355,,
-lucasld,Paranoid Park,2007,,632,41385,32769
-lucasld,The Drama,2026,,1990,158365,606355
-lucasld,Despicable Me,2010,1789789.0,16501,,
-lucasld,The Twilight Saga: Eclipse,2010,1163099.0,9450,,
-lucasld,Legally Blonde,2001,1817664.0,4779,,
-lucasld,Mean Girls,2004,3400634.0,9750,,
-lucasld,Spirited Away,2001,3707328.0,19085,,
-lucasld,The Aristocats,1970,563502.0,5496,,
-lucasld,Kill Bill: Vol. 2,2004,1760722.0,15584,,
-lucasld,Marty Supreme,2025,,2313,188836,725969
-lucasld,Kill Bill: Vol. 1,2003,3101840.0,19608,,
-lucasld,In the Mood for Love,2000,876907.0,3425,,
-lucasld,School of Rock,2003,1655522.0,6441,,
-lucasld,No Other Choice,2025,,1352,100749,381750
-lucasld,Nikita,1990,,2246,182452,223171
-lucasld,Carlito's Way,1993,200996.0,3631,,
-lucasld,Into the Woods,2014,,4493,410646,342836
-lucasld,Gone Girl,2014,3332336.0,20572,,
-lucasld,Memories of Murder,2003,762547.0,4889,,
-lucasld,F1,2025,,4868,451025,1769125
-lucasld,How to Train Your Dragon,2010,2118430.0,14850,,
-lucasld,The Breakfast Club,1985,2515799.0,8795,,
-lucasld,Hamnet,2025,,1710,132619,505704
-lucasld,Dead Poets Society,1989,2741325.0,13089,,
-lenrld,Apocalypse Now,1979,1074627.0,9480,,
-lenrld,The Umbrellas of Cherbourg,1964,196805.0,920,,
-lenrld,No Strings Attached,2011,396538.0,5108,,
-lenrld,Unabomber,2026,,506,31905,117725
-lenrld,The Wolf of Wall Street,2013,4155986.0,26783,,
-lenrld,You+Me - Against the World,2026,,106,5124,18126
-lenrld,La Mémoire des Poissons,2025,,,,
-lenrld,The Devil Wears Prada 2,2026,,2478,204691,788387
-lenrld,Call My Agent! The Movie,2026,,127,6331,22504
-lenrld,La La Land,2016,4393174.0,18643,,
-lenrld,Un grand raccourci,2026,,13,440,1470
-lenrld,Song Sung Blue,2025,,338,19899,72630
-lenrld,Love Me Love Me,2026,,333,19555,71345
-lenrld,Spider-Man: Brand New Day,2026,,5949,570295,2249103
-lenrld,The Odyssey,2026,,4215,381077,1488959
-lenrld,Celles qui restent,2022,,,,
-lenrld,Guru,2025,,328,19212,70065
-lenrld,Forever Young,2022,,175,9212,8911
-lenrld,Barbie,2023,5195503.0,11717,,
-lenrld,Spider-Man: No Way Home,2021,3697378.0,23387,,
-lenrld,Spider-Man: Far From Home,2019,,17781,2053283,2250078
-lenrld,Spider-Man: Homecoming,2017,3276400.0,24108,,
-lenrld,The Amazing Spider-Man 2,2014,1838922.0,14868,,
-lenrld,The Amazing Spider-Man,2012,2278142.0,19259,,
-lenrld,Spider-Man 3,2007,2064804.0,15927,,
-lenrld,In Waves,2026,,35,1401,4811
-lenrld,Erupcja,2025,,23,857,2911
-lenrld,Rebonds : une épopée de la danse électro,2026,,,,
-lenrld,Vertiginous,2026,,50,2127,7373
-lenrld,"Crazy, Stupid, Love.",2011,1518987.0,9604,,
-lenrld,Nouvelle Vague,2025,,295,16970,61713
-lenrld,Case 137,2025,,303,17510,63722
-lenrld,The Little Sister,2025,,144,7333,26155
-lenrld,TRENTE,2026,,13,440,1470
-lenrld,Lou!,2014,,212,11530,8864
-lenrld,La La Land,2016,4393174.0,18643,,
-lenrld,I Love Peru,2025,,93,4397,15498
-lenrld,Little Girl Blue,2023,,58,2531,8807
-lenrld,Little Women,2019,2785956.0,7066,,
-lenrld,Thirteen,2003,599644.0,1855,,
-lenrld,Chungking Express,1994,708535.0,2324,,
-lenrld,The Night of the 12th,2022,,810,55326,55777
-lenrld,Nana 2,2006,,46,1929,1423
-lenrld,Love at Sea,1965,,57,2480,2747
-lenrld,Her,2013,2498989.0,15760,,
-lenrld,Elio,2025,,1164,84560,319114
-lenrld,Me Before You,2016,1037111.0,13671,,
-lenrld,Before Sunrise,1995,1334204.0,4936,,
-lenrld,"Paris, 13th District",2021,53395.0,420,,
-lenrld,Second Course,2026,,2,49,156
-_thaisss_,Digger,2026,,443,27308,100403
-_thaisss_,Soul,2020,,11844,1276419,1383495
-_thaisss_,Burn After Reading,2008,608531.0,5456,,
-_thaisss_,Her,2013,2498989.0,15760,,
-_thaisss_,American Beauty,1999,1514778.0,13479,,
-_thaisss_,One Battle After Another,2025,,4429,403811,1579894
-_thaisss_,Jujutsu Kaisen 0,2021,273606.0,1884,,
-_thaisss_,Moonlight,2016,1625264.0,7737,,
-_thaisss_,Captain Fantastic,2016,540785.0,7021,,
-_thaisss_,Bye Bye Morons,2020,,971,68398,69295
-_thaisss_,Those Happy Days,2006,,1134,82016,65974
-_thaisss_,Parasite,2019,5015041.0,21537,,
-_thaisss_,North by Northwest,1959,412481.0,4686,,
-_thaisss_,C'est la vie!,2017,,1650,127191,130716
-_thaisss_,The Secret Life of Walter Mitty,2013,860600.0,8553,,
-_thaisss_,Spider-Man: Brand New Day,2026,,5949,570295,2249103
-_thaisss_,KPop Demon Hunters,2025,,3307,286905,1113686
-_thaisss_,Oldboy,2003,1396966.0,10320,,
-_thaisss_,C'est la vie!,2017,,1650,127191,130716
-_thaisss_,The Twilight Saga: Eclipse,2010,1163099.0,9450,,
-_thaisss_,The Odyssey,2026,,4215,381077,1488959
-_thaisss_,The Twilight Saga: New Moon,2009,1317110.0,9978,,
-_thaisss_,Twilight,2008,2392576.0,14782,,
-_thaisss_,The Sheep Detectives,2026,,1829,143480,548113
-_thaisss_,RRRrrrr!!!,2004,,1288,95192,76837
-_thaisss_,C'est la vie!,2017,,1650,127191,130716
-_thaisss_,Voicemails for Isabelle,2026,,1013,71873,270218
-_thaisss_,Hoodwinked!,2005,326818.0,2003,,
-_thaisss_,Spider-Man: Across the Spider-Verse,2023,3136327.0,9436,,
-_thaisss_,Disclosure Day,2026,,3798,337349,1314399
-_thaisss_,All Your Faces,2023,,725,48595,181061
-_thaisss_,Ferris Bueller's Day Off,1986,1813441.0,5628,,
-_thaisss_,Kung Fu Panda,2008,2123433.0,13122,,
-_thaisss_,Memories of Murder,2003,762547.0,4889,,
-_thaisss_,The Menu,2022,2978848.0,6798,,
-_thaisss_,The Lorax,2012,783627.0,4022,,
-_thaisss_,The Worst Person in the World,2021,829446.0,2009,,
-_thaisss_,Mamma Mia!,2008,2159643.0,7202,,
-_thaisss_,The Zone of Interest,2023,953664.0,2799,,
-_thaisss_,Mulholland Drive,2001,1172795.0,7374,,
-_thaisss_,Taxi,2015,,502,31610,31459
-_thaisss_,The Party,1980,72143.0,1233,,
-_thaisss_,In the Mood for Love,2000,876907.0,3425,,
-_thaisss_,The Ballad of Narayama,1983,,213,11593,13307
-_thaisss_,Volver,2006,,1991,158458,129416
-_thaisss_,The Devil Wears Prada 2,2026,,2478,204691,788387
-_thaisss_,Past Lives,2023,1504254.0,2516,,
-_thaisss_,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,721183.0,6432,,
-_thaisss_,Challengers,2024,2380191.0,2912,,
-_thaisss_,I Swear,2025,,639,41921,155663
-begumb0,Forgotten Island,2026,,87,4067,14309
-begumb0,Being John Malkovich,1999,653109.0,5012,,
-begumb0,Antichrist,2009,303067.0,2946,,
-begumb0,Martyrs,2008,259711.0,3172,,
-begumb0,House,1977,356698.0,850,,
-begumb0,In the Mood for Love,2000,876907.0,3425,,
-begumb0,Obsession,2025,,6257,604990,2389188
-begumb0,Barbie and the Diamond Castle,2008,,900,62584,50030
-begumb0,Blue Velvet,1986,829350.0,4005,,
-begumb0,Maternal Instinct,2026,,139,7036,25072
-begumb0,Çok Filim Hareketler Bunlar,2010,,57,2480,1840
-begumb0,Before I Fall,2017,,3604,317277,333021
-begumb0,Coherence,2013,349559.0,3680,,
-begumb0,Speak No Evil,2024,,2398,196981,758018
-begumb0,The Odyssey,2026,,4215,381077,1488959
-begumb0,The House of the Spirits,1993,24282.0,755,,
-begumb0,Abigail,2024,,2278,185497,712840
-begumb0,A Clockwork Orange,1971,1677487.0,14244,,
-begumb0,The Menu,2022,2978848.0,6798,,
-begumb0,Barbie: A Fashion Fairytale,2010,,807,55086,43906
-begumb0,The Ritual,2017,405112.0,3628,,
-begumb0,Barbie and the Magic of Pegasus,2005,,791,53810,42866
-begumb0,Sorry We Missed You,2019,55930.0,863,,
-begumb0,Barbie and the Three Musketeers,2009,,743,50010,39772
-begumb0,Moonrise Kingdom,2012,1338786.0,6540,,
-begumb0,Uptown Girls,2003,,1243,91313,73635
-begumb0,The Grand Budapest Hotel,2014,3199652.0,16645,,
-begumb0,Beetlejuice Beetlejuice,2024,,3401,296469,1151683
-begumb0,Mustang,2015,141614.0,1499,,
-begumb0,Beetlejuice,1988,1828299.0,8778,,
-begumb0,The Elephant Man,1980,437209.0,4099,,
-begumb0,Slumdog Millionaire,2008,960238.0,11678,,
-begumb0,The Hunger Games: Mockingjay – Part 1,2014,2003241.0,17136,,
-begumb0,The Hunger Games: Catching Fire,2013,2566922.0,18932,,
-begumb0,The Hunger Games,2012,3371833.0,23891,,
-begumb0,The Godfather,1972,2701868.0,23812,,
-begumb0,Fun with Dick and Jane,2005,146327.0,2784,,
-begumb0,"As Above, So Below",2014,481482.0,4026,,
-begumb0,When Life Gives You Tangerines,2025,,,,
-begumb0,Bride Squad,2024,,6,178,583
-begumb0,The Perks of Being a Wallflower,2012,2936400.0,11553,,
-begumb0,Plastic Dream,2021,,9,286,255
-begumb0,Twilight,2008,2392576.0,14782,,
-begumb0,No One Gets Out Alive,2021,,777,52698,53068
-begumb0,His House,2020,188523.0,1293,,
-begumb0,Eternal Sunshine of the Spotless Mind,2004,3381015.0,16895,,
-begumb0,Persepolis,2007,283700.0,2266,,
-begumb0,Mystery Train,1989,92180.0,542,,
-begumb0,Vanilla Sky,2001,359257.0,4911,,
-begumb0,Sleepy Hollow,1999,586615.0,7661,,
-mathmon,A Man of His Time,2026,,51,2177,7550
-mathmon,Digger,2026,,443,27308,100403
-mathmon,Another Day,2026,,64,2839,9908
-mathmon,Comédie-Française,2026,,107,5181,18330
-mathmon,Fjord,2026,,91,4286,15100
-mathmon,Memento,2000,1970561.0,16935,,
-mathmon,De Gaulle: Liberté,2026,,202,10896,39220
-mathmon,De Gaulle: Résistance,2026,,243,13526,48929
-mathmon,Out of Africa,1985,,1598,122514,148485
-mathmon,Pulp Fiction,1994,4386659.0,31142,,
-mathmon,The Odyssey,2026,,4215,381077,1488959
-mathmon,Crescendo,2026,,41,1686,5814
-mathmon,Parallel Tales,2026,,64,2839,9908
-mathmon,The Taste of Others,2000,,386,23244,18161
-mathmon,Jules and Jim,1962,122106.0,1080,,
-mathmon,Project Hail Mary,2026,,8431,857588,3414108
-mathmon,Just an Illusion,2026,,216,11784,42495
-mathmon,The Drama,2026,,1990,158365,606355
-mathmon,All That's Left of You,2025,,80,3687,12942
-mathmon,Marty Supreme,2025,,2313,188836,725969
-mathmon,The History of Sound,2025,,164,8538,30561
-mathmon,The Ties That Bind Us,2024,,290,16634,60463
-mathmon,Family Resemblances,1996,,331,19418,22555
-mathmon,Samuel,2024,,,,
-mathmon,When the Cat's Away,1996,,104,5011,5641
-mathmon,The Torch,2022,,,,
-mathmon,The Flame,2020,,,,
-mathmon,Titane,2021,461869.0,1775,,
-mathmon,The Rapture,2023,,102,4898,17310
-mathmon,Forever Young,2022,,175,9212,8911
-mathmon,The Blue Caftan,2022,,196,10518,10205
-mathmon,A Little Something Extra,2024,,882,61122,228942
-mathmon,Uncut Gems,2019,1750687.0,5649,,
-mathmon,Colette,2018,67658.0,964,,
-mathmon,The Piano Accident,2025,,244,13591,49171
-mathmon,Guru,2025,,328,19212,70065
-mathmon,The Secret Agent,2025,,925,64623,242366
-mathmon,Love Is Overrated,2025,,185,9831,35302
-mathmon,Summer Beats,2025,,62,2736,9539
-mathmon,Hamnet,2025,,1710,132619,505704
-mathmon,Thelma & Louise,1991,568032.0,4051,,
-mathmon,Eternal Sunshine of the Spotless Mind,2004,3381015.0,16895,,
-mathmon,Chungking Express,1994,708535.0,2324,,
-mathmon,Sirāt,2025,,789,53651,200355
-mathmon,Resurrection,2025,,135,6800,24211
-mathmon,Out of Love,2025,,113,5522,19567
-mathmon,Eagles of the Republic,2025,,82,3795,13330
-mathmon,Apocalypse Now,1979,1074627.0,9480,,
-mathmon,Hard Boiled,1992,102483.0,999,,
-mathmon,Arco,2025,,292,16769,60963
-julescall1,La Gradiva,2026,,3,79,254
-julescall1,Another Day,2026,,64,2839,9908
-julescall1,Fjord,2026,,91,4286,15100
-julescall1,Call My Agent! The Movie,2026,,127,6331,22504
-julescall1,Trainspotting,1996,1346990.0,10775,,
-julescall1,Agatha and the Limitless Readings,1981,,22,814,879
-julescall1,Cléo from 5 to 7,1962,257422.0,817,,
-julescall1,Melancholia,2011,434060.0,3969,,
-julescall1,The French Kissers,2009,,488,30581,24046
-julescall1,Batman Begins,2005,,23382,2828730,2469172
-julescall1,Toni,2023,,201,10833,38988
-julescall1,Twin Peaks: Fire Walk with Me,1992,,2384,195636,239682
-julescall1,The Amazing Spider-Man,2012,2278142.0,19259,,
-julescall1,The Odyssey,2026,,4215,381077,1488959
-julescall1,Spider-Man,2002,3050148.0,21633,,
-julescall1,Apocalypse Now,1979,1074627.0,9480,,
-julescall1,Sarkozy-Gaddafi: The Scandal of All Scandals,2025,,30,1170,4000
-julescall1,La Haine,1995,855997.0,4763,,
-julescall1,De Gaulle: Liberté,2026,,202,10896,39220
-julescall1,De Gaulle: Résistance,2026,,243,13526,48929
-julescall1,Love Letters,2025,,50,2127,7373
-julescall1,Backrooms,2026,,3822,339844,1324347
-julescall1,Portrait of a Lady on Fire,2019,1068012.0,3076,,
-julescall1,Melancholia,2011,434060.0,3969,,
-julescall1,Soylent Green,1973,79610.0,1513,,
-julescall1,Million Dollar Baby,2004,568844.0,10677,,
-julescall1,Venus Beauty Institute,1999,,140,7095,8052
-julescall1,Bagdad Cafe,1987,,455,28176,33010
-julescall1,Volver,2006,,1991,158458,129416
-julescall1,Shana,2026,,22,814,2760
-julescall1,De Gaulle: Liberté,2026,,202,10896,39220
-julescall1,Vertiginous,2026,,50,2127,7373
-julescall1,La Vénus électrique,2026,,96,4563,16098
-julescall1,Michael,2026,,4604,422540,1654905
-julescall1,The Crimson Rivers,2000,,1828,143388,116838
-julescall1,Persepolis,2007,283700.0,2266,,
-julescall1,De Gaulle: Résistance,2026,,243,13526,48929
-julescall1,The French Connection,1971,227813.0,2242,,
-julescall1,Benedetta,2021,128193.0,1220,,
-julescall1,Alpha,2025,,144,7333,26155
-julescall1,Mean Girls,2004,3400634.0,9750,,
-julescall1,Kiki of Montparnasse,2012,,10,324,229
-julescall1,The Hunt,2012,547042.0,5043,,
-julescall1,Aftersun,2022,1365687.0,2019,,
-julescall1,The Devil Wears Prada 2,2026,,2478,204691,788387
-julescall1,The Rays and Shadows,2026,,120,5924,21027
-julescall1,Gattaca,1997,455124.0,7229,,
-julescall1,"Paris, 13th District",2021,53395.0,420,,
-julescall1,Perfume: The Story of a Murderer,2006,246664.0,5225,,
-julescall1,Hotel Fantasma,2025,,,,
-agnorw,Akira,1988,873068.0,5079,,
-agnorw,5 Centimeters per Second,2007,186526.0,2237,,
-agnorw,Angel's Egg,1985,,625,40849,48269
-agnorw,Too Many Beasts,2026,,6,178,583
-agnorw,Shutter Island,2010,,26652,3296886,2888009
-agnorw,When the Cat's Away,1996,,104,5011,5641
-agnorw,The Crisis,1992,,129,6447,7301
-agnorw,FINI DE RIRE ! L'humour politique au garde-à-vous ?,2026,,5,144,468
-agnorw,My Favourite Cake,2024,,188,10018,35989
-agnorw,GoodFellas,1990,2076438.0,14918,,
-agnorw,American Psycho,2000,3727510.0,12894,,
-agnorw,The Last Unicorn,1982,108648.0,628,,
-agnorw,FernGully: The Last Rainforest,1992,,667,44079,52177
-agnorw,Forrest Gump,1994,4222068.0,30713,,
-agnorw,Sister Act,1992,,3564,313161,387855
-agnorw,Black Swan,2010,3107006.0,16000,,
-agnorw,Conclave,2024,1208925.0,3718,,
-agnorw,The Bad Guys 2,2025,,928,64868,243307
-agnorw,The Bad Guys,2022,,2717,227974,237468
-agnorw,Hoppers,2026,,2464,203339,783058
-agnorw,7 Prisoners,2021,,391,23596,23326
-agnorw,Left-Handed Girl,2025,,204,11022,39685
-agnorw,Bahadur the Brave,2023,,,,
-agnorw,The Truman Show,1998,4382819.0,21083,,
-agnorw,Sentimental Value,2025,,1154,83711,315835
-agnorw,The Drama,2026,,1990,158365,606355
-agnorw,Lost in Translation,2003,1596190.0,8384,,
-agnorw,Tenor,2022,,389,23455,23183
-agnorw,Shana,2026,,22,814,2760
-agnorw,Ran,1985,227422.0,1953,,
-agnorw,Boogie Nights,1997,653574.0,3744,,
-agnorw,Our Land,2025,,7,213,701
-agnorw,Dead Poets Society,1989,2741325.0,13089,,
-agnorw,Wild Foxes,2025,,11,362,1204
-agnorw,Apollon by Day Athena by Night,2024,,3,79,254
-agnorw,The Testament of Ann Lee,2025,,193,10330,37137
-agnorw,The Collective,2019,,2,49,42
-agnorw,C'est la vie!,2017,,1650,127191,130716
-agnorw,Nightcrawler,2014,1858239.0,12182,,
-agnorw,Marty Supreme,2025,,2313,188836,725969
-agnorw,Burn After Reading,2008,608531.0,5456,,
-agnorw,No Other Choice,2025,,1352,100749,381750
-agnorw,Funny Games,1997,364119.0,2209,,
-agnorw,Rental Family,2025,,1066,76291,287227
-agnorw,The President's Cake,2025,,118,5809,20608
-agnorw,The Reconquest,2016,2576.0,50,,
-agnorw,The Boy and the Heron,2023,,2870,243065,939906
-agnorw,Resurrection,2025,,135,6800,24211
-agnorw,Zootopia 2,2025,,3598,316659,1231984
-agnorw,Bugonia,2025,,2526,209337,806701
-kimya_,A Man of His Time,2026,,51,2177,7550
-kimya_,Kraken,2026,,13,440,1470
-kimya_,The Purge: Election Year,2016,,5625,534126,567410
-kimya_,Toni,2023,,201,10833,38988
-kimya_,Best of the Best,2026,,88,4121,14506
-kimya_,Digger,2026,,443,27308,100403
-kimya_,Coexist,2017,,443,27308,27086
-kimya_,The Purge: Anarchy,2014,,6856,673291,568561
-kimya_,The Purge,2013,,9074,934597,795216
-kimya_,The Love Hypothesis,2026,,640,41998,155954
-kimya_,Primetime,2026,,198,10644,38292
-kimya_,Gerald the Conqueror,2025,,66,2944,10280
-kimya_,Bend It Like Beckham,2002,318702.0,2102,,
-kimya_,The Blow,2026,,15,520,1745
-kimya_,Un grand raccourci,2026,,13,440,1470
-kimya_,Paths of Glory,1957,308450.0,3417,,
-kimya_,Trainspotting,1996,1346990.0,10775,,
-kimya_,Silence and Cry,1968,,24,901,975
-kimya_,The Dog Stars,2026,,311,18052,65741
-kimya_,Jim Queen,2026,,95,4508,15898
-kimya_,Spider-Man: Brand New Day,2026,,5949,570295,2249103
-kimya_,Four Lions,2010,143189.0,1349,,
-kimya_,Fjord,2026,,91,4286,15100
-kimya_,Pleasantville,1998,204523.0,1985,,
-kimya_,Bodies Bodies Bodies,2022,1167778.0,1570,,
-kimya_,Little White Lies,2010,,1662,128274,104255
-kimya_,Comédie-Française,2026,,107,5181,18330
-kimya_,PlayTime,1967,120967.0,705,,
-kimya_,Force Majeure,2014,155527.0,1283,,
-kimya_,Apex,2026,,2019,161068,616947
-kimya_,Cargo,2017,78831.0,1922,,
-kimya_,Fifty Shades Freed,2018,,8455,860445,924177
-kimya_,Fifty Shades Darker,2017,,8034,810532,869367
-kimya_,Fifty Shades of Grey,2015,641147.0,12598,,
-kimya_,The Twilight Saga: Breaking Dawn – Part 2,2012,,9552,992454,845615
-kimya_,The Twilight Saga: Breaking Dawn – Part 1,2011,,9472,982736,837145
-kimya_,The Twilight Saga: Eclipse,2010,1163099.0,9450,,
-kimya_,The Twilight Saga: New Moon,2009,1317110.0,9978,,
-kimya_,Twilight,2008,2392576.0,14782,,
-kimya_,The Odyssey,2026,,4215,381077,1488959
-kimya_,Pan's Labyrinth,2006,1236589.0,11849,,
-kimya_,Troll,2022,,2123,170817,176750
-kimya_,Toy Story 5,2026,,2682,224542,866693
-kimya_,War Dogs,2016,537703.0,5766,,
-kimya_,Coherence,2013,349559.0,3680,,
-kimya_,Evil Dead Burn,2026,,1785,139449,532367
-kimya_,The Death of Robin Hood,2026,,564,36224,134054
-kimya_,La chaleur,2026,,25,945,3216
-kimya_,A Special Day,1977,,802,54687,65057
-kimya_,Minions & Monsters,2026,,1305,96664,365920
-nikomrk,Sense and Sensibility,2026,,45,1880,6500
-nikomrk,Elephants in the Fog,2026,,9,286,947
-nikomrk,Call My Agent! The Movie,2026,,127,6331,22504
-nikomrk,The Invite,2026,,840,57731,215955
-nikomrk,Party USA,2026,,,,
-nikomrk,I'll Be Gone in June,2026,,4,111,359
-nikomrk,Mother Mary,2026,,213,11593,41790
-nikomrk,Fjord,2026,,91,4286,15100
-nikomrk,All of a Sudden,2026,,60,2633,9172
-nikomrk,RRR,2022,,1730,134435,138338
-nikomrk,I Want Your Sex,2026,,108,5237,18536
-nikomrk,The End of Oak Street,2026,,2169,175155,672206
-nikomrk,Spider-Man: Brand New Day,2026,,5949,570295,2249103
-nikomrk,One Night Only,2026,,220,12040,43439
-nikomrk,Comédie-Française,2026,,107,5181,18330
-nikomrk,Stop! That! Train!,2026,,64,2839,9908
-nikomrk,Angel City,,,,,
-nikomrk,The Odyssey,2026,,4215,381077,1488959
-nikomrk,Microstar,2026,,5,144,468
-nikomrk,De Gaulle: Liberté,2026,,202,10896,39220
-nikomrk,Tangles,2026,,,,
-nikomrk,Boogie Nights,1997,653574.0,3744,,
-nikomrk,In the Mood for Love,2000,876907.0,3425,,
-nikomrk,The Worst Person in the World,2021,829446.0,2009,,
-nikomrk,Shana,2026,,22,814,2760
-nikomrk,In Waves,2026,,35,1401,4811
-nikomrk,Totally F***ed Up,1993,,133,6682,7573
-nikomrk,Obsession,2025,,6257,604990,2389188
-nikomrk,De Gaulle: Résistance,2026,,243,13526,48929
-nikomrk,Jim Queen,2026,,95,4508,15898
-nikomrk,Death of an Actor,2024,,10,324,1074
-nikomrk,"If You Don't Like It, Look Away",2025,,13,440,1470
-nikomrk,I'm the Most Racist Person I Know,2025,,1,22,68
-nikomrk,Water Girl,2025,,9,286,947
-nikomrk,Dancing Pigeons,2025,,,,
-nikomrk,Nothing Special,2024,,,,
-nikomrk,The Triplets of Belleville,2003,94745.0,1087,,
-nikomrk,The Beloved,2026,,105,5067,17921
-nikomrk,If I Had Legs I'd Kick You,2025,,445,27452,100945
-nikomrk,Mysterious Skin,2004,436858.0,1389,,
-nikomrk,My Own Private Idaho,1991,280090.0,1285,,
-nikomrk,"Molière, Cyrano and the Young King",2026,,14,480,1607
-nikomrk,Words of Love,2026,,,,
-nikomrk,Species,2026,,,,
-nikomrk,Nagi Notes,2026,,2,49,156
-nikomrk,Teenage Sex and Death at Camp Miasma,2026,,331,19418,70833
-nikomrk,The Golden Age,2026,,,,
-nikomrk,The Beaches of Agnès,2008,,147,7512,5718
-nikomrk,The Devil Wears Prada 2,2026,,2478,204691,788387
-nikomrk,The 400 Blows,1959,332534.0,2413,,
-lisakiwi,The Double Life of Véronique,1991,157565.0,927,,
-lisakiwi,Sinners,2025,,5392,508332,1999423
-tobiashottin,Saturday Night Fever,1977,217823.0,2169,,
-tobiashottin,Fjord,2026,,91,4286,15100
-tobiashottin,Rebels of the Neon God,1992,43944.0,163,,
-tobiashottin,Ratatouille,2007,4261300.0,19110,,
-tobiashottin,The Last Viking,2025,,263,14837,53788
-tobiashottin,Comédie-Française,2026,,107,5181,18330
-tobiashottin,The Odyssey,2026,,4215,381077,1488959
-tobiashottin,Tale of Tales,1979,,153,7872,8955
-tobiashottin,Contempt,1963,126717.0,1008,,
-tobiashottin,Vertiginous,2026,,50,2127,7373
-tobiashottin,Backrooms,2026,,3822,339844,1324347
-tobiashottin,Minions & Monsters,2026,,1305,96664,365920
-tobiashottin,A Year of School,2025,,37,1496,5142
-tobiashottin,Rocco and His Brothers,1960,49588.0,689,,
-tobiashottin,Jim Queen,2026,,95,4508,15898
-tobiashottin,Hen,2025,,40,1638,5645
-tobiashottin,The Banishment,2007,,183,9707,7433
-tobiashottin,Bouchra,2025,,12,401,1336
-tobiashottin,Obsession,2025,,6257,604990,2389188
-tobiashottin,DJ Ahmet,2025,,47,1979,6847
-tobiashottin,The Christophers,2025,,85,3957,13916
-tobiashottin,Pirates of the Caribbean: Dead Man's Chest,2006,,17735,2047069,1773581
-tobiashottin,Moebius,2013,13131.0,272,,
-tobiashottin,A City of Sadness,1989,,160,8295,9448
-tobiashottin,The French Connection,1971,227813.0,2242,,
-tobiashottin,Junk World,2025,,11,362,1204
-tobiashottin,Fata Morgana,1971,,89,4176,4682
-tobiashottin,One Day in the Life of Andrei Arsenevich,1999,,12,401,425
-tobiashottin,The World of Love,2025,,41,1686,5814
-tobiashottin,Bitter Christmas,2026,,158,8174,29228
-tobiashottin,The Swimmer,1968,,282,16099,18619
-tobiashottin,Twelve Monkeys,1995,570593.0,9485,,
-tobiashottin,Crescendo,2026,,41,1686,5814
-tobiashottin,Mulholland Drive,2001,1172795.0,7374,,
-tobiashottin,The Beloved,2026,,105,5067,17921
-tobiashottin,The Leopard,1963,60880.0,988,,
-tobiashottin,Il Divo,2008,,1209,88397,71230
-tobiashottin,A Close Shave,1995,127901.0,984,,
-tobiashottin,The Devil Wears Prada,2006,2701050.0,14355,,
-tobiashottin,Mirrored Mind,2005,,26,990,719
-tobiashottin,Michael,2026,,4604,422540,1654905
-tobiashottin,The Longest Nite,1998,,85,3957,4431
-tobiashottin,Pierrot le Fou,1965,180938.0,979,,
-tobiashottin,Yannick,2023,,753,50798,189463
-tobiashottin,The Second Act,2024,,326,19075,69554
-tobiashottin,My Father's Shadow,2025,,55,2378,8264
-tobiashottin,Juha,1999,,73,3312,3693
-tobiashottin,Fitzcarraldo,1982,96959.0,934,,
-tobiashottin,Viridiana,1961,57514.0,570,,
-tobiashottin,The Cruise,1998,,29,1125,1223
+username,titre,annee,vues_letterboxd,votes_tmdb,vues_estimees_A,vues_estimees_B,rang_dans_son_annee
+lilacos,Omaha,2025,,39,1591,5477,911
+lilacos,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+lilacos,PlayTime,1967,120967.0,705,,,14
+lilacos,Boogie Nights,1997,653574.0,3744,,,26
+lilacos,The Sheep Detectives,2026,,1829,143480,548113,28
+lilacos,Just an Illusion,2026,,216,11784,42495,141
+lilacos,Flow,2024,,3119,267916,1038332,30
+lilacos,The Drama,2026,,1990,158365,606355,24
+lilacos,The Traitor,2019,,1451,109434,112077,140
+lilacos,Project Hail Mary,2026,,8431,857588,3414108,
+lilacos,Entering Indifference,2001,,,,,
+lilacos,Ici là-bas,1988,,1,22,22,3997
+lilacos,Mobilize,2015,,14,480,433,2699
+lilacos,The Violence of a Civilization without Secrets,2018,,7,213,189,4536
+lilacos,Adolescence,2025,,,,,
+lilacos,The Zone of Interest,2023,953664.0,2799,,,51
+lilacos,Gladiator II,2024,1117085.0,4830,,,9
+lilacos,Priscilla,2023,,1159,84135,317474,107
+lilacos,The Boy and the Heron,2023,,2870,243065,939906,50
+lilacos,The Conjuring,2013,,13213,1450680,1246920,15
+lilacos,Gladiator,2000,,21716,2594373,2260089,
+lilacos,Brokeback Mountain,2005,1484396.0,7782,,,15
+lilacos,The Avengers,2012,3276575.0,40115,,,
+lilacos,Catch Me If You Can,2002,2481032.0,17757,,,3
+lilacos,Deadpool & Wolverine,2024,,9683,1008397,4029525,1
+lilacos,The Menu,2022,2978848.0,6798,,,14
+lilacos,Shutter Island,2010,,26652,3296886,2888009,1
+lilacos,The Grand Budapest Hotel,2014,3199652.0,16645,,,13
+lilacos,Inception,2010,4326850.0,40511,,,
+lilacos,La La Land,2016,4393174.0,18643,,,8
+lilacos,In the Mood for Love,2000,876907.0,3425,,,33
+lilacos,My Neighbor Totoro,1988,2122570.0,9183,,,2
+lilacos,Grease,1978,1527538.0,7879,,,1
+lilacos,Pretty Woman,1990,1325171.0,9264,,,5
+lilacos,Se7en,1995,3263377.0,24037,,,
+lilacos,Princess Mononoke,1997,1664452.0,9397,,,6
+lilacos,The Truman Show,1998,4382819.0,21083,,,
+lilacos,In the Mood for Love,2000,876907.0,3425,,,33
+lilacos,Howl's Moving Castle,2004,2437628.0,11590,,,10
+lilacos,Brokeback Mountain,2005,1484396.0,7782,,,15
+lilacos,Pride & Prejudice,2005,1828719.0,9029,,,12
+lilacos,Pride & Prejudice,2005,1828719.0,9029,,,12
+lilacos,Ratatouille,2007,4261300.0,19114,,,1
+lilacos,WALL·E,2008,3418117.0,21070,,,2
+lilacos,Up,2009,3922213.0,22293,,,2
+lilacos,Incendies,2010,435299.0,3528,,,50
+lilacos,I Origins,2014,,3593,316144,262351,78
+lilacos,La La Land,2016,4393174.0,18643,,,8
+lilacos,Call Me by Your Name,2017,2946205.0,13009,,,19
+lilacos,The Shape of Water,2017,1340249.0,13157,,,19
+eleonorre,The Odyssey,2026,,4215,381077,1488959,4
+eleonorre,Sense and Sensibility,2026,,45,1880,6500,418
+eleonorre,The Social Network,2010,3146498.0,13674,,,10
+eleonorre,Summer Beats,2025,,62,2736,9539,350
+eleonorre,All of a Sudden,2026,,60,2633,9172,354
+eleonorre,Another Day,2026,,64,2839,9908,344
+eleonorre,Sirāt,2025,,789,53651,200355,105
+eleonorre,Polisse,2011,,1333,99095,80061,142
+eleonorre,A Woman's Life,2026,,38,1543,5309,457
+eleonorre,In the Mood for Love,2000,876907.0,3425,,,33
+eleonorre,Congo Boy,2026,,,,,
+eleonorre,Call My Agent! The Movie,2026,,127,6331,22504,203
+eleonorre,Pacer,2026,,,,,
+eleonorre,Iron Boy,2026,,21,771,2610,633
+eleonorre,The Daughters of Abraham,2026,,,,,
+eleonorre,Nothing to Lose,2026,,,,,
+eleonorre,The Little Sister,2025,,144,7333,26155,371
+eleonorre,In Waves,2026,,35,1401,4811,478
+eleonorre,Nouvelle Vague,2025,,295,16970,61713,218
+eleonorre,"Sorry, Baby",2025,,370,22121,80935,174
+eleonorre,Out of Love,2025,,113,5522,19567,439
+eleonorre,Love Letters,2025,,50,2127,7373,771
+eleonorre,The Ties That Bind Us,2024,,290,16634,60463,221
+eleonorre,The Piano,1993,167073.0,1715,,,33
+eleonorre,Parthenope,2024,,798,54368,203094,121
+eleonorre,Mulholland Drive,2001,1172795.0,7374,,,14
+eleonorre,12 Angry Men,1957,1312847.0,10506,,,1
+eleonorre,La Haine,1995,855997.0,4763,,,17
+eleonorre,Good Will Hunting,1997,2718747.0,14477,,,3
+eleonorre,City of God,2002,1036835.0,8549,,,11
+eleonorre,Aftersun,2022,1365687.0,2019,,,70
+eleonorre,Just an Illusion,2026,,216,11784,42495,141
+eleonorre,Standing Tall,2015,,498,31315,31159,295
+eleonorre,Little Women,2019,2785956.0,7066,,,32
+eleonorre,"If You Don't Like It, Look Away",2025,,13,440,1470,1711
+eleonorre,Elio,2025,,1164,84560,319114,74
+eleonorre,Thelma & Louise,1991,568032.0,4051,,,8
+eleonorre,Sentimental Value,2025,,1154,83711,315835,76
+eleonorre,The Worst Person in the World,2021,829446.0,2009,,,77
+eleonorre,Nino,2025,,92,4341,15299,509
+eleonorre,My Dear Theo,2025,,,,,
+eleonorre,Manchester by the Sea,2016,953180.0,6629,,,47
+eleonorre,Dead Poets Society,1989,2741325.0,13089,,,1
+eleonorre,Harry Potter and the Goblet of Fire,2005,2998849.0,22805,,,1
+eleonorre,The Lord of the Rings: The Fellowship of the Ring,2001,3187177.0,28644,,,1
+eleonorre,The Lord of the Rings: The Return of the King,2003,,27638,3440034,3016362,1
+eleonorre,The Lord of the Rings: The Two Towers,2002,,24805,3031174,2650107,1
+eleonorre,One Battle After Another,2025,,4429,403811,1579894,4
+eleonorre,Rise,2022,,466,28974,28778,246
+eleonorre,Ride Away,2024,,113,5522,19567,439
+lucasld,Die Hard,1988,1441829.0,12771,,,
+lucasld,Digger,2026,,443,27308,100403,97
+lucasld,Primetime,2026,,198,10644,38292,147
+lucasld,Resident Evil,2026,,1023,72703,273414,46
+lucasld,Creed,2015,789110.0,8189,,,30
+lucasld,King Creole,1958,,116,5694,6429,48
+lucasld,Sinners,2025,,5392,508332,1999423,1
+lucasld,Predator: Badlands,2025,,3815,339116,1321445,13
+lucasld,Sleep,2023,,269,15234,55260,320
+lucasld,Sherlock: The Abominable Bride,2016,,2381,195348,202759,116
+lucasld,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+lucasld,The Odyssey,2026,,4215,381077,1488959,4
+lucasld,Minions & Monsters,2026,,1305,96664,365920,38
+lucasld,Surf's Up,2007,,2849,240985,198732,66
+lucasld,Barbie,2023,5195503.0,11717,,,2
+lucasld,Portrait of a Lady on Fire,2019,1068012.0,3076,,,74
+lucasld,The Twilight Saga: Breaking Dawn – Part 1,2011,,9472,982736,837145,17
+lucasld,Alice in Wonderland,1951,921246.0,6440,,,1
+lucasld,Victor/Victoria,1982,,468,29120,34142,48
+lucasld,Obsession,2025,,6257,604990,2389188,2
+lucasld,Seven Psychopaths,2012,,4463,407440,340097,52
+lucasld,Dallas Buyers Club,2013,,9343,967095,823516,28
+lucasld,Project Hail Mary,2026,,8431,857588,3414108,
+lucasld,The Young Girls of Rochefort,1967,117024.0,681,,,15
+lucasld,Those Happy Days,2006,,1134,82016,65974,129
+lucasld,The Devil Wears Prada,2006,2701050.0,14355,,,6
+lucasld,Paranoid Park,2007,,632,41385,32769,186
+lucasld,The Drama,2026,,1990,158365,606355,24
+lucasld,Despicable Me,2010,1789789.0,16501,,,4
+lucasld,The Twilight Saga: Eclipse,2010,1163099.0,9450,,,14
+lucasld,Legally Blonde,2001,1817664.0,4779,,,31
+lucasld,Mean Girls,2004,3400634.0,9750,,,13
+lucasld,Spirited Away,2001,3707328.0,19085,,,5
+lucasld,The Aristocats,1970,563502.0,5496,,,1
+lucasld,Kill Bill: Vol. 2,2004,1760722.0,15584,,,5
+lucasld,Marty Supreme,2025,,2313,188836,725969,29
+lucasld,Kill Bill: Vol. 1,2003,3101840.0,19608,,,3
+lucasld,In the Mood for Love,2000,876907.0,3425,,,33
+lucasld,School of Rock,2003,1655522.0,6441,,,19
+lucasld,No Other Choice,2025,,1352,100749,381750,61
+lucasld,Nikita,1990,,2246,182452,223171,19
+lucasld,Carlito's Way,1993,200996.0,3631,,,10
+lucasld,Into the Woods,2014,,4493,410646,342836,58
+lucasld,Gone Girl,2014,3332336.0,20572,,,4
+lucasld,Memories of Murder,2003,762547.0,4889,,,25
+lucasld,F1,2025,,4868,451025,1769125,3
+lucasld,How to Train Your Dragon,2010,2118430.0,14850,,,8
+lucasld,The Breakfast Club,1985,2515799.0,8795,,,2
+lucasld,Hamnet,2025,,1710,132619,505704,43
+lucasld,Dead Poets Society,1989,2741325.0,13089,,,1
+lenrld,Apocalypse Now,1979,1074627.0,9480,,,2
+lenrld,The Umbrellas of Cherbourg,1964,196805.0,920,,,8
+lenrld,No Strings Attached,2011,396538.0,5108,,,43
+lenrld,Unabomber,2026,,506,31905,117725,89
+lenrld,The Wolf of Wall Street,2013,4155986.0,26783,,,
+lenrld,You+Me - Against the World,2026,,106,5124,18126,240
+lenrld,La Mémoire des Poissons,2025,,,,,
+lenrld,The Devil Wears Prada 2,2026,,2478,204691,788387,14
+lenrld,Call My Agent! The Movie,2026,,127,6331,22504,203
+lenrld,La La Land,2016,4393174.0,18643,,,8
+lenrld,Un grand raccourci,2026,,13,440,1470,801
+lenrld,Song Sung Blue,2025,,338,19899,72630,197
+lenrld,Love Me Love Me,2026,,333,19555,71345,108
+lenrld,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+lenrld,The Odyssey,2026,,4215,381077,1488959,4
+lenrld,Celles qui restent,2022,,,,,
+lenrld,Guru,2025,,328,19212,70065,111
+lenrld,Forever Young,2022,,175,9212,8911,530
+lenrld,Barbie,2023,5195503.0,11717,,,2
+lenrld,Spider-Man: No Way Home,2021,3697378.0,23387,,,1
+lenrld,Spider-Man: Far From Home,2019,,17781,2053283,2250078,3
+lenrld,Spider-Man: Homecoming,2017,3276400.0,24108,,,
+lenrld,The Amazing Spider-Man 2,2014,1838922.0,14868,,,16
+lenrld,The Amazing Spider-Man,2012,2278142.0,19261,,,5
+lenrld,Spider-Man 3,2007,2064804.0,15927,,,4
+lenrld,In Waves,2026,,35,1401,4811,478
+lenrld,Erupcja,2025,,23,857,2911,604
+lenrld,Rebonds : une épopée de la danse électro,2026,,,,,
+lenrld,Vertiginous,2026,,50,2127,7373,392
+lenrld,"Crazy, Stupid, Love.",2011,1518987.0,9604,,,14
+lenrld,Nouvelle Vague,2025,,295,16970,61713,218
+lenrld,Case 137,2025,,303,17510,63722,214
+lenrld,The Little Sister,2025,,144,7333,26155,371
+lenrld,TRENTE,2026,,13,440,1470,801
+lenrld,Lou!,2014,,212,11530,8864,529
+lenrld,La La Land,2016,4393174.0,18643,,,8
+lenrld,I Love Peru,2025,,93,4397,15498,504
+lenrld,Little Girl Blue,2023,,58,2531,8807,991
+lenrld,Little Women,2019,2785956.0,7066,,,32
+lenrld,Thirteen,2003,599644.0,1855,,,78
+lenrld,Chungking Express,1994,708535.0,2324,,,24
+lenrld,The Night of the 12th,2022,,810,55326,55777,163
+lenrld,Nana 2,2006,,46,1929,1423,821
+lenrld,Love at Sea,1965,,57,2480,2747,128
+lenrld,Her,2013,2498989.0,15760,,,10
+lenrld,Elio,2025,,1164,84560,319114,74
+lenrld,Me Before You,2016,1037111.0,13671,,,15
+lenrld,Before Sunrise,1995,1334204.0,4936,,,15
+lenrld,"Paris, 13th District",2021,53395.0,420,,,288
+lenrld,Second Course,2026,,2,49,156,3119
+_thaisss_,Digger,2026,,443,27308,100403,97
+_thaisss_,Soul,2020,,11844,1276419,1383495,
+_thaisss_,Burn After Reading,2008,608531.0,5456,,,28
+_thaisss_,Her,2013,2498989.0,15760,,,10
+_thaisss_,American Beauty,1999,1514778.0,13479,,,6
+_thaisss_,One Battle After Another,2025,,4429,403811,1579894,4
+_thaisss_,Jujutsu Kaisen 0,2021,273606.0,1884,,,82
+_thaisss_,Moonlight,2016,1625264.0,7737,,,33
+_thaisss_,Captain Fantastic,2016,540785.0,7021,,,41
+_thaisss_,Bye Bye Morons,2020,,971,68398,69295,126
+_thaisss_,Those Happy Days,2006,,1134,82016,65974,129
+_thaisss_,Parasite,2019,5015041.0,21537,,,2
+_thaisss_,North by Northwest,1959,412481.0,4686,,,2
+_thaisss_,C'est la vie!,2017,,1650,127191,130716,129
+_thaisss_,The Secret Life of Walter Mitty,2013,860600.0,8553,,,30
+_thaisss_,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+_thaisss_,KPop Demon Hunters,2025,,3307,286905,1113686,17
+_thaisss_,Oldboy,2003,1396966.0,10320,,,9
+_thaisss_,C'est la vie!,2017,,1650,127191,130716,129
+_thaisss_,The Twilight Saga: Eclipse,2010,1163099.0,9450,,,14
+_thaisss_,The Odyssey,2026,,4215,381077,1488959,4
+_thaisss_,The Twilight Saga: New Moon,2009,1317110.0,9978,,,14
+_thaisss_,Twilight,2008,2392576.0,14782,,,3
+_thaisss_,The Sheep Detectives,2026,,1829,143480,548113,28
+_thaisss_,RRRrrrr!!!,2004,,1288,95192,76837,104
+_thaisss_,C'est la vie!,2017,,1650,127191,130716,129
+_thaisss_,Voicemails for Isabelle,2026,,1013,71873,270218,46
+_thaisss_,Hoodwinked!,2005,326818.0,2003,,,70
+_thaisss_,Spider-Man: Across the Spider-Verse,2023,3136327.0,9436,,,4
+_thaisss_,Disclosure Day,2026,,3798,337349,1314399,7
+_thaisss_,All Your Faces,2023,,725,48595,181061,158
+_thaisss_,Ferris Bueller's Day Off,1986,1813441.0,5628,,,4
+_thaisss_,Kung Fu Panda,2008,2123433.0,13122,,,6
+_thaisss_,Memories of Murder,2003,762547.0,4889,,,25
+_thaisss_,The Menu,2022,2978848.0,6798,,,14
+_thaisss_,The Lorax,2012,783627.0,4022,,,58
+_thaisss_,The Worst Person in the World,2021,829446.0,2009,,,77
+_thaisss_,Mamma Mia!,2008,2159643.0,7202,,,21
+_thaisss_,The Zone of Interest,2023,953664.0,2799,,,51
+_thaisss_,Mulholland Drive,2001,1172795.0,7374,,,14
+_thaisss_,Taxi,2015,,502,31610,31459,293
+_thaisss_,The Party,1980,72143.0,1233,,,14
+_thaisss_,In the Mood for Love,2000,876907.0,3425,,,33
+_thaisss_,The Ballad of Narayama,1983,,213,11593,13307,89
+_thaisss_,Volver,2006,,1991,158458,129416,74
+_thaisss_,The Devil Wears Prada 2,2026,,2478,204691,788387,14
+_thaisss_,Past Lives,2023,1504254.0,2516,,,58
+_thaisss_,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,721183.0,6432,,,1
+_thaisss_,Challengers,2024,2380191.0,2912,,,36
+_thaisss_,I Swear,2025,,639,41921,155663,125
+yruamacc,"The French Dispatch of the Liberty, Kansas Evening Sun",2021,,3139,269927,282266,41
+yruamacc,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+yruamacc,Casino Royale,2006,1135353.0,12131,,,6
+yruamacc,Blue Velvet,1986,829350.0,4005,,,8
+yruamacc,Moonlight,2016,1625264.0,7737,,,33
+yruamacc,Spider-Man: Into the Spider-Verse,2018,4446217.0,18055,,,4
+yruamacc,Fantastic Mr. Fox,2009,2623701.0,6401,,,27
+yruamacc,Madagascar 3: Europe's Most Wanted,2012,,6786,665255,561619,32
+yruamacc,Project Hail Mary,2026,,8431,857588,3414108,
+yruamacc,Soul,2020,,11844,1276419,1383495,
+yruamacc,Magnolia,1999,573682.0,4203,,,21
+yruamacc,Speed Racer,2008,297290.0,1879,,,96
+yruamacc,Pink Floyd: The Wall,1982,,1727,134163,162944,14
+yruamacc,Once Upon My Mother,2025,,278,15832,57481,229
+yruamacc,We Need to Talk About Kevin,2011,590743.0,3243,,,72
+yruamacc,City of God,2002,1036835.0,8549,,,11
+yruamacc,The Dark Knight,2008,4488171.0,37035,,,
+yruamacc,The Ministry of Ungentlemanly Warfare,2024,,2152,173550,665905,47
+yruamacc,10 Things I Hate About You,1999,3379154.0,9244,,,8
+yruamacc,(500) Days of Summer,2009,2756477.0,11405,,,9
+yruamacc,The Last House,2026,,1508,114480,435057,32
+yruamacc,Dune,2021,3886386.0,15774,,,1
+yruamacc,Mysterious Skin,2004,436858.0,1389,,,92
+yruamacc,Quarantine,2008,,1458,110052,89129,112
+yruamacc,The Odyssey,2026,,4215,381077,1488959,4
+yruamacc,The Taste of Others,2000,,386,23244,18161,152
+yruamacc,Vacation,2015,187031.0,4104,,,59
+yruamacc,Mommy,2014,298291.0,2919,,,89
+yruamacc,The Substance,2024,2638918.0,6662,,,5
+yruamacc,The Odyssey,2026,,4215,381077,1488959,4
+yruamacc,Pirates of the Caribbean: Dead Man's Chest,2006,,17735,2047069,1773581,1
+yruamacc,The Successor,2023,,110,5351,18947,655
+yruamacc,The Amazing Spider-Man 2,2014,1838922.0,14868,,,16
+yruamacc,Samba,2014,,1005,71209,57094,198
+yruamacc,Hook,1991,612730.0,5922,,,4
+yruamacc,The Mitchells vs. the Machines,2021,702164.0,3542,,,37
+yruamacc,A Complete Unknown,2024,797195.0,1594,,,68
+yruamacc,The Handmaiden,2016,,4550,416748,440189,74
+yruamacc,Step Brothers,2008,795819.0,3556,,,53
+yruamacc,Ice Age: Dawn of the Dinosaurs,2009,,9142,942797,802355,17
+yruamacc,Surf's Up,2007,,2849,240985,198732,66
+yruamacc,The Hunger Games: Catching Fire,2013,2566922.0,18932,,,3
+yruamacc,The Perks of Being a Wallflower,2012,2936400.0,11553,,,14
+yruamacc,Ocean's Thirteen,2007,534906.0,7151,,,19
+yruamacc,Marty Supreme,2025,,2313,188836,725969,29
+yruamacc,The Invisible Guest,2016,,5175,484479,513512,57
+yruamacc,Men in Black II,2002,751693.0,11000,,,6
+yruamacc,Burn After Reading,2008,608531.0,5456,,,28
+yruamacc,Arrival,2016,2623952.0,20065,,,5
+yruamacc,Dune: Part Two,2024,,8794,900945,3590800,1
+gordonshumway,The Whisper Man,2026,,940,65851,247078,55
+gordonshumway,The Fantastic 4: First Steps,2025,,4037,362317,1414009,10
+gordonshumway,22 Lengths,2025,,54,2328,8085,741
+gordonshumway,The Odyssey,2026,,4215,381077,1488959,4
+gordonshumway,The Sheep Detectives,2026,,1829,143480,548113,28
+gordonshumway,Eddington,2025,,986,69636,261620,86
+gordonshumway,Zootopia 2,2025,,3598,316659,1231984,13
+gordonshumway,Nobody 2,2025,,1926,152422,583087,37
+gordonshumway,F1,2025,,4868,451025,1769125,3
+gordonshumway,The Secret Agent,2025,,925,64623,242366,90
+gordonshumway,Sinners,2025,,5392,508332,1999423,1
+gordonshumway,Project Hail Mary,2026,,8431,857588,3414108,
+gordonshumway,Peaky Blinders: The Immortal Man,2026,,1286,95019,359552,39
+gordonshumway,Caught Stealing,2025,,1187,86518,326676,70
+gordonshumway,The Rip,2026,,2005,159762,611830,23
+gordonshumway,Rental Family,2025,,1066,76291,287227,82
+gordonshumway,Dead Poets Society,1989,2741325.0,13089,,,1
+gordonshumway,Captain America: Brave New World,2025,,3546,311311,1210702,15
+gordonshumway,Hamilton,2020,,170,8905,8607,331
+gordonshumway,Wake Up Dead Man,2025,,2997,255696,989906,23
+gordonshumway,Prange,2025,,14,480,1607,1639
+gordonshumway,Red One,2024,341493.0,3212,,,28
+gordonshumway,Train Dreams,2025,,1232,90368,341555,67
+gordonshumway,The Thursday Murder Club,2025,,1173,85325,322070,73
+gordonshumway,Monkey Man,2024,,1553,118487,450643,69
+gordonshumway,The Naked Gun,2025,,2047,163685,627203,34
+gordonshumway,Helden - Wenn Dein Land Dich braucht,2013,,18,644,463,2062
+gordonshumway,One Battle After Another,2025,,4429,403811,1579894,4
+gordonshumway,The Phoenician Scheme,2025,,1094,78641,296281,78
+gordonshumway,The Order,2024,103667.0,980,,,105
+gordonshumway,Conclave,2024,1208925.0,3718,,,17
+gordonshumway,Emilia Pérez,2024,,2065,165370,633810,51
+gordonshumway,Sing Sing,2023,,411,25015,91784,202
+gordonshumway,A Real Pain,2024,889283.0,1566,,,69
+gordonshumway,The Brutalist,2024,,1874,147618,564294,53
+gordonshumway,Damaged,2024,,386,23244,85142,210
+gordonshumway,Gladiator II,2024,1117085.0,4830,,,9
+gordonshumway,Gladiator,2000,,21716,2594373,2260089,
+gordonshumway,The Greatest Showman,2017,1374999.0,10299,,,25
+gordonshumway,Ballywalter,2022,,5,144,126,4602
+gordonshumway,Elf,2003,1459591.0,4743,,,25
+gordonshumway,The Bikeriders,2023,,1246,91571,346206,85
+gordonshumway,Deadpool & Wolverine,2024,,9683,1008397,4029525,1
+gordonshumway,The Ministry of Ungentlemanly Warfare,2024,,2152,173550,665905,47
+gordonshumway,Civil War,2024,,4661,428667,1679459,10
+gordonshumway,Operation Mincemeat,2021,,853,58777,59340,154
+gordonshumway,Wolfs,2024,,1613,123860,471561,66
+gordonshumway,Back to Black,2024,,760,51351,191573,127
+gordonshumway,Beverly Hills Cop: Axel F,2024,,1546,117862,448212,71
+gordonshumway,The Equalizer 3,2023,,3988,357177,1393490,24
+juditho,Another Day,2026,,64,2839,9908,344
+juditho,A South Facing Window,2025,,2,49,156,6214
+juditho,I Want My People to Be Remembered,2025,,,,,
+juditho,Abortion Party,2025,,2,49,156,6214
+juditho,In Waves,2026,,35,1401,4811,478
+juditho,Marvelous Mornings,2026,,10,324,1074,918
+juditho,The Bride Wore Black,1968,,303,17510,20290,32
+juditho,Tip Top,2013,,41,1686,1240,1277
+juditho,Ridicule,1996,,231,12748,14664,164
+juditho,The Girl on the Train,2009,,67,2996,2233,757
+juditho,Visions,2023,,184,9769,35074,453
+juditho,Jim Queen,2026,,95,4508,15898,257
+juditho,Shana,2026,,22,814,2760,619
+juditho,Gardarem lo Larzac,1974,,1,22,22,3172
+juditho,U-Hauling,2021,,,,,
+juditho,A Year of School,2025,,37,1496,5142,466
+juditho,The Worst Person in the World,2021,829446.0,2009,,,77
+juditho,Corporate,2017,,130,6506,6243,798
+juditho,Do the Right Thing,1989,553051.0,2113,,,18
+juditho,Just an Illusion,2026,,216,11784,42495,141
+juditho,In the Mood for Love,2000,876907.0,3425,,,33
+juditho,Happy Together,1997,,836,57409,68372,78
+juditho,The Ties That Bind Us,2024,,290,16634,60463,221
+juditho,The Mastermind,2025,,231,12748,46051,272
+juditho,The President's Cake,2025,,118,5809,20608,218
+juditho,A Countess from Hong Kong,1967,,204,11022,12637,45
+juditho,Borgo,2023,,172,9028,32354,400
+juditho,Drifting Laurent,2025,,8,249,822,2286
+juditho,Sirāt,2025,,789,53651,200355,105
+juditho,Nino,2025,,92,4341,15299,509
+juditho,Sentimental Value,2025,,1154,83711,315835,76
+juditho,Raising Arizona,1987,381564.0,2448,,,14
+victor_lbrn,Che Guevara: The Last Companions,2026,,7,213,701,1138
+victor_lbrn,Snatch,2000,821030.0,10396,,,7
+victor_lbrn,A Man of His Time,2026,,51,2177,7550,383
+victor_lbrn,To Be and to Have,2002,,154,7932,6046,275
+victor_lbrn,"Hair, Paper, Water...",2025,,,,,
+victor_lbrn,A Secret Heart,2026,,2,49,156,3119
+victor_lbrn,Blind Song,2026,,,,,
+victor_lbrn,Où est le chemin de ma maison,2024,,,,,
+victor_lbrn,The Act of Killing,2012,120856.0,794,,,184
+victor_lbrn,Call My Agent! The Movie,2026,,127,6331,22504,203
+victor_lbrn,Happy as Lazzaro,2018,,795,54129,54543,240
+victor_lbrn,High School,1968,15369.0,78,,,96
+victor_lbrn,Aliens,1986,1034230.0,11306,,,
+victor_lbrn,I Am Not Your Negro,2016,,538,34278,34178,305
+victor_lbrn,The Gleaners and I,2000,,234,12941,9976,206
+victor_lbrn,Sociology Is a Martial Art,2001,,22,814,589,791
+victor_lbrn,Throne of Blood,1957,128406.0,1035,,,7
+victor_lbrn,A.I. Artificial Intelligence,2001,450404.0,6945,,,16
+victor_lbrn,"Si je meurs, je viendrai vous le dire",2026,,,,,
+victor_lbrn,Orgosolo’s Shepherds,1958,,18,644,691,275
+victor_lbrn,Islands of Fire,1955,,31,1216,1325,169
+victor_lbrn,Sea Countrymen,1955,,24,901,975,210
+victor_lbrn,Se7en,1995,3263377.0,24037,,,
+victor_lbrn,The Wind That Shakes the Barley,2006,79150.0,937,,,145
+victor_lbrn,Les Apaches,2013,,26,990,719,1668
+victor_lbrn,The Odyssey,2026,,4215,381077,1488959,4
+victor_lbrn,The Grand Budapest Hotel,2014,3199652.0,16645,,,13
+victor_lbrn,The Lobster,2015,1320448.0,7158,,,38
+victor_lbrn,A Violent Life,2017,,51,2177,2037,1403
+victor_lbrn,De Gaulle: Liberté,2026,,202,10896,39220,146
+victor_lbrn,De Gaulle: Résistance,2026,,243,13526,48929,131
+victor_lbrn,Minions & Monsters,2026,,1305,96664,365920,38
+victor_lbrn,Fargo,1996,1403469.0,9513,,,4
+victor_lbrn,Fear City: A Family-Style Comedy,1994,,1383,103457,124900,40
+victor_lbrn,Disclosure Day,2026,,3798,337349,1314399,7
+victor_lbrn,Cars 2,2011,,8791,900585,765621,20
+victor_lbrn,Everything Everywhere All at Once,2022,3793318.0,8559,,,6
+victor_lbrn,Obsession,2025,,6257,604990,2389188,2
+victor_lbrn,Kill Bill: Vol. 2,2004,1760722.0,15584,,,5
+victor_lbrn,Cars,2006,2264411.0,15670,,,4
+victor_lbrn,A Girl’s Story,2026,,8,249,822,1043
+victor_lbrn,The Phoenician Scheme,2025,,1094,78641,296281,78
+victor_lbrn,Do You Love Me,2025,,2,49,156,3119
+victor_lbrn,The Godfather Part II,1974,1438692.0,14499,,,1
+victor_lbrn,The Life of Chuck,2024,,1332,99008,375000,63
+victor_lbrn,Jumanji,1995,1277296.0,11654,,,3
+victor_lbrn,Nino,2025,,92,4341,15299,509
+victor_lbrn,Nos cœurs sur la main,2026,,1,22,68,7514
+victor_lbrn,The Drama,2026,,1990,158365,606355,24
+victor_lbrn,La Classe américaine,1993,,255,14310,16505,141
+mathouix,The Lord of the Rings: The Two Towers,2002,,24805,3031174,2650107,1
+mathouix,The Lord of the Rings: The Fellowship of the Ring,2001,3187177.0,28644,,,1
+mathouix,Enemy,2013,611712.0,6658,,,39
+mathouix,BLUE EYE SAMURAI,2023,,,,,
+mathouix,Call My Agent! The Movie,2026,,127,6331,22504,203
+mathouix,The Mystery of the Yellow Room,2003,,111,5408,4086,354
+mathouix,Dune: Part Two,2024,,8794,900945,3590800,1
+mathouix,Jim Queen,2026,,95,4508,15898,257
+mathouix,Ride Away,2024,,113,5522,19567,439
+mathouix,Phantom of the Paradise,1974,137565.0,796,,,14
+mathouix,I Swear,2025,,639,41921,155663,125
+mathouix,Hoppers,2026,,2464,203339,783058,15
+mathouix,Alter Ego,2026,,111,5408,19154,228
+mathouix,Primal,2019,,,,,
+mathouix,Song of the Sea,2014,155931.0,1642,,,135
+mathouix,After Hours,1985,368096.0,1862,,,18
+mathouix,The Godfather,1972,2701868.0,23812,,,
+mathouix,Sundays,2025,,165,8599,30784,337
+mathouix,Submarine,2010,401727.0,1659,,,117
+mathouix,964 Pinocchio,1991,25141.0,107,,,196
+mathouix,Hamnet,2025,,1710,132619,505704,43
+mathouix,Punch-Drunk Love,2002,660446.0,2903,,,38
+mathouix,The Secret Agent,2025,,925,64623,242366,90
+mathouix,Fargo,1996,1403469.0,9513,,,4
+mathouix,One Battle After Another,2025,,4429,403811,1579894,4
+mathouix,Avatar: Fire and Ash,2025,,4569,418785,1639857,3
+mathouix,Little Miss Sunshine,2006,2180672.0,8162,,,15
+mathouix,The Dark Knight,2008,4488171.0,37035,,,
+mathouix,Wake Up Dead Man,2025,,2997,255696,989906,23
+mathouix,Perfect Days,2023,643189.0,2119,,,65
+mathouix,Collateral,2004,,6583,642031,541568,26
+mathouix,Zootopia 2,2025,,3598,316659,1231984,13
+mathouix,The Shawshank Redemption,1994,2729126.0,31641,,,
+mathouix,Watchmen,2009,796013.0,10345,,,13
+mathouix,Arco,2025,,292,16769,60963,220
+mathouix,Mulholland Drive,2001,1172795.0,7374,,,14
+mathouix,Adolescence,2025,,,,,
+mathouix,Requiem for a Dream,2000,1653409.0,11413,,,5
+mathouix,Knives Out,2019,4127486.0,14667,,,7
+mathouix,Metropolis,1927,347259.0,3238,,,1
+mathouix,Sink or Swim,2018,,1616,124130,127498,138
+mathouix,Monster,2023,335056.0,980,,,125
+mathouix,Oldboy,2003,1396966.0,10320,,,9
+mathouix,Manchester by the Sea,2016,953180.0,6629,,,47
+mathouix,Demon Slayer: Kimetsu no Yaiba Infinity Castle,2025,,2320,189505,728600,28
+mathouix,Weapons,2025,,4156,374844,1464046,7
+mathouix,Perfect Blue,1997,1014401.0,3410,,,27
+mathouix,Sirāt,2025,,789,53651,200355,105
+mathouix,Sinners,2025,,5392,508332,1999423,1
+mathouix,La La Land,2016,4393174.0,18643,,,8
+owen_lczz,Kraken,2026,,13,440,1470,801
+owen_lczz,How to Lose a Guy in 10 Days,2003,1690663.0,4662,,,28
+owen_lczz,NAZA,2026,,105,5067,17921,243
+owen_lczz,Digger,2026,,443,27308,100403,97
+owen_lczz,Carlito's Way,1993,200996.0,3631,,,10
+owen_lczz,Primetime,2026,,198,10644,38292,147
+owen_lczz,Two Lovers,2008,61050.0,969,,,148
+owen_lczz,Do the Right Thing,1989,553051.0,2113,,,18
+owen_lczz,Call My Agent! The Movie,2026,,127,6331,22504,203
+owen_lczz,Oasis: Don't Look Back in Anger,2026,,38,1543,5309,457
+owen_lczz,The Daughters of Abraham,2026,,,,,
+owen_lczz,De Gaulle: Liberté,2026,,202,10896,39220,146
+owen_lczz,De Gaulle: Résistance,2026,,243,13526,48929,131
+owen_lczz,"Paris, Texas",1984,607896.0,2350,,,14
+owen_lczz,The Odyssey,2026,,4215,381077,1488959,4
+owen_lczz,Obsession,2025,,6257,604990,2389188,2
+owen_lczz,Jim Queen,2026,,95,4508,15898,257
+owen_lczz,"Good Guys Go to Heaven, Bad Guys Go to Pattaya",2016,,508,32052,31909,303
+owen_lczz,A Summer's Tale,1996,79276.0,285,,,144
+owen_lczz,Thelma & Louise,1991,568032.0,4051,,,8
+owen_lczz,The Bus: A French Football Mutiny,2026,,58,2531,8807,359
+owen_lczz,The Devil Wears Prada 2,2026,,2478,204691,788387,14
+owen_lczz,The Second Act,2024,,326,19075,69554,242
+owen_lczz,The Devil Wears Prada,2006,2701050.0,14355,,,6
+owen_lczz,Fight Club,1999,5059722.0,33080,,,
+owen_lczz,Project Hail Mary,2026,,8431,857588,3414108,
+owen_lczz,Aftersun,2022,1365687.0,2019,,,70
+owen_lczz,Love Is Overrated,2025,,185,9831,35302,314
+owen_lczz,The Spanish Apartment,2002,55800.0,1270,,,92
+owen_lczz,The Taste of Others,2000,,386,23244,18161,152
+owen_lczz,Hearts on Fire,2025,,123,6098,21658,417
+owen_lczz,The Deer Hunter,1978,329534.0,4439,,,4
+owen_lczz,Marty Supreme,2025,,2313,188836,725969,29
+owen_lczz,Nuremberg,2025,,1506,114302,434367,52
+owen_lczz,Nightcrawler,2014,1858239.0,12182,,,23
+owen_lczz,Eyes Wide Shut,1999,1187926.0,7407,,,13
+owen_lczz,Mesrine: Killer Instinct,2008,,1033,73536,59004,142
+owen_lczz,Raging Bull,1980,607249.0,4948,,,3
+owen_lczz,Lost in Translation,2003,1596190.0,8384,,,11
+owen_lczz,Boogie Nights,1997,653574.0,3744,,,26
+owen_lczz,The Big Lebowski,1998,1502938.0,12700,,,4
+owen_lczz,What's in a Name,2012,,1831,143663,117068,99
+owen_lczz,Citizen Kane,1941,809267.0,6301,,,1
+owen_lczz,Gremlins,1984,860584.0,7222,,,4
+owen_lczz,Gerald the Conqueror,2025,,66,2944,10280,643
+owen_lczz,[REC],2007,469661.0,5071,,,32
+owen_lczz,The Apprentice,2024,,1067,76375,287550,95
+owen_lczz,Into the Wild,2007,811383.0,10415,,,10
+owen_lczz,The Party,1980,72143.0,1233,,,14
+owen_lczz,C'est la vie!,2017,,1650,127191,130716,129
+poele____,The Hunger Games,2012,3371833.0,23891,,,3
+poele____,Iron Boy,2026,,21,771,2610,633
+poele____,Case 137,2025,,303,17510,63722,214
+poele____,Kiki's Delivery Service,1989,1252760.0,4795,,,6
+poele____,Resident Evil,2026,,1023,72703,273414,46
+poele____,Primetime,2026,,198,10644,38292,147
+poele____,The Wailing,2016,279405.0,2213,,,122
+poele____,The Descent,2005,465131.0,4637,,,24
+poele____,Portrait of a Lady on Fire,2019,1068012.0,3076,,,74
+poele____,Chainsaw Man – The Movie: Reze Arc,2025,,1251,92001,347870,66
+poele____,Decorado,2025,,20,728,2462,1324
+poele____,Roald Dahl's The Witches,2020,148621.0,3076,,,37
+poele____,Bubble,2022,,501,31536,31384,227
+poele____,eXistenZ,1999,155284.0,2313,,,40
+poele____,Wicked,2024,1946958.0,3293,,,26
+poele____,Fjord,2026,,91,4286,15100,262
+poele____,Spider-Man: No Way Home,2021,3697378.0,23387,,,1
+poele____,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+poele____,The Amazing Digital Circus: The Last Act,2026,,306,17713,64478,116
+poele____,The Devil All the Time,2020,597326.0,3811,,,30
+poele____,Swapped,2026,,2264,184164,707599,18
+poele____,I Lost My Body,2019,,1377,102933,105270,145
+poele____,Mamma Mia!,2008,2159643.0,7202,,,21
+poele____,Wonka,2023,,4604,422540,1654905,15
+poele____,The Odyssey,2026,,4215,381077,1488959,4
+poele____,Border,2018,,959,67411,68271,208
+poele____,Scooby-Doo 2: Monsters Unleashed,2004,494325.0,3026,,,65
+poele____,Minari,2020,586696.0,2043,,,55
+poele____,Woman at War,2018,20049.0,449,,,358
+poele____,Jim Queen,2026,,95,4508,15898,257
+poele____,In Waves,2026,,35,1401,4811,478
+poele____,Backrooms,2026,,3822,339844,1324347,6
+poele____,The Beasts,2022,,993,70215,71178,134
+poele____,The Zone of Interest,2023,953664.0,2799,,,51
+poele____,The Plague,2025,,149,7632,27246,360
+poele____,La Vénus électrique,2026,,96,4563,16098,255
+poele____,Obsession,2025,,6257,604990,2389188,2
+poele____,Beating Hearts,2024,,1069,76543,288195,95
+poele____,"Sorry, Baby",2025,,370,22121,80935,174
+poele____,All Your Faces,2023,,725,48595,181061,158
+poele____,Sinners,2025,,5392,508332,1999423,1
+poele____,My Father's Shadow,2025,,55,2378,8264,727
+poele____,Meanwhile on Earth,2024,,65,2891,10094,797
+poele____,I Saw the TV Glow,2024,,843,57972,216878,119
+poele____,Block Pass,2024,,104,5011,17717,465
+poele____,Donnie Darko,2001,2293445.0,13875,,,5
+poele____,Little Amélie or the Character of Rain,2025,,224,12297,44386,278
+poele____,Custody,2017,,745,50168,50463,255
+poele____,Hoppers,2026,,2464,203339,783058,15
+poele____,The Testament of Ann Lee,2025,,193,10330,37137,307
+begumb0,Forgotten Island,2026,,87,4067,14309,270
+begumb0,Being John Malkovich,1999,653109.0,5012,,,17
+begumb0,Antichrist,2009,303067.0,2946,,,62
+begumb0,Martyrs,2008,259711.0,3172,,,62
+begumb0,House,1977,356698.0,850,,,12
+begumb0,In the Mood for Love,2000,876907.0,3425,,,33
+begumb0,Obsession,2025,,6257,604990,2389188,2
+begumb0,Barbie and the Diamond Castle,2008,,900,62584,50030,151
+begumb0,Blue Velvet,1986,829350.0,4005,,,8
+begumb0,Maternal Instinct,2026,,139,7036,25072,190
+begumb0,Çok Filim Hareketler Bunlar,2010,,57,2480,1840,838
+begumb0,Before I Fall,2017,,3604,317277,333021,78
+begumb0,Coherence,2013,349559.0,3680,,,76
+begumb0,Speak No Evil,2024,,2398,196981,758018,41
+begumb0,The Odyssey,2026,,4215,381077,1488959,4
+begumb0,The House of the Spirits,1993,24282.0,755,,,81
+begumb0,Abigail,2024,,2278,185497,712840,44
+begumb0,A Clockwork Orange,1971,1677487.0,14244,,,1
+begumb0,The Menu,2022,2978848.0,6798,,,14
+begumb0,Barbie: A Fashion Fairytale,2010,,807,55086,43906,192
+begumb0,The Ritual,2017,405112.0,3628,,,76
+begumb0,Barbie and the Magic of Pegasus,2005,,791,53810,42866,146
+begumb0,Sorry We Missed You,2019,55930.0,863,,,207
+begumb0,Barbie and the Three Musketeers,2009,,743,50010,39772,194
+begumb0,Moonrise Kingdom,2012,1338786.0,6540,,,36
+begumb0,Uptown Girls,2003,,1243,91313,73635,100
+begumb0,The Grand Budapest Hotel,2014,3199652.0,16645,,,13
+begumb0,Beetlejuice Beetlejuice,2024,,3401,296469,1151683,23
+begumb0,Mustang,2015,141614.0,1499,,,142
+begumb0,Beetlejuice,1988,1828299.0,8778,,,3
+begumb0,The Elephant Man,1980,437209.0,4099,,,6
+begumb0,Slumdog Millionaire,2008,960238.0,11678,,,10
+begumb0,The Hunger Games: Mockingjay – Part 1,2014,2003241.0,17136,,,10
+begumb0,The Hunger Games: Catching Fire,2013,2566922.0,18932,,,3
+begumb0,The Hunger Games,2012,3371833.0,23891,,,3
+begumb0,The Godfather,1972,2701868.0,23812,,,
+begumb0,Fun with Dick and Jane,2005,146327.0,2784,,,48
+begumb0,"As Above, So Below",2014,481482.0,4026,,,67
+begumb0,When Life Gives You Tangerines,2025,,,,,
+begumb0,Bride Squad,2024,,6,178,583,3489
+begumb0,The Perks of Being a Wallflower,2012,2936400.0,11553,,,14
+begumb0,Plastic Dream,2021,,9,286,255,3098
+begumb0,Twilight,2008,2392576.0,14782,,,3
+begumb0,No One Gets Out Alive,2021,,777,52698,53068,179
+begumb0,His House,2020,188523.0,1293,,,91
+begumb0,Eternal Sunshine of the Spotless Mind,2004,3381015.0,16895,,,4
+begumb0,Persepolis,2007,283700.0,2266,,,78
+begumb0,Mystery Train,1989,92180.0,542,,,66
+begumb0,Vanilla Sky,2001,359257.0,4911,,,29
+begumb0,Sleepy Hollow,1999,586615.0,7661,,,10
+mathmon,A Man of His Time,2026,,51,2177,7550,383
+mathmon,Digger,2026,,443,27308,100403,97
+mathmon,Another Day,2026,,64,2839,9908,344
+mathmon,Comédie-Française,2026,,107,5181,18330,238
+mathmon,Fjord,2026,,91,4286,15100,262
+mathmon,Memento,2000,1970561.0,16935,,,2
+mathmon,De Gaulle: Liberté,2026,,202,10896,39220,146
+mathmon,De Gaulle: Résistance,2026,,243,13526,48929,131
+mathmon,Out of Africa,1985,,1598,122514,148485,24
+mathmon,Pulp Fiction,1994,4386659.0,31142,,,1
+mathmon,The Odyssey,2026,,4215,381077,1488959,4
+mathmon,Crescendo,2026,,41,1686,5814,438
+mathmon,Parallel Tales,2026,,64,2839,9908,344
+mathmon,The Taste of Others,2000,,386,23244,18161,152
+mathmon,Jules and Jim,1962,122106.0,1080,,,8
+mathmon,Project Hail Mary,2026,,8431,857588,3414108,
+mathmon,Just an Illusion,2026,,216,11784,42495,141
+mathmon,The Drama,2026,,1990,158365,606355,24
+mathmon,All That's Left of You,2025,,80,3687,12942,560
+mathmon,Marty Supreme,2025,,2313,188836,725969,29
+mathmon,The History of Sound,2025,,164,8538,30561,338
+mathmon,The Ties That Bind Us,2024,,290,16634,60463,221
+mathmon,Family Resemblances,1996,,331,19418,22555,129
+mathmon,Samuel,2024,,,,,
+mathmon,When the Cat's Away,1996,,104,5011,5641,239
+mathmon,The Torch,2022,,,,,
+mathmon,The Flame,2020,,,,,
+mathmon,Titane,2021,461869.0,1775,,,93
+mathmon,The Rapture,2023,,102,4898,17310,696
+mathmon,Forever Young,2022,,175,9212,8911,530
+mathmon,The Blue Caftan,2022,,196,10518,10205,419
+mathmon,A Little Something Extra,2024,,882,61122,228942,112
+mathmon,Uncut Gems,2019,1750687.0,5649,,,42
+mathmon,Colette,2018,67658.0,964,,,207
+mathmon,The Piano Accident,2025,,244,13591,49171,259
+mathmon,Guru,2025,,328,19212,70065,111
+mathmon,The Secret Agent,2025,,925,64623,242366,90
+mathmon,Love Is Overrated,2025,,185,9831,35302,314
+mathmon,Summer Beats,2025,,62,2736,9539,350
+mathmon,Hamnet,2025,,1710,132619,505704,43
+mathmon,Thelma & Louise,1991,568032.0,4051,,,8
+mathmon,Eternal Sunshine of the Spotless Mind,2004,3381015.0,16895,,,4
+mathmon,Chungking Express,1994,708535.0,2324,,,24
+mathmon,Sirāt,2025,,789,53651,200355,105
+mathmon,Resurrection,2025,,135,6800,24211,387
+mathmon,Out of Love,2025,,113,5522,19567,439
+mathmon,Eagles of the Republic,2025,,82,3795,13330,548
+mathmon,Apocalypse Now,1979,1074627.0,9480,,,2
+mathmon,Hard Boiled,1992,102483.0,999,,,46
+mathmon,Arco,2025,,292,16769,60963,220
+julescall1,La Gradiva,2026,,3,79,254,2151
+julescall1,Another Day,2026,,64,2839,9908,344
+julescall1,Fjord,2026,,91,4286,15100,262
+julescall1,Call My Agent! The Movie,2026,,127,6331,22504,203
+julescall1,Trainspotting,1996,1346990.0,10775,,,2
+julescall1,Agatha and the Limitless Readings,1981,,22,814,879,381
+julescall1,Cléo from 5 to 7,1962,257422.0,817,,,14
+julescall1,Melancholia,2011,434060.0,3969,,,55
+julescall1,The French Kissers,2009,,488,30581,24046,252
+julescall1,Batman Begins,2005,,23382,2828730,2469172,
+julescall1,Toni,2023,,201,10833,38988,415
+julescall1,Twin Peaks: Fire Walk with Me,1992,,2384,195636,239682,19
+julescall1,The Amazing Spider-Man,2012,2278142.0,19261,,,5
+julescall1,The Odyssey,2026,,4215,381077,1488959,4
+julescall1,Spider-Man,2002,3050148.0,21633,,,2
+julescall1,Apocalypse Now,1979,1074627.0,9480,,,2
+julescall1,Sarkozy-Gaddafi: The Scandal of All Scandals,2025,,30,1170,4000,1060
+julescall1,La Haine,1995,855997.0,4763,,,17
+julescall1,De Gaulle: Liberté,2026,,202,10896,39220,146
+julescall1,De Gaulle: Résistance,2026,,243,13526,48929,131
+julescall1,Love Letters,2025,,50,2127,7373,771
+julescall1,Backrooms,2026,,3822,339844,1324347,6
+julescall1,Portrait of a Lady on Fire,2019,1068012.0,3076,,,74
+julescall1,Melancholia,2011,434060.0,3969,,,55
+julescall1,Soylent Green,1973,79610.0,1513,,,12
+julescall1,Million Dollar Baby,2004,568844.0,10677,,,10
+julescall1,Venus Beauty Institute,1999,,140,7095,8052,235
+julescall1,Bagdad Cafe,1987,,455,28176,33010,65
+julescall1,Volver,2006,,1991,158458,129416,74
+julescall1,Shana,2026,,22,814,2760,619
+julescall1,De Gaulle: Liberté,2026,,202,10896,39220,146
+julescall1,Vertiginous,2026,,50,2127,7373,392
+julescall1,La Vénus électrique,2026,,96,4563,16098,255
+julescall1,Michael,2026,,4604,422540,1654905,4
+julescall1,The Crimson Rivers,2000,,1828,143388,116838,62
+julescall1,Persepolis,2007,283700.0,2266,,,78
+julescall1,De Gaulle: Résistance,2026,,243,13526,48929,131
+julescall1,The French Connection,1971,227813.0,2242,,,5
+julescall1,Benedetta,2021,128193.0,1220,,,126
+julescall1,Alpha,2025,,144,7333,26155,371
+julescall1,Mean Girls,2004,3400634.0,9750,,,13
+julescall1,Kiki of Montparnasse,2012,,10,324,229,2665
+julescall1,The Hunt,2012,547042.0,5043,,,46
+julescall1,Aftersun,2022,1365687.0,2019,,,70
+julescall1,The Devil Wears Prada 2,2026,,2478,204691,788387,14
+julescall1,The Rays and Shadows,2026,,120,5924,21027,213
+julescall1,Gattaca,1997,455124.0,7229,,,10
+julescall1,"Paris, 13th District",2021,53395.0,420,,,288
+julescall1,Perfume: The Story of a Murderer,2006,246664.0,5225,,,26
+julescall1,Hotel Fantasma,2025,,,,,
+agnorw,Akira,1988,873068.0,5079,,,7
+agnorw,5 Centimeters per Second,2007,186526.0,2237,,,79
+agnorw,Angel's Egg,1985,,625,40849,48269,57
+agnorw,Too Many Beasts,2026,,6,178,583,1248
+agnorw,Shutter Island,2010,,26652,3296886,2888009,1
+agnorw,When the Cat's Away,1996,,104,5011,5641,239
+agnorw,The Crisis,1992,,129,6447,7301,174
+agnorw,FINI DE RIRE ! L'humour politique au garde-à-vous ?,2026,,5,144,468,1424
+agnorw,My Favourite Cake,2024,,188,10018,35989,371
+agnorw,GoodFellas,1990,2076438.0,14918,,,
+agnorw,American Psycho,2000,3727510.0,12895,,,2
+agnorw,The Last Unicorn,1982,108648.0,628,,,34
+agnorw,FernGully: The Last Rainforest,1992,,667,44079,52177,62
+agnorw,Forrest Gump,1994,4222068.0,30713,,,2
+agnorw,Sister Act,1992,,3564,313161,387855,14
+agnorw,Black Swan,2010,3107006.0,16000,,,7
+agnorw,Conclave,2024,1208925.0,3718,,,17
+agnorw,The Bad Guys 2,2025,,928,64868,243307,89
+agnorw,The Bad Guys,2022,,2717,227974,237468,54
+agnorw,Hoppers,2026,,2464,203339,783058,15
+agnorw,7 Prisoners,2021,,391,23596,23326,306
+agnorw,Left-Handed Girl,2025,,204,11022,39685,292
+agnorw,Bahadur the Brave,2023,,,,,
+agnorw,The Truman Show,1998,4382819.0,21083,,,
+agnorw,Sentimental Value,2025,,1154,83711,315835,76
+agnorw,The Drama,2026,,1990,158365,606355,24
+agnorw,Lost in Translation,2003,1596190.0,8384,,,11
+agnorw,Tenor,2022,,389,23455,23183,292
+agnorw,Shana,2026,,22,814,2760,619
+agnorw,Ran,1985,227422.0,1953,,,17
+agnorw,Boogie Nights,1997,653574.0,3744,,,26
+agnorw,Our Land,2025,,7,213,701,1138
+agnorw,Dead Poets Society,1989,2741325.0,13089,,,1
+agnorw,Wild Foxes,2025,,11,362,1204,868
+agnorw,Apollon by Day Athena by Night,2024,,3,79,254,5395
+agnorw,The Testament of Ann Lee,2025,,193,10330,37137,307
+agnorw,The Collective,2019,,2,49,42,9579
+agnorw,C'est la vie!,2017,,1650,127191,130716,129
+agnorw,Nightcrawler,2014,1858239.0,12182,,,23
+agnorw,Marty Supreme,2025,,2313,188836,725969,29
+agnorw,Burn After Reading,2008,608531.0,5456,,,28
+agnorw,No Other Choice,2025,,1352,100749,381750,61
+agnorw,Funny Games,1997,364119.0,2209,,,41
+agnorw,Rental Family,2025,,1066,76291,287227,82
+agnorw,The President's Cake,2025,,118,5809,20608,218
+agnorw,The Reconquest,2016,2576.0,50,,,1351
+agnorw,The Boy and the Heron,2023,,2870,243065,939906,50
+agnorw,Resurrection,2025,,135,6800,24211,387
+agnorw,Zootopia 2,2025,,3598,316659,1231984,13
+agnorw,Bugonia,2025,,2526,209337,806701,26
+kimya_,A Man of His Time,2026,,51,2177,7550,383
+kimya_,Kraken,2026,,13,440,1470,801
+kimya_,The Purge: Election Year,2016,,5625,534126,567410,56
+kimya_,Toni,2023,,201,10833,38988,415
+kimya_,Best of the Best,2026,,88,4121,14506,268
+kimya_,Digger,2026,,443,27308,100403,97
+kimya_,Coexist,2017,,443,27308,27086,355
+kimya_,The Purge: Anarchy,2014,,6856,673291,568561,36
+kimya_,The Purge,2013,,9074,934597,795216,29
+kimya_,The Love Hypothesis,2026,,640,41998,155954,78
+kimya_,Primetime,2026,,198,10644,38292,147
+kimya_,Gerald the Conqueror,2025,,66,2944,10280,643
+kimya_,Bend It Like Beckham,2002,318702.0,2102,,,60
+kimya_,The Blow,2026,,15,520,1745,747
+kimya_,Un grand raccourci,2026,,13,440,1470,801
+kimya_,Paths of Glory,1957,308450.0,3417,,,3
+kimya_,Trainspotting,1996,1346990.0,10775,,,2
+kimya_,Silence and Cry,1968,,24,901,975,287
+kimya_,The Dog Stars,2026,,311,18052,65741,116
+kimya_,Jim Queen,2026,,95,4508,15898,257
+kimya_,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+kimya_,Four Lions,2010,143189.0,1349,,,144
+kimya_,Fjord,2026,,91,4286,15100,262
+kimya_,Pleasantville,1998,204523.0,1985,,,50
+kimya_,Bodies Bodies Bodies,2022,1167778.0,1570,,,94
+kimya_,Little White Lies,2010,,1662,128274,104255,122
+kimya_,Comédie-Française,2026,,107,5181,18330,238
+kimya_,PlayTime,1967,120967.0,705,,,14
+kimya_,Force Majeure,2014,155527.0,1283,,,160
+kimya_,Apex,2026,,2019,161068,616947,22
+kimya_,Cargo,2017,78831.0,1922,,,119
+kimya_,Fifty Shades Freed,2018,,8455,860445,924177,25
+kimya_,Fifty Shades Darker,2017,,8034,810532,869367,36
+kimya_,Fifty Shades of Grey,2015,641147.0,12598,,,13
+kimya_,The Twilight Saga: Breaking Dawn – Part 2,2012,,9552,992454,845615,18
+kimya_,The Twilight Saga: Breaking Dawn – Part 1,2011,,9472,982736,837145,17
+kimya_,The Twilight Saga: Eclipse,2010,1163099.0,9450,,,14
+kimya_,The Twilight Saga: New Moon,2009,1317110.0,9978,,,14
+kimya_,Twilight,2008,2392576.0,14782,,,3
+kimya_,The Odyssey,2026,,4215,381077,1488959,4
+kimya_,Pan's Labyrinth,2006,1236589.0,11849,,,7
+kimya_,Troll,2022,,2123,170817,176750,69
+kimya_,Toy Story 5,2026,,2682,224542,866693,11
+kimya_,War Dogs,2016,537703.0,5766,,,54
+kimya_,Coherence,2013,349559.0,3680,,,76
+kimya_,Evil Dead Burn,2026,,1785,139449,532367,29
+kimya_,The Death of Robin Hood,2026,,564,36224,134054,83
+kimya_,La chaleur,2026,,25,945,3216,574
+kimya_,A Special Day,1977,,802,54687,65057,15
+kimya_,Minions & Monsters,2026,,1305,96664,365920,38
+machadele,Coraline,2009,2826230.0,9612,,,14
+machadele,The Last Viking,2025,,263,14837,53788,245
+machadele,Inglourious Basterds,2009,3437361.0,25001,,,1
+machadele,The Invite,2026,,840,57731,215955,62
+machadele,Babysitting 2,2015,,1435,108023,110599,148
+machadele,De Gaulle: Liberté,2026,,202,10896,39220,146
+machadele,The Mandalorian and Grogu,2026,,1900,150017,573678,26
+machadele,Forsaken,2026,,70,3153,11030,319
+machadele,Wallace & Gromit: The Curse of the Were-Rabbit,2005,505590.0,3216,,,41
+machadele,The Devil Wears Prada 2,2026,,2478,204691,788387,14
+machadele,Argo,2012,644479.0,9277,,,19
+machadele,Two Prosecutors,2025,,52,2227,7728,760
+machadele,Nosferatu the Vampyre,1979,184242.0,1143,,,16
+machadele,The New World,2005,91478.0,1337,,,96
+machadele,The King of Algiers,2023,,118,5809,20608,619
+machadele,Mary and Max,2009,217526.0,2363,,,81
+machadele,Inside the Yellow Cocoon Shell,2023,,60,2633,9172,966
+machadele,Sisu,2022,169059.0,3019,,,49
+machadele,"Small, Slow But Steady",2022,,62,2736,2573,1048
+machadele,Whiplash,2014,3925603.0,17274,,,8
+machadele,"Small, Slow But Steady",2022,,62,2736,2573,1048
+machadele,12 Years a Slave,2013,971602.0,12303,,,17
+machadele,In the Mood for Love,2000,876907.0,3425,,,33
+machadele,In the Mood for Love,2000,876907.0,3425,,,33
+machadele,Jeanne du Barry,2023,,730,48988,182557,157
+eli45,Jungle,2020,,1,22,18,13204
+eli45,Digger,2026,,443,27308,100403,97
+eli45,The Invite,2026,,840,57731,215955,62
+eli45,Avengers: Endgame,2019,,29080,3650946,4054362,
+eli45,A Man of His Time,2026,,51,2177,7550,383
+eli45,Rose,2026,,56,2429,8445,367
+eli45,Salvation,2026,,15,520,1745,747
+eli45,The Dog Stars,2026,,311,18052,65741,116
+eli45,RRR,2022,,1730,134435,138338,86
+eli45,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+eli45,Apocalypto,2006,284448.0,6747,,,20
+eli45,Fear City: A Family-Style Comedy,1994,,1383,103457,124900,40
+eli45,The Crazy Stranger,1997,,109,5294,5968,267
+eli45,The Odyssey,2026,,4215,381077,1488959,4
+eli45,Backrooms,2026,,3822,339844,1324347,6
+eli45,Lord of the Flies,2026,,,,,
+eli45,Jim Queen,2026,,95,4508,15898,257
+eli45,Disclosure Day,2026,,3798,337349,1314399,7
+eli45,The Beloved,2026,,105,5067,17921,243
+eli45,The Plague,2025,,149,7632,27246,360
+eli45,La Vénus électrique,2026,,96,4563,16098,255
+eli45,Zoolander,2001,1094494.0,5150,,,27
+eli45,The Night of the Hunter,1955,235731.0,1928,,,2
+eli45,The Virgin Suicides,1999,1167284.0,3734,,,31
+eli45,Peter Rabbit,2018,182914.0,1995,,,112
+eli45,Mortal Kombat II,2026,,2728,229054,884516,10
+eli45,Michael,2026,,4604,422540,1654905,4
+eli45,Dead Man's Wire,2025,,248,13852,50137,129
+eli45,My Father's Shadow,2025,,55,2378,8264,727
+eli45,Where Is the Friend's House?,1987,,460,28538,33444,64
+eli45,I Swear,2025,,639,41921,155663,125
+eli45,The Drama,2026,,1990,158365,606355,24
+eli45,The Cruise,1998,,29,1125,1223,549
+eli45,Pillion,2025,,351,20797,75986,190
+eli45,Project Hail Mary,2026,,8431,857588,3414108,
+eli45,Alter Ego,2026,,111,5408,19154,228
+eli45,Bullet in the Head,1990,,340,20037,23291,96
+eli45,Marty Supreme,2025,,2313,188836,725969,29
+eli45,The Long Walk,2025,,2073,166120,636751,32
+eli45,No Other Choice,2025,,1352,100749,381750,61
+eli45,28 Years Later: The Bone Temple,2026,,1862,146513,559971,27
+eli45,The Legendaries,2025,,29,1125,3841,528
+eli45,Night on Earth,1991,146997.0,1102,,,36
+eli45,La Grazia,2025,,459,28466,104759,158
+eli45,Happy Feet,2006,877064.0,5634,,,24
+eli45,Beau Travail,1999,136974.0,389,,,150
+eli45,Drifting Laurent,2025,,8,249,822,2286
+eli45,Rio,2011,887827.0,7387,,,30
+eli45,Longlegs,2024,,2947,250712,970170,35
+eli45,U.S. Go Home,1994,,30,1170,1274,447
+simongelvo,The Bourne Identity,2002,667056.0,10493,,,9
+simongelvo,Julian,2025,,10,324,1074,1964
+simongelvo,Incendies,2010,435299.0,3528,,,50
+simongelvo,Stranger by the Lake,2013,,481,30068,23633,289
+simongelvo,Chronicle,2012,351353.0,5990,,,41
+simongelvo,American Psycho,2000,3727510.0,12895,,,2
+simongelvo,A Difficult Year,2023,,342,20175,73660,267
+simongelvo,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+simongelvo,Another Day,2026,,64,2839,9908,344
+simongelvo,Margot at the Wedding,2007,,336,19761,15383,275
+simongelvo,Obsession,2025,,6257,604990,2389188,2
+simongelvo,Insomnia,2002,376671.0,5604,,,21
+simongelvo,The Substance,2024,2638918.0,6662,,,5
+simongelvo,Boyz n the Hood,1991,344535.0,2379,,,14
+simongelvo,Disclosure Day,2026,,3798,337349,1314399,7
+simongelvo,Attack on Titan,2015,31845.0,883,,,201
+simongelvo,The Odyssey,2026,,4215,381077,1488959,4
+simongelvo,Omaha,2025,,39,1591,5477,911
+simongelvo,The Blair Witch Project,1999,1072946.0,5740,,,15
+simongelvo,Pigskin,2005,,5,144,100,2813
+simongelvo,The Darjeeling Limited,2007,665880.0,4134,,,48
+simongelvo,Harry Potter and the Philosopher's Stone,2001,3556243.0,30465,,,
+simongelvo,How to Make a Killing,2024,,414,25228,92587,166
+simongelvo,Boogie Nights,1997,653574.0,3744,,,26
+simongelvo,Vertiginous,2026,,50,2127,7373,392
+simongelvo,One Battle After Another,2025,,4429,403811,1579894,4
+simongelvo,The Drama,2026,,1990,158365,606355,24
+simongelvo,The Yards,2000,24588.0,554,,,120
+simongelvo,The Triplets of Belleville,2003,94745.0,1087,,,108
+simongelvo,Lost Land,2025,,6,178,583,1248
+simongelvo,The Polar Express,2004,,7096,700948,592466,22
+simongelvo,Cast Away,2000,1067932.0,12665,,,4
+simongelvo,Enough is Enough!,2024,,63,2788,9723,820
+simongelvo,The Life of Jesus,1997,,97,4619,5190,249
+simongelvo,Queen of Montreuil,2012,,26,990,719,1668
+simongelvo,A Self-Made Hero,1996,,117,5751,6496,230
+simongelvo,Hancock,2008,605337.0,10571,,,11
+simongelvo,Monsters,2010,72450.0,1854,,,111
+simongelvo,Venom: Let There Be Carnage,2021,,11514,1234908,1337482,4
+simongelvo,Venom,2018,1674834.0,17726,,,5
+simongelvo,Allied,2016,,4922,456884,483608,67
+simongelvo,28 Years Later,2025,,3071,263098,1019234,22
+simongelvo,Marty Supreme,2025,,2313,188836,725969,29
+simongelvo,Freedom-Oleron,2001,,53,2277,1686,463
+simongelvo,Alter Ego,2026,,111,5408,19154,228
+simongelvo,Li'l Quinquin,2014,,,,,
+simongelvo,The Seed of the Sacred Fig,2024,,529,33608,124158,175
+simongelvo,Crash,1996,250892.0,1465,,,37
+simongelvo,Les Indésirables,2023,,90,4231,14901,750
+simongelvo,A History of Violence,2005,287166.0,3933,,,31
+regelegorila,Digger,2026,,443,27308,100403,97
+regelegorila,Leviticus,2026,,609,39628,146956,81
+regelegorila,NAZA,2026,,105,5067,17921,243
+regelegorila,The Social Reckoning,2026,,123,6098,21658,207
+regelegorila,Digger,2026,,443,27308,100403,97
+regelegorila,Kraken,2026,,13,440,1470,801
+regelegorila,Primetime,2026,,198,10644,38292,147
+regelegorila,A Girl’s Story,2026,,8,249,822,1043
+regelegorila,Heart of the Beast,2026,,322,18801,68534,113
+regelegorila,Pressure,2026,,517,32718,120795,88
+regelegorila,Sense and Sensibility,2026,,45,1880,6500,418
+regelegorila,Elephants in the Fog,2026,,9,286,947,974
+regelegorila,Teenage Sex and Death at Camp Miasma,2026,,331,19418,70833,109
+regelegorila,The Lives of Others,2006,,4323,392526,327367,38
+regelegorila,Son of Saul,2015,,1202,87799,89463,158
+regelegorila,Dead Ringers,1988,,1062,75957,91048,40
+regelegorila,Son of the White Mare,1981,24161.0,100,,,147
+regelegorila,Embrace of the Serpent,2015,,534,33980,33874,285
+regelegorila,The Bridges of Madison County,1995,,2458,202759,248615,29
+regelegorila,Autumn Sonata,1978,133331.0,739,,,20
+regelegorila,Carlito's Way,1993,200996.0,3631,,,10
+regelegorila,Resident Evil,2026,,1023,72703,273414,46
+regelegorila,The Invite,2026,,840,57731,215955,62
+regelegorila,Skinamarink,2022,226110.0,414,,,232
+regelegorila,Direct Action,2024,,4,111,359,4447
+regelegorila,Mayday,2026,,986,69636,261620,48
+regelegorila,The Rivals of Amziah King,2025,,116,5694,20191,220
+regelegorila,Forsaken,2026,,70,3153,11030,319
+regelegorila,The Dog Stars,2026,,311,18052,65741,116
+regelegorila,Kingdom of Heaven,2005,268938.0,5323,,,20
+regelegorila,Army of Darkness,1992,363502.0,3727,,,12
+regelegorila,Evil Dead,2013,462098.0,5425,,,49
+regelegorila,Evil Dead II,1987,495439.0,3711,,,8
+regelegorila,The Evil Dead,1981,668959.0,4788,,,3
+regelegorila,PlayTime,1967,120967.0,705,,,14
+regelegorila,Sunset Boulevard,1950,,3071,263098,324544,2
+regelegorila,Dunkirk,2017,2220569.0,18129,,,10
+regelegorila,Comédie-Française,2026,,107,5181,18330,238
+regelegorila,I Want Your Sex,2026,,108,5237,18536,234
+regelegorila,Nowhere,1997,101094.0,240,,,164
+regelegorila,Memento,2000,1970561.0,16935,,,2
+regelegorila,Mysterious Skin,2004,436858.0,1389,,,92
+regelegorila,The End of Oak Street,2026,,2169,175155,672206,20
+regelegorila,undertone,2025,,717,47969,178672,72
+regelegorila,Hamilton,2020,,170,8905,8607,331
+regelegorila,Un grand raccourci,2026,,13,440,1470,801
+regelegorila,Alien Shark,2022,,8,249,222,3622
+regelegorila,Three Colours: Blue,1993,295346.0,1975,,,29
+regelegorila,All of a Sudden,2026,,60,2633,9172,354
+regelegorila,R.M.N.,2022,,200,10770,10455,485
+picolifl,Wicker,2026,,5,144,468,1424
+picolifl,Iron Boy,2026,,21,771,2610,633
+picolifl,Casablanca,1942,918840.0,6297,,,1
+picolifl,Che Guevara: The Last Companions,2026,,7,213,701,1138
+picolifl,Elephants in the Fog,2026,,9,286,947,974
+picolifl,The Umbrellas of Cherbourg,1964,196805.0,920,,,8
+picolifl,Digger,2026,,443,27308,100403,97
+picolifl,Little Odessa,1994,,262,14771,17049,133
+picolifl,Another Day,2026,,64,2839,9908,344
+picolifl,Father Mother Sister Brother,2025,,356,21144,77283,187
+picolifl,A Man of His Time,2026,,51,2177,7550,383
+picolifl,T2 Trainspotting,2017,238768.0,3483,,,81
+picolifl,Tinker Tailor Soldier Spy,2011,210864.0,3044,,,76
+picolifl,The Reconquest,2016,2576.0,50,,,1351
+picolifl,Primetime,2026,,198,10644,38292,147
+picolifl,Alter Ego,2026,,111,5408,19154,228
+picolifl,Perfect Days,2023,643189.0,2119,,,65
+picolifl,Guru,2025,,328,19212,70065,111
+picolifl,Goodbye Cruel World,2026,,8,249,822,1043
+picolifl,The Invite,2026,,840,57731,215955,62
+picolifl,The Remains of the Day,1993,,1566,119648,144932,38
+picolifl,Heartstopper Forever,2026,,285,16299,59217,120
+picolifl,Call My Agent! The Movie,2026,,127,6331,22504,203
+picolifl,Akira,1988,873068.0,5079,,,7
+picolifl,Happiness,1998,131399.0,993,,,88
+picolifl,The Last Viking,2025,,263,14837,53788,245
+picolifl,Le Colonne della Colombo,,,,,,
+picolifl,Fjord,2026,,91,4286,15100,262
+picolifl,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+picolifl,We All Loved Each Other So Much,1974,,672,44465,52645,17
+picolifl,Who's Afraid of Virginia Woolf?,1966,111385.0,953,,,10
+picolifl,By the Grace of God,2018,,605,39324,39333,258
+picolifl,Late Shift,2025,,360,21423,78324,183
+picolifl,Bugonia,2025,,2526,209337,806701,26
+picolifl,Jackass Forever,2022,293680.0,997,,,133
+picolifl,Urchin,2025,,67,2996,10467,632
+picolifl,Bloody Milk,2017,,216,11784,11464,573
+picolifl,RRRrrrr!!!,2004,,1288,95192,76837,104
+picolifl,Mission: Impossible – Fallout,2018,,9482,983950,1060106,19
+picolifl,Troy,2004,609204.0,11631,,,9
+picolifl,Drive,2011,2091002.0,14149,,,5
+picolifl,Once Upon a Time Michel Legrand,2024,,3,79,254,5395
+picolifl,Together,2025,,1415,106264,403140,56
+picolifl,Léon : Au-delà de l’Or,2026,,1,22,68,7514
+picolifl,Trainspotting,1996,1346990.0,10775,,,2
+picolifl,Blue Velvet,1986,829350.0,4005,,,8
+picolifl,Don't Worry Darling,2022,,3121,268117,280330,47
+picolifl,The Conversation,1974,278979.0,2145,,,7
+picolifl,Scars We Love,2024,,35,1401,4811,1185
+picolifl,Interview with the Vampire,1994,627590.0,6677,,,9
+tanguytare,Wicker,2026,,5,144,468,1424
+tanguytare,À la folie,,,,,,
+tanguytare,Iron Boy,2026,,21,771,2610,633
+tanguytare,"Paris, Texas",1984,607896.0,2350,,,14
+tanguytare,Peking Opera Blues,1986,,90,4231,4745,186
+tanguytare,Leviticus,2026,,609,39628,146956,81
+tanguytare,Another Day,2026,,64,2839,9908,344
+tanguytare,Digger,2026,,443,27308,100403,97
+tanguytare,Hundreds of Beavers,2022,,348,20590,20289,226
+tanguytare,Weapons,2025,,4156,374844,1464046,7
+tanguytare,Murderball,2005,,113,5522,4174,393
+tanguytare,Primetime,2026,,198,10644,38292,147
+tanguytare,The Intouchables,2011,,18965,2214139,1921806,3
+tanguytare,Chronicle,2012,351353.0,5990,,,41
+tanguytare,The Invite,2026,,840,57731,215955,62
+tanguytare,Rose,2026,,56,2429,8445,367
+tanguytare,Acid City,2026,,,,,
+tanguytare,Akira,1988,873068.0,5079,,,7
+tanguytare,Wake in Fright,1971,45899.0,362,,,40
+tanguytare,Happiness,1998,131399.0,993,,,88
+tanguytare,Fjord,2026,,91,4286,15100,262
+tanguytare,Le Colonne della Colombo,,,,,,
+tanguytare,Call My Agent! The Movie,2026,,127,6331,22504,203
+tanguytare,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+tanguytare,Mercy,2026,,1778,138810,529869,29
+tanguytare,Case 137,2025,,303,17510,63722,214
+tanguytare,The Legendaries,2025,,29,1125,3841,528
+tanguytare,The Running Man,2025,,2068,165651,634913,33
+tanguytare,Dog 51,2025,,369,22051,80673,175
+tanguytare,Summer Beats,2025,,62,2736,9539,350
+tanguytare,Nouvelle Vague,2025,,295,16970,61713,218
+tanguytare,It Was Just an Accident,2025,,709,47343,176288,115
+tanguytare,In the Tall Grass,2019,274445.0,2491,,,96
+tanguytare,Eagles of the Republic,2025,,82,3795,13330,548
+tanguytare,I Saw the Devil,2010,297689.0,3201,,,62
+tanguytare,The Banshees of Inisherin,2022,1257278.0,3618,,,40
+tanguytare,Fame,1980,,540,34427,40521,29
+tanguytare,Life Is Beautiful,1997,,14337,1596086,2052488,4
+tanguytare,The Holy Mountain,1973,182944.0,1077,,,22
+tanguytare,Fear and Loathing in Las Vegas,1998,513587.0,5224,,,14
+tanguytare,Winnie the Pooh: Blood and Honey,2023,,1627,125119,476465,79
+tanguytare,Cape Fear,1991,365709.0,4061,,,6
+tanguytare,The Odyssey,2026,,4215,381077,1488959,4
+tanguytare,Dancer in the Dark,2000,227186.0,2099,,,56
+tanguytare,Junk Head,2017,,70,3153,2976,959
+tanguytare,In Waves,2026,,35,1401,4811,478
+tanguytare,"Mektoub, My Love: Canto Uno",2017,,350,20728,20429,412
+tanguytare,Blue Giant,2023,,104,5011,17717,685
+tanguytare,The Passion of Joan of Arc,1928,164569.0,1145,,,1
+tanguytare,The Lighthouse,2019,1617901.0,5862,,,40
+estherplasar,Iron Boy,2026,,21,771,2610,633
+estherplasar,Primetime,2026,,198,10644,38292,147
+estherplasar,Jennifer's Body,2009,1468965.0,4457,,,41
+estherplasar,Trainspotting,1996,1346990.0,10775,,,2
+estherplasar,Hôtel Minéral,2025,,1,22,68,13318
+estherplasar,486,2025,,,,,
+estherplasar,Shrek Forever After,2010,,8195,829569,703912,18
+estherplasar,Paprika,2006,561857.0,3039,,,54
+estherplasar,Jim Queen,2026,,95,4508,15898,257
+estherplasar,Melancholia,2011,434060.0,3969,,,55
+estherplasar,In Waves,2026,,35,1401,4811,478
+estherplasar,Party Girl,1995,,108,5237,5902,229
+estherplasar,Chungking Express,1994,708535.0,2324,,,24
+estherplasar,My 2 Cents,2026,,,,,
+estherplasar,Boogie Nights,1997,653574.0,3744,,,26
+estherplasar,Fallen Angels,1995,628600.0,1400,,,52
+estherplasar,The Leopard,1963,60880.0,988,,,10
+estherplasar,Raise the Red Lantern,1991,60585.0,833,,,43
+estherplasar,Dog Day Afternoon,1975,480772.0,3549,,,4
+estherplasar,Do the Right Thing,1989,553051.0,2113,,,18
+estherplasar,"Paris, Texas",1984,607896.0,2350,,,14
+estherplasar,Kes,1969,59743.0,466,,,19
+estherplasar,My Father's Shadow,2025,,55,2378,8264,727
+estherplasar,10 Things I Hate About You,1999,3379154.0,9244,,,8
+estherplasar,"One Sings, the Other Doesn't",1977,,126,6272,7098,83
+estherplasar,Ghost Dog: The Way of the Samurai,1999,149835.0,1490,,,63
+estherplasar,12 Angry Men,1957,1312847.0,10506,,,1
+estherplasar,Wings of Desire,1987,204338.0,1558,,,26
+estherplasar,Punch-Drunk Love,2002,660446.0,2903,,,38
+estherplasar,Trust Me: The False Prophet,2026,,,,,
+estherplasar,The Drama,2026,,1990,158365,606355,24
+estherplasar,In the Mood for Love,2000,876907.0,3425,,,33
+estherplasar,The King and the Mockingbird,1980,,429,26301,30765,43
+estherplasar,Badlands,1973,207298.0,1413,,,13
+estherplasar,The Usual Suspects,1995,,11872,1279950,1637590,3
+estherplasar,"Apolonia, Apolonia",2022,,27,1034,951,1615
+estherplasar,One Flew Over the Cuckoo's Nest,1975,1117895.0,11893,,,2
+estherplasar,The Reconquest,2016,2576.0,50,,,1351
+estherplasar,"Sorry, Baby",2025,,370,22121,80935,174
+estherplasar,Tales from Earthsea,2006,,1553,118487,96124,99
+estherplasar,Millennium Mambo,2001,72489.0,272,,,196
+estherplasar,Samuel,2024,,,,,
+estherplasar,All the President's Men,1976,231711.0,2183,,,6
+estherplasar,Mr. Nobody,2009,284752.0,6411,,,26
+estherplasar,Solaris,1972,245882.0,1928,,,2
+estherplasar,Volver,2006,,1991,158458,129416,74
+estherplasar,The Secret Agent,2025,,925,64623,242366,90
+estherplasar,Blue Velvet,1986,829350.0,4005,,,8
+estherplasar,Amores Perros,2000,265156.0,3040,,,36
+estherplasar,It Must Be Heaven,2019,,184,9769,9462,633
+crazykungfu,Street Fighter,2026,,149,7632,27246,174
+crazykungfu,A Man of His Time,2026,,51,2177,7550,383
+crazykungfu,The Purge: Election Year,2016,,5625,534126,567410,56
+crazykungfu,Digger,2026,,443,27308,100403,97
+crazykungfu,Another Day,2026,,64,2839,9908,344
+crazykungfu,Avengers: Endgame,2019,,29080,3650946,4054362,
+crazykungfu,Resident Evil,2026,,1023,72703,273414,46
+crazykungfu,Primetime,2026,,198,10644,38292,147
+crazykungfu,Special Section,1975,,55,2378,2632,155
+crazykungfu,The Blow,2026,,15,520,1745,747
+crazykungfu,Dawn of the Dead,1978,258430.0,2409,,,5
+crazykungfu,"Hail, Sarajevo",1993,,70,3153,3512,274
+crazykungfu,Un grand raccourci,2026,,13,440,1470,801
+crazykungfu,Frenzy,2015,,50,2127,1989,1279
+crazykungfu,Dossier 51,1978,,57,2480,2747,164
+crazykungfu,Salvation,2026,,15,520,1745,747
+crazykungfu,Running Time,1997,,42,1735,1906,415
+crazykungfu,The Dog Stars,2026,,311,18052,65741,116
+crazykungfu,First Reformed,2017,301671.0,1511,,,151
+crazykungfu,The Fall of Otrar,1991,,15,520,556,631
+crazykungfu,Four Lions,2010,143189.0,1349,,,144
+crazykungfu,Fjord,2026,,91,4286,15100,262
+crazykungfu,Solaris,1972,245882.0,1928,,,2
+crazykungfu,Morphine,2008,,94,4452,3348,595
+crazykungfu,Pacifiction,2022,,164,8538,8245,555
+crazykungfu,Transit,2018,,277,15765,15440,505
+crazykungfu,Brother,1997,,510,32200,37841,113
+crazykungfu,I Am a Hero,2015,,538,34278,34178,287
+crazykungfu,Bloody Sunday,2002,,376,22541,17599,186
+crazykungfu,The End of Oak Street,2026,,2169,175155,672206,20
+crazykungfu,RRR,2022,,1730,134435,138338,86
+crazykungfu,The Blade,1995,,129,6447,7301,215
+crazykungfu,Tiger on the Beat,1988,,74,3365,3754,248
+crazykungfu,Spider-Man: Brand New Day,2026,,5949,570295,2249103,2
+crazykungfu,Ip Man,2008,,4295,389553,324831,38
+crazykungfu,Deep Cover,1992,47533.0,281,,,110
+crazykungfu,Running on Karma,2003,,103,4955,3736,370
+crazykungfu,City of Life and Death,2009,,250,13983,10798,341
+crazykungfu,Lancelot of the Lake,1974,,118,5809,6562,91
+crazykungfu,Red Sorghum,1988,14400.0,262,,,119
+crazykungfu,Beijing 2008 Olympic Opening Ceremony,2008,,37,1496,1097,1001
+crazykungfu,Raise the Red Lantern,1991,60585.0,833,,,43
+crazykungfu,Apex,2026,,2019,161068,616947,22
+crazykungfu,Cargo,2017,78831.0,1922,,,119
+crazykungfu,War Dogs,2016,537703.0,5766,,,54
+crazykungfu,American History X,1998,,13048,1429507,1833606,2
+crazykungfu,Fifty Shades Freed,2018,,8455,860445,924177,25
+crazykungfu,Fifty Shades Darker,2017,,8034,810532,869367,36
+crazykungfu,Fifty Shades of Grey,2015,641147.0,12598,,,13
+crazykungfu,The Twilight Saga: Breaking Dawn – Part 2,2012,,9552,992454,845615,18
+lisakiwi,The Double Life of Véronique,1991,157565.0,927,,,41
+lisakiwi,Sinners,2025,,5392,508332,1999423,1
+tobiashottin,Saturday Night Fever,1977,217823.0,2169,,,8
+tobiashottin,Fjord,2026,,91,4286,15100,262
+tobiashottin,Rebels of the Neon God,1992,43944.0,163,,,182
+tobiashottin,Ratatouille,2007,4261300.0,19114,,,1
+tobiashottin,The Last Viking,2025,,263,14837,53788,245
+tobiashottin,Comédie-Française,2026,,107,5181,18330,238
+tobiashottin,The Odyssey,2026,,4215,381077,1488959,4
+tobiashottin,Tale of Tales,1979,,153,7872,8955,75
+tobiashottin,Contempt,1963,126717.0,1008,,,9
+tobiashottin,Vertiginous,2026,,50,2127,7373,392
+tobiashottin,Backrooms,2026,,3822,339844,1324347,6
+tobiashottin,Minions & Monsters,2026,,1305,96664,365920,38
+tobiashottin,A Year of School,2025,,37,1496,5142,466
+tobiashottin,Rocco and His Brothers,1960,49588.0,689,,,12
+tobiashottin,Jim Queen,2026,,95,4508,15898,257
+tobiashottin,Hen,2025,,40,1638,5645,444
+tobiashottin,The Banishment,2007,,183,9707,7433,404
+tobiashottin,Bouchra,2025,,12,401,1336,825
+tobiashottin,Obsession,2025,,6257,604990,2389188,2
+tobiashottin,DJ Ahmet,2025,,47,1979,6847,809
+tobiashottin,The Christophers,2025,,85,3957,13916,276
+tobiashottin,Pirates of the Caribbean: Dead Man's Chest,2006,,17735,2047069,1773581,1
+tobiashottin,Moebius,2013,13131.0,272,,,395
+tobiashottin,A City of Sadness,1989,,160,8295,9448,143
+tobiashottin,The French Connection,1971,227813.0,2242,,,5
+tobiashottin,Junk World,2025,,11,362,1204,1853
+tobiashottin,Fata Morgana,1971,,89,4176,4682,128
+tobiashottin,One Day in the Life of Andrei Arsenevich,1999,,12,401,425,1029
+tobiashottin,The World of Love,2025,,41,1686,5814,877
+tobiashottin,Bitter Christmas,2026,,158,8174,29228,167
+tobiashottin,The Swimmer,1968,,282,16099,18619,33
+tobiashottin,Twelve Monkeys,1995,570593.0,9486,,,5
+tobiashottin,Crescendo,2026,,41,1686,5814,438
+tobiashottin,Mulholland Drive,2001,1172795.0,7374,,,14
+tobiashottin,The Beloved,2026,,105,5067,17921,243
+tobiashottin,The Leopard,1963,60880.0,988,,,10
+tobiashottin,Il Divo,2008,,1209,88397,71230,126
+tobiashottin,A Close Shave,1995,127901.0,984,,,56
+tobiashottin,The Devil Wears Prada,2006,2701050.0,14355,,,6
+tobiashottin,Mirrored Mind,2005,,26,990,719,954
+tobiashottin,Michael,2026,,4604,422540,1654905,4
+tobiashottin,The Longest Nite,1998,,85,3957,4431,302
+tobiashottin,Pierrot le Fou,1965,180938.0,979,,,6
+tobiashottin,Yannick,2023,,753,50798,189463,150
+tobiashottin,The Second Act,2024,,326,19075,69554,242
+tobiashottin,My Father's Shadow,2025,,55,2378,8264,727
+tobiashottin,Juha,1999,,73,3312,3693,351
+tobiashottin,Fitzcarraldo,1982,96959.0,934,,,26
+tobiashottin,Viridiana,1961,57514.0,570,,,21
+tobiashottin,The Cruise,1998,,29,1125,1223,549
