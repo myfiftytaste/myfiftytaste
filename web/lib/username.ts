@@ -17,3 +17,7 @@ export const USERNAME_PATTERN = /^[A-Za-z0-9_]{2,15}$/;
 export function normalizeUsername(raw: string): string {
   return raw.trim().replace(/^@+/, "").toLowerCase();
 }
+
+export function letterboxdProfileUrl(username: string): string {
+  return `https://letterboxd.com/${encodeURIComponent(normalizeUsername(username))}/`;
+}

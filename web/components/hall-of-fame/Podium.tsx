@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { letterboxdProfileUrl } from "../../lib/username";
 
 export type PodiumEntry = {
   rank: 1 | 2 | 3;
@@ -36,18 +36,23 @@ export default function Podium({
       <p className="hofPodiumSub">{sub}</p>
       <div className="hofPodium">
         {entries.map((entry) => (
-          <Link
+          <a
             key={entry.rank}
-            href={`/profile/${encodeURIComponent(entry.username)}`}
+            href={letterboxdProfileUrl(entry.username)}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`${entry.username}, ${entry.metricLabel}, rang ${entry.rank} : profil Letterboxd (nouvel onglet)`}
             className={`hofStep hofStep${entry.rank}`}
           >
             <div className="hofAvatar">{initials(entry.username)}</div>
-            <div className="hofPseudo">{entry.username}</div>
+            <div className="hofPseudo">
+              {entry.username} <span aria-hidden="true">↗</span>
+            </div>
             <div className="hofMetric">{entry.metricLabel}</div>
             <div className="hofRiser">
               <span>{entry.rank}</span>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </div>
