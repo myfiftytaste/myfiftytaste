@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { NextRequest } from "next/server";
 import { Pool } from "pg";
 
@@ -73,6 +74,11 @@ export function clientIp(request: NextRequest): string {
 /** Incrémente le compteur de la fenêtre courante pour cette IP (la remet à 1 si la
  * fenêtre précédente est expirée) et renvoie true si la requête reste sous la limite. */
 export async function withinRateLimit(pool: Pool, ip: string): Promise<boolean> {
+  // Empreinte plutôt qu'IP en clair (RGPD). Salée avec DATABASE_URL, secret déjà
+  // présent côté serveur : sans sel, les ~4 milliards d'IPv4 se retrouveraient
+  // par force brute. Les fenêtres de plus d'un jour sont purgées au passage.
+  const key = createHash("sha256").update(`${connectionString()}|${ip}`).digest("hex");
+  await pool.query("DELETE FROM api_rate_limit WHERE window_start < now() - interval '1 day'");
   const result = await pool.query<{ request_count: number }>(
     `INSERT INTO api_rate_limit (ip_address, window_start, request_count)
      VALUES ($1, now(), 1)
@@ -86,7 +92,7 @@ export async function withinRateLimit(pool: Pool, ip: string): Promise<boolean> 
          ELSE api_rate_limit.window_start
        END
      RETURNING request_count`,
-    [ip, RATE_LIMIT_WINDOW_MINUTES],
+    [key, RATE_LIMIT_WINDOW_MINUTES],
   );
   const count = result.rows[0]?.request_count ?? 0;
   return count <= RATE_LIMIT_MAX_REQUESTS;
