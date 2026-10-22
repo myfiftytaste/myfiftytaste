@@ -2,7 +2,10 @@
 persisted "earned" badges.
 
 Usage:
-    python scripts/attribute_badges.py <month YYYY-MM>
+    python scripts/attribute_badges.py [month YYYY-MM]
+
+    Sans argument : le mois qui vient de se terminer (lancé le 1er du mois par
+    .github/workflows/monthly-badges.yml).
 
     Run this only for a month that has ALREADY ended (e.g. run on the 1st of
     September for "2026-08"), never for the current, still-open month —
@@ -20,6 +23,7 @@ Output:
 
 from __future__ import annotations
 
+import re
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
@@ -38,6 +42,12 @@ CATEGORY_LABELS = {
     "sorties_annee": "Sorties de l'année",
 }
 
+# Règles validées le 22/10/2026 (backlog V3, lot 6) : pas de badges pour un mois
+# à moins de 3 inscrits ; un badge de continent demande au moins 3 films de ce
+# continent. Un même pseudo peut cumuler plusieurs badges le même mois.
+MIN_PARTICIPANTS = 3
+MIN_CONTINENT_FILMS = 3
+
 MONTH_NAMES_FR = {
     1: "Janvier", 2: "Février", 3: "Mars", 4: "Avril", 5: "Mai", 6: "Juin",
     7: "Juillet", 8: "Août", 9: "Septembre", 10: "Octobre", 11: "Novembre", 12: "Décembre",
@@ -51,6 +61,8 @@ def month_label(month: str) -> str:
 
 def attribute_badges_for_month(month: str) -> dict[str, int]:
     rankings = build_rankings(month)
+    if rankings["participant_count"] < MIN_PARTICIPANTS:
+        return {"users_awarded": 0, "badges_written": 0, "participants": rankings["participant_count"]}
     label = month_label(month)
 
     # (username normalisé, label, category, rank) — username vient des
@@ -71,6 +83,8 @@ def attribute_badges_for_month(month: str) -> dict[str, int]:
             )
 
     for continent, winner in rankings["continent_winners"].items():
+        if winner["film_count"] < MIN_CONTINENT_FILMS:
+            continue
         new_badges.append((winner["username"].lower(), f"Top {continent} — {label}", f"continent:{continent}", 1))
 
     conn = connect()
@@ -92,15 +106,19 @@ def attribute_badges_for_month(month: str) -> dict[str, int]:
             attributed_count += 1
             awarded_users.add(username)
 
-    return {"users_awarded": len(awarded_users), "badges_written": attributed_count}
+    return {"users_awarded": len(awarded_users), "badges_written": attributed_count, "participants": rankings["participant_count"]}
 
 
 def main() -> None:
-    if len(sys.argv) != 2:
-        raise SystemExit("Usage: python scripts/attribute_badges.py <month YYYY-MM>")
+    if len(sys.argv) > 2:
+        raise SystemExit("Usage: python scripts/attribute_badges.py [month YYYY-MM]")
 
-    month = sys.argv[1]
-    current_month = datetime.now(UTC).strftime("%Y-%m")
+    now = datetime.now(UTC)
+    current_month = now.strftime("%Y-%m")
+    previous_month = f"{now.year - 1}-12" if now.month == 1 else f"{now.year}-{now.month - 1:02d}"
+    month = sys.argv[1] if len(sys.argv) == 2 else previous_month
+    if not re.fullmatch(r"\d{4}-(0[1-9]|1[0-2])", month):
+        raise SystemExit(f"Mois invalide : {month!r} (format attendu AAAA-MM).")
     if month >= current_month:
         raise SystemExit(
             f"Refusing to attribute badges for {month}: that month isn't closed yet "
@@ -108,6 +126,9 @@ def main() -> None:
         )
 
     result = attribute_badges_for_month(month)
+    if result["participants"] < MIN_PARTICIPANTS:
+        print(f"{month} : {result['participants']} inscrit(s) au Hall of Fame, moins de {MIN_PARTICIPANTS} : aucun badge.")
+        return
     print(f"Attributed badges for {month}: {result['badges_written']} badge(s) across {result['users_awarded']} user(s).")
 
 
