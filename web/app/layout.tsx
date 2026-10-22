@@ -8,9 +8,8 @@ const SITE_DESCRIPTION = "Un profil cinéma construit à partir de ton activité
 export const metadata: Metadata = {
   // Nécessaire pour que l'URL de l'image Open Graph ci-dessous soit résolue
   // en absolu (WhatsApp/Discord ne suivent pas les chemins relatifs).
-  // L'URL du site reste myfiftytaste.vercel.app pour l'instant (fifty.vercel.app
-  // déjà pris) — sans lien avec le nom affiché.
-  metadataBase: new URL("https://myfiftytaste.vercel.app"),
+  // Domaine officiel depuis le 22/10/2026 (myfiftytaste.vercel.app reste actif).
+  metadataBase: new URL("https://50films.fr"),
   title: SITE_NAME,
   description: SITE_DESCRIPTION,
   openGraph: {
