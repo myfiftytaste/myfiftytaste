@@ -3834,3 +3834,12 @@ h1 {
     scroll-snap-align: start;
   }
 }
+
+.radar-score-comparison {
+  display: block;
+  margin: 6px 0 10px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-style: normal;
+  font-weight: 700;
+}

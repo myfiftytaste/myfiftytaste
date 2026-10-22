@@ -728,6 +728,9 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "median_views": mainstream_median.get("median_views"),
             "films_counted": mainstream_median.get("films_counted"),
             "films_estimated": mainstream_median.get("films_estimated"),
+            "comparison": mainstream_estimate.comparison(
+                mainstream_median["median_views"], mainstream_estimate.REFERENCE_MEDIAN_VIEWS, "Plus mainstream", "Moins mainstream"
+            ) if mainstream_median.get("median_views") else None,
             "label": "Popularité moyenne",
             "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
             "data_source": f"{social_count} films with Megabank social stats",
@@ -736,6 +739,9 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         "oldness": {
             "value_5": oldness_value,
             "raw_value": average_age,
+            "comparison": mainstream_estimate.comparison(
+                average_age, mainstream_estimate.REFERENCE_AGES, "Plus nostalgique", "Moins nostalgique"
+            ) if mainstream_median.get("median_views") and average_age is not None else None,
             "average_year": average_year,
             "earliest_year": earliest_year,
             "latest_year": latest_year,
@@ -756,6 +762,9 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "value_5": reviewness_value,
             "raw_value": review_count,
             "review_count": review_count,
+            "comparison": mainstream_estimate.comparison(
+                review_count, mainstream_estimate.REFERENCE_REVIEW_COUNTS, "Laisse plus de reviews", "Laisse moins de reviews"
+            ) if mainstream_median.get("median_views") else None,
             "review_rate": review_rate,
             "label": REVIEWNESS_LABELS[reviewness_value],
             "description": REVIEWNESS_DESCRIPTIONS[reviewness_value],
