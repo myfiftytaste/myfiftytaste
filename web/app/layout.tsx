@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import DebugScroll from "../components/DebugScroll";
 import VisualThemeProvider from "../components/VisualThemeProvider";
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="fr">
       <body>
         <VisualThemeProvider>{children}</VisualThemeProvider>
+        <DebugScroll />
       </body>
     </html>
   );
