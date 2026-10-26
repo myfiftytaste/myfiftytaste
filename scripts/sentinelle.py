@@ -38,7 +38,7 @@ def main() -> int:
         """
         SELECT count(*) AS n FROM job
         WHERE status = 'error' AND finished_at > now() - interval '24 hours'
-          AND error_code <> ALL(%s)
+          AND (error_code IS NULL OR error_code <> ALL(%s))
         """,
         (list(USER_ERROR_CODES),),
     ).fetchone()["n"]
