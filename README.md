@@ -120,7 +120,7 @@ ne peuvent jamais récupérer le même job), exécute les 8 étapes du pipeline 
 mettant à jour `current_step`/`step_label` au fil de l'eau, puis écrit le
 résultat dans `profile_cache`. Modes :
 
-- `--drain` : traite les jobs tant qu'il y en a, puis s'arrête (celui du workflow) ;
+- `--drain` : traite les jobs tant qu'il y en a (6 minutes au plus), puis s'arrête (celui du workflow) ;
 - `--once` : un seul job, puis s'arrête — pratique pour vérifier en local ;
 - sans option : boucle infinie, interroge la file toutes les 3 s.
 

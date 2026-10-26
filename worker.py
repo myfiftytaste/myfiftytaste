@@ -66,6 +66,11 @@ from build_monthly_snapshot import build_snapshot, current_month  # noqa: E402
 
 POLL_INTERVAL_SECONDS = 3
 
+# --drain ne prend plus de nouveau job passé ce délai : le workflow GitHub est coupé à 8 min
+# (worker.yml), et un job coupé en plein calcul resterait « running » jusqu'au balayage des zombies.
+# Les jobs restants seront pris par un autre run : chaque job créé réveille le workflow.
+DRAIN_MAX_SECONDS = 6 * 60
+
 # Un job 'running' depuis plus longtemps que ça est considéré zombie (le
 # worker qui le traitait a été tué, typiquement un run GitHub Actions annulé ou arrêté par son timeout
 # en plein pipeline) et repasse en 'error'. 15 min = marge au-dessus du pire
@@ -459,7 +464,11 @@ def main() -> None:
     mode = " (mode --once)" if once else " (mode --drain)" if drain else ""
     print("Worker démarré, en attente de jobs 'queued'..." + mode, flush=True)
 
+    drain_deadline = time.monotonic() + DRAIN_MAX_SECONDS
     while not _shutdown_requested:
+        if drain and time.monotonic() > drain_deadline:
+            print("Limite de temps du mode --drain atteinte, la suite sera traitée par un autre run.", flush=True)
+            break
         sweep_zombie_jobs(conn)
         job = claim_next_job(conn)
         if job is None:

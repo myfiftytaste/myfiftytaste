@@ -34,7 +34,7 @@ jobs:
           restore-keys: |
             tmdb-cache-${{ steps.month.outputs.value }}-
 
-      # Traite les jobs tant qu'il y en a, puis s'arrête. Pas de `concurrency:` : il
+      # Traite les jobs tant qu'il y en a (6 min max, voir DRAIN_MAX_SECONDS), puis s'arrête. Pas de `concurrency:` : il
       # sérialiserait les réveils parallèles, or chaque réveil (un par job créé) doit pouvoir
       # démarrer tout de suite ; claim_next_job (SKIP LOCKED) évite déjà les doublons.
       - name: Vide la file

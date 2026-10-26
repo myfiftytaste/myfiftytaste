@@ -28,5 +28,8 @@ web/.chrome-css-check/
 css-check.png
 web/css-check.png
 
-# Flux RSS brut gardé 10 min entre les étapes 1 et 4 (scripts/build_user_wrapped.py).
-data/output/*_rss.xml
+# Sorties du pipeline : profils de vraies personnes (et flux RSS bruts gardés 10 min), jamais
+# versionnés (audit du 26/10/2026, #6). Les fixtures qa_* restent suivies : le test QA en dépend.
+data/output/*
+!data/output/qa_*
+data/audit/*_v1_smoke_test.md
