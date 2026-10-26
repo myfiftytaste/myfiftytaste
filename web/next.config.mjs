@@ -19,6 +19,9 @@ loadEnv({ path: path.join(__dirname, "..", ".env"), quiet: true });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Coupe /_next/image : la plupart des avis npm audit restants sur next 14
+  // visent l'optimiseur d'images, et la montée en 15/16 est un chantier à part.
+  images: { unoptimized: true },
   // Empêche d'afficher Fifty dans un cadre invisible d'un autre site (audit #17).
   async headers() {
     return [

@@ -1,12 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import {
-  clientIp,
-  getPool,
-  normalizeUsername,
-  RATE_LIMIT_MESSAGE,
-  USERNAME_PATTERN,
-  withinRateLimit,
-} from "../../../lib/db";
+import { clientIp, getPool, normalizeUsername, USERNAME_PATTERN, withinRateLimit } from "../../../lib/db";
+
+const FEEDBACK_RATE_LIMIT_MESSAGE = "Beaucoup de retours envoyés depuis ta connexion, merci ! Réessaie dans quelques minutes.";
 
 // POST /api/feedback — un champ par sujet plutôt qu'un pavé unique
 // (migrations/003_generation_log_feedback.sql), pour rester exploitable en
@@ -84,8 +79,9 @@ export async function POST(request: NextRequest) {
   }
 
   const pool = getPool();
-  if (!(await withinRateLimit(pool, clientIp(request)))) {
-    return NextResponse.json({ error: RATE_LIMIT_MESSAGE }, { status: 429 });
+  // Préfixe "feedback|" : même table, mais un compteur à part de celui des profils.
+  if (!(await withinRateLimit(pool, `feedback|${clientIp(request)}`))) {
+    return NextResponse.json({ error: FEEDBACK_RATE_LIMIT_MESSAGE }, { status: 429 });
   }
   await pool.query(
     `INSERT INTO feedback (
