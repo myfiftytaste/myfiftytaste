@@ -12,15 +12,19 @@ Boucle infinie (runbook, phase 2) :
     passe en 'done'
     en cas d'échec : 'error' + error_code
 
-À lancer et vérifier EN LOCAL avant tout déploiement Railway :
+Où il tourne : un workflow GitHub Actions (.github/workflows/worker.yml), réveillé à la
+demande par POST /api/profile (workflow_dispatch) et, en secours, par un cron. Chaque réveil
+lance `python worker.py --drain` : il traite les jobs tant qu'il y en a, puis s'arrête.
+Sans option, la boucle est infinie (usage local) ; `--once` ne traite qu'un job.
+
+À vérifier EN LOCAL avant de toucher au workflow :
     1. insérer un job 'queued' à la main dans Neon
-    2. python worker.py
+    2. python worker.py --drain
     3. observer current_step progresser de 1 à 8, puis le profil apparaître
        dans profile_cache
 
-Root Directory Railway (phase 3 du runbook) : ce fichier vit à la racine du
-dépôt, comme scripts/, data/ et requirements.txt — pas de sous-dossier
-"moteur" séparé du monorepo. Start command : `python worker.py`.
+Les logs d'un workflow sont publics (dépôt public) : jamais de pseudo dedans, seulement
+l'identifiant du job (voir redact()).
 
 Classification des erreurs : distinction fine des 5 error_code à partir des
 messages émis par les scripts existants (build_user_wrapped.py notamment) —
@@ -63,7 +67,7 @@ from build_monthly_snapshot import build_snapshot, current_month  # noqa: E402
 POLL_INTERVAL_SECONDS = 3
 
 # Un job 'running' depuis plus longtemps que ça est considéré zombie (le
-# worker qui le traitait a été tué, typiquement par un redéploiement Railway
+# worker qui le traitait a été tué, typiquement un run GitHub Actions annulé ou arrêté par son timeout
 # en plein pipeline) et repasse en 'error'. 15 min = marge au-dessus du pire
 # cas réaliste : 2 fetch Letterboxd avec leur backoff plafonné (jusqu'à
 # ~30 s chacun) + l'enrichissement TMDB de 50 films. 10 min s'est révélé trop
@@ -143,7 +147,7 @@ def claim_next_job(conn: psycopg.Connection) -> Optional[dict[str, Any]]:
 
 def sweep_zombie_jobs(conn: psycopg.Connection) -> None:
     """Repasse en 'error' tout job 'running' depuis plus de
-    ZOMBIE_JOB_TIMEOUT_MINUTES : sans ça, un redéploiement Railway en plein
+    ZOMBIE_JOB_TIMEOUT_MINUTES : sans ça, un run GitHub Actions arrêté en plein
     job laisse l'utilisateur devant un écran de chargement éternel, puisque
     plus aucun worker ne mettra jamais ce job à jour.
 
@@ -164,7 +168,7 @@ def sweep_zombie_jobs(conn: psycopg.Connection) -> None:
         (ZOMBIE_JOB_TIMEOUT_MINUTES,),
     ).fetchall()
     for zombie in zombies:
-        print(f"[job {zombie['id']}] zombie ({zombie['username']}) repassé en error", file=sys.stderr, flush=True)
+        print(f"[job {zombie['id']}] zombie repassé en error", file=sys.stderr, flush=True)
 
 
 def update_progress(conn: psycopg.Connection, job_id: str, index: int, label: str) -> None:
@@ -237,12 +241,12 @@ def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: st
     try:
         freeze_monthly_snapshot(conn, job, username)
     except Exception as error:  # noqa: BLE001 - best-effort assumé, voir commentaire ci-dessus
-        print(f"[job {job['id']}] échec du gel du snapshot HOF (non bloquant) : {error}", file=sys.stderr, flush=True)
+        print(f"[job {job['id']}] échec du gel du snapshot HOF (non bloquant) : {redact(str(error), username)}", file=sys.stderr, flush=True)
 
     try:
         write_generation_log(conn, username, display_profile, metrics, recommendations, wrapped_films)
     except Exception as error:  # noqa: BLE001 - best-effort assumé, voir commentaire ci-dessus
-        print(f"[job {job['id']}] échec de l'écriture generation_log (non bloquant) : {error}", file=sys.stderr, flush=True)
+        print(f"[job {job['id']}] échec de l'écriture generation_log (non bloquant) : {redact(str(error), username)}", file=sys.stderr, flush=True)
 
 
 def write_generation_log(
@@ -387,21 +391,29 @@ def freeze_monthly_snapshot(conn: psycopg.Connection, job: dict[str, Any], usern
     )
 
 
+def redact(text: str, *names: Optional[str]) -> str:
+    """Remplace chaque pseudo par <pseudo> : les logs du worker sont publics (audit #6)."""
+    for name in {n for n in names if n}:
+        text = re.sub(re.escape(name), "<pseudo>", text, flags=re.IGNORECASE)
+    return text
+
+
 def finalize_error(conn: psycopg.Connection, job: dict[str, Any], error_code: str, message: str) -> None:
     conn.execute(
         "UPDATE job SET status = 'error', error_code = %s, finished_at = now() WHERE id = %s",
         (error_code, job["id"]),
     )
+    message = redact(message, job.get("username"), job.get("display_username"))
     print(f"[job {job['id']}] échec ({error_code}) : {message}", file=sys.stderr, flush=True)
 
 
 def process_job(conn: psycopg.Connection, job: dict[str, Any]) -> None:
     job_id = job["id"]
     username = job["display_username"] or job["username"]
-    print(f"\n=== job {job_id} : {username} ===", flush=True)
+    print(f"\n=== job {job_id} ===", flush=True)
 
     if not USERNAME_RE.fullmatch(username):
-        finalize_error(conn, job, "user_not_found", f"username invalide : {username!r}")
+        finalize_error(conn, job, "user_not_found", "pseudo invalide")
         return
 
     for index, (label, script, extra) in enumerate(PIPELINE_STEPS, start=1):
@@ -410,10 +422,10 @@ def process_job(conn: psycopg.Connection, job: dict[str, Any]) -> None:
 
         result = run_step(username, script, extra)
         if result.stdout:
-            print(result.stdout, end="")
+            print(redact(result.stdout, username), end="")
         if result.returncode != 0:
             if result.stderr:
-                print(result.stderr, file=sys.stderr, end="")
+                print(redact(result.stderr, username), file=sys.stderr, end="")
             error_code = classify_error(result.stderr or "")
             finalize_error(conn, job, error_code, f"étape {index}/8 ({script}), code {result.returncode}")
             return
@@ -424,7 +436,7 @@ def process_job(conn: psycopg.Connection, job: dict[str, Any]) -> None:
         finalize_error(conn, job, "internal_error", str(error))
         return
 
-    print(f"[job {job_id}] terminé : {username}", flush=True)
+    print(f"[job {job_id}] terminé", flush=True)
 
 
 _shutdown_requested = False
@@ -441,15 +453,17 @@ def main() -> None:
     signal.signal(signal.SIGTERM, _request_shutdown)
 
     once = "--once" in sys.argv[1:]
+    drain = "--drain" in sys.argv[1:]
 
     conn = connect()
-    print("Worker démarré, en attente de jobs 'queued'..." + (" (mode --once)" if once else ""), flush=True)
+    mode = " (mode --once)" if once else " (mode --drain)" if drain else ""
+    print("Worker démarré, en attente de jobs 'queued'..." + mode, flush=True)
 
     while not _shutdown_requested:
         sweep_zombie_jobs(conn)
         job = claim_next_job(conn)
         if job is None:
-            if once:
+            if once or drain:
                 print("Aucun job en attente.", flush=True)
                 break
             time.sleep(POLL_INTERVAL_SECONDS)
@@ -461,7 +475,11 @@ def main() -> None:
             # process_job capture déjà ses propres échecs ; ceci ne devrait
             # normalement jamais s'exécuter. Sans ce filet, un bug ici
             # laisserait le job coincé en 'running' pour toujours.
-            print(f"[job {job['id']}] erreur worker inattendue : {error}", file=sys.stderr, flush=True)
+            print(
+                f"[job {job['id']}] erreur worker inattendue : {redact(str(error), job.get('username'), job.get('display_username'))}",
+                file=sys.stderr,
+                flush=True,
+            )
             try:
                 finalize_error(conn, job, "internal_error", str(error))
             except Exception:  # noqa: BLE001

@@ -4,7 +4,7 @@
 // proposent que "essayer un autre pseudo" ; les 2 codes transitoires
 // (rate_limited, internal_error) proposent aussi "réessayer" en premier.
 
-type ErrorCode = "user_not_found" | "profile_private" | "no_films" | "rate_limited" | "internal_error";
+type ErrorCode = "user_not_found" | "profile_private" | "no_films" | "rate_limited" | "internal_error" | "timeout";
 
 const ERROR_CONTENT: Record<ErrorCode, { title: string; message: string; showRetry: boolean }> = {
   user_not_found: {
@@ -32,6 +32,13 @@ const ERROR_CONTENT: Record<ErrorCode, { title: string; message: string; showRet
   internal_error: {
     title: "We’ll be back.",
     message: "On n’arrive pas à générer ce profil. Si ça persiste, dis-le-nous via le feedback.",
+    showRetry: true,
+  },
+  // Code posé côté navigateur par la page profil (plus de 10 min d'attente), pas par le worker.
+  // Titre repris de internal_error : à ajuster si tu veux une accroche dédiée.
+  timeout: {
+    title: "We’ll be back.",
+    message: "Le chargement prend plus de temps que prévu. Réessaie dans quelques minutes.",
     showRetry: true,
   },
 };

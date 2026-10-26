@@ -27,3 +27,6 @@ data/cache/.letterboxd_last_request
 web/.chrome-css-check/
 css-check.png
 web/css-check.png
+
+# Flux RSS brut gardé 10 min entre les étapes 1 et 4 (scripts/build_user_wrapped.py).
+data/output/*_rss.xml

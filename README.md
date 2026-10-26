@@ -25,14 +25,18 @@ modèle.
 
 | Variable | Utilisée par | Remarque |
 |---|---|---|
-| `TMDB_API_KEY` | pipeline (étapes 3 et 4) | jamais exposée au frontend |
+| `TMDB_API_KEY` | pipeline (étapes 3 et 6) | jamais exposée au frontend |
 | `DATABASE_URL` | migrations, worker, routes API | Postgres |
+| `GH_dispatch_token` | route `POST /api/profile` | jeton GitHub qui réveille le worker ; Vercel uniquement |
+| `HOF_COOKIE_SECRET` | routes API (cookie `fifty_owner`) | signe le consentement Hall of Fame ; `openssl rand -hex 32` |
 
-En production, ces variables se saisissent dans les panneaux « Variables » de
-l'hébergeur, jamais dans le code :
+En production, ces variables se saisissent dans les réglages de l'hébergeur,
+jamais dans le code :
 
-- **Railway** (worker) : `DATABASE_URL` (chaîne Neon **directe**) + `TMDB_API_KEY`
-- **Vercel** (frontend) : `DATABASE_URL` (chaîne Neon **poolée**) uniquement
+- **GitHub Actions** (worker et badges du mois), Settings → Secrets and
+  variables → Actions : `DATABASE_URL` (chaîne Neon **directe**) + `TMDB_API_KEY`
+- **Vercel** (frontend), Settings → Environment Variables : `DATABASE_URL`
+  (chaîne Neon **poolée**), `GH_dispatch_token`, `HOF_COOKIE_SECRET`
 
 La distinction poolée / directe compte : le pooler évite la saturation de
 connexions depuis les fonctions serverless, mais supporte mal le DDL et les
@@ -108,16 +112,25 @@ Enchaîne les 8 étapes et écrit dans `data/output/`.
 ## Worker (V1 dynamique)
 
 ```bash
-python worker.py
+python worker.py --drain
 ```
 
-Boucle infinie : prend le plus ancien job `queued` en base (verrouillage
-atomique, deux workers ne peuvent jamais récupérer le même job), exécute les
-8 étapes du pipeline en mettant à jour `current_step`/`step_label` au fil de
-l'eau, puis écrit le résultat dans `profile_cache`. `python worker.py --once`
-traite un seul job puis s'arrête — pratique pour vérifier en local sans
-laisser tourner la boucle.
+Prend le plus ancien job `queued` en base (verrouillage atomique, deux workers
+ne peuvent jamais récupérer le même job), exécute les 8 étapes du pipeline en
+mettant à jour `current_step`/`step_label` au fil de l'eau, puis écrit le
+résultat dans `profile_cache`. Modes :
 
-C'est ce process qui tourne comme service Railway en production
-(`DATABASE_URL` en chaîne **directe**, `TMDB_API_KEY`, aucun domaine public
-attribué : il ne reçoit aucune requête HTTP, il consomme la file en base).
+- `--drain` : traite les jobs tant qu'il y en a, puis s'arrête (celui du workflow) ;
+- `--once` : un seul job, puis s'arrête — pratique pour vérifier en local ;
+- sans option : boucle infinie, interroge la file toutes les 3 s.
+
+En production il tourne dans un workflow **GitHub Actions**
+(`.github/workflows/worker.yml`) : chaque nouveau job réveille le workflow
+(`workflow_dispatch`, via `GH_dispatch_token`), et un cron sert de filet de
+secours. Aucun serveur permanent, aucune requête HTTP entrante : il consomme la
+file en base. Les logs d'un workflow sont publics (dépôt public) : le worker n'y
+écrit jamais de pseudo, seulement l'identifiant du job.
+
+Le jeton `GH_dispatch_token` expire : s'il est périmé, les jobs restent
+`queued` jusqu'au prochain passage du cron (plusieurs heures). Garder sa date
+d'expiration sous les yeux.

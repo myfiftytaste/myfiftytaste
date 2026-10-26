@@ -142,7 +142,16 @@ def _wait_for_letterboxd_slot() -> None:
     LETTERBOXD_RATE_LIMIT_STATE_FILE.write_text(str(time.time()), encoding="utf-8")
 
 
+# L'étape 1 enregistre le flux brut, l'étape 4 le relit au lieu de le retélécharger :
+# moitié moins de requêtes vers Letterboxd (audit du 26/10/2026, #8).
+RSS_CACHE_MAX_AGE_SECONDS = 10 * 60
+
+
 def fetch_rss(username: str) -> feedparser.FeedParserDict:
+    cache_file = OUTPUT_DIR / f"{username}_rss.xml"
+    if cache_file.exists() and time.time() - cache_file.stat().st_mtime < RSS_CACHE_MAX_AGE_SECONDS:
+        return feedparser.parse(cache_file.read_text(encoding="utf-8"))
+
     url = f"https://letterboxd.com/{username}/rss/"
     last_error = "raison inconnue"
 
@@ -154,6 +163,10 @@ def fetch_rss(username: str) -> feedparser.FeedParserDict:
             last_error = f"erreur réseau : {exc}"
         else:
             if resp.status_code == 200:
+                OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+                tmp_file = cache_file.with_suffix(".tmp")  # écrit puis renommé : jamais un flux à moitié écrit
+                tmp_file.write_text(resp.text, encoding="utf-8")
+                tmp_file.replace(cache_file)
                 return feedparser.parse(resp.text)
             if resp.status_code not in LETTERBOXD_RETRYABLE_STATUS_CODES:
                 # Définitif (404, 403, 410...) : pas de retry, on classe tout de suite.
