@@ -1,0 +1,25 @@
+name: Sentinelle
+
+# Alerte par e-mail (échec d'un workflow planifié) si la file est bloquée ou si les erreurs
+# techniques s'accumulent. Ne s'exécute que depuis la branche par défaut (main).
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  sentinelle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python scripts/sentinelle.py
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
