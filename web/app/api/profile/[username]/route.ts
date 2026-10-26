@@ -12,7 +12,13 @@ import { getPool, normalizeUsername, USERNAME_PATTERN } from "../../../../lib/db
 // d'un champ plutôt que d'ajouter un aller-retour réseau de plus.
 
 export async function GET(_request: NextRequest, { params }: { params: { username: string } }) {
-  const username = normalizeUsername(decodeURIComponent(params.username));
+  let decoded: string;
+  try {
+    decoded = decodeURIComponent(params.username);
+  } catch {
+    return NextResponse.json({ error: "Pseudo invalide." }, { status: 400 });
+  }
+  const username = normalizeUsername(decoded);
 
   if (!USERNAME_PATTERN.test(username)) {
     return NextResponse.json({ error: "Pseudo invalide." }, { status: 400 });

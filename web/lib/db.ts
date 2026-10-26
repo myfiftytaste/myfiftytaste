@@ -62,6 +62,8 @@ export function isFresh(generatedAt: Date): boolean {
 // stricte, et un message qui ne fait pas peser la faute sur l'utilisateur.
 export const RATE_LIMIT_MAX_REQUESTS = 5;
 export const RATE_LIMIT_WINDOW_MINUTES = 10;
+export const RATE_LIMIT_MESSAGE =
+  "Tu n'es pas le seul cowboy en ville. Trop de profils lancés depuis ta connexion : patiente quelques minutes.";
 
 /** x-forwarded-for est posé de façon fiable par Vercel ; ce n'est pas exploitable côté
  * navigateur (jamais exposé au client), donc pas de risque de usurpation depuis le front. */

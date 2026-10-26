@@ -1,6 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getBadgesForUser } from "../../../lib/badges";
-import { clientIp, getPool, isFresh, normalizeUsername, USERNAME_PATTERN, withinRateLimit } from "../../../lib/db";
+import {
+  clientIp,
+  getPool,
+  isFresh,
+  normalizeUsername,
+  RATE_LIMIT_MESSAGE,
+  USERNAME_PATTERN,
+  withinRateLimit,
+} from "../../../lib/db";
 
 // POST /api/profile — architecture-v1-dynamique.md section 3.
 //
@@ -26,12 +34,14 @@ import { clientIp, getPool, isFresh, normalizeUsername, USERNAME_PATTERN, within
 // Nom de variable en minuscules (GH_dispatch_token, pas GH_DISPATCH_TOKEN) :
 // c'est le nom exact tel que créé côté Vercel, non modifiable depuis là-bas —
 // le code s'aligne dessus plutôt que l'inverse.
-// Diagnostic (05/10/2026) : la fonction renvoie un court statut ("204" = OK,
-// "no_token", "401 ...", etc.), exposé dans le champ "dispatch" de la réponse
-// pour voir ce que GitHub répond réellement. Aucun secret n'y figure.
-async function triggerWorkerDispatch(): Promise<string> {
+// Le statut de GitHub n'est plus renvoyé au public (audit du 26/10/2026, #7) :
+// un échec va dans les logs serveur (console.error), jamais le jeton.
+async function triggerWorkerDispatch(): Promise<void> {
   const token = process.env.GH_dispatch_token;
-  if (!token) return "no_token";
+  if (!token) {
+    console.error("worker dispatch: GH_dispatch_token absent");
+    return;
+  }
   try {
     const res = await fetch(
       "https://api.github.com/repos/myfiftytaste/myfiftytaste/actions/workflows/worker.yml/dispatches",
@@ -46,10 +56,9 @@ async function triggerWorkerDispatch(): Promise<string> {
         body: JSON.stringify({ ref: "main" }),
       },
     );
-    if (res.ok) return String(res.status);
-    return `${res.status} ${(await res.text()).slice(0, 160)}`;
-  } catch {
-    return "fetch_error";
+    if (!res.ok) console.error(`worker dispatch: ${res.status} ${(await res.text()).slice(0, 160)}`);
+  } catch (error) {
+    console.error("worker dispatch: fetch_error", error instanceof Error ? error.message : error);
   }
 }
 
@@ -103,13 +112,7 @@ export async function POST(request: NextRequest) {
   // plusieurs personnes (box, réseau d'entreprise), ce n'est pas forcément
   // la faute de qui la reçoit.
   if (!(await withinRateLimit(pool, clientIp(request)))) {
-    return NextResponse.json(
-      {
-        error:
-          "Tu n'es pas le seul cowboy en ville. Trop de profils lancés depuis ta connexion : patiente quelques minutes.",
-      },
-      { status: 429 },
-    );
+    return NextResponse.json({ error: RATE_LIMIT_MESSAGE }, { status: 429 });
   }
 
   // 3. Réutiliser un job actif s'il en existe déjà un pour ce pseudo, sinon
@@ -127,8 +130,8 @@ export async function POST(request: NextRequest) {
   );
 
   if (inserted.rows[0]) {
-    const dispatch = await triggerWorkerDispatch();
-    return NextResponse.json({ job_id: inserted.rows[0].id, cached: false, dispatch });
+    await triggerWorkerDispatch();
+    return NextResponse.json({ job_id: inserted.rows[0].id, cached: false });
   }
 
   const existing = await pool.query<{ id: string }>(
@@ -147,6 +150,6 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const dispatch = await triggerWorkerDispatch();
-  return NextResponse.json({ job_id: existing.rows[0].id, cached: false, dispatch });
+  await triggerWorkerDispatch();
+  return NextResponse.json({ job_id: existing.rows[0].id, cached: false });
 }

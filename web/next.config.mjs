@@ -18,6 +18,21 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 loadEnv({ path: path.join(__dirname, "..", ".env"), quiet: true });
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  // Empêche d'afficher Fifty dans un cadre invisible d'un autre site (audit #17).
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Frame-Options", value: "DENY" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+        ],
+      },
+    ];
+  },
+};
 
 export default nextConfig;

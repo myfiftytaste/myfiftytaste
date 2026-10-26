@@ -24,6 +24,15 @@ SUPPLEMENTAL_JSON = BASE_DIR / "data" / "processed" / "supplemental_metadata.jso
 TITLE_YEAR_REGEX = re.compile(r"^(?P<title>.*),\s*(?P<year>\d{4})(?:\s*-\s*[★½]+)?\s*$")
 
 
+def should_skip(entry: Optional[Dict[str, Any]], force: bool) -> bool:
+    """Une fiche corrigée à la main n'est jamais réécrite, même avec --force."""
+    if not entry:
+        return False
+    if entry.get("metadata_source") == "manual_correction":
+        return True
+    return entry.get("status") == "confirmed" and not force
+
+
 def ensure_dirs():
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     (BASE_DIR / "data" / "processed").mkdir(parents=True, exist_ok=True)
@@ -240,8 +249,8 @@ def main():
             print(f"\n=== Processing {slug} ===")
             print(f"  RSS title (original): {rss_title}")
         
-        # Skip if already confirmed and not forcing
-        if slug in supplemental and supplemental[slug].get("status") == "confirmed" and not force:
+        # Skip if already confirmed and not forcing (manual corrections: always)
+        if should_skip(supplemental.get(slug), force):
             if debug:
                 print(f"  Already confirmed, skipping")
             report["already_present"] += 1
