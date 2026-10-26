@@ -138,6 +138,14 @@ export default function SeverityGauge({
           </span>
         </li>
       </ul>
+      {card?.compared_count && card.rated_count && card.rated_count > card.compared_count ? (
+        <p className="severityDesc">
+          Comparaison sur {card.compared_count} de tes {card.rated_count} films notés :{" "}
+          {card.rated_count - card.compared_count === 1
+            ? "l’autre n’a pas encore de moyenne Letterboxd dans Fifty."
+            : `les ${card.rated_count - card.compared_count} autres n’ont pas encore de moyenne Letterboxd dans Fifty.`}
+        </p>
+      ) : null}
     </div>
   );
 }

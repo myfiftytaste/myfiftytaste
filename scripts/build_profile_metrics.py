@@ -805,6 +805,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "paired_community_average_rating": paired_community_average_rating,
             "paired_average_difference": paired_average_difference,
             "paired_count": paired_rating_count,
+            "rated_count": len(user_ratings),
             "method": "paired_gap",
             "label": rating_personality_label(paired_average_difference),
         },
