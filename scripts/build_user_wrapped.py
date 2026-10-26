@@ -22,6 +22,8 @@ ALIASES_JSON = BASE_DIR / "data" / "processed" / "slug_aliases.json"
 OUTPUT_DIR = BASE_DIR / "data" / "output"
 SUPPLEMENTAL_JSON = BASE_DIR / "data" / "processed" / "supplemental_metadata.json"
 SUPPLEMENTAL_OVERRIDES_JSON = BASE_DIR / "data" / "processed" / "supplemental_overrides.json"
+# Extension de la Megabank : moyennes Letterboxd relevées à la main, gardées à part pour survivre à une régénération de megabank_clean.
+MEGABANK_RELEVES_JSON = BASE_DIR / "data" / "processed" / "megabank_releves.json"
 TMDB_DETAILS_CACHE_JSON = BASE_DIR / "data" / "cache" / "tmdb_details_cache.json"
 
 # --- Rate limiting Letterboxd (architecture-v1-dynamique.md §4, runbook phase 6) ---
@@ -639,6 +641,7 @@ def build_user_profile(username: str) -> Dict:
     aliases = load_aliases()
     supplemental = load_supplemental_metadata()
     supplemental_overrides = load_supplemental_overrides()
+    releves = json.loads(MEGABANK_RELEVES_JSON.read_text(encoding="utf-8")) if MEGABANK_RELEVES_JSON.exists() else {}
     tmdb_review_candidates = load_tmdb_review_candidates(username)
     tmdb_details_cache = load_tmdb_details_cache()
 
@@ -913,6 +916,13 @@ def build_user_profile(username: str) -> Dict:
             ]
         else:
             normalized_directors = []
+        releve = releves.get(slug) or releves.get(lookup_slug)
+        if releve and safe_float(entry.get("average_rating")) is None:
+            entry["average_rating"] = releve["average_rating"]
+            entry["total_ratings"] = releve.get("total_ratings")
+            entry["average_rating_source"] = "releve_manuel"
+            community_ratings.append(releve["average_rating"])
+
         entry["directors"] = normalized_directors
         entry["director"] = normalized_directors[0] if normalized_directors else None
         if entry["director"] and not entry.get("director_source"):
