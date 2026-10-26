@@ -29,6 +29,7 @@ export type Card = {
   // Carte rating_personality : moyennes sur les films comparables (depuis le 26/10/2026).
   user_average?: string | null;
   community_average?: string | null;
+  compared_count?: number | null;
 };
 
 type GenreBubble = {

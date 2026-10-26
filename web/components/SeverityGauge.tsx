@@ -127,7 +127,8 @@ export default function SeverityGauge({
         <li>
           <span className="gaugeDot gaugeBallYou" aria-hidden="true" />
           <span>
-            <b>{formatFrench(you)}</b> (ta moyenne sur ces films)
+            <b>{formatFrench(you)}</b>{" "}
+            {card?.compared_count ? `(ta moyenne sur ${card.compared_count} films)` : "(ta moyenne)"}
           </span>
         </li>
         <li>

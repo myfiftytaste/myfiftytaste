@@ -964,6 +964,7 @@ def build_cards(metrics: dict[str, Any], config: dict[str, Any]) -> list[dict[st
             # Les deux billes de la jauge : moyennes sur les mêmes films comparables que l'écart.
             "user_average": number(rating.get("paired_user_average_rating"), 2),
             "community_average": number(rating.get("paired_community_average_rating"), 2),
+            "compared_count": rating.get("paired_count"),
         },
         "niche_profile": {
             "id": "niche_profile",
