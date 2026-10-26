@@ -1,5 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getPool, normalizeUsername, USERNAME_PATTERN } from "../../../lib/db";
+import {
+  clientIp,
+  getPool,
+  normalizeUsername,
+  RATE_LIMIT_MESSAGE,
+  USERNAME_PATTERN,
+  withinRateLimit,
+} from "../../../lib/db";
 
 // POST /api/feedback — un champ par sujet plutôt qu'un pavé unique
 // (migrations/003_generation_log_feedback.sql), pour rester exploitable en
@@ -20,9 +27,13 @@ const TAG_FIELDS = [
   "autre_detail",
 ] as const;
 
-function cleanText(value: unknown): string | null {
+// Sans plafond, une requête de ~4,5 Mo par champ remplit le stockage Neon.
+const MAX_TEXT_LENGTH = 2000;
+const MAX_SOURCE_PAGE_LENGTH = 200;
+
+function cleanText(value: unknown, max = MAX_TEXT_LENGTH): string | null {
   if (typeof value !== "string") return null;
-  const trimmed = value.trim();
+  const trimmed = value.trim().slice(0, max);
   return trimmed === "" ? null : trimmed;
 }
 
@@ -50,7 +61,7 @@ export async function POST(request: NextRequest) {
   }
   const device = (deviceRaw as string | null | undefined) ?? null;
 
-  const sourcePage = cleanText(body.source_page);
+  const sourcePage = cleanText(body.source_page, MAX_SOURCE_PAGE_LENGTH);
 
   // Facultatif, mais s'il est fourni il doit ressembler à un vrai pseudo
   // Letterboxd — mêmes règles que partout ailleurs (web/lib/username.ts).
@@ -73,6 +84,9 @@ export async function POST(request: NextRequest) {
   }
 
   const pool = getPool();
+  if (!(await withinRateLimit(pool, clientIp(request)))) {
+    return NextResponse.json({ error: RATE_LIMIT_MESSAGE }, { status: 429 });
+  }
   await pool.query(
     `INSERT INTO feedback (
        design_detail, clarte_detail, stats_detail, recos_detail, hof_detail,
