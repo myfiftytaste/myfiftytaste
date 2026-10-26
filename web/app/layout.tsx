@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import DebugScroll from "../components/DebugScroll";
+import NavBar from "../components/NavBar";
 import VisualThemeProvider from "../components/VisualThemeProvider";
 import "./globals.css";
 
@@ -39,7 +40,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${titleFont.variable} ${bodyFont.variable}`}>
       <body>
-        <VisualThemeProvider>{children}</VisualThemeProvider>
+        <VisualThemeProvider>
+          {children}
+          <NavBar />
+        </VisualThemeProvider>
         <DebugScroll />
       </body>
     </html>

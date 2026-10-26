@@ -7,6 +7,7 @@ import { ApiError, postProfile } from "../lib/apiClient";
 import { USERNAME_PATTERN } from "../lib/username";
 import UpdateNote from "../components/UpdateNote";
 import BrandLockup from "../components/BrandLockup";
+import { rememberMyPseudo } from "../lib/myPseudo";
 
 function cleanUsername(value: string) {
   return value.trim().replace(/^@+/, "").replace(/\s+/g, "");
@@ -38,6 +39,7 @@ export default function Home() {
     setPending(true);
     setError(null);
 
+    rememberMyPseudo(cleanedUsername);
     try {
       const result = await postProfile(cleanedUsername);
       if (result.cached) {
