@@ -434,6 +434,8 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         potential_metadata_count / total_films if total_films else None
     )
 
+    # Films dont la moyenne Letterboxd est connue : Megabank, ou relevé manuel (megabank_releves.json).
+    rated_films = [film for film in films if safe_float(film.get("average_rating")) is not None]
     user_ratings = [
         rating for rating in (safe_float(film.get("user_rating")) for film in films)
         if rating is not None
@@ -441,7 +443,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
     community_ratings = [
         rating
         for rating in (
-            safe_float(film.get("average_rating")) for film in social_films
+            safe_float(film.get("average_rating")) for film in rated_films
         )
         if rating is not None
     ]
@@ -453,7 +455,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         else None
     )
     paired_rating_entries = []
-    for film in social_films:
+    for film in rated_films:
         user_rating = safe_float(film.get("user_rating"))
         community_rating = safe_float(film.get("average_rating"))
         if user_rating is None or community_rating is None:
