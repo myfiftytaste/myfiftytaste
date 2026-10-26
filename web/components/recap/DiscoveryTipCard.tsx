@@ -3,9 +3,11 @@
 export default function DiscoveryTipCard() {
   return (
     <div className="headerCard headerCardTip">
-      <h3>Avis aux curieuses et curieux !</h3>
+      <h3>Curieuses et curieux, oyez, oyez&nbsp;!</h3>
       <p className="headerTipText">
-        Clique, survole, retourne et fais glisser les éléments de cette page pour en apprendre plus :)
+        <span className="verbPointer">Clique et survole</span>
+        <span className="verbTouch">Appuie sur</span> les éléments pour en apprendre plus&nbsp;! Les noms des films
+        t&apos;emmènent sur leur page Letterboxd.
       </p>
     </div>
   );

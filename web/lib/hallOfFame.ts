@@ -131,7 +131,7 @@ function ranked(
 }
 
 function formatPercent(value: number): string {
-  return `${Math.round(value)}%`;
+  return `${Math.round(value)}\u00a0%`;
 }
 
 // Même règle que MEDIAN_VIEWS_FROM_MONTH dans scripts/build_hof_rankings.py.
@@ -189,7 +189,7 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
     {
       key: "mainstream",
       title: "Top Mainstream",
-      sub: "A consommé le plus de blockbusters et succès populaires",
+      sub: "A consommé le plus de films avec un grand nombre de spectateurs",
       entries: byMedianViews
         ? ranked(optedIn, (s) => s.metrics_snapshot.mainstream_median_views ?? null, "desc", formatViews)
         : ranked(optedIn, (s) => s.metrics_snapshot.mainstream_pct, "desc", (v) => `${formatPercent(v)} mainstream`),
@@ -211,7 +211,7 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
     {
       key: "fantome",
       title: "Top Fantôme",
-      sub: "N'a laissé aucune trace écrite",
+      sub: "A laissé le moins de traces écrites",
       entries: ranked(optedIn, (s) => s.metrics_snapshot.review_count, "asc", (v) => `${Math.round(v)} reviews`),
     },
     {

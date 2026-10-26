@@ -88,7 +88,7 @@ export default function SeverityGauge({ card }: { card?: Card | null }) {
         <>
           <p className="severityEyebrow">Notation</p>
           <p className="severityDesc">
-            {card?.description ?? "Pas assez de notes comparables pour calculer l’écart à la moyenne."}
+            {card?.description ?? "On ne trouve pas assez de notes comparables pour calculer ton écart à la moyenne."}
           </p>
         </>
       )}

@@ -131,7 +131,7 @@ export default function FeedbackPage() {
         <p className="hofEyebrow">Feedback</p>
         <h2 className="feedbackTitle">Dis-moi ce que tu en penses</h2>
         <p className="hofLede hofLedeCentered">
-          Une minute, pas plus. Le champ libre est le plus utile — le reste sert juste à trier.
+          Une minute, pas plus.
         </p>
       </section>
 

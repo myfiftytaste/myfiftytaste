@@ -7,7 +7,7 @@
   ],
   "cards_section": {
     "eyebrow": "SYNTHÈSE",
-    "title": "En bref…",
+    "title": "Ton Résumé Fifty",
     "confidence_labels": {
       "high": "FIABLE",
       "medium": "MOYEN",
@@ -45,10 +45,10 @@
         "no_data": "Notation"
       },
       "description_templates": {
-        "no_data": "Pas assez de notes comparables pour calculer l’écart à la moyenne.",
-        "close": "Tu notes quasiment comme la moyenne Letterboxd.",
-        "below": "Tu notes environ {abs_rating_gap} étoile(s) en dessous de la moyenne Letterboxd.",
-        "above": "Tu notes environ {abs_rating_gap} étoile(s) au-dessus de la moyenne Letterboxd."
+        "no_data": "On ne trouve pas assez de notes comparables pour calculer ton écart à la moyenne.",
+        "close": "Tu notes dans la moyenne de Letterboxd !",
+        "below": "Tu notes environ {abs_rating_gap} en dessous de la moyenne Letterboxd.",
+        "above": "Tu notes environ {abs_rating_gap} au-dessus de la moyenne Letterboxd."
       }
     },
     "niche_profile": {
@@ -90,7 +90,7 @@
   },
   "highlights": {
     "eyebrow": "HIGHLIGHTS",
-    "title": "Toi, en 6 films clés et 1 réal",
+    "title": "Ton Carrousel Fifty",
     "labels": {
       "most_niche": "Le plus niche",
       "most_mainstream": "Le plus mainstream",
@@ -103,13 +103,13 @@
   },
   "recommendations": {
     "eyebrow": "RECOMMANDATIONS",
-    "title": "Trois recos pour la suite, à voir ou revoir",
-    "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés, sans IA.",
-    "unavailable_text": "Recommandations indisponibles pour ce profil.",
+    "title": "Tes Recos Fifty",
+    "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés. Et tout ça sans IA !",
+    "unavailable_text": "On ne trouve pas de recommandations pour ce profil.",
     "slot_labels": {
-      "safe_pick": "La pépite",
-      "deep_cut": "Le détour",
-      "wild_card": "Le pari"
+      "safe_pick": "Notre pépite",
+      "deep_cut": "Notre détour",
+      "wild_card": "Notre pari"
     },
     "slot_descriptions": {
       "safe_pick": "Un film proche de tes thèmes d'affection",
@@ -120,7 +120,7 @@
   "data_sources": {
     "social": "{count} films avec données sociales",
     "rating_comparable": "{count} films comparables avec moyenne Letterboxd",
-    "runtime": "{count} films avec durée confirmée",
+    "runtime": "Sur {count} films trouvés.",
     "metadata": "{count} films avec métadonnées confirmées",
     "rss": "{count} films depuis le RSS Letterboxd"
   },

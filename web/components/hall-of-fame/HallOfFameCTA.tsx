@@ -73,8 +73,8 @@ export default function HallOfFameCTA({ username }: { username: string }) {
           <>
             <h2 className="hofCtaTitle">Ta place dans le Hall of Fame du mois&nbsp;?</h2>
             <p className="hofLede">
-              On fige ton profil du mois et on le compare aux autres cinéphiles. Aucun compte, aucun engagement — tu
-              peux revenir sur ton choix.
+              On fige ton profil mensuel et on le compare aux autres cinéphiles. Pas besoin de compte, pas
+              d&apos;engagement : tu peux revenir sur ton choix.
             </p>
             <div className="hofCtaActions">
               <button type="button" className="hofBtn hofBtnPrimary" onClick={() => choose(true)} disabled={pending}>

@@ -25,7 +25,11 @@ export default function Podium({
       <div className="hofPodiumBlock">
         <h3>{title}</h3>
         <p className="hofPodiumSub">{sub}</p>
-        <p className="hofPodiumEmpty">Personne à classer pour l’instant ce mois-ci.</p>
+        <p className="hofPodiumEmpty">
+          <b>C’est trop calme… j’aime pas trop beaucoup ça.</b>
+          <br />
+          Personne à classer sur le podium pour l’instant ce mois-ci.
+        </p>
       </div>
     );
   }

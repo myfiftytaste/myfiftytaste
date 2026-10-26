@@ -57,7 +57,7 @@ export default function Home() {
       // route (web/lib/db.ts withinRateLimit) : on l'affiche tel quel plutôt
       // que de l'écraser par un message générique.
       setError(
-        err instanceof ApiError ? err.message : "Impossible de lancer la génération du profil. Réessaie dans un instant.",
+        err instanceof ApiError ? err.message : "On a du mal à lancer la génération de ton profil. Réessaie dans un instant.",
       );
     }
   }
@@ -75,11 +75,11 @@ export default function Home() {
           className="homeLogo"
         />
         <div className="homeCopy">
-          <h1 id="home-title">Bonjour, toi.</h1>
-          <p>Qui es-tu d’ailleurs&nbsp;?</p>
+          <h1 id="home-title">Bonjour :)</h1>
+          <p>Quel est ton nom&nbsp;?</p>
         </div>
         <form className="usernameForm" onSubmit={handleSubmit}>
-          <label htmlFor="letterboxd-username">Saisis ton pseudo Letterboxd</label>
+          <label htmlFor="letterboxd-username">Ton pseudo Letterboxd</label>
           <div className="usernameField">
             <span aria-hidden="true">@</span>
             <input
@@ -99,7 +99,8 @@ export default function Home() {
               {pending ? "…" : "Voir"}
             </button>
           </div>
-          <small id="username-hint">{error ?? "Le @ est facultatif."}</small>
+          <small id="username-hint">{error ??
+              "Ne fais pas comme Maximus Decimus Meridius, mets juste ton pseudo. Pas besoin du « @ » ni de majuscule !"}</small>
         </form>
       </section>
       <UpdateNote />

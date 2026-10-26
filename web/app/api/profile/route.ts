@@ -106,7 +106,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         error:
-          "Beaucoup de monde génère un profil en ce moment depuis cette connexion. Patiente quelques minutes et réessaie — rien n'est perdu.",
+          "Tu n'es pas le seul cowboy en ville. Trop de profils lancés depuis ta connexion : patiente quelques minutes.",
       },
       { status: 429 },
     );

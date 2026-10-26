@@ -53,19 +53,19 @@ const axes: RadarAxis[] = [
     id: "mainstreamness",
     axisId: "mainstreamness",
     svgTitle: "mainstreamness",
-    svgSubtitle: "À quel point as-tu vu des films mainstream ?",
+    svgSubtitle: "À quel point as-tu vu des films mainstream récemment ?",
   },
   {
     id: "oldness",
     axisId: "oldness",
     svgTitle: "oldness",
-    svgSubtitle: "À quel point as-tu vu des films récents ?",
+    svgSubtitle: "À quel point as-tu vu des films réalisés récemment ?",
   },
   {
     id: "reviewness",
     axisId: "reviewness",
     svgTitle: "reviewness",
-    svgSubtitle: "À quel point as-tu laissé des reviews ?",
+    svgSubtitle: "À quel point as-tu laissé des reviews sur tes films vus récemment ?",
   },
 ];
 
@@ -91,7 +91,7 @@ const radarBackCopy: Record<keyof RadarScores, RadarBackCopy> = {
     ],
   },
   reviewness: {
-    intro: "Mesuré à partir du nombre de films accompagnés d’une review parmi tes 50 derniers logs.",
+    intro: "On mesure le nombre de films loggés sous lesquels tu as laissé une review.",
     steps: [
       "1/5 : 0 à 8 reviews",
       "2/5 : 9 à 17 reviews",
@@ -107,7 +107,7 @@ const radarBackCopy: Record<keyof RadarScores, RadarBackCopy> = {
 const radarBackCopyRecalibrated: Partial<Record<keyof RadarScores, RadarBackCopy>> = {
   mainstreamness: {
     intro:
-      "On prend les vues Letterboxd de chacun de tes films (estimées d’après sa place parmi les films de son année quand on ne les connaît pas), puis celles de ton film « du milieu ». Les crans te situent parmi les profils Fifty.",
+      "On prend les vues Letterboxd de chacun de tes films. Si on ne les a pas, on estime ses vues d’après la place du film parmi ceux de son année (TMDB). On identifie ton film mainstream « médian » et on te situe parmi les profils Fifty grâce à une ventilation par crans. Répartition des profils Fifty : 10 % au cran 1, 20 % au 2, 40 % au 3, 20 % au 4, 10 % au 5.",
     steps: [
       "1/5 : film du milieu sous 104 000 vues",
       "2/5 : de 104 000 à 194 000 vues",
@@ -117,7 +117,8 @@ const radarBackCopyRecalibrated: Partial<Record<keyof RadarScores, RadarBackCopy
     ],
   },
   oldness: {
-    intro: "Mesuré à partir de l’âge moyen de tes films (années écoulées depuis leur sortie). Les crans te situent parmi les profils Fifty.",
+    intro:
+      "On mesure l’âge moyen de tes films par années écoulées depuis leur sortie. Là aussi, on te situe parmi les profils Fifty en ventilant par crans ces années écoulées. Répartition des profils Fifty : 10 % au cran 1, 20 % au 2, 40 % au 3, 20 % au 4, 10 % au 5.",
     steps: [
       "1/5 : âge moyen de 19 ans ou plus",
       "2/5 : de 17 à 19 ans",
@@ -128,7 +129,7 @@ const radarBackCopyRecalibrated: Partial<Record<keyof RadarScores, RadarBackCopy
   },
 };
 
-const radarSectionTitle = "Qui es-tu vraiment ?";
+const radarSectionTitle = "Ton Triangle Fifty";
 const radarSectionSubtitle = "Trois axes, trois archétypes : voyons ton rapport récent aux films.";
 
 const center = 260;
@@ -254,8 +255,7 @@ export default function RadarChart({
     return (
       <section className="radar-section" aria-label="Profil radar">
         <div className="sectionHeading">
-          <p className="eyebrow">PROFIL RADAR</p>
-          <h2>{radarSectionTitle}</h2>
+            <h2>{radarSectionTitle}</h2>
           <p className="radar-unavailable">Radar indisponible</p>
         </div>
       </section>
@@ -271,7 +271,6 @@ export default function RadarChart({
   return (
     <section className="radar-section" aria-label="Profil radar" ref={sectionRef}>
       <div className="sectionHeading">
-        <p className="eyebrow">PROFIL RADAR</p>
         <h2>{radarSectionTitle}</h2>
         <p>{radarSectionSubtitle}</p>
       </div>
