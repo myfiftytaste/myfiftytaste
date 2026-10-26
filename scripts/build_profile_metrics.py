@@ -641,7 +641,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "films": country_films,
         })
     country_map = {
-        "title": "Ton Passeport Fifty",
+        "title": "Le Passeport",
         "subtitle": f"Les pays de production que traversent tes {total_films} films détectés.",
         "countries": country_map_entries,
         "max_count": max_country_count,

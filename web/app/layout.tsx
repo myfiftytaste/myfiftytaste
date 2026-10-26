@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
-    images: [{ url: "/branding/archive/logoV1.png", width: 1536, height: 1024 }],
+    images: [{ url: "/branding/og-fifty.png", width: 1200, height: 630 }],
   },
 };
 

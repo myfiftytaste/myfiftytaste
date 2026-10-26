@@ -1,3 +1,4 @@
+// Archivé le 26/10/2026 : retiré du profil (module « En bref » supprimé), gardé pour un usage futur.
 "use client";
 
 import { useEffect, useRef } from "react";

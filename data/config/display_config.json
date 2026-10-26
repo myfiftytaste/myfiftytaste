@@ -90,7 +90,7 @@
   },
   "highlights": {
     "eyebrow": "HIGHLIGHTS",
-    "title": "Ton Carrousel Fifty",
+    "title": "Le Carrousel",
     "labels": {
       "most_niche": "Le plus niche",
       "most_mainstream": "Le plus mainstream",
@@ -103,7 +103,7 @@
   },
   "recommendations": {
     "eyebrow": "RECOMMANDATIONS",
-    "title": "Tes Recos Fifty",
+    "title": "Les Recos",
     "subtitle_template": "Des recommandations calculées à partir de tes {detected_films_count} films détectés. Et tout ça sans IA !",
     "unavailable_text": "On ne trouve pas de recommandations pour ce profil.",
     "slot_labels": {
