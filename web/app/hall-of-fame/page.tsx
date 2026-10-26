@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import ContinentMap from "../../components/hall-of-fame/ContinentMap";
 import Podium from "../../components/hall-of-fame/Podium";
 import { currentMonth, getMonthlyRankings, nextMonthLabel, seasonTitle } from "../../lib/hallOfFame";
+import BrandLockup from "../../components/BrandLockup";
 
 // Rankings depend on live opt-in state written by the API route, so this
 // page must never be statically cached — recomputed on every request.
@@ -15,19 +14,8 @@ export default async function HallOfFamePage() {
 
   return (
     <main className="hof-shell pageShell">
-      <header className="siteHeader" aria-label="Fifty">
-        <div className="siteBranding">
-          <Link href="/">
-            <Image
-              src="/branding/logoV1-transparent.png"
-              alt="Fifty"
-              width={1013}
-              height={708}
-              priority
-              className="siteLogo"
-            />
-          </Link>
-        </div>
+      <header className="siteHeader">
+        <BrandLockup />
       </header>
 
       <section className="hofMasthead">

@@ -25,7 +25,7 @@ export default async function LegacyProfilePage({ params }: { params: { username
     <main className="profileUnavailableShell">
       <section className="profileUnavailable">
         <Image
-          src="/branding/logoV1-transparent.png"
+          src="/branding/archive/logoV1-transparent.png"
           alt="Fifty"
           width={1013}
           height={708}

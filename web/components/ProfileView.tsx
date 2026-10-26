@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 /* eslint-disable @next/next/no-img-element */
@@ -18,6 +17,7 @@ import SeverityGauge from "./SeverityGauge";
 import WorldMap from "./WorldMap";
 import { useVisualTheme } from "./VisualThemeProvider";
 import type { Badge } from "../lib/badgeSelection";
+import BrandLockup from "./BrandLockup";
 
 export type Card = {
   id: string;
@@ -204,17 +204,8 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
   return (
     <main className="pageShell">
       <div className="pageThemeLabel">{theme.label}</div>
-      <header className="siteHeader" aria-label="Fifty">
-        <div className="siteBranding">
-          <Image
-            src="/branding/logoV1-transparent.png"
-            alt="Fifty"
-            width={1013}
-            height={708}
-            priority
-            className="siteLogo"
-          />
-        </div>
+      <header className="siteHeader">
+        <BrandLockup />
       </header>
 
       <section className="headerBand" aria-label="Profil et astuce de découverte">
