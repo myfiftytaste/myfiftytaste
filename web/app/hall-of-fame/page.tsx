@@ -4,6 +4,7 @@ import HallOfFameCTA from "../../components/hall-of-fame/HallOfFameCTA";
 import Podium from "../../components/hall-of-fame/Podium";
 import { currentMonth, getMonthlyRankings, getOptInStatus, nextMonthLabel, seasonTitle } from "../../lib/hallOfFame";
 import { MY_PSEUDO_COOKIE } from "../../lib/myPseudo";
+import { OWNER_COOKIE, verifyOwner } from "../../lib/ownerCookie";
 import { normalizeUsername, USERNAME_PATTERN } from "../../lib/username";
 import BrandLockup from "../../components/BrandLockup";
 
@@ -15,8 +16,11 @@ export default async function HallOfFamePage() {
   const month = currentMonth();
   const rankings = await getMonthlyRankings(month);
   const podiumsByKey = Object.fromEntries(rankings.podiums.map((podium) => [podium.key, podium]));
+  // Le choix exige le cookie signé fifty_owner (posé par POST /api/profile). fifty_pseudo, lui, ne
+  // sert qu'au lien « Mon wrapped » : sans cookie signé valide, le statut reste « none ».
+  const myPseudo = verifyOwner(cookies().get(OWNER_COOKIE)?.value);
   const rawPseudo = normalizeUsername(cookies().get(MY_PSEUDO_COOKIE)?.value ?? "");
-  const myPseudo = USERNAME_PATTERN.test(rawPseudo) ? rawPseudo : null;
+  const wrappedPseudo = myPseudo ?? (USERNAME_PATTERN.test(rawPseudo) ? rawPseudo : null);
   const status = await getOptInStatus(month, myPseudo);
   // Hors saison : seul le premier podium est rendu, sans pseudos. Rien d'autre ne part vers le navigateur
   // (le flou n'est qu'un effet visuel, l'anonymat vient d'ici).
@@ -52,7 +56,7 @@ export default async function HallOfFamePage() {
       </section>
 
       {status === "undecided" || status === "none" ? (
-        <HallOfFameCTA username={myPseudo} month={month} status={status} />
+        <HallOfFameCTA username={myPseudo} wrappedPseudo={wrappedPseudo} month={month} status={status} />
       ) : null}
 
       {rankings.participantCount > 0 && locked ? (
