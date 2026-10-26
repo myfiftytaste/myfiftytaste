@@ -30,6 +30,7 @@ export type Card = {
   user_average?: string | null;
   community_average?: string | null;
   compared_count?: number | null;
+  rated_count?: number | null;
 };
 
 type GenreBubble = {
