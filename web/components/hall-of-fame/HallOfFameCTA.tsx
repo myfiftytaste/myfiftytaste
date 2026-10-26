@@ -11,10 +11,14 @@ import type { OptInStatus } from "../../lib/hallOfFame";
 // (pseudos dévoilés ou masqués).
 export default function HallOfFameCTA({
   username,
+  wrappedPseudo = username,
   month,
   status,
 }: {
   username: string | null;
+  // Pseudo du lien « Mon wrapped » (cookie fifty_pseudo) : sert même quand le cookie signé manque,
+  // car c'est en rechargeant le profil que le navigateur obtient ce cookie.
+  wrappedPseudo?: string | null;
   month: string;
   status: OptInStatus;
 }) {
@@ -78,7 +82,7 @@ export default function HallOfFameCTA({
             <h2 className="hofCtaTitle">Ta place dans le Hall of Fame du mois&nbsp;?</h2>
             <p className="hofLede">Génère ton wrapped de ce mois-ci pour pouvoir rejoindre la saison.</p>
             <div className="hofCtaActions">
-              <Link className="hofBtn hofBtnPrimary" href={username ? `/profile/${encodeURIComponent(username)}` : "/"}>
+              <Link className="hofBtn hofBtnPrimary" href={wrappedPseudo ? `/profile/${encodeURIComponent(wrappedPseudo)}` : "/"}>
                 Mon wrapped
               </Link>
             </div>

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getBadgesForUser } from "../../../lib/badges";
+import { OWNER_COOKIE, OWNER_MAX_AGE_SECONDS, signOwner } from "../../../lib/ownerCookie";
 import {
   clientIp,
   getPool,
@@ -62,6 +63,23 @@ async function triggerWorkerDispatch(): Promise<void> {
   }
 }
 
+// Preuve que ce navigateur a lancé ce pseudo : exigée par /api/hall-of-fame/opt-in (lib/ownerCookie.ts).
+function withOwnerCookie(response: NextResponse, username: string): NextResponse {
+  const value = signOwner(username);
+  if (!value) {
+    console.error("HOF_COOKIE_SECRET absent : cookie fifty_owner non posé");
+    return response;
+  }
+  response.cookies.set(OWNER_COOKIE, value, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "lax",
+    path: "/",
+    maxAge: OWNER_MAX_AGE_SECONDS,
+  });
+  return response;
+}
+
 export async function POST(request: NextRequest) {
   let body: { username?: unknown };
   try {
@@ -93,17 +111,20 @@ export async function POST(request: NextRequest) {
   );
   const cachedRow = cached.rows[0];
   if (cachedRow && isFresh(cachedRow.generated_at)) {
-    return NextResponse.json({
-      cached: true,
-      profile: {
-        username: cachedRow.display_username ?? username,
-        display_profile: cachedRow.display_profile,
-        metrics: cachedRow.metrics,
-        recommendations: cachedRow.recommendations,
-        generated_at: cachedRow.generated_at,
-        badges: await getBadgesForUser(username),
-      },
-    });
+    return withOwnerCookie(
+      NextResponse.json({
+        cached: true,
+        profile: {
+          username: cachedRow.display_username ?? username,
+          display_profile: cachedRow.display_profile,
+          metrics: cachedRow.metrics,
+          recommendations: cachedRow.recommendations,
+          generated_at: cachedRow.generated_at,
+          badges: await getBadgesForUser(username),
+        },
+      }),
+      username,
+    );
   }
 
   // 2. Pas de cache frais : avant de créer un job (l'opération coûteuse, pas
@@ -131,7 +152,7 @@ export async function POST(request: NextRequest) {
 
   if (inserted.rows[0]) {
     await triggerWorkerDispatch();
-    return NextResponse.json({ job_id: inserted.rows[0].id, cached: false });
+    return withOwnerCookie(NextResponse.json({ job_id: inserted.rows[0].id, cached: false }), username);
   }
 
   const existing = await pool.query<{ id: string }>(
@@ -151,5 +172,5 @@ export async function POST(request: NextRequest) {
   }
 
   await triggerWorkerDispatch();
-  return NextResponse.json({ job_id: existing.rows[0].id, cached: false });
+  return withOwnerCookie(NextResponse.json({ job_id: existing.rows[0].id, cached: false }), username);
 }
