@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: npm
+    directory: /web
+    schedule:
+      interval: weekly
+    # Next 14 → 15/16 est un chantier à part, pas une mise à jour automatique.
+    ignore:
+      - dependency-name: next
+        update-types: ["version-update:semver-major"]
