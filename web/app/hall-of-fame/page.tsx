@@ -1,6 +1,10 @@
+import { cookies } from "next/headers";
 import ContinentMap from "../../components/hall-of-fame/ContinentMap";
+import HallOfFameCTA from "../../components/hall-of-fame/HallOfFameCTA";
 import Podium from "../../components/hall-of-fame/Podium";
-import { currentMonth, getMonthlyRankings, nextMonthLabel, seasonTitle } from "../../lib/hallOfFame";
+import { currentMonth, getMonthlyRankings, getOptInStatus, nextMonthLabel, seasonTitle } from "../../lib/hallOfFame";
+import { MY_PSEUDO_COOKIE } from "../../lib/myPseudo";
+import { normalizeUsername, USERNAME_PATTERN } from "../../lib/username";
 import BrandLockup from "../../components/BrandLockup";
 
 // Rankings depend on live opt-in state written by the API route, so this
@@ -11,20 +15,31 @@ export default async function HallOfFamePage() {
   const month = currentMonth();
   const rankings = await getMonthlyRankings(month);
   const podiumsByKey = Object.fromEntries(rankings.podiums.map((podium) => [podium.key, podium]));
+  const rawPseudo = normalizeUsername(cookies().get(MY_PSEUDO_COOKIE)?.value ?? "");
+  const myPseudo = USERNAME_PATTERN.test(rawPseudo) ? rawPseudo : null;
+  const status = await getOptInStatus(month, myPseudo);
+  // Hors saison : seul le premier podium est rendu, sans pseudos. Rien d'autre ne part vers le navigateur
+  // (le flou n'est qu'un effet visuel, l'anonymat vient d'ici).
+  const locked = status !== "in";
+  const teaser = podiumsByKey.mainstream;
+  const maskedEntries = teaser.entries.map((entry) => ({ rank: entry.rank, username: "", metricLabel: entry.metricLabel }));
 
   return (
     <main className="hof-shell pageShell">
       <header className="siteHeader">
         <BrandLockup />
       </header>
+      {status === "in" || status === "out" ? <HallOfFameCTA username={myPseudo} month={month} status={status} /> : null}
 
       <section className="hofMasthead">
         <h1 className="hofMastheadTitle">Hall of Fame</h1>
         <p className="hofEyebrow">Saison {seasonTitle(month)}</p>
-        <p className="hofLede hofLedeCentered">
-          <span className="verbPointer">Clique</span>
-          <span className="verbTouch">Appuie</span> sur les bulles pour découvrir le profil Letterboxd derrière&nbsp;!
-        </p>
+        {locked ? null : (
+          <p className="hofLede hofLedeCentered">
+            <span className="verbPointer">Clique</span>
+            <span className="verbTouch">Appuie</span> sur les bulles pour découvrir le profil Letterboxd derrière&nbsp;!
+          </p>
+        )}
         <div className="hofSeasonMeta">
           <span>
             <b>{rankings.participantCount}</b> profil{rankings.participantCount === 1 ? "" : "s"} figé
@@ -36,7 +51,27 @@ export default async function HallOfFamePage() {
         </div>
       </section>
 
-      {rankings.participantCount === 0 ? (
+      {status === "undecided" || status === "none" ? (
+        <HallOfFameCTA username={myPseudo} month={month} status={status} />
+      ) : null}
+
+      {rankings.participantCount > 0 && locked ? (
+        <section className="hofLocked" aria-label="Aperçu du Hall of Fame">
+          <div className="hofPodiumPair hofPodiumSingle">
+            <Podium title={teaser.title} sub={teaser.sub} entries={maskedEntries} masked />
+          </div>
+          <div className="hofLockedVeil">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+              <rect x="5" y="11" width="14" height="10" rx="2" />
+              <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+            </svg>
+            <p className="hofLockedTitle">Qui est sur le podium&nbsp;?</p>
+            <p className="hofLede hofLedeCentered">
+              Les pseudos et les autres classements se dévoilent quand tu rejoins la saison.
+            </p>
+          </div>
+        </section>
+      ) : rankings.participantCount === 0 ? (
         <section className="hofEmptySeason">
           <p>Personne n’a encore rejoint le Hall of Fame de ce mois — reviens bientôt.</p>
         </section>
@@ -77,7 +112,7 @@ export default async function HallOfFamePage() {
         </section>
       )}
 
-      {rankings.participantCount > 0 ? (
+      {rankings.participantCount > 0 && !locked ? (
         <section className="hofContinentsSection" aria-label="Cinéma du monde par continent">
           <div className="hofContinentsIntro">
             <h2 className="hofContinentsTitle">Les tops par continent</h2>

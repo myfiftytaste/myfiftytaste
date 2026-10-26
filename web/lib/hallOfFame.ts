@@ -69,6 +69,20 @@ export function seasonTitle(month: string): string {
   return /^[aeiouyàâéèêëîïôùûü]/i.test(label) ? `d’${label}` : `de ${label}`;
 }
 
+export type OptInStatus = "none" | "undecided" | "in" | "out";
+
+// "none" : pas de pseudo retenu, ou pas de profil figé ce mois-ci (wrapped pas encore généré).
+export async function getOptInStatus(month: string, username: string | null): Promise<OptInStatus> {
+  if (!username) return "none";
+  const result = await getPool().query<{ opted_in: boolean | null }>(
+    "SELECT opted_in FROM monthly_snapshot WHERE month = $1 AND username = $2",
+    [month, username],
+  );
+  const row = result.rows[0];
+  if (!row) return "none";
+  return row.opted_in === true ? "in" : row.opted_in === false ? "out" : "undecided";
+}
+
 async function readSnapshotsForMonth(month: string): Promise<MonthlySnapshot[]> {
   const pool = getPool();
   const result = await pool.query<{

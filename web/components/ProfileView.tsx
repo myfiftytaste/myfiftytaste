@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 /* eslint-disable @next/next/no-img-element */
 import AverageRatingCard from "./AverageRatingCard";
 import GenreBubbles from "./GenreBubbles";
-import HallOfFameCTA from "./hall-of-fame/HallOfFameCTA";
 import HighlightsCarousel, { type Highlights } from "./HighlightsCarousel";
 import LogTimeMini from "./LogTimeMini";
 import RadarChart from "./RadarChart";
@@ -268,8 +267,6 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
           <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} />
         </div>
       </section>
-
-      <HallOfFameCTA username={hero.username} />
 
       <footer className="siteFooter" aria-label="Informations sur Fifty">
         <p>

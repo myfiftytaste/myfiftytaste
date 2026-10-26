@@ -15,10 +15,13 @@ export default function Podium({
   title,
   sub,
   entries,
+  masked = false,
 }: {
   title: string;
   sub: string;
   entries: PodiumEntry[];
+  // Visiteur hors saison : la page n'envoie que rang et métrique, jamais le pseudo.
+  masked?: boolean;
 }) {
   if (entries.length === 0) {
     return (
@@ -39,7 +42,18 @@ export default function Podium({
       <h3>{title}</h3>
       <p className="hofPodiumSub">{sub}</p>
       <div className="hofPodium">
-        {entries.map((entry) => (
+        {masked
+          ? entries.map((entry) => (
+              <div key={entry.rank} className={`hofStep hofStep${entry.rank} hofStepMasked`} aria-label={`Rang ${entry.rank}, pseudo masqué, ${entry.metricLabel}`}>
+                <div className="hofAvatar">?</div>
+                <div className="hofPseudo">cinéphile</div>
+                <div className="hofMetric">{entry.metricLabel}</div>
+                <div className="hofRiser">
+                  <span>{entry.rank}</span>
+                </div>
+              </div>
+            ))
+          : entries.map((entry) => (
           <a
             key={entry.rank}
             href={letterboxdProfileUrl(entry.username)}

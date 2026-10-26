@@ -19,7 +19,8 @@ import { useEffect, useState } from "react";
 // Caveat via next/font/google fait échouer le build (Next 14.2.5 : Google sert désormais une URL de police sans extension, le chargeur plante). Police manuscrite du système en attendant d'auto-héberger Caveat.
 const noteFontStyle = { "--note-font-hand": "'Segoe Script', 'Bradley Hand', 'Comic Sans MS'" } as React.CSSProperties;
 
-export default function UpdateNote() {
+// `row` : même note, ouverte depuis une ligne de la page Divers au lieu du papier épinglé de l'accueil.
+export default function UpdateNote({ variant = "paper" }: { variant?: "paper" | "row" }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -33,20 +34,30 @@ export default function UpdateNote() {
 
   return (
     <div style={noteFontStyle}>
-      <div
-        className="updateNote"
-        role="button"
-        tabIndex={0}
-        onClick={() => setOpen(true)}
-        onKeyDown={(event) => {
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            setOpen(true);
-          }
-        }}
-      >
-        <b>Note de mise à jour</b>
-      </div>
+      {variant === "row" ? (
+        <button type="button" className="diversRow" onClick={() => setOpen(true)}>
+          <span className="diversRowText">
+            <span className="diversRowTitle">Note de mise à jour</span>
+            <span className="diversRowSub">Ce qui a changé dans Fifty</span>
+          </span>
+          <span className="diversRowChevron" aria-hidden="true">›</span>
+        </button>
+      ) : (
+        <div
+          className="updateNote"
+          role="button"
+          tabIndex={0}
+          onClick={() => setOpen(true)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              setOpen(true);
+            }
+          }}
+        >
+          <b>Note de mise à jour</b>
+        </div>
+      )}
 
       {open ? (
         <div className="updateNoteOverlay" onClick={() => setOpen(false)}>
