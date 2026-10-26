@@ -101,7 +101,8 @@ export default function SeverityGauge({
         role="img"
         aria-label={`Ta moyenne ${formatFrench(you)}, moyenne de la communauté Letterboxd sur les mêmes films ${formatFrench(community)}`}
       >
-        <div key={run} className="gaugeBallsStage">
+        {/* Rien n'est dessiné avant la première apparition à l'écran : l'arrivée des billes se voit toujours. */}
+        <div key={run} className="gaugeBallsStage" style={{ visibility: run === 0 ? "hidden" : "visible" }}>
           <div className="gaugeBallsTrack" />
           <div
             className="gaugeBallsSpan"
