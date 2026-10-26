@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
-import { visualThemes, type VisualTheme } from "../lib/visualThemes";
+import { scheduledTheme, visualThemes, type VisualTheme } from "../lib/visualThemes";
 
 const defaultThemeId = "hanabi";
 const sessionThemeKey = "myfiftytaste-visual-theme";
@@ -11,8 +11,8 @@ const VisualThemeContext = createContext<VisualTheme>(
 );
 
 function getRandomTheme(): VisualTheme {
-  const index = Math.floor(Math.random() * visualThemes.length);
-  return visualThemes[index] ?? visualThemes[0];
+  const rotating = visualThemes.filter((item) => !item.scheduledOnly);
+  return rotating[Math.floor(Math.random() * rotating.length)] ?? visualThemes[0];
 }
 
 export function useVisualTheme() {
@@ -33,6 +33,12 @@ export default function VisualThemeProvider({
     let selectedTheme = getRandomTheme();
     const requestedThemeId = new URLSearchParams(window.location.search).get("theme");
     const requestedTheme = visualThemes.find((item) => item.id === requestedThemeId);
+    const datedTheme = scheduledTheme();
+    if (datedTheme && !requestedTheme) {
+      setTheme(datedTheme);
+      setIsThemeReady(true);
+      return;
+    }
 
     try {
       const storedThemeId = window.sessionStorage.getItem(sessionThemeKey);
