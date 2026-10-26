@@ -260,9 +260,9 @@ export default function GenreBubbles({
   }
 
   return (
-    <section className="genre-bubbles-section" aria-label="Ta Constellation Fifty">
+    <section className="genre-bubbles-section" aria-label="La Constellation">
       <div className="sectionHeading">
-        <h2>Ta Constellation Fifty</h2>
+        <h2>La Constellation</h2>
         <p>Les genres qui reviennent le plus dans tes {detectedFilmsCount} films détectés.</p>
       </div>
 

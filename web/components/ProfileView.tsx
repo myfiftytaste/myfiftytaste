@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import AverageRatingCard from "./AverageRatingCard";
 import GenreBubbles from "./GenreBubbles";
 import HighlightsCarousel, { type Highlights } from "./HighlightsCarousel";
-import LogTimeMini from "./LogTimeMini";
 import RadarChart from "./RadarChart";
 import DiscoveryTipCard from "./recap/DiscoveryTipCard";
 import ProfileBadgesHeader from "./recap/ProfileBadgesHeader";
@@ -27,6 +26,10 @@ export type Card = {
   confidence: "high" | "medium" | "low" | string;
   confidence_label?: string;
   data_source: string;
+  // Carte rating_personality : moyennes sur les films comparables (depuis le 26/10/2026).
+  user_average?: string | null;
+  community_average?: string | null;
+  compared_count?: number | null;
 };
 
 type GenreBubble = {
@@ -172,13 +175,11 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
     hero,
     radar_scores,
     radar_editorial,
-    log_time_profile,
     genre_bubbles,
     country_map,
     recommendations,
     recommendations_status,
     recommendations_copy,
-    cards_section,
     highlights_copy,
     cards,
     highlights,
@@ -207,10 +208,10 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
         <BrandLockup />
       </header>
 
-      <section className="headerBand" aria-label="Profil et astuce de découverte">
+      <section className="headerBand" aria-label="Profil">
         <ProfileBadgesHeader username={hero.username} letterboxdUrl={letterboxdProfileUrl} badges={badges} />
-        <DiscoveryTipCard />
       </section>
+      <DiscoveryTipCard />
 
       <section className="heroTop heroTopWithTheme">
         <AverageRatingCard
@@ -218,6 +219,7 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
           scale={averageRatingScale}
           detectedFilmsCount={detectedFilmsCount}
         />
+        <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} variant="hero" />
         <div className="heroPanelWrap">
           <p className="heroCoverageLine" tabIndex={0}>
             {detectedFilmsCount}/{targetFilmsCount} films analysés, {formatPercent(hero.metadata_coverage)}{" "}
@@ -227,7 +229,7 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
             </span>
           </p>
           <aside className="heroPanel" aria-label="Profile coverage">
-            <SeverityGauge card={ratingCard} />
+            <SeverityGauge card={ratingCard} fallbackAverage={averageRating} />
           </aside>
         </div>
       </section>
@@ -251,21 +253,12 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
         copy={recommendations_copy}
       />
 
-      <section className="highlightsSection" aria-label="Ton Carrousel Fifty">
+      <section className="highlightsSection" aria-label="Le Carrousel">
         <div className="sectionHeading">
-          <h2>{highlights_copy?.title ?? "Ton Carrousel Fifty"}</h2>
+          <h2>{highlights_copy?.title ?? "Le Carrousel"}</h2>
+          <p>Toi, en 6 films clés et 1 réal</p>
         </div>
         <HighlightsCarousel highlights={highlights} copy={highlights_copy} />
-      </section>
-
-      <section className="cardsSection" aria-label={cards_section?.title ?? "Summary"}>
-        <div className="sectionHeading">
-          <h2>{cards_section?.title ?? "Ton Résumé Fifty"}</h2>
-        </div>
-        <div className="cardsGrid">
-          <LogTimeMini logTimeProfile={log_time_profile} />
-          <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} />
-        </div>
       </section>
 
       <footer className="siteFooter" aria-label="Informations sur Fifty">

@@ -129,7 +129,7 @@ const radarBackCopyRecalibrated: Partial<Record<keyof RadarScores, RadarBackCopy
   },
 };
 
-const radarSectionTitle = "Ton Triangle Fifty";
+const radarSectionTitle = "Le Triangle";
 const radarSectionSubtitle = "Trois axes, trois archétypes : voyons ton rapport récent aux films.";
 
 const center = 260;

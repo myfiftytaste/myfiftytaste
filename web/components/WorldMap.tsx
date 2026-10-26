@@ -244,7 +244,7 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
     return (
       <section className="world-map-section" aria-label="Passeport cinéma">
         <div className="sectionHeading">
-          <h2>Ton Passeport Fifty</h2>
+          <h2>Le Passeport</h2>
           <p>E.T. téléphone maison… mais on ne trouve pas d’où viennent tes films.</p>
         </div>
       </section>
@@ -306,7 +306,7 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
   return (
     <section className="world-map-section" aria-label="Passeport cinéma">
       <div className="sectionHeading">
-        <h2>Ton Passeport Fifty</h2>
+        <h2>Le Passeport</h2>
         <p>
           {countryMap?.subtitle ||
             "Les pays de production que traversent tes films détectés."}

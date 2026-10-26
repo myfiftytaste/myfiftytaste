@@ -826,26 +826,8 @@ h1 {
   border-color: var(--accent);
 }
 
-.headerCardTip {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.headerCardTip h3 {
-  font-family: var(--font-title), Georgia, "Times New Roman", serif;
-  font-size: 1.15rem;
-  font-weight: 500;
-  color: var(--paper);
-  margin: 8px 0 0;
-}
 
-.headerTipText {
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 10px 0 0;
-}
 
 .badgeRow {
   display: flex;
@@ -962,55 +944,10 @@ h1 {
   line-height: 1.5;
 }
 
-.gauge {
-  margin-top: 6px;
-}
 
-.gaugeTrack {
-  position: relative;
-  height: 5px;
-  border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    rgba(242, 230, 207, 0.07) 0%,
-    rgba(242, 230, 207, 0.12) 46%,
-    rgba(242, 230, 207, 0.12) 54%,
-    rgba(217, 164, 65, 0.32) 78%,
-    rgba(217, 164, 65, 0.62) 100%
-  );
-}
 
-.gaugeCenterTick {
-  position: absolute;
-  left: 50%;
-  top: -3px;
-  width: 1px;
-  height: 11px;
-  background: rgba(242, 230, 207, 0.3);
-  transform: translateX(-50%);
-}
 
-.gaugeMarker {
-  position: absolute;
-  top: 50%;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 3px rgba(16, 16, 14, 1), 0 0 8px rgba(226, 178, 74, 0.55);
-  transform: translate(-50%, -50%);
-}
 
-.gaugeEnds {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
 
 .sampleWarning {
   margin: 24px 0 0;
@@ -4157,4 +4094,324 @@ h1 {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--ink);
+}
+
+/* Haut du profil (maquette du 26/10/2026) : note moyenne et durée moyenne côte à côte,
+   puis la jauge à deux billes ; sur ordinateur, les trois sur une ligne. */
+.heroTopWithTheme {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.heroTopWithTheme .heroPanelWrap {
+  grid-column: 1 / -1;
+}
+
+.heroTopWithTheme .averageRatingCard {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  min-height: 0;
+  padding: 18px 12px;
+  text-align: center;
+}
+
+.heroTopWithTheme .averageStarSvg {
+  width: clamp(4.5rem, 14vw, 7.5rem);
+  height: clamp(4.5rem, 14vw, 7.5rem);
+}
+
+.heroTopWithTheme .averageRatingCopy {
+  gap: 8px;
+  padding: 0;
+  font-size: clamp(0.78rem, 1.4vw, 1rem);
+}
+
+.heroTopWithTheme .averageRatingCopy strong {
+  font-size: clamp(2rem, 6vw, 3.4rem);
+}
+
+.runtimeHeroCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 18px 12px;
+  border: 1px solid var(--gold-border);
+  border-radius: 8px;
+  background: rgba(247, 238, 220, 0.055);
+  text-align: center;
+}
+
+.runtimeHeroCard .filmstripValue {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.4rem);
+}
+
+.runtimeHeroCard .filmstripVisual,
+.runtimeHeroCard .filmstripEnds {
+  width: 100%;
+  max-width: 340px;
+}
+
+.runtimeHeroText {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(0.78rem, 1.4vw, 1rem);
+  line-height: 1.4;
+}
+
+@media (min-width: 900px) {
+  .heroTopWithTheme {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .heroTopWithTheme .heroPanelWrap {
+    grid-column: auto;
+  }
+}
+
+.severityHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.gaugeBalls {
+  margin: 4px 8px 0;
+}
+
+.gaugeBallsStage {
+  position: relative;
+  height: 58px;
+}
+
+.gaugeBallsTrack {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+  height: 4px;
+  border-radius: 4px;
+  background: rgba(242, 230, 207, 0.14);
+}
+
+.gaugeBallsSpan {
+  position: absolute;
+  top: 30px;
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #ffd24a, #40bcf4);
+  animation: gaugeAppear 0.5s 1.4s both;
+}
+
+.gaugeBallsTick {
+  position: absolute;
+  top: 42px;
+  transform: translateX(-50%);
+  color: var(--muted);
+  font-size: 0.62rem;
+}
+
+.gaugeBallsValue {
+  position: absolute;
+  top: 2px;
+  color: var(--muted);
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  animation: gaugeAppear 0.4s 1.5s both;
+}
+
+.gaugeBallsValueYou {
+  color: #ffd24a;
+}
+
+.gaugeBall {
+  position: absolute;
+  top: 32px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: var(--to);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  animation: gaugeRoll 1.3s var(--delay) cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.gaugeBallYou {
+  background: radial-gradient(circle at 36% 32%, #fff4c2 0%, #ffd24a 48%, #e29a12 100%);
+}
+
+.gaugeBallCommunity {
+  background:
+    radial-gradient(circle at 34% 30%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 45%),
+    linear-gradient(135deg, #ff8000, #00e054 50%, #40bcf4);
+}
+
+.gaugeBallsLegend {
+  display: grid;
+  gap: 4px;
+  margin: 2px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.4;
+}
+
+.gaugeBallsLegend li {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.gaugeBallsLegend b {
+  color: var(--paper);
+}
+
+.gaugeDot {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+@keyframes gaugeRoll {
+  from {
+    left: var(--from);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    left: var(--to);
+    transform: translate(-50%, -50%) rotate(var(--spin));
+  }
+}
+
+@keyframes gaugeAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Astuce en bulle flottante (maquette du 26/10/2026). */
+.tipBubble {
+  position: absolute;
+  z-index: 5;
+  top: 64px;
+  right: 0;
+  width: min(330px, 62vw);
+  transition: transform 0.55s cubic-bezier(0.5, 0, 0.75, 0), opacity 0.55s;
+}
+
+.tipBubbleClosed {
+  transform: translateX(140%) rotate(8deg);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tipBubbleBody {
+  position: relative;
+  padding: 14px 40px 14px 16px;
+  border-radius: 20px 20px 4px 20px;
+  background: var(--paper);
+  color: #241c12;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+  animation: tipFloat 3.3s ease-in-out infinite alternate;
+}
+
+.tipBubbleBody::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 8px;
+  border-left: 12px solid var(--paper);
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+.tipBubbleTitle {
+  margin: 0 0 4px;
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.tipBubbleText {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.tipBubbleClose {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #5a4a33;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.tipBubbleTab {
+  position: absolute;
+  z-index: 5;
+  top: 110px;
+  right: calc((100vw - 100%) / -2);
+  width: 32px;
+  height: 52px;
+  border: 0;
+  border-radius: 14px 0 0 14px;
+  background: var(--paper);
+  color: #241c12;
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: -4px 6px 16px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+@keyframes tipFloat {
+  from {
+    transform: translateY(0) rotate(-1.2deg);
+  }
+  to {
+    transform: translateY(-7px) rotate(0.6deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gaugeBall,
+  .gaugeBallsSpan,
+  .gaugeBallsValue,
+  .tipBubbleBody {
+    animation: none;
+  }
+}
+
+/* Téléphone : la carte de profil occupe toute la largeur, la bulle flotte donc en bas, au-dessus des onglets. */
+@media (max-width: 620px) {
+  .tipBubble {
+    position: fixed;
+    top: auto;
+    right: 14px;
+    bottom: calc(100px + env(safe-area-inset-bottom));
+    width: min(300px, calc(100vw - 48px));
+  }
+
+  .tipBubbleTab {
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: calc(112px + env(safe-area-inset-bottom));
+  }
 }

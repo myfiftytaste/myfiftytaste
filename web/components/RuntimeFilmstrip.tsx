@@ -54,10 +54,14 @@ const tickXs = Array.from({ length: TICK_COUNT - 1 }, (_, i) => (W * (i + 1)) / 
 export default function RuntimeFilmstrip({
   card,
   averageMinutes,
+  variant = "card",
 }: {
   card?: RuntimeCard | null;
   averageMinutes?: number | null;
+  // "hero" : petite carte du haut du profil, à côté de la note moyenne (maquette du 26/10/2026).
+  variant?: "card" | "hero";
 }) {
+  const hero = variant === "hero";
   const gradId = useId();
   const baseRef = useRef<SVGPathElement>(null);
   const fillRef = useRef<SVGPathElement>(null);
@@ -114,7 +118,7 @@ export default function RuntimeFilmstrip({
 
   if (!hasData || !card) {
     return (
-      <article className="metricCard" aria-label="Durée moyenne">
+      <article className={hero ? "runtimeHeroCard" : "metricCard"} aria-label="Durée moyenne">
         <div className="cardTopline">
           <h3>Durée moyenne</h3>
         </div>
@@ -124,10 +128,12 @@ export default function RuntimeFilmstrip({
   }
 
   return (
-    <article className="metricCard" aria-label={card.title}>
-      <div className="cardTopline">
-        <h3>{card.title}</h3>
-      </div>
+    <article className={hero ? "runtimeHeroCard" : "metricCard"} aria-label={card.title}>
+      {hero ? null : (
+        <div className="cardTopline">
+          <h3>{card.title}</h3>
+        </div>
+      )}
       <p className="filmstripValue">{card.value}</p>
       <div className="filmstripVisual">
         <svg viewBox={`0 0 ${W} 70`} role="img" aria-label={card.description}>
@@ -182,8 +188,14 @@ export default function RuntimeFilmstrip({
         <span>1h</span>
         <span>2h30</span>
       </div>
-      <p className="cardDescription">{card.description}</p>
-      <p className="dataSource">{card.data_source}</p>
+      {hero ? (
+        <p className="runtimeHeroText">La durée moyenne de tes films</p>
+      ) : (
+        <>
+          <p className="cardDescription">{card.description}</p>
+          <p className="dataSource">{card.data_source}</p>
+        </>
+      )}
     </article>
   );
 }

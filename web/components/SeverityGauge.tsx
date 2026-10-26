@@ -1,97 +1,143 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import type { Card } from "./ProfileView";
 
-const MAX_ABS_GAP = 1.5;
+// Jauge validée le 26/10/2026 : la ligne d'origine, avec deux billes qui roulent depuis leur
+// extrémité (la moyenne la plus basse part de la gauche) et s'arrêtent à leur note sur ½–5 :
+// dorée = ta moyenne, camaïeu Letterboxd = la communauté sur les mêmes films.
+const SCALE_MIN = 0.5;
+const SCALE_MAX = 5;
+const BALL_SIZE = 16;
+const TICKS = [1, 2, 3, 4, 5];
 
-function formatSignedFrench(value: number) {
+function formatFrench(value: number, signed = false) {
   return new Intl.NumberFormat("fr-FR", {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
-    signDisplay: "exceptZero",
+    signDisplay: signed ? "exceptZero" : "auto",
   }).format(value);
 }
 
-function gaugePosition(value: number) {
-  const clamped = Math.max(-MAX_ABS_GAP, Math.min(MAX_ABS_GAP, value));
-  return ((clamped + MAX_ABS_GAP) / (MAX_ABS_GAP * 2)) * 100;
+function toPercent(value: number) {
+  const clamped = Math.max(SCALE_MIN, Math.min(SCALE_MAX, value));
+  return ((clamped - SCALE_MIN) / (SCALE_MAX - SCALE_MIN)) * 100;
 }
 
-function easeOutCubic(t: number) {
-  return 1 - Math.pow(1 - t, 3);
+function parse(value: string | number | null | undefined) {
+  const parsed = typeof value === "number" ? value : Number.parseFloat(value ?? "");
+  return Number.isFinite(parsed) ? parsed : null;
 }
 
-export default function SeverityGauge({ card }: { card?: Card | null }) {
-  const rawValue = card?.value != null ? Number.parseFloat(card.value) : NaN;
-  const hasValue = Number.isFinite(rawValue);
-  const targetPosition = hasValue ? gaugePosition(rawValue) : 50;
-  const [markerPosition, setMarkerPosition] = useState(50);
-  const cardRef = useRef<HTMLDivElement>(null);
+export default function SeverityGauge({
+  card,
+  fallbackAverage,
+}: {
+  card?: Card | null;
+  // Profils générés avant l'ajout des deux moyennes (cache de 24 h au plus) : moyenne générale du profil.
+  fallbackAverage?: number | null;
+}) {
+  const gap = parse(card?.value);
+  const you = parse(card?.user_average) ?? (gap !== null ? parse(fallbackAverage) : null);
+  const community = parse(card?.community_average) ?? (you !== null && gap !== null ? you - gap : null);
+  const hasValue = gap !== null && you !== null && community !== null;
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [run, setRun] = useState(0);
+  const [trackWidth, setTrackWidth] = useState(300);
 
-  // Replays every time the gauge re-enters view (not just once on mount), so
-  // scrolling away and back shows the marker slide in again.
+  // Rejoue l'arrivée des billes à chaque retour à l'écran, comme l'étoile voisine.
   useEffect(() => {
-    if (!hasValue) return;
-    const node = cardRef.current;
-    if (!node) return;
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setMarkerPosition(targetPosition);
-      return;
-    }
-
-    let rafId = 0;
+    const node = trackRef.current;
+    if (!hasValue || !node) return;
+    setTrackWidth(node.offsetWidth || 300);
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          cancelAnimationFrame(rafId);
-          setMarkerPosition(50);
-          const duration = 1500;
-          const startTime = performance.now();
-          function tick(now: number) {
-            const t = Math.max(0, Math.min(1, (now - startTime) / duration));
-            setMarkerPosition(50 + (targetPosition - 50) * easeOutCubic(t));
-            if (t < 1) rafId = requestAnimationFrame(tick);
-          }
-          rafId = requestAnimationFrame(tick);
-        });
-      },
+      (entries) => entries.forEach((entry) => entry.isIntersecting && setRun((current) => current + 1)),
       { threshold: 0.4 },
     );
     observer.observe(node);
+    return () => observer.disconnect();
+  }, [hasValue]);
 
-    return () => {
-      observer.disconnect();
-      cancelAnimationFrame(rafId);
-    };
-  }, [hasValue, targetPosition]);
+  if (!hasValue) {
+    return (
+      <div className="severityCard" aria-label="Sévérité de notation">
+        <p className="severityEyebrow">Notation</p>
+        <p className="severityDesc">
+          {card?.description ?? "On ne trouve pas assez de notes comparables pour calculer ton écart à la moyenne."}
+        </p>
+      </div>
+    );
+  }
+
+  const youAt = toPercent(you);
+  const communityAt = toPercent(community);
+  const youFromLeft = you <= community;
+  // Valeurs trop proches : les deux étiquettes s'écartent de part et d'autre de leur milieu.
+  const close = Math.abs(youAt - communityAt) < 12;
+  const middle = (youAt + communityAt) / 2;
+  const ball = (to: number, fromLeft: boolean, delay: number) => {
+    const from = fromLeft ? 0 : 100;
+    const spin = (((to - from) / 100) * trackWidth * 360) / (Math.PI * BALL_SIZE);
+    return {
+      "--from": `${from}%`,
+      "--to": `${to}%`,
+      "--spin": `${Math.round(spin)}deg`,
+      "--delay": `${delay}s`,
+    } as CSSProperties;
+  };
+  const label = (at: number, isLower: boolean) =>
+    (close
+      ? { left: `${middle}%`, transform: isLower ? "translateX(calc(-100% - 4px))" : "translateX(4px)" }
+      : { left: `${at}%`, transform: "translateX(-50%)" }) as CSSProperties;
 
   return (
-    <div className="severityCard" aria-label="Sévérité de notation" ref={cardRef}>
-      {hasValue ? (
-        <>
-          <p className="severityEyebrow">{card?.title}</p>
-          <span className="severityValue">{formatSignedFrench(rawValue)}</span>
-          {card?.description ? <p className="severityDesc">{card.description}</p> : null}
-          <div className="gauge">
-            <div className="gaugeTrack">
-              <div className="gaugeCenterTick" aria-hidden="true" />
-              <div className="gaugeMarker" style={{ left: `${markerPosition}%` }} />
-            </div>
-            <div className="gaugeEnds">
-              <span>Sévère</span>
-              <span>Indulgent</span>
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <p className="severityEyebrow">Notation</p>
-          <p className="severityDesc">
-            {card?.description ?? "On ne trouve pas assez de notes comparables pour calculer ton écart à la moyenne."}
-          </p>
-        </>
-      )}
+    <div className="severityCard" aria-label="Sévérité de notation">
+      <div className="severityHead">
+        <p className="severityEyebrow">{card?.title}</p>
+        <span className="severityValue">{formatFrench(gap, true)}</span>
+      </div>
+      {card?.description ? <p className="severityDesc">{card.description}</p> : null}
+      <div
+        className="gaugeBalls"
+        ref={trackRef}
+        role="img"
+        aria-label={`Ta moyenne ${formatFrench(you)}, moyenne de la communauté Letterboxd sur les mêmes films ${formatFrench(community)}`}
+      >
+        {/* Rien n'est dessiné avant la première apparition à l'écran : l'arrivée des billes se voit toujours. */}
+        <div key={run} className="gaugeBallsStage" style={{ visibility: run === 0 ? "hidden" : "visible" }}>
+          <div className="gaugeBallsTrack" />
+          <div
+            className="gaugeBallsSpan"
+            style={{ left: `${Math.min(youAt, communityAt)}%`, width: `${Math.abs(communityAt - youAt)}%` }}
+          />
+          {TICKS.map((tick) => (
+            <span key={tick} className="gaugeBallsTick" style={{ left: `${toPercent(tick)}%` }}>
+              {tick}
+            </span>
+          ))}
+          <span className="gaugeBallsValue gaugeBallsValueYou" style={label(youAt, youFromLeft)}>
+            {formatFrench(you)}
+          </span>
+          <span className="gaugeBallsValue" style={label(communityAt, !youFromLeft)}>
+            {formatFrench(community)}
+          </span>
+          <span className="gaugeBall gaugeBallYou" style={ball(youAt, youFromLeft, 0.2)} />
+          <span className="gaugeBall gaugeBallCommunity" style={ball(communityAt, !youFromLeft, 0.35)} />
+        </div>
+      </div>
+      <ul className="gaugeBallsLegend">
+        <li>
+          <span className="gaugeDot gaugeBallYou" aria-hidden="true" />
+          <span>
+            <b>{formatFrench(you)}</b>{" "}
+            {card?.compared_count ? `(ta moyenne sur ${card.compared_count} films)` : "(ta moyenne)"}
+          </span>
+        </li>
+        <li>
+          <span className="gaugeDot gaugeBallCommunity" aria-hidden="true" />
+          <span>
+            <b>{formatFrench(community)}</b> (la moyenne de la communauté Letterboxd sur les mêmes films)
+          </span>
+        </li>
+      </ul>
     </div>
   );
 }

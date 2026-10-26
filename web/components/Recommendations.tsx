@@ -66,7 +66,7 @@ export default function Recommendations({
   unavailableReason?: string | null;
   copy?: RecommendationsCopy;
 }) {
-  const title = copy?.title ?? "Tes Recos Fifty";
+  const title = copy?.title ?? "Les Recos";
   const subtitle =
     copy?.subtitle_template?.replace("{detected_films_count}", String(detectedFilmsCount)) ??
     `Des recommandations calculées à partir de tes ${detectedFilmsCount} films détectés. Et tout ça sans IA !`;
