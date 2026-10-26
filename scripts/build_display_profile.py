@@ -814,7 +814,8 @@ def rating_card_copy(diff: Any, card_config: dict[str, Any]) -> tuple[str, str]:
         titles.get(variant) or "Notation",
         template(
             templates.get(variant),
-            {"abs_rating_gap": f"{absolute:.2f}".replace(".", ",")},
+            # Pluriel à partir de 2 en français : « 1,5 étoile », « 2,3 étoiles ».
+            {"abs_rating_gap": f"{absolute:.1f}".replace(".", ",") + (" étoiles" if round(absolute, 1) >= 2 else " étoile")},
             f"{absolute:.2f} stars from the crowd.",
         ),
     )

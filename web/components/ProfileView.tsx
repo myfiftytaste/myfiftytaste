@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 /* eslint-disable @next/next/no-img-element */
@@ -18,6 +17,7 @@ import SeverityGauge from "./SeverityGauge";
 import WorldMap from "./WorldMap";
 import { useVisualTheme } from "./VisualThemeProvider";
 import type { Badge } from "../lib/badgeSelection";
+import BrandLockup from "./BrandLockup";
 
 export type Card = {
   id: string;
@@ -204,17 +204,8 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
   return (
     <main className="pageShell">
       <div className="pageThemeLabel">{theme.label}</div>
-      <header className="siteHeader" aria-label="Fifty">
-        <div className="siteBranding">
-          <Image
-            src="/branding/logoV1-transparent.png"
-            alt="Fifty"
-            width={1013}
-            height={708}
-            priority
-            className="siteLogo"
-          />
-        </div>
+      <header className="siteHeader">
+        <BrandLockup />
       </header>
 
       <section className="headerBand" aria-label="Profil et astuce de découverte">
@@ -231,7 +222,7 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
         <div className="heroPanelWrap">
           <p className="heroCoverageLine" tabIndex={0}>
             {detectedFilmsCount}/{targetFilmsCount} films analysés, {formatPercent(hero.metadata_coverage)}{" "}
-            couverts par l&apos;analyse
+            couverts par l&apos;algorithme
             <span className="heroCoverageTooltip" role="tooltip">
               Fiabilité&nbsp;: {ratingCard?.confidence_label ?? "—"}
             </span>
@@ -261,18 +252,16 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
         copy={recommendations_copy}
       />
 
-      <section className="highlightsSection" aria-label="Highlights">
+      <section className="highlightsSection" aria-label="Ton Carrousel Fifty">
         <div className="sectionHeading">
-          <p className="eyebrow">{highlights_copy?.eyebrow ?? "HIGHLIGHTS"}</p>
-          <h2>{highlights_copy?.title ?? "Toi, en 6 films clés et 1 réal"}</h2>
+          <h2>{highlights_copy?.title ?? "Ton Carrousel Fifty"}</h2>
         </div>
         <HighlightsCarousel highlights={highlights} copy={highlights_copy} />
       </section>
 
       <section className="cardsSection" aria-label={cards_section?.title ?? "Summary"}>
         <div className="sectionHeading">
-          <p className="eyebrow">{cards_section?.eyebrow ?? "SUMMARY"}</p>
-          <h2>{cards_section?.title ?? "At a glance…"}</h2>
+          <h2>{cards_section?.title ?? "Ton Résumé Fifty"}</h2>
         </div>
         <div className="cardsGrid">
           <LogTimeMini logTimeProfile={log_time_profile} />
@@ -288,7 +277,7 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
           l&apos;utilisateur sur Letterboxd
         </p>
         <p>
-          Made by{" "}
+          Trifouillé par{" "}
           <a href="https://letterboxd.com/tanguytare/" target="_blank" rel="noreferrer">
             Tanguytare
           </a>{" "}

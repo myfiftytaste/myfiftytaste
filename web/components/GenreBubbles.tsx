@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import type { CSSProperties } from "react";
+import { genreFr } from "../lib/labelsFr";
 
 type GenreBubble = {
   genre: string;
@@ -38,11 +39,11 @@ const bubblePositions = [
 
 const shortGenreLabels: Record<string, string> = {
   Animation: "Anim.",
-  "Science Fiction": "Sci-Fi",
+  "Science Fiction": "SF",
 };
 
 function bubbleLabel(genre: string) {
-  return shortGenreLabels[genre] ?? genre;
+  return shortGenreLabels[genre] ?? genreFr(genre);
 }
 
 function clamp(value: number, min: number, max: number) {
@@ -259,10 +260,9 @@ export default function GenreBubbles({
   }
 
   return (
-    <section className="genre-bubbles-section" aria-label="Constellation des genres">
+    <section className="genre-bubbles-section" aria-label="Ta Constellation Fifty">
       <div className="sectionHeading">
-        <p className="eyebrow">Genres</p>
-        <h2>Constellation des genres</h2>
+        <h2>Ta Constellation Fifty</h2>
         <p>Les genres qui reviennent le plus dans tes {detectedFilmsCount} films détectés.</p>
       </div>
 
@@ -287,7 +287,7 @@ export default function GenreBubbles({
                 style={style}
                 role="button"
                 tabIndex={0}
-                aria-label={`${bubble.genre}: ${bubble.count} occurrences${share ? `, ${share}` : ""}`}
+                aria-label={`${genreFr(bubble.genre)} : ${bubble.count} occurrences${share ? `, ${share}` : ""}`}
                 onPointerEnter={(event) => enterBubble(bubble, event)}
                 onPointerMove={moveTooltip}
                 onPointerLeave={leaveBubble}
@@ -309,7 +309,7 @@ export default function GenreBubbles({
               className="genre-bubble-tooltip"
               style={{ left: tooltip.x, top: tooltip.y }}
             >
-              <strong>{tooltip.bubble.genre}</strong>
+              <strong>{genreFr(tooltip.bubble.genre)}</strong>
               <span>
                 {tooltip.bubble.count} {tooltip.bubble.count > 1 ? "occurrences" : "occurrence"}
               </span>
@@ -341,7 +341,7 @@ export default function GenreBubbles({
               onMouseLeave={() => setHoveredGenre(null)}
             >
               <div className="genre-bar-heading">
-                <span>{bubble.genre}</span>
+                <span>{genreFr(bubble.genre)}</span>
                 <span className="genre-bar-meta">
                   <strong>{bubble.count}</strong>
                   <small>{formatShare(bubble.share) ?? "n/a"}</small>

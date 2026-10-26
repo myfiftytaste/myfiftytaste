@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import BrandLockup from "../../components/BrandLockup";
 
 // Fidèle à feedback-et-note-maj-mockup.html, bloc 3 uniquement (le formulaire
 // — les blocs 1/2, note de mise à jour froissée/dépliée, sont un chantier
@@ -112,26 +111,15 @@ export default function FeedbackPage() {
 
   return (
     <main className="feedback-shell pageShell">
-      <header className="siteHeader" aria-label="Fifty">
-        <div className="siteBranding">
-          <Link href="/">
-            <Image
-              src="/branding/logoV1-transparent.png"
-              alt="Fifty"
-              width={1013}
-              height={708}
-              priority
-              className="siteLogo"
-            />
-          </Link>
-        </div>
+      <header className="siteHeader">
+        <BrandLockup />
       </header>
 
       <section className="feedbackMasthead">
         <p className="hofEyebrow">Feedback</p>
         <h2 className="feedbackTitle">Dis-moi ce que tu en penses</h2>
         <p className="hofLede hofLedeCentered">
-          Une minute, pas plus. Le champ libre est le plus utile — le reste sert juste à trier.
+          Une minute, pas plus.
         </p>
       </section>
 

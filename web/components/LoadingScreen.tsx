@@ -10,9 +10,8 @@ import { useEffect, useRef, useState } from "react";
 const CAPTIONS = [
   "On déroule la pellicule…",
   "Projection en cours",
-  "On cherche ton Rosebud",
   "Développement des négatifs",
-  "Le projectionniste s'installe",
+  "Le projectionniste sort de sa sieste",
   "On rembobine tes 50 derniers films",
   "Silence, ça tourne",
   "Réglage de la mise au point",
@@ -92,7 +91,7 @@ export default function LoadingScreen({
           </div>
           <p className={`loadingCaption${fading ? " loadingFading" : ""}`}>{CAPTIONS[captionIndex]}</p>
           <p className={`loadingPatience${showPatience ? " loadingShow" : ""}`}>
-            Letterboxd prend son temps. On ne t’a pas oublié.
+            Patience, jeune padawan. Letterboxd prend son temps, on ne t’a pas oublié.
           </p>
         </div>
       </div>

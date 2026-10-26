@@ -45,9 +45,7 @@ export default function UpdateNote() {
           }
         }}
       >
-        <b>Note de màj</b>
-        ce qui a changé depuis la première version
-        <small>Cliquer</small>
+        <b>Note de mise à jour</b>
       </div>
 
       {open ? (

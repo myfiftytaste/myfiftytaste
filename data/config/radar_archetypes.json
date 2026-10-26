@@ -3,24 +3,24 @@
     "public_axis_label": "Popularité",
     "levels": {
       "1": {
-        "title": "Chasseur d’OVNIs Letterboxd",
-        "one_line": "Tu écumes les listes « weird » du site à la recherche du film que personne n’a vu ; la moitié de tes films, les autres profils Fifty n’en ont jamais entendu parler."
+        "title": "ERREUR #1312**",
+        "one_line": "Tu ne regardes un film que s’il n’a pas d’affiche sur Letterboxd et tu écumes les listes « weird » à la recherche du film que personne n’a vu. Tu nous fais peur."
       },
       "2": {
         "title": "Digger de pépites",
-        "one_line": "Tu traces ton propre chemin à travers les lists Letterboxd obscures ; le film que tout le monde a vu peut attendre, la pépite oubliée, jamais."
+        "one_line": "Tu traces ton chemin à travers les lists Letterboxd obscures, tu es niche, ça va, c’est bon, on a compris."
       },
       "3": {
         "title": "Cinéphile éclectique",
-        "one_line": "Individu mesuré, tu suis tes potes cinéphiles à La Filmothèque pour remplir ton quota de films moins mainstream."
+        "one_line": "Individu mesuré, tu suis tes potes cinéphiles à La Filmothèque pour remplir ton quota de films niche."
       },
       "4": {
         "title": "Iencli assumé",
-        "one_line": "Tu es ce que l’on appelle dans le jargon un iencli de base, ta carte UGC ne sert qu’à aller voir les Marvel et le dernier Spielberg."
+        "one_line": "Tu es ce que l’on appelle dans le jargon un ciné-iencli, tu bippes ta carte UGC une fois par trimestre pour une rétrospective."
       },
       "5": {
         "title": "Fan d’Interstellar",
-        "one_line": "Ta seule vue suffit à ce que Regelegorila fasse une rupture d’anévrisme, tu ne jures que par Interstellar, Fight Club et 7even."
+        "one_line": "Ta seule vue suffit à ce que Regelegorila fasse une rupture d’anévrisme, tu ne jures que par Interstellar, Fight Club et Se7en."
       }
     }
   },
@@ -29,7 +29,7 @@
     "levels": {
       "1": {
         "title": "Rat de cinémathèque",
-        "one_line": "Pendant que les autres courent aux avant-premières, toi tu rattrapes les classiques : tes films ont presque vingt ans de moyenne d’âge."
+        "one_line": "Tu sais qu’on est passés au cinéma parlant, hein ?"
       },
       "2": {
         "title": "Éternel nostalgique",
@@ -69,8 +69,8 @@
         "one_line": "Ta plume ne cesse d’écumer les fiches Letterboxd ! Tu aspires à être recruté en CDI sur Critikat."
       },
       "5": {
-        "title": "Oracle",
-        "one_line": "Être omniscient, tu es le messie filmique, Letterboxd t’a amené à nous pour nous éclabousser de ta vérité. Nous t’aimons."
+        "title": "Scribe filmique",
+        "one_line": "Être omniprésent, tu es le messie cinéphile, Letterboxd t’a amené à nous pour nous éclabousser de ta vérité."
       }
     }
   }

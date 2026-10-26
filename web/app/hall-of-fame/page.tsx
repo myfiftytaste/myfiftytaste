@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import ContinentMap from "../../components/hall-of-fame/ContinentMap";
 import Podium from "../../components/hall-of-fame/Podium";
 import { currentMonth, getMonthlyRankings, nextMonthLabel, seasonTitle } from "../../lib/hallOfFame";
+import BrandLockup from "../../components/BrandLockup";
 
 // Rankings depend on live opt-in state written by the API route, so this
 // page must never be statically cached — recomputed on every request.
@@ -15,24 +14,13 @@ export default async function HallOfFamePage() {
 
   return (
     <main className="hof-shell pageShell">
-      <header className="siteHeader" aria-label="Fifty">
-        <div className="siteBranding">
-          <Link href="/">
-            <Image
-              src="/branding/logoV1-transparent.png"
-              alt="Fifty"
-              width={1013}
-              height={708}
-              priority
-              className="siteLogo"
-            />
-          </Link>
-        </div>
+      <header className="siteHeader">
+        <BrandLockup />
       </header>
 
       <section className="hofMasthead">
-        <p className="hofEyebrow">Hall of Fame</p>
-        <h1 className="hofMastheadTitle">Saison {seasonTitle(month)}</h1>
+        <h1 className="hofMastheadTitle">Hall of Fame</h1>
+        <p className="hofEyebrow">Saison {seasonTitle(month)}</p>
         <p className="hofLede hofLedeCentered">
           <span className="verbPointer">Clique</span>
           <span className="verbTouch">Appuie</span> sur les bulles pour découvrir le profil Letterboxd derrière&nbsp;!
@@ -92,10 +80,9 @@ export default async function HallOfFamePage() {
       {rankings.participantCount > 0 ? (
         <section className="hofContinentsSection" aria-label="Cinéma du monde par continent">
           <div className="hofContinentsIntro">
-            <h2 className="hofContinentsTitle">Le cinéma du monde, par continent</h2>
+            <h2 className="hofContinentsTitle">Les tops par continent</h2>
             <p className="hofLede hofLedeCentered">
-              Basé sur la provenance des films regardés — pas sur la localisation du profil Letterboxd. Un seul
-              cinéphile mis en avant par continent, seulement s’il y a une consommation claire.
+              Basé sur la provenance des films regardés. Un seul cinéphile mis en avant par continent.
             </p>
           </div>
           <ContinentMap winners={rankings.continentWinners} />
