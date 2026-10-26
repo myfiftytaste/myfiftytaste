@@ -1,0 +1,4 @@
+# Scripts Megabank hors ligne (clean_megabank.py, inspect_megabank.py) : pas utilisés par le worker ni le pipeline.
+# Installer en plus de requirements.txt : pip install -r requirements.txt -r requirements-megabank.txt
+pandas
+openpyxl

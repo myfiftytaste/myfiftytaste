@@ -5,10 +5,15 @@ import ErrorScreen from "../../../components/ErrorScreen";
 import LoadingScreen from "../../../components/LoadingScreen";
 import ProfileView from "../../../components/ProfileView";
 import { ApiError, fetchCachedProfile, getJobStatus, postProfile, type CachedProfilePayload } from "../../../lib/apiClient";
+import { isFresh } from "../../../lib/freshness";
+import { readMyPseudo } from "../../../lib/myPseudo";
 
 // Intervalle de polling de GET /api/job/{id} — dans la fourchette demandée
 // (1,5 à 2 s).
 const POLL_INTERVAL_MS = 1750;
+// Au-delà, on abandonne avec un message clair plutôt que de sonder sans fin
+// (jeton de réveil du worker expiré, worker en panne : audit du 26/10/2026, #7).
+const POLL_TIMEOUT_MS = 10 * 60 * 1000;
 
 type Phase = "checking" | "loading" | "merging" | "ready" | "error";
 
@@ -23,7 +28,12 @@ export default function ProfilePage({
   params: { username: string };
   searchParams: { job?: string };
 }) {
-  const username = decodeURIComponent(params.username);
+  // Une adresse mal encodée (%E0%A4) ferait planter le rendu : on garde alors le texte brut,
+  // que l'API refusera proprement (400).
+  let username = params.username;
+  try {
+    username = decodeURIComponent(params.username);
+  } catch {}
   const [phase, setPhase] = useState<Phase>("checking");
   const [jobId, setJobId] = useState<string | null>(searchParams.job ?? null);
   const [profile, setProfile] = useState<CachedProfilePayload | null>(null);
@@ -45,7 +55,11 @@ export default function ProfilePage({
       try {
         const cached = await fetchCachedProfile(username);
         if (cancelled) return;
-        if (cached) {
+        // Le cache ne s'affiche tel quel que s'il est frais (moins de 24 h, même mois UTC) ET que ce
+        // n'est pas « mon wrapped » : POST /api/profile pose le cookie fifty_owner (consentement
+        // Hall of Fame), même quand il répond depuis le cache sans créer de job.
+        const mine = readMyPseudo()?.toLowerCase() === username.toLowerCase();
+        if (cached && isFresh(new Date(cached.generated_at)) && !mine) {
           setProfile(cached);
           setPhase("ready");
           return;
@@ -82,8 +96,14 @@ export default function ProfilePage({
     if (phase !== "loading" || !jobId) return;
 
     let cancelled = false;
+    const startedAt = Date.now();
 
     async function poll() {
+      if (Date.now() - startedAt > POLL_TIMEOUT_MS) {
+        setErrorCode("timeout");
+        setPhase("error");
+        return;
+      }
       try {
         const status = await getJobStatus(jobId as string);
         if (cancelled) return;

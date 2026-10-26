@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { NextRequest } from "next/server";
 import { Pool } from "pg";
 
+export { isFresh } from "./freshness";
 export { normalizeUsername, USERNAME_PATTERN } from "./username";
 
 // Serveur uniquement (module "pg"). Ne jamais importer ce fichier depuis un
@@ -43,21 +44,11 @@ export function getPool(): Pool {
   return pool;
 }
 
-// Règle "profil frais" volontairement simple et explicite (pas de vrai
-// système de TTL/cache pour l'instant — prévu phase 6 du runbook). Ajuster
-// cette seule constante suffit à changer le comportement.
-export const PROFILE_FRESHNESS_HOURS = 24;
-
-export function isFresh(generatedAt: Date): boolean {
-  const ageMs = Date.now() - generatedAt.getTime();
-  return ageMs < PROFILE_FRESHNESS_HOURS * 60 * 60 * 1000;
-}
-
 // Rate limit par IP sur la création de job (architecture-v1-dynamique.md
 // §4, runbook phase 6) : ne protège que la création de job, pas les lectures
 // de cache (une visite répétée de son propre profil ne coûte rien au
 // pipeline, inutile de la freiner). Fenêtre fixe, ajustable comme
-// PROFILE_FRESHNESS_HOURS ci-dessus. Une IP peut être partagée par plusieurs
+// PROFILE_FRESHNESS_HOURS (lib/freshness.ts). Une IP peut être partagée par plusieurs
 // personnes (box, réseau d'entreprise) : garder la limite large plutôt que
 // stricte, et un message qui ne fait pas peser la faute sur l'utilisateur.
 export const RATE_LIMIT_MAX_REQUESTS = 5;
