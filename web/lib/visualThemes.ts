@@ -1,5 +1,7 @@
 export type VisualTheme = {
-  id: "hanabi" | "grande-bellezza" | "akira";
+  id: "hanabi" | "grande-bellezza" | "akira" | "midsommar" | "lalaland";
+  // Fond réservé au calendrier ci-dessous : jamais tiré au hasard.
+  scheduledOnly?: boolean;
   label: string;
   background: string;
   backgroundPosition: string;
@@ -54,5 +56,48 @@ export const visualThemes: VisualTheme[] = [
     surfaceTint: "rgba(18, 12, 13, 0.74)",
     borderTint: "rgba(217, 74, 69, 0.24)",
     glow: "rgba(217, 74, 69, 0.08)"
+  },
+  {
+    id: "midsommar",
+    label: "Midsommar, 2019",
+    background: "/branding/bg-midsommar-v1.jpg",
+    backgroundPosition: "center top",
+    // Image déjà sombre : voile plus léger pour garder la silhouette fleurie visible.
+    backgroundOverlay:
+      "linear-gradient(180deg, rgba(6, 14, 14, 0.08) 0%, rgba(6, 14, 14, 0.5) 62%, rgba(6, 14, 14, 0.9) 100%)",
+    accent: "#DDB65C",
+    accentSoft: "#7FA69A",
+    accentMuted: "#A88E52",
+    surfaceTint: "rgba(10, 24, 24, 0.74)",
+    borderTint: "rgba(221, 182, 92, 0.30)",
+    glow: "rgba(127, 166, 154, 0.11)",
+    scheduledOnly: true
+  },
+  {
+    id: "lalaland",
+    label: "La La Land, 2016",
+    background: "/branding/bg-lalaland-v1.jpg",
+    backgroundPosition: "center top",
+    backgroundOverlay:
+      "linear-gradient(180deg, rgba(12, 10, 26, 0.08) 0%, rgba(12, 10, 26, 0.5) 62%, rgba(12, 10, 26, 0.9) 100%)",
+    accent: "#F0C24F",
+    accentSoft: "#9A8BD0",
+    accentMuted: "#B39345",
+    surfaceTint: "rgba(18, 15, 38, 0.74)",
+    borderTint: "rgba(240, 194, 79, 0.30)",
+    glow: "rgba(154, 139, 208, 0.12)",
+    scheduledOnly: true
   }
 ];
+
+// Fond imposé à tout le monde à partir de chaque date (heure de Paris), décidé le 26/10/2026.
+// Avant la première date : tirage au hasard parmi les fonds hors calendrier, comme avant.
+export const themeSchedule = [
+  { from: "2026-11-01T00:00:00+01:00", themeId: "midsommar" },
+  { from: "2026-11-10T00:00:00+01:00", themeId: "lalaland" },
+];
+
+export function scheduledTheme(now: number = Date.now()): VisualTheme | undefined {
+  const step = themeSchedule.filter((item) => Date.parse(item.from) <= now).pop();
+  return visualThemes.find((item) => item.id === step?.themeId);
+}
