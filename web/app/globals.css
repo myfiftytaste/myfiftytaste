@@ -5612,7 +5612,7 @@ h1 {
 .headerAvatar.avatarColor-tricolor,
 .hofAvatar.avatarColor-tricolor,
 .hofWinnerAvatar.hofAvatar.avatarColor-tricolor {
-  background: conic-gradient(from 200deg, #ff8000, #00e054, #40bcf4, #ff8000);
+  background: linear-gradient(135deg, #ff8000 22%, #00e054 50%, #40bcf4 78%);
 }
 
 .hofPinRing[class*="avatarColor-"] {
@@ -5620,7 +5620,5 @@ h1 {
 }
 
 .hofPinRing.avatarColor-tricolor {
-  fill: #00e054;
-  stroke: #ff8000;
-  stroke-width: 3;
+  fill: url(#avatarTricolor);
 }

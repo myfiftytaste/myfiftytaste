@@ -61,10 +61,20 @@ export function shiftMonth(month: string, offset: number): string {
   return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
 }
 
-/** Première saison du Hall of Fame en base (null si aucune) : borne du lien « saison précédente ». */
-export async function firstSeason(): Promise<string | null> {
-  const result = await getPool().query<{ month: string | null }>("SELECT min(month) AS month FROM monthly_snapshot");
-  return result.rows[0]?.month ?? null;
+// Même seuil que les badges (scripts/attribute_badges.py) : en dessous de 3 inscrits, une saison
+// ne compte pas, sinon un seul participant rafle tous les podiums (septembre 2026).
+const MIN_SEASON_PARTICIPANTS = 3;
+
+/** Saisons closes qui comptent, de la plus ancienne à la plus récente (le mois en cours exclu). */
+export async function closedSeasons(): Promise<string[]> {
+  const result = await getPool().query<{ month: string }>(
+    `SELECT month FROM monthly_snapshot
+     WHERE opted_in AND month < $1
+     GROUP BY month HAVING count(*) >= $2
+     ORDER BY month`,
+    [currentMonth(), MIN_SEASON_PARTICIPANTS],
+  );
+  return result.rows.map((row) => row.month);
 }
 
 export function nextMonthLabel(month: string): string {

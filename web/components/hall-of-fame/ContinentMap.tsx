@@ -90,6 +90,14 @@ export default function ContinentMap({
         role="img"
         aria-label="Cinéma du monde par continent"
       >
+        {/* Camaïeu de tanguytare : le même dégradé que ses bulles HTML (globals.css, avatarColor-tricolor). */}
+        <defs>
+          <linearGradient id="avatarTricolor" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="22%" stopColor="#ff8000" />
+            <stop offset="50%" stopColor="#00e054" />
+            <stop offset="78%" stopColor="#40bcf4" />
+          </linearGradient>
+        </defs>
         <g className="hofGraticule">
           <line x1="0" y1="95" x2="760" y2="95" />
           <line x1="0" y1="190" x2="760" y2="190" />
