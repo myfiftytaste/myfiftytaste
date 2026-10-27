@@ -3445,9 +3445,6 @@ h1 {
   --lb-orange: #ff8000;
   --lb-green: #00e054;
   --lb-blue: #40bcf4;
-  --loading-r: 58px; /* rayon d'orbite */
-  --loading-flat: 0.38; /* aplatissement des ellipses */
-  --loading-unflat: 2.63; /* inverse, pour que les points restent ronds */
 
   /* Plein viewport, opaque : masque totalement le fond thématique du site
      derrière (Akira/Hana-Bi/Grande Bellezza), quels que soient la largeur et
@@ -3473,111 +3470,203 @@ h1 {
   transition: opacity 0.5s ease;
 }
 
-.loadingAtom {
+/* Pendule de Newton (lot 13, maquette « Chargement » validée le 26/10/2026).
+   Couleurs Letterboxd mais potence et fils visibles, billes jamais superposées :
+   jamais confondu avec le logo Letterboxd. Cycle de 1,4 s : la bille de gauche
+   frappe, celle de droite repart, la bille du milieu ne bouge pas. */
+.loadingPendulum {
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: 240px;
+  height: 200px;
   margin: 0 auto;
 }
 
-.loadingOrbit {
+.loadingFrame {
   position: absolute;
-  inset: 0;
+  border-radius: 3px;
 }
 
-.loadingOrbitA {
-  transform: rotate(0deg) scaleY(var(--loading-flat));
+.loadingPostL,
+.loadingPostR {
+  top: 2px;
+  width: 4px;
+  height: 186px;
+  background: linear-gradient(90deg, #6e6a62, #2c2a26);
 }
 
-.loadingOrbitB {
-  transform: rotate(60deg) scaleY(var(--loading-flat));
+.loadingPostL {
+  left: 22px;
 }
 
-.loadingOrbitC {
-  transform: rotate(-60deg) scaleY(var(--loading-flat));
+.loadingPostR {
+  left: 214px;
 }
 
-.loadingOrbit::after {
-  content: "";
+.loadingBar {
+  left: 18px;
+  top: 0;
+  width: 204px;
+  height: 7px;
+  background: linear-gradient(180deg, #7a766d, #2c2a26);
+}
+
+.loadingBase {
+  left: 6px;
+  top: 186px;
+  width: 228px;
+  height: 10px;
+  background: linear-gradient(180deg, #4a463f, #1c1b18);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.loadingShadow {
   position: absolute;
-  inset: 32px;
-  border: 1px solid rgba(237, 228, 211, 0.06);
+  top: 180px;
+  width: 40px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0) 70%);
+  opacity: 0.6;
+}
+
+.loadingShadowL {
+  left: 66px;
+  animation: loadingShadowL 1.4s infinite;
+}
+
+.loadingShadowM {
+  left: 100px;
+}
+
+.loadingShadowR {
+  left: 134px;
+  animation: loadingShadowR 1.4s infinite;
+}
+
+.loadingArm {
+  position: absolute;
+  top: 7px;
+  width: 34px;
+  height: 154px;
+  transform-origin: 17px 0;
+}
+
+.loadingArmL {
+  left: 69px;
+  animation: loadingSwingL 1.4s infinite;
+}
+
+.loadingArmM {
+  left: 103px;
+}
+
+.loadingArmR {
+  left: 137px;
+  animation: loadingSwingR 1.4s infinite;
+}
+
+.loadingString {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  width: 1.5px;
+  height: 120px;
+  background: rgba(242, 230, 207, 0.55);
+}
+
+.loadingBall {
+  position: absolute;
+  left: 0;
+  top: 120px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
 }
 
-.loadingSpin {
+/* La contre-rotation garde le reflet en haut à gauche pendant l'oscillation. */
+.loadingBallOrange {
+  background: radial-gradient(circle at 34% 30%, #ffc488 0%, var(--lb-orange) 52%, #b85600 100%);
+  animation: loadingCounterL 1.4s infinite;
+}
+
+.loadingBallGreen {
+  background: radial-gradient(circle at 34% 30%, #8cf5b5 0%, var(--lb-green) 52%, #009a3a 100%);
+}
+
+.loadingBallBlue {
+  background: radial-gradient(circle at 34% 30%, #b5e6fb 0%, var(--lb-blue) 52%, #1c7fae 100%);
+  animation: loadingCounterR 1.4s infinite;
+}
+
+.loadingGold,
+.loadingHalo,
+.loadingFlash {
   position: absolute;
-  inset: 0;
-  animation: loadingSpin 3.2s linear infinite;
-}
-
-.loadingOrbitB .loadingSpin {
-  animation-duration: 4.1s;
-  animation-direction: reverse;
-}
-
-.loadingOrbitC .loadingSpin {
-  animation-duration: 3.6s;
-}
-
-.loadingDot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 13px;
-  height: 13px;
-  margin: -6.5px 0 0 -6.5px;
+  left: 103px;
+  top: 127px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-  transform: translateX(var(--loading-r)) scaleY(var(--loading-unflat));
-}
-
-.loadingDotOrange {
-  background: var(--lb-orange);
-  box-shadow: 0 0 14px rgba(255, 128, 0, 0.45);
-}
-
-.loadingDotGreen {
-  background: var(--lb-green);
-  box-shadow: 0 0 14px rgba(0, 224, 84, 0.4);
-}
-
-.loadingDotBlue {
-  background: var(--lb-blue);
-  box-shadow: 0 0 14px rgba(64, 188, 244, 0.4);
-}
-
-@keyframes loadingSpin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.loadingCore {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  margin: -7.5px 0 0 -7.5px;
-  border-radius: 50%;
-  background: var(--loading-gold-bright);
-  transform: scale(0);
   opacity: 0;
-  box-shadow: 0 0 26px rgba(236, 203, 125, 0.85);
+  pointer-events: none;
+}
+
+.loadingGold {
+  background: radial-gradient(circle at 36% 32%, #fff4c2 0%, #ffd24a 48%, #e29a12 100%);
+  box-shadow: 0 0 26px 8px rgba(255, 205, 70, 0.55);
 }
 
 .loadingHalo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 16px;
-  height: 16px;
-  margin: -8px 0 0 -8px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(236, 203, 125, 0.55) 0%, rgba(201, 162, 75, 0.16) 45%, transparent 70%);
-  transform: scale(0);
-  opacity: 0;
-  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 214, 102, 0.55), rgba(255, 214, 102, 0) 70%);
+}
+
+.loadingFlash {
+  background: radial-gradient(circle, #ffe9a8 0%, rgba(255, 210, 74, 0.9) 45%, rgba(255, 210, 74, 0) 72%);
+}
+
+@keyframes loadingSwingL {
+  0% { transform: rotate(30deg); animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0); }
+  25% { transform: rotate(0deg); }
+  75% { transform: rotate(0deg); animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); }
+  100% { transform: rotate(30deg); }
+}
+
+@keyframes loadingSwingR {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(0deg); animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); }
+  50% { transform: rotate(-30deg); animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0); }
+  75% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes loadingCounterL {
+  0% { transform: rotate(-30deg); animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0); }
+  25% { transform: rotate(0deg); }
+  75% { transform: rotate(0deg); animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); }
+  100% { transform: rotate(-30deg); }
+}
+
+@keyframes loadingCounterR {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(0deg); animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); }
+  50% { transform: rotate(30deg); animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0); }
+  75% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes loadingShadowL {
+  0% { transform: translateX(-68px) scale(0.75); opacity: 0.3; animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0); }
+  25% { transform: none; opacity: 0.6; }
+  75% { transform: none; opacity: 0.6; animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); }
+  100% { transform: translateX(-68px) scale(0.75); opacity: 0.3; }
+}
+
+@keyframes loadingShadowR {
+  0% { transform: none; opacity: 0.6; }
+  25% { transform: none; opacity: 0.6; animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); }
+  50% { transform: translateX(68px) scale(0.75); opacity: 0.3; animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0); }
+  75% { transform: none; opacity: 0.6; }
+  100% { transform: none; opacity: 0.6; }
 }
 
 .loadingCaption {
@@ -3605,22 +3694,43 @@ h1 {
   opacity: 1;
 }
 
-/* ---- séquence de fin : convergence puis irradiation ---- */
+/* ---- séquence de fin (1,35 s = MERGE_DURATION_MS) : les billes se rejoignent,
+   fusionnent en une bille dorée, puis un éclair fond vers le profil ---- */
 
-.loadingAtom.loadingDone .loadingSpin {
-  animation-play-state: paused;
+.loadingPendulum.loadingDone .loadingArm,
+.loadingPendulum.loadingDone .loadingShadow {
+  animation: none;
+  transform: none;
 }
 
-.loadingAtom.loadingDone .loadingDot {
-  animation: loadingConverge 0.75s cubic-bezier(0.6, 0, 0.3, 1) forwards;
+.loadingPendulum.loadingDone .loadingFrame,
+.loadingPendulum.loadingDone .loadingString,
+.loadingPendulum.loadingDone .loadingShadow {
+  animation: loadingFade 0.45s forwards;
 }
 
-.loadingAtom.loadingDone .loadingCore {
-  animation: loadingCoreIn 0.35s 0.62s forwards;
+.loadingPendulum.loadingDone .loadingBallOrange {
+  animation: loadingToCenterL 0.5s 0.1s cubic-bezier(0.5, 0, 0.75, 0) forwards;
 }
 
-.loadingAtom.loadingDone .loadingHalo {
-  animation: loadingIrradiate 1.15s 0.88s cubic-bezier(0.3, 0, 0.2, 1) forwards;
+.loadingPendulum.loadingDone .loadingBallBlue {
+  animation: loadingToCenterR 0.5s 0.1s cubic-bezier(0.5, 0, 0.75, 0) forwards;
+}
+
+.loadingPendulum.loadingDone .loadingBallGreen {
+  animation: loadingFade 0.3s 0.5s forwards;
+}
+
+.loadingPendulum.loadingDone .loadingGold {
+  animation: loadingGold 0.6s 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.loadingPendulum.loadingDone .loadingHalo {
+  animation: loadingHalo 1.2s 0.7s infinite backwards;
+}
+
+.loadingPendulum.loadingDone .loadingFlash {
+  animation: loadingFlash 0.6s 0.75s cubic-bezier(0.3, 0, 0.2, 1) both;
 }
 
 .loadingLoader.loadingDone .loadingCaption,
@@ -3628,49 +3738,65 @@ h1 {
   opacity: 0;
 }
 
-@keyframes loadingConverge {
-  to {
-    transform: translateX(0) scaleY(var(--loading-unflat));
-    background: var(--loading-gold-bright);
-    box-shadow: 0 0 20px rgba(236, 203, 125, 0.7);
-  }
+@keyframes loadingFade {
+  to { opacity: 0; }
 }
 
-@keyframes loadingCoreIn {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+@keyframes loadingToCenterL {
+  to { transform: translateX(34px); opacity: 0; }
 }
 
-@keyframes loadingIrradiate {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  18% {
-    opacity: 0.95;
-  }
-  100% {
-    transform: scale(58);
-    opacity: 0;
-  }
+@keyframes loadingToCenterR {
+  to { transform: translateX(-34px); opacity: 0; }
 }
 
+@keyframes loadingGold {
+  0% { transform: scale(0.7); opacity: 0; }
+  55% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1.35); opacity: 1; }
+}
+
+@keyframes loadingHalo {
+  0% { transform: scale(0.9); opacity: 0.65; }
+  100% { transform: scale(3.4); opacity: 0; }
+}
+
+@keyframes loadingFlash {
+  0% { transform: scale(1); opacity: 0.95; }
+  100% { transform: scale(34); opacity: 0; }
+}
+
+/* Mouvement réduit : billes immobiles, une simple pulsation ; la fin se fait en fondu. */
 @media (prefers-reduced-motion: reduce) {
-  .loadingSpin {
+  .loadingArm,
+  .loadingBall,
+  .loadingShadow {
+    animation: none !important;
+    transform: none !important;
+  }
+  .loadingPendulum:not(.loadingDone) {
+    animation: loadingPulse 1.6s ease-in-out infinite;
+  }
+  .loadingPendulum.loadingDone .loadingFrame,
+  .loadingPendulum.loadingDone .loadingArm {
+    animation: loadingFade 0.4s forwards !important;
+  }
+  .loadingPendulum.loadingDone .loadingGold {
+    animation: loadingFadeIn 0.4s 0.3s both;
+  }
+  .loadingPendulum.loadingDone .loadingHalo,
+  .loadingPendulum.loadingDone .loadingFlash {
     animation: none;
   }
-  .loadingDot {
-    transform: translateX(var(--loading-r)) scaleY(var(--loading-unflat));
-  }
-  .loadingAtom.loadingDone .loadingHalo {
-    animation-duration: 0.4s;
-  }
+}
+
+@keyframes loadingPulse {
+  50% { opacity: 0.55; }
+}
+
+@keyframes loadingFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* ---- transition douce vers le profil une fois le chargement termine ---- */
