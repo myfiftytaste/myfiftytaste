@@ -52,10 +52,26 @@ export function currentMonth(): string {
   return `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, "0")}`;
 }
 
+export const MONTH_PATTERN = /^\d{4}-(0[1-9]|1[0-2])$/;
+
+/** Mois voisin au format AAAA-MM (offset -1 : le précédent, +1 : le suivant). */
+export function shiftMonth(month: string, offset: number): string {
+  const [year, monthIndex] = month.split("-").map(Number);
+  const date = new Date(Date.UTC(year, monthIndex - 1 + offset, 1));
+  return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+}
+
+/** Première saison du Hall of Fame en base (null si aucune) : borne du lien « saison précédente ». */
+export async function firstSeason(): Promise<string | null> {
+  const result = await getPool().query<{ month: string | null }>("SELECT min(month) AS month FROM monthly_snapshot");
+  return result.rows[0]?.month ?? null;
+}
+
 export function nextMonthLabel(month: string): string {
   const [year, monthIndex] = month.split("-").map(Number);
   const date = new Date(Date.UTC(year, monthIndex, 1));
-  return new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", timeZone: "UTC" }).format(date);
+  // Toujours le 1er du mois : « 1er novembre », pas « 1 novembre ».
+  return new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", timeZone: "UTC" }).format(date).replace(/^1 /, "1er ");
 }
 
 export function monthLabel(month: string): string {

@@ -2,7 +2,8 @@ import { cookies } from "next/headers";
 import ContinentMap from "../../components/hall-of-fame/ContinentMap";
 import HallOfFameCTA from "../../components/hall-of-fame/HallOfFameCTA";
 import Podium from "../../components/hall-of-fame/Podium";
-import { currentMonth, getMonthlyRankings, getOptInStatus, nextMonthLabel, seasonTitle } from "../../lib/hallOfFame";
+import Link from "next/link";
+import { currentMonth, firstSeason, getMonthlyRankings, getOptInStatus, nextMonthLabel, seasonTitle, shiftMonth } from "../../lib/hallOfFame";
 import { MY_PSEUDO_COOKIE } from "../../lib/myPseudo";
 import { OWNER_COOKIE, verifyOwner } from "../../lib/ownerCookie";
 import { normalizeUsername, USERNAME_PATTERN } from "../../lib/username";
@@ -14,7 +15,8 @@ export const dynamic = "force-dynamic";
 
 export default async function HallOfFamePage() {
   const month = currentMonth();
-  const rankings = await getMonthlyRankings(month);
+  const [rankings, first] = await Promise.all([getMonthlyRankings(month), firstSeason()]);
+  const previous = shiftMonth(month, -1);
   const podiumsByKey = Object.fromEntries(rankings.podiums.map((podium) => [podium.key, podium]));
   // Le choix exige le cookie signé fifty_owner (posé par POST /api/profile). fifty_pseudo, lui, ne
   // sert qu'au lien « Mon wrapped » : sans cookie signé valide, le statut reste « none ».
@@ -34,6 +36,12 @@ export default async function HallOfFamePage() {
         <BrandLockup />
       </header>
       {status === "in" || status === "out" ? <HallOfFameCTA username={myPseudo} month={month} status={status} /> : null}
+
+      {first && previous >= first ? (
+        <nav className="hofSeasonNav" aria-label="Saisons">
+          <Link href={`/hall-of-fame/saison/${previous}`}>‹ Saison {seasonTitle(previous)}</Link>
+        </nav>
+      ) : null}
 
       <section className="hofMasthead">
         <h1 className="hofMastheadTitle">Hall of Fame</h1>
