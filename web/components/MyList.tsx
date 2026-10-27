@@ -116,6 +116,9 @@ export default function MyList() {
     return list;
   }, [films, sortKey, direction]);
 
+  // Les votes TMDB n'existent que pour les profils calculés par le nouveau worker : sans eux, pas de critère.
+  const hasVotes = (films ?? []).some((film) => typeof film.tmdb_votes === "number");
+  const sorts = SORTS.filter((sort) => sort.key !== "pop" || hasVotes);
   const current = SORTS.find((sort) => sort.key === sortKey) ?? SORTS[0];
 
   function pick(key: SortKey) {
@@ -136,6 +139,15 @@ export default function MyList() {
       return `${date.getDate()} ${MONTHS[date.getMonth()]}`;
     }
     return null;
+  }
+
+  // Colonne de droite de la liste : la durée y est toujours ; au-dessus, la date de visionnage
+  // (ou les votes sur le tri popularité). Rien en plus sur les tris durée et sortie (déjà affichées).
+  function rowMetric(film: Film) {
+    if (sortKey === "pop") return votes(film.tmdb_votes);
+    if (sortKey === "runtime" || sortKey === "year" || !film.watched_at) return null;
+    const date = new Date(film.watched_at);
+    return `${date.getDate()} ${MONTHS[date.getMonth()]}`;
   }
 
   // Liste compacte triée par date : intertitres par mois.
@@ -189,7 +201,7 @@ export default function MyList() {
           </div>
 
           <div className="listSorts" role="group" aria-label="Trier par">
-            {SORTS.map((sort) => (
+            {sorts.map((sort) => (
               <button
                 key={sort.key}
                 type="button"
@@ -255,10 +267,9 @@ export default function MyList() {
                         </span>
                         <span className="listRowText">
                           <span className="listRowTitle">{filmTitle(film)}</span>
-                          <span className="listRowMeta">
-                            {[film.year, film.directors?.[0], duration(film.runtime)].filter(Boolean).join(" · ")}
-                          </span>
-                          <span className="listStars">
+                          <span className="listRowMeta">{[film.year, film.directors?.[0]].filter(Boolean).join(" · ")}</span>
+                        </span>
+                        <span className="listStars listRowStars">
                             {stars(film.user_rating)}
                             {gap !== null ? (
                               <span className={gap >= 0.3 ? "listGapUp" : gap <= -0.3 ? "listGapDown" : "listGapEven"}>
@@ -267,9 +278,11 @@ export default function MyList() {
                                 {gap.toFixed(1).replace(".", ",")} vs Letterboxd)
                               </span>
                             ) : null}
-                          </span>
                         </span>
-                        <span className="listRowMetric">{badge(film)}</span>
+                        <span className="listRowMetric">
+                          {rowMetric(film) ? <span>{rowMetric(film)}</span> : null}
+                          <span>{duration(film.runtime)}</span>
+                        </span>
                       </a>
                     );
                   })}

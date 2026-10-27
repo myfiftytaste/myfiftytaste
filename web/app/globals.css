@@ -4953,7 +4953,8 @@ h1 {
 
 .listRow {
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr) auto;
+  grid-template-columns: 48px minmax(0, 1fr) minmax(150px, 0.6fr) 76px;
+  grid-template-areas: "thumb text stars metric";
   align-items: center;
   gap: 14px;
   min-height: 84px;
@@ -4986,6 +4987,36 @@ h1 {
 .listRowMetric {
   color: var(--muted);
   font-size: 0.8rem;
+}
+
+.listThumb {
+  grid-area: thumb;
+}
+
+.listRowText {
+  grid-area: text;
+}
+
+.listRowStars {
+  grid-area: stars;
+}
+
+.listRowMetric {
+  grid-area: metric;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  text-align: right;
+}
+
+/* Téléphone : les étoiles passent sous le titre, la colonne de droite reste. */
+@media (max-width: 640px) {
+  .listRow {
+    grid-template-columns: 48px minmax(0, 1fr) auto;
+    grid-template-areas: "thumb text metric" "thumb stars metric";
+    row-gap: 2px;
+  }
 }
 
 .listGapUp {
