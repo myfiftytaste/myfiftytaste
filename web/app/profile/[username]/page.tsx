@@ -158,13 +158,21 @@ export default function ProfilePage({
     // revenue ; l'effet de polling passera en "ready" dès qu'elle arrive.
   }
 
+  // Bug de scroll (27/10/2026) : Next.js ramène la page en haut une fois après une navigation, sur le
+  // premier élément de la page, mais saute les éléments en position fixe (écran de chargement). Sa consigne
+  // restait alors en attente et s'appliquait au premier re-rendu, en plein défilement (scrollTop = 0).
+  // Un conteneur non fixe autour de chaque état la fait appliquer tout de suite, quand on est déjà en haut.
   if (phase === "error") {
-    return <ErrorScreen username={username} errorCode={errorCode} />;
+    return (
+      <div className="profileRoute">
+        <ErrorScreen username={username} errorCode={errorCode} />
+      </div>
+    );
   }
 
   if (phase === "ready" && profile) {
     return (
-      <div className="profileReveal">
+      <div className="profileRoute profileReveal">
         <ProfileView
           profile={profile.display_profile}
           badges={profile.badges}
@@ -176,5 +184,9 @@ export default function ProfilePage({
 
   // "checking" et "loading" partagent le même écran : la vérification du
   // cache est quasi instantanée, pas besoin d'un état visuel distinct.
-  return <LoadingScreen finished={phase === "merging"} onMergeComplete={handleMergeComplete} />;
+  return (
+    <div className="profileRoute">
+      <LoadingScreen finished={phase === "merging"} onMergeComplete={handleMergeComplete} />
+    </div>
+  );
 }

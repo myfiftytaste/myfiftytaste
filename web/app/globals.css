@@ -4650,3 +4650,8 @@ h1 {
     bottom: calc(112px + env(safe-area-inset-bottom));
   }
 }
+
+/* Conteneur ordinaire (non fixe) de la page profil : voir app/profile/[username]/page.tsx. */
+.profileRoute {
+  position: relative;
+}
