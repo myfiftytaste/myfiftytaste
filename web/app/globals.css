@@ -5612,7 +5612,7 @@ h1 {
 .headerAvatar.avatarColor-tricolor,
 .hofAvatar.avatarColor-tricolor,
 .hofWinnerAvatar.hofAvatar.avatarColor-tricolor {
-  background: conic-gradient(from 210deg, #ff8000 0 33.3%, #00e054 0 66.6%, #40bcf4 0);
+  background: conic-gradient(from 200deg, #ff8000, #00e054, #40bcf4, #ff8000);
 }
 
 .hofPinRing[class*="avatarColor-"] {
