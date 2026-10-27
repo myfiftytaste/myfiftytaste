@@ -56,6 +56,13 @@ function filmTitle(film: Film) {
   return film.title || film.rss_title?.replace(/,\s*\d{4}.*$/, "") || "Sans titre";
 }
 
+// Chaque film mène toujours à Letterboxd : sa fiche, sinon une recherche par titre.
+function letterboxdUrl(film: Film) {
+  return film.letterboxd_slug
+    ? `https://letterboxd.com/film/${film.letterboxd_slug}/`
+    : `https://letterboxd.com/search/films/${encodeURIComponent(filmTitle(film))}/`;
+}
+
 function sortValue(film: Film, key: SortKey): number | string | null {
   switch (key) {
     case "watch":
@@ -214,6 +221,21 @@ export default function MyList() {
                 {sort.key === sortKey ? <span aria-hidden="true">{direction === "asc" ? " ↑" : " ↓"}</span> : null}
               </button>
             ))}
+            {/* Recherche et filtres : prévus pour novembre (décision du 27/10/2026). */}
+            <span className="listSoonTools">
+              <button type="button" className="listSort listIconButton" disabled aria-label="Rechercher un titre (bientôt)" title="Rechercher un titre : bientôt">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="10.5" cy="10.5" r="6" />
+                  <path d="M15 15l5 5" />
+                </svg>
+              </button>
+              <button type="button" className="listSort listIconButton" disabled aria-label="Filtrer (bientôt)" title="Filtres : bientôt">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 5h16l-6 7.5V19l-4-2v-4.5z" />
+                </svg>
+              </button>
+              <span className="diversRowSoon">Bientôt</span>
+            </span>
           </div>
 
           {view === "grid" ? (
@@ -222,7 +244,7 @@ export default function MyList() {
                 <li key={`${film.letterboxd_slug}-${index}`}>
                   <a
                     className="listPosterLink"
-                    href={film.letterboxd_slug ? `https://letterboxd.com/film/${film.letterboxd_slug}/` : undefined}
+                    href={letterboxdUrl(film)}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -235,7 +257,10 @@ export default function MyList() {
                       )}
                       {badge(film) ? <span className="listBadge">{badge(film)}</span> : null}
                     </span>
-                    <span className="listGridTitle">{filmTitle(film)}</span>
+                    <span className="listGridTitle">
+                      {filmTitle(film)}
+                      <span className="listLbMark" aria-hidden="true"> ↗</span>
+                    </span>
                     <span className="listStars">{stars(film.user_rating)}</span>
                   </a>
                 </li>
@@ -255,7 +280,7 @@ export default function MyList() {
                       <a
                         key={`${film.letterboxd_slug}-${index}`}
                         className="listRow"
-                        href={film.letterboxd_slug ? `https://letterboxd.com/film/${film.letterboxd_slug}/` : undefined}
+                        href={letterboxdUrl(film)}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -266,7 +291,10 @@ export default function MyList() {
                           ) : null}
                         </span>
                         <span className="listRowText">
-                          <span className="listRowTitle">{filmTitle(film)}</span>
+                          <span className="listRowTitle">
+                            {filmTitle(film)}
+                            <span className="listLbMark" aria-hidden="true"> ↗</span>
+                          </span>
                           <span className="listRowMeta">{[film.year, film.directors?.[0]].filter(Boolean).join(" · ")}</span>
                         </span>
                         <span className="listStars listRowStars">

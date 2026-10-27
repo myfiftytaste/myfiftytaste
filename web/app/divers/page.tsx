@@ -7,18 +7,12 @@ import { AMBIANCES_OPEN } from "../../lib/ambiance";
 // Les lignes « Bientôt » restent visibles mais inactives jusqu'à leur lot.
 type Row = { title: string; sub: string; href?: string; soon?: boolean };
 
+// Rangement acté le 27/10/2026 : ce qui te concerne, ce qui concerne Fifty, puis le légal.
 const groups: { title: string; rows: (Row | "updateNote")[] }[] = [
   {
-    title: "Fifty",
+    title: "Moi",
     rows: [
-      "updateNote",
-      { title: "Le manifeste", sub: "Comment Fifty calcule ton profil", soon: true },
-      { title: "Donner mon avis", sub: "Une minute, pas plus.", href: "/feedback?from=/divers" },
-    ],
-  },
-  {
-    title: "Réglages",
-    rows: [
+      { title: "Mes badges", sub: "Tous tes badges, et ceux affichés sur ton profil", soon: true },
       {
         title: "Préférences",
         sub: "Ambiance des couleurs et fond de film",
@@ -26,6 +20,14 @@ const groups: { title: string; rows: (Row | "updateNote")[] }[] = [
       },
       { title: "Changer de pseudo", sub: "Voir le wrapped d’un·e autre cinéphile", href: "/" },
       { title: "Installer l’application", sub: "Ajoute Fifty à ton écran d’accueil", soon: true },
+    ],
+  },
+  {
+    title: "À propos de Fifty",
+    rows: [
+      "updateNote",
+      { title: "Le manifeste", sub: "Comment Fifty calcule ton profil", soon: true },
+      { title: "Donner mon avis", sub: "Une minute, pas plus.", href: "/feedback?from=/divers" },
     ],
   },
   {
