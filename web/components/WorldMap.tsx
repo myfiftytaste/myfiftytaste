@@ -407,7 +407,9 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
                 <div className="country-bar-heading">
                   <span>{countryFr(country.name, country.iso2)}</span>
                   <span className="country-bar-meta">
-                    <strong>{country.count}</strong>
+                    <strong className="country-stamp">
+                      {country.count} {country.count > 1 ? "films" : "film"}
+                    </strong>
                     <small>{formatPercent(country.share)}</small>
                   </span>
                 </div>

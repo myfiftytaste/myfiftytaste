@@ -1901,25 +1901,39 @@ h1 {
   gap: 8px;
 }
 
-/* Le nombre de films est un tampon de passeport (refonte design, 27/10/2026). */
-.country-bar-meta strong {
-  display: inline-grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border: 3px double currentColor;
-  border-radius: 50%;
+/* Le nombre de films est un tampon de passeport encré : cadre arrondi doublé, bords irréguliers
+   (léger déplacement du contour) et encre inégale (masque de bruit) (refonte design, 27/10/2026). */
+.country-stamp {
+  position: relative;
+  display: inline-block;
+  padding: 4px 9px 3px;
+  border: 2px solid currentColor;
+  border-radius: 7px;
   color: var(--accent);
-  font-family: var(--font-title), Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
-  font-weight: 500;
-  transform: rotate(-9deg);
-  opacity: 0.92;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(-6deg);
+  opacity: 0.88;
+  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='4'/%3E%3CfeDisplacementMap in='SourceGraphic' scale='1.8'/%3E%3C/filter%3E%3C/svg%3E#f");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='3' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.6 2.15'/%3E%3C/filter%3E%3Crect width='120' height='60' filter='url(%23n)'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='3' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.6 2.15'/%3E%3C/filter%3E%3Crect width='120' height='60' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-.country-bar-row:nth-child(even) .country-bar-meta strong {
+.country-stamp::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.country-bar-row:nth-child(even) .country-stamp {
   color: var(--accent-2);
-  transform: rotate(7deg);
+  transform: rotate(4deg);
 }
 
 .country-bar-heading {
