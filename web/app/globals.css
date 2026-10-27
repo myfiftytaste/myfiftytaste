@@ -5242,3 +5242,225 @@ h1 {
   font-size: 0.82rem;
   font-weight: 700;
 }
+
+/* ================= Mes badges (27/10/2026) ================= */
+.myBadgesCrumb {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.myBadgesCrumb a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.myBadgesIntro,
+.myBadgesNote {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.myBadgesNote {
+  font-size: 0.8rem;
+}
+
+.myBadgesPreview {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 24px;
+  padding: 16px;
+  border: 1px solid var(--accent);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.myBadgesPreviewHead {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.myBadgesPreviewPseudo {
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 1.3rem;
+}
+
+.myBadgesSection {
+  margin: 22px 0 10px;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.myBadgesSectionMythic {
+  color: var(--accent-2);
+}
+
+.myBadgesList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.myBadgesListMythic {
+  border-color: var(--accent-2);
+}
+
+.myBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+}
+
+.myBadgeRow + .myBadgeRow {
+  border-top: 1px solid var(--line);
+}
+
+.myBadgeText {
+  display: grid;
+  flex: 1 1 auto;
+  gap: 2px;
+  min-width: 0;
+}
+
+.myBadgeTitle {
+  font-weight: 800;
+}
+
+.myBadgeSub {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.myBadgeMedal {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--bg);
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--accent);
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 1.1rem;
+}
+
+.myBadgeMedal-rank2 {
+  background: #c9d3e0;
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px #c9d3e0;
+}
+
+.myBadgeMedal-rank3 {
+  background: #c98a5a;
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px #c98a5a;
+}
+
+.myBadgeMedal-mythic {
+  background: var(--accent-2);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--accent-2);
+}
+
+.myBadgeMedalSmall {
+  width: 18px;
+  height: 18px;
+  font-size: 0.6rem;
+  box-shadow: 0 0 0 2px var(--surface);
+}
+
+.myBadgeToggle {
+  flex: 0 0 auto;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.myBadgeToggleOn {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.myBadgeToggle:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.myBadgesSeason {
+  margin-bottom: 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.myBadgesSeason > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.myBadgesSeason > summary::-webkit-details-marker {
+  display: none;
+}
+
+.myBadgesSeason > summary::after {
+  content: "▾";
+  color: var(--muted);
+}
+
+.myBadgesSeason[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.myBadgesSeason[open] > summary::after {
+  content: "▴";
+}
+
+.myBadgesSeason .myBadgesList {
+  border: 0;
+  border-radius: 0;
+}
+
+.myBadgesSeasonName {
+  flex: 1 1 auto;
+  font-weight: 800;
+}
+
+.myBadgesSeasonMedals {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.myBadgesSeasonCount {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.myBadgesMore {
+  display: block;
+  margin: 4px auto 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}

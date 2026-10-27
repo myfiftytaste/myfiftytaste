@@ -12,7 +12,7 @@ const groups: { title: string; rows: (Row | "updateNote")[] }[] = [
   {
     title: "Moi",
     rows: [
-      { title: "Mes badges", sub: "Tous tes badges, et ceux affichés sur ton profil", soon: true },
+      { title: "Mes badges", sub: "Tous tes badges, et ceux affichés sur ton profil", href: "/badges" },
       {
         title: "Préférences",
         sub: "Ambiance des couleurs et fond de film",
