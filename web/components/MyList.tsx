@@ -207,10 +207,6 @@ export default function MyList() {
             </div>
           </div>
 
-          <p className="listSoon">
-            Recherche par titre · Filtres <span className="diversRowSoon">Bientôt</span>
-          </p>
-
           <div className="listSorts" role="group" aria-label="Trier par">
             {sorts.map((sort) => (
               <button
@@ -225,6 +221,21 @@ export default function MyList() {
                 {sort.key === sortKey ? <span aria-hidden="true">{direction === "asc" ? " ↑" : " ↓"}</span> : null}
               </button>
             ))}
+            {/* Recherche et filtres : prévus pour novembre (décision du 27/10/2026). */}
+            <span className="listSoonTools">
+              <button type="button" className="listSort listIconButton" disabled aria-label="Rechercher un titre (bientôt)" title="Rechercher un titre : bientôt">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="10.5" cy="10.5" r="6" />
+                  <path d="M15 15l5 5" />
+                </svg>
+              </button>
+              <button type="button" className="listSort listIconButton" disabled aria-label="Filtrer (bientôt)" title="Filtres : bientôt">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 5h16l-6 7.5V19l-4-2v-4.5z" />
+                </svg>
+              </button>
+              <span className="diversRowSoon">Bientôt</span>
+            </span>
           </div>
 
           {view === "grid" ? (
