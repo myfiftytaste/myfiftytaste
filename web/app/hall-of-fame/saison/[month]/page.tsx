@@ -6,12 +6,11 @@ import Laurels from "../../../../components/hall-of-fame/Laurels";
 import { avatarColorClass } from "../../../../lib/avatarColor";
 import {
   currentMonth,
-  firstSeason,
+  closedSeasons,
   getMonthlyRankings,
   MONTH_PATTERN,
   nextMonthLabel,
   seasonTitle,
-  shiftMonth,
 } from "../../../../lib/hallOfFame";
 import { letterboxdProfileUrl } from "../../../../lib/username";
 
@@ -26,15 +25,17 @@ function initials(name: string): string {
 
 export default async function SeasonPage({ params }: { params: { month: string } }) {
   const month = params.month;
-  const first = await firstSeason();
-  if (!MONTH_PATTERN.test(month) || month >= currentMonth() || !first || month < first) notFound();
+  // Seules les saisons qui comptent (3 inscrits ou plus) ont une page ; la navigation saute les autres.
+  const seasons = MONTH_PATTERN.test(month) ? await closedSeasons() : [];
+  const index = seasons.indexOf(month);
+  if (index < 0) notFound();
 
   const rankings = await getMonthlyRankings(month);
   const winners = rankings.podiums.flatMap((podium) =>
     podium.entries[0] ? [{ title: podium.title, entry: podium.entries[0] }] : [],
   );
-  const previous = shiftMonth(month, -1);
-  const next = shiftMonth(month, 1);
+  const previous = seasons[index - 1];
+  const next = seasons[index + 1];
 
   return (
     <main className="hof-shell pageShell">
@@ -42,16 +43,16 @@ export default async function SeasonPage({ params }: { params: { month: string }
         <BrandLockup />
       </header>
       <nav className="hofSeasonNav" aria-label="Saisons">
-        {previous >= first ? (
+        {previous ? (
           <Link href={`/hall-of-fame/saison/${previous}`}>‹ Saison {seasonTitle(previous)}</Link>
         ) : (
           <span />
         )}
         <span className="hofSeasonNavNext">
-          <Link href={next >= currentMonth() ? "/hall-of-fame" : `/hall-of-fame/saison/${next}`}>
-            Saison {seasonTitle(next)} ›
+          <Link href={next ? `/hall-of-fame/saison/${next}` : "/hall-of-fame"}>
+            Saison {seasonTitle(next ?? currentMonth())} ›
           </Link>
-          {next >= currentMonth() ? <small>(en cours)</small> : null}
+          {next ? null : <small>(en cours)</small>}
         </span>
       </nav>
 
