@@ -1177,15 +1177,11 @@ h1 {
 }
 
 .radar-shape {
-  fill: rgba(var(--accent-rgb), 0.12);
-  stroke: var(--accent);
   stroke-width: 2;
 }
 
 .radar-point {
-  fill: var(--paper);
-  stroke: var(--accent);
-  stroke-width: 2;
+  stroke-width: 2.5;
 }
 
 .radar-value,
@@ -1404,9 +1400,8 @@ h1 {
   padding: 18px;
   border-radius: 6px;
   background:
-    radial-gradient(circle at 40% 50%, rgba(var(--accent-rgb), 0.12), transparent 32%),
-    radial-gradient(circle at 68% 42%, rgba(var(--accent-rgb), 0.08), transparent 28%),
-    rgba(16, 16, 14, 0.36);
+    radial-gradient(circle at 50% 50%, rgba(var(--accent-rgb), 0.1), transparent 55%),
+    rgba(var(--bg-rgb), 0.55);
   overflow: hidden;
 }
 
@@ -1424,13 +1419,11 @@ h1 {
   gap: 4px;
   padding: 12px;
   transform: translate(-50%, -50%);
-  border: 1px solid rgba(var(--accent-rgb), 0.35);
+  border: 0;
   border-radius: 999px;
-  color: var(--paper);
-  background: rgba(var(--accent-rgb), 0.095);
-  box-shadow:
-    inset 0 0 32px rgba(var(--accent-rgb), 0.05),
-    0 18px 60px rgba(0, 0, 0, 0.18);
+  color: var(--bg);
+  background: color-mix(in srgb, var(--bubble-color, var(--accent)) 85%, transparent);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
   text-align: center;
   cursor: pointer;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
@@ -1468,23 +1461,13 @@ h1 {
 .genre-bubble:hover,
 .genre-bubble:focus-visible,
 .genre-bubble-active {
-  transform: translate(-50%, -50%) scale(0.93);
-  border-color: rgba(var(--accent-rgb), 0.65);
-  background: rgba(var(--accent-rgb), 0.16);
+  transform: translate(-50%, -50%) scale(1.06);
+  z-index: 9;
+  background: var(--bubble-color, var(--accent));
   box-shadow:
-    inset 0 0 38px rgba(var(--accent-rgb), 0.12),
-    0 18px 66px rgba(0, 0, 0, 0.24),
-    0 0 20px rgba(var(--accent-rgb), 0.18);
-}
-
-.genre-bubble:hover strong,
-.genre-bubble-active strong {
-  color: var(--paper);
-}
-
-.genre-bubble:hover span,
-.genre-bubble-active span {
-  color: rgba(255, 217, 143, 1);
+    0 18px 50px rgba(0, 0, 0, 0.34),
+    0 0 0 3px rgba(var(--bg-rgb), 0.9),
+    0 0 26px color-mix(in srgb, var(--bubble-color, var(--accent)) 55%, transparent);
 }
 
 .genre-bubble strong {
@@ -1497,7 +1480,8 @@ h1 {
 }
 
 .genre-bubble span {
-  color: var(--accent);
+  color: inherit;
+  opacity: 0.78;
   font-size: 0.78rem;
   font-weight: 800;
 }
@@ -1622,7 +1606,7 @@ h1 {
 }
 
 .genre-bar-meta strong {
-  color: var(--accent);
+  color: var(--bubble-color, var(--accent));
   font-family: var(--font-title), Georgia, "Times New Roman", serif;
   font-size: 1.35rem;
   font-weight: 500;
@@ -1650,8 +1634,8 @@ h1 {
   inset: 0 auto 0 0;
   width: 0%;
   border-radius: 999px;
-  background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.55), rgba(var(--accent-rgb), 0.95));
-  box-shadow: 0 0 12px rgba(var(--accent-rgb), 0.25);
+  background: var(--bubble-color, var(--accent));
+  box-shadow: 0 0 12px color-mix(in srgb, var(--bubble-color, var(--accent)) 35%, transparent);
 }
 
 .world-map-section {
@@ -1795,11 +1779,7 @@ h1 {
   height: 8px;
   border: 1px solid rgba(var(--accent-rgb), 0.22);
   border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    rgba(var(--accent-rgb), 0.12),
-    rgba(var(--accent-rgb), 0.72)
-  );
+  background: linear-gradient(90deg, rgba(var(--accent-2-rgb), 0.55), var(--accent));
 }
 
 .world-map-tooltip {
@@ -1892,7 +1872,7 @@ h1 {
 }
 
 .country-bar-row-linked .country-bar-heading > span {
-  color: rgba(255, 217, 143, 1);
+  color: var(--accent-bright);
 }
 
 .country-bar-row-linked .country-bar-track {
@@ -1921,11 +1901,29 @@ h1 {
   gap: 8px;
 }
 
+/* Le nombre de films est un tampon de passeport (refonte design, 27/10/2026). */
 .country-bar-meta strong {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 3px double currentColor;
+  border-radius: 50%;
   color: var(--accent);
   font-family: var(--font-title), Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
+  font-size: 1.05rem;
   font-weight: 500;
+  transform: rotate(-9deg);
+  opacity: 0.92;
+}
+
+.country-bar-row:nth-child(even) .country-bar-meta strong {
+  color: var(--accent-2);
+  transform: rotate(7deg);
+}
+
+.country-bar-heading {
+  align-items: center;
 }
 
 .country-bar-meta small {
@@ -1950,7 +1948,7 @@ h1 {
   inset: 0 auto 0 0;
   width: 0%;
   border-radius: 999px;
-  background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.55), rgba(var(--accent-rgb), 0.95));
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
   box-shadow: 0 0 12px rgba(var(--accent-rgb), 0.25);
 }
 
@@ -1992,7 +1990,21 @@ h1 {
    pleine carte au verso une fois retournée. Les deux faces sont superposées
    dans la même cellule de grille, la carte prend le format d'une affiche. */
 .recommendation-flip {
+  --reco-color: var(--accent);
   perspective: 1400px;
+}
+
+/* Chaque carte reco prend une couleur de l'ambiance (refonte design, 27/10/2026). */
+.recommendation-flip:nth-child(4n + 2) {
+  --reco-color: var(--accent-2);
+}
+
+.recommendation-flip:nth-child(4n + 3) {
+  --reco-color: var(--accent-3);
+}
+
+.recommendation-flip:nth-child(4n + 4) {
+  --reco-color: var(--accent-bright);
 }
 
 .recommendation-flip-inner {
@@ -2028,18 +2040,28 @@ h1 {
   text-align: center;
   color: var(--paper);
   cursor: pointer;
+  border-color: color-mix(in srgb, var(--reco-color) 45%, transparent);
   background:
-    radial-gradient(circle at 50% 38%, rgba(var(--accent-rgb), 0.16), transparent 55%),
-    var(--card);
-  transition: border-color 160ms ease, background 160ms ease;
+    radial-gradient(circle at 50% 42%, rgba(var(--bg-rgb), 0.92) 0 34%, transparent 70%),
+    repeating-linear-gradient(45deg, color-mix(in srgb, var(--reco-color) 14%, transparent) 0 2px, transparent 2px 12px),
+    var(--surface);
+  transition: border-color 160ms ease, transform 220ms ease, box-shadow 220ms ease;
+}
+
+/* Dos de carte à jouer : un liseré intérieur dans la couleur de la carte. */
+.recommendation-back::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid color-mix(in srgb, var(--reco-color) 55%, transparent);
+  border-radius: 5px;
+  pointer-events: none;
 }
 
 .recommendation-back:hover,
 .recommendation-back:focus-visible {
-  border-color: rgba(var(--accent-rgb), 0.55);
-  background:
-    radial-gradient(circle at 50% 38%, rgba(var(--accent-rgb), 0.24), transparent 55%),
-    var(--card-strong);
+  border-color: var(--reco-color);
+  box-shadow: 0 0 34px color-mix(in srgb, var(--reco-color) 30%, transparent);
 }
 
 .recommendation-back-text {
@@ -2056,6 +2078,7 @@ h1 {
 .recommendation-front {
   display: block;
   transform: rotateY(180deg);
+  border-color: var(--reco-color);
   background: var(--card);
 }
 
@@ -2095,12 +2118,16 @@ h1 {
   position: absolute;
   inset: auto 0 0;
   padding: 64px 20px 20px;
-  background: linear-gradient(180deg, transparent 0%, rgba(8, 8, 7, 0.78) 38%, rgba(8, 8, 7, 0.94) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(var(--bg-rgb), 0.8) 38%, rgba(var(--bg-rgb), 0.96) 100%);
 }
 
 .recommendation-slot {
-  color: var(--accent);
-  font-size: 0.78rem;
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 999px;
+  color: var(--bg);
+  background: var(--reco-color);
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -2117,7 +2144,7 @@ h1 {
 
 .recommendation-flip h3 em {
   margin-left: 10px;
-  color: var(--accent);
+  color: var(--reco-color);
   font-family:
     var(--font-body),
     ui-sans-serif,
@@ -2451,11 +2478,18 @@ h1 {
   background: var(--card);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
   cursor: pointer;
+  filter: brightness(0.62) saturate(0.8);
+  transition: filter 500ms ease, box-shadow 500ms ease, border-color 500ms ease;
 }
 
+/* Carte au premier plan : cerclée de l'accent, avec un halo (refonte design, 27/10/2026). */
 .highlights3dCard.isActive {
-  border-color: rgba(var(--accent-rgb), 0.55);
-  box-shadow: 0 34px 70px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(var(--accent-rgb), 0.35);
+  filter: none;
+  border-color: var(--accent);
+  box-shadow:
+    0 34px 70px rgba(0, 0, 0, 0.65),
+    0 0 0 2px var(--accent),
+    0 0 42px rgba(var(--accent-rgb), 0.35);
 }
 
 .highlight3dPoster {
@@ -2492,15 +2526,18 @@ h1 {
   bottom: 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 4px;
-  padding: 10px 12px;
-  background: rgba(8, 8, 7, 0.94);
-  border-top: 1px solid rgba(var(--accent-rgb), 0.25);
+  padding: 44px 12px 12px;
+  background: linear-gradient(180deg, transparent, rgba(var(--bg-rgb), 0.86) 42%, rgba(var(--bg-rgb), 0.97));
 }
 
 .highlight3dLabel {
-  color: var(--accent);
-  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  color: var(--on-accent);
+  background: var(--accent);
+  font-size: 0.66rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -2569,12 +2606,13 @@ h1 {
   border: none;
   background: rgba(var(--ink-rgb), 0.22);
   cursor: pointer;
-  transition: background 160ms ease, transform 160ms ease;
+  transition: background 160ms ease, width 220ms ease;
 }
 
 .highlights3dDot.isActive {
+  width: 22px;
+  border-radius: 999px;
   background: var(--accent);
-  transform: scale(1.25);
 }
 
 .siteFooter {

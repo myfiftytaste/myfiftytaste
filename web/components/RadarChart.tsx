@@ -279,6 +279,13 @@ export default function RadarChart({
       <div className="radar-card">
         <div className="radar-figure">
           <svg viewBox="-125 -28 770 465" role="img" width="620" height="346">
+            {/* Triangle plein, en dégradé des couleurs de l'ambiance (refonte design, 27/10/2026). */}
+            <defs>
+              <linearGradient id="radarFill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" style={{ stopColor: "var(--accent)", stopOpacity: 0.78 }} />
+                <stop offset="100%" style={{ stopColor: "var(--accent-2)", stopOpacity: 0.5 }} />
+              </linearGradient>
+            </defs>
             {[1, 2, 3, 4, 5].map((step) => (
               <polygon
                 className="radar-grid"
@@ -307,8 +314,13 @@ export default function RadarChart({
             <polygon
               className="radar-shape"
               points={shapePoints}
-              style={{ fill: "rgba(var(--accent-rgb), 0.12)", stroke: "var(--accent)" }}
+              style={{
+                fill: "url(#radarFill)",
+                stroke: "var(--accent-bright)",
+                filter: "drop-shadow(0 0 18px rgba(var(--accent-rgb), 0.35))",
+              }}
               strokeWidth="2"
+              strokeLinejoin="round"
             />
             {values.map((value, index) => {
               const point = pointFor(index, animatedValues[index]);
@@ -326,9 +338,9 @@ export default function RadarChart({
                     className="radar-point"
                     cx={point.x}
                     cy={point.y}
-                    r="5.5"
-                    style={{ fill: "var(--ink)", stroke: "var(--accent)" }}
-                    strokeWidth="2"
+                    r="6.5"
+                    style={{ fill: ["var(--accent)", "var(--accent-2)", "var(--accent-3)"][index % 3], stroke: "var(--bg)" }}
+                    strokeWidth="2.5"
                   />
                 </g>
               );

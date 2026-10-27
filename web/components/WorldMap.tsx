@@ -112,8 +112,10 @@ function formatPercent(value: number | null | undefined) {
 
 function fillFor(intensity: number | undefined) {
   const safe = Math.max(0, Math.min(1, intensity ?? 0));
-  const alpha = 0.2 + safe * 0.56;
-  return `rgba(var(--accent-rgb), ${alpha})`;
+  // Deux tons de l'ambiance : peu de films = accent secondaire, beaucoup = accent (refonte design, 27/10/2026).
+  const mix = Math.round(safe * 100);
+  const alpha = Math.round(55 + safe * 40);
+  return `color-mix(in srgb, color-mix(in srgb, var(--accent) ${mix}%, var(--accent-2)) ${alpha}%, transparent)`;
 }
 
 function normalizeNumericId(id: string | number | undefined) {
@@ -348,9 +350,8 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
                   data-country={countryName}
                   data-count={data?.count}
                   d={featurePath(shape)}
-                  fill={data ? fillFor(data.intensity) : "rgba(120, 117, 110, 0.12)"}
                   key={numericId || shape.properties?.name}
-                  style={dropStyle}
+                  style={{ fill: data ? fillFor(data.intensity) : "rgba(120, 117, 110, 0.12)", ...dropStyle }}
                   onClick={data ? (event) => enterCountry(data, event) : undefined}
                   onMouseEnter={data ? (event) => enterCountry(data, event) : undefined}
                   onMouseLeave={data ? leaveCountry : undefined}
