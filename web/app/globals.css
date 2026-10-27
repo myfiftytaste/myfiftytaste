@@ -4316,10 +4316,21 @@ h1 {
   grid-template-columns: minmax(0, 1fr);
 }
 
-/* La durée moyenne vit dans le bandeau, à droite de la carte du profil. */
+/* La durée moyenne vit dans le bandeau, à droite de la carte du profil (plus large, pour
+   loger 3 badges à l'aise) ; les deux occupent toute la largeur, alignées sur les modules. */
 .headerBand .runtimeHeroCard {
   flex: 1 1 300px;
-  max-width: 480px;
+}
+
+@media (min-width: 900px) {
+  .headerBand {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  }
+
+  .headerBand .headerCard {
+    max-width: none;
+  }
 }
 
 .runtimeHeroFifty {
