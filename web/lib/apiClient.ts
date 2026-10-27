@@ -3,6 +3,7 @@
 // "use client" (contrairement à lib/db.ts).
 
 import type { DisplayProfile } from "../components/ProfileView";
+import type { AvatarColor } from "./avatarColor";
 import type { Badge } from "./badgeSelection";
 import type { RuntimeStats } from "./fiftyStats";
 
@@ -13,6 +14,7 @@ export type CachedProfilePayload = {
   recommendations: unknown;
   generated_at: string;
   badges: Badge[];
+  avatar_color?: AvatarColor | null;
   fifty_stats?: { runtime: RuntimeStats | null };
 };
 

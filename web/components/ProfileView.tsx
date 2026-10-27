@@ -10,6 +10,7 @@ import HighlightsCarousel, { type Highlights } from "./HighlightsCarousel";
 import RadarChart from "./RadarChart";
 import DiscoveryTipCard from "./recap/DiscoveryTipCard";
 import ProfileBadgesHeader from "./recap/ProfileBadgesHeader";
+import type { AvatarColor } from "../lib/avatarColor";
 import Recommendations from "./Recommendations";
 import RuntimeFilmstrip from "./RuntimeFilmstrip";
 import SeverityGauge from "./SeverityGauge";
@@ -176,9 +177,11 @@ export default function ProfileView({
   profile,
   badges = [],
   runtimeStats = null,
+  avatarColor = null,
 }: {
   profile: DisplayProfile;
   badges?: Badge[];
+  avatarColor?: AvatarColor | null;
   runtimeStats?: RuntimeStats | null;
 }) {
   const {
@@ -219,7 +222,7 @@ export default function ProfileView({
       </header>
 
       <section className="headerBand" aria-label="Profil">
-        <ProfileBadgesHeader username={hero.username} letterboxdUrl={letterboxdProfileUrl} badges={badges} />
+        <ProfileBadgesHeader username={hero.username} letterboxdUrl={letterboxdProfileUrl} badges={badges} avatarColor={avatarColor} />
         {/* Durée moyenne remontée à droite du profil (retours du 27/10/2026) : la jauge prend sa place. */}
         <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} variant="hero" scale={runtimeStats} />
       </section>

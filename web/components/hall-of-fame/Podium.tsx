@@ -1,9 +1,11 @@
+import { avatarColorClass, type AvatarColor } from "../../lib/avatarColor";
 import { letterboxdProfileUrl } from "../../lib/username";
 
 export type PodiumEntry = {
   rank: 1 | 2 | 3;
   username: string;
   metricLabel: string;
+  color?: AvatarColor;
 };
 
 function initials(name: string): string {
@@ -62,7 +64,7 @@ export default function Podium({
             aria-label={`${entry.username}, ${entry.metricLabel}, rang ${entry.rank} : profil Letterboxd (nouvel onglet)`}
             className={`hofStep hofStep${entry.rank}`}
           >
-            <div className="hofAvatar">{initials(entry.username)}</div>
+            <div className={`hofAvatar${avatarColorClass(entry.color)}`}>{initials(entry.username)}</div>
             <div className="hofPseudo">
               {entry.username} <span aria-hidden="true">↗</span>
             </div>
