@@ -112,10 +112,8 @@ function formatPercent(value: number | null | undefined) {
 
 function fillFor(intensity: number | undefined) {
   const safe = Math.max(0, Math.min(1, intensity ?? 0));
-  // Deux tons de l'ambiance : peu de films = accent secondaire, beaucoup = accent (refonte design, 27/10/2026).
-  const mix = Math.round(safe * 100);
-  const alpha = Math.round(55 + safe * 40);
-  return `color-mix(in srgb, color-mix(in srgb, var(--accent) ${mix}%, var(--accent-2)) ${alpha}%, transparent)`;
+  // Un seul ton, plus ou moins dense, comme les autres modules (retour du 27/10/2026 : le bleu brouillait la lecture).
+  return `rgba(var(--accent-rgb), ${(0.25 + safe * 0.65).toFixed(2)})`;
 }
 
 function normalizeNumericId(id: string | number | undefined) {
