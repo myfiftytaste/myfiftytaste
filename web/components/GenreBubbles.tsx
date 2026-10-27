@@ -108,6 +108,7 @@ export default function GenreBubbles({
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          observer.disconnect(); // une seule fois par visite de la page (bug de scroll, 27/10/2026)
           window.clearTimeout(dropTimeoutRef.current);
           setIsDropping(false);
           requestAnimationFrame(() => {
@@ -152,6 +153,7 @@ export default function GenreBubbles({
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          observer.disconnect(); // une seule fois par visite de la page (bug de scroll, 27/10/2026)
           cancelAnimationFrame(rafId);
           setWidths(0);
           const duration = 1200;

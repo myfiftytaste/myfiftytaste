@@ -1,5 +1,6 @@
 "use client";
 
+import type { RuntimeStats } from "../lib/fiftyStats";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 /* eslint-disable @next/next/no-img-element */
@@ -171,7 +172,15 @@ function formatPercent(value: number) {
   return `${Math.round(value * 100)}%`;
 }
 
-export default function ProfileView({ profile, badges = [] }: { profile: DisplayProfile; badges?: Badge[] }) {
+export default function ProfileView({
+  profile,
+  badges = [],
+  runtimeStats = null,
+}: {
+  profile: DisplayProfile;
+  badges?: Badge[];
+  runtimeStats?: RuntimeStats | null;
+}) {
   const {
     hero,
     radar_scores,
@@ -211,6 +220,8 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
 
       <section className="headerBand" aria-label="Profil">
         <ProfileBadgesHeader username={hero.username} letterboxdUrl={letterboxdProfileUrl} badges={badges} />
+        {/* Durée moyenne remontée à droite du profil (retours du 27/10/2026) : la jauge prend sa place. */}
+        <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} variant="hero" scale={runtimeStats} />
       </section>
       <DiscoveryTipCard />
 
@@ -220,7 +231,6 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
           scale={averageRatingScale}
           detectedFilmsCount={detectedFilmsCount}
         />
-        <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} variant="hero" />
         <div className="heroPanelWrap">
           <p className="heroCoverageLine" tabIndex={0}>
             {detectedFilmsCount}/{targetFilmsCount} films analysés, {formatPercent(hero.metadata_coverage)}{" "}

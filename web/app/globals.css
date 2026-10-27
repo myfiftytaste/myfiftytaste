@@ -267,34 +267,80 @@ a {
   --note-ink: #2e2a22;
 }
 
+/* Papier de brouillon (retours du 27/10/2026) : froissé (texture SVG d'éclairage en
+   multiplication sur le papier), lignes de cahier pâles, marge, trous de perforation,
+   deux bouts de scotch posés de travers. Lisibilité d'abord : texture claire, encre foncée. */
+.updateNote,
+.updateNotePage {
+  --note-crumple: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.02 0.028' numOctaves='3' seed='11'/%3E%3CfeDiffuseLighting surfaceScale='4' lighting-color='%23fff'%3E%3CfeDistantLight azimuth='235' elevation='50'/%3E%3C/feDiffuseLighting%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='0.5' intercept='0.56'/%3E%3CfeFuncG type='linear' slope='0.5' intercept='0.56'/%3E%3CfeFuncB type='linear' slope='0.5' intercept='0.56'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
+  --note-tape: rgba(236, 226, 190, 0.62);
+}
+
 .updateNote {
   position: absolute;
   right: 2%;
   top: 16%;
-  width: 172px;
-  min-height: 196px;
-  padding: 20px 18px;
-  background:
-    linear-gradient(148deg, rgba(255, 255, 255, 0.5) 0%, transparent 26%),
-    linear-gradient(28deg, rgba(0, 0, 0, 0.09) 0%, transparent 32%),
-    linear-gradient(196deg, rgba(0, 0, 0, 0.07) 0%, transparent 22%),
-    linear-gradient(340deg, rgba(255, 255, 255, 0.42) 0%, transparent 30%),
-    var(--note-paper);
+  width: 178px;
+  min-height: 200px;
+  padding: 26px 16px 18px 30px;
   color: var(--note-ink);
-  font-family: var(--note-font-hand), cursive;
-  font-size: 19px;
-  line-height: 1.32;
-  transform: rotate(-5.5deg);
+  font-family: var(--font-hand), cursive;
+  font-size: 23px;
+  line-height: 1.2;
+  transform: rotate(-5deg);
   cursor: pointer;
-  box-shadow: 0 16px 32px -14px rgba(0, 0, 0, 0.75), 0 2px 5px rgba(0, 0, 0, 0.35);
-  transition: transform 220ms ease, box-shadow 220ms ease;
-  clip-path: polygon(2% 1%, 97% 0, 100% 12%, 99% 47%, 100% 88%, 94% 100%, 42% 99%, 4% 100%, 1% 62%, 0 26%);
+  filter: drop-shadow(0 14px 16px rgba(0, 0, 0, 0.55)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.35));
+  transition: transform 220ms ease;
+}
+
+.updateNotePaper {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 13px 26%, rgba(12, 11, 9, 0.88) 4.5px, transparent 5.5px),
+    radial-gradient(circle at 13px 50%, rgba(12, 11, 9, 0.88) 4.5px, transparent 5.5px),
+    radial-gradient(circle at 13px 74%, rgba(12, 11, 9, 0.88) 4.5px, transparent 5.5px),
+    linear-gradient(180deg, transparent calc(33% - 7px), rgba(0, 0, 0, 0.1) calc(33% - 1px), rgba(255, 255, 255, 0.55) calc(33% + 1px), transparent calc(33% + 7px)),
+    linear-gradient(180deg, transparent calc(66% - 7px), rgba(0, 0, 0, 0.1) calc(66% - 1px), rgba(255, 255, 255, 0.55) calc(66% + 1px), transparent calc(66% + 7px)),
+    linear-gradient(90deg, transparent 24px, rgba(196, 70, 60, 0.35) 24px 25.5px, transparent 25.5px),
+    repeating-linear-gradient(180deg, transparent 0 25px, rgba(80, 112, 160, 0.2) 25px 26px),
+    var(--note-crumple),
+    var(--note-paper);
+  background-blend-mode: normal, normal, normal, normal, normal, normal, normal, multiply, normal;
+  clip-path: polygon(1% 2%, 23% 0, 54% 1.5%, 98% 0, 100% 31%, 98.5% 63%, 100% 97%, 71% 99%, 47% 97.5%, 22% 100%, 0 98%, 1.5% 55%);
+}
+
+/* Scotch : posé à la main, de travers, bords déchirés. */
+.updateNote::before,
+.updateNote::after,
+.updateNotePage::before,
+.updateNotePage::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  width: 64px;
+  height: 22px;
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.12) 0 2px, transparent 2px 5px),
+    var(--note-tape);
+  clip-path: polygon(0 12%, 5% 0, 30% 8%, 62% 0, 96% 6%, 100% 0, 97% 48%, 100% 100%, 70% 92%, 35% 100%, 4% 94%, 0 100%, 3% 52%);
+  pointer-events: none;
+}
+
+.updateNote::before {
+  left: -14px;
+  transform: rotate(-32deg);
+}
+
+.updateNote::after {
+  right: -16px;
+  transform: rotate(24deg);
 }
 
 .updateNote:hover,
 .updateNote:focus-visible {
-  transform: rotate(-3deg) translateY(-5px) scale(1.03);
-  box-shadow: 0 22px 40px -14px rgba(0, 0, 0, 0.8);
+  transform: rotate(-2.5deg) translateY(-5px) scale(1.04);
 }
 
 .updateNote:focus-visible {
@@ -302,24 +348,13 @@ a {
   outline-offset: 3px;
 }
 
-.updateNote::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(102deg, transparent 47.6%, rgba(0, 0, 0, 0.055) 48%, transparent 48.6%),
-    linear-gradient(64deg, transparent 71.6%, rgba(0, 0, 0, 0.045) 72%, transparent 72.7%),
-    linear-gradient(126deg, transparent 27.7%, rgba(255, 255, 255, 0.5) 28%, transparent 28.6%);
-}
-
 .updateNote b {
   display: block;
-  font-weight: 600;
-  font-size: 21px;
-  margin-bottom: 7px;
-  border-bottom: 1.5px solid rgba(46, 42, 34, 0.32);
-  padding-bottom: 5px;
+  position: relative;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.05;
+  margin-bottom: 8px;
 }
 
 .updateNote small {
@@ -350,23 +385,75 @@ a {
 .updateNoteSheet {
   position: relative;
   width: 100%;
-  max-width: 620px;
+  max-width: 640px;
   max-height: 90vh;
   overflow-y: auto;
-  padding: 40px 44px 34px;
-  background: linear-gradient(170deg, rgba(255, 255, 255, 0.35) 0%, transparent 18%), var(--note-paper);
-  color: var(--note-ink);
-  box-shadow: 0 22px 50px -20px rgba(0, 0, 0, 0.8);
+  padding: 16px 8px 8px;
+  transform-origin: 50% 0;
+  animation: noteUnfold 0.75s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
-.updateNoteSheet::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
+/* Même papier que la note épinglée, en plus clair pour la lecture longue. */
+.updateNotePage {
+  --note-crumple: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='560'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.018' numOctaves='3' seed='11'/%3E%3CfeDiffuseLighting surfaceScale='4' lighting-color='%23fff'%3E%3CfeDistantLight azimuth='235' elevation='50'/%3E%3C/feDiffuseLighting%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='0.34' intercept='0.7'/%3E%3CfeFuncG type='linear' slope='0.34' intercept='0.7'/%3E%3CfeFuncB type='linear' slope='0.34' intercept='0.7'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
+  position: relative;
+  padding: 40px 40px 34px 64px;
+  color: var(--note-ink);
   background:
-    linear-gradient(96deg, transparent 33.6%, rgba(0, 0, 0, 0.035) 34%, transparent 34.7%),
-    linear-gradient(84deg, transparent 68.6%, rgba(0, 0, 0, 0.03) 69%, transparent 69.7%);
+    radial-gradient(circle at 22px 90px, rgba(12, 11, 9, 0.85) 6px, transparent 7px),
+    radial-gradient(circle at 22px 50%, rgba(12, 11, 9, 0.85) 6px, transparent 7px),
+    radial-gradient(circle at 22px calc(100% - 90px), rgba(12, 11, 9, 0.85) 6px, transparent 7px),
+    linear-gradient(90deg, transparent 44px, rgba(196, 70, 60, 0.3) 44px 45.5px, transparent 45.5px),
+    linear-gradient(180deg, transparent calc(33.3% - 10px), rgba(0, 0, 0, 0.07) calc(33.3% - 1px), rgba(255, 255, 255, 0.5) calc(33.3% + 1px), transparent calc(33.3% + 10px)),
+    linear-gradient(180deg, transparent calc(66.6% - 10px), rgba(0, 0, 0, 0.07) calc(66.6% - 1px), rgba(255, 255, 255, 0.5) calc(66.6% + 1px), transparent calc(66.6% + 10px)),
+    repeating-linear-gradient(180deg, transparent 0 31px, rgba(80, 112, 160, 0.13) 31px 32px),
+    var(--note-crumple),
+    var(--note-paper);
+  background-blend-mode: normal, normal, normal, normal, normal, normal, normal, multiply, normal;
+  box-shadow: 0 26px 50px -18px rgba(0, 0, 0, 0.85);
+  transform: rotate(-0.4deg);
+}
+
+.updateNotePage::before {
+  left: 18%;
+  transform: rotate(-6deg);
+  width: 86px;
+}
+
+.updateNotePage::after {
+  right: 14%;
+  transform: rotate(5deg);
+  width: 76px;
+}
+
+/* Dépliage : la feuille arrive pliée, bascule, puis se met à plat. */
+@keyframes noteUnfold {
+  0% {
+    transform: perspective(1400px) rotateX(82deg) scale(0.35) rotate(-6deg);
+    opacity: 0;
+  }
+  45% {
+    transform: perspective(1400px) rotateX(-14deg) scale(0.94) rotate(-1.5deg);
+    opacity: 1;
+  }
+  70% {
+    transform: perspective(1400px) rotateX(5deg) scale(1);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .updateNoteSheet {
+    animation: noteFadeIn 0.3s ease both;
+  }
+}
+
+@keyframes noteFadeIn {
+  from {
+    opacity: 0;
+  }
 }
 
 .updateNoteClose {
@@ -390,8 +477,8 @@ a {
 }
 
 .updateNoteSheet h3 {
-  font-family: var(--note-font-hand), cursive;
-  font-size: 32px;
+  font-family: var(--font-hand), cursive;
+  font-size: 40px;
   margin: 0 0 4px;
   font-weight: 600;
   color: var(--note-ink);
@@ -438,8 +525,8 @@ a {
 }
 
 .updateNoteSign {
-  font-family: var(--note-font-hand), cursive;
-  font-size: 20px;
+  font-family: var(--font-hand), cursive;
+  font-size: 26px;
   margin-top: 26px;
   text-align: right;
   color: rgba(46, 42, 34, 0.75);
@@ -459,14 +546,15 @@ a {
      saisie sur un écran étroit) pour reprendre le flux normal, sous le
      panneau d'accueil. */
   .updateNote {
-    position: static;
+    position: relative;
     right: auto;
     top: auto;
     margin: 26px auto 0;
   }
 
-  .updateNoteSheet {
-    padding: 30px 24px;
+  .updateNotePage {
+    padding: 30px 20px 26px 48px;
+    background-position: -10px 0, -10px 0, -10px 0, -10px 0, 0 0, 0 0, 0 0, 0 0, 0 0;
   }
 }
 
@@ -3451,7 +3539,7 @@ h1 {
      le padding du conteneur de page qui l'englobe. */
   position: fixed;
   inset: 0;
-  z-index: 20;
+  z-index: 60; /* au-dessus de la barre d'onglets (50) : elle n'apparaît qu'une fois le profil affiché */
   display: grid;
   place-items: center;
   background: var(--loading-bg);
@@ -4225,11 +4313,36 @@ h1 {
 /* Haut du profil (maquette du 26/10/2026) : note moyenne et durée moyenne côte à côte,
    puis la jauge à deux billes ; sur ordinateur, les trois sur une ligne. */
 .heroTopWithTheme {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
 }
 
-.heroTopWithTheme .heroPanelWrap {
-  grid-column: 1 / -1;
+/* La durée moyenne vit dans le bandeau, à droite de la carte du profil (plus large, pour
+   loger 3 badges à l'aise) ; les deux occupent toute la largeur, alignées sur les modules. */
+.headerBand .runtimeHeroCard {
+  flex: 1 1 300px;
+}
+
+@media (min-width: 900px) {
+  .headerBand {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  }
+
+  .headerBand .headerCard {
+    max-width: none;
+  }
+}
+
+.runtimeHeroFifty {
+  margin: -4px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+/* Le bug de scroll (page qui remonte) pointe vers l'ancrage de défilement de Chrome
+   pendant les animations : on l'écarte pour tout le profil. */
+.profileReveal {
+  overflow-anchor: none;
 }
 
 .heroTopWithTheme .averageRatingCard {
@@ -4289,11 +4402,7 @@ h1 {
 
 @media (min-width: 900px) {
   .heroTopWithTheme {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .heroTopWithTheme .heroPanelWrap {
-    grid-column: auto;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
   }
 }
 
@@ -4673,4 +4782,7 @@ h1 {
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+/* Conteneur ordinaire (non fixe) de la page profil : voir app/profile/[username]/page.tsx. */
+.profileRoute {
+  position: relative;
 }

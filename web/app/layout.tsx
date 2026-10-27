@@ -8,6 +8,8 @@ import "./globals.css";
 // Charte typo validée le 26/10/2026 : Besley (titres) + Schibsted Grotesk (texte, chiffres).
 // Auto-hébergées (next/font/google plante sur Next 14.2.5, cf. UpdateNote.tsx) ; licences OFL dans app/fonts.
 const titleFont = localFont({ src: "./fonts/besley.woff2", variable: "--font-title", weight: "400 900", display: "swap" });
+// Caveat : écriture manuscrite de la note de mise à jour (auto-hébergée, licence OFL).
+const handFont = localFont({ src: "./fonts/caveat.woff2", variable: "--font-hand", weight: "400 700", display: "swap" });
 const bodyFont = localFont({
   src: "./fonts/schibsted-grotesk.woff2",
   variable: "--font-body",
@@ -38,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${titleFont.variable} ${bodyFont.variable}`}>
+    <html lang="fr" className={`${titleFont.variable} ${bodyFont.variable} ${handFont.variable}`}>
       <body>
         <VisualThemeProvider>
           {children}
