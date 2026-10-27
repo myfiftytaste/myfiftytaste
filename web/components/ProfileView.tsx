@@ -282,7 +282,8 @@ export default function ProfileView({
           <a href="https://letterboxd.com/tanguytare/" target="_blank" rel="noreferrer">
             Tanguytare
           </a>{" "}
-          · Projet indépendant, non affilié à Letterboxd · <Link href={feedbackHref}>Donner mon avis</Link>
+          · Projet indépendant, non affilié à Letterboxd · <Link href={feedbackHref}>Donner mon avis</Link> ·{" "}
+          <Link href="/mentions-legales">Mentions légales</Link> · <Link href="/confidentialite">Confidentialité</Link>
         </p>
       </footer>
     </main>

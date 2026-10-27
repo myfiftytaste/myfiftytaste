@@ -25,7 +25,10 @@ const groups: { title: string; rows: (Row | "updateNote")[] }[] = [
   },
   {
     title: "Infos",
-    rows: [{ title: "Mentions légales et confidentialité", sub: "Données, cookies et sources", soon: true }],
+    rows: [
+      { title: "Mentions légales", sub: "Qui édite Fifty, où il tourne, d’où viennent les données", href: "/mentions-legales" },
+      { title: "Confidentialité et cookies", sub: "Ce qui est gardé, combien de temps, tes droits", href: "/confidentialite" },
+    ],
   },
 ];
 

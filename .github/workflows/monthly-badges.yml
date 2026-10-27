@@ -32,3 +32,8 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           MONTH: ${{ github.event.inputs.month }}
         run: python scripts/attribute_badges.py ${MONTH:+"$MONTH"}
+      # Durées de conservation annoncées sur /confidentialite (lot 9).
+      - name: Purge des données expirées
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python scripts/purge_retention.py
