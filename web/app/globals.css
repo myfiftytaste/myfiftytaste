@@ -3539,7 +3539,7 @@ h1 {
      le padding du conteneur de page qui l'englobe. */
   position: fixed;
   inset: 0;
-  z-index: 20;
+  z-index: 60; /* au-dessus de la barre d'onglets (50) : elle n'apparaît qu'une fois le profil affiché */
   display: grid;
   place-items: center;
   background: var(--loading-bg);
