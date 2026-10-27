@@ -4,6 +4,7 @@
 
 import type { DisplayProfile } from "../components/ProfileView";
 import type { Badge } from "./badgeSelection";
+import type { RuntimeStats } from "./fiftyStats";
 
 export type CachedProfilePayload = {
   username: string;
@@ -12,6 +13,7 @@ export type CachedProfilePayload = {
   recommendations: unknown;
   generated_at: string;
   badges: Badge[];
+  fifty_stats?: { runtime: RuntimeStats | null };
 };
 
 export type PostProfileResult =
