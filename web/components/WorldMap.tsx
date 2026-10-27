@@ -113,7 +113,7 @@ function formatPercent(value: number | null | undefined) {
 function fillFor(intensity: number | undefined) {
   const safe = Math.max(0, Math.min(1, intensity ?? 0));
   const alpha = 0.2 + safe * 0.56;
-  return `rgba(217, 164, 65, ${alpha})`;
+  return `rgba(var(--accent-rgb), ${alpha})`;
 }
 
 function normalizeNumericId(id: string | number | undefined) {

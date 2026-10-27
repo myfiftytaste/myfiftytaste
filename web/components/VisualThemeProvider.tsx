@@ -57,14 +57,10 @@ export default function VisualThemeProvider({
     setIsThemeReady(true);
   }, []);
 
+  // Depuis les ambiances (27/10/2026), le fond de film ne fournit que son image : les couleurs
+  // (accent, surfaces, bordures) viennent de l'ambiance choisie, cf. globals.css.
   const cssVars = useMemo(
     () => ({
-      "--theme-accent": theme.accent,
-      "--theme-accent-soft": theme.accentSoft,
-      "--theme-accent-muted": theme.accentMuted,
-      "--theme-surface-tint": theme.surfaceTint,
-      "--theme-border-tint": theme.borderTint,
-      "--theme-glow": theme.glow,
       "--theme-background-image": `url(${theme.background})`,
       "--theme-background-position": theme.backgroundPosition,
       "--theme-background-overlay": theme.backgroundOverlay,

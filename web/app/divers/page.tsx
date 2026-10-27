@@ -18,7 +18,7 @@ const groups: { title: string; rows: (Row | "updateNote")[] }[] = [
   {
     title: "Réglages",
     rows: [
-      { title: "Préférences", sub: "Fond d’écran, accords (il / elle / iel)", soon: true },
+      { title: "Préférences", sub: "Ambiance des couleurs du site", href: "/preferences" },
       { title: "Changer de pseudo", sub: "Voir le wrapped d’un·e autre cinéphile", href: "/" },
       { title: "Installer l’application", sub: "Ajoute Fifty à ton écran d’accueil", soon: true },
     ],

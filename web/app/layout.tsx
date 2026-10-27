@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import DebugScroll from "../components/DebugScroll";
 import NavBar from "../components/NavBar";
+import { AMBIANCE_BOOT_SCRIPT } from "../lib/ambiance";
 import VisualThemeProvider from "../components/VisualThemeProvider";
 import "./globals.css";
 
@@ -40,7 +41,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${titleFont.variable} ${bodyFont.variable} ${handFont.variable}`}>
+    <html lang="fr" className={`${titleFont.variable} ${bodyFont.variable} ${handFont.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Ambiance choisie appliquée avant l'affichage (cookie fifty_ambiance), cf. lib/ambiance.ts. */}
+        <script dangerouslySetInnerHTML={{ __html: AMBIANCE_BOOT_SCRIPT }} />
+      </head>
       <body>
         <VisualThemeProvider>
           {children}

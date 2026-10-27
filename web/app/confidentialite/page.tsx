@@ -167,6 +167,14 @@ export default function ConfidentialitePage() {
             </tr>
             <tr>
               <td data-label="Nom">
+                <code>fifty_ambiance</code>
+              </td>
+              <td data-label="Type">Cookie</td>
+              <td data-label="À quoi il sert">Retenir l&apos;ambiance de couleurs choisie dans Préférences.</td>
+              <td data-label="Durée">1 an</td>
+            </tr>
+            <tr>
+              <td data-label="Nom">
                 <code>fifty-tip-closed</code>
               </td>
               <td data-label="Type">Stockage local</td>
