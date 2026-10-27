@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { sendFeedbackEmail } from "../../../lib/feedbackMail";
 import { clientIp, getPool, normalizeUsername, USERNAME_PATTERN, withinRateLimit } from "../../../lib/db";
 
 const FEEDBACK_RATE_LIMIT_MESSAGE = "Beaucoup de retours envoyés depuis ta connexion, merci ! Réessaie dans quelques minutes.";
@@ -107,6 +108,16 @@ export async function POST(request: NextRequest) {
       sourcePage,
     ],
   );
+
+  await sendFeedbackEmail({
+    ...tagValues,
+    profile_resonates: profileResonates,
+    general_comment: generalComment,
+    one_change: oneChange,
+    username,
+    device,
+    source_page: sourcePage,
+  });
 
   return NextResponse.json({ ok: true });
 }

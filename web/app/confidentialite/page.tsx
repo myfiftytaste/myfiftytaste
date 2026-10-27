@@ -200,6 +200,10 @@ export default function ConfidentialitePage() {
           clauses contractuelles types de la Commission européenne).
         </li>
         <li>
+          <strong>Resend</strong> (États-Unis) transmet chaque retour du formulaire par e-mail à l&apos;éditeur, aux
+          mêmes conditions de transfert.
+        </li>
+        <li>
           <strong>TMDB</strong> reçoit des titres et années de films, jamais de pseudo ni de donnée personnelle.
         </li>
       </ul>
