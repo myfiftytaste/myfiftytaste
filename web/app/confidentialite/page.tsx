@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LegalPage, { Author, Contact } from "../../components/legal/LegalPage";
+import { AMBIANCES_OPEN } from "../../lib/ambiance";
 
 export const metadata: Metadata = { title: "Confidentialité et cookies · Fifty" };
 
@@ -165,6 +166,16 @@ export default function ConfidentialitePage() {
               </td>
               <td data-label="Durée">400 jours</td>
             </tr>
+            {AMBIANCES_OPEN ? (
+              <tr>
+                <td data-label="Nom">
+                  <code>fifty_ambiance</code>
+                </td>
+                <td data-label="Type">Cookie</td>
+                <td data-label="À quoi il sert">Retenir l&apos;ambiance de couleurs choisie dans Préférences.</td>
+                <td data-label="Durée">1 an</td>
+              </tr>
+            ) : null}
             <tr>
               <td data-label="Nom">
                 <code>fifty-tip-closed</code>

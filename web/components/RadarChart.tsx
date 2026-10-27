@@ -285,7 +285,7 @@ export default function RadarChart({
                 key={step}
                 points={polygonPoints(step)}
                 fill="none"
-                stroke="rgba(247, 238, 220, 0.18)"
+                style={{ stroke: "rgba(var(--ink-rgb), 0.18)" }}
                 strokeWidth="1"
               />
             ))}
@@ -299,7 +299,7 @@ export default function RadarChart({
                   y1={center}
                   x2={end.x}
                   y2={end.y}
-                  stroke="rgba(247, 238, 220, 0.22)"
+                  style={{ stroke: "rgba(var(--ink-rgb), 0.22)" }}
                   strokeWidth="1"
                 />
               );
@@ -307,8 +307,7 @@ export default function RadarChart({
             <polygon
               className="radar-shape"
               points={shapePoints}
-              fill="rgba(217, 164, 65, 0.12)"
-              stroke="#d9a441"
+              style={{ fill: "rgba(var(--accent-rgb), 0.12)", stroke: "var(--accent)" }}
               strokeWidth="2"
             />
             {values.map((value, index) => {
@@ -328,8 +327,7 @@ export default function RadarChart({
                     cx={point.x}
                     cy={point.y}
                     r="5.5"
-                    fill="#f2e6cf"
-                    stroke="#d9a441"
+                    style={{ fill: "var(--ink)", stroke: "var(--accent)" }}
                     strokeWidth="2"
                   />
                 </g>

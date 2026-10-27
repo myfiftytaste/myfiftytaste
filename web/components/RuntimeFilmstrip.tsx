@@ -149,8 +149,8 @@ export default function RuntimeFilmstrip({
         <svg viewBox={`0 0 ${W} 70`} role="img" aria-label={card.description}>
           <defs>
             <linearGradient id={gradId} x1="0" x2="1" y1="0" y2="0">
-              <stop offset="0%" stopColor="rgba(217,164,65,0.65)" />
-              <stop offset="100%" stopColor="#e2b24a" />
+              <stop offset="0%" style={{ stopColor: "rgba(var(--accent-rgb), 0.65)" }} />
+              <stop offset="100%" style={{ stopColor: "var(--accent)" }} />
             </linearGradient>
           </defs>
           <path ref={baseRef} className="ribbonBase" d={ribbonPath(0, W)} />
