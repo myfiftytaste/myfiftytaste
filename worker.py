@@ -94,6 +94,16 @@ NO_FILMS_MARKERS = (
 )
 
 
+EXCLUDED_USERNAMES_JSON = BASE_DIR / "data" / "processed" / "excluded_usernames.json"
+
+
+def excluded_usernames() -> set[str]:
+    """Liste d'exclusion (droit d'opposition), un pseudo en minuscules par entrée."""
+    if not EXCLUDED_USERNAMES_JSON.exists():
+        return set()
+    return {str(name).lower() for name in json.loads(EXCLUDED_USERNAMES_JSON.read_text(encoding="utf-8"))}
+
+
 def classify_error(stderr: str) -> str:
     # Retry/backoff épuisé (429 ou erreurs réseau à répétition) : marqueur
     # posé par fetch_rss() dans scripts/build_user_wrapped.py, à vérifier
@@ -419,6 +429,11 @@ def process_job(conn: psycopg.Connection, job: dict[str, Any]) -> None:
 
     if not USERNAME_RE.fullmatch(username):
         finalize_error(conn, job, "user_not_found", "pseudo invalide")
+        return
+
+    # Pseudos dont la personne a demandé à ne plus être calculée (page Confidentialité).
+    if username.lower() in excluded_usernames():
+        finalize_error(conn, job, "user_not_found", "pseudo exclu à la demande de la personne")
         return
 
     for index, (label, script, extra) in enumerate(PIPELINE_STEPS, start=1):

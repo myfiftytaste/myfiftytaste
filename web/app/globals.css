@@ -4541,3 +4541,136 @@ h1 {
     bottom: calc(112px + env(safe-area-inset-bottom));
   }
 }
+
+/* ---- Pages légales (lot 9) : lecture longue, même fond que Divers ---- */
+.legalShell {
+  max-width: 820px;
+}
+
+.legalArticle {
+  padding: 8px 0 40px;
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+.legalArticle h1 {
+  margin: 12px 0 4px;
+  font-family: var(--font-title), Georgia, serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.legalUpdated {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.legalLede {
+  padding: 16px 18px;
+  border-left: 3px solid var(--gold-border);
+  background: rgba(247, 238, 220, 0.05);
+  border-radius: 0 10px 10px 0;
+}
+
+.legalLede p {
+  margin: 0 0 8px;
+}
+
+.legalLede p:last-child {
+  margin-bottom: 0;
+}
+
+.legalArticle h2 {
+  margin: 34px 0 10px;
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.legalArticle li {
+  margin-bottom: 8px;
+}
+
+.legalArticle a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legalTmdb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.legalTableWrap {
+  overflow-x: auto;
+  margin: 10px 0 14px;
+}
+
+.legalTable {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.legalTable th,
+.legalTable td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.legalTable th {
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.legalNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+/* Sur téléphone, chaque ligne de tableau devient une fiche lisible sans défilement horizontal. */
+@media (max-width: 640px) {
+  .legalTable {
+    min-width: 0;
+  }
+
+  .legalTable thead {
+    display: none;
+  }
+
+  .legalTable tr {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .legalTable td {
+    display: block;
+    padding: 4px 0;
+    border: none;
+  }
+
+  .legalTable td::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--muted);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
