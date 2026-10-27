@@ -66,7 +66,7 @@ export default function MentionsLegalesPage() {
           <span className="legalTmdb">
             {hasTmdbLogo ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src="/branding/tmdb-logo.svg" alt="The Movie Database (TMDB)" width={120} height={16} />
+              <img src="/branding/tmdb-logo.svg" alt="The Movie Database (TMDB)" width={56} height={40} />
             ) : null}
             <span lang="en">This product uses the TMDB API but is not endorsed or certified by TMDB.</span>
           </span>
