@@ -4782,6 +4782,8 @@ h1 {
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+}
+
 /* Conteneur ordinaire (non fixe) de la page profil : voir app/profile/[username]/page.tsx. */
 .profileRoute {
   position: relative;
