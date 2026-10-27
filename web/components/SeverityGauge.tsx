@@ -43,13 +43,17 @@ export default function SeverityGauge({
   const [run, setRun] = useState(0);
   const [trackWidth, setTrackWidth] = useState(300);
 
-  // Rejoue l'arrivée des billes à chaque retour à l'écran, comme l'étoile voisine.
+  // L'arrivée des billes se joue la première fois que la jauge entre à l'écran, puis plus.
   useEffect(() => {
     const node = trackRef.current;
     if (!hasValue || !node) return;
     setTrackWidth(node.offsetWidth || 300);
     const observer = new IntersectionObserver(
-      (entries) => entries.forEach((entry) => entry.isIntersecting && setRun((current) => current + 1)),
+      (entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        observer.disconnect(); // une seule fois par visite de la page (bug de scroll, 27/10/2026)
+        setRun(1);
+      },
       { threshold: 0.4 },
     );
     observer.observe(node);

@@ -9,11 +9,17 @@ type RuntimeCard = {
   data_source: string;
 };
 
-// Calibrated on the real Megabank runtime distribution (median 99min, mean
-// 103min across 9,961 films): the track's center lands on the real catalogue
-// average instead of an arbitrary round span.
+// Échelle de repli tant que Fifty n'a pas assez de profils (lib/fiftyStats.ts) : sinon les
+// bornes suivent la répartition réelle des durées moyennes sur Fifty (5e et 95e centiles),
+// pour que la jauge varie vraiment d'un profil à l'autre. Les extrémités affichent ≤ / ≥ :
+// une moyenne hors bornes reste vraie dans le grand chiffre, la jauge est juste en butée.
 const RUNTIME_LOW = 60; // 1h
 const RUNTIME_HIGH = 150; // 2h30
+
+function formatMinutes(total: number) {
+  const rounded = Math.round(total);
+  return `${Math.floor(rounded / 60)}h${String(rounded % 60).padStart(2, "0")}`;
+}
 
 const W = 340;
 const MID_Y = 36;
@@ -55,12 +61,16 @@ export default function RuntimeFilmstrip({
   card,
   averageMinutes,
   variant = "card",
+  scale = null,
 }: {
   card?: RuntimeCard | null;
   averageMinutes?: number | null;
   // "hero" : petite carte du haut du profil, à côté de la note moyenne (maquette du 26/10/2026).
   variant?: "card" | "hero";
+  scale?: { average: number; low: number; high: number } | null;
 }) {
+  const low = scale?.low ?? RUNTIME_LOW;
+  const high = scale?.high ?? RUNTIME_HIGH;
   const hero = variant === "hero";
   const gradId = useId();
   const baseRef = useRef<SVGPathElement>(null);
@@ -73,9 +83,9 @@ export default function RuntimeFilmstrip({
   const fraction = useMemo(
     () =>
       hasData
-        ? Math.max(0, Math.min(1, ((averageMinutes as number) - RUNTIME_LOW) / (RUNTIME_HIGH - RUNTIME_LOW)))
+        ? Math.max(0, Math.min(1, ((averageMinutes as number) - low) / (high - low)))
         : 0,
-    [hasData, averageMinutes],
+    [hasData, averageMinutes, low, high],
   );
 
   useEffect(() => {
@@ -185,11 +195,16 @@ export default function RuntimeFilmstrip({
         </svg>
       </div>
       <div className="filmstripEnds">
-        <span>1h</span>
-        <span>2h30</span>
+        <span>≤ {formatMinutes(low)}</span>
+        <span>≥ {formatMinutes(high)}</span>
       </div>
       {hero ? (
-        <p className="runtimeHeroText">La durée moyenne de tes films</p>
+        <>
+          <p className="runtimeHeroText">La durée moyenne de tes films</p>
+          {scale ? (
+            <p className="runtimeHeroFifty">(la moyenne sur Fifty est de {formatMinutes(scale.average)})</p>
+          ) : null}
+        </>
       ) : (
         <>
           <p className="cardDescription">{card.description}</p>

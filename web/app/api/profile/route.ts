@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getBadgesForUser } from "../../../lib/badges";
+import { getRuntimeStats } from "../../../lib/fiftyStats";
 import { OWNER_COOKIE, OWNER_MAX_AGE_SECONDS, signOwner } from "../../../lib/ownerCookie";
 import {
   clientIp,
@@ -121,6 +122,7 @@ export async function POST(request: NextRequest) {
           recommendations: cachedRow.recommendations,
           generated_at: cachedRow.generated_at,
           badges: await getBadgesForUser(username),
+          fifty_stats: { runtime: await getRuntimeStats() },
         },
       }),
       username,

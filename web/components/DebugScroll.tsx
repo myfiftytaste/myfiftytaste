@@ -18,6 +18,7 @@ function describe(element: Element | null): string {
 export default function DebugScroll() {
   const [active, setActive] = useState(false);
   const [jumps, setJumps] = useState<Jump[]>([]);
+  const [shifts, setShifts] = useState<string[]>([]);
 
   useEffect(() => {
     if (!new URLSearchParams(window.location.search).has("debug-scroll")) return;
@@ -59,12 +60,37 @@ export default function DebugScroll() {
       if (!last || last.what !== what || performance.now() - last.t > 300) note(what);
       else last.t = performance.now();
     };
-    const onWheel = () => noteGesture("molette");
+    const onWheel = (event: WheelEvent) => noteGesture(event.deltaY < 0 ? "molette ↑" : "molette ↓");
     const onTouch = () => noteGesture("doigt");
     document.addEventListener("focusin", onFocusIn);
     window.addEventListener("resize", onResize);
     window.addEventListener("wheel", onWheel, { passive: true });
     window.addEventListener("touchmove", onTouch, { passive: true });
+
+    // Contenu qui se décale sans que la position de défilement change (invisible au test ci-dessous) :
+    // l'API Layout Instability dit quel élément a bougé, et de combien.
+    let shiftObserver: PerformanceObserver | null = null;
+    try {
+      shiftObserver = new PerformanceObserver((list) => {
+        for (const entry of list.getEntries() as unknown as {
+          value: number;
+          sources?: { node?: Node; previousRect: DOMRectReadOnly; currentRect: DOMRectReadOnly }[];
+        }[]) {
+          if (entry.value < 0.02) continue;
+          const sources = (entry.sources ?? [])
+            .map((source) => `${describe(source.node instanceof Element ? source.node : null)} ${Math.round(source.previousRect.y)}→${Math.round(source.currentRect.y)}`)
+            .join(" ; ");
+          note(`décalage ${entry.value.toFixed(2)} : ${sources || "source inconnue"}`);
+          setShifts((current) => [`${new Date().toLocaleTimeString("fr-FR")} · ${entry.value.toFixed(2)} · ${sources}`, ...current].slice(0, 4));
+        }
+      });
+      shiftObserver.observe({ type: "layout-shift", buffered: false });
+    } catch {
+      // Navigateur sans Layout Instability API (Safari, Firefox) : le reste du diagnostic fonctionne.
+    }
+
+    // Remontée progressive (défilement doux) : on compare au point le plus bas de la dernière seconde.
+    const history: { t: number; y: number }[] = [];
 
     let lastY = window.scrollY;
     let lastHeight = document.documentElement.scrollHeight;
@@ -74,7 +100,13 @@ export default function DebugScroll() {
       const height = document.documentElement.scrollHeight;
       if (height !== lastHeight) note(`hauteur de page ${lastHeight} → ${height}`);
       // Une molette ou un doigt remonte de ~100 px par image ; 400 px d'un coup vers le haut, c'est le bug.
-      if (y < lastY - 400) {
+      const now0 = performance.now();
+      history.push({ t: now0, y });
+      while (history.length && now0 - history[0].t > 1000) history.shift();
+      const lowest = Math.max(...history.map((point) => point.y));
+      const userWentUp = recent.some((entry) => now0 - entry.t < 1000 && (entry.what === "molette ↑" || entry.what === "doigt"));
+      if (y < lastY - 400 || (y < lowest - 400 && !userWentUp)) {
+        history.length = 0;
         const now = performance.now();
         const context = recent.filter((entry) => now - entry.t < 1500).map((entry) => `${Math.round(now - entry.t)} ms avant : ${entry.what}`);
         context.push(`élément actif : ${describe(document.activeElement)}`);
@@ -105,6 +137,7 @@ export default function DebugScroll() {
       window.removeEventListener("resize", onResize);
       window.removeEventListener("wheel", onWheel);
       window.removeEventListener("touchmove", onTouch);
+      shiftObserver?.disconnect();
     };
   }, []);
 
@@ -114,6 +147,16 @@ export default function DebugScroll() {
     <div className="debugScroll" role="status">
       <strong>Diagnostic scroll actif</strong>
       {jumps.length === 0 ? <p>Aucun saut détecté pour l’instant. Fais défiler normalement.</p> : null}
+      {shifts.length ? (
+        <>
+          <p>Contenu décalé (élément · avant → après) :</p>
+          <ul>
+            {shifts.map((line, index) => (
+              <li key={index}>{line}</li>
+            ))}
+          </ul>
+        </>
+      ) : null}
       {jumps.map((jump, index) => (
         <div key={index}>
           <p>

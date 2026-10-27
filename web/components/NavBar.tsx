@@ -55,6 +55,9 @@ export default function NavBar() {
     { key: "divers", label: "Divers", href: "/divers", active: pathname.startsWith("/divers") || pathname.startsWith("/feedback") },
   ] as const;
 
+  // Première visite : pas d'onglets sur l'accueil tant qu'aucun pseudo n'a été saisi (retours du 27/10/2026).
+  if (pathname === "/" && !myPseudo) return null;
+
   return (
     <nav className="navBar" aria-label="Navigation principale">
       {tabs.map((tab) => (
