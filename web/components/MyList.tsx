@@ -56,6 +56,13 @@ function filmTitle(film: Film) {
   return film.title || film.rss_title?.replace(/,\s*\d{4}.*$/, "") || "Sans titre";
 }
 
+// Chaque film mène toujours à Letterboxd : sa fiche, sinon une recherche par titre.
+function letterboxdUrl(film: Film) {
+  return film.letterboxd_slug
+    ? `https://letterboxd.com/film/${film.letterboxd_slug}/`
+    : `https://letterboxd.com/search/films/${encodeURIComponent(filmTitle(film))}/`;
+}
+
 function sortValue(film: Film, key: SortKey): number | string | null {
   switch (key) {
     case "watch":
@@ -200,6 +207,10 @@ export default function MyList() {
             </div>
           </div>
 
+          <p className="listSoon">
+            Recherche par titre · Filtres <span className="diversRowSoon">Bientôt</span>
+          </p>
+
           <div className="listSorts" role="group" aria-label="Trier par">
             {sorts.map((sort) => (
               <button
@@ -222,7 +233,7 @@ export default function MyList() {
                 <li key={`${film.letterboxd_slug}-${index}`}>
                   <a
                     className="listPosterLink"
-                    href={film.letterboxd_slug ? `https://letterboxd.com/film/${film.letterboxd_slug}/` : undefined}
+                    href={letterboxdUrl(film)}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -235,7 +246,10 @@ export default function MyList() {
                       )}
                       {badge(film) ? <span className="listBadge">{badge(film)}</span> : null}
                     </span>
-                    <span className="listGridTitle">{filmTitle(film)}</span>
+                    <span className="listGridTitle">
+                      {filmTitle(film)}
+                      <span className="listLbMark" aria-hidden="true"> ↗</span>
+                    </span>
                     <span className="listStars">{stars(film.user_rating)}</span>
                   </a>
                 </li>
@@ -255,7 +269,7 @@ export default function MyList() {
                       <a
                         key={`${film.letterboxd_slug}-${index}`}
                         className="listRow"
-                        href={film.letterboxd_slug ? `https://letterboxd.com/film/${film.letterboxd_slug}/` : undefined}
+                        href={letterboxdUrl(film)}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -266,7 +280,10 @@ export default function MyList() {
                           ) : null}
                         </span>
                         <span className="listRowText">
-                          <span className="listRowTitle">{filmTitle(film)}</span>
+                          <span className="listRowTitle">
+                            {filmTitle(film)}
+                            <span className="listLbMark" aria-hidden="true"> ↗</span>
+                          </span>
                           <span className="listRowMeta">{[film.year, film.directors?.[0]].filter(Boolean).join(" · ")}</span>
                         </span>
                         <span className="listStars listRowStars">

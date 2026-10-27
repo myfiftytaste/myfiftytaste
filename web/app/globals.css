@@ -5023,6 +5023,26 @@ h1 {
   font-weight: 700;
 }
 
+/* Lien Letterboxd discret sur chaque film (27/10/2026). */
+.listLbMark {
+  color: var(--muted);
+  font-size: 0.8em;
+}
+
+.listPosterLink:hover .listLbMark,
+.listRow:hover .listLbMark {
+  color: var(--accent);
+}
+
+.listSoon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
 .listGridTitle {
   font-size: 0.82rem;
   line-height: 1.25;
