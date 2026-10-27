@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BrandLockup from "../../components/BrandLockup";
 import UpdateNote from "../../components/UpdateNote";
+import { AMBIANCES_OPEN } from "../../lib/ambiance";
 
 // Onglet « Divers » de la barre de navigation (maquette du 26/10/2026).
 // Les lignes « Bientôt » restent visibles mais inactives jusqu'à leur lot.
@@ -18,7 +19,11 @@ const groups: { title: string; rows: (Row | "updateNote")[] }[] = [
   {
     title: "Réglages",
     rows: [
-      { title: "Préférences", sub: "Ambiance des couleurs du site", href: "/preferences" },
+      {
+        title: "Préférences",
+        sub: "Ambiance des couleurs et fond de film",
+        ...(AMBIANCES_OPEN ? { href: "/preferences" } : { soon: true }),
+      },
       { title: "Changer de pseudo", sub: "Voir le wrapped d’un·e autre cinéphile", href: "/" },
       { title: "Installer l’application", sub: "Ajoute Fifty à ton écran d’accueil", soon: true },
     ],
