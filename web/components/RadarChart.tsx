@@ -307,8 +307,14 @@ export default function RadarChart({
             <polygon
               className="radar-shape"
               points={shapePoints}
-              style={{ fill: "rgba(var(--accent-rgb), 0.12)", stroke: "var(--accent)" }}
+              style={{
+                // Triangle plein, d'une seule couleur (refonte design, 27/10/2026).
+                fill: "rgba(var(--accent-rgb), 0.55)",
+                stroke: "var(--accent-bright)",
+                filter: "drop-shadow(0 0 18px rgba(var(--accent-rgb), 0.35))",
+              }}
               strokeWidth="2"
+              strokeLinejoin="round"
             />
             {values.map((value, index) => {
               const point = pointFor(index, animatedValues[index]);
@@ -326,9 +332,9 @@ export default function RadarChart({
                     className="radar-point"
                     cx={point.x}
                     cy={point.y}
-                    r="5.5"
-                    style={{ fill: "var(--ink)", stroke: "var(--accent)" }}
-                    strokeWidth="2"
+                    r="6.5"
+                    style={{ fill: "var(--accent)", stroke: "var(--bg)" }}
+                    strokeWidth="2.5"
                   />
                 </g>
               );
