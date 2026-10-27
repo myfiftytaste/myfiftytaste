@@ -12,6 +12,7 @@ export { selectDisplayBadges, type DisplayBadges } from "./badgeSelection";
 export async function getBadgesForUser(username: string): Promise<Badge[]> {
   const pool = getPool();
   const result = await pool.query<{
+    id: string;
     type: "earned" | "manual";
     label: string;
     category: string;
@@ -19,9 +20,11 @@ export async function getBadgesForUser(username: string): Promise<Badge[]> {
     month: string | null;
     created_at: Date;
     description: string | null;
+    pinned: boolean;
   }>(
-    "SELECT type, label, category, rank, month, created_at, description FROM badge WHERE username = $1",
+    "SELECT id, type, label, category, rank, month, created_at, description, pinned FROM badge WHERE username = $1",
     [normalizeUsername(username)],
   );
-  return result.rows.map((row) => ({ ...row, created_at: row.created_at.toISOString() }));
+  // id est un bigint : pg le renvoie en texte.
+  return result.rows.map((row) => ({ ...row, id: Number(row.id), created_at: row.created_at.toISOString() }));
 }
