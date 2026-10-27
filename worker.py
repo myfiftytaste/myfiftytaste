@@ -207,8 +207,36 @@ def load_json(path: Path) -> Optional[dict[str, Any]]:
 CACHED_FILM_FIELDS = (
     "title", "rss_title", "year", "letterboxd_slug", "letterboxd_url", "rss_poster_url", "rss_tmdb_id",
     "user_rating", "watched_at", "logged_at_iso", "has_review", "review_word_count",
-    "watches", "average_rating", "runtime", "genres", "countries", "directors", "source",
+    "watches", "average_rating", "runtime", "genres", "countries", "directors", "source", "tmdb_votes",
 )
+
+TMDB_VOTES_CACHE = BASE_DIR / "data" / "cache" / "tmdb_votes_cache.json"
+
+
+def add_tmdb_votes(films: list[dict[str, Any]]) -> None:
+    """Nombre de votes TMDB de chaque film (tri « popularité » de l'onglet Ma liste).
+
+    Au mieux : sans clé TMDB ou en cas d'échec, le champ reste vide et le film passe en fin de tri.
+    """
+    from recommendation_candidates_tmdb import get_tmdb_client
+
+    client = get_tmdb_client()
+    if client is None:
+        return
+    cache = json.loads(TMDB_VOTES_CACHE.read_text(encoding="utf-8")) if TMDB_VOTES_CACHE.exists() else {}
+    for film in films:
+        tmdb_id = film.get("rss_tmdb_id")
+        if not tmdb_id:
+            continue
+        key = str(tmdb_id)
+        if key not in cache:
+            detail = client.get(f"/movie/{tmdb_id}") or {}
+            if detail.get("vote_count") is None:
+                continue
+            cache[key] = detail["vote_count"]
+        film["tmdb_votes"] = cache[key]
+    TMDB_VOTES_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    TMDB_VOTES_CACHE.write_text(json.dumps(cache), encoding="utf-8")
 
 
 def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: str) -> None:
@@ -219,6 +247,10 @@ def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: st
     recommendations = load_json(OUTPUT_DIR / f"{username}_recommendations.json")
     wrapped_films = (load_json(OUTPUT_DIR / f"{username}_wrapped.json") or {}).get("films") or []
     # Sous-ensemble utile à l'onglet « Mes 50 films » (lot 14), pas tout le wrapped.
+    try:
+        add_tmdb_votes(wrapped_films)
+    except Exception as error:  # noqa: BLE001 - donnée de confort, jamais bloquante
+        print(f"[job {job['id']}] votes TMDB indisponibles (non bloquant) : {error}", file=sys.stderr, flush=True)
     films = [{key: film.get(key) for key in CACHED_FILM_FIELDS} for film in wrapped_films]
 
     with conn.transaction():

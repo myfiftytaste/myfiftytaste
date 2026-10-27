@@ -14,6 +14,14 @@ const icons = {
       <path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4" />
     </>
   ),
+  liste: (
+    <>
+      <rect x="3.5" y="3.5" width="7" height="7" rx="1.5" />
+      <rect x="13.5" y="3.5" width="7" height="7" rx="1.5" />
+      <rect x="3.5" y="13.5" width="7" height="7" rx="1.5" />
+      <rect x="13.5" y="13.5" width="7" height="7" rx="1.5" />
+    </>
+  ),
   hof: (
     <>
       <path d="M8 4h8v5a4 4 0 0 1-8 0V4z" />
@@ -50,6 +58,7 @@ export default function NavBar() {
       href: myPseudo ? `/profile/${encodeURIComponent(myPseudo)}` : "/",
       active: pathname === "/" || pathname.startsWith("/profile/"),
     },
+    { key: "liste", label: "Ma liste", href: "/liste", active: pathname.startsWith("/liste") },
     { key: "hof", label: "Hall of Fame", href: "/hall-of-fame", active: pathname.startsWith("/hall-of-fame") },
     { key: "jeu", label: "Jeu", href: "/jeu", active: pathname.startsWith("/jeu"), soon: true },
     { key: "divers", label: "Divers", href: "/divers", active: pathname.startsWith("/divers") || pathname.startsWith("/feedback") },
