@@ -5562,3 +5562,41 @@ h1 {
   color: var(--muted);
   font-size: 0.78rem;
 }
+
+/* ================= Couleur de bulle des profils (27/10/2026) =================
+   Les trois couleurs de Letterboxd, un tiers des profils chacune (lib/profileColor.ts) ;
+   tanguytare garde les trois. En fin de fichier pour passer devant les styles de bulle. */
+.avatarColor-orange {
+  --avatar-color: #ff8000;
+}
+
+.avatarColor-blue {
+  --avatar-color: #40bcf4;
+}
+
+.avatarColor-green {
+  --avatar-color: #00e054;
+}
+
+.headerAvatar[class*="avatarColor-"],
+.hofAvatar[class*="avatarColor-"],
+.hofWinnerAvatar.hofAvatar[class*="avatarColor-"] {
+  background: var(--avatar-color);
+  color: #14181c;
+}
+
+.headerAvatar.avatarColor-tricolor,
+.hofAvatar.avatarColor-tricolor,
+.hofWinnerAvatar.hofAvatar.avatarColor-tricolor {
+  background: conic-gradient(from 210deg, #ff8000 0 33.3%, #00e054 0 66.6%, #40bcf4 0);
+}
+
+.hofPinRing[class*="avatarColor-"] {
+  fill: var(--avatar-color);
+}
+
+.hofPinRing.avatarColor-tricolor {
+  fill: #00e054;
+  stroke: #ff8000;
+  stroke-width: 3;
+}
