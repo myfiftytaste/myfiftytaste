@@ -1,6 +1,7 @@
 import { getPool } from "./db";
 import { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
-
+import type { AvatarColor } from "./avatarColor";
+import { safeProfileColors } from "./profileColor";
 export { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
 
 // Mirrors scripts/hall_of_fame_common.py + scripts/build_monthly_snapshot.py
@@ -36,6 +37,7 @@ export type PodiumEntry = {
   rank: 1 | 2 | 3;
   username: string;
   metricLabel: string;
+  color?: AvatarColor;
 };
 
 export type PodiumCategory = {
@@ -263,5 +265,12 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
     },
   ];
 
-  return { month, participantCount: optedIn.length, podiums, continentWinners: continentWinners(optedIn) };
+  // Couleur de bulle de chaque profil classé (migrations/008), dans l'ordre d'arrivée des profils.
+  const winners = continentWinners(optedIn);
+  const byArrival = [...optedIn].sort((a, b) => a.first_seen_at.localeCompare(b.first_seen_at));
+  const colors = await safeProfileColors(byArrival.map((snapshot) => snapshot.username));
+  for (const entry of podiums.flatMap((podium) => podium.entries)) entry.color = colors[entry.username.toLowerCase()];
+  for (const winner of Object.values(winners)) if (winner) winner.color = colors[winner.username.toLowerCase()];
+
+  return { month, participantCount: optedIn.length, podiums, continentWinners: winners };
 }

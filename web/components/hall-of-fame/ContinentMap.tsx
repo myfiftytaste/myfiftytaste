@@ -1,5 +1,6 @@
 "use client";
 
+import { avatarColorClass } from "../../lib/avatarColor";
 import { useState } from "react";
 import { CONTINENTS, type Continent, type ContinentWinner } from "../../lib/hallOfFameTypes";
 import { letterboxdProfileUrl } from "../../lib/username";
@@ -124,7 +125,7 @@ export default function ContinentMap({
                 onFocus={() => setHoveredContinent(continent)}
                 onBlur={() => setHoveredContinent((current) => (current === continent ? null : current))}
               >
-                <circle r="15" className="hofPinRing" />
+                <circle r="15" className={`hofPinRing${avatarColorClass(winner.color)}`} />
                 <text className="hofPinInitial" y="1" dominantBaseline="central">
                   {initials(winner.username)}
                 </text>

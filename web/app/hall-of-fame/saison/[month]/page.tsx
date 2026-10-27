@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import BrandLockup from "../../../../components/BrandLockup";
 import ContinentMap from "../../../../components/hall-of-fame/ContinentMap";
 import Laurels from "../../../../components/hall-of-fame/Laurels";
+import { avatarColorClass } from "../../../../lib/avatarColor";
 import {
   currentMonth,
   firstSeason,
@@ -80,7 +81,7 @@ export default async function SeasonPage({ params }: { params: { month: string }
                 <span className="hofWinnerTitle">{title}</span>
                 <span className="hofWinnerCrown">
                   <Laurels />
-                  <span className="hofAvatar hofWinnerAvatar">{initials(entry.username)}</span>
+                  <span className={`hofAvatar hofWinnerAvatar${avatarColorClass(entry.color)}`}>{initials(entry.username)}</span>
                 </span>
                 <span className="hofWinnerPseudo">
                   {entry.username} <span aria-hidden="true">↗</span>

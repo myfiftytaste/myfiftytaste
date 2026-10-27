@@ -176,6 +176,7 @@ export default function ProfilePage({
         <ProfileView
           profile={profile.display_profile}
           badges={profile.badges}
+          avatarColor={profile.avatar_color ?? null}
           runtimeStats={profile.fifty_stats?.runtime ?? null}
         />
       </div>
