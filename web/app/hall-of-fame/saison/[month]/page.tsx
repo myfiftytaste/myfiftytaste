@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import BrandLockup from "../../../../components/BrandLockup";
+import ContinentMap from "../../../../components/hall-of-fame/ContinentMap";
 import Laurels from "../../../../components/hall-of-fame/Laurels";
 import {
   currentMonth,
@@ -45,16 +46,19 @@ export default async function SeasonPage({ params }: { params: { month: string }
         ) : (
           <span />
         )}
-        <Link href={next >= currentMonth() ? "/hall-of-fame" : `/hall-of-fame/saison/${next}`}>
-          Saison {seasonTitle(next)} ›
-        </Link>
+        <span className="hofSeasonNavNext">
+          <Link href={next >= currentMonth() ? "/hall-of-fame" : `/hall-of-fame/saison/${next}`}>
+            Saison {seasonTitle(next)} ›
+          </Link>
+          {next >= currentMonth() ? <small>(en cours)</small> : null}
+        </span>
       </nav>
 
       <section className="hofMasthead">
         <h1 className="hofMastheadTitle hofSeasonTitle">Saison {seasonTitle(month)}</h1>
         <p className="hofLede hofLedeCentered">
           Saison close · résultats figés le {nextMonthLabel(month)} · {rankings.participantCount} participant
-          {rankings.participantCount === 1 ? "" : "s"}. Les premiers de chaque podium, couronnés.
+          {rankings.participantCount === 1 ? "" : "s"}
         </p>
       </section>
 
@@ -87,6 +91,15 @@ export default async function SeasonPage({ params }: { params: { month: string }
           ))}
         </ul>
       )}
+
+      {winners.length ? (
+        <section className="hofContinentsSection" aria-label="Cinéma du monde par continent">
+          <div className="hofContinentsIntro">
+            <h2 className="hofContinentsTitle">Les tops par continent</h2>
+          </div>
+          <ContinentMap winners={rankings.continentWinners} />
+        </section>
+      ) : null}
     </main>
   );
 }

@@ -5467,6 +5467,7 @@ h1 {
 /* ================= Hall of Fame : saisons closes (27/10/2026) ================= */
 .hofSeasonNav {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 8px;
   margin-bottom: 4px;
@@ -5489,9 +5490,10 @@ h1 {
 
 .hofWinners {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  margin: 0 0 40px;
+  width: min(100%, 720px);
+  margin: 0 auto 40px;
   padding: 0;
   list-style: none;
 }
@@ -5522,7 +5524,29 @@ h1 {
   transform: translateY(-2px);
 }
 
+.hofSeasonNavNext {
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+}
+
+.hofSeasonNavNext small {
+  padding-right: 12px;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+@media (max-width: 640px) {
+  .hofWinners {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Deux lignes réservées au titre : les lauriers restent alignés d'une carte à l'autre. */
 .hofWinnerTitle {
+  display: flex;
+  align-items: center;
+  min-height: 2.6em;
   color: var(--hof-gold);
   font-size: 0.68rem;
   font-weight: 800;
