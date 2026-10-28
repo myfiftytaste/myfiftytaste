@@ -1,26 +1,29 @@
-"""Programme de Fiftyguess : tire les films, trouve leur affiche sans texte sur TMDB, écrit game_round.
+"""Programme de Fiftyguess (méthode du 28/10/2026) : propose les affiches des mois à venir.
 
-    python scripts/game_program.py 2026-11 2026-12 2027-01   # mois à programmer
-    python scripts/game_program.py --titles                   # remplit seulement game_title
+    python scripts/game_program.py 2026-11 2026-12 2027-01   # mois à programmer (défaut : dans 3 mois)
+    python scripts/game_program.py --essai 2026-11           # affiche le programme, n'écrit rien
 
-Règles (décisions du 28/10/2026, réglages dans data/config/fiftyguess.json) :
-- une affiche par semaine (lundi → dimanche, la semaine appartient au mois de son lundi) parmi les
-  films vus au moins 1,8 M de fois sur Letterboxd (Megabank) ; 1,5 M en repli pour garantir un film
-  non anglophone par mois ;
-- un bonus par mois (vendredi → dimanche de la dernière semaine) : 600 k à 1,8 M de vues, note ≥ 3,9,
-  de préférence non anglophone ;
-- jamais deux fois le même cinéaste ni la même saga ; dans un mois, pas deux fois le même genre et
-  une animation au plus ; film de Noël la semaine du 25 décembre ;
-- affiche TMDB « sans langue » ; si tesseract est installé, une affiche où il lit des mots est
-  écartée ; sans affiche propre, le film est remplacé par un autre.
-Relançable : une date déjà programmée n'est jamais modifiée (ON CONFLICT DO NOTHING).
+1. Vivier : les films les plus votés de TMDB (sans aucun lien avec la Megabank).
+2. Notoriété en France : consultations de la page Wikipédia en français sur 12 mois. Titres des pages
+   trouvés en une requête Wikidata (propriété P4947 = identifiant TMDB), consultations gardées un an
+   dans game_fame. Semaine : les `week_top` films les plus consultés ; bonus : jusqu'à `bonus_top`,
+   note TMDB ≥ `bonus_min_rating`.
+3. Pas de suites : un film d'une collection TMDB n'est pris que s'il en est le premier.
+4. Variété : une famille de studio (Marvel, Disney…) au plus une fois tous les `family_gap_days`
+   jours ; un cinéaste une seule fois ; dans un mois, une animation au plus, au moins un film non
+   anglophone et un film d'avant 2000, pas deux fois le même genre, pas deux semaines de suite dans
+   la même décennie. Film de Noël la semaine du 25 décembre. Les règles se relâchent une à une,
+   dans un ordre fixe, et le journal le dit.
+5. Affiche TMDB « sans langue » ; tesseract écarte celles où il lit du texte ; à défaut, la mieux
+   notée est gardée et signalée « à vérifier ».
+6. Les films sont écrits « proposés » : ils n'ouvrent qu'une fois validés dans les coulisses.
+Relançable : seules les cases vides sont remplies ; les films de game_excluded ne reviennent jamais.
 """
 from __future__ import annotations
 
-import ast
-import csv
 import datetime as dt
 import json
+import os
 import random
 import re
 import shutil
@@ -38,78 +41,134 @@ from recommendation_candidates_tmdb import get_tmdb_client  # noqa: E402
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((BASE_DIR / "data" / "config" / "fiftyguess.json").read_text(encoding="utf-8"))
-MEGABANK = BASE_DIR / "data" / "processed" / "megabank_clean.csv"
-EXCLUDED_GENRES = {"Documentary", "Music", "TV Movie"}
 POSTER_BASE = "https://image.tmdb.org/t/p/w780"
-SAGAS = ("harry potter", "the lord of the rings", "star wars", "toy story", "pirates of the caribbean", "the hunger games",
-         "spider-man", "avengers", "the twilight saga", "kill bill", "back to the future", "shrek", "dune", "the godfather",
-         "john wick", "mad max", "jurassic", "indiana jones", "the matrix", "despicable me", "frozen")
+ANIMATION, DOCUMENTARY = 16, 99
+HEADERS = {"User-Agent": "Fifty/1.0 (https://50films.fr; contact@50films.fr)"}
+FAMILY_OF = {company: family for family, ids in CONFIG["families"].items() for company in ids}
+LOG: list[str] = []
 
 
-def load_pool() -> list[dict[str, Any]]:
-    pool = []
-    with MEGABANK.open(encoding="utf-8") as handle:
-        for row in csv.DictReader(handle):
-            views = int(float(row["watches"] or 0))
-            genres = ast.literal_eval(row["genres"] or "[]")
-            if views < 250_000 or set(genres) & EXCLUDED_GENRES or row["title"] in CONFIG["series"]:
+def log(line: str) -> None:
+    LOG.append(line)
+    print(line, flush=True)
+
+
+# ---------- 1. Vivier TMDB ----------
+def tmdb_pool(client) -> list[dict[str, Any]]:
+    films = []
+    for page in range(1, CONFIG["tmdb_pages"] + 1):
+        data = client.get("/discover/movie", {"sort_by": "vote_count.desc", "language": "fr-FR", "page": page}) or {}
+        for film in data.get("results") or []:
+            if DOCUMENTARY in (film.get("genre_ids") or []) or not film.get("release_date"):
                 continue
-            pool.append({
-                "title": row["title"], "slug": row["letterboxd_slug"], "views": views,
-                "rating": float(row["average_rating"] or 0), "directors": ast.literal_eval(row["directors"] or "[]"),
-                "genres": genres, "lang": row["original_language"],
+            films.append({
+                "id": film["id"], "title_fr": film.get("title") or film.get("original_title"),
+                "original_title": film.get("original_title"), "lang": film.get("original_language"),
+                "year": int(film["release_date"][:4]), "genres": film.get("genre_ids") or [],
+                "rating": film.get("vote_average") or 0, "votes": film.get("vote_count") or 0,
             })
-    return sorted(pool, key=lambda film: -film["views"])
+    return films
 
 
-def saga(title: str) -> str:
-    lower = title.lower()
-    for name in SAGAS:
-        if lower.startswith(name) or name in lower:
-            return name
-    return re.sub(r"\s+(\d+|ii|iii|iv)$", "", re.split(r"[:\-–]", lower)[0].strip())
+# ---------- 2. Notoriété en France (Wikipédia) ----------
+def frwiki_titles(ids: list[int]) -> dict[int, str]:
+    """Titre de la page Wikipédia en français de chaque film, en une requête Wikidata."""
+    values = " ".join(f'"{i}"' for i in ids)
+    query = f"""SELECT ?tmdb ?article WHERE {{
+      VALUES ?tmdb {{ {values} }} ?item wdt:P4947 ?tmdb .
+      ?article schema:about ?item ; schema:isPartOf <https://fr.wikipedia.org/> . }}"""
+    response = requests.post("https://query.wikidata.org/sparql", data={"query": query, "format": "json"}, headers=HEADERS, timeout=90)
+    response.raise_for_status()
+    out = {}
+    for row in response.json()["results"]["bindings"]:
+        url = row["article"]["value"]
+        out[int(row["tmdb"]["value"])] = requests.utils.unquote(url.rsplit("/wiki/", 1)[1])
+    return out
 
 
+def pageviews(title: str) -> int:
+    end = dt.date.today().replace(day=1) - dt.timedelta(days=1)
+    start = (end - dt.timedelta(days=365)).replace(day=1)
+    url = (
+        "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/"
+        f"{requests.utils.quote(title, safe='')}/monthly/{start:%Y%m%d}00/{end:%Y%m%d}00"
+    )
+    response = requests.get(url, headers=HEADERS, timeout=30)
+    if response.status_code == 404:
+        return 0
+    response.raise_for_status()
+    return sum(item["views"] for item in response.json().get("items", []))
+
+
+def add_fame(conn, films: list[dict[str, Any]]) -> None:
+    """Consultations sur 12 mois, gardées un an dans game_fame."""
+    known = {row["tmdb_id"]: row for row in conn.execute(
+        "SELECT tmdb_id, frwiki_title, views_12m FROM game_fame WHERE measured_at > now() - interval '1 year'").fetchall()}
+    missing = [f["id"] for f in films if f["id"] not in known]
+    titles: dict[int, str] = {}
+    for start in range(0, len(missing), 200):
+        titles.update(frwiki_titles(missing[start:start + 200]))
+    for tmdb_id in missing:
+        title = titles.get(tmdb_id)
+        views = pageviews(title) if title else 0
+        conn.execute(
+            """INSERT INTO game_fame (tmdb_id, frwiki_title, views_12m) VALUES (%s, %s, %s)
+               ON CONFLICT (tmdb_id) DO UPDATE SET frwiki_title = EXCLUDED.frwiki_title,
+               views_12m = EXCLUDED.views_12m, measured_at = now()""",
+            (tmdb_id, title, views),
+        )
+        known[tmdb_id] = {"views_12m": views}
+    for film in films:
+        film["fame"] = known[film["id"]]["views_12m"] or 0
+
+
+# ---------- 3 et 5. Fiche du film : suite ou pas, famille, affiche ----------
 def text_on_poster(url: str) -> bool:
-    """True si tesseract lit au moins deux mots sur l'affiche. Sans tesseract : False (pas de contrôle)."""
     if not shutil.which("tesseract"):
         return False
     with tempfile.NamedTemporaryFile(suffix=".jpg") as image:
         image.write(requests.get(url.replace("/w780/", "/w342/"), timeout=20).content)
         image.flush()
         text = subprocess.run(["tesseract", image.name, "stdout"], capture_output=True, text=True, timeout=60).stdout
-    return len(re.findall(r"[A-Za-zÀ-ÿ]{3,}", text)) >= 2
+    # Au moins deux vrais mots de 4 lettres : en dessous, ce sont souvent des textures lues comme du texte.
+    return len(re.findall(r"[A-Za-zÀ-ÿ]{4,}", text)) >= 2
 
 
-def tmdb_film(client, film: dict[str, Any]) -> Optional[dict[str, Any]]:
-    """Fiche TMDB du film (le résultat dont la réalisation correspond), avec son affiche sans texte."""
-    search = client.get("/search/movie", {"query": film["title"], "language": "fr-FR"}) or {}
-    for hit in (search.get("results") or [])[:5]:
-        detail = client.get(
-            f"/movie/{hit['id']}",
-            {"language": "fr-FR", "append_to_response": "credits,images,alternative_titles", "include_image_language": "null"},
-        ) or {}
-        directors = [p["name"] for p in (detail.get("credits") or {}).get("crew") or [] if p.get("job") == "Director"]
-        if film["directors"] and not set(directors) & set(film["directors"]):
-            continue
-        posters = sorted(
-            (p for p in (detail.get("images") or {}).get("posters") or [] if p.get("iso_639_1") is None),
-            key=lambda p: (-(p.get("vote_average") or 0), -(p.get("vote_count") or 0)),
-        )
-        poster = next((POSTER_BASE + p["file_path"] for p in posters[:4] if not text_on_poster(POSTER_BASE + p["file_path"])), None)
-        if not poster:
-            print(f"  pas d'affiche sans texte pour {film['title']}, film suivant")
+def details(client, film: dict[str, Any]) -> Optional[dict[str, Any]]:
+    """Complète le film ; None s'il doit être écarté (suite, pas d'affiche sans langue)."""
+    data = client.get(
+        f"/movie/{film['id']}",
+        {"language": "fr-FR", "append_to_response": "credits,images,alternative_titles", "include_image_language": "null"},
+    ) or {}
+    collection = data.get("belongs_to_collection")
+    if collection:
+        parts = (client.get(f"/collection/{collection['id']}") or {}).get("parts") or []
+        first = min((p for p in parts if p.get("release_date")), key=lambda p: p["release_date"], default=None)
+        if first and first["id"] != film["id"]:
             return None
-        fr_alts = [t["title"] for t in (detail.get("alternative_titles") or {}).get("titles") or [] if t.get("iso_3166_1") in ("FR", "BE", "CA")]
-        return {
-            "tmdb_id": detail["id"], "title_fr": detail.get("title") or film["title"], "title_orig": film["title"],
-            "aliases": sorted({detail.get("original_title") or "", *fr_alts} - {"", detail.get("title"), film["title"]}),
-            "year": int(detail["release_date"][:4]) if detail.get("release_date") else None,
-            "director": ", ".join(directors[:2]) or None, "poster_url": poster,
-        }
-    return None
+    posters = sorted(
+        (p for p in (data.get("images") or {}).get("posters") or [] if p.get("iso_639_1") is None),
+        key=lambda p: (-(p.get("vote_average") or 0), -(p.get("vote_count") or 0)),
+    )
+    if not posters:
+        return None
+    clean = next((POSTER_BASE + p["file_path"] for p in posters[:4] if not text_on_poster(POSTER_BASE + p["file_path"])), None)
+    directors = [p["name"] for p in (data.get("credits") or {}).get("crew") or [] if p.get("job") == "Director"]
+    companies = [c["id"] for c in data.get("production_companies") or []]
+    fr_alts = [t["title"] for t in (data.get("alternative_titles") or {}).get("titles") or [] if t.get("iso_3166_1") in ("FR", "BE", "CA")]
+    english = next((t["title"] for t in (data.get("alternative_titles") or {}).get("titles") or [] if t.get("iso_3166_1") in ("US", "GB")), None)
+    return {
+        **film,
+        "title_orig": film["original_title"] if film["lang"] in ("en", "fr") else (english or film["original_title"]),
+        "aliases": sorted({film["original_title"] or "", english or "", *fr_alts} - {"", film["title_fr"]}),
+        "directors": directors,
+        "family": next((FAMILY_OF[c] for c in companies if c in FAMILY_OF), None),
+        "poster": clean or POSTER_BASE + posters[0]["file_path"],
+        "check_poster": clean is None,
+    }
 
 
+# ---------- 4. Programme ----------
 def mondays(month: str) -> list[dt.date]:
     year, number = map(int, month.split("-"))
     day = dt.date(year, number, 1)
@@ -121,121 +180,123 @@ def mondays(month: str) -> list[dt.date]:
     return out
 
 
-def program(months: list[str]) -> None:
+def default_months() -> list[str]:
+    """Le mois qui commence dans trois mois (le workflow tourne le 15 de chaque mois)."""
+    day = dt.date.today().replace(day=1)
+    for _ in range(3):
+        day = (day + dt.timedelta(days=32)).replace(day=1)
+    return [day.strftime("%Y-%m")]
+
+
+def program(months: list[str], dry_run: bool) -> None:
     client = get_tmdb_client()
     if client is None:
         raise SystemExit("TMDB_API_KEY manquante.")
-    pool = [f for f in load_pool() if f["title"] not in CONFIG["exclude"]]
-    rng = random.Random(CONFIG["seed"])
     conn = connect()
-    taken = conn.execute("SELECT title_orig, director, kind, to_char(opens_on, 'YYYY-MM-DD') AS opens FROM game_round").fetchall()
-    used_titles = {row["title_orig"] for row in taken}
-    used_directors = {d.strip() for row in taken for d in (row["director"] or "").split(",")}
-    used_sagas = {saga(row["title_orig"]) for row in taken}
+    pool = tmdb_pool(client)
+    excluded = {row["tmdb_id"] for row in conn.execute("SELECT tmdb_id FROM game_excluded").fetchall()}
+    pool = [f for f in pool if f["id"] not in excluded]
+    add_fame(conn, pool)
+    pool.sort(key=lambda f: -f["fame"])
+    week_pool, bonus_pool = pool[: CONFIG["week_top"]], [f for f in pool[CONFIG["week_top"]: CONFIG["bonus_top"]] if f["rating"] >= CONFIG["bonus_min_rating"]]
+    log(f"Vivier : {len(pool)} films TMDB, semaine = {len(week_pool)} plus consultés, bonus = {len(bonus_pool)}.")
+
+    taken = conn.execute(
+        "SELECT kind, to_char(opens_on, 'YYYY-MM-DD') AS opens, tmdb_id, director, family FROM game_round").fetchall()
+    used_ids = {row["tmdb_id"] for row in taken}
+    used_directors = {d.strip() for row in taken for d in (row["director"] or "").split(",") if d.strip()}
+    family_dates = [(row["family"], dt.date.fromisoformat(row["opens"])) for row in taken if row["family"]]
     scheduled = {(row["kind"], row["opens"]) for row in taken}
+    rng = random.Random(CONFIG["seed"])
+    seen: dict[int, Optional[dict[str, Any]]] = {}
 
-    def free(film):
-        return film["title"] not in used_titles and not set(film["directors"]) & used_directors and saga(film["title"]) not in used_sagas
+    def info(film):
+        if film["id"] not in seen:
+            seen[film["id"]] = details(client, film)
+        return seen[film["id"]]
 
-    def weighted(cands):
-        point = rng.uniform(0, sum(f["views"] for f in cands))
-        for film in cands:
-            point -= film["views"]
-            if point <= 0:
-                return film
-        return cands[-1]
+    def family_free(full, day):
+        return not full["family"] or all(f != full["family"] or abs((d - day).days) >= CONFIG["family_gap_days"] for f, d in family_dates)
 
-    def place(kind, opens, closes, month, cands):
-        """Tire jusqu'à trouver un film qui a une affiche sans texte, puis l'écrit."""
-        while cands:
-            film = cands[0] if len(cands) == 1 else weighted(cands)
-            cands = [f for f in cands if f is not film]
-            info = tmdb_film(client, film)
-            if not info:
-                continue
-            focus_x, focus_y = rng.uniform(0.15, 0.85), rng.uniform(0.15, 0.85)
-            conn.execute(
-                """INSERT INTO game_round (kind, opens_on, closes_on, month, tmdb_id, title_fr, title_orig, aliases, year,
-                       director, letterboxd_slug, poster_url, focus_x, focus_y)
-                   VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ON CONFLICT (kind, opens_on) DO NOTHING""",
-                (kind, opens, closes, month, info["tmdb_id"], info["title_fr"], info["title_orig"], info["aliases"], info["year"],
-                 info["director"], film["slug"], info["poster_url"], focus_x, focus_y),
-            )
-            used_titles.add(film["title"])
-            used_directors.update(film["directors"])
-            used_sagas.add(saga(film["title"]))
-            print(f"{kind} {opens} : {info['title_fr']} ({film['title']})")
-            return film
-        print(f"{kind} {opens} : aucun film trouvé")
+    def pick(slot, day, candidates, rules):
+        """Tire un film qui respecte les règles ; relâche les règles une à une si personne ne passe."""
+        for relaxed in range(len(rules) + 1):
+            active = rules[relaxed:]
+            order = [f for f in candidates if f["id"] not in used_ids and all(rule(f) for _, rule in active)]
+            rng.shuffle(order)
+            order.sort(key=lambda f: -f["fame"] * rng.uniform(0.6, 1.4))
+            for film in order[:40]:
+                full = info(film)
+                if not full or set(full["directors"]) & used_directors or not family_free(full, day):
+                    continue
+                if relaxed:
+                    log(f"  {slot} : règles relâchées → {', '.join(name for name, _ in rules[:relaxed])}")
+                return full
+        log(f"  {slot} : aucun film possible, même en relâchant tout")
         return None
+
+    def place(kind, opens, closes, month, full):
+        used_ids.add(full["id"])
+        used_directors.update(full["directors"])
+        if full["family"]:
+            family_dates.append((full["family"], opens))
+        log(f"{kind} {opens} : {full['title_fr']} ({full['year']}) · {', '.join(full['directors'][:2])} · "
+            f"{full['fame']:,} vues Wikipédia · {full['family'] or 'indépendant'}{' · AFFICHE À VÉRIFIER' if full['check_poster'] else ''}")
+        if dry_run:
+            return
+        focus = (rng.uniform(0.15, 0.85), rng.uniform(0.15, 0.85))
+        conn.execute(
+            """INSERT INTO game_round (kind, opens_on, closes_on, month, tmdb_id, title_fr, title_orig, aliases, year, director,
+                   letterboxd_slug, poster_url, focus_x, focus_y, status, fame, family)
+               VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, NULL, %s, %s, %s, 'proposed', %s, %s)
+               ON CONFLICT (kind, opens_on) DO NOTHING""",
+            (kind, opens, closes, month, full["id"], full["title_fr"], full["title_orig"], full["aliases"], full["year"],
+             ", ".join(full["directors"][:2]) or None, full["poster"], focus[0], focus[1], full["fame"], full["family"]),
+        )
 
     for month in months:
         weeks = mondays(month)
-        genres, animation, foreign = set(), 0, 0
+        chosen: list[dict[str, Any]] = []
         for index, monday in enumerate(weeks):
             if ("week", monday.isoformat()) in scheduled:
                 continue
-            need_foreign = foreign == 0 and index == len(weeks) - 1
-
-            def ok(f, floor, check_genre=True):
-                return (f["views"] >= floor and free(f)
-                        and (not check_genre or (f["genres"] or ["?"])[0] not in genres)
-                        and not (animation and "Animation" in f["genres"])
-                        and (not need_foreign or f["lang"] != "English"))
-
-            pinned = CONFIG["pinned"].get(f"week {monday.isoformat()}")
+            last = index == len(weeks) - 1
+            previous = chosen[-1] if chosen else None
             christmas = monday.month == 12 and monday.day <= 25 <= monday.day + 6
-            cands = (
-                [f for f in pool if f["title"] == pinned]
-                or ([f for f in pool if christmas and f["title"] in CONFIG["christmas"] and ok(f, CONFIG["week_min_views"], False)])
-                or [f for f in pool if ok(f, CONFIG["week_min_views"])]
-                or [f for f in pool if ok(f, CONFIG["week_min_views"], False)]
-                or [f for f in pool if ok(f, CONFIG["week_min_views_fallback"], False)]
-            )
-            film = place("week", monday, monday + dt.timedelta(days=6), month, cands)
-            if film:
-                genres.add((film["genres"] or ["?"])[0])
-                animation += "Animation" in film["genres"]
-                foreign += film["lang"] != "English"
+            candidates = [f for f in week_pool if christmas and f["id"] in CONFIG["christmas"]] or week_pool
+            # Ordre de relâchement : la première règle de la liste saute en premier.
+            rules = [
+                ("genre déjà pris ce mois", lambda f: not f["genres"] or f["genres"][0] not in {c["genres"][0] for c in chosen if c["genres"]}),
+                ("même décennie que la semaine d'avant", lambda f: not previous or f["year"] // 10 != previous["year"] // 10),
+                ("film d'avant 2000", lambda f: not last or any(c["year"] < 2000 for c in chosen) or f["year"] < 2000),
+                ("film non anglophone", lambda f: not last or any(c["lang"] != "en" for c in chosen) or f["lang"] != "en"),
+                ("une animation par mois", lambda f: ANIMATION not in f["genres"] or not any(ANIMATION in c["genres"] for c in chosen)),
+            ]
+            full = pick(f"semaine du {monday}", monday, candidates, rules)
+            if full:
+                chosen.append(full)
+                place("week", monday, monday + dt.timedelta(days=6), month, full)
         friday = weeks[-1] + dt.timedelta(days=4)
         if ("bonus", friday.isoformat()) not in scheduled:
-            pinned = CONFIG["pinned"].get(f"bonus {month}")
-            bonus = [f for f in pool if CONFIG["bonus_min_views"] <= f["views"] < CONFIG["week_min_views"]
-                     and f["rating"] >= CONFIG["bonus_min_rating"] and free(f)]
-            cands = [f for f in pool if f["title"] == pinned] or [f for f in bonus if f["lang"] != "English"] or bonus
-            place("bonus", friday, friday + dt.timedelta(days=2), month, cands)
+            rules = [("bonus non anglophone", lambda f: f["lang"] != "en")]
+            full = pick(f"bonus de {month}", friday, bonus_pool, rules)
+            if full:
+                place("bonus", friday, friday + dt.timedelta(days=2), month, full)
+
+    if not dry_run:
+        names = {f["title_fr"] for f in pool} | {f["original_title"] for f in pool if f["original_title"]}
+        with conn.cursor() as cursor:
+            cursor.executemany("INSERT INTO game_title (title) VALUES (%s) ON CONFLICT DO NOTHING", [(n,) for n in sorted(names)])
+        log(f"{len(names)} titres pour la saisie assistée")
     conn.close()
-
-
-def titles() -> None:
-    """Titres de la saisie assistée : les films vus plus de 600 k fois, en anglais et en français."""
-    client = get_tmdb_client()
-    names = set()
-    for film in [f for f in load_pool() if f["views"] >= 600_000]:
-        names.add(film["title"])
-        hits = ((client.get("/search/movie", {"query": film["title"], "language": "fr-FR"}) or {}).get("results") or []) if client else []
-        if hits and hits[0].get("title"):
-            names.add(hits[0]["title"])
-    conn = connect()
-    names.update(row["title_fr"] for row in conn.execute("SELECT title_fr FROM game_round").fetchall())
-    with conn.cursor() as cursor:
-        cursor.executemany("INSERT INTO game_title (title) VALUES (%s) ON CONFLICT DO NOTHING", [(name,) for name in sorted(names)])
-    conn.close()
-    print(f"{len(names)} titres")
-
-
-def next_months(count: int = 2) -> list[str]:
-    """Les mois qui suivent le mois en cours (programmation automatique, deux mois d'avance)."""
-    today = dt.date.today().replace(day=1)
-    out = []
-    for _ in range(count):
-        today = (today + dt.timedelta(days=32)).replace(day=1)
-        out.append(today.strftime("%Y-%m"))
-    return out
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a", encoding="utf-8") as handle:
+            handle.write(("## Programme Fiftyguess (essai, rien n'est écrit)\n\n" if dry_run else "## Programme Fiftyguess\n\n")
+                         + "\n".join(f"- {line}" for line in LOG) + "\n")
 
 
 if __name__ == "__main__":
     args = sys.argv[1:]
-    if args != ["--titles"]:
-        program([a for a in args if re.fullmatch(r"\d{4}-\d{2}", a)] or next_months())
-    titles()
+    months = [a for a in args if re.fullmatch(r"\d{4}-\d{2}", a)] or default_months()
+    program(months, dry_run="--essai" in args)

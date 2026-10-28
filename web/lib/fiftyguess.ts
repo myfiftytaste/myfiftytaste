@@ -43,10 +43,11 @@ export function parisToday(now = new Date()): string {
 const ROUND_COLUMNS = `id, kind, to_char(opens_on, 'YYYY-MM-DD') AS opens_on, to_char(closes_on, 'YYYY-MM-DD') AS closes_on,
   month, title_fr, title_orig, aliases, year, director, letterboxd_slug, poster_url, focus_x, focus_y`;
 
-/** Affiche de la semaine et bonus éventuel ouverts aujourd'hui. */
+/** Affiche de la semaine et bonus éventuel ouverts aujourd'hui (validés seulement). */
 export async function openRounds(today = parisToday()): Promise<Round[]> {
   const result = await getPool().query<Round>(
-    `SELECT ${ROUND_COLUMNS} FROM game_round WHERE opens_on <= $1 AND closes_on >= $1 ORDER BY kind DESC`,
+    // Seuls les films validés dans les coulisses s'ouvrent aux joueurs.
+    `SELECT ${ROUND_COLUMNS} FROM game_round WHERE status = 'validated' AND opens_on <= $1 AND closes_on >= $1 ORDER BY kind DESC`,
     [today],
   );
   return result.rows.map((row) => ({ ...row, id: Number(row.id) }));
