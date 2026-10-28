@@ -30,6 +30,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 from typing import Any, Optional
 
@@ -93,7 +94,14 @@ def pageviews(title: str) -> int:
         "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/"
         f"{requests.utils.quote(title, safe='')}/monthly/{start:%Y%m%d}00/{end:%Y%m%d}00"
     )
-    response = requests.get(url, headers=HEADERS, timeout=30)
+    # Wikimedia limite les appels anonymes : on va doucement et on patiente sur un 429.
+    for attempt in range(6):
+        time.sleep(0.25)
+        response = requests.get(url, headers=HEADERS, timeout=30)
+        if response.status_code != 429:
+            break
+        wait = response.headers.get("Retry-After", "")
+        time.sleep(int(wait) if wait.isdigit() else 5 * 2**attempt)
     if response.status_code == 404:
         return 0
     response.raise_for_status()
