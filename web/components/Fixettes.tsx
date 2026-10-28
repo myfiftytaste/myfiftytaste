@@ -40,7 +40,6 @@ function Card({ role, fixette }: { role: "Cinéaste" | "Interprète"; fixette: F
         <span className="fixText">
           <span className="fixRole">{role}</span>
           <span className="fixName fixNameEmpty">Pas de {role.toLowerCase()} en double</span>
-          <span className="fixMeta">Chaque film a le sien : tu butines.</span>
         </span>
       </div>
     );
