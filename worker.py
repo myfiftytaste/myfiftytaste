@@ -210,33 +210,29 @@ CACHED_FILM_FIELDS = (
     "watches", "average_rating", "runtime", "genres", "countries", "directors", "source", "tmdb_votes",
 )
 
-TMDB_VOTES_CACHE = BASE_DIR / "data" / "cache" / "tmdb_votes_cache.json"
+# Une fiche TMDB compacte par film (votes, réalisation, 4 premiers rôles) : sert au tri « popularité »
+# de Ma liste et aux Fixettes. Le cache vit le temps d'un run GitHub Actions.
+TMDB_DETAILS_CACHE = BASE_DIR / "data" / "cache" / "tmdb_compact_details.json"
 
 
-def add_tmdb_votes(films: list[dict[str, Any]]) -> None:
-    """Nombre de votes TMDB de chaque film (tri « popularité » de l'onglet Ma liste).
-
-    Au mieux : sans clé TMDB ou en cas d'échec, le champ reste vide et le film passe en fin de tri.
-    """
+def load_tmdb_details(films: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Fiches TMDB compactes des films, par id TMDB. Au mieux : sans clé ou en cas d'échec, ce qui manque reste absent."""
+    from fixettes import compact_details
     from recommendation_candidates_tmdb import get_tmdb_client
 
     client = get_tmdb_client()
     if client is None:
-        return
-    cache = json.loads(TMDB_VOTES_CACHE.read_text(encoding="utf-8")) if TMDB_VOTES_CACHE.exists() else {}
+        return {}
+    cache = json.loads(TMDB_DETAILS_CACHE.read_text(encoding="utf-8")) if TMDB_DETAILS_CACHE.exists() else {}
     for film in films:
-        tmdb_id = film.get("rss_tmdb_id")
-        if not tmdb_id:
-            continue
-        key = str(tmdb_id)
-        if key not in cache:
-            detail = client.get(f"/movie/{tmdb_id}") or {}
-            if detail.get("vote_count") is None:
-                continue
-            cache[key] = detail["vote_count"]
-        film["tmdb_votes"] = cache[key]
-    TMDB_VOTES_CACHE.parent.mkdir(parents=True, exist_ok=True)
-    TMDB_VOTES_CACHE.write_text(json.dumps(cache), encoding="utf-8")
+        key = str(film.get("rss_tmdb_id") or "")
+        if key and key not in cache:
+            detail = client.get(f"/movie/{key}", {"append_to_response": "credits"})
+            if detail:
+                cache[key] = compact_details(detail)
+    TMDB_DETAILS_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    TMDB_DETAILS_CACHE.write_text(json.dumps(cache), encoding="utf-8")
+    return cache
 
 
 def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: str) -> None:
@@ -248,9 +244,16 @@ def finalize_success(conn: psycopg.Connection, job: dict[str, Any], username: st
     wrapped_films = (load_json(OUTPUT_DIR / f"{username}_wrapped.json") or {}).get("films") or []
     # Sous-ensemble utile à l'onglet « Mes 50 films » (lot 14), pas tout le wrapped.
     try:
-        add_tmdb_votes(wrapped_films)
-    except Exception as error:  # noqa: BLE001 - donnée de confort, jamais bloquante
-        print(f"[job {job['id']}] votes TMDB indisponibles (non bloquant) : {error}", file=sys.stderr, flush=True)
+        from fixettes import compute_fixettes
+
+        details = load_tmdb_details(wrapped_films)
+        for film in wrapped_films:
+            votes = (details.get(str(film.get("rss_tmdb_id"))) or {}).get("votes")
+            if votes is not None:
+                film["tmdb_votes"] = votes
+        display_profile["fixettes"] = compute_fixettes(wrapped_films, details)
+    except Exception as error:  # noqa: BLE001 - données de confort (popularité, Fixettes), jamais bloquantes
+        print(f"[job {job['id']}] fiches TMDB indisponibles (non bloquant) : {error}", file=sys.stderr, flush=True)
     films = [{key: film.get(key) for key in CACHED_FILM_FIELDS} for film in wrapped_films]
 
     with conn.transaction():

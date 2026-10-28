@@ -5622,3 +5622,312 @@ h1 {
 .hofPinRing.avatarColor-tricolor {
   fill: url(#avatarTricolor);
 }
+
+/* ================= Les Fixettes (maquette A, 28/10/2026) ================= */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.fixSection {
+  padding: 42px 0;
+  border-top: 1px solid var(--line);
+}
+
+.fixCards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.fixCard {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.fixCardEmpty {
+  border-style: dashed;
+}
+
+.fixFan {
+  position: relative;
+  flex: 0 0 auto;
+  width: 172px;
+  height: 148px;
+}
+
+.fixPoster {
+  position: absolute;
+  top: 12px;
+  display: flex;
+  align-items: flex-end;
+  width: 86px;
+  height: 129px;
+  overflow: hidden;
+  border: 1px solid rgba(var(--ink-rgb), 0.14);
+  border-radius: 6px;
+  background: linear-gradient(165deg, rgba(var(--accent-rgb), 0.5), var(--bg) 125%);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  transition: transform 450ms cubic-bezier(0.2, 0.8, 0.3, 1), opacity 450ms ease;
+}
+
+.fixPoster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fixPosterTitle {
+  padding: 6px;
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 0.7rem;
+  line-height: 1.1;
+}
+
+.fixPosterLeft,
+.fixPosterRight,
+.fixPosterFront {
+  left: 43px;
+  opacity: 0;
+}
+
+.fixPosterFront {
+  top: 4px;
+  z-index: 2;
+}
+
+.fixPosterGhost {
+  border: 1px dashed var(--muted);
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Éventail joué une fois à l'apparition, puis il s'ouvre un peu plus au survol. */
+.isVisible .fixPoster {
+  opacity: 1;
+}
+
+.isVisible .fixPosterLeft {
+  transform: translateX(-24px) rotate(-10deg);
+}
+
+.isVisible .fixPosterRight {
+  transform: translateX(24px) rotate(10deg);
+}
+
+.isVisible .fixCard:hover .fixPosterLeft {
+  transform: translateX(-40px) rotate(-16deg);
+}
+
+.isVisible .fixCard:hover .fixPosterRight {
+  transform: translateX(40px) rotate(16deg);
+}
+
+.isVisible .fixPosterGhost {
+  opacity: 0.6;
+}
+
+.fixText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.fixRole {
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.fixWho {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fixPhoto {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 3px var(--surface);
+}
+
+.fixInitial {
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-title), Georgia, serif;
+}
+
+.fixName {
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
+
+.fixNameEmpty {
+  font-size: 1.25rem;
+}
+
+.fixCount b {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.fixMeta {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.fixMeta a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.fixMeta a:hover,
+.fixMeta a:focus-visible {
+  color: var(--accent);
+}
+
+.fixFacts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 22px;
+  margin-top: 16px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.fixFactsFigure {
+  display: grid;
+  gap: 2px;
+}
+
+.fixShare {
+  color: var(--accent);
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 2.9rem;
+  line-height: 1;
+}
+
+.fixFactsText p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.fixDots {
+  display: grid;
+  grid-template-columns: repeat(25, 10px);
+  gap: 5px;
+  margin: 10px 0 14px;
+}
+
+.fixDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.fixDots .fixDot {
+  transform: scale(0);
+  transition: transform 300ms ease;
+  transition-delay: calc(var(--i) * 18ms);
+}
+
+.isVisible .fixDots .fixDot {
+  transform: scale(1);
+}
+
+.fixDot-y {
+  background: var(--accent);
+}
+
+.fixDot-n {
+  background: rgba(var(--ink-rgb), 0.16);
+}
+
+.fixDot-u {
+  border: 1px dashed var(--muted);
+}
+
+.fixLegend.fixLegend {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+.fixLegend .fixDot {
+  width: 8px;
+  height: 8px;
+  vertical-align: baseline;
+}
+
+@media (max-width: 760px) {
+  .fixCards,
+  .fixFacts {
+    grid-template-columns: 1fr;
+  }
+
+  .fixCard {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .fixFan {
+    width: 120px;
+    height: 104px;
+  }
+
+  .fixPoster {
+    width: 60px;
+    height: 90px;
+  }
+
+  .fixPosterLeft,
+  .fixPosterRight,
+  .fixPosterFront {
+    left: 30px;
+  }
+
+  .fixName {
+    font-size: 1.25rem;
+  }
+
+  .fixDots {
+    grid-template-columns: repeat(10, 10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fixPoster,
+  .fixDots .fixDot {
+    transition: none;
+  }
+}
+
+/* Sans affiche, seul le titre du film de devant reste lisible. */
+.fixPosterLeft .fixPosterTitle,
+.fixPosterRight .fixPosterTitle {
+  visibility: hidden;
+}

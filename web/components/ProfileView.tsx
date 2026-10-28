@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 /* eslint-disable @next/next/no-img-element */
 import AverageRatingCard from "./AverageRatingCard";
 import GenreBubbles from "./GenreBubbles";
+import Fixettes, { type FixettesData } from "./Fixettes";
 import HighlightsCarousel, { type Highlights } from "./HighlightsCarousel";
 import RadarChart from "./RadarChart";
 import DiscoveryTipCard from "./recap/DiscoveryTipCard";
@@ -92,6 +93,8 @@ type LogTimeProfile = {
 };
 
 export type DisplayProfile = {
+  // Ajouté par le worker à partir du 28/10/2026 (scripts/fixettes.py) ; absent des profils plus anciens.
+  fixettes?: FixettesData | null;
   hero: {
     username: string;
     primary_archetype_id?: string;
@@ -196,6 +199,7 @@ export default function ProfileView({
     highlights_copy,
     cards,
     highlights,
+    fixettes,
   } = profile;
   const theme = useVisualTheme();
   // document.referrer reste vide pour une navigation Next.js côté client
@@ -274,6 +278,8 @@ export default function ProfileView({
         </div>
         <HighlightsCarousel highlights={highlights} copy={highlights_copy} />
       </section>
+
+      <Fixettes data={fixettes} />
 
       <footer className="siteFooter" aria-label="Informations sur Fifty">
         <p>
