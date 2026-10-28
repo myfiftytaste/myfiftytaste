@@ -1,3 +1,5 @@
+import fondDuMoment from "./fond-du-moment.json";
+
 export type VisualTheme = {
   id: "hanabi" | "grande-bellezza" | "akira" | "midsommar" | "lalaland";
   // Fond réservé au calendrier ci-dessous : jamais tiré au hasard.
@@ -90,9 +92,9 @@ export const visualThemes: VisualTheme[] = [
   }
 ];
 
-// Fond imposé à tout le monde à partir de chaque date (heure de Paris). Décision du 28/10/2026 :
-// La La Land pour tous dès la livraison de la V3 et tout novembre.
-export const themeSchedule = [{ from: "2026-10-28T00:00:00+01:00", themeId: "lalaland" }];
+// Fond imposé à tout le monde (décision du 28/10/2026) : celui de lib/fond-du-moment.json, changé à la
+// main par le workflow GitHub « Changer le fond du site » (commit sur main, puis redéploiement Vercel).
+export const themeSchedule = [{ from: "2026-10-28T00:00:00+01:00", themeId: fondDuMoment.themeId }];
 
 export function scheduledTheme(now: number = Date.now()): VisualTheme | undefined {
   const step = themeSchedule.filter((item) => Date.parse(item.from) <= now).pop();
