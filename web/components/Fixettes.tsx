@@ -19,10 +19,23 @@ type Fixette = {
 export type FixettesData = {
   director: Fixette;
   performer: Fixette;
-  facts: { share: number | null; known: number; total: number; dots: ("y" | "n" | "u")[] };
+  // `films` : depuis le 28/10/2026 ; absent des profils calculés avant.
+  facts: { share: number | null; known: number; total: number; dots: ("y" | "n" | "u")[]; films?: FilmRef[] };
 };
 
 const FAN = ["fixPoster fixPosterLeft", "fixPoster fixPosterRight", "fixPoster fixPosterFront"];
+
+/** Page Letterboxd d'une personne : Letterboxd nomme ses pages d'après le nom, sans accents
+ * (/director/agnes-varda/). Un homonyme rare peut tomber à côté. */
+function letterboxdPersonUrl(role: "Cinéaste" | "Interprète", name: string) {
+  const slug = name
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  return `https://letterboxd.com/${role === "Cinéaste" ? "director" : "actor"}/${slug}/`;
+}
 
 function frenchRating(value: number) {
   return value.toLocaleString("fr-FR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -80,12 +93,48 @@ function Card({ role, fixette }: { role: "Cinéaste" | "Interprète"; fixette: F
         </span>
         <span className="fixMeta">
           {typeof fixette.average_rating === "number" ? `Ta note moyenne : ★ ${frenchRating(fixette.average_rating)} · ` : ""}
-          <a href={`https://letterboxd.com/search/${encodeURIComponent(fixette.name)}/`} target="_blank" rel="noreferrer">
-            ↗ Letterboxd
+          <a href={letterboxdPersonUrl(role, fixette.name)} target="_blank" rel="noreferrer">
+            ↗ son profil Letterboxd
           </a>
         </span>
         <span className="srOnly">Films : {fixette.films.map((film) => film.title).filter(Boolean).join(", ")}</span>
       </span>
+    </div>
+  );
+}
+
+/** Les films concernés par le pourcentage : les trois premiers, puis « … » qui ouvre la suite. */
+function FactsFilms({ films }: { films: FilmRef[] }) {
+  const [open, setOpen] = useState(false);
+  const item = (film: FilmRef, index: number) => (
+    <li key={index}>
+      {film.url ? (
+        <a href={film.url} target="_blank" rel="noreferrer">
+          {film.title}
+        </a>
+      ) : (
+        film.title
+      )}
+    </li>
+  );
+  return (
+    <div className="fixFactsFilms">
+      <ul>{films.slice(0, 3).map(item)}</ul>
+      {films.length > 3 ? (
+        <>
+          <button type="button" className="fixFactsMore" aria-expanded={open} onClick={() => setOpen(!open)}>
+            …
+          </button>
+          {open ? (
+            <div className="fixFactsPopover">
+              <button type="button" className="fixFactsClose" aria-label="Fermer" onClick={() => setOpen(false)}>
+                ×
+              </button>
+              <ul>{films.slice(3).map((film, index) => item(film, index + 3))}</ul>
+            </div>
+          ) : null}
+        </>
+      ) : null}
     </div>
   );
 }
@@ -151,6 +200,7 @@ export default function Fixettes({ data }: { data?: FixettesData | null }) {
               · calculé sur {facts.known} films, d&apos;après TMDB
             </p>
           </div>
+          {facts.films?.length ? <FactsFilms films={facts.films} /> : null}
         </div>
       ) : null}
     </section>

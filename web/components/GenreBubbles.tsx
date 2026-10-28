@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import type { CSSProperties } from "react";
 import { genreFr } from "../lib/labelsFr";
+import { letterboxdFilmUrl, usePinned } from "../lib/usePinned";
 
 type GenreBubble = {
   genre: string;
@@ -26,16 +27,16 @@ function formatShare(value: number | null | undefined) {
   return `${Math.round(value * 100)}%`;
 }
 
-// Bulles resserrées pour qu'elles se chevauchent (refonte design, 27/10/2026).
+// Bulles qui se chevauchent (refonte design, 27/10/2026), un peu desserrées le 28/10.
 const bubblePositions = [
-  { x: "40%", y: "52%", z: 8 },
-  { x: "62%", y: "36%", z: 7 },
-  { x: "63%", y: "62%", z: 6 },
-  { x: "33%", y: "27%", z: 5 },
-  { x: "53%", y: "77%", z: 4 },
-  { x: "77%", y: "49%", z: 3 },
-  { x: "27%", y: "68%", z: 2 },
-  { x: "50%", y: "26%", z: 1 },
+  { x: "39%", y: "52%", z: 8 },
+  { x: "63%", y: "34%", z: 7 },
+  { x: "64%", y: "63%", z: 6 },
+  { x: "31%", y: "25%", z: 5 },
+  { x: "53%", y: "79%", z: 4 },
+  { x: "79%", y: "49%", z: 3 },
+  { x: "25%", y: "70%", z: 2 },
+  { x: "50%", y: "23%", z: 1 },
 ];
 
 // Couleurs de l'ambiance, choisies pour que deux bulles voisines ne se ressemblent pas ;
@@ -67,7 +68,10 @@ export default function GenreBubbles({
   genreBubbles?: GenreBubble[];
   detectedFilmsCount?: number;
 }) {
+  const cardRef = useRef<HTMLDivElement | null>(null);
   const cloudRef = useRef<HTMLDivElement | null>(null);
+  const bubbleRefs = useRef<Map<string, HTMLDivElement>>(new Map());
+  const [pinned, setPinned] = usePinned(cardRef);
   const listRef = useRef<HTMLDivElement | null>(null);
   const barRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   const [tooltip, setTooltip] = useState<{
@@ -79,23 +83,10 @@ export default function GenreBubbles({
   const [hoveredGenre, setHoveredGenre] = useState<string | null>(null);
   const dropTimeoutRef = useRef<number | undefined>(undefined);
 
+  // Verrou relâché (clic dehors, Échap) : l'infobulle disparaît avec lui.
   useEffect(() => {
-    function handlePointerDown(event: globalThis.PointerEvent) {
-      if (!tooltip) {
-        return;
-      }
-      const target = event.target as HTMLElement | null;
-      if (!target || !cloudRef.current) {
-        return;
-      }
-      if (!cloudRef.current.contains(target)) {
-        setTooltip(null);
-      }
-    }
-
-    window.addEventListener("pointerdown", handlePointerDown);
-    return () => window.removeEventListener("pointerdown", handlePointerDown);
-  }, [tooltip]);
+    if (pinned === null) setTooltip(null);
+  }, [pinned]);
 
   // Re-triggers the bubble drop every time the cloud re-enters view (not just
   // once, and only on scroll, never on hover), so scrolling away and back
@@ -244,6 +235,7 @@ export default function GenreBubbles({
   }
 
   function moveTooltip(event: ReactPointerEvent<HTMLDivElement>) {
+    if (pinned) return;
     const { clientX, clientY } = event;
     setTooltip((current) =>
       current ? { ...current, ...tooltipPosition(clientX, clientY) } : current,
@@ -258,13 +250,28 @@ export default function GenreBubbles({
     bubble: GenreBubble,
     event: ReactPointerEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>,
   ) {
+    if (pinned) return;
     showTooltip(bubble, event);
     setHoveredGenre(bubble.genre);
   }
 
   function leaveBubble() {
+    if (pinned) return;
     closeTooltip();
     setHoveredGenre(null);
+  }
+
+  /** Clic sur une bulle ou sur sa barre : la fige (ou la relâche si elle l'était déjà). */
+  function togglePin(bubble: GenreBubble) {
+    if (pinned === bubble.genre) {
+      setPinned(null);
+      setHoveredGenre(null);
+      return;
+    }
+    setPinned(bubble.genre);
+    setHoveredGenre(bubble.genre);
+    const element = bubbleRefs.current.get(bubble.genre);
+    if (element) showTooltipFromElement(bubble, element);
   }
 
   return (
@@ -274,8 +281,8 @@ export default function GenreBubbles({
         <p>Les genres qui reviennent le plus dans tes {detectedFilmsCount} films détectés.</p>
       </div>
 
-      <div className="genre-bubbles-card">
-        <div className="genre-bubbles-cloud" ref={cloudRef}>
+      <div className="genre-bubbles-card" ref={cardRef}>
+        <div className={`genre-bubbles-cloud${pinned ? " is-isolated" : ""}`} ref={cloudRef}>
           {displayedBubbles.map((bubble, index) => {
             const size = Math.max(72, Math.min(168, bubble.size * 1.25));
             const share = formatShare(bubble.share);
@@ -288,20 +295,32 @@ export default function GenreBubbles({
               "--fall-delay": `${index * 90}ms`,
               "--bubble-color": colorAt(index),
             } as CSSProperties;
-            const isActive = tooltip?.bubble.genre === bubble.genre || hoveredGenre === bubble.genre;
+            const isActive = pinned ? pinned === bubble.genre : tooltip?.bubble.genre === bubble.genre || hoveredGenre === bubble.genre;
             return (
               <div
                 className={`genre-bubble${isDropping ? " genre-bubble-drop" : ""}${isActive ? " genre-bubble-active" : ""}`}
                 key={bubble.genre}
+                ref={(el) => {
+                  if (el) bubbleRefs.current.set(bubble.genre, el);
+                  else bubbleRefs.current.delete(bubble.genre);
+                }}
                 style={style}
                 role="button"
+                aria-pressed={pinned === bubble.genre}
                 tabIndex={0}
                 aria-label={`${genreFr(bubble.genre)} : ${bubble.count} occurrences${share ? `, ${share}` : ""}`}
                 onPointerEnter={(event) => enterBubble(bubble, event)}
                 onPointerMove={moveTooltip}
                 onPointerLeave={leaveBubble}
-                onClick={(event) => enterBubble(bubble, event)}
+                onClick={() => togglePin(bubble)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    togglePin(bubble);
+                  }
+                }}
                 onFocus={(event) => {
+                  if (pinned) return;
                   showTooltipFromElement(bubble, event.currentTarget);
                   setHoveredGenre(bubble.genre);
                 }}
@@ -315,7 +334,7 @@ export default function GenreBubbles({
 
           {tooltip ? (
             <div
-              className="genre-bubble-tooltip"
+              className={`genre-bubble-tooltip${pinned ? " is-pinned" : ""}`}
               style={{ left: tooltip.x, top: tooltip.y }}
             >
               <strong>{genreFr(tooltip.bubble.genre)}</strong>
@@ -324,13 +343,28 @@ export default function GenreBubbles({
               </span>
               {tooltip.bubble.films?.length ? (
                 <ul>
-                  {tooltip.bubble.films.slice(0, 6).map((film) => (
-                    <li key={`${film.slug}-${film.title}`}>
-                      {film.title || "Untitled"}
-                      {film.year ? <em>{film.year}</em> : null}
-                    </li>
-                  ))}
-                  {tooltip.bubble.films.length > 6 ? (
+                  {/* Figée, l'infobulle liste tous les films, chacun relié à sa fiche Letterboxd. */}
+                  {tooltip.bubble.films.slice(0, pinned ? undefined : 6).map((film) => {
+                    const url = pinned ? letterboxdFilmUrl(film.slug) : null;
+                    const label = (
+                      <>
+                        {film.title || "Sans titre"}
+                        {film.year ? <em>{film.year}</em> : null}
+                      </>
+                    );
+                    return (
+                      <li key={`${film.slug}-${film.title}`}>
+                        {url ? (
+                          <a href={url} target="_blank" rel="noreferrer">
+                            {label}
+                          </a>
+                        ) : (
+                          label
+                        )}
+                      </li>
+                    );
+                  })}
+                  {!pinned && tooltip.bubble.films.length > 6 ? (
                     <li className="genre-bubble-tooltip-more">
                       + {tooltip.bubble.films.length - 6} autres
                     </li>
@@ -344,11 +378,21 @@ export default function GenreBubbles({
         <div className="genre-bubbles-list" ref={listRef}>
           {listBubbles.map((bubble, index) => (
             <div
-              className={`genre-bar-row${hoveredGenre === bubble.genre ? " genre-bar-row-linked" : ""}`}
+              className={`genre-bar-row${(pinned ?? hoveredGenre) === bubble.genre ? " genre-bar-row-linked" : ""}`}
               key={bubble.genre}
               style={{ "--bubble-color": colorAt(index) } as CSSProperties}
-              onMouseEnter={() => setHoveredGenre(bubble.genre)}
-              onMouseLeave={() => setHoveredGenre(null)}
+              role="button"
+              tabIndex={0}
+              aria-pressed={pinned === bubble.genre}
+              onMouseEnter={() => !pinned && setHoveredGenre(bubble.genre)}
+              onMouseLeave={() => !pinned && setHoveredGenre(null)}
+              onClick={() => togglePin(bubble)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  togglePin(bubble);
+                }
+              }}
             >
               <div className="genre-bar-heading">
                 <span>{genreFr(bubble.genre)}</span>

@@ -92,5 +92,12 @@ def compute_fixettes(films: list[dict[str, Any]], details: dict[str, dict[str, A
     return {
         "director": _favourite(films, lambda film: info(film).get("directors") or []),
         "performer": _favourite(films, lambda film: info(film).get("cast") or []),
-        "facts": {"share": round(yes / known, 3) if known else None, "known": known, "total": len(films), "dots": dots},
+        "facts": {
+            "share": round(yes / known, 3) if known else None,
+            "known": known,
+            "total": len(films),
+            "dots": dots,
+            # Les films concernés, listés à côté du pourcentage (retour du 28/10/2026).
+            "films": [_film_ref(film) for film, dot in zip(films, dots) if dot == "y"],
+        },
     }
