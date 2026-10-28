@@ -1,0 +1,36 @@
+name: Programme Fiftyguess
+
+# Tire les films des mois à venir, trouve leur affiche sans texte sur TMDB et les écrit dans
+# game_round (scripts/game_program.py). Le 15 de chaque mois : les deux mois suivants. Relançable :
+# une date déjà programmée n'est jamais modifiée. Bouton « Run workflow » pour des mois précis.
+on:
+  schedule:
+    - cron: '40 2 15 * *'
+  workflow_dispatch:
+    inputs:
+      months:
+        description: 'Mois à programmer, séparés par des espaces (AAAA-MM) ; vide = les deux mois suivants'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  program:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      # Lecture du texte sur les affiches : une affiche où il lit des mots est écartée.
+      - run: sudo apt-get install -y --no-install-recommends tesseract-ocr
+      - name: Programme les affiches
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          MONTHS: ${{ github.event.inputs.months }}
+        run: python scripts/game_program.py $MONTHS
