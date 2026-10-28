@@ -276,7 +276,7 @@ export default function ProfileView({
           <h2>{highlights_copy?.title ?? "Le Carrousel"}</h2>
           <p>Toi, en 6 films clés et 1 réal</p>
         </div>
-        <HighlightsCarousel highlights={highlights} copy={highlights_copy} />
+        <HighlightsCarousel highlights={highlights} copy={highlights_copy} withDirector={!fixettes} />
       </section>
 
       <Fixettes data={fixettes} />
