@@ -1,0 +1,19 @@
+{
+  "_comment": "Programme de Fiftyguess (scripts/game_program.py, méthode du 28/10/2026). Vivier : les films les plus votés de TMDB, sans suites, classés par consultations de Wikipédia en français sur 12 mois. Semaine : les plus connus ; bonus : la tranche suivante, très bien notés. Les films remplacés dans les coulisses vont dans la table game_excluded.",
+  "seed": 2026,
+  "tmdb_pages": 40,
+  "week_top": 250,
+  "bonus_top": 700,
+  "bonus_min_rating": 7.6,
+  "family_gap_days": 90,
+  "families": {
+    "Marvel": [420, 7505, 19551, 2301],
+    "DC": [9993, 128064, 429],
+    "Disney": [2, 6125, 3, 1],
+    "DreamWorks": [521],
+    "Ghibli": [10342],
+    "Illumination": [6704],
+    "Sony Animation": [2251]
+  },
+  "christmas": [771, 8871, 10719, 508, 508965, 9479]
+}

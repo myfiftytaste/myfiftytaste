@@ -60,7 +60,7 @@ export default function NavBar() {
     },
     { key: "liste", label: "Ma liste", href: "/liste", active: pathname.startsWith("/liste") },
     { key: "hof", label: "Hall of Fame", href: "/hall-of-fame", active: pathname.startsWith("/hall-of-fame") },
-    { key: "jeu", label: "Jeu", href: "/jeu", active: pathname.startsWith("/jeu"), soon: true },
+    { key: "jeu", label: "Jeu", href: "/jeu", active: pathname.startsWith("/jeu") },
     { key: "divers", label: "Divers", href: "/divers", active: pathname.startsWith("/divers") || pathname.startsWith("/feedback") },
   ] as const;
 

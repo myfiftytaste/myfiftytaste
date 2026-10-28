@@ -13,7 +13,7 @@ from pathlib import Path
 
 import psycopg
 
-TABLES = ["profile_cache", "generation_log", "job", "monthly_snapshot", "badge", "feedback", "profile_color"]
+TABLES = ["profile_cache", "generation_log", "job", "monthly_snapshot", "badge", "feedback", "profile_color", "game_play"]
 EXCLUDED = Path(__file__).resolve().parent.parent / "data" / "processed" / "excluded_usernames.json"
 
 

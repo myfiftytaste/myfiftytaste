@@ -4322,17 +4322,6 @@ h1 {
   color: var(--muted);
 }
 
-.jeuSoon {
-  display: inline-block;
-  margin-bottom: 12px;
-}
-
-.jeuLede {
-  max-width: 46ch;
-  line-height: 1.55;
-  color: var(--muted);
-}
-
 /* Hall of Fame : choix de participation et aperçu verrouillé (maquette du 26/10/2026). */
 .hofChoiceLine {
   display: flex;
@@ -5930,4 +5919,406 @@ h1 {
 .fixPosterLeft .fixPosterTitle,
 .fixPosterRight .fixPosterTitle {
   visibility: hidden;
+}
+
+/* ================= Fiftyguess (lot 11, prototype validé le 28/10/2026) ================= */
+.fgPage {
+  max-width: 1000px;
+}
+
+.fgShell {
+  display: grid;
+  gap: 20px;
+}
+
+.fgTop,
+.fgRulesHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.fgLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fgLinks a,
+.fgLink,
+.fgGhost,
+.fgPrimary,
+.fgRoundTabs button {
+  padding: 9px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fgPrimary,
+.fgLink[aria-pressed="true"],
+.fgRoundTabs button[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.fgPrimary small,
+.fgGhost small {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.fgRoundTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fgEyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.fgMuted {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.fgError {
+  margin: 0;
+  color: #ef6a5a;
+}
+
+.fgCols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.fgCard {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.fgCard ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.fgFaq {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.fgFaq details {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.fgFaq summary {
+  padding: 12px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.fgFaq details p {
+  margin: 0;
+  padding: 0 16px 14px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.fgGame {
+  display: grid;
+  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.fgStage {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 2 / 3;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #0a1220;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+.fgStage canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.fgCover {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 10px;
+  padding: 18px;
+  text-align: center;
+  background: rgba(10, 18, 32, 0.55);
+}
+
+.fgCover p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.fgPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.fgClockRow {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.fgClock {
+  font-family: var(--font-title), Georgia, serif;
+  font-size: clamp(3rem, 9vw, 4.4rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.fgFlash {
+  color: #ef6a5a;
+  font-size: 1.3rem;
+  font-weight: 800;
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.fgFlash.isOn {
+  opacity: 1;
+}
+
+.fgWarn {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+.fgGuess {
+  position: relative;
+  display: grid;
+  gap: 6px;
+}
+
+.fgGuess input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+.fgGuess input.isWrong {
+  border-color: #ef6a5a;
+  animation: fgShake 300ms;
+}
+
+@keyframes fgShake {
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}
+
+.fgSuggest {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  max-height: 240px;
+  margin: 4px 0 0;
+  padding: 4px;
+  overflow: auto;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.fgSuggest li {
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.fgSuggest li[aria-selected="true"],
+.fgSuggest li:hover {
+  background: rgba(var(--accent-rgb), 0.16);
+}
+
+.fgResult {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  background: rgba(var(--accent-rgb), 0.08);
+}
+
+.fgResult h3 {
+  margin: 0;
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.fgResult a {
+  color: var(--ink);
+}
+
+.fgShare {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 0.82rem;
+  white-space: pre-wrap;
+}
+
+.fgBoardTitle {
+  margin: 0 0 8px;
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.fgBoard {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.fgBoard li {
+  display: grid;
+  grid-template-columns: 28px 1fr auto;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.fgBoard li.isMe {
+  background: rgba(var(--accent-rgb), 0.16);
+  color: var(--accent);
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .fgGame,
+  .fgCols {
+    grid-template-columns: 1fr;
+  }
+
+  .fgStage {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fgGuess input.isWrong {
+    animation: none;
+  }
+}
+
+.fgBackstage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fgBackstage li {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 12px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.fgBackstage li.isPast {
+  opacity: 0.6;
+}
+
+.fgBackstage img {
+  width: 70px;
+  aspect-ratio: 2 / 3;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.fgBackstage li > span {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+}
+
+.fgActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.fgActions button {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.fgValidated {
+  justify-self: start;
+  margin-top: 6px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: rgba(var(--accent-rgb), 0.18);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 800;
 }

@@ -87,6 +87,17 @@ export default function ConfidentialitePage() {
             </tr>
             <tr>
               <td data-label="Données">
+                Fiftyguess : tes parties (pseudo, mode, temps, nombre d&apos;erreurs). En mode compétitif, ton pseudo
+                et ton temps apparaissent dans le classement de la semaine.
+              </td>
+              <td data-label="Pourquoi">Faire tourner le jeu, classement de la semaine et badges.</td>
+              <td data-label="Base légale">Exécution du service que tu demandes en lançant une partie.</td>
+              <td data-label="Conservation">
+                <strong>24 mois</strong>.
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Données">
                 Formulaire « Donner mon avis » : tes réponses, ton pseudo si tu le donnes, le type d&apos;appareil
                 (mobile ou ordinateur) et la page d&apos;où tu viens.
               </td>

@@ -1,0 +1,42 @@
+name: Programme Fiftyguess
+
+# Propose les affiches des mois à venir (scripts/game_program.py) : vivier TMDB classé par
+# Wikipédia en français, films écrits « proposés » et validés par Tanguy dans les coulisses.
+# Le 15 de chaque mois : le mois qui commence dans trois mois. Relançable : seules les cases vides
+# sont remplies. « Run workflow » : mois précis, et case « essai » pour voir sans rien écrire.
+on:
+  schedule:
+    - cron: '40 2 15 * *'
+  workflow_dispatch:
+    inputs:
+      months:
+        description: 'Mois à programmer, séparés par des espaces (AAAA-MM) ; vide = les deux mois suivants'
+        required: false
+        default: ''
+      essai:
+        description: 'Essai : afficher le programme dans le résumé sans rien écrire'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  program:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      # Lecture du texte sur les affiches : une affiche où il lit des mots est écartée.
+      - run: sudo apt-get install -y --no-install-recommends tesseract-ocr
+      - name: Programme les affiches
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          MONTHS: ${{ github.event.inputs.months }}
+          ESSAI: ${{ github.event.inputs.essai == 'true' && '--essai' || '' }}
+        run: python scripts/game_program.py $ESSAI $MONTHS
