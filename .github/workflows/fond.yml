@@ -1,0 +1,47 @@
+name: Changer le fond du site
+
+# Bouton « Run workflow » : choisit le fond imposé à tout le monde (web/lib/fond-du-moment.json),
+# le committe sur main, et Vercel redéploie la production (2 à 3 minutes).
+on:
+  workflow_dispatch:
+    inputs:
+      fond:
+        description: 'Fond à afficher pour tout le monde'
+        type: choice
+        options:
+          - midsommar
+          - lalaland
+          - akira
+          - hanabi
+          - grande-bellezza
+        default: lalaland
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fond
+  cancel-in-progress: false
+
+jobs:
+  fond:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: main
+      - name: Écrit le fond choisi et le publie
+        env:
+          FOND: ${{ github.event.inputs.fond }}
+        run: |
+          printf '{\n  "themeId": "%s"\n}\n' "$FOND" > web/lib/fond-du-moment.json
+          if git diff --quiet; then
+            echo "Le fond est déjà $FOND : rien à changer." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Fond du site : $FOND"
+          git push origin HEAD:main
+          echo "Fond passé à **$FOND** : Vercel redéploie la production (2 à 3 minutes)." >> "$GITHUB_STEP_SUMMARY"
