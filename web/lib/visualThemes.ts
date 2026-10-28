@@ -90,12 +90,9 @@ export const visualThemes: VisualTheme[] = [
   }
 ];
 
-// Fond imposé à tout le monde à partir de chaque date (heure de Paris), décidé le 26/10/2026.
-// Avant la première date : tirage au hasard parmi les fonds hors calendrier, comme avant.
-export const themeSchedule = [
-  { from: "2026-11-01T00:00:00+01:00", themeId: "midsommar" },
-  { from: "2026-11-10T00:00:00+01:00", themeId: "lalaland" },
-];
+// Fond imposé à tout le monde à partir de chaque date (heure de Paris). Décision du 28/10/2026 :
+// La La Land pour tous dès la livraison de la V3 et tout novembre.
+export const themeSchedule = [{ from: "2026-10-28T00:00:00+01:00", themeId: "lalaland" }];
 
 export function scheduledTheme(now: number = Date.now()): VisualTheme | undefined {
   const step = themeSchedule.filter((item) => Date.parse(item.from) <= now).pop();

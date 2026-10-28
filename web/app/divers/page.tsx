@@ -18,7 +18,6 @@ const groups: { title: string; rows: (Row | "updateNote")[] }[] = [
         sub: "Ambiance des couleurs et fond de film",
         ...(AMBIANCES_OPEN ? { href: "/preferences" } : { soon: true }),
       },
-      { title: "Changer de pseudo", sub: "Voir le wrapped d’un·e autre cinéphile", href: "/" },
       { title: "Installer l’application", sub: "Ajoute Fifty à ton écran d’accueil", soon: true },
     ],
   },

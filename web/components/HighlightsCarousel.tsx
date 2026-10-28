@@ -106,9 +106,12 @@ function shortestOffset(fromIndex: number, toIndex: number, count: number): numb
 export default function HighlightsCarousel({
   highlights,
   copy,
+  withDirector = true,
 }: {
   highlights: Highlights;
   copy?: HighlightsCopy;
+  /** Faux quand le module Les Fixettes est là : il présente déjà le cinéaste récurrent. */
+  withDirector?: boolean;
 }) {
   // `step` is an unbounded counter (never wrapped) so the ring always keeps
   // spinning the same direction on repeated clicks instead of occasionally
@@ -150,6 +153,7 @@ export default function HighlightsCarousel({
     pushFilm("longest", "Le plus long");
     pushFilm("shortest", "Le plus court");
 
+    if (!withDirector) return items;
     const director = highlights.most_repeated_director;
     const films = director?.films ?? [];
     const filmNames = films.slice(0, 2).map((film) => film.title).filter(Boolean);
@@ -170,7 +174,7 @@ export default function HighlightsCarousel({
     });
 
     return items;
-  }, [highlights, labels]);
+  }, [highlights, labels, withDirector]);
 
   const count = slides.length;
   const segmentAngle = 360 / count;
