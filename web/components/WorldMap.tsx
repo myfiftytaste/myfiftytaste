@@ -5,6 +5,7 @@ import { geoNaturalEarth1, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent } from "react";
 import { countryFr } from "../lib/labelsFr";
+import { letterboxdFilmUrl, usePinned } from "../lib/usePinned";
 
 type CountryMapEntry = {
   name: string;
@@ -140,7 +141,9 @@ function easeOutCubic(t: number) {
 }
 
 export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }) {
+  const cardRef = useRef<HTMLDivElement | null>(null);
   const panelRef = useRef<HTMLDivElement | null>(null);
+  const [pinned, setPinned] = usePinned(cardRef);
   const listRef = useRef<HTMLDivElement | null>(null);
   const barRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   const [tooltip, setTooltip] = useState<{
@@ -152,6 +155,14 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
   const dropTimeoutRef = useRef<number | undefined>(undefined);
   const countries = useMemo(() => countryMap?.countries ?? [], [countryMap]);
+
+  // Verrou relâché (clic dehors, Échap) : l'infobulle disparaît avec lui.
+  useEffect(() => {
+    if (pinned === null) {
+      setTooltip(null);
+      setHoveredCountry(null);
+    }
+  }, [pinned]);
 
   // Drops the colored countries onto the map every time the panel re-enters
   // view (scroll-triggered only, replays on re-entry, never on hover — same
@@ -289,6 +300,7 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
   }
 
   function moveTooltip(event: MouseEvent<SVGPathElement>) {
+    if (pinned) return;
     const { clientX, clientY } = event;
     setTooltip((current) =>
       current ? { ...current, ...tooltipPosition(clientX, clientY) } : current,
@@ -296,13 +308,29 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
   }
 
   function enterCountry(country: CountryMapEntry, event: MouseEvent<SVGPathElement>) {
+    if (pinned) return;
     showTooltip(country, event);
     setHoveredCountry(countryKey(country));
   }
 
   function leaveCountry() {
+    if (pinned) return;
     setTooltip(null);
     setHoveredCountry(null);
+  }
+
+  /** Clic sur un pays (carte ou liste) : le fige et l'isole ; un second clic le relâche. */
+  function togglePin(country: CountryMapEntry) {
+    const key = countryKey(country);
+    if (pinned === key) {
+      setPinned(null);
+      return;
+    }
+    setPinned(key);
+    setHoveredCountry(key);
+    const shape = panelRef.current?.querySelector(`path[data-key="${key}"]`)?.getBoundingClientRect();
+    const position = shape ? tooltipPosition(shape.left + shape.width / 2, shape.top + shape.height / 2) : { x: 12, y: 12 };
+    setTooltip({ country, ...position });
   }
 
   return (
@@ -315,12 +343,12 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
         </p>
       </div>
 
-      <div className="world-map-card">
+      <div className="world-map-card" ref={cardRef}>
         <div className="world-map-panel" ref={panelRef}>
           <div className="world-map-svg-wrap">
           <svg
             aria-label="Pays de production des films du profil"
-            className="world-map-svg"
+            className={`world-map-svg${pinned ? " is-isolated" : ""}`}
             viewBox={`0 0 ${mapWidth} ${mapHeight}`}
             preserveAspectRatio="xMidYMid meet"
             role="img"
@@ -346,11 +374,12 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
                       : "world-country"
                   }
                   data-country={countryName}
+                  data-key={data ? countryKey(data) : undefined}
                   data-count={data?.count}
                   d={featurePath(shape)}
                   key={numericId || shape.properties?.name}
                   style={{ fill: data ? fillFor(data.intensity) : "rgba(120, 117, 110, 0.12)", ...dropStyle }}
-                  onClick={data ? (event) => enterCountry(data, event) : undefined}
+                  onClick={data ? () => togglePin(data) : undefined}
                   onMouseEnter={data ? (event) => enterCountry(data, event) : undefined}
                   onMouseLeave={data ? leaveCountry : undefined}
                   onMouseMove={data ? moveTooltip : undefined}
@@ -360,20 +389,35 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
           </svg>
           </div>
           {tooltip ? (
-            <div className="world-map-tooltip" style={{ left: tooltip.x, top: tooltip.y }}>
+            <div className={`world-map-tooltip${pinned ? " is-pinned" : ""}`} style={{ left: tooltip.x, top: tooltip.y }}>
               <strong>{countryFr(tooltip.country.name, tooltip.country.iso2)}</strong>
               <span>
                 {tooltip.country.count} {tooltip.country.count > 1 ? "occurrences" : "occurrence"}
               </span>
               {tooltip.country.films?.length ? (
                 <ul>
-                  {tooltip.country.films.slice(0, 6).map((film) => (
-                    <li key={`${film.slug}-${film.title}`}>
-                      {film.title}
-                      {film.year ? <em>{film.year}</em> : null}
-                    </li>
-                  ))}
-                  {tooltip.country.films.length > 6 ? (
+                  {/* Figée, l'infobulle liste tous les films, chacun relié à sa fiche Letterboxd. */}
+                  {tooltip.country.films.slice(0, pinned ? undefined : 6).map((film) => {
+                    const url = pinned ? letterboxdFilmUrl(film.slug) : null;
+                    const label = (
+                      <>
+                        {film.title}
+                        {film.year ? <em>{film.year}</em> : null}
+                      </>
+                    );
+                    return (
+                      <li key={`${film.slug}-${film.title}`}>
+                        {url ? (
+                          <a href={url} target="_blank" rel="noreferrer">
+                            {label}
+                          </a>
+                        ) : (
+                          label
+                        )}
+                      </li>
+                    );
+                  })}
+                  {!pinned && tooltip.country.films.length > 6 ? (
                     <li className="world-map-tooltip-more">
                       + {tooltip.country.films.length - 6} autres
                     </li>
@@ -399,8 +443,18 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
               <div
                 className={`country-bar-row${hoveredCountry === key ? " country-bar-row-linked" : ""}`}
                 key={key}
-                onMouseEnter={() => setHoveredCountry(key)}
-                onMouseLeave={() => setHoveredCountry(null)}
+                role="button"
+                tabIndex={0}
+                aria-pressed={pinned === key}
+                onMouseEnter={() => !pinned && setHoveredCountry(key)}
+                onMouseLeave={() => !pinned && setHoveredCountry(null)}
+                onClick={() => togglePin(country)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    togglePin(country);
+                  }
+                }}
               >
                 <div className="country-bar-heading">
                   <span>{countryFr(country.name, country.iso2)}</span>

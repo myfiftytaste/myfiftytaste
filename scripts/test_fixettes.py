@@ -32,6 +32,7 @@ assert result["director"]["name"] == "Wong Kar-wai" and result["director"]["coun
 assert result["director"]["average_rating"] == 4.25
 assert result["performer"]["name"] == "Isabelle Huppert" and result["performer"]["count"] == 2, "5e rôle ignoré"
 assert result["facts"]["dots"] == ["n", "n", "y", "u"], result["facts"]["dots"]
+assert len(result["facts"]["films"]) == 1, "un seul film réalisé par une femme"
 assert result["facts"]["known"] == 3 and result["facts"]["share"] == round(1 / 3, 3), "les inconnus ne comptent pas"
 
 # Personne ne revient deux fois : pas de fixette (le site affiche « Pas de … en double »).
