@@ -21,6 +21,12 @@ on:
 permissions:
   contents: read
 
+# Un lancement à la fois : deux tirages en parallèle se disputaient les mêmes cases. Un lancement en
+# attente remplace le précédent en attente ; il passe donc après le dernier « Remplacer ».
+concurrency:
+  group: fiftyguess
+  cancel-in-progress: false
+
 jobs:
   program:
     runs-on: ubuntu-latest

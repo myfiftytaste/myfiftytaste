@@ -27,11 +27,17 @@ function allowed(given: unknown) {
 async function redraw(month: string) {
   const token = process.env.GH_dispatch_token;
   if (!token) return console.error("fiftyguess dispatch: GH_dispatch_token absent");
+  // Tous les mois programmés, pas seulement celui du film remplacé : plusieurs « Remplacer » d'affilée
+  // donnent des lancements qui se suivent (concurrency du workflow), et le dernier comble toutes les cases.
+  const months = await getPool().query<{ month: string }>(
+    "SELECT month FROM game_round WHERE closes_on >= current_date UNION SELECT $1::text ORDER BY 1",
+    [month],
+  );
   const res = await fetch("https://api.github.com/repos/myfiftytaste/myfiftytaste/actions/workflows/fiftyguess.yml/dispatches", {
     method: "POST",
     headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json", "User-Agent": "myfiftytaste-web" },
     // La branche déployée : release-v3 sur l'aperçu, main en production.
-    body: JSON.stringify({ ref: process.env.VERCEL_GIT_COMMIT_REF || "main", inputs: { months: month } }),
+    body: JSON.stringify({ ref: process.env.VERCEL_GIT_COMMIT_REF || "main", inputs: { months: months.rows.map((row) => row.month).join(" ") } }),
   });
   if (!res.ok) console.error(`fiftyguess dispatch: ${res.status} ${(await res.text()).slice(0, 160)}`);
 }
