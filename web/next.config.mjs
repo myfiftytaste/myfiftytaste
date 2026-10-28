@@ -19,8 +19,6 @@ loadEnv({ path: path.join(__dirname, "..", ".env"), quiet: true });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Heure du build : la page de maintenance en déduit l'heure de retour (+ 24 h).
-  env: { BUILD_TIME: String(Date.now()) },
   // Coupe /_next/image : la plupart des avis npm audit restants sur next 14
   // visent l'optimiseur d'images. Seul BrandLockup (SVG) utilise next/image ici.
   // La montée en 15/16 est un chantier à part, après la V3.

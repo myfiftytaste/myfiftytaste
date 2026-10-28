@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Maintenance · Fifty", robots: { index: false } };
 
-// Affichée à la place de chaque page quand MAINTENANCE_MODE=1 (cf. middleware.ts). L'heure de retour =
-// heure du déploiement qui active la maintenance + 24 h, arrondie à la demi-heure suivante (BUILD_TIME,
-// next.config.mjs).
+// Affichée à la place de chaque page tant que MAINTENANCE_UNTIL n'est pas passée (cf. middleware.ts) ;
+// le texte annonce cette heure de réouverture.
+export const dynamic = "force-dynamic";
 
 // ---------- Trois engrenages engrenés (couleurs Letterboxd) ----------
 const MODULE = 4; // même module pour les trois : sinon les dents ne s'emboîtent pas
@@ -57,12 +57,17 @@ const GEARS = chain();
 const SECONDS_PER_TOOTH = 0.55; // vitesse des dents identique pour les trois : ils roulent ensemble
 
 function returnTime(): string {
-  const end = Number(process.env.BUILD_TIME ?? Date.now()) + 24 * 3600 * 1000;
-  const rounded = new Date(Math.ceil(end / (30 * 60 * 1000)) * 30 * 60 * 1000);
-  const [h, m] = new Intl.DateTimeFormat("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" })
-    .format(rounded)
-    .split(":");
-  return `${Number(h)}h${m === "00" ? "" : m}`;
+  const until = new Date(process.env.MAINTENANCE_UNTIL ?? "");
+  if (Number.isNaN(until.getTime())) return "très vite";
+  const paris = (date: Date, options: Intl.DateTimeFormatOptions) =>
+    new Intl.DateTimeFormat("fr-FR", { timeZone: "Europe/Paris", ...options }).format(date);
+  const [h, m] = paris(until, { hour: "2-digit", minute: "2-digit" }).split(":");
+  const hour = `${Number(h)}h${m === "00" ? "" : m}`;
+  const day = paris(until, { dateStyle: "short" });
+  const tomorrow = paris(new Date(Date.now() + 24 * 3600 * 1000), { dateStyle: "short" });
+  if (day === paris(new Date(), { dateStyle: "short" })) return `aujourd'hui à ${hour}`;
+  if (day === tomorrow) return `demain à ${hour}`;
+  return `${paris(until, { weekday: "long" })} à ${hour}`;
 }
 
 export default function MaintenancePage() {
@@ -99,7 +104,7 @@ export default function MaintenancePage() {
       </svg>
 
       <p className="maintenanceText">
-        Fifty est en maintenance ! Reviens demain à {returnTime()} pour en découvrir le nouveau visage :)
+        Fifty est en maintenance ! Reviens {returnTime()} pour en découvrir le nouveau visage :)
       </p>
     </main>
   );
