@@ -32,6 +32,11 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           MONTH: ${{ github.event.inputs.month }}
         run: python scripts/attribute_badges.py ${MONTH:+"$MONTH"}
+      - name: Badges Fiftyguess (meilleur temps moyen, série de 4 semaines)
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          MONTH: ${{ github.event.inputs.month }}
+        run: python scripts/attribute_game_badges.py ${MONTH:+"$MONTH"}
       # Durées de conservation annoncées sur /confidentialite (lot 9).
       - name: Purge des données expirées
         env:

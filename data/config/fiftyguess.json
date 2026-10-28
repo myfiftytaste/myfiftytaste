@@ -1,0 +1,15 @@
+{
+  "_comment": "Programme de Fiftyguess (scripts/game_program.py). pinned : films validés, gardés à cette date (clé : 'week AAAA-MM-JJ' ou 'bonus AAAA-MM'). exclude : films à ne jamais tirer (pour remplacer un film déjà programmé, l'ajouter ici, supprimer sa ligne de game_round et relancer). Titres tels qu'écrits dans la Megabank.",
+  "seed": 2026,
+  "week_min_views": 1800000,
+  "week_min_views_fallback": 1500000,
+  "bonus_min_views": 600000,
+  "bonus_min_rating": 3.9,
+  "pinned": {
+    "bonus 2026-11": "Memories of Murder",
+    "bonus 2026-12": "Metropolis"
+  },
+  "exclude": ["Die Hard", "Come and See"],
+  "christmas": ["Home Alone", "The Nightmare Before Christmas", "Elf", "Love Actually", "Klaus", "How the Grinch Stole Christmas"],
+  "series": ["Over the Garden Wall", "Normal People", "Chernobyl", "Twin Peaks: The Return", "Band of Brothers"]
+}

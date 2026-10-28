@@ -19,6 +19,7 @@ RULES = [
     ("generation_log", "generated_at < now() - interval '24 months'"),
     ("job", "status IN ('done', 'error') AND created_at < now() - interval '30 days'"),
     ("feedback", "created_at < now() - interval '24 months'"),
+    ("game_play", "started_at < now() - interval '24 months'"),
     ("api_rate_limit", "window_start < now() - interval '1 day'"),
 ]
 
