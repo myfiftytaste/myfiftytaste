@@ -3865,3 +3865,95 @@ h1 {
 .debugScroll ul {
   margin: 4px 0;
 }
+/* ---------- Page de maintenance (lot 12) ---------- */
+.maintenance {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  text-align: center;
+}
+
+.maintenanceLogos {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.maintenanceOld {
+  width: min(150px, 34vw);
+  height: auto;
+}
+
+.maintenanceArrow {
+  width: min(80px, 16vw);
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* La flèche se trace, reste un instant, s'efface, recommence. */
+.maintenanceArrow {
+  animation: maintenanceTrace 3.2s ease-in-out infinite;
+}
+
+@keyframes maintenanceTrace {
+  0% { clip-path: inset(0 100% 0 0); opacity: 1; }
+  45%, 80% { clip-path: inset(0 0 0 0); opacity: 1; }
+  100% { clip-path: inset(0 0 0 0); opacity: 0; }
+}
+
+.maintenanceNew {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-title), Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.maintenanceNew img {
+  height: 30px;
+}
+
+.maintenanceGears {
+  width: min(320px, 80vw);
+  overflow: visible;
+}
+
+.gearCw,
+.gearCcw {
+  animation: gearCw linear infinite;
+  transform: rotate(var(--start));
+}
+
+.gearCcw {
+  animation-name: gearCcw;
+}
+
+@keyframes gearCw {
+  to { transform: rotate(calc(var(--start) + 360deg)); }
+}
+
+@keyframes gearCcw {
+  to { transform: rotate(calc(var(--start) - 360deg)); }
+}
+
+.maintenanceText {
+  max-width: 30ch;
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gearCw,
+  .gearCcw,
+  .maintenanceArrow {
+    animation: none;
+  }
+}
