@@ -9,11 +9,17 @@ type RuntimeCard = {
   data_source: string;
 };
 
-// Calibrated on the real Megabank runtime distribution (median 99min, mean
-// 103min across 9,961 films): the track's center lands on the real catalogue
-// average instead of an arbitrary round span.
+// Échelle de repli tant que Fifty n'a pas assez de profils (lib/fiftyStats.ts) : sinon les
+// bornes suivent la répartition réelle des durées moyennes sur Fifty (5e et 95e centiles),
+// pour que la jauge varie vraiment d'un profil à l'autre. Les extrémités affichent ≤ / ≥ :
+// une moyenne hors bornes reste vraie dans le grand chiffre, la jauge est juste en butée.
 const RUNTIME_LOW = 60; // 1h
 const RUNTIME_HIGH = 150; // 2h30
+
+function formatMinutes(total: number) {
+  const rounded = Math.round(total);
+  return `${Math.floor(rounded / 60)}h${String(rounded % 60).padStart(2, "0")}`;
+}
 
 const W = 340;
 const MID_Y = 36;
@@ -54,10 +60,18 @@ const tickXs = Array.from({ length: TICK_COUNT - 1 }, (_, i) => (W * (i + 1)) / 
 export default function RuntimeFilmstrip({
   card,
   averageMinutes,
+  variant = "card",
+  scale = null,
 }: {
   card?: RuntimeCard | null;
   averageMinutes?: number | null;
+  // "hero" : petite carte du haut du profil, à côté de la note moyenne (maquette du 26/10/2026).
+  variant?: "card" | "hero";
+  scale?: { average: number; low: number; high: number } | null;
 }) {
+  const low = scale?.low ?? RUNTIME_LOW;
+  const high = scale?.high ?? RUNTIME_HIGH;
+  const hero = variant === "hero";
   const gradId = useId();
   const baseRef = useRef<SVGPathElement>(null);
   const fillRef = useRef<SVGPathElement>(null);
@@ -69,9 +83,9 @@ export default function RuntimeFilmstrip({
   const fraction = useMemo(
     () =>
       hasData
-        ? Math.max(0, Math.min(1, ((averageMinutes as number) - RUNTIME_LOW) / (RUNTIME_HIGH - RUNTIME_LOW)))
+        ? Math.max(0, Math.min(1, ((averageMinutes as number) - low) / (high - low)))
         : 0,
-    [hasData, averageMinutes],
+    [hasData, averageMinutes, low, high],
   );
 
   useEffect(() => {
@@ -114,7 +128,7 @@ export default function RuntimeFilmstrip({
 
   if (!hasData || !card) {
     return (
-      <article className="metricCard" aria-label="Durée moyenne">
+      <article className={hero ? "runtimeHeroCard" : "metricCard"} aria-label="Durée moyenne">
         <div className="cardTopline">
           <h3>Durée moyenne</h3>
         </div>
@@ -124,17 +138,19 @@ export default function RuntimeFilmstrip({
   }
 
   return (
-    <article className="metricCard" aria-label={card.title}>
-      <div className="cardTopline">
-        <h3>{card.title}</h3>
-      </div>
+    <article className={hero ? "runtimeHeroCard" : "metricCard"} aria-label={card.title}>
+      {hero ? null : (
+        <div className="cardTopline">
+          <h3>{card.title}</h3>
+        </div>
+      )}
       <p className="filmstripValue">{card.value}</p>
       <div className="filmstripVisual">
         <svg viewBox={`0 0 ${W} 70`} role="img" aria-label={card.description}>
           <defs>
             <linearGradient id={gradId} x1="0" x2="1" y1="0" y2="0">
-              <stop offset="0%" stopColor="rgba(217,164,65,0.65)" />
-              <stop offset="100%" stopColor="#e2b24a" />
+              <stop offset="0%" style={{ stopColor: "rgba(var(--accent-rgb), 0.65)" }} />
+              <stop offset="100%" style={{ stopColor: "var(--accent)" }} />
             </linearGradient>
           </defs>
           <path ref={baseRef} className="ribbonBase" d={ribbonPath(0, W)} />
@@ -179,11 +195,22 @@ export default function RuntimeFilmstrip({
         </svg>
       </div>
       <div className="filmstripEnds">
-        <span>1h</span>
-        <span>2h30</span>
+        <span>≤ {formatMinutes(low)}</span>
+        <span>≥ {formatMinutes(high)}</span>
       </div>
-      <p className="cardDescription">{card.description}</p>
-      <p className="dataSource">{card.data_source}</p>
+      {hero ? (
+        <>
+          <p className="runtimeHeroText">La durée moyenne de tes films</p>
+          {scale ? (
+            <p className="runtimeHeroFifty">(la moyenne sur Fifty est de {formatMinutes(scale.average)})</p>
+          ) : null}
+        </>
+      ) : (
+        <>
+          <p className="cardDescription">{card.description}</p>
+          <p className="dataSource">{card.data_source}</p>
+        </>
+      )}
     </article>
   );
 }

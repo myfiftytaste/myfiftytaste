@@ -1,9 +1,11 @@
+import { avatarColorClass, type AvatarColor } from "../../lib/avatarColor";
 import { letterboxdProfileUrl } from "../../lib/username";
 
 export type PodiumEntry = {
   rank: 1 | 2 | 3;
   username: string;
   metricLabel: string;
+  color?: AvatarColor;
 };
 
 function initials(name: string): string {
@@ -15,17 +17,24 @@ export default function Podium({
   title,
   sub,
   entries,
+  masked = false,
 }: {
   title: string;
   sub: string;
   entries: PodiumEntry[];
+  // Visiteur hors saison : la page n'envoie que rang et métrique, jamais le pseudo.
+  masked?: boolean;
 }) {
   if (entries.length === 0) {
     return (
       <div className="hofPodiumBlock">
         <h3>{title}</h3>
         <p className="hofPodiumSub">{sub}</p>
-        <p className="hofPodiumEmpty">Personne à classer pour l’instant ce mois-ci.</p>
+        <p className="hofPodiumEmpty">
+          <b>C’est trop calme… j’aime pas trop beaucoup ça.</b>
+          <br />
+          Personne à classer sur le podium pour l’instant ce mois-ci.
+        </p>
       </div>
     );
   }
@@ -35,7 +44,18 @@ export default function Podium({
       <h3>{title}</h3>
       <p className="hofPodiumSub">{sub}</p>
       <div className="hofPodium">
-        {entries.map((entry) => (
+        {masked
+          ? entries.map((entry) => (
+              <div key={entry.rank} className={`hofStep hofStep${entry.rank} hofStepMasked`} aria-label={`Rang ${entry.rank}, pseudo masqué, ${entry.metricLabel}`}>
+                <div className="hofAvatar">?</div>
+                <div className="hofPseudo">cinéphile</div>
+                <div className="hofMetric">{entry.metricLabel}</div>
+                <div className="hofRiser">
+                  <span>{entry.rank}</span>
+                </div>
+              </div>
+            ))
+          : entries.map((entry) => (
           <a
             key={entry.rank}
             href={letterboxdProfileUrl(entry.username)}
@@ -44,7 +64,7 @@ export default function Podium({
             aria-label={`${entry.username}, ${entry.metricLabel}, rang ${entry.rank} : profil Letterboxd (nouvel onglet)`}
             className={`hofStep hofStep${entry.rank}`}
           >
-            <div className="hofAvatar">{initials(entry.username)}</div>
+            <div className={`hofAvatar${avatarColorClass(entry.color)}`}>{initials(entry.username)}</div>
             <div className="hofPseudo">
               {entry.username} <span aria-hidden="true">↗</span>
             </div>

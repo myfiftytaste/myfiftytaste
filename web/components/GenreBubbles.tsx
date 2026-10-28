@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import type { CSSProperties } from "react";
+import { genreFr } from "../lib/labelsFr";
 
 type GenreBubble = {
   genre: string;
@@ -25,24 +26,30 @@ function formatShare(value: number | null | undefined) {
   return `${Math.round(value * 100)}%`;
 }
 
+// Bulles resserrées pour qu'elles se chevauchent (refonte design, 27/10/2026).
 const bubblePositions = [
-  { x: "36%", y: "52%", z: 8 },
-  { x: "66%", y: "30%", z: 7 },
-  { x: "68%", y: "61%", z: 6 },
-  { x: "31%", y: "30%", z: 5 },
-  { x: "50%", y: "72%", z: 4 },
-  { x: "81%", y: "48%", z: 3 },
-  { x: "25%", y: "72%", z: 2 },
-  { x: "50%", y: "35%", z: 1 },
+  { x: "40%", y: "52%", z: 8 },
+  { x: "62%", y: "36%", z: 7 },
+  { x: "63%", y: "62%", z: 6 },
+  { x: "33%", y: "27%", z: 5 },
+  { x: "53%", y: "77%", z: 4 },
+  { x: "77%", y: "49%", z: 3 },
+  { x: "27%", y: "68%", z: 2 },
+  { x: "50%", y: "26%", z: 1 },
 ];
+
+// Couleurs de l'ambiance, choisies pour que deux bulles voisines ne se ressemblent pas ;
+// une bulle et sa barre partagent la même.
+const bubbleColors = ["accent", "accent-2", "accent-3", "accent-bright", "accent-2", "accent-bright", "accent-3", "accent-3"];
+const colorAt = (index: number) => `var(--${bubbleColors[index % bubbleColors.length]})`;
 
 const shortGenreLabels: Record<string, string> = {
   Animation: "Anim.",
-  "Science Fiction": "Sci-Fi",
+  "Science Fiction": "SF",
 };
 
 function bubbleLabel(genre: string) {
-  return shortGenreLabels[genre] ?? genre;
+  return shortGenreLabels[genre] ?? genreFr(genre);
 }
 
 function clamp(value: number, min: number, max: number) {
@@ -107,6 +114,7 @@ export default function GenreBubbles({
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          observer.disconnect(); // une seule fois par visite de la page (bug de scroll, 27/10/2026)
           window.clearTimeout(dropTimeoutRef.current);
           setIsDropping(false);
           requestAnimationFrame(() => {
@@ -151,6 +159,7 @@ export default function GenreBubbles({
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          observer.disconnect(); // une seule fois par visite de la page (bug de scroll, 27/10/2026)
           cancelAnimationFrame(rafId);
           setWidths(0);
           const duration = 1200;
@@ -259,17 +268,16 @@ export default function GenreBubbles({
   }
 
   return (
-    <section className="genre-bubbles-section" aria-label="Constellation des genres">
+    <section className="genre-bubbles-section" aria-label="La Constellation">
       <div className="sectionHeading">
-        <p className="eyebrow">Genres</p>
-        <h2>Constellation des genres</h2>
+        <h2>La Constellation</h2>
         <p>Les genres qui reviennent le plus dans tes {detectedFilmsCount} films détectés.</p>
       </div>
 
       <div className="genre-bubbles-card">
         <div className="genre-bubbles-cloud" ref={cloudRef}>
           {displayedBubbles.map((bubble, index) => {
-            const size = Math.max(62, Math.min(136, bubble.size));
+            const size = Math.max(72, Math.min(168, bubble.size * 1.25));
             const share = formatShare(bubble.share);
             const position = bubblePositions[index];
             const style = {
@@ -278,6 +286,7 @@ export default function GenreBubbles({
               "--bubble-y": position.y,
               "--bubble-z": position.z,
               "--fall-delay": `${index * 90}ms`,
+              "--bubble-color": colorAt(index),
             } as CSSProperties;
             const isActive = tooltip?.bubble.genre === bubble.genre || hoveredGenre === bubble.genre;
             return (
@@ -287,7 +296,7 @@ export default function GenreBubbles({
                 style={style}
                 role="button"
                 tabIndex={0}
-                aria-label={`${bubble.genre}: ${bubble.count} occurrences${share ? `, ${share}` : ""}`}
+                aria-label={`${genreFr(bubble.genre)} : ${bubble.count} occurrences${share ? `, ${share}` : ""}`}
                 onPointerEnter={(event) => enterBubble(bubble, event)}
                 onPointerMove={moveTooltip}
                 onPointerLeave={leaveBubble}
@@ -309,7 +318,7 @@ export default function GenreBubbles({
               className="genre-bubble-tooltip"
               style={{ left: tooltip.x, top: tooltip.y }}
             >
-              <strong>{tooltip.bubble.genre}</strong>
+              <strong>{genreFr(tooltip.bubble.genre)}</strong>
               <span>
                 {tooltip.bubble.count} {tooltip.bubble.count > 1 ? "occurrences" : "occurrence"}
               </span>
@@ -333,15 +342,16 @@ export default function GenreBubbles({
         </div>
 
         <div className="genre-bubbles-list" ref={listRef}>
-          {listBubbles.map((bubble) => (
+          {listBubbles.map((bubble, index) => (
             <div
               className={`genre-bar-row${hoveredGenre === bubble.genre ? " genre-bar-row-linked" : ""}`}
               key={bubble.genre}
+              style={{ "--bubble-color": colorAt(index) } as CSSProperties}
               onMouseEnter={() => setHoveredGenre(bubble.genre)}
               onMouseLeave={() => setHoveredGenre(null)}
             >
               <div className="genre-bar-heading">
-                <span>{bubble.genre}</span>
+                <span>{genreFr(bubble.genre)}</span>
                 <span className="genre-bar-meta">
                   <strong>{bubble.count}</strong>
                   <small>{formatShare(bubble.share) ?? "n/a"}</small>

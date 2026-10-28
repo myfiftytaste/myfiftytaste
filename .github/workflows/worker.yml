@@ -21,14 +21,24 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Vide la file pendant ~4 minutes
+      # Les recherches TMDB déjà faites pour d'autres profils ne sont plus refaites à chaque
+      # réveil (machine jetable). La clé change chaque mois (la saison repart propre) et porte
+      # l'id du run : une clé de cache est immuable, sans lui rien ne serait jamais mis à jour.
+      - id: month
+        run: echo "value=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: data/cache
+          key: tmdb-cache-${{ steps.month.outputs.value }}-${{ github.run_id }}
+          restore-keys: |
+            tmdb-cache-${{ steps.month.outputs.value }}-
+
+      # Traite les jobs tant qu'il y en a (6 min max, voir DRAIN_MAX_SECONDS), puis s'arrête. Pas de `concurrency:` : il
+      # sérialiserait les réveils parallèles, or chaque réveil (un par job créé) doit pouvoir
+      # démarrer tout de suite ; claim_next_job (SKIP LOCKED) évite déjà les doublons.
+      - name: Vide la file
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: |
-          END=$((SECONDS + 240))
-          while [ $SECONDS -lt $END ]; do
-            python worker.py --once
-            sleep 2
-          done
-
+        run: python worker.py --drain

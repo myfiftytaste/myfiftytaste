@@ -1,3 +1,4 @@
+// Archivé le 26/10/2026 : retiré du profil (module « En bref » supprimé), gardé pour un usage futur.
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -87,6 +88,7 @@ export default function LogTimeMini({ logTimeProfile }: { logTimeProfile?: LogTi
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          observer.disconnect(); // une seule fois par visite de la page (bug de scroll, 27/10/2026)
           cancelAnimationFrame(rafId);
           setFraction(0);
           const duration = 1600;

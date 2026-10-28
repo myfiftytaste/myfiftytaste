@@ -1,7 +1,21 @@
 import type { Metadata } from "next";
-import DebugScroll from "../components/DebugScroll";
+import localFont from "next/font/local";
+import NavBar from "../components/NavBar";
+import { AMBIANCE_BOOT_SCRIPT, AMBIANCES_OPEN } from "../lib/ambiance";
 import VisualThemeProvider from "../components/VisualThemeProvider";
 import "./globals.css";
+
+// Charte typo validée le 26/10/2026 : Besley (titres) + Schibsted Grotesk (texte, chiffres).
+// Auto-hébergées (next/font/google plante sur Next 14.2.5, cf. UpdateNote.tsx) ; licences OFL dans app/fonts.
+const titleFont = localFont({ src: "./fonts/besley.woff2", variable: "--font-title", weight: "400 900", display: "swap" });
+// Caveat : écriture manuscrite de la note de mise à jour (auto-hébergée, licence OFL).
+const handFont = localFont({ src: "./fonts/caveat.woff2", variable: "--font-hand", weight: "400 700", display: "swap" });
+const bodyFont = localFont({
+  src: "./fonts/schibsted-grotesk.woff2",
+  variable: "--font-body",
+  weight: "400 900",
+  display: "swap",
+});
 
 const SITE_NAME = "Fifty";
 const SITE_DESCRIPTION = "Un profil cinéma construit à partir de ton activité Letterboxd.";
@@ -16,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
-    images: [{ url: "/branding/logoV1.png", width: 1536, height: 1024 }],
+    images: [{ url: "/branding/og-fifty.png", width: 1200, height: 630 }],
   },
 };
 
@@ -26,10 +40,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={`${titleFont.variable} ${bodyFont.variable} ${handFont.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Ambiance choisie appliquée avant l'affichage (cookie fifty_ambiance), cf. lib/ambiance.ts. */}
+        {AMBIANCES_OPEN ? <script dangerouslySetInnerHTML={{ __html: AMBIANCE_BOOT_SCRIPT }} /> : null}
+      </head>
       <body>
-        <VisualThemeProvider>{children}</VisualThemeProvider>
-        <DebugScroll />
+        <VisualThemeProvider>
+          {children}
+          <NavBar />
+        </VisualThemeProvider>
       </body>
     </html>
   );

@@ -2,17 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 
-// Reproduction fidèle de loading-screen-mockup.html : trois points aux
-// couleurs Letterboxd en orbite, convergence en un point doré unique puis
-// irradiation, quand `finished` passe à true. Pas d'indicateur de
+// Pendule de Newton (lot 13, maquette « Chargement ») : trois billes aux
+// couleurs Letterboxd, potence visible ; quand `finished` passe à true, elles
+// se rejoignent, fusionnent en une bille dorée puis un éclair ouvre le profil. Pas d'indicateur de
 // progression (X/8) : choix délibéré du mockup, pas un oubli.
 
 const CAPTIONS = [
   "On déroule la pellicule…",
   "Projection en cours",
-  "On cherche ton Rosebud",
   "Développement des négatifs",
-  "Le projectionniste s'installe",
+  "Le projectionniste sort de sa sieste",
   "On rembobine tes 50 derniers films",
   "Silence, ça tourne",
   "Réglage de la mise au point",
@@ -71,28 +70,37 @@ export default function LoadingScreen({
     <div className="loadingShell">
       <div className="loadingStage">
         <div className={`loadingLoader${finished ? " loadingDone" : ""}`}>
-          <div className={`loadingAtom${finished ? " loadingDone" : ""}`}>
-            <div className="loadingOrbit loadingOrbitA">
-              <div className="loadingSpin">
-                <div className="loadingDot loadingDotOrange" />
-              </div>
+          <div
+            className={`loadingPendulum${finished ? " loadingDone" : ""}`}
+            role="img"
+            aria-label="Pendule de Newton à trois billes, en mouvement"
+          >
+            <div className="loadingFrame loadingPostL" />
+            <div className="loadingFrame loadingPostR" />
+            <div className="loadingFrame loadingBar" />
+            <div className="loadingFrame loadingBase" />
+            <div className="loadingShadow loadingShadowL" />
+            <div className="loadingShadow loadingShadowM" />
+            <div className="loadingShadow loadingShadowR" />
+            <div className="loadingArm loadingArmL">
+              <div className="loadingString" />
+              <div className="loadingBall loadingBallOrange" />
             </div>
-            <div className="loadingOrbit loadingOrbitB">
-              <div className="loadingSpin">
-                <div className="loadingDot loadingDotGreen" />
-              </div>
+            <div className="loadingArm loadingArmM">
+              <div className="loadingString" />
+              <div className="loadingBall loadingBallGreen" />
             </div>
-            <div className="loadingOrbit loadingOrbitC">
-              <div className="loadingSpin">
-                <div className="loadingDot loadingDotBlue" />
-              </div>
+            <div className="loadingArm loadingArmR">
+              <div className="loadingString" />
+              <div className="loadingBall loadingBallBlue" />
             </div>
-            <div className="loadingCore" />
             <div className="loadingHalo" />
+            <div className="loadingGold" />
+            <div className="loadingFlash" />
           </div>
           <p className={`loadingCaption${fading ? " loadingFading" : ""}`}>{CAPTIONS[captionIndex]}</p>
           <p className={`loadingPatience${showPatience ? " loadingShow" : ""}`}>
-            Letterboxd prend son temps. On ne t’a pas oublié.
+            Patience, jeune padawan. Letterboxd prend son temps, on ne t’a pas oublié.
           </p>
         </div>
       </div>

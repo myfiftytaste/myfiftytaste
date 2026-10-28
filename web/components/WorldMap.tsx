@@ -4,6 +4,7 @@ import worldTopology from "world-atlas/countries-110m.json";
 import { geoNaturalEarth1, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent } from "react";
+import { countryFr } from "../lib/labelsFr";
 
 type CountryMapEntry = {
   name: string;
@@ -111,8 +112,8 @@ function formatPercent(value: number | null | undefined) {
 
 function fillFor(intensity: number | undefined) {
   const safe = Math.max(0, Math.min(1, intensity ?? 0));
-  const alpha = 0.2 + safe * 0.56;
-  return `rgba(217, 164, 65, ${alpha})`;
+  // Un seul ton, plus ou moins dense, comme les autres modules (retour du 27/10/2026 : le bleu brouillait la lecture).
+  return `rgba(var(--accent-rgb), ${(0.25 + safe * 0.65).toFixed(2)})`;
 }
 
 function normalizeNumericId(id: string | number | undefined) {
@@ -168,6 +169,7 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          observer.disconnect(); // une seule fois par visite de la page (bug de scroll, 27/10/2026)
           window.clearTimeout(dropTimeoutRef.current);
           setIsDropping(false);
           requestAnimationFrame(() => {
@@ -212,6 +214,7 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          observer.disconnect(); // une seule fois par visite de la page (bug de scroll, 27/10/2026)
           cancelAnimationFrame(rafId);
           setWidths(0);
           const duration = 1200;
@@ -243,9 +246,8 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
     return (
       <section className="world-map-section" aria-label="Passeport cinéma">
         <div className="sectionHeading">
-          <p className="eyebrow">PASSEPORT</p>
-          <h2>Ma carte</h2>
-          <p>Country data unavailable</p>
+          <h2>Le Passeport</h2>
+          <p>E.T. téléphone maison… mais on ne trouve pas d’où viennent tes films.</p>
         </div>
       </section>
     );
@@ -306,11 +308,10 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
   return (
     <section className="world-map-section" aria-label="Passeport cinéma">
       <div className="sectionHeading">
-        <p className="eyebrow">PASSEPORT</p>
-        <h2>{countryMap?.title || "Ma carte"}</h2>
+        <h2>Le Passeport</h2>
         <p>
           {countryMap?.subtitle ||
-            "Nationalité des productions de tes 50 derniers films"}
+            "Les pays de production que traversent tes films détectés."}
         </p>
       </div>
 
@@ -327,9 +328,9 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
             {worldFeatures.map((shape) => {
               const numericId = normalizeNumericId(shape.id);
               const data = byNumericId.get(numericId);
-              const countryName = data?.name || shape.properties?.name || numericId;
+              const countryName = countryFr(data?.name || shape.properties?.name || numericId, data?.iso2);
               const countryLabel = data
-                ? `${data.name}: ${data.count} (${formatPercent(data.share)})`
+                ? `${countryName} : ${data.count} (${formatPercent(data.share)})`
                 : countryName;
               const rank = data ? rankByName.get(data.name) ?? 0 : 0;
               const dropStyle = data
@@ -347,9 +348,8 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
                   data-country={countryName}
                   data-count={data?.count}
                   d={featurePath(shape)}
-                  fill={data ? fillFor(data.intensity) : "rgba(120, 117, 110, 0.12)"}
                   key={numericId || shape.properties?.name}
-                  style={dropStyle}
+                  style={{ fill: data ? fillFor(data.intensity) : "rgba(120, 117, 110, 0.12)", ...dropStyle }}
                   onClick={data ? (event) => enterCountry(data, event) : undefined}
                   onMouseEnter={data ? (event) => enterCountry(data, event) : undefined}
                   onMouseLeave={data ? leaveCountry : undefined}
@@ -361,7 +361,7 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
           </div>
           {tooltip ? (
             <div className="world-map-tooltip" style={{ left: tooltip.x, top: tooltip.y }}>
-              <strong>{tooltip.country.name}</strong>
+              <strong>{countryFr(tooltip.country.name, tooltip.country.iso2)}</strong>
               <span>
                 {tooltip.country.count} {tooltip.country.count > 1 ? "occurrences" : "occurrence"}
               </span>
@@ -383,7 +383,7 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
             </div>
           ) : null}
           <div className="world-map-legend" aria-hidden="true">
-            <p>Origine de tes 50 derniers films</p>
+            <p>Origine de production de tes films</p>
             <div className="world-map-legend-scale">
               <span>0 %</span>
               <div />
@@ -403,9 +403,11 @@ export default function WorldMap({ countryMap }: { countryMap?: CountryMapData }
                 onMouseLeave={() => setHoveredCountry(null)}
               >
                 <div className="country-bar-heading">
-                  <span>{country.name}</span>
+                  <span>{countryFr(country.name, country.iso2)}</span>
                   <span className="country-bar-meta">
-                    <strong>{country.count}</strong>
+                    <strong className="country-stamp">
+                      {country.count} {country.count > 1 ? "films" : "film"}
+                    </strong>
                     <small>{formatPercent(country.share)}</small>
                   </span>
                 </div>

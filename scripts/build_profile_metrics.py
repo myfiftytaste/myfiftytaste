@@ -317,7 +317,7 @@ def circular_average_log_time(films: list[dict[str, Any]]) -> Optional[dict[str,
         "period": period,
         "label": LOG_TIME_LABELS[period],
         "description": LOG_TIME_DESCRIPTIONS[period],
-        "data_source": f"{len(minutes)} films from Letterboxd RSS",
+        "data_source": f"Sur {len(minutes)} films trouvés.",
         "confidence": confidence_for_count(len(minutes), 40),
     }
 
@@ -434,6 +434,8 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         potential_metadata_count / total_films if total_films else None
     )
 
+    # Films dont la moyenne Letterboxd est connue : Megabank, ou relevé manuel (megabank_releves.json).
+    rated_films = [film for film in films if safe_float(film.get("average_rating")) is not None]
     user_ratings = [
         rating for rating in (safe_float(film.get("user_rating")) for film in films)
         if rating is not None
@@ -441,7 +443,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
     community_ratings = [
         rating
         for rating in (
-            safe_float(film.get("average_rating")) for film in social_films
+            safe_float(film.get("average_rating")) for film in rated_films
         )
         if rating is not None
     ]
@@ -453,7 +455,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         else None
     )
     paired_rating_entries = []
-    for film in social_films:
+    for film in rated_films:
         user_rating = safe_float(film.get("user_rating"))
         community_rating = safe_float(film.get("average_rating"))
         if user_rating is None or community_rating is None:
@@ -641,8 +643,8 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "films": country_films,
         })
     country_map = {
-        "title": "Ma carte",
-        "subtitle": f"Les pays de production qui traversent tes {total_films} films détectés.",
+        "title": "Le Passeport",
+        "subtitle": f"Les pays de production que traversent tes {total_films} films détectés.",
         "countries": country_map_entries,
         "max_count": max_country_count,
         "total_country_tags": total_country_mentions,
@@ -729,7 +731,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "films_counted": mainstream_median.get("films_counted"),
             "films_estimated": mainstream_median.get("films_estimated"),
             "comparison": mainstream_estimate.comparison(
-                mainstream_median["median_views"], mainstream_estimate.REFERENCE_MEDIAN_VIEWS, "Plus mainstream", "Moins mainstream"
+                mainstream_median["median_views"], mainstream_estimate.REFERENCE_MEDIAN_VIEWS, "Tu es plus mainstream", "Tu es moins mainstream"
             ) if mainstream_median.get("median_views") else None,
             "label": "Popularité moyenne",
             "description": "Tendance dérivée de l'audience moyenne de tes films socialement matchés.",
@@ -740,7 +742,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "value_5": oldness_value,
             "raw_value": average_age,
             "comparison": mainstream_estimate.comparison(
-                average_age, mainstream_estimate.REFERENCE_AGES, "Plus nostalgique", "Moins nostalgique"
+                average_age, mainstream_estimate.REFERENCE_AGES, "Tu es plus nostalgique", "Tu es moins nostalgique"
             ) if mainstream_median.get("median_views") and average_age is not None else None,
             "average_year": average_year,
             "earliest_year": earliest_year,
@@ -763,7 +765,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "raw_value": review_count,
             "review_count": review_count,
             "comparison": mainstream_estimate.comparison(
-                review_count, mainstream_estimate.REFERENCE_REVIEW_COUNTS, "Laisse plus de reviews", "Laisse moins de reviews"
+                review_count, mainstream_estimate.REFERENCE_REVIEW_COUNTS, "Tu laisses plus de reviews", "Tu laisses moins de reviews"
             ) if mainstream_median.get("median_views") else None,
             "review_rate": review_rate,
             "label": REVIEWNESS_LABELS[reviewness_value],
@@ -803,6 +805,7 @@ def build_metrics(username: str) -> tuple[Path, Path]:
             "paired_community_average_rating": paired_community_average_rating,
             "paired_average_difference": paired_average_difference,
             "paired_count": paired_rating_count,
+            "rated_count": len(user_ratings),
             "method": "paired_gap",
             "label": rating_personality_label(paired_average_difference),
         },

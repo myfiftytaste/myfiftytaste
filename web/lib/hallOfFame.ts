@@ -1,6 +1,7 @@
 import { getPool } from "./db";
 import { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
-
+import type { AvatarColor } from "./avatarColor";
+import { safeProfileColors } from "./profileColor";
 export { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
 
 // Mirrors scripts/hall_of_fame_common.py + scripts/build_monthly_snapshot.py
@@ -36,6 +37,7 @@ export type PodiumEntry = {
   rank: 1 | 2 | 3;
   username: string;
   metricLabel: string;
+  color?: AvatarColor;
 };
 
 export type PodiumCategory = {
@@ -50,10 +52,36 @@ export function currentMonth(): string {
   return `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, "0")}`;
 }
 
+export const MONTH_PATTERN = /^\d{4}-(0[1-9]|1[0-2])$/;
+
+/** Mois voisin au format AAAA-MM (offset -1 : le précédent, +1 : le suivant). */
+export function shiftMonth(month: string, offset: number): string {
+  const [year, monthIndex] = month.split("-").map(Number);
+  const date = new Date(Date.UTC(year, monthIndex - 1 + offset, 1));
+  return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+}
+
+// Même seuil que les badges (scripts/attribute_badges.py) : en dessous de 3 inscrits, une saison
+// ne compte pas, sinon un seul participant rafle tous les podiums (septembre 2026).
+const MIN_SEASON_PARTICIPANTS = 3;
+
+/** Saisons closes qui comptent, de la plus ancienne à la plus récente (le mois en cours exclu). */
+export async function closedSeasons(): Promise<string[]> {
+  const result = await getPool().query<{ month: string }>(
+    `SELECT month FROM monthly_snapshot
+     WHERE opted_in AND month < $1
+     GROUP BY month HAVING count(*) >= $2
+     ORDER BY month`,
+    [currentMonth(), MIN_SEASON_PARTICIPANTS],
+  );
+  return result.rows.map((row) => row.month);
+}
+
 export function nextMonthLabel(month: string): string {
   const [year, monthIndex] = month.split("-").map(Number);
   const date = new Date(Date.UTC(year, monthIndex, 1));
-  return new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", timeZone: "UTC" }).format(date);
+  // Toujours le 1er du mois : « 1er novembre », pas « 1 novembre ».
+  return new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", timeZone: "UTC" }).format(date).replace(/^1 /, "1er ");
 }
 
 export function monthLabel(month: string): string {
@@ -67,6 +95,20 @@ export function monthLabel(month: string): string {
 export function seasonTitle(month: string): string {
   const label = monthLabel(month);
   return /^[aeiouyàâéèêëîïôùûü]/i.test(label) ? `d’${label}` : `de ${label}`;
+}
+
+export type OptInStatus = "none" | "undecided" | "in" | "out";
+
+// "none" : pas de pseudo retenu, ou pas de profil figé ce mois-ci (wrapped pas encore généré).
+export async function getOptInStatus(month: string, username: string | null): Promise<OptInStatus> {
+  if (!username) return "none";
+  const result = await getPool().query<{ opted_in: boolean | null }>(
+    "SELECT opted_in FROM monthly_snapshot WHERE month = $1 AND username = $2",
+    [month, username],
+  );
+  const row = result.rows[0];
+  if (!row) return "none";
+  return row.opted_in === true ? "in" : row.opted_in === false ? "out" : "undecided";
 }
 
 async function readSnapshotsForMonth(month: string): Promise<MonthlySnapshot[]> {
@@ -131,7 +173,7 @@ function ranked(
 }
 
 function formatPercent(value: number): string {
-  return `${Math.round(value)}%`;
+  return `${Math.round(value)}\u00a0%`;
 }
 
 // Même règle que MEDIAN_VIEWS_FROM_MONTH dans scripts/build_hof_rankings.py.
@@ -189,7 +231,7 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
     {
       key: "mainstream",
       title: "Top Mainstream",
-      sub: "A consommé le plus de blockbusters et succès populaires",
+      sub: "A consommé le plus de films avec un grand nombre de spectateurs",
       entries: byMedianViews
         ? ranked(optedIn, (s) => s.metrics_snapshot.mainstream_median_views ?? null, "desc", formatViews)
         : ranked(optedIn, (s) => s.metrics_snapshot.mainstream_pct, "desc", (v) => `${formatPercent(v)} mainstream`),
@@ -211,7 +253,7 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
     {
       key: "fantome",
       title: "Top Fantôme",
-      sub: "N'a laissé aucune trace écrite",
+      sub: "A laissé le moins de traces écrites",
       entries: ranked(optedIn, (s) => s.metrics_snapshot.review_count, "asc", (v) => `${Math.round(v)} reviews`),
     },
     {
@@ -233,5 +275,12 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
     },
   ];
 
-  return { month, participantCount: optedIn.length, podiums, continentWinners: continentWinners(optedIn) };
+  // Couleur de bulle de chaque profil classé (migrations/008), dans l'ordre d'arrivée des profils.
+  const winners = continentWinners(optedIn);
+  const byArrival = [...optedIn].sort((a, b) => a.first_seen_at.localeCompare(b.first_seen_at));
+  const colors = await safeProfileColors(byArrival.map((snapshot) => snapshot.username));
+  for (const entry of podiums.flatMap((podium) => podium.entries)) entry.color = colors[entry.username.toLowerCase()];
+  for (const winner of Object.values(winners)) if (winner) winner.color = colors[winner.username.toLowerCase()];
+
+  return { month, participantCount: optedIn.length, podiums, continentWinners: winners };
 }

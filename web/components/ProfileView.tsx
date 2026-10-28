@@ -1,23 +1,24 @@
 "use client";
 
-import Image from "next/image";
+import type { RuntimeStats } from "../lib/fiftyStats";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 /* eslint-disable @next/next/no-img-element */
 import AverageRatingCard from "./AverageRatingCard";
 import GenreBubbles from "./GenreBubbles";
-import HallOfFameCTA from "./hall-of-fame/HallOfFameCTA";
+import Fixettes, { type FixettesData } from "./Fixettes";
 import HighlightsCarousel, { type Highlights } from "./HighlightsCarousel";
-import LogTimeMini from "./LogTimeMini";
 import RadarChart from "./RadarChart";
 import DiscoveryTipCard from "./recap/DiscoveryTipCard";
 import ProfileBadgesHeader from "./recap/ProfileBadgesHeader";
+import type { AvatarColor } from "../lib/avatarColor";
 import Recommendations from "./Recommendations";
 import RuntimeFilmstrip from "./RuntimeFilmstrip";
 import SeverityGauge from "./SeverityGauge";
 import WorldMap from "./WorldMap";
 import { useVisualTheme } from "./VisualThemeProvider";
 import type { Badge } from "../lib/badgeSelection";
+import BrandLockup from "./BrandLockup";
 
 export type Card = {
   id: string;
@@ -28,6 +29,11 @@ export type Card = {
   confidence: "high" | "medium" | "low" | string;
   confidence_label?: string;
   data_source: string;
+  // Carte rating_personality : moyennes sur les films comparables (depuis le 26/10/2026).
+  user_average?: string | null;
+  community_average?: string | null;
+  compared_count?: number | null;
+  rated_count?: number | null;
 };
 
 type GenreBubble = {
@@ -87,6 +93,8 @@ type LogTimeProfile = {
 };
 
 export type DisplayProfile = {
+  // Ajouté par le worker à partir du 28/10/2026 (scripts/fixettes.py) ; absent des profils plus anciens.
+  fixettes?: FixettesData | null;
   hero: {
     username: string;
     primary_archetype_id?: string;
@@ -168,21 +176,30 @@ function formatPercent(value: number) {
   return `${Math.round(value * 100)}%`;
 }
 
-export default function ProfileView({ profile, badges = [] }: { profile: DisplayProfile; badges?: Badge[] }) {
+export default function ProfileView({
+  profile,
+  badges = [],
+  runtimeStats = null,
+  avatarColor = null,
+}: {
+  profile: DisplayProfile;
+  badges?: Badge[];
+  avatarColor?: AvatarColor | null;
+  runtimeStats?: RuntimeStats | null;
+}) {
   const {
     hero,
     radar_scores,
     radar_editorial,
-    log_time_profile,
     genre_bubbles,
     country_map,
     recommendations,
     recommendations_status,
     recommendations_copy,
-    cards_section,
     highlights_copy,
     cards,
     highlights,
+    fixettes,
   } = profile;
   const theme = useVisualTheme();
   // document.referrer reste vide pour une navigation Next.js côté client
@@ -204,23 +221,16 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
   return (
     <main className="pageShell">
       <div className="pageThemeLabel">{theme.label}</div>
-      <header className="siteHeader" aria-label="Fifty">
-        <div className="siteBranding">
-          <Image
-            src="/branding/logoV1-transparent.png"
-            alt="Fifty"
-            width={1013}
-            height={708}
-            priority
-            className="siteLogo"
-          />
-        </div>
+      <header className="siteHeader">
+        <BrandLockup />
       </header>
 
-      <section className="headerBand" aria-label="Profil et astuce de découverte">
-        <ProfileBadgesHeader username={hero.username} letterboxdUrl={letterboxdProfileUrl} badges={badges} />
-        <DiscoveryTipCard />
+      <section className="headerBand" aria-label="Profil">
+        <ProfileBadgesHeader username={hero.username} letterboxdUrl={letterboxdProfileUrl} badges={badges} avatarColor={avatarColor} />
+        {/* Durée moyenne remontée à droite du profil (retours du 27/10/2026) : la jauge prend sa place. */}
+        <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} variant="hero" scale={runtimeStats} />
       </section>
+      <DiscoveryTipCard />
 
       <section className="heroTop heroTopWithTheme">
         <AverageRatingCard
@@ -231,13 +241,13 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
         <div className="heroPanelWrap">
           <p className="heroCoverageLine" tabIndex={0}>
             {detectedFilmsCount}/{targetFilmsCount} films analysés, {formatPercent(hero.metadata_coverage)}{" "}
-            couverts par l&apos;analyse
+            couverts par l&apos;algorithme
             <span className="heroCoverageTooltip" role="tooltip">
               Fiabilité&nbsp;: {ratingCard?.confidence_label ?? "—"}
             </span>
           </p>
           <aside className="heroPanel" aria-label="Profile coverage">
-            <SeverityGauge card={ratingCard} />
+            <SeverityGauge card={ratingCard} fallbackAverage={averageRating} />
           </aside>
         </div>
       </section>
@@ -261,26 +271,15 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
         copy={recommendations_copy}
       />
 
-      <section className="highlightsSection" aria-label="Highlights">
+      <section className="highlightsSection" aria-label="Le Carrousel">
         <div className="sectionHeading">
-          <p className="eyebrow">{highlights_copy?.eyebrow ?? "HIGHLIGHTS"}</p>
-          <h2>{highlights_copy?.title ?? "Toi, en 6 films clés et 1 réal"}</h2>
+          <h2>{highlights_copy?.title ?? "Le Carrousel"}</h2>
+          <p>Toi, en 6 films clés et 1 réal</p>
         </div>
         <HighlightsCarousel highlights={highlights} copy={highlights_copy} />
       </section>
 
-      <section className="cardsSection" aria-label={cards_section?.title ?? "Summary"}>
-        <div className="sectionHeading">
-          <p className="eyebrow">{cards_section?.eyebrow ?? "SUMMARY"}</p>
-          <h2>{cards_section?.title ?? "At a glance…"}</h2>
-        </div>
-        <div className="cardsGrid">
-          <LogTimeMini logTimeProfile={log_time_profile} />
-          <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} />
-        </div>
-      </section>
-
-      <HallOfFameCTA username={hero.username} />
+      <Fixettes data={fixettes} />
 
       <footer className="siteFooter" aria-label="Informations sur Fifty">
         <p>
@@ -288,11 +287,12 @@ export default function ProfileView({ profile, badges = [] }: { profile: Display
           l&apos;utilisateur sur Letterboxd
         </p>
         <p>
-          Made by{" "}
+          Trifouillé par{" "}
           <a href="https://letterboxd.com/tanguytare/" target="_blank" rel="noreferrer">
             Tanguytare
           </a>{" "}
-          · Projet indépendant, non affilié à Letterboxd · <Link href={feedbackHref}>Donner mon avis</Link>
+          · Projet indépendant, non affilié à Letterboxd · <Link href={feedbackHref}>Donner mon avis</Link> ·{" "}
+          <Link href="/mentions-legales">Mentions légales</Link> · <Link href="/confidentialite">Confidentialité</Link>
         </p>
       </footer>
     </main>

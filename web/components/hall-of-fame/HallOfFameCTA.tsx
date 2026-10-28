@@ -1,80 +1,71 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import type { OptInStatus } from "../../lib/hallOfFame";
 
-type OptStatus = "loading" | "unavailable" | "undecided" | "in" | "out";
-
-function currentMonth(): string {
-  const now = new Date();
-  return `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, "0")}`;
-}
-
-function monthLabel(month: string): string {
-  const [year, monthIndex] = month.split("-").map(Number);
-  if (!year || !monthIndex) return month;
-  const date = new Date(Date.UTC(year, monthIndex - 1, 1));
-  return new Intl.DateTimeFormat("fr-FR", { month: "long", year: "numeric", timeZone: "UTC" }).format(date);
-}
-
-export default function HallOfFameCTA({ username }: { username: string }) {
-  const month = currentMonth();
-  const [status, setStatus] = useState<OptStatus>("loading");
+// Choix de participer au Hall of Fame, déplacé du bas du wrapped vers l'onglet Hall of Fame
+// (maquette du 26/10/2026) : carte centrée tant que rien n'est décidé, puis une petite ligne
+// en haut à droite pour changer d'avis. Après un choix, la page est recalculée côté serveur
+// (pseudos dévoilés ou masqués).
+export default function HallOfFameCTA({
+  username,
+  wrappedPseudo = username,
+  month,
+  status,
+}: {
+  username: string | null;
+  // Pseudo du lien « Mon wrapped » (cookie fifty_pseudo) : sert même quand le cookie signé manque,
+  // car c'est en rechargeant le profil que le navigateur obtient ce cookie.
+  wrappedPseudo?: string | null;
+  month: string;
+  status: OptInStatus;
+}) {
+  const router = useRouter();
   const [pending, setPending] = useState(false);
-
-  useEffect(() => {
-    let cancelled = false;
-    fetch(`/api/hall-of-fame/opt-in?username=${encodeURIComponent(username)}&month=${encodeURIComponent(month)}`)
-      .then((response) => (response.ok ? response.json() : null))
-      .then((data) => {
-        if (cancelled) return;
-        if (!data || !data.exists) {
-          setStatus("unavailable");
-        } else if (data.optedIn === true) {
-          setStatus("in");
-        } else if (data.optedIn === false) {
-          setStatus("out");
-        } else {
-          setStatus("undecided");
-        }
-      })
-      .catch(() => {
-        if (!cancelled) setStatus("unavailable");
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [username, month]);
+  const [error, setError] = useState(false);
 
   async function choose(optedIn: boolean) {
+    if (!username) return;
     setPending(true);
+    setError(false);
     try {
       const response = await fetch("/api/hall-of-fame/opt-in", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, month, optedIn }),
       });
-      if (response.ok) {
-        setStatus(optedIn ? "in" : "out");
-      }
+      if (!response.ok) throw new Error(String(response.status));
+      router.refresh();
+    } catch {
+      setError(true);
     } finally {
       setPending(false);
     }
   }
 
-  if (status === "loading" || status === "unavailable") {
-    return null;
+  if (status === "in" || status === "out") {
+    return (
+      <p className="hofChoiceLine">
+        {status === "in" ? "Tu figures dans la saison · " : "Tu n’y figures pas ce mois-ci · "}
+        <button type="button" onClick={() => choose(status !== "in")} disabled={pending}>
+          {status === "in" ? "Me retirer" : "Je veux ma place"}
+        </button>
+        {error ? <span className="hofChoiceError"> Ça n’a pas marché, réessaie.</span> : null}
+      </p>
+    );
   }
 
   return (
-    <section className="hofCtaSection" aria-label="Hall of Fame">
+    <section className="hofCtaSection" aria-label="Rejoindre le Hall of Fame">
       <div className="hofCtaCard">
-        <p className="hofEyebrow">Saison en cours · {monthLabel(month)}</p>
         {status === "undecided" ? (
           <>
             <h2 className="hofCtaTitle">Ta place dans le Hall of Fame du mois&nbsp;?</h2>
             <p className="hofLede">
-              On fige ton profil du mois et on le compare aux autres cinéphiles. Aucun compte, aucun engagement — tu
-              peux revenir sur ton choix.
+              On fige ton profil mensuel et on le compare aux autres cinéphiles. Pas besoin de compte, pas
+              d&apos;engagement : tu peux revenir sur ton choix.
             </p>
             <div className="hofCtaActions">
               <button type="button" className="hofBtn hofBtnPrimary" onClick={() => choose(true)} disabled={pending}>
@@ -84,28 +75,16 @@ export default function HallOfFameCTA({ username }: { username: string }) {
                 Je passe mon tour
               </button>
             </div>
-          </>
-        ) : status === "in" ? (
-          <>
-            <h2 className="hofCtaTitle">Tu es dans le Hall of Fame du mois.</h2>
-            <p className="hofLede">Ton profil de ce mois-ci est figé et comparé aux autres cinéphiles.</p>
-            <div className="hofCtaActions">
-              <a className="hofBtn hofBtnPrimary" href="/hall-of-fame">
-                Voir le Hall of Fame
-              </a>
-              <button type="button" className="hofBtn hofBtnGhost" onClick={() => choose(false)} disabled={pending}>
-                Je change d’avis
-              </button>
-            </div>
+            {error ? <p className="hofChoiceError">Ça n’a pas marché, réessaie.</p> : null}
           </>
         ) : (
           <>
-            <h2 className="hofCtaTitle">Tu as passé ton tour ce mois-ci.</h2>
-            <p className="hofLede">Ton profil n’apparaît pas dans le Hall of Fame du mois. Tu peux revenir dessus.</p>
+            <h2 className="hofCtaTitle">Ta place dans le Hall of Fame du mois&nbsp;?</h2>
+            <p className="hofLede">Génère ton wrapped de ce mois-ci pour pouvoir rejoindre la saison.</p>
             <div className="hofCtaActions">
-              <button type="button" className="hofBtn hofBtnPrimary" onClick={() => choose(true)} disabled={pending}>
-                Finalement, je veux ma place
-              </button>
+              <Link className="hofBtn hofBtnPrimary" href={wrappedPseudo ? `/profile/${encodeURIComponent(wrappedPseudo)}` : "/"}>
+                Mon wrapped
+              </Link>
             </div>
           </>
         )}

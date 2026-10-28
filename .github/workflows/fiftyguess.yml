@@ -1,8 +1,9 @@
 name: Programme Fiftyguess
 
-# Tire les films des mois à venir, trouve leur affiche sans texte sur TMDB et les écrit dans
-# game_round (scripts/game_program.py). Le 15 de chaque mois : les deux mois suivants. Relançable :
-# une date déjà programmée n'est jamais modifiée. Bouton « Run workflow » pour des mois précis.
+# Propose les affiches des mois à venir (scripts/game_program.py) : vivier TMDB classé par
+# Wikipédia en français, films écrits « proposés » et validés par Tanguy dans les coulisses.
+# Le 15 de chaque mois : le mois qui commence dans trois mois. Relançable : seules les cases vides
+# sont remplies. « Run workflow » : mois précis, et case « essai » pour voir sans rien écrire.
 on:
   schedule:
     - cron: '40 2 15 * *'
@@ -12,9 +13,19 @@ on:
         description: 'Mois à programmer, séparés par des espaces (AAAA-MM) ; vide = les deux mois suivants'
         required: false
         default: ''
+      essai:
+        description: 'Essai : afficher le programme dans le résumé sans rien écrire'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
+
+# Un lancement à la fois : deux tirages en parallèle se disputaient les mêmes cases. Un lancement en
+# attente remplace le précédent en attente ; il passe donc après le dernier « Remplacer ».
+concurrency:
+  group: fiftyguess
+  cancel-in-progress: false
 
 jobs:
   program:
@@ -33,4 +44,5 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           MONTHS: ${{ github.event.inputs.months }}
-        run: python scripts/game_program.py $MONTHS
+          ESSAI: ${{ github.event.inputs.essai == 'true' && '--essai' || '' }}
+        run: python scripts/game_program.py $ESSAI $MONTHS

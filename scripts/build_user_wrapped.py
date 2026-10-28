@@ -22,6 +22,8 @@ ALIASES_JSON = BASE_DIR / "data" / "processed" / "slug_aliases.json"
 OUTPUT_DIR = BASE_DIR / "data" / "output"
 SUPPLEMENTAL_JSON = BASE_DIR / "data" / "processed" / "supplemental_metadata.json"
 SUPPLEMENTAL_OVERRIDES_JSON = BASE_DIR / "data" / "processed" / "supplemental_overrides.json"
+# Extension de la Megabank : moyennes Letterboxd relevées à la main, gardées à part pour survivre à une régénération de megabank_clean.
+MEGABANK_RELEVES_JSON = BASE_DIR / "data" / "processed" / "megabank_releves.json"
 TMDB_DETAILS_CACHE_JSON = BASE_DIR / "data" / "cache" / "tmdb_details_cache.json"
 
 # --- Rate limiting Letterboxd (architecture-v1-dynamique.md §4, runbook phase 6) ---
@@ -140,7 +142,16 @@ def _wait_for_letterboxd_slot() -> None:
     LETTERBOXD_RATE_LIMIT_STATE_FILE.write_text(str(time.time()), encoding="utf-8")
 
 
+# L'étape 1 enregistre le flux brut, l'étape 4 le relit au lieu de le retélécharger :
+# moitié moins de requêtes vers Letterboxd (audit du 26/10/2026, #8).
+RSS_CACHE_MAX_AGE_SECONDS = 10 * 60
+
+
 def fetch_rss(username: str) -> feedparser.FeedParserDict:
+    cache_file = OUTPUT_DIR / f"{username}_rss.xml"
+    if cache_file.exists() and time.time() - cache_file.stat().st_mtime < RSS_CACHE_MAX_AGE_SECONDS:
+        return feedparser.parse(cache_file.read_text(encoding="utf-8"))
+
     url = f"https://letterboxd.com/{username}/rss/"
     last_error = "raison inconnue"
 
@@ -152,6 +163,10 @@ def fetch_rss(username: str) -> feedparser.FeedParserDict:
             last_error = f"erreur réseau : {exc}"
         else:
             if resp.status_code == 200:
+                OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+                tmp_file = cache_file.with_suffix(".tmp")  # écrit puis renommé : jamais un flux à moitié écrit
+                tmp_file.write_text(resp.text, encoding="utf-8")
+                tmp_file.replace(cache_file)
                 return feedparser.parse(resp.text)
             if resp.status_code not in LETTERBOXD_RETRYABLE_STATUS_CODES:
                 # Définitif (404, 403, 410...) : pas de retry, on classe tout de suite.
@@ -639,6 +654,7 @@ def build_user_profile(username: str) -> Dict:
     aliases = load_aliases()
     supplemental = load_supplemental_metadata()
     supplemental_overrides = load_supplemental_overrides()
+    releves = json.loads(MEGABANK_RELEVES_JSON.read_text(encoding="utf-8")) if MEGABANK_RELEVES_JSON.exists() else {}
     tmdb_review_candidates = load_tmdb_review_candidates(username)
     tmdb_details_cache = load_tmdb_details_cache()
 
@@ -913,6 +929,13 @@ def build_user_profile(username: str) -> Dict:
             ]
         else:
             normalized_directors = []
+        releve = releves.get(slug) or releves.get(lookup_slug)
+        if releve and safe_float(entry.get("average_rating")) is None:
+            entry["average_rating"] = releve["average_rating"]
+            entry["total_ratings"] = releve.get("total_ratings")
+            entry["average_rating_source"] = "releve_manuel"
+            community_ratings.append(releve["average_rating"])
+
         entry["directors"] = normalized_directors
         entry["director"] = normalized_directors[0] if normalized_directors else None
         if entry["director"] and not entry.get("director_source"):

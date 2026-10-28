@@ -1,6 +1,4 @@
-requests
-python-dotenv
-feedparser
-pandas
-openpyxl
-psycopg[binary]
+requests==2.34.2
+python-dotenv==1.2.4
+feedparser==6.0.14
+psycopg[binary]==3.3.6

@@ -11,15 +11,11 @@ import { useEffect, useState } from "react";
 // (superposition plein écran ici, l'accueil n'ayant pas de second écran à
 // faire défiler comme la page de démonstration de la maquette).
 //
-// Police chargée ici, scopée au composant via une variable CSS sur le
-// wrapper — aucun impact sur le reste du site tant qu'aucune autre classe
-// ne la référence. Fraunces (--fd dans la maquette) n'est jamais utilisée
-// dans les blocs 1/2 : .sheet h3 y est en Caveat (--fh), pas en Fraunces —
-// inutile de la charger.
-// Caveat via next/font/google fait échouer le build (Next 14.2.5 : Google sert désormais une URL de police sans extension, le chargeur plante). Police manuscrite du système en attendant d'auto-héberger Caveat.
-const noteFontStyle = { "--note-font-hand": "'Segoe Script', 'Bradley Hand', 'Comic Sans MS'" } as React.CSSProperties;
+// Papier de brouillon froissé, scotché et perforé (retours du 27/10/2026) : mêmes matière et
+// police (Caveat, var(--font-hand)) pour le papier épinglé et la feuille dépliée.
 
-export default function UpdateNote() {
+// `row` : même note, ouverte depuis une ligne de la page Divers au lieu du papier épinglé de l'accueil.
+export default function UpdateNote({ variant = "paper" }: { variant?: "paper" | "row" }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -32,27 +28,38 @@ export default function UpdateNote() {
   }, [open]);
 
   return (
-    <div style={noteFontStyle}>
-      <div
-        className="updateNote"
-        role="button"
-        tabIndex={0}
-        onClick={() => setOpen(true)}
-        onKeyDown={(event) => {
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            setOpen(true);
-          }
-        }}
-      >
-        <b>Note de màj</b>
-        ce qui a changé depuis la première version
-        <small>Cliquer</small>
-      </div>
+    <div>
+      {variant === "row" ? (
+        <button type="button" className="diversRow" onClick={() => setOpen(true)}>
+          <span className="diversRowText">
+            <span className="diversRowTitle">Note de mise à jour</span>
+            <span className="diversRowSub">Ce qui a changé dans Fifty</span>
+          </span>
+          <span className="diversRowChevron" aria-hidden="true">›</span>
+        </button>
+      ) : (
+        <div
+          className="updateNote"
+          role="button"
+          tabIndex={0}
+          onClick={() => setOpen(true)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              setOpen(true);
+            }
+          }}
+        >
+          <span className="updateNotePaper" aria-hidden="true" />
+          <b>Note de mise à jour</b>
+          <small>Lire</small>
+        </div>
+      )}
 
       {open ? (
         <div className="updateNoteOverlay" onClick={() => setOpen(false)}>
           <div className="updateNoteSheet" onClick={(event) => event.stopPropagation()}>
+            <div className="updateNotePage">
             <button type="button" className="updateNoteClose" onClick={() => setOpen(false)} aria-label="Fermer">
               ×
             </button>
@@ -156,6 +163,7 @@ export default function UpdateNote() {
               face à mon insistance pour avoir vos avis, vous trouverez épinglée à votre profil une façon de
               symboliser ma gratitude :)
             </p>
+            </div>
           </div>
         </div>
       ) : null}

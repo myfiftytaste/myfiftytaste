@@ -3,6 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useState } from "react";
+import { countryFr, genreFr } from "../lib/labelsFr";
 
 type Recommendation = {
   slot: "safe_pick" | "deep_cut" | "wild_card" | string;
@@ -65,12 +66,11 @@ export default function Recommendations({
   unavailableReason?: string | null;
   copy?: RecommendationsCopy;
 }) {
-  const eyebrow = copy?.eyebrow ?? "RECOMMANDATIONS";
-  const title = copy?.title ?? "Trois recos pour la suite, à voir ou revoir";
+  const title = copy?.title ?? "Les Recos";
   const subtitle =
     copy?.subtitle_template?.replace("{detected_films_count}", String(detectedFilmsCount)) ??
-    `Des recommandations calculées à partir de tes ${detectedFilmsCount} films détectés, sans IA.`;
-  const unavailableText = copy?.unavailable_text ?? "Recommandations indisponibles pour ce profil.";
+    `Des recommandations calculées à partir de tes ${detectedFilmsCount} films détectés. Et tout ça sans IA !`;
+  const unavailableText = copy?.unavailable_text ?? "On ne trouve pas de recommandations pour ce profil.";
   const slotLabels = copy?.slot_labels ?? {};
   const slotDescriptions = copy?.slot_descriptions ?? {};
   const [flipped, setFlipped] = useState<string[]>([]);
@@ -82,7 +82,6 @@ export default function Recommendations({
     return (
       <section className="recommendations-section" aria-label={title}>
         <div className="sectionHeading">
-          <p className="eyebrow">{eyebrow}</p>
           <h2>{title}</h2>
           <p>{unavailableText}</p>
         </div>
@@ -96,7 +95,6 @@ export default function Recommendations({
   return (
     <section className="recommendations-section" aria-label={title}>
       <div className="sectionHeading">
-        <p className="eyebrow">{eyebrow}</p>
         <h2>{title}</h2>
         <p>{subtitle}</p>
       </div>
@@ -105,7 +103,7 @@ export default function Recommendations({
         {recommendations.map((recommendation) => {
           const isFlipped = flipped.includes(recommendation.slot);
           const slotLabel = slotLabels[recommendation.slot] ?? recommendation.slot;
-          const meta = [metaList(recommendation.genres, 2), metaList(recommendation.countries, 1)].filter(Boolean).join(" · ");
+          const meta = [metaList(recommendation.genres?.map(genreFr), 2), metaList(recommendation.countries?.map((name) => countryFr(name)), 1)].filter(Boolean).join(" · ");
           const front = (
             <>
               <Poster recommendation={recommendation} />

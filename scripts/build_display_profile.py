@@ -814,7 +814,8 @@ def rating_card_copy(diff: Any, card_config: dict[str, Any]) -> tuple[str, str]:
         titles.get(variant) or "Notation",
         template(
             templates.get(variant),
-            {"abs_rating_gap": f"{absolute:.2f}".replace(".", ",")},
+            # Pluriel à partir de 2 en français : « 1,5 étoile », « 2,3 étoiles ».
+            {"abs_rating_gap": f"{absolute:.1f}".replace(".", ",") + (" étoiles" if round(absolute, 1) >= 2 else " étoile")},
             f"{absolute:.2f} stars from the crowd.",
         ),
     )
@@ -960,6 +961,11 @@ def build_cards(metrics: dict[str, Any], config: dict[str, Any]) -> list[dict[st
             "description": rating_card_description,
             "confidence": confidence_for_count(rating.get("paired_count"), 25),
             "data_source": comparable_rating_source,
+            # Les deux billes de la jauge : moyennes sur les mêmes films comparables que l'écart.
+            "user_average": number(rating.get("paired_user_average_rating"), 2),
+            "community_average": number(rating.get("paired_community_average_rating"), 2),
+            "compared_count": rating.get("paired_count"),
+            "rated_count": rating.get("rated_count"),
         },
         "niche_profile": {
             "id": "niche_profile",

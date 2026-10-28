@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getBadgesForUser } from "../../../../lib/badges";
+import { getRuntimeStats } from "../../../../lib/fiftyStats";
+import { getProfileColor } from "../../../../lib/profileColor";
 import { getPool, normalizeUsername, USERNAME_PATTERN } from "../../../../lib/db";
 
 // GET /api/profile/{username} — architecture-v1-dynamique.md section 3.
@@ -41,7 +43,11 @@ export async function GET(_request: NextRequest, { params }: { params: { usernam
     return NextResponse.json({ error: "Profil jamais généré." }, { status: 404 });
   }
 
-  const badges = await getBadgesForUser(username);
+  const [badges, runtimeStats, avatarColor] = await Promise.all([
+    getBadgesForUser(username),
+    getRuntimeStats(),
+    getProfileColor(username),
+  ]);
 
   // display_profile / recommendations renvoyés tels quels, sans transformation.
   return NextResponse.json({
@@ -51,5 +57,7 @@ export async function GET(_request: NextRequest, { params }: { params: { usernam
     recommendations: row.recommendations,
     generated_at: row.generated_at,
     badges,
+    avatar_color: avatarColor,
+    fifty_stats: { runtime: runtimeStats },
   });
 }
