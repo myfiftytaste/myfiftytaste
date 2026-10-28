@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import DebugScroll from "../components/DebugScroll";
 import NavBar from "../components/NavBar";
 import { AMBIANCE_BOOT_SCRIPT, AMBIANCES_OPEN } from "../lib/ambiance";
 import VisualThemeProvider from "../components/VisualThemeProvider";
@@ -51,7 +50,6 @@ export default function RootLayout({
           {children}
           <NavBar />
         </VisualThemeProvider>
-        <DebugScroll />
       </body>
     </html>
   );
