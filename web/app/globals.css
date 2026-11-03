@@ -682,20 +682,22 @@ a {
   font-size: 12px;
 }
 
+.noteDoodle .tiny {
+  font-size: 10px;
+}
+
 .noteDoodle .redText {
   font-size: 14px;
   fill: var(--note-red);
 }
 
-.noteCircled,
-.noteUnderlined {
+.noteCircled {
   position: relative;
   display: inline-block;
   white-space: nowrap;
 }
 
-.noteCircled svg,
-.noteUnderlined svg {
+.noteCircled svg {
   position: absolute;
   pointer-events: none;
   overflow: visible;
@@ -703,21 +705,12 @@ a {
 }
 
 .noteCircled svg {
-  inset: -9px -12px -7px -10px;
-  width: calc(100% + 22px);
-  height: calc(100% + 16px);
+  inset: -10px -14px -8px -16px;
+  width: calc(100% + 30px);
+  height: calc(100% + 18px);
 }
 
-.noteUnderlined svg {
-  left: -2px;
-  right: -2px;
-  bottom: -5px;
-  width: calc(100% + 4px);
-  height: 8px;
-}
-
-.noteCircled path,
-.noteUnderlined path {
+.noteCircled path {
   fill: none;
   stroke: var(--note-red);
   stroke-width: 1.8;

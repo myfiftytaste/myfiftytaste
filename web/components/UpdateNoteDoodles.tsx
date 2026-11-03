@@ -41,18 +41,6 @@ export function Circled({ children }: { children: ReactNode }) {
   );
 }
 
-/** Mot souligné d'un trait qui part un peu de travers. */
-export function Underlined({ children }: { children: ReactNode }) {
-  return (
-    <span className="noteUnderlined">
-      {children}
-      <svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M2 6 C 30 3, 60 8, 98 4" />
-      </svg>
-    </span>
-  );
-}
-
 export function DoodleTabBar() {
   return (
     <Doodle viewBox="0 0 240 92" side="center" tilt={-1.5}>
@@ -60,73 +48,13 @@ export function DoodleTabBar() {
       {[56, 100, 144, 188].map((x) => (
         <path key={x} className="ink thin" d={`M${x} 40 L${x + 1} 66`} />
       ))}
-      <text className="hand small" x="33" y="58" textAnchor="middle">Wrapped</text>
+      <text className="hand tiny" x="33" y="57" textAnchor="middle">Wrapped</text>
       <text className="hand small" x="78" y="58" textAnchor="middle">Liste</text>
       <text className="hand small" x="122" y="58" textAnchor="middle">Hall</text>
-      <text className="hand small" x="166" y="58" textAnchor="middle">Jeu</text>
+      <text className="hand tiny" x="166" y="57" textAnchor="middle">FiftyGuess</text>
       <text className="hand small" x="209" y="58" textAnchor="middle">···</text>
       <path className="red" d="M196 6 C 214 8, 222 18, 214 30 M206 24 L214 31 L220 22" />
       <text className="hand redText" x="190" y="12" textAnchor="end">toujours en bas de l&apos;écran</text>
-    </Doodle>
-  );
-}
-
-export function DoodleGauge() {
-  return (
-    <Doodle viewBox="0 0 220 110" tilt={1.5}>
-      <path className="ink" d="M12 62 C 70 61, 150 63, 208 62" />
-      {[12, 61, 110, 159, 208].map((x, i) => (
-        <g key={x}>
-          <path className="ink thin" d={`M${x} 57 L${x} 67`} />
-          <text className="hand small" x={x} y="82" textAnchor="middle">{i + 1}</text>
-        </g>
-      ))}
-      <circle className="ink gold" cx="132" cy="62" r="8" />
-      <circle className="ink" cx="152" cy="62" r="8" />
-      <path className="red" d="M132 44 C 133 38, 151 38, 152 44" />
-      <text className="hand redText" x="142" y="30" textAnchor="middle">l&apos;écart = ton verdict</text>
-      <text className="hand small" x="120" y="104" textAnchor="end">toi</text>
-      <path className="ink thin" d="M122 100 C 128 94, 130 82, 131 73" />
-      <text className="hand small" x="164" y="104">Letterboxd</text>
-      <path className="ink thin" d="M164 98 C 157 92, 154 82, 153 73" />
-    </Doodle>
-  );
-}
-
-export function DoodleMiddleFilm() {
-  const heights = [14, 20, 26, 34, 44, 58, 74];
-  return (
-    <Doodle viewBox="0 0 230 128" side="left" tilt={-2}>
-      {heights.map((h, i) => (
-        <rect key={i} className="ink" x={14 + i * 28} y={96 - h} width="18" height={h} rx="2" />
-      ))}
-      <ellipse className="red" cx="107" cy="77" rx="20" ry="32" />
-      <path className="ink thin" d="M10 104 C 80 106, 150 103, 220 105 M210 100 L220 105 L210 110" />
-      <text className="hand small" x="14" y="122">peu vu</text>
-      <text className="hand small" x="216" y="122" textAnchor="end">très vu</text>
-      <text className="hand redText" x="107" y="16" textAnchor="middle">le film du milieu</text>
-      <text className="hand redText" x="107" y="32" textAnchor="middle">= ton score</text>
-    </Doodle>
-  );
-}
-
-export function DoodleCrans() {
-  const shares = [10, 20, 40, 20, 10];
-  return (
-    <Doodle viewBox="0 -14 200 134" tilt={1}>
-      <path className="ink thin" d="M12 96 C 70 97, 130 95, 190 96" />
-      {shares.map((share, i) => {
-        const h = share * 1.7;
-        const x = 22 + i * 34;
-        return (
-          <g key={i}>
-            <path className={i === 2 ? "ink gold" : "ink"} d={`M${x} 96 L${x + 1} ${96 - h} L${x + 24} ${95 - h} L${x + 24} 96`} />
-            <text className="hand small" x={x + 12} y={92 - h} textAnchor="middle">{share} %</text>
-            <text className="hand small" x={x + 12} y="112" textAnchor="middle">{i + 1}</text>
-          </g>
-        );
-      })}
-      <text className="hand redText" x="100" y="-2" textAnchor="middle">la plupart au milieu</text>
     </Doodle>
   );
 }
@@ -182,6 +110,21 @@ export function DoodleLaurel() {
         );
       })}
       <text className="hand redText" x="75" y="16" textAnchor="middle">le 1er du mois</text>
+    </Doodle>
+  );
+}
+
+export function DoodleBug() {
+  // Un bug (le scroll), barré au feutre rouge.
+  return (
+    <Doodle viewBox="0 0 150 128" tilt={2}>
+      <ellipse className="ink" cx="75" cy="60" rx="22" ry="28" />
+      <path className="ink thin" d="M75 34 L75 88 M58 50 C 66 54, 84 54, 92 50" />
+      <circle className="ink" cx="75" cy="28" r="9" />
+      <path className="ink thin" d="M70 20 C 66 12, 60 10, 56 12 M80 20 C 84 12, 90 10, 94 12" />
+      <path className="ink thin" d="M54 52 L40 46 M53 64 L38 66 M56 76 L44 86 M96 52 L110 46 M97 64 L112 66 M94 76 L106 86" />
+      <path className="red" d="M34 22 C 70 54, 96 78, 120 100 M120 20 C 92 46, 62 74, 32 98" />
+      <text className="hand redText" x="75" y="122" textAnchor="middle">corrigé !</text>
     </Doodle>
   );
 }
