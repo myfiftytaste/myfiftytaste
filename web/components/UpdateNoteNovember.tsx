@@ -4,7 +4,6 @@ import {
   DoodleGuess,
   DoodlePendulum,
   DoodlePodium,
-  DoodleSoon,
   DoodleTabBar,
   DoodleThanks,
 } from "./UpdateNoteDoodles";
@@ -90,7 +89,6 @@ export default function UpdateNoteNovember() {
         (onglet Divers, «&nbsp;Donner mon avis&nbsp;»). Ce même menu recense désormais les mentions légales et la
         politique de confidentialité (sans traceur tiers).
       </p>
-      <DoodleSoon />
       <p>
         J&apos;ai hâte de ce qui est à venir&nbsp;! Merci de m&apos;avoir donné votre avis, beaucoup des choses changées
         le sont grâce à vous. Les Préférences arrivent, et avec elles la possibilité de choisir votre ambiance, votre

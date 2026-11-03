@@ -62,7 +62,7 @@ export function DoodleTabBar() {
 export function DoodleGuess() {
   // L'affiche cachée (un « ? »), un cercle qui s'ouvre dessus, le chrono à côté.
   return (
-    <Doodle viewBox="0 0 200 150" side="left" tilt={-2.5}>
+    <Doodle viewBox="0 0 200 150" tilt={2.5}>
       <rect className="ink" x="16" y="14" width="80" height="116" rx="3" />
       <path className="ink thin" d="M22 20 L90 20 M22 124 L90 124" />
       <path className="ink" d="M44 52 C 44 34, 70 32, 72 48 C 74 60, 58 62, 57 76 M57 88 L57 91" />
@@ -148,30 +148,14 @@ export function DoodleFixettes() {
   );
 }
 
-export function DoodleSoon() {
-  // Les Préférences à venir : trois pastilles d'ambiance et un fond de film.
-  return (
-    <Doodle viewBox="0 0 190 120" tilt={2}>
-      <circle className="ink" cx="34" cy="50" r="16" style={{ fill: "rgba(240, 164, 58, 0.55)" }} />
-      <circle className="ink" cx="70" cy="44" r="16" style={{ fill: "rgba(208, 64, 79, 0.45)" }} />
-      <circle className="ink" cx="104" cy="54" r="16" style={{ fill: "rgba(230, 192, 74, 0.5)" }} />
-      <rect className="ink" x="128" y="28" width="48" height="48" rx="2" />
-      <path className="ink thin" d="M128 36 L176 36 M128 68 L176 68 M136 52 C 146 44, 156 60, 168 50" />
-      <text className="hand redText" x="95" y="100" textAnchor="middle">bientôt : ton ambiance, ton fond</text>
-      <path className="red" d="M30 108 C 80 112, 120 104, 170 108" />
-    </Doodle>
-  );
-}
-
 export function DoodleThanks() {
-  // « Merci, encore » à la main, avec un sourire dessiné.
+  // « Merci, encore » à la main, avec un sourire dessiné (deux yeux, une bouche).
   return (
     <Doodle viewBox="0 0 300 90" side="center" tilt={-2}>
       <text className="hand thanks" x="14" y="56">Merci, encore</text>
-      <circle className="ink" cx="262" cy="44" r="23" />
-      <circle className="ink" cx="254" cy="38" r="1.5" style={{ fill: "var(--note-blue)" }} />
-      <circle className="ink" cx="270" cy="38" r="1.5" style={{ fill: "var(--note-blue)" }} />
-      <path className="ink" d="M250 50 C 256 58, 268 58, 274 50" />
+      <circle className="ink" cx="232" cy="38" r="1.5" style={{ fill: "var(--note-blue)" }} />
+      <circle className="ink" cx="246" cy="38" r="1.5" style={{ fill: "var(--note-blue)" }} />
+      <path className="ink" d="M226 48 C 232 57, 246 57, 252 48" />
       <path className="red" d="M16 70 C 80 66, 150 74, 214 68" />
     </Doodle>
   );
