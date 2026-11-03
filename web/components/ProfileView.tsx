@@ -274,7 +274,8 @@ export default function ProfileView({
       <section className="highlightsSection" aria-label="Le Carrousel">
         <div className="sectionHeading">
           <h2>{highlights_copy?.title ?? "Le Carrousel"}</h2>
-          <p>Toi, en 6 films clés et 1 réal</p>
+          {/* Le cinéaste quitte le carrousel quand Les Fixettes l'affichent (PR #53). */}
+          <p>{fixettes ? "Toi, en 6 films clés" : "Toi, en 6 films clés et 1 réal"}</p>
         </div>
         <HighlightsCarousel highlights={highlights} copy={highlights_copy} withDirector={!fixettes} />
       </section>

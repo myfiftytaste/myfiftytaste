@@ -587,6 +587,154 @@ a {
   margin-top: 22px;
 }
 
+/* Onglets des notes (03/11/2026) : la plus récente d'abord, les anciennes restent lisibles. */
+.updateNoteTabs {
+  display: flex;
+  gap: 18px;
+  margin: 2px 0 8px;
+}
+
+.updateNoteTab {
+  padding: 0 0 2px;
+  border: 0;
+  border-bottom: 1.5px solid transparent;
+  background: none;
+  color: rgba(46, 42, 34, 0.5);
+  font-family: var(--font-hand), cursive;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.updateNoteTab[aria-selected="true"] {
+  color: var(--note-ink);
+  border-bottom-color: var(--note-red);
+}
+
+/* Croquis au stylo (UpdateNoteDoodles.tsx) : encre bleue de stylo bille, rouge de correction. */
+.updateNoteOverlay {
+  --note-blue: #2b4a93;
+  --note-red: #c2412f;
+}
+
+.noteDoodle {
+  display: block;
+  width: 210px;
+  max-width: 46%;
+  height: auto;
+  margin: 2px 0 12px;
+  overflow: visible;
+  filter: url(#noteRough);
+}
+
+.noteDoodle-right {
+  float: right;
+  margin-left: 16px;
+}
+
+.noteDoodle-left {
+  float: left;
+  margin-right: 16px;
+}
+
+.noteDoodle-center {
+  width: 290px;
+  max-width: 100%;
+  margin: 4px auto 18px;
+}
+
+.updateNoteSheet h4 {
+  clear: both;
+}
+
+.noteDoodle .ink,
+.noteDoodle .red {
+  fill: none;
+  stroke: var(--note-blue);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.noteDoodle .thin {
+  stroke-width: 1.2;
+}
+
+.noteDoodle .red {
+  stroke: var(--note-red);
+  stroke-width: 1.7;
+}
+
+.noteDoodle .dashed {
+  stroke-dasharray: 4 5;
+}
+
+.noteDoodle .gold {
+  fill: rgba(232, 168, 58, 0.55);
+}
+
+.noteDoodle text {
+  font-family: var(--font-hand), cursive;
+  font-size: 15px;
+  fill: var(--note-blue);
+}
+
+.noteDoodle .small {
+  font-size: 12px;
+}
+
+.noteDoodle .redText {
+  font-size: 14px;
+  fill: var(--note-red);
+}
+
+.noteCircled,
+.noteUnderlined {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.noteCircled svg,
+.noteUnderlined svg {
+  position: absolute;
+  pointer-events: none;
+  overflow: visible;
+  filter: url(#noteRough);
+}
+
+.noteCircled svg {
+  inset: -9px -12px -7px -10px;
+  width: calc(100% + 22px);
+  height: calc(100% + 16px);
+}
+
+.noteUnderlined svg {
+  left: -2px;
+  right: -2px;
+  bottom: -5px;
+  width: calc(100% + 4px);
+  height: 8px;
+}
+
+.noteCircled path,
+.noteUnderlined path {
+  fill: none;
+  stroke: var(--note-red);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+@media (max-width: 560px) {
+  .noteDoodle-right,
+  .noteDoodle-left {
+    float: none;
+    width: 230px;
+    max-width: 100%;
+    margin: 4px auto 14px;
+  }
+}
+
 @media (max-width: 760px) {
   /* Comportement responsive de la maquette : la note quitte le
      positionnement absolu (qui la ferait flotter par-dessus le champ de
@@ -2403,6 +2551,14 @@ h1 {
 .ribbonTick {
   stroke: rgba(var(--ink-rgb), 0.12);
   stroke-width: 1;
+}
+
+/* Repère de la moyenne Fifty, repris en légende (.runtimeHeroFiftyMark). */
+.ribbonAverage {
+  stroke: var(--ink);
+  stroke-width: 1.6;
+  stroke-dasharray: 3 3;
+  stroke-linecap: round;
 }
 
 .highlightsSection {
@@ -4424,6 +4580,15 @@ h1 {
   margin: -4px 0 0;
   color: var(--muted);
   font-size: 0.78rem;
+}
+
+.runtimeHeroFiftyMark {
+  display: inline-block;
+  width: 0;
+  height: 0.9em;
+  margin-right: 7px;
+  vertical-align: -0.1em;
+  border-left: 1.6px dashed var(--ink);
 }
 
 /* Le bug de scroll (page qui remonte) pointe vers l'ancrage de défilement de Chrome
