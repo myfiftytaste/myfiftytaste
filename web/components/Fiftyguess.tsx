@@ -288,7 +288,7 @@ export default function Fiftyguess() {
 
   const share =
     round?.answer && play
-      ? `Fiftyguess · semaine du ${frenchDate(round.opens_on)}\n${
+      ? `FiftyGuess · semaine du ${frenchDate(round.opens_on)}\n${
           play.outcome !== "found" ? "Pas trouvé cette fois" : compet ? `Trouvé en ${clock(play.score ?? 0)}${play.wrong ? ` (${play.wrong} erreur${play.wrong > 1 ? "s" : ""})` : " du premier coup"}` : "Trouvé en mode zen"
         }\n50films.fr/jeu`
       : "";
@@ -296,7 +296,7 @@ export default function Fiftyguess() {
   return (
     <div className="fgShell">
       <div className="fgTop">
-        <h1 className="diversTitle">Fiftyguess</h1>
+        <h1 className="diversTitle">FiftyGuess</h1>
         <div className="fgLinks">
           <button type="button" className="fgLink" aria-pressed={showRules} onClick={() => (showRules ? closeRules() : setShowRules(true))}>
             Règles

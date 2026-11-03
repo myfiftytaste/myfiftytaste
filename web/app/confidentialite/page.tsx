@@ -87,7 +87,7 @@ export default function ConfidentialitePage() {
             </tr>
             <tr>
               <td data-label="Données">
-                Fiftyguess : tes parties (pseudo, mode, temps, nombre d&apos;erreurs). En mode compétitif, ton pseudo
+                FiftyGuess : tes parties (pseudo, mode, temps, nombre d&apos;erreurs). En mode compétitif, ton pseudo
                 et ton temps apparaissent dans le classement de la semaine.
               </td>
               <td data-label="Pourquoi">Faire tourner le jeu, classement de la semaine et badges.</td>

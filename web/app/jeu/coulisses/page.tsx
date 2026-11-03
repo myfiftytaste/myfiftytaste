@@ -6,7 +6,7 @@ import BrandLockup from "../../../components/BrandLockup";
 import { getPool } from "../../../lib/db";
 import { parisToday } from "../../../lib/fiftyguess";
 
-export const metadata: Metadata = { title: "Coulisses · Fiftyguess", robots: { index: false } };
+export const metadata: Metadata = { title: "Coulisses · FiftyGuess", robots: { index: false } };
 export const dynamic = "force-dynamic";
 
 // Programme de Fiftyguess, visible seulement avec la clé FIFTYGUESS_ADMIN_KEY (variable Vercel) :
@@ -94,7 +94,7 @@ export default async function CoulissesPage({ searchParams }: { searchParams: { 
       <header className="siteHeader">
         <BrandLockup />
       </header>
-      <h1 className="diversTitle">Coulisses de Fiftyguess</h1>
+      <h1 className="diversTitle">Coulisses de FiftyGuess</h1>
       <p className="fgMuted">
         Personne d&apos;autre ne voit cette page. {pending} film{pending > 1 ? "s" : ""} à valider. « Remplacer » écarte le film pour
         toujours et relance le tirage : le remplaçant apparaît ici après quelques minutes (recharge la page).

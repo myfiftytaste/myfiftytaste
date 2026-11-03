@@ -76,6 +76,7 @@ export default function RuntimeFilmstrip({
   const baseRef = useRef<SVGPathElement>(null);
   const fillRef = useRef<SVGPathElement>(null);
   const tickRefs = useRef<(SVGLineElement | null)[]>([]);
+  const averageRef = useRef<SVGLineElement>(null);
   const topHoleRefs = useRef<(SVGCircleElement | null)[]>([]);
   const bottomHoleRefs = useRef<(SVGCircleElement | null)[]>([]);
 
@@ -87,13 +88,25 @@ export default function RuntimeFilmstrip({
         : 0,
     [hasData, averageMinutes, low, high],
   );
+  // Repère de la moyenne Fifty sur la pellicule (03/11/2026) : sans lui, une jauge remplie
+  // à 20 % se lisait « film court », alors qu'elle dit seulement « sous la moyenne Fifty ».
+  const averageX =
+    scale && Number.isFinite(scale.average)
+      ? W * Math.max(0, Math.min(1, (scale.average - low) / (high - low)))
+      : null;
+  // En butée basse, un liseré reste visible : une pellicule vide passait pour un bug.
+  const fillX = W * Math.max(fraction, 0.025);
 
   useEffect(() => {
     if (!hasData) return;
 
     function render(phase: number) {
       baseRef.current?.setAttribute("d", ribbonPath(phase, W));
-      fillRef.current?.setAttribute("d", ribbonPath(phase, W * fraction));
+      fillRef.current?.setAttribute("d", ribbonPath(phase, fillX));
+      if (averageX !== null && averageRef.current) {
+        averageRef.current.setAttribute("y1", String(topY(averageX, phase) - 7));
+        averageRef.current.setAttribute("y2", String(bottomY(averageX, phase) + 7));
+      }
       tickXs.forEach((x, i) => {
         const el = tickRefs.current[i];
         if (!el) return;
@@ -124,7 +137,7 @@ export default function RuntimeFilmstrip({
     }
     rafId = requestAnimationFrame(frame);
     return () => cancelAnimationFrame(rafId);
-  }, [hasData, fraction]);
+  }, [hasData, fillX, averageX]);
 
   if (!hasData || !card) {
     return (
@@ -154,7 +167,7 @@ export default function RuntimeFilmstrip({
             </linearGradient>
           </defs>
           <path ref={baseRef} className="ribbonBase" d={ribbonPath(0, W)} />
-          <path ref={fillRef} className="ribbonFill" style={{ fill: `url(#${gradId})` }} d={ribbonPath(0, W * fraction)} />
+          <path ref={fillRef} className="ribbonFill" style={{ fill: `url(#${gradId})` }} d={ribbonPath(0, fillX)} />
           {tickXs.map((x, i) => (
             <line
               key={x}
@@ -192,6 +205,18 @@ export default function RuntimeFilmstrip({
               r={1.6}
             />
           ))}
+          {averageX !== null ? (
+            <line
+              ref={averageRef}
+              className="ribbonAverage"
+              x1={averageX}
+              x2={averageX}
+              y1={topY(averageX, 0) - 7}
+              y2={bottomY(averageX, 0) + 7}
+            >
+              <title>Moyenne Fifty</title>
+            </line>
+          ) : null}
         </svg>
       </div>
       <div className="filmstripEnds">
@@ -202,7 +227,10 @@ export default function RuntimeFilmstrip({
         <>
           <p className="runtimeHeroText">La durée moyenne de tes films</p>
           {scale ? (
-            <p className="runtimeHeroFifty">(la moyenne sur Fifty est de {formatMinutes(scale.average)})</p>
+            <p className="runtimeHeroFifty">
+              <span className="runtimeHeroFiftyMark" aria-hidden="true" />
+              la moyenne sur Fifty est de {formatMinutes(scale.average)}
+            </p>
           ) : null}
         </>
       ) : (

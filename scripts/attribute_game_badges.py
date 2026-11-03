@@ -2,10 +2,10 @@
 
     python scripts/attribute_game_badges.py [AAAA-MM]   # défaut : le mois précédent
 
-- « Fiftyguess — octobre 2026 » : meilleur temps moyen en mode compétitif, parmi celles et ceux qui
+- « FiftyGuess — octobre 2026 » : meilleur temps moyen en mode compétitif, parmi celles et ceux qui
   ont joué toutes les affiches de la semaine du mois en compétitif (abandon et temps écoulé = 2:00).
   Au moins 3 joueurs qualifiés, comme pour le Hall of Fame. Égalité : badge pour chacun.
-- « Série Fiftyguess — octobre 2026 » : 4 affiches de la semaine d'affilée (compétitif ou zen), série
+- « Série FiftyGuess — octobre 2026 » : 4 affiches de la semaine d'affilée (compétitif ou zen), série
   terminée dans le mois.
 Relançable : l'index unique (pseudo, mois, catégorie) empêche les doublons.
 """
@@ -47,7 +47,7 @@ def attribute(month: str) -> None:
         if len(rows) >= MIN_PLAYERS:
             for row in rows:
                 if row["average"] == rows[0]["average"]:
-                    award(conn, row["username"], f"Fiftyguess — {label}", "fiftyguess", month)
+                    award(conn, row["username"], f"FiftyGuess — {label}", "fiftyguess", month)
 
     # Séries : toutes les affiches de la semaine jusqu'à la fin du mois, dans l'ordre.
     order = [row["id"] for row in conn.execute(
@@ -61,7 +61,7 @@ def attribute(month: str) -> None:
         for round_id in order:
             run = run + 1 if round_id in rounds else 0
             if run >= STREAK and round_id in in_month:
-                award(conn, username, f"Série Fiftyguess — {label}", "fiftyguess_serie", month)
+                award(conn, username, f"Série FiftyGuess — {label}", "fiftyguess_serie", month)
                 break
     conn.close()
 
