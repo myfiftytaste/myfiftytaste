@@ -637,7 +637,7 @@ a {
 }
 
 .noteDoodle-center {
-  width: 290px;
+  width: 300px;
   max-width: 100%;
   margin: 4px auto 18px;
 }
@@ -668,6 +668,10 @@ a {
   stroke-dasharray: 4 5;
 }
 
+.noteDoodle .card {
+  fill: var(--note-paper);
+}
+
 .noteDoodle .gold {
   fill: rgba(232, 168, 58, 0.55);
 }
@@ -684,6 +688,10 @@ a {
 
 .noteDoodle .tiny {
   font-size: 10px;
+}
+
+.noteDoodle .thanks {
+  font-size: 40px;
 }
 
 .noteDoodle .redText {

@@ -1,4 +1,13 @@
-import { Circled, DoodleBug, DoodleGuess, DoodleLaurel, DoodlePendulum, DoodleTabBar } from "./UpdateNoteDoodles";
+import {
+  Circled,
+  DoodleFixettes,
+  DoodleGuess,
+  DoodlePendulum,
+  DoodlePodium,
+  DoodleSoon,
+  DoodleTabBar,
+  DoodleThanks,
+} from "./UpdateNoteDoodles";
 
 // Note de la V3 (novembre 2026), texte de Tanguy du 03/11/2026. Le détail du calibrage du
 // Triangle est renvoyé au Manifeste à venir.
@@ -38,6 +47,7 @@ export default function UpdateNoteNovember() {
           mainstreamness étaient des mesures de fait assez exigeantes. Tous les détails sur le calibrage de ces calculs
           seront donnés de façon transparente dans le Manifeste à venir, qui sera publié dans «&nbsp;Divers&nbsp;».
         </li>
+        <DoodleFixettes />
         <li>
           Les modules ont aussi fait peau neuve, tant dans leur nom que dans leur design&nbsp;! La Constellation, Le
           Passeport, Les Recos, Le Carrousel accueillent d&apos;ailleurs de nouvelles venues&nbsp;: Les Fixettes, avec la
@@ -54,7 +64,7 @@ export default function UpdateNoteNovember() {
         les filtrer par genre, par décennie de réalisation et plus encore.
       </p>
 
-      <DoodleLaurel />
+      <DoodlePodium />
       <p>
         Concernant le Hall of Fame, je vous invite vivement à aller voir la saison d&apos;octobre&nbsp;: peut-être
         êtes-vous la ou le Top Niche (ou peut-être le Top Europe…). Vous pouvez d&apos;ailleurs, depuis le menu Divers,
@@ -75,19 +85,20 @@ export default function UpdateNoteNovember() {
         y a-t-il même une surprise pour les personnes qui auront joué chaque semaine, qui sait&nbsp;?
       </p>
 
-      <DoodleBug />
       <p>
         Le bug du scroll est corrigé&nbsp;; si d&apos;autres devaient apparaître, n&apos;hésitez pas à me le signaler
         (onglet Divers, «&nbsp;Donner mon avis&nbsp;»). Ce même menu recense désormais les mentions légales et la
         politique de confidentialité (sans traceur tiers).
       </p>
+      <DoodleSoon />
       <p>
         J&apos;ai hâte de ce qui est à venir&nbsp;! Merci de m&apos;avoir donné votre avis, beaucoup des choses changées
         le sont grâce à vous. Les Préférences arrivent, et avec elles la possibilité de choisir votre ambiance, votre
         fond de film.
       </p>
 
-      <p className="updateNoteSign">Merci, encore. — Tanguytare</p>
+      <DoodleThanks />
+      <p className="updateNoteSign">— Tanguytare</p>
     </>
   );
 }

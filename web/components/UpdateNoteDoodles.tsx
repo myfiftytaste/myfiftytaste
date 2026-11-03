@@ -60,17 +60,20 @@ export function DoodleTabBar() {
 }
 
 export function DoodleGuess() {
+  // L'affiche cachée (un « ? »), un cercle qui s'ouvre dessus, le chrono à côté.
   return (
     <Doodle viewBox="0 0 200 150" side="left" tilt={-2.5}>
-      <rect className="ink" x="16" y="14" width="78" height="114" rx="3" />
-      <circle className="red dashed" cx="58" cy="64" r="9" />
-      <circle className="red dashed" cx="58" cy="64" r="22" />
-      <circle className="red dashed" cx="58" cy="64" r="38" />
-      <path className="ink thin" d="M70 64 L92 64 M86 59 L93 64 L86 69" />
-      <circle className="ink" cx="148" cy="86" r="26" />
-      <path className="ink" d="M141 56 L155 56 M148 56 L148 60 M148 86 L148 70 M148 86 L160 92" />
-      <text className="hand" x="148" y="134" textAnchor="middle">50 s</text>
-      <text className="hand small" x="148" y="30" textAnchor="middle">+1 s, +3 s, +5 s…</text>
+      <rect className="ink" x="16" y="14" width="80" height="116" rx="3" />
+      <path className="ink thin" d="M22 20 L90 20 M22 124 L90 124" />
+      <path className="ink" d="M44 52 C 44 34, 70 32, 72 48 C 74 60, 58 62, 57 76 M57 88 L57 91" />
+      <circle className="red" cx="70" cy="96" r="6" />
+      <circle className="red dashed" cx="70" cy="96" r="15" />
+      <circle className="red dashed" cx="70" cy="96" r="27" />
+      <path className="red" d="M92 112 C 104 118, 110 120, 118 116" />
+      <text className="hand redText" x="124" y="122">ça grandit…</text>
+      <circle className="ink" cx="152" cy="64" r="24" />
+      <path className="ink" d="M145 36 L159 36 M152 36 L152 40 M152 64 L152 50 M152 64 L163 70" />
+      <text className="hand" x="152" y="102" textAnchor="middle">50 s</text>
     </Doodle>
   );
 }
@@ -89,42 +92,87 @@ export function DoodlePendulum() {
   );
 }
 
-export function DoodleLaurel() {
-  // Deux branches en arc, feuilles en amande inclinées vers l'extérieur.
-  const leaves = [0, 1, 2, 3, 4];
+export function DoodlePodium() {
+  // Podium 2-1-3 ; sur la marche du milieu, la bulle du premier couronnée de laurier.
+  const cx = 90;
+  const cy = 54;
+  const r = 29;
+  const angles = [118, 146, 174, 202, 230];
+  const leaf = (deg: number, side: 1 | -1) => {
+    const rad = ((side === 1 ? deg : 180 - deg) * Math.PI) / 180;
+    const x = cx + r * Math.cos(rad);
+    const y = cy + r * Math.sin(rad);
+    const rot = (side === 1 ? deg : 180 - deg) + 90 + side * 25;
+    return <ellipse key={`${side}-${deg}`} className="ink thin" cx={x} cy={y} rx="9" ry="3.6" transform={`rotate(${rot} ${x} ${y})`} />;
+  };
   return (
-    <Doodle viewBox="0 0 150 116" side="left" tilt={-1}>
-      <circle className="ink" cx="75" cy="56" r="19" />
-      <text className="hand" x="75" y="63" textAnchor="middle">1</text>
-      <path className="ink thin" d="M70 100 C 34 96, 26 60, 42 26" />
-      <path className="ink thin" d="M80 100 C 116 96, 124 60, 108 26" />
-      {leaves.map((i) => {
-        const t = i / 4;
-        const y = 96 - t * 68;
-        const xIn = 58 - Math.sin(t * Math.PI * 0.9) * 22;
-        return (
-          <g key={i}>
-            <ellipse className="ink thin" cx={xIn - 7} cy={y - 3} rx="8" ry="3.6" transform={`rotate(${-50 + t * 30} ${xIn - 7} ${y - 3})`} />
-            <ellipse className="ink thin" cx={150 - xIn + 7} cy={y - 3} rx="8" ry="3.6" transform={`rotate(${50 - t * 30} ${150 - xIn + 7} ${y - 3})`} />
-          </g>
-        );
-      })}
-      <text className="hand redText" x="75" y="16" textAnchor="middle">le 1er du mois</text>
+    <Doodle viewBox="0 0 180 150" side="left" tilt={-1}>
+      <path className="ink" d="M18 146 L18 108 L66 108 L66 84 L114 84 L114 118 L162 118 L162 146 Z" />
+      <text className="hand" x="42" y="132" textAnchor="middle">2</text>
+      <text className="hand" x="90" y="120" textAnchor="middle">1</text>
+      <text className="hand" x="138" y="138" textAnchor="middle">3</text>
+      <circle className="ink gold" cx={cx} cy={cy} r="17" />
+      <text className="hand small" x={cx} y={cy + 4} textAnchor="middle">toi ?</text>
+      <path className="ink thin" d={`M${cx - 4} ${cy + r} A ${r} ${r} 0 0 1 ${cx - r * 0.75} ${cy - r * 0.65}`} />
+      <path className="ink thin" d={`M${cx + 4} ${cy + r} A ${r} ${r} 0 0 0 ${cx + r * 0.75} ${cy - r * 0.65}`} />
+      {angles.map((deg) => leaf(deg, 1))}
+      {angles.map((deg) => leaf(deg, -1))}
+      <text className="hand redText" x="90" y="14" textAnchor="middle">Top Niche d&apos;octobre ?</text>
     </Doodle>
   );
 }
 
-export function DoodleBug() {
-  // Un bug (le scroll), barré au feutre rouge.
+export function DoodleFixettes() {
+  // Trois affiches en éventail, la même tête sur deux d'entre elles.
+  const face = (x: number, y: number) => (
+    <g>
+      <circle className="ink thin" cx={x} cy={y} r="7" />
+      <path className="ink thin" d={`M${x - 12} ${y + 22} C ${x - 10} ${y + 9}, ${x + 10} ${y + 9}, ${x + 12} ${y + 22}`} />
+    </g>
+  );
   return (
-    <Doodle viewBox="0 0 150 128" tilt={2}>
-      <ellipse className="ink" cx="75" cy="60" rx="22" ry="28" />
-      <path className="ink thin" d="M75 34 L75 88 M58 50 C 66 54, 84 54, 92 50" />
-      <circle className="ink" cx="75" cy="28" r="9" />
-      <path className="ink thin" d="M70 20 C 66 12, 60 10, 56 12 M80 20 C 84 12, 90 10, 94 12" />
-      <path className="ink thin" d="M54 52 L40 46 M53 64 L38 66 M56 76 L44 86 M96 52 L110 46 M97 64 L112 66 M94 76 L106 86" />
-      <path className="red" d="M34 22 C 70 54, 96 78, 120 100 M120 20 C 92 46, 62 74, 32 98" />
-      <text className="hand redText" x="75" y="122" textAnchor="middle">corrigé !</text>
+    <Doodle viewBox="0 0 200 140" tilt={1.5}>
+      <g transform="rotate(-14 60 80)">
+        <rect className="ink card" x="34" y="34" width="52" height="76" rx="3" />
+        {face(60, 62)}
+      </g>
+      <g transform="rotate(14 140 80)">
+        <rect className="ink card" x="114" y="34" width="52" height="76" rx="3" />
+        {face(140, 62)}
+      </g>
+      <rect className="ink card" x="74" y="28" width="52" height="76" rx="3" />
+      <path className="ink thin" d="M84 44 L116 44 M84 52 L108 52" />
+      <path className="red" d="M52 52 C 70 4, 130 4, 146 52 M139 45 L147 53 L151 43" />
+      <text className="hand redText" x="100" y="132" textAnchor="middle">encore cette tête-là !</text>
+    </Doodle>
+  );
+}
+
+export function DoodleSoon() {
+  // Les Préférences à venir : trois pastilles d'ambiance et un fond de film.
+  return (
+    <Doodle viewBox="0 0 190 120" tilt={2}>
+      <circle className="ink" cx="34" cy="50" r="16" style={{ fill: "rgba(240, 164, 58, 0.55)" }} />
+      <circle className="ink" cx="70" cy="44" r="16" style={{ fill: "rgba(208, 64, 79, 0.45)" }} />
+      <circle className="ink" cx="104" cy="54" r="16" style={{ fill: "rgba(230, 192, 74, 0.5)" }} />
+      <rect className="ink" x="128" y="28" width="48" height="48" rx="2" />
+      <path className="ink thin" d="M128 36 L176 36 M128 68 L176 68 M136 52 C 146 44, 156 60, 168 50" />
+      <text className="hand redText" x="95" y="100" textAnchor="middle">bientôt : ton ambiance, ton fond</text>
+      <path className="red" d="M30 108 C 80 112, 120 104, 170 108" />
+    </Doodle>
+  );
+}
+
+export function DoodleThanks() {
+  // « Merci, encore » à la main, avec un sourire dessiné.
+  return (
+    <Doodle viewBox="0 0 300 90" side="center" tilt={-2}>
+      <text className="hand thanks" x="14" y="56">Merci, encore</text>
+      <circle className="ink" cx="262" cy="44" r="23" />
+      <circle className="ink" cx="254" cy="38" r="1.5" style={{ fill: "var(--note-blue)" }} />
+      <circle className="ink" cx="270" cy="38" r="1.5" style={{ fill: "var(--note-blue)" }} />
+      <path className="ink" d="M250 50 C 256 58, 268 58, 274 50" />
+      <path className="red" d="M16 70 C 80 66, 150 74, 214 68" />
     </Doodle>
   );
 }
