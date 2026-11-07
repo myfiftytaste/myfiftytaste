@@ -21,6 +21,7 @@ RULES = [
     ("feedback", "created_at < now() - interval '24 months'"),
     ("game_play", "started_at < now() - interval '24 months'"),
     ("api_rate_limit", "window_start < now() - interval '1 day'"),
+    ("link_click", "day < current_date - interval '24 months'"),  # migration 011 à passer avant
 ]
 
 

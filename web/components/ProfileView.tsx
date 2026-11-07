@@ -225,7 +225,7 @@ export default function ProfileView({
         <BrandLockup />
       </header>
 
-      <section className="headerBand" aria-label="Profil">
+      <section className="headerBand" aria-label="Profil" data-track="profil">
         <ProfileBadgesHeader username={hero.username} letterboxdUrl={letterboxdProfileUrl} badges={badges} avatarColor={avatarColor} />
         {/* Durée moyenne remontée à droite du profil (retours du 27/10/2026) : la jauge prend sa place. */}
         <RuntimeFilmstrip card={runtimeCard} averageMinutes={averageRuntimeMinutes} variant="hero" scale={runtimeStats} />
@@ -260,9 +260,13 @@ export default function ProfileView({
 
       <RadarChart radarScores={radar_scores} radarEditorial={radar_editorial} />
 
-      <GenreBubbles genreBubbles={genre_bubbles} detectedFilmsCount={detectedFilmsCount} />
+      <div data-track="constellation" style={{ display: "contents" }}>
+        <GenreBubbles genreBubbles={genre_bubbles} detectedFilmsCount={detectedFilmsCount} />
+      </div>
 
-      <WorldMap countryMap={country_map} />
+      <div data-track="passeport" style={{ display: "contents" }}>
+        <WorldMap countryMap={country_map} />
+      </div>
 
       <Recommendations
         recommendations={recommendations}
@@ -271,7 +275,7 @@ export default function ProfileView({
         copy={recommendations_copy}
       />
 
-      <section className="highlightsSection" aria-label="Le Carrousel">
+      <section className="highlightsSection" aria-label="Le Carrousel" data-track="carrousel">
         <div className="sectionHeading">
           <h2>{highlights_copy?.title ?? "Le Carrousel"}</h2>
           {/* Le cinéaste quitte le carrousel quand Les Fixettes l'affichent (PR #53). */}
@@ -280,7 +284,9 @@ export default function ProfileView({
         <HighlightsCarousel highlights={highlights} copy={highlights_copy} withDirector={!fixettes} />
       </section>
 
-      <Fixettes data={fixettes} />
+      <div data-track="fixettes" style={{ display: "contents" }}>
+        <Fixettes data={fixettes} />
+      </div>
 
       <footer className="siteFooter" aria-label="Informations sur Fifty">
         <p>
