@@ -180,8 +180,9 @@ function formatPercent(value: number): string {
 const MEDIAN_VIEWS_FROM_MONTH = "2026-11";
 
 function formatViews(value: number): string {
-  const text = value >= 1_000_000 ? `${(value / 1_000_000).toFixed(1).replace(".", ",")} M` : `${Math.round(value / 1000)} k`;
-  return `film du milieu : ${text} vues`;
+  // Espaces insécables : « 89 k vues » ne se coupe pas sous la bulle.
+  const text = value >= 1_000_000 ? `${(value / 1_000_000).toFixed(1).replace(".", ",")}\u00a0M` : `${Math.round(value / 1000)}\u00a0k`;
+  return `Film médian à ${text}\u00a0vues`;
 }
 
 function continentWinners(snapshots: MonthlySnapshot[]): Partial<Record<Continent, ContinentWinner>> {
