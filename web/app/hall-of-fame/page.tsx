@@ -31,7 +31,7 @@ export default async function HallOfFamePage() {
   const maskedEntries = teaser.entries.map((entry) => ({ rank: entry.rank, username: "", metricLabel: entry.metricLabel }));
 
   return (
-    <main className="hof-shell pageShell">
+    <main className="hof-shell pageShell" data-track="hall">
       <header className="siteHeader">
         <BrandLockup />
       </header>

@@ -38,7 +38,7 @@ export default async function SeasonPage({ params }: { params: { month: string }
   const next = seasons[index + 1];
 
   return (
-    <main className="hof-shell pageShell">
+    <main className="hof-shell pageShell" data-track="hall">
       <header className="siteHeader">
         <BrandLockup />
       </header>

@@ -18,7 +18,17 @@ export function Author() {
   );
 }
 
-export default function LegalPage({ title, lede, children }: { title: string; lede: ReactNode; children: ReactNode }) {
+export default function LegalPage({
+  title,
+  lede,
+  children,
+  updated = LEGAL_UPDATED,
+}: {
+  title: string;
+  lede: ReactNode;
+  children: ReactNode;
+  updated?: string;
+}) {
   return (
     <main className="pageShell legalShell">
       <header className="siteHeader">
@@ -26,7 +36,7 @@ export default function LegalPage({ title, lede, children }: { title: string; le
       </header>
       <article className="legalArticle">
         <h1>{title}</h1>
-        <p className="legalUpdated">Dernière mise à jour : {LEGAL_UPDATED}</p>
+        <p className="legalUpdated">Dernière mise à jour : {updated}</p>
         <div className="legalLede">{lede}</div>
         {children}
         <nav className="legalNav" aria-label="Pages légales">

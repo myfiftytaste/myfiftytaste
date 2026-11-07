@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "FiftyGuess · Fifty" };
 // Onglet « Jeu » : Fiftyguess, le jeu de la semaine (lot 11).
 export default function JeuPage() {
   return (
-    <main className="pageShell fgPage">
+    <main className="pageShell fgPage" data-track="jeu">
       <header className="siteHeader">
         <BrandLockup />
       </header>

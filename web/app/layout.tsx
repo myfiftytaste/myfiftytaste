@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import NavBar from "../components/NavBar";
+import ClickTracker from "../components/ClickTracker";
 import { AMBIANCE_BOOT_SCRIPT, AMBIANCES_OPEN } from "../lib/ambiance";
 import VisualThemeProvider from "../components/VisualThemeProvider";
 import "./globals.css";
@@ -49,6 +50,7 @@ export default function RootLayout({
         <VisualThemeProvider>
           {children}
           <NavBar />
+          <ClickTracker />
         </VisualThemeProvider>
       </body>
     </html>

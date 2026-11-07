@@ -8,11 +8,12 @@ export default function ConfidentialitePage() {
   return (
     <LegalPage
       title="Confidentialité et cookies"
+      updated="8 novembre 2026"
       lede={
         <>
           <p>
-            En bref : Fifty ne te demande ni compte, ni e-mail, ni mot de passe. Pas de publicité, pas de mesure
-            d&apos;audience, aucun traceur tiers. Le site lit ce que ton profil Letterboxd montre déjà publiquement,
+            En bref : Fifty ne te demande ni compte, ni e-mail, ni mot de passe. Pas de publicité, aucun traceur
+            tiers, et une seule mesure d&apos;audience, maison et anonyme : le nombre de clics vers Letterboxd. Le site lit ce que ton profil Letterboxd montre déjà publiquement,
             le transforme en wrapped, et en garde le strict nécessaire, pour une durée limitée.
           </p>
           <p>Le détail, sans jargon inutile, est ci-dessous.</p>
@@ -103,6 +104,20 @@ export default function ConfidentialitePage() {
               </td>
               <td data-label="Pourquoi">Améliorer le site.</td>
               <td data-label="Base légale">Intérêt légitime.</td>
+              <td data-label="Conservation">
+                <strong>24 mois</strong>.
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Données">
+                Mesure des clics : quand tu ouvres un lien vers Letterboxd ou retournes une carte de reco, un
+                compteur augmente de 1 (date, module, place de la reco, film visé). Ni pseudo, ni adresse IP, ni
+                cookie : impossible de savoir qui a cliqué.
+              </td>
+              <td data-label="Pourquoi">Savoir quels modules et quelles recos servent vraiment, pour les améliorer.</td>
+              <td data-label="Base légale">
+                Intérêt légitime ; mesure d&apos;audience anonyme et agrégée, dispensée de consentement.
+              </td>
               <td data-label="Conservation">
                 <strong>24 mois</strong>.
               </td>

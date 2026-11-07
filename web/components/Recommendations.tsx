@@ -2,8 +2,9 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { countryFr, genreFr } from "../lib/labelsFr";
+import { filmSlug, track } from "../lib/track";
 
 type Recommendation = {
   slot: "safe_pick" | "deep_cut" | "wild_card" | string;
@@ -74,6 +75,21 @@ export default function Recommendations({
   const slotLabels = copy?.slot_labels ?? {};
   const slotDescriptions = copy?.slot_descriptions ?? {};
   const [flipped, setFlipped] = useState<string[]>([]);
+  // Mesure des clics : une « vue » quand les cartes arrivent à l'écran (dénominateur des taux).
+  const gridRef = useRef<HTMLDivElement>(null);
+  const hasRecos = Boolean(recommendations?.length);
+  useEffect(() => {
+    const grid = gridRef.current;
+    if (!hasRecos || !grid || typeof IntersectionObserver === "undefined") return;
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        track("recos", "vue");
+        observer.disconnect();
+      }
+    }, { threshold: 0.4 });
+    observer.observe(grid);
+    return () => observer.disconnect();
+  }, [hasRecos]);
 
   if (!recommendations || recommendations.length === 0) {
     if (!unavailableReason) {
@@ -93,13 +109,13 @@ export default function Recommendations({
   }
 
   return (
-    <section className="recommendations-section" aria-label={title}>
+    <section className="recommendations-section" aria-label={title} data-track="recos">
       <div className="sectionHeading">
         <h2>{title}</h2>
         <p>{subtitle}</p>
       </div>
 
-      <div className="recommendations-grid">
+      <div className="recommendations-grid" ref={gridRef}>
         {recommendations.map((recommendation) => {
           const isFlipped = flipped.includes(recommendation.slot);
           const slotLabel = slotLabels[recommendation.slot] ?? recommendation.slot;
@@ -120,7 +136,11 @@ export default function Recommendations({
           );
 
           return (
-            <div className={`recommendation-flip${isFlipped ? " is-flipped" : ""}`} key={recommendation.slot}>
+            <div
+              className={`recommendation-flip${isFlipped ? " is-flipped" : ""}`}
+              key={recommendation.slot}
+              data-track-slot={recommendation.slot}
+            >
               <div className="recommendation-flip-inner">
                 <button
                   type="button"
@@ -129,6 +149,7 @@ export default function Recommendations({
                   tabIndex={isFlipped ? -1 : 0}
                   onClick={(event) => {
                     setFlipped((current) => [...current, recommendation.slot]);
+                    track("recos", "retournee", filmSlug(recommendation.letterboxd_url), recommendation.slot);
                     // Le bouton devient masqué : le focus clavier passe à la face révélée.
                     (event.currentTarget.nextElementSibling as HTMLElement | null)?.focus({ preventScroll: true });
                   }}

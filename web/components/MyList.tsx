@@ -173,7 +173,7 @@ export default function MyList() {
   }, [sorted, sortKey]);
 
   return (
-    <main className="pageShell listShell">
+    <main className="pageShell listShell" data-track="liste">
       <header className="siteHeader">
         <BrandLockup />
       </header>
