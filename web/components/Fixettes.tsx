@@ -7,6 +7,8 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 // générés avant n'ont pas ce bloc et le module ne s'affiche pas.
 
 type FilmRef = { title?: string | null; poster?: string | null; url?: string | null };
+// Films des facts : `year` et `directors` depuis le 07/11/2026 (absents des profils calculés avant).
+type FactsFilm = FilmRef & { year?: number | null; directors?: string[] };
 
 type Fixette = {
   name: string;
@@ -20,7 +22,7 @@ export type FixettesData = {
   director: Fixette;
   performer: Fixette;
   // `films` : depuis le 28/10/2026 ; absent des profils calculés avant.
-  facts: { share: number | null; known: number; total: number; dots: ("y" | "n" | "u")[]; films?: FilmRef[] };
+  facts: { share: number | null; known: number; total: number; dots: ("y" | "n" | "u")[]; films?: FactsFilm[] };
 };
 
 const FAN = ["fixPoster fixPosterLeft", "fixPoster fixPosterRight", "fixPoster fixPosterFront"];
@@ -104,19 +106,34 @@ function Card({ role, fixette }: { role: "Cinéaste" | "Interprète"; fixette: F
 }
 
 /** Les films concernés par le pourcentage : les trois premiers, puis « … » qui ouvre la suite. */
-function FactsFilms({ films }: { films: FilmRef[] }) {
+/** « Céline Sciamma (Portrait de la jeune fille en feu, 2019) » ; le titre seul pour les anciens profils. */
+function FactsFilms({ films }: { films: FactsFilm[] }) {
   const [open, setOpen] = useState(false);
-  const item = (film: FilmRef, index: number) => (
-    <li key={index}>
-      {film.url ? (
-        <a href={film.url} target="_blank" rel="noreferrer">
-          {film.title}
-        </a>
-      ) : (
-        film.title
-      )}
-    </li>
-  );
+  const item = (film: FactsFilm, index: number) => {
+    const title = film.url ? (
+      <a href={film.url} target="_blank" rel="noreferrer">
+        {film.title}
+      </a>
+    ) : (
+      film.title
+    );
+    const names = film.directors?.join(" et ");
+    return (
+      <li key={index}>
+        {names ? (
+          <>
+            <b>{names}</b>{" "}
+            <span className="fixFactsFilm">
+              ({title}
+              {film.year ? `, ${film.year}` : ""})
+            </span>
+          </>
+        ) : (
+          title
+        )}
+      </li>
+    );
+  };
   return (
     <div className="fixFactsFilms">
       <ul>{films.slice(0, 3).map(item)}</ul>

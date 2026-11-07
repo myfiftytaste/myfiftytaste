@@ -562,7 +562,8 @@ def build_metrics(username: str) -> tuple[Path, Path]:
         film_entry = {
             "title": film.get("title"),
             "year": film.get("year"),
-            "slug": film.get("slug"),
+            # Même clé que le Passeport : "slug" n'existe pas sur ces films (liens vides jusqu'au 07/11/2026).
+            "slug": film.get("letterboxd_slug"),
         }
         user_rating = safe_float(film.get("user_rating"))
         community_rating = safe_float(film.get("average_rating"))

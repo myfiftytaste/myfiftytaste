@@ -45,14 +45,14 @@ MEDIAN_VIEWS_FROM_MONTH = "2026-11"
 
 def format_views(value: float) -> str:
     if value >= 1_000_000:
-        return f"{value / 1_000_000:.1f} M".replace(".", ",")
-    return f"{round(value / 1000)} k"
+        return f"{value / 1_000_000:.1f}\u00a0M".replace(".", ",")
+    return f"{round(value / 1000)}\u00a0k"
 
 
 def mainstream_podium_defs(month: str) -> list[dict[str, Any]]:
     if month >= MEDIAN_VIEWS_FROM_MONTH:
         views = lambda s: s["metrics_snapshot"].get("mainstream_median_views")  # noqa: E731
-        label = lambda v: f"film du milieu : {format_views(v)} vues"  # noqa: E731
+        label = lambda v: f"Film médian à {format_views(v)}\u00a0vues"  # noqa: E731
         return [
             {"key": "mainstream", "title": "Top Mainstream", "sub": "A consommé le plus de blockbusters et succès populaires",
              "metric": views, "direction": "desc", "format": label},
