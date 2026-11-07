@@ -109,7 +109,7 @@ const radarBackCopyRecalibrated: Partial<Record<keyof RadarScores, RadarBackCopy
     intro:
       "On prend les vues Letterboxd de chacun de tes films. Si on ne les a pas, on estime ses vues d’après la place du film parmi ceux de son année (TMDB). On identifie ton film mainstream « médian » et on te situe parmi les profils Fifty grâce à une ventilation par crans. Répartition des profils Fifty : 10 % au cran 1, 20 % au 2, 40 % au 3, 20 % au 4, 10 % au 5.",
     steps: [
-      "1/5 : film du milieu sous 104 000 vues",
+      "1/5 : film médian sous 104 000 vues",
       "2/5 : de 104 000 à 194 000 vues",
       "3/5 : de 194 000 à 321 000 vues",
       "4/5 : de 321 000 à 796 000 vues",

@@ -6617,8 +6617,17 @@ h1 {
 /* ---------- Les facts : films concernés (retour du 28/10/2026) ---------- */
 .fixFactsFilms {
   position: relative;
-  max-width: 220px;
+  max-width: 300px;
   font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.fixFactsFilms b {
+  font-weight: 600;
+}
+
+.fixFactsFilm {
+  color: var(--muted);
 }
 
 .fixFactsFilms ul {
@@ -6657,7 +6666,7 @@ h1 {
   bottom: calc(100% + 8px);
   z-index: 10;
   width: max-content;
-  max-width: 260px;
+  max-width: 300px;
   max-height: 240px;
   overflow-y: auto;
   padding: 12px 30px 12px 14px;

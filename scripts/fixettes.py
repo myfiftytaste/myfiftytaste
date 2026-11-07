@@ -98,6 +98,20 @@ def compute_fixettes(films: list[dict[str, Any]], details: dict[str, dict[str, A
             "total": len(films),
             "dots": dots,
             # Les films concernés, listés à côté du pourcentage (retour du 28/10/2026).
-            "films": [_film_ref(film) for film, dot in zip(films, dots) if dot == "y"],
+            # Depuis le 07/11/2026 : la ou les réalisatrices (ou personnes non binaires) et l'année,
+            # affichées « Nom (Film, année) ».
+            "films": [
+                {
+                    **_film_ref(film),
+                    "year": film.get("year"),
+                    "directors": [
+                        person.get("name")
+                        for person in info(film).get("directors") or []
+                        if (person.get("gender") or 0) in WOMAN_OR_NON_BINARY and person.get("name")
+                    ],
+                }
+                for film, dot in zip(films, dots)
+                if dot == "y"
+            ],
         },
     }
