@@ -56,7 +56,7 @@ jobs:
           done
       - name: Tableau avant / après
         run: |
-          python - <<'PY' | tee out/rejeu.md >> "$GITHUB_STEP_SUMMARY"
+          python - <<'PY' > out/rejeu.md
           import json, os
           slots = [("safe_pick", "Pépite"), ("wild_card", "Pari"), ("deep_cut", "Détour")]
           def load(v, u):
@@ -76,7 +76,7 @@ jobs:
               for key, label in slots:
                   print(f"| {label} | {fmt(a.get(key))} | {fmt(b.get(key))} |")
           PY
-          echo; cat out/cibles.txt || true
+          cat out/rejeu.md | tee -a "$GITHUB_STEP_SUMMARY"; echo; cat out/cibles.txt || true
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: rejeu
