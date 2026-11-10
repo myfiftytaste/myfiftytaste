@@ -5,3 +5,9 @@ export type AvatarColor = "orange" | "blue" | "green" | "tricolor";
 export function avatarColorClass(color: AvatarColor | null | undefined) {
   return color ? ` avatarColor-${color}` : "";
 }
+
+/** Initiale affichée dans une bulle de profil. */
+export function initials(name: string): string {
+  const cleaned = name.replace(/[._-]/g, " ").trim();
+  return (cleaned[0] ?? "?").toUpperCase();
+}
