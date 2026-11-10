@@ -40,7 +40,9 @@ jobs:
             echo "::group::$u"
             ok=1
             for step in "build_user_wrapped.py" "build_missing_metadata_queue.py" "enrich_missing_with_tmdb.py --force" "build_user_wrapped.py" "build_profile_metrics.py"; do
-              python scripts/$step $u > /dev/null 2>out/$u.err || { echo "échec $step"; tail -5 out/$u.err; ok=0; break; }
+              set -- $step
+              script=$1; shift
+              python scripts/$script $u "$@" > /dev/null 2>out/$u.err || { echo "échec $script ($u)"; tail -5 out/$u.err; ok=0; break; }
             done
             if [ $ok = 1 ]; then
               python scripts/build_recommendations.py $u | grep "^\[reco\]" | sed "s/^/$u /" | tee -a out/cibles.txt || true
