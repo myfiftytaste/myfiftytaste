@@ -21,7 +21,7 @@ MEGABANK_JSON = BASE_DIR / "data" / "processed" / "megabank_clean.json"
 
 # --- Pari : genre voisin -------------------------------------------------------------
 BRIDGE_MAX_USER_SHARE = 0.05  # le genre visé pèse moins de 5 % de tes genres
-BRIDGE_EXCLUDED = {"Documentary", "TV Movie", "Music"}
+BRIDGE_EXCLUDED = {"Documentary", "TV Movie", "Music", "Family"}  # Famille = films pour enfants, pas un pari
 BRIDGE_TARGETS = 2
 
 # --- Qualité : note Letterboxd, sinon note TMDB pondérée ------------------------------
