@@ -28,6 +28,7 @@ from statistics import mean, median
 from typing import Any, Optional
 from urllib.parse import quote
 
+import reco_targets
 from recommendation_candidates_tmdb import fetch_candidate_pool
 
 
@@ -205,6 +206,7 @@ def load_megabank_url_lookup() -> dict[str, Any]:
 
     by_title_year: dict[tuple[str, int], str] = {}
     title_occurrences: dict[str, list[str]] = {}
+    rating_by_url: dict[str, float] = {}
     for record in records:
         if not isinstance(record, dict):
             continue
@@ -212,6 +214,9 @@ def load_megabank_url_lookup() -> dict[str, Any]:
         title = record.get("title")
         if not url or not title:
             continue
+        rating = safe_float(record.get("average_rating"))
+        if rating:
+            rating_by_url[str(url)] = rating
         norm_title = normalize_title(title)
         title_occurrences.setdefault(norm_title, []).append(str(url))
         year = parse_year_from_slug(record.get("letterboxd_slug"))
@@ -221,7 +226,8 @@ def load_megabank_url_lookup() -> dict[str, Any]:
     by_title_only = {
         norm_title: urls[0] for norm_title, urls in title_occurrences.items() if len(urls) == 1
     }
-    return {"by_title_year": by_title_year, "by_title_only": by_title_only}
+    # Recos v2 : la moyenne Letterboxd juge la qualité quand le film est connu de la Megabank.
+    return {"by_title_year": by_title_year, "by_title_only": by_title_only, "rating_by_url": rating_by_url}
 
 
 def letterboxd_search_url(title: str, year: Optional[int] = None) -> str:
@@ -607,6 +613,8 @@ SLOT2_MIN_RELEASE_YEAR = CURRENT_YEAR - 1
 SLOT2_MIN_RATING_SCORE = 0.65
 SLOT2_MIN_VOTE_COUNT = 30
 WILD_CARD_TOP_K = 5
+# Recos v2 : tirage parmi les K premiers, renouvelé chaque mois (reco_targets.seeded_index).
+PICK_TOP_K = {"safe_pick": 3, "wild_card": WILD_CARD_TOP_K, "deep_cut": 5}
 
 # --- Slot 3 "deep_cut" ("Le Détour"): a country the user hasn't seen yet,
 # filtered down to picks that still fit their usual taste. ---
@@ -617,6 +625,19 @@ SLOT3_MIN_VOTE_COUNT = 10
 
 def thematic_proximity(score: dict[str, Any]) -> float:
     return clamp(score["genre_score"] * 0.7 + score["country_score"] * 0.15 + score["director_bonus"] * 0.15)
+
+
+def quality_norm(item: dict[str, Any]) -> float:
+    return normalized_rating(item.get("quality"))
+
+
+def main_country_iso(record: dict[str, Any]) -> Optional[str]:
+    """Pays principal : pays d'origine TMDB, sinon premier pays de production."""
+    origin = list_values(record.get("origin_country"))
+    if origin:
+        return str(origin[0])
+    countries = list_values(record.get("countries"))
+    return reco_targets.iso_for(normalize_country_name(countries[0])) if countries else None
 
 
 def assign_popularity_percentiles(items: list[dict[str, Any]]) -> None:
@@ -670,7 +691,12 @@ def slot1_candidates(pool: list[dict[str, Any]], context: dict[str, Any]) -> tup
 
     subset, level = first_nonempty(pool, [strict, relax_popularity, relax_date_too])
     subset.sort(key=lambda item: (item["thematic_proximity"], item["score"]["compatibility"]), reverse=True)
-    return subset, level
+    # Recos v2 : on écarte une pépite que Letterboxd juge faible (moyenne connue sous 3,2).
+    floor_ok = [
+        item for item in subset
+        if item.get("letterboxd_rating") is None or item["letterboxd_rating"] >= reco_targets.QUALITY_FLOOR
+    ]
+    return (floor_ok or subset), level
 
 
 def wild_card_rank(item: dict[str, Any]) -> float:
@@ -685,7 +711,30 @@ def wild_card_rank(item: dict[str, Any]) -> float:
     return item["score"]["rating_score"] * 0.7 + item["score"]["compatibility"] * 0.3
 
 
+def wild_card_rank_v2(item: dict[str, Any]) -> float:
+    """Pari v2 : 50 % qualité, 30 % force du lien avec tes genres, 20 % popularité à ton cran."""
+    if not item["record"].get("bridge_strength"):
+        return wild_card_rank(item)
+    return (
+        quality_norm(item) * 0.5
+        + item["record"]["bridge_strength"] * 0.3
+        + item["score"]["mainstream_score"] * 0.2
+    )
+
+
 def slot2_candidates(pool: list[dict[str, Any]], context: dict[str, Any]) -> tuple[list[dict[str, Any]], int]:
+    # Recos v2 : un film récent d'un genre voisin que tu ne regardes presque jamais (bridge_ids).
+    bridged = [item for item in pool if item["record"].get("bridge_strength")]
+    good = [item for item in bridged if item.get("quality", 0) >= reco_targets.QUALITY_FLOOR]
+    if good or bridged:
+        subset = good or bridged
+        subset.sort(key=wild_card_rank_v2, reverse=True)
+        return subset, 0 if good else 1
+    subset, level = slot2_candidates_v1(pool, context)
+    return subset, level + 2
+
+
+def slot2_candidates_v1(pool: list[dict[str, Any]], context: dict[str, Any]) -> tuple[list[dict[str, Any]], int]:
     def quality_ok(item: dict[str, Any]) -> bool:
         vote_count = safe_float(item["record"].get("tmdb_vote_count")) or 0
         return item["score"]["rating_score"] >= SLOT2_MIN_RATING_SCORE and vote_count >= SLOT2_MIN_VOTE_COUNT
@@ -713,7 +762,36 @@ def slot2_candidates(pool: list[dict[str, Any]], context: dict[str, Any]) -> tup
     return subset, level
 
 
+def detour_rank(item: dict[str, Any]) -> float:
+    return quality_norm(item) * 0.5 + item["thematic_proximity"] * 0.5
+
+
 def slot3_candidates(pool: list[dict[str, Any]], context: dict[str, Any]) -> tuple[list[dict[str, Any]], int]:
+    # Recos v2 : d'abord un pays non vu (profils proches, sinon grande cinématographie), puis
+    # ses films les plus vus dans tes genres. Seul le pays principal compte.
+    seen_iso = {iso for iso in (reco_targets.iso_for(c) for c in seen_countries_from_context(context)) if iso}
+    targeted = [
+        item for item in pool
+        if item["record"].get("detour_country")
+        and main_country_iso(item["record"]) == item["record"]["detour_country"]
+        and item["record"]["detour_country"] not in seen_iso
+    ]
+    filters = [
+        lambda item: item.get("quality", 0) >= reco_targets.QUALITY_FLOOR and item["thematic_proximity"] >= SLOT3_MIN_THEMATIC_PROXIMITY,
+        lambda item: item.get("quality", 0) >= reco_targets.QUALITY_FLOOR,
+        lambda _item: True,
+    ]
+    subset, level = first_nonempty(targeted, filters)
+    if subset:
+        subset.sort(key=detour_rank, reverse=True)
+        return subset, level
+    # Repli : l'ancienne logique, mais sur le seul pays principal.
+    main_unseen = [item for item in pool if (main_country_iso(item["record"]) or "") not in seen_iso and main_country_iso(item["record"])]
+    subset, level = slot3_candidates_v1(main_unseen or pool, context)
+    return subset, level + len(filters)
+
+
+def slot3_candidates_v1(pool: list[dict[str, Any]], context: dict[str, Any]) -> tuple[list[dict[str, Any]], int]:
     seen_countries = seen_countries_from_context(context)
 
     def quality_ok(item: dict[str, Any]) -> bool:
@@ -751,8 +829,8 @@ SLOT_CANDIDATE_BUILDERS = {
 }
 SLOT_SCORE_KEY = {
     "safe_pick": lambda item: item["thematic_proximity"],
-    "wild_card": wild_card_rank,
-    "deep_cut": lambda item: item["thematic_proximity"],
+    "wild_card": wild_card_rank_v2,
+    "deep_cut": detour_rank,
 }
 
 
@@ -775,17 +853,15 @@ def diversity_reject_reason(
     return None
 
 
-def deterministic_pick_index(username: Optional[str], count: int) -> int:
-    if count <= 1 or not username:
-        return 0
-    digest = hashlib.sha256(username.encode("utf-8")).hexdigest()
-    return int(digest, 16) % count
-
-
 def select_diverse_recommendations(scored: list[dict[str, Any]], context: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     assign_popularity_percentiles(scored)
+    lookup = context.get("megabank_url_lookup") or {}
+    ratings = lookup.get("rating_by_url") or {}
     for item in scored:
         item["thematic_proximity"] = thematic_proximity(item["score"])
+        url = resolve_letterboxd_url(item["record"], item["score"].get("year"), lookup)
+        item["letterboxd_rating"] = ratings.get(url)
+        item["quality"] = reco_targets.quality_rating(item["record"], item["letterboxd_rating"])
 
     chosen_items: list[dict[str, Any]] = []
     used_directors: set[str] = set()
@@ -813,25 +889,13 @@ def select_diverse_recommendations(scored: list[dict[str, Any]], context: dict[s
                 })
                 continue
             eligible.append(item)
-            if slot != "wild_card" and len(eligible) >= 1:
-                break
-            if slot == "wild_card" and len(eligible) >= WILD_CARD_TOP_K:
+            if len(eligible) >= PICK_TOP_K[slot]:
                 break
 
         selected = None
         if eligible:
-            if slot == "wild_card":
-                # All top-K candidates already cleared the quality gate (see
-                # slot2_candidates), so this only decides *which* excellent
-                # film this specific user sees -- without it, the single
-                # best-rated film in the pool would win this slot for every
-                # profile, since rating dominates the ranking by design.
-                # Hashing the username keeps it deterministic (same user,
-                # same re-run -> same pick) while spreading different users
-                # across the top-K instead of all converging on #1.
-                selected = eligible[deterministic_pick_index(username, len(eligible))]
-            else:
-                selected = eligible[0]
+            # Recos v2 : tirage stable dans le mois parmi les K premiers, pour chaque place.
+            selected = eligible[reco_targets.seeded_index(username, slot, len(eligible))]
         if selected is None and pool:
             # Every candidate failed the diversity checks: "toujours 3 recos"
             # wins over strict diversity in the worst case.
@@ -884,7 +948,14 @@ def build_recommendations(username: str) -> tuple[Path, Path]:
     seen_slugs = {film.get("letterboxd_slug") for film in films if film.get("letterboxd_slug")}
     context = build_profile_context(wrapped, metrics)
 
-    candidate_pool, pool_stats = fetch_candidate_pool(wrapped, metrics)
+    # Recos v2 : cibles du pari et du détour, historique pour ne jamais se répéter.
+    targets = {
+        "bridges": reco_targets.bridge_targets(context["genre_weights"]),
+        "countries": reco_targets.detour_targets(username, context["genre_weights"], seen_countries_from_context(context)),
+    }
+    history = reco_targets.recent_reco_slugs(username)
+    print(f"[reco] cibles : {json.dumps(targets, ensure_ascii=False)} ; historique : {len(history)} reco(s)")
+    candidate_pool, pool_stats = fetch_candidate_pool(wrapped, metrics, targets=targets)
     pool_vote_counts = [
         value
         for value in (safe_float(record.get("tmdb_vote_count")) for record in candidate_pool)
@@ -907,7 +978,7 @@ def build_recommendations(username: str) -> tuple[Path, Path]:
                 "reason": eligibility_reason,
             })
             continue
-        if not is_candidate(record, seen_slugs):
+        if not is_candidate(record, seen_slugs) or record.get("letterboxd_slug") in history:
             continue
         score = score_candidate(record, context)
         scored.append({"record": record, "score": score})

@@ -250,6 +250,8 @@ def fetch_movie_details(client: TmdbClient, tmdb_id: int, cache: dict[str, Any])
         "genres": genres,
         "countries": countries,
         "original_language": LANGUAGE_CODE_TO_NAME.get(language_code, language_code),
+        # Pays d'origine (codes ISO) : le détour ne compte que le pays principal (recos v2).
+        "origin_country": data.get("origin_country") or [],
         "directors": directors,
         "vote_average": data.get("vote_average"),
         "vote_count": data.get("vote_count"),
@@ -348,6 +350,52 @@ def quality_recent_ids(client: TmdbClient) -> list[int]:
     return ids
 
 
+def _discover(client: TmdbClient, params: dict[str, Any], pages: int = 2) -> list[int]:
+    ids: list[int] = []
+    for page in range(1, pages + 1):
+        data = client.get("/discover/movie", {**params, "include_adult": "false", "page": page})
+        results = (data or {}).get("results") or []
+        if not results:
+            break
+        ids.extend(result.get("id") for result in results if result.get("id"))
+    return ids
+
+
+def bridge_ids(client: TmdbClient, bridges: list[dict[str, Any]]) -> dict[int, float]:
+    """Recos v2, le pari : films des 24 derniers mois qui portent à la fois le genre visé et le
+    genre aimé qui y mène (ex. Guerre + Drame), les plus vus d'abord. {tmdb_id: force du lien}."""
+    since = datetime.now(timezone.utc).date().replace(day=1)
+    since = since.replace(year=since.year - 2)
+    found: dict[int, float] = {}
+    for bridge in bridges:
+        target, partner = GENRE_NAME_TO_ID.get(bridge["target"]), GENRE_NAME_TO_ID.get(bridge["partner"])
+        if not target or not partner:
+            continue
+        params = {
+            "with_genres": f"{target},{partner}",
+            "primary_release_date.gte": since.isoformat(),
+            "vote_count.gte": 50,
+            "sort_by": "vote_count.desc",
+        }
+        for movie_id in _discover(client, params):
+            found[movie_id] = max(found.get(movie_id, 0.0), bridge["strength"])
+    return found
+
+
+def country_ids(client: TmdbClient, countries: list[str], top_genre_names: list[str]) -> dict[int, str]:
+    """Recos v2, le détour : les films les plus vus originaires du pays visé, dans tes genres
+    favoris (au moins l'un d'eux). {tmdb_id: code ISO du pays}."""
+    genre_ids = [str(GENRE_NAME_TO_ID[name]) for name in top_genre_names if name in GENRE_NAME_TO_ID]
+    found: dict[int, str] = {}
+    for iso in countries:
+        params = {"with_origin_country": iso, "vote_count.gte": 150, "sort_by": "vote_count.desc"}
+        if genre_ids:
+            params["with_genres"] = "|".join(genre_ids)
+        for movie_id in _discover(client, params):
+            found.setdefault(movie_id, iso)
+    return found
+
+
 def freshness_ids(client: TmdbClient, top_genre_names: list[str]) -> list[int]:
     top_genre_ids = {GENRE_NAME_TO_ID[name] for name in top_genre_names if name in GENRE_NAME_TO_ID}
     ids: list[int] = []
@@ -412,6 +460,7 @@ def normalize_candidate(detail: dict[str, Any]) -> Optional[dict[str, Any]]:
         "release_year": year,
         "genres": detail.get("genres") or [],
         "countries": detail.get("countries") or [],
+        "origin_country": detail.get("origin_country") or [],
         "directors": detail.get("directors") or [],
         "runtime": detail.get("runtime"),
         "original_language": detail.get("original_language"),
@@ -428,12 +477,14 @@ def fetch_candidate_pool(
     wrapped: dict[str, Any],
     metrics: dict[str, Any],
     debug: bool = False,
+    targets: Optional[dict[str, Any]] = None,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """`targets` (recos v2) : {"bridges": [...], "countries": [...]} venus de reco_targets.py."""
     stats: dict[str, Any] = {
         "tmdb_available": False,
         "seed_films_used": 0,
         "seed_tmdb_ids_resolved": 0,
-        "raw_ids": {"seed": 0, "discover": 0, "freshness": 0, "quality_recent": 0},
+        "raw_ids": {"seed": 0, "discover": 0, "freshness": 0, "quality_recent": 0, "bridge": 0, "detour": 0},
         "unique_ids_considered": 0,
         "details_fetched": 0,
         "details_cache_hits": 0,
@@ -461,16 +512,21 @@ def fetch_candidate_pool(
     discover_id_list = discover_ids(client, metrics)
     fresh_ids = freshness_ids(client, top_genre_names)
     quality_recent = quality_recent_ids(client)
+    targets = targets or {}
+    bridge_found = bridge_ids(client, targets.get("bridges") or [])
+    detour_found = country_ids(client, targets.get("countries") or [], top_genre_names[:3])
     stats["raw_ids"] = {
         "seed": len(seed_ids),
         "discover": len(discover_id_list),
         "freshness": len(fresh_ids),
         "quality_recent": len(quality_recent),
+        "bridge": len(bridge_found),
+        "detour": len(detour_found),
     }
 
     unique_ids: list[int] = []
     seen_ids: set[int] = set()
-    for source_ids in (seed_ids, discover_id_list, fresh_ids, quality_recent):
+    for source_ids in (seed_ids, discover_id_list, fresh_ids, quality_recent, list(bridge_found), list(detour_found)):
         for movie_id in source_ids:
             if movie_id not in seen_ids:
                 seen_ids.add(movie_id)
@@ -496,6 +552,10 @@ def fetch_candidate_pool(
         if _seen_key(record["title"], record["release_year"]) in seen_keys:
             stats["candidates_excluded_seen"] += 1
             continue
+        if movie_id in bridge_found:
+            record["bridge_strength"] = bridge_found[movie_id]
+        if movie_id in detour_found:
+            record["detour_country"] = detour_found[movie_id]
         candidates.append(record)
 
     stats["candidates_after_normalize"] = len(candidates)
