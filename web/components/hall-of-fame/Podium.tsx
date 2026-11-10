@@ -1,5 +1,6 @@
-import { avatarColorClass, type AvatarColor } from "../../lib/avatarColor";
-import { letterboxdProfileUrl } from "../../lib/username";
+import { avatarColorClass, initials, type AvatarColor } from "../../lib/avatarColor";
+import type { ProfileCardData } from "../../lib/hallOfFameTypes";
+import { ProfileBubble } from "./ProfileCard";
 
 export type PodiumEntry = {
   rank: 1 | 2 | 3;
@@ -8,20 +9,18 @@ export type PodiumEntry = {
   color?: AvatarColor;
 };
 
-function initials(name: string): string {
-  const cleaned = name.replace(/[._-]/g, " ").trim();
-  return (cleaned[0] ?? "?").toUpperCase();
-}
-
 export default function Podium({
   title,
   sub,
   entries,
   masked = false,
+  cards = {},
 }: {
   title: string;
   sub: string;
   entries: PodiumEntry[];
+  // Encadrés de profil, par pseudo en minuscules (absent hors saison).
+  cards?: Record<string, ProfileCardData>;
   // Visiteur hors saison : la page n'envoie que rang et métrique, jamais le pseudo.
   masked?: boolean;
 }) {
@@ -56,12 +55,12 @@ export default function Podium({
               </div>
             ))
           : entries.map((entry) => (
-          <a
+          <ProfileBubble
             key={entry.rank}
-            href={letterboxdProfileUrl(entry.username)}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`${entry.username}, ${entry.metricLabel}, rang ${entry.rank} : profil Letterboxd (nouvel onglet)`}
+            username={entry.username}
+            color={entry.color}
+            card={cards[entry.username.toLowerCase()]}
+            ariaLabel={`${entry.username}, ${entry.metricLabel}, rang ${entry.rank}`}
             className={`hofStep hofStep${entry.rank}`}
           >
             <div className={`hofAvatar${avatarColorClass(entry.color)}`}>{initials(entry.username)}</div>
@@ -72,7 +71,7 @@ export default function Podium({
             <div className="hofRiser">
               <span>{entry.rank}</span>
             </div>
-          </a>
+          </ProfileBubble>
         ))}
       </div>
     </div>

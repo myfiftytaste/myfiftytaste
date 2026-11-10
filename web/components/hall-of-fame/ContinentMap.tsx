@@ -1,9 +1,8 @@
 "use client";
 
-import { avatarColorClass } from "../../lib/avatarColor";
-import { useState } from "react";
-import { CONTINENTS, type Continent, type ContinentWinner } from "../../lib/hallOfFameTypes";
-import { letterboxdProfileUrl } from "../../lib/username";
+import { avatarColorClass, initials } from "../../lib/avatarColor";
+import { CONTINENTS, type Continent, type ContinentWinner, type ProfileCardData } from "../../lib/hallOfFameTypes";
+import { ProfilePin } from "./ProfileCard";
 
 // Six simplified, non-geographic zones (no per-country borders) — just
 // enough shape to read as "a map" while staying decorative. Anchor points
@@ -66,20 +65,14 @@ const PIN_ANCHORS: Record<Continent, { x: number; y: number }> = {
 const VIEWBOX_WIDTH = 760;
 const VIEWBOX_HEIGHT = 380;
 
-function initials(name: string): string {
-  const cleaned = name.replace(/[._-]/g, " ").trim();
-  return (cleaned[0] ?? "?").toUpperCase();
-}
-
 export default function ContinentMap({
   winners,
+  cards = {},
 }: {
   winners: Partial<Record<Continent, ContinentWinner>>;
+  cards?: Record<string, ProfileCardData>;
 }) {
-  const [hoveredContinent, setHoveredContinent] = useState<Continent | null>(null);
   const hasAnyWinner = CONTINENTS.some((continent) => winners[continent]);
-  const hoveredWinner = hoveredContinent ? winners[hoveredContinent] : null;
-  const hoveredAnchor = hoveredContinent ? PIN_ANCHORS[hoveredContinent] : null;
 
   return (
     <div className="hofMapWrap">
@@ -87,7 +80,7 @@ export default function ContinentMap({
         className="hofWorldMap"
         viewBox={`0 0 ${VIEWBOX_WIDTH} ${VIEWBOX_HEIGHT}`}
         xmlns="http://www.w3.org/2000/svg"
-        role="img"
+        role="group"
         aria-label="Cinéma du monde par continent"
       >
         {/* Camaïeu de tanguytare : le même dégradé que ses bulles HTML (globals.css, avatarColor-tricolor). */}
@@ -122,53 +115,28 @@ export default function ContinentMap({
           const anchor = PIN_ANCHORS[continent];
           return (
             <g key={continent} transform={`translate(${anchor.x}, ${anchor.y})`}>
-              <a
-                href={letterboxdProfileUrl(winner.username)}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`${winner.username}, ${winner.filmCount} film${winner.filmCount > 1 ? "s" : ""} : profil Letterboxd (nouvel onglet)`}
-                className="hofPin"
-                onMouseEnter={() => setHoveredContinent(continent)}
-                onMouseLeave={() => setHoveredContinent((current) => (current === continent ? null : current))}
-                onFocus={() => setHoveredContinent(continent)}
-                onBlur={() => setHoveredContinent((current) => (current === continent ? null : current))}
+              <ProfilePin
+                username={winner.username}
+                color={winner.color}
+                card={cards[winner.username.toLowerCase()]}
+                films={winner.films}
+                ariaLabel={`${winner.username}, ${winner.filmCount} film${winner.filmCount > 1 ? "s" : ""}`}
               >
                 <circle r="15" className={`hofPinRing${avatarColorClass(winner.color)}`} />
                 <text className="hofPinInitial" y="1" dominantBaseline="central">
                   {initials(winner.username)}
                 </text>
                 <text className="hofPinName" y="26">
-                  {winner.username} ↗
+                  {winner.username}
                 </text>
                 <text className="hofPinMetric" y="38">
                   {winner.filmCount} film{winner.filmCount > 1 ? "s" : ""}
                 </text>
-              </a>
+              </ProfilePin>
             </g>
           );
         })}
       </svg>
-
-      {hoveredWinner && hoveredAnchor && hoveredWinner.films.length > 0 ? (
-        <div
-          className="hofPinTooltip"
-          style={{
-            left: `${(hoveredAnchor.x / VIEWBOX_WIDTH) * 100}%`,
-            top: `${(hoveredAnchor.y / VIEWBOX_HEIGHT) * 100}%`,
-          }}
-        >
-          <strong>{hoveredWinner.username}</strong>
-          <span>Classé·e grâce à ces films</span>
-          <ul>
-            {hoveredWinner.films.map((film) => (
-              <li key={`${film.slug ?? film.title}-${film.year}`}>
-                {film.title}
-                {film.year ? <em>{film.year}</em> : null}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
 
       {!hasAnyWinner ? (
         <p className="hofMapNote">Pas encore de consommation claire par continent ce mois-ci.</p>

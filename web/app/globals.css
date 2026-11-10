@@ -3452,61 +3452,11 @@ h1 {
   padding: 22px;
 }
 
-.hofPinTooltip {
-  position: absolute;
-  z-index: 5;
-  width: min(220px, 60%);
-  transform: translate(-50%, calc(-100% - 20px));
-  padding: 12px 13px;
-  border: 1px solid rgba(var(--accent-rgb), 0.34);
-  border-radius: 8px;
-  background: linear-gradient(145deg, rgba(var(--accent-rgb), 0.1), transparent 48%), rgba(11, 10, 8, 0.97);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.45);
-  color: var(--hof-cream);
-  pointer-events: none;
-}
 
-.hofPinTooltip strong {
-  display: block;
-  color: var(--hof-cream);
-  font-family: var(--font-title), Georgia, "Times New Roman", serif;
-  font-size: 1rem;
-  font-weight: 650;
-  line-height: 1.05;
-}
 
-.hofPinTooltip > span {
-  display: block;
-  margin-top: 5px;
-  color: var(--hof-gold);
-  font-size: 0.68rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
 
-.hofPinTooltip ul {
-  display: grid;
-  gap: 4px;
-  margin: 10px 0 0;
-  padding: 0;
-  list-style: none;
-  color: var(--hof-muted);
-  font-size: 0.76rem;
-  line-height: 1.32;
-}
 
-.hofPinTooltip li::before {
-  content: "•";
-  margin-right: 7px;
-  color: var(--hof-gold);
-}
 
-.hofPinTooltip em {
-  margin-left: 6px;
-  color: rgba(var(--ink-rgb), 0.48);
-  font-style: normal;
-}
 
 .hofWorldMap {
   width: 100%;
@@ -3534,6 +3484,168 @@ h1 {
 
 .hofPin {
   cursor: pointer;
+}
+
+.hofPin:focus-visible {
+  outline: none;
+}
+
+.hofPin:focus-visible .hofPinRing {
+  stroke: var(--hof-gold-bright);
+  stroke-width: 3;
+}
+
+/* Encadré de profil des bulles (ProfileCard.tsx, 10/11/2026). */
+.hofCardTrigger {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  text-align: center;
+}
+
+.hofWinner.hofCardTrigger {
+  width: 100%;
+  padding: 16px 8px;
+  border: 1px solid var(--hof-line);
+  background: var(--hof-bg-card);
+  cursor: pointer;
+}
+
+.hofCard {
+  position: fixed;
+  z-index: 70;
+  width: min(300px, calc(100vw - 32px));
+  transform: translate(-50%, -100%);
+  padding: 14px 16px 12px;
+  border: 1px solid rgba(var(--accent-rgb), 0.38);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(var(--accent-rgb), 0.08), transparent 50%), rgba(13, 17, 26, 0.98);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  color: var(--hof-cream, var(--ink));
+  text-align: left;
+}
+
+.hofCardBelow {
+  transform: translate(-50%, 0);
+}
+
+.hofCardHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.hofCardHead .hofAvatar {
+  flex: none;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.hofCardHead strong {
+  display: block;
+  font-family: var(--font-display), serif;
+  font-size: 1.12rem;
+  font-weight: 500;
+}
+
+.hofCardHead span {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.hofCard .badgeRow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 6px;
+  margin: 0 0 10px;
+}
+
+.hofCard .badgePlaque {
+  width: 76px;
+  min-height: 0;
+  padding: 7px 5px 6px;
+}
+
+.hofCard .badgeLabel {
+  font-size: 0.62rem;
+  line-height: 1.2;
+}
+
+.hofCard .badgeIcon {
+  width: 11px;
+  height: 11px;
+}
+
+.hofCard .badgeMore {
+  align-self: center;
+  width: 26px;
+  height: 26px;
+  font-size: 0.62rem;
+}
+
+.hofCardFilms {
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+}
+
+.hofCardFilms > span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.hofCardFilmList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hofCardFilmList li {
+  padding: 2px 0;
+}
+
+.hofCardFilmList a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--accent-rgb), 0.5);
+  text-underline-offset: 3px;
+}
+
+.hofCardFilmList em {
+  margin-left: 6px;
+  color: var(--muted);
+  font-style: normal;
+}
+
+.hofCardMore {
+  margin-top: 2px;
+  padding: 0 8px;
+  border: 1px solid rgba(var(--accent-rgb), 0.4);
+  border-radius: 999px;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.hofCardLink {
+  display: block;
+  padding-top: 9px;
+  border-top: 1px solid var(--line);
+  color: var(--accent);
+  font-size: 0.82rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
 }
 
 .hofPinRing {

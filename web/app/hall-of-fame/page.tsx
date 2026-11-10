@@ -93,32 +93,32 @@ export default async function HallOfFamePage() {
             <Podium
               title={podiumsByKey.mainstream.title}
               sub={podiumsByKey.mainstream.sub}
-              entries={podiumsByKey.mainstream.entries}
+              cards={rankings.cards} entries={podiumsByKey.mainstream.entries}
             />
-            <Podium title={podiumsByKey.niche.title} sub={podiumsByKey.niche.sub} entries={podiumsByKey.niche.entries} />
+            <Podium title={podiumsByKey.niche.title} sub={podiumsByKey.niche.sub} cards={rankings.cards} entries={podiumsByKey.niche.entries} />
           </div>
           <div className="hofPodiumPair">
             <Podium
               title={podiumsByKey.critique.title}
               sub={podiumsByKey.critique.sub}
-              entries={podiumsByKey.critique.entries}
+              cards={rankings.cards} entries={podiumsByKey.critique.entries}
             />
             <Podium
               title={podiumsByKey.fantome.title}
               sub={podiumsByKey.fantome.sub}
-              entries={podiumsByKey.fantome.entries}
+              cards={rankings.cards} entries={podiumsByKey.fantome.entries}
             />
           </div>
           <div className="hofPodiumPair">
             <Podium
               title={podiumsByKey.nostalgique.title}
               sub={podiumsByKey.nostalgique.sub}
-              entries={podiumsByKey.nostalgique.entries}
+              cards={rankings.cards} entries={podiumsByKey.nostalgique.entries}
             />
             <Podium
               title={podiumsByKey.sorties_annee.title}
               sub={podiumsByKey.sorties_annee.sub}
-              entries={podiumsByKey.sorties_annee.entries}
+              cards={rankings.cards} entries={podiumsByKey.sorties_annee.entries}
             />
           </div>
         </section>
@@ -132,7 +132,7 @@ export default async function HallOfFamePage() {
               Basé sur la provenance des films regardés. Un seul cinéphile mis en avant par continent.
             </p>
           </div>
-          <ContinentMap winners={rankings.continentWinners} />
+          <ContinentMap winners={rankings.continentWinners} cards={rankings.cards} />
         </section>
       ) : null}
     </main>

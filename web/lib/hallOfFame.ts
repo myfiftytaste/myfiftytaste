@@ -1,8 +1,10 @@
 import { getPool } from "./db";
 import { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
 import type { AvatarColor } from "./avatarColor";
+import { getProfileCards } from "./profileCards";
 import { safeProfileColors } from "./profileColor";
-export { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner } from "./hallOfFameTypes";
+export { CONTINENTS, type Continent, type ContinentFilmRef, type ContinentWinner, type ProfileCardData } from "./hallOfFameTypes";
+import type { ProfileCardData } from "./hallOfFameTypes";
 
 // Mirrors scripts/hall_of_fame_common.py + scripts/build_monthly_snapshot.py
 // (offline/CLI counterpart, kept in sync by hand — see that script's header).
@@ -207,7 +209,7 @@ function continentWinners(snapshots: MonthlySnapshot[]): Partial<Record<Continen
       winners[continent] = {
         username: best.snapshot.username,
         filmCount: best.value,
-        films: (best.snapshot.continent_films?.[continent] ?? []).slice(0, 4),
+        films: best.snapshot.continent_films?.[continent] ?? [],
       };
     }
   }
@@ -220,6 +222,8 @@ export type MonthlyRankings = {
   participantCount: number;
   podiums: PodiumCategory[];
   continentWinners: Partial<Record<Continent, ContinentWinner>>;
+  // Encadrés des bulles, par pseudo en minuscules. Ne jamais l'envoyer à un visiteur hors saison.
+  cards: Record<string, ProfileCardData>;
 };
 
 export async function getMonthlyRankings(month: string): Promise<MonthlyRankings> {
@@ -283,5 +287,11 @@ export async function getMonthlyRankings(month: string): Promise<MonthlyRankings
   for (const entry of podiums.flatMap((podium) => podium.entries)) entry.color = colors[entry.username.toLowerCase()];
   for (const winner of Object.values(winners)) if (winner) winner.color = colors[winner.username.toLowerCase()];
 
-  return { month, participantCount: optedIn.length, podiums, continentWinners: winners };
+  const shown = [
+    ...podiums.flatMap((podium) => podium.entries.map((entry) => entry.username)),
+    ...Object.values(winners).flatMap((winner) => (winner ? [winner.username] : [])),
+  ];
+  const cards = await getProfileCards(shown);
+
+  return { month, participantCount: optedIn.length, podiums, continentWinners: winners, cards };
 }

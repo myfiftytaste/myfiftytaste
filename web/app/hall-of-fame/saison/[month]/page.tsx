@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import BrandLockup from "../../../../components/BrandLockup";
 import ContinentMap from "../../../../components/hall-of-fame/ContinentMap";
 import Laurels from "../../../../components/hall-of-fame/Laurels";
-import { avatarColorClass } from "../../../../lib/avatarColor";
+import { ProfileBubble } from "../../../../components/hall-of-fame/ProfileCard";
+import { avatarColorClass, initials } from "../../../../lib/avatarColor";
 import {
   currentMonth,
   closedSeasons,
@@ -12,16 +13,11 @@ import {
   nextMonthLabel,
   seasonTitle,
 } from "../../../../lib/hallOfFame";
-import { letterboxdProfileUrl } from "../../../../lib/username";
 
 // Saison close du Hall of Fame (maquette validée le 27/10/2026) : seulement les premiers de chaque
 // podium, couronnés de lauriers, sans la carte des continents. Ouverte à tous : une saison close est
 // de l'histoire, et ses premiers avaient choisi d'y figurer.
 export const dynamic = "force-dynamic";
-
-function initials(name: string): string {
-  return (name.replace(/[._-]/g, " ").trim()[0] ?? "?").toUpperCase();
-}
 
 export default async function SeasonPage({ params }: { params: { month: string } }) {
   const month = params.month;
@@ -72,23 +68,21 @@ export default async function SeasonPage({ params }: { params: { month: string }
         <ul className="hofWinners">
           {winners.map(({ title, entry }) => (
             <li key={title}>
-              <a
+              <ProfileBubble
                 className="hofWinner"
-                href={letterboxdProfileUrl(entry.username)}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`${title} : ${entry.username}, ${entry.metricLabel} — profil Letterboxd (nouvel onglet)`}
+                username={entry.username}
+                color={entry.color}
+                card={rankings.cards[entry.username.toLowerCase()]}
+                ariaLabel={`${title} : ${entry.username}, ${entry.metricLabel}`}
               >
                 <span className="hofWinnerTitle">{title}</span>
                 <span className="hofWinnerCrown">
                   <Laurels />
                   <span className={`hofAvatar hofWinnerAvatar${avatarColorClass(entry.color)}`}>{initials(entry.username)}</span>
                 </span>
-                <span className="hofWinnerPseudo">
-                  {entry.username} <span aria-hidden="true">↗</span>
-                </span>
+                <span className="hofWinnerPseudo">{entry.username}</span>
                 <span className="hofWinnerMetric">{entry.metricLabel}</span>
-              </a>
+              </ProfileBubble>
             </li>
           ))}
         </ul>
@@ -99,7 +93,7 @@ export default async function SeasonPage({ params }: { params: { month: string }
           <div className="hofContinentsIntro">
             <h2 className="hofContinentsTitle">Les tops par continent</h2>
           </div>
-          <ContinentMap winners={rankings.continentWinners} />
+          <ContinentMap winners={rankings.continentWinners} cards={rankings.cards} />
         </section>
       ) : null}
     </main>
