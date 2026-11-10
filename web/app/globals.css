@@ -80,6 +80,9 @@ html {
 
 body {
   margin: 0;
+  /* iPhone en paysage (viewport-fit=cover) : le contenu ne passe pas sous l'encoche. */
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
   overflow-x: clip;
   color: var(--ink);
   background: var(--bg);
@@ -4582,6 +4585,44 @@ h1 {
 
 .diversRowSoonRow .diversRowTitle {
   color: var(--muted);
+}
+
+/* Ligne « Installer l'application » (10/11/2026) : encadré d'aide déplié sous la ligne. */
+.installPanel {
+  padding: 2px 16px 14px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.installPanel p,
+.installPanel ol,
+.installPanel ul {
+  margin: 0 0 8px;
+}
+
+.installPanel ol,
+.installPanel ul {
+  padding-left: 20px;
+}
+
+.installPanel b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.installPanel .installNote {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(var(--accent-rgb), 0.1);
+}
+
+.installShareIcon {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.15em;
+  color: var(--theme-accent);
 }
 
 .diversFooter {

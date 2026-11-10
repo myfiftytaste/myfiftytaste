@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BrandLockup from "../../components/BrandLockup";
+import InstallAppRow from "../../components/InstallAppRow";
 import UpdateNote from "../../components/UpdateNote";
 import { AMBIANCES_OPEN } from "../../lib/ambiance";
 
@@ -8,7 +9,7 @@ import { AMBIANCES_OPEN } from "../../lib/ambiance";
 type Row = { title: string; sub: string; href?: string; soon?: boolean };
 
 // Rangement acté le 27/10/2026 : ce qui te concerne, ce qui concerne Fifty, puis le légal.
-const groups: { title: string; rows: (Row | "updateNote")[] }[] = [
+const groups: { title: string; rows: (Row | "updateNote" | "install")[] }[] = [
   {
     title: "Moi",
     rows: [
@@ -18,7 +19,7 @@ const groups: { title: string; rows: (Row | "updateNote")[] }[] = [
         sub: "Ambiance des couleurs et fond de film",
         ...(AMBIANCES_OPEN ? { href: "/preferences" } : { soon: true }),
       },
-      { title: "Installer l’application", sub: "Ajoute Fifty à ton écran d’accueil", soon: true },
+      "install",
     ],
   },
   {
@@ -71,6 +72,8 @@ export default function DiversPage() {
             {group.rows.map((row) =>
               row === "updateNote" ? (
                 <UpdateNote key="updateNote" variant="row" />
+              ) : row === "install" ? (
+                <InstallAppRow key="install" />
               ) : row.href ? (
                 <Link key={row.title} href={row.href} className="diversRow">
                   <RowContent row={row} />

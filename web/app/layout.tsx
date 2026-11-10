@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import NavBar from "../components/NavBar";
 import ClickTracker from "../components/ClickTracker";
+import InstallPromptCatcher from "../components/InstallPromptCatcher";
 import { AMBIANCE_BOOT_SCRIPT, AMBIANCES_OPEN } from "../lib/ambiance";
 import VisualThemeProvider from "../components/VisualThemeProvider";
 import "./globals.css";
@@ -28,12 +29,19 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://50films.fr"),
   title: SITE_NAME,
   description: SITE_DESCRIPTION,
+  // iPhone, une fois Fifty ajouté à l'écran d'accueil : plein écran, nom sous l'icône, barre
+  // d'état noire et opaque (le contenu commence sous l'heure, rien ne passe sous l'encoche).
+  appleWebApp: { capable: true, title: SITE_NAME, statusBarStyle: "black" },
   openGraph: {
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
     images: [{ url: "/branding/og-fifty.png", width: 1200, height: 630 }],
   },
 };
+
+// viewport-fit=cover : sans lui, iOS ignore env(safe-area-inset-*) et la barre d'onglets
+// passerait sous la barre d'accueil de l'iPhone en mode application.
+export const viewport: Viewport = { themeColor: "#0f1a2b", viewportFit: "cover" };
 
 export default function RootLayout({
   children,
@@ -51,6 +59,7 @@ export default function RootLayout({
           {children}
           <NavBar />
           <ClickTracker />
+          <InstallPromptCatcher />
         </VisualThemeProvider>
       </body>
     </html>
