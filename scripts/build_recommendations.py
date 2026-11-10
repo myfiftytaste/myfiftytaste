@@ -319,8 +319,15 @@ def build_profile_context(wrapped: dict[str, Any], metrics: dict[str, Any]) -> d
     watches: list[float] = []
     watched_titles = []
 
+    # Pays déjà vus : tous les films, quelle que soit la source de leurs infos (Megabank ou TMDB).
+    # Avant le 10/11/2026, seuls les films de la Megabank comptaient : le détour pouvait proposer un
+    # pays déjà présent dans le Passeport.
+    seen_countries: set[str] = set()
     for film in films:
         watched_titles.append(film.get("title") or film.get("rss_title") or film.get("letterboxd_slug"))
+        seen_countries.update(
+            country for country in (normalize_country_name(value) for value in list_values(film.get("countries"))) if country
+        )
     for film in metadata_films:
         genre_counter.update([str(value) for value in list_values(film.get("genres")) if value])
         country_counter.update(
@@ -354,6 +361,7 @@ def build_profile_context(wrapped: dict[str, Any], metrics: dict[str, Any]) -> d
         "average_year": mean(years) if years else None,
         "watches_median": median(watches) if watches else None,
         "watched_title_tokens": [title_tokens(title) for title in watched_titles],
+        "seen_countries": seen_countries,
         "top_genres": [genre for genre, _ in genre_counter.most_common(3)],
         "secondary_genres": [genre for genre, _ in genre_counter.most_common(8)][3:],
         "radar": metrics.get("radar_scores") or {},
@@ -657,7 +665,7 @@ def seen_countries_from_context(context: dict[str, Any]) -> set[str]:
     # profile_metrics.json's country_passport.top_countries, which is
     # truncated -- using the truncated list here would wrongly treat an
     # already-seen country as "new".
-    return {country for country in context.get("country_weights", {}) if country}
+    return {country for country in context.get("country_weights", {}) if country} | set(context.get("seen_countries") or ())
 
 
 def has_unseen_country(record: dict[str, Any], seen_countries: set[str]) -> bool:
