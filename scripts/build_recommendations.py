@@ -962,7 +962,7 @@ def build_recommendations(username: str) -> tuple[Path, Path]:
         "countries": reco_targets.detour_targets(username, context["genre_weights"], seen_countries_from_context(context)),
     }
     history = reco_targets.recent_reco_slugs(username)
-    print(f"[reco] cibles : {json.dumps(targets, ensure_ascii=False)} ; historique : {len(history)} reco(s)")
+    print(f"[reco] cibles : {json.dumps(targets, ensure_ascii=False)} ; historique : {len(history)} reco(s) ; pays vus : {sorted(seen_countries_from_context(context))}")
     candidate_pool, pool_stats = fetch_candidate_pool(wrapped, metrics, targets=targets)
     pool_vote_counts = [
         value
