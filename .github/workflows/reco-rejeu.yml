@@ -1,0 +1,81 @@
+name: Rejeu recos v1 / v2 (temporaire, ne pas fusionner)
+
+on:
+  push:
+    branches: [tmp/reco-rejeu]
+
+permissions:
+  contents: read
+
+jobs:
+  rejeu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      USERS: tanguytare picolifl tobiashottin mathouix julescall1 crazykungfu
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - id: month
+        run: echo "value=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: data/cache
+          key: tmdb-cache-${{ steps.month.outputs.value }}-rejeu
+          restore-keys: |
+            tmdb-cache-${{ steps.month.outputs.value }}-
+      - name: Profils, puis recos v2 (cette branche) et v1 (main)
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          mkdir -p out/v1 out/v2
+          git worktree add ../v1 origin/main
+          for u in $USERS; do
+            echo "::group::$u"
+            ok=1
+            for step in "build_user_wrapped.py" "build_missing_metadata_queue.py" "enrich_missing_with_tmdb.py --force" "build_user_wrapped.py" "build_profile_metrics.py"; do
+              python scripts/$step $u > /dev/null 2>out/$u.err || { echo "échec $step"; tail -5 out/$u.err; ok=0; break; }
+            done
+            if [ $ok = 1 ]; then
+              python scripts/build_recommendations.py $u | grep "^\[reco\]" | sed "s/^/$u /" | tee -a out/cibles.txt || true
+              cp data/output/${u}_recommendations.json out/v2/ || true
+              mkdir -p ../v1/data/output ../v1/data/cache
+              cp data/output/${u}_wrapped.json data/output/${u}_profile_metrics.json ../v1/data/output/
+              cp -r data/cache/. ../v1/data/cache/ 2>/dev/null || true
+              (cd ../v1 && python scripts/build_recommendations.py $u > /dev/null && cp data/output/${u}_recommendations.json ../myfiftytaste/out/v1/) || echo "v1 échec $u"
+            fi
+            echo "::endgroup::"
+          done
+      - name: Tableau avant / après
+        run: |
+          python - <<'PY' | tee out/rejeu.md >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          slots = [("safe_pick", "Pépite"), ("wild_card", "Pari"), ("deep_cut", "Détour")]
+          def load(v, u):
+              try:
+                  return {r["slot"]: r for r in json.load(open(f"out/{v}/{u}_recommendations.json"))["recommendations"]}
+              except Exception:
+                  return {}
+          def fmt(r):
+              if not r:
+                  return "—"
+              c = ", ".join(r.get("countries") or [])
+              g = ", ".join((r.get("genres") or [])[:2])
+              return f"{r.get('title')} ({r.get('year')}) · {r.get('director') or '?'} · {g} · {c}"
+          for u in os.environ["USERS"].split():
+              a, b = load("v1", u), load("v2", u)
+              print(f"\n### {u}\n\n| | Avant | Après |\n|---|---|---|")
+              for key, label in slots:
+                  print(f"| {label} | {fmt(a.get(key))} | {fmt(b.get(key))} |")
+          PY
+          echo; cat out/cibles.txt || true
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: rejeu
+          path: out/
