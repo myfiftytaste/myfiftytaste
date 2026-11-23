@@ -24,9 +24,10 @@ from __future__ import annotations
 
 import json
 import sys
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any, Optional
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -40,6 +41,12 @@ HOF_DIR = OUTPUT_DIR / "hall_of_fame"
 
 def current_month() -> str:
     return datetime.now(UTC).strftime("%Y-%m")
+
+
+def current_week_start(now: Optional[datetime] = None) -> str:
+    """Lundi de la semaine en cours, heure de Paris (AAAA-MM-JJ), comme les semaines de FiftyGuess."""
+    local = (now or datetime.now(UTC)).astimezone(ZoneInfo("Europe/Paris"))
+    return (local.date() - timedelta(days=local.weekday())).isoformat()
 
 
 def load_json(path: Path) -> Optional[dict[str, Any]]:

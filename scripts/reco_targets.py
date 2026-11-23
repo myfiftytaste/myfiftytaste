@@ -1,5 +1,5 @@
 """Cibles des recos v2 (10/11/2026) : ce que le pari et le détour vont chercher, la note
-qui juge la qualité, l'historique qui évite les redites, le tirage qui tourne chaque mois.
+qui juge la qualité, l'historique qui évite les redites, le tirage qui tourne chaque semaine.
 
 Aucune de ces fonctions n'est bloquante : sans base de données ou sans Megabank, elles
 renvoient des valeurs neutres et les recos retombent sur l'ancienne logique.
@@ -11,10 +11,11 @@ import hashlib
 import json
 import os
 from collections import Counter, defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from math import sqrt
 from pathlib import Path
 from typing import Any, Optional
+from zoneinfo import ZoneInfo
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 MEGABANK_JSON = BASE_DIR / "data" / "processed" / "megabank_clean.json"
@@ -31,7 +32,7 @@ WEIGHTED_PRIOR_VOTES = 300
 WEIGHTED_PRIOR_RATING = 3.1  # sur 5
 QUALITY_FLOOR = 3.2  # sur 5
 
-HISTORY_GENERATIONS = 3
+HISTORY_WEEKS = 3  # pas de redite : recos des 3 semaines précédentes et de la semaine en cours
 
 # --- Détour : pays principal ----------------------------------------------------------
 # (nom affiché dans Fifty, code ISO TMDB, autres noms rencontrés). L'ordre sert de repli
@@ -61,15 +62,21 @@ DETOUR_TARGETS = 2
 SIMILAR_PROFILES = 8
 
 
-def month_key() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m")
+def week_start(now: Optional[datetime] = None) -> datetime:
+    """Lundi 0 h (heure de Paris) de la semaine en cours, comme FiftyGuess et le gel du Hall of Fame."""
+    local = (now or datetime.now(timezone.utc)).astimezone(ZoneInfo("Europe/Paris"))
+    return (local - timedelta(days=local.weekday())).replace(hour=0, minute=0, second=0, microsecond=0)
+
+
+def week_key() -> str:
+    return week_start().date().isoformat()
 
 
 def seeded_index(username: Optional[str], slot: str, count: int) -> int:
-    """Tirage stable dans le mois, différent d'un mois à l'autre et d'une place à l'autre."""
+    """Tirage stable dans la semaine, différent d'une semaine à l'autre et d'une place à l'autre."""
     if count <= 1:
         return 0
-    digest = hashlib.sha256(f"{username or ''}:{month_key()}:{slot}".encode("utf-8")).hexdigest()
+    digest = hashlib.sha256(f"{username or ''}:{week_key()}:{slot}".encode("utf-8")).hexdigest()
     return int(digest, 16) % count
 
 
@@ -153,8 +160,30 @@ def _connect():
         return None
 
 
+def frozen_week_recos(username: str) -> Optional[dict[str, Any]]:
+    """Recos déjà calculées cette semaine pour ce pseudo (profile_cache.recommendations), sinon None.
+
+    Gel hebdomadaire (décision du 23/11/2026) : les recos ne sont calculées qu'une fois par semaine,
+    même si le wrapped est relancé ; build_recommendations les recalcule quand même si l'un des films
+    recommandés a été vu entre-temps.
+    """
+    conn = _connect()
+    if conn is None:
+        return None
+    try:
+        with conn:
+            row = conn.execute(
+                "SELECT recommendations FROM profile_cache WHERE username = %s AND generated_at >= %s",
+                (username.lower(), week_start()),
+            ).fetchone()
+        return row[0] if row and isinstance(row[0], dict) else None
+    except Exception as error:  # noqa: BLE001
+        print(f"[reco] recos de la semaine indisponibles (non bloquant) : {error}")
+        return None
+
+
 def recent_reco_slugs(username: str) -> set[str]:
-    """Recos des 3 dernières générations du pseudo (generation_log.reco_slugs)."""
+    """Recos de la semaine en cours et des 3 précédentes (generation_log.reco_slugs) : jamais de redite."""
     conn = _connect()
     if conn is None:
         return set()
@@ -162,8 +191,8 @@ def recent_reco_slugs(username: str) -> set[str]:
         with conn:
             rows = conn.execute(
                 "SELECT reco_slugs FROM generation_log WHERE username = %s AND reco_slugs IS NOT NULL "
-                "ORDER BY generated_at DESC LIMIT %s",
-                (username.lower(), HISTORY_GENERATIONS),
+                "AND generated_at >= %s",
+                (username.lower(), week_start() - timedelta(weeks=HISTORY_WEEKS)),
             ).fetchall()
         return {slug for (value,) in rows for slug in str(value).split(",") if slug}
     except Exception as error:  # noqa: BLE001
@@ -185,7 +214,7 @@ def _cosine(a: dict[str, float], b: dict[str, float]) -> float:
 
 def detour_targets(username: str, genre_weights: dict[str, float], seen_countries: set[str]) -> list[str]:
     """Pays (codes ISO) que tu n'as pas vus : d'abord ceux qu'ont aimés les profils Fifty qui te
-    ressemblent (mêmes genres), sinon les grandes cinématographies, tirées au sort chaque mois."""
+    ressemblent (mêmes genres), sinon les grandes cinématographies, tirées au sort chaque semaine."""
     seen_iso = {iso for iso in (iso_for(country) for country in seen_countries) if iso}
     unseen = [iso for _, iso, _ in DETOUR_COUNTRIES if iso not in seen_iso]
     if not unseen:
@@ -219,7 +248,7 @@ def detour_targets(username: str, genre_weights: dict[str, float], seen_countrie
             print(f"[reco] profils proches indisponibles (non bloquant) : {error}")
 
     picked = [iso for iso, _ in votes.most_common(DETOUR_TARGETS)]
-    # Repli (ou complément) : une grande cinématographie non vue, différente chaque mois.
+    # Repli (ou complément) : une grande cinématographie non vue, différente chaque semaine.
     shortlist = [iso for iso in unseen[:8] if iso not in picked]
     while len(picked) < DETOUR_TARGETS and shortlist:
         picked.append(shortlist.pop(seeded_index(username, f"detour-{len(picked)}", len(shortlist))))

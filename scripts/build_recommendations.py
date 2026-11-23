@@ -621,7 +621,7 @@ SLOT2_MIN_RELEASE_YEAR = CURRENT_YEAR - 1
 SLOT2_MIN_RATING_SCORE = 0.65
 SLOT2_MIN_VOTE_COUNT = 30
 WILD_CARD_TOP_K = 5
-# Recos v2 : tirage parmi les K premiers, renouvelé chaque mois (reco_targets.seeded_index).
+# Recos v2 : tirage parmi les K premiers, renouvelé chaque semaine (reco_targets.seeded_index).
 PICK_TOP_K = {"safe_pick": 3, "wild_card": WILD_CARD_TOP_K, "deep_cut": 5}
 
 # --- Slot 3 "deep_cut" ("Le Détour"): a country the user hasn't seen yet,
@@ -902,7 +902,7 @@ def select_diverse_recommendations(scored: list[dict[str, Any]], context: dict[s
 
         selected = None
         if eligible:
-            # Recos v2 : tirage stable dans le mois parmi les K premiers, pour chaque place.
+            # Recos v2 : tirage stable dans la semaine parmi les K premiers, pour chaque place.
             selected = eligible[reco_targets.seeded_index(username, slot, len(eligible))]
         if selected is None and pool:
             # Every candidate failed the diversity checks: "toujours 3 recos"
@@ -955,6 +955,30 @@ def build_recommendations(username: str) -> tuple[Path, Path]:
     films = wrapped.get("films") or []
     seen_slugs = {film.get("letterboxd_slug") for film in films if film.get("letterboxd_slug")}
     context = build_profile_context(wrapped, metrics)
+    out_json = OUTPUT_DIR / f"{username}_recommendations.json"
+    out_md = OUTPUT_DIR / f"{username}_recommendations_report.md"
+
+    # Gel hebdomadaire (23/11/2026) : les recos de la semaine sont reprises telles quelles, sans appel
+    # TMDB, sauf si l'un des films recommandés fait désormais partie des films vus : recalcul complet.
+    frozen = reco_targets.frozen_week_recos(username)
+    frozen_recos = (frozen or {}).get("recommendations") or []
+    if frozen_recos:
+        seen_tmdb = {str(film.get("rss_tmdb_id")) for film in films if film.get("rss_tmdb_id")}
+        watched = [
+            reco.get("title")
+            for reco in frozen_recos
+            if reco.get("slug") in seen_slugs or (reco.get("tmdb_id") and str(reco.get("tmdb_id")) in seen_tmdb)
+        ]
+        if not watched:
+            frozen["frozen_week"] = reco_targets.week_key()
+            out_json.write_text(json.dumps(frozen, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
+            try:
+                out_md.write_text(render_report(frozen), encoding="utf-8")
+            except Exception as error:  # noqa: BLE001 - rapport de contrôle seulement, jamais bloquant
+                print(f"[reco] rapport des recos reprises non écrit : {error}")
+            print(f"[reco] recos de la semaine du {frozen['frozen_week']} reprises, pas de recalcul")
+            return out_json, out_md
+        print(f"[reco] {len(watched)} reco(s) de la semaine déjà vue(s) : recalcul")
 
     # Recos v2 : cibles du pari et du détour, historique pour ne jamais se répéter.
     targets = {
@@ -1013,8 +1037,6 @@ def build_recommendations(username: str) -> tuple[Path, Path]:
                 "Recommendations are optional and may be unavailable for small or sparse profiles.",
             ],
         }
-        out_json = OUTPUT_DIR / f"{username}_recommendations.json"
-        out_md = OUTPUT_DIR / f"{username}_recommendations_report.md"
         out_json.write_text(json.dumps(output, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
         out_md.write_text(render_report(output), encoding="utf-8")
         return out_json, out_md
@@ -1052,8 +1074,6 @@ def build_recommendations(username: str) -> tuple[Path, Path]:
         ],
     }
 
-    out_json = OUTPUT_DIR / f"{username}_recommendations.json"
-    out_md = OUTPUT_DIR / f"{username}_recommendations_report.md"
     out_json.write_text(json.dumps(output, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
     out_md.write_text(render_report(output), encoding="utf-8")
     return out_json, out_md
