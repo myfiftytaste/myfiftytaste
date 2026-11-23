@@ -144,6 +144,11 @@ def rank_podium(
     return entries
 
 
+# Même seuil que scripts/attribute_badges.py et web/lib/hallOfFame.ts (décision du 23/11/2026) :
+# sous 3 films d'un continent, personne n'y est affiché ni badgé.
+MIN_CONTINENT_FILMS = 3
+
+
 def rank_continents(snapshots: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     winners: dict[str, dict[str, Any]] = {}
     for continent in CONTINENTS:
@@ -157,9 +162,9 @@ def rank_continents(snapshots: list[dict[str, Any]]) -> dict[str, dict[str, Any]
             ):
                 best_value = value
                 best_snapshot = snapshot
-        # A continent with zero consumption across every opted-in profile
-        # gets no winner this month — never an invented/default attribution.
-        if best_snapshot is not None and best_value > 0:
+        # Un continent où aucun profil inscrit n'a vu au moins 3 films n'a pas de top ce mois-ci :
+        # jamais d'attribution inventée ou par défaut.
+        if best_snapshot is not None and best_value >= MIN_CONTINENT_FILMS:
             films = (best_snapshot.get("continent_films") or {}).get(continent, [])
             winners[continent] = {
                 "username": best_snapshot["username"],

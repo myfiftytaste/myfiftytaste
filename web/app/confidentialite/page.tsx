@@ -75,7 +75,8 @@ export default function ConfidentialitePage() {
             </tr>
             <tr>
               <td data-label="Données">
-                Hall of Fame : chaque mois, un instantané des indicateurs du profil est figé au premier calcul. Ton
+                Hall of Fame : un instantané des indicateurs du profil est figé au premier calcul de chaque semaine ; le
+                classement du mois retient le dernier. Ton
                 pseudo n&apos;apparaît dans les classements et les badges <strong>que si tu as choisi « Je veux ma
                 place »</strong>.
               </td>

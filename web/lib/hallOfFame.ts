@@ -187,6 +187,10 @@ function formatViews(value: number): string {
   return `Film médian à ${text}\u00a0vues`;
 }
 
+// Même seuil que MIN_CONTINENT_FILMS dans scripts/build_hof_rankings.py et scripts/attribute_badges.py
+// (décision du 23/11/2026) : sous 3 films d'un continent, personne n'y est affiché ni badgé.
+const MIN_CONTINENT_FILMS = 3;
+
 function continentWinners(snapshots: MonthlySnapshot[]): Partial<Record<Continent, ContinentWinner>> {
   const winners: Partial<Record<Continent, ContinentWinner>> = {};
 
@@ -194,7 +198,7 @@ function continentWinners(snapshots: MonthlySnapshot[]): Partial<Record<Continen
     let best: { snapshot: MonthlySnapshot; value: number } | null = null;
     for (const snapshot of snapshots) {
       const value = snapshot.continent_consumption?.[continent] ?? 0;
-      if (value <= 0) continue;
+      if (value < MIN_CONTINENT_FILMS) continue;
       if (
         !best ||
         value > best.value ||
@@ -203,8 +207,8 @@ function continentWinners(snapshots: MonthlySnapshot[]): Partial<Record<Continen
         best = { snapshot, value };
       }
     }
-    // A continent nobody watched a film from this month gets no winner —
-    // never an invented/default attribution (brief section 26).
+    // Un continent où personne n'a vu au moins 3 films ce mois-ci n'a pas de top :
+    // jamais d'attribution inventée ou par défaut (brief section 26).
     if (best) {
       winners[continent] = {
         username: best.snapshot.username,

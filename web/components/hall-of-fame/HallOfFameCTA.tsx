@@ -64,7 +64,7 @@ export default function HallOfFameCTA({
           <>
             <h2 className="hofCtaTitle">Ta place dans le Hall of Fame du mois&nbsp;?</h2>
             <p className="hofLede">
-              On fige ton profil mensuel et on le compare aux autres cinéphiles. Pas besoin de compte, pas
+              On fige ton profil chaque semaine et on le compare aux autres cinéphiles. Pas besoin de compte, pas
               d&apos;engagement : tu peux revenir sur ton choix.
             </p>
             <div className="hofCtaActions">

@@ -92,7 +92,7 @@ export default function NavBar() {
             </svg>
             {"soon" in tab ? <span className="navBarSoon">Bientôt</span> : null}
           </span>
-          <span>{tab.label}</span>
+          <span className="navBarLabel">{tab.label}</span>
         </Link>
       ))}
     </nav>

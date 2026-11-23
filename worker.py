@@ -62,7 +62,7 @@ OUTPUT_DIR = BASE_DIR / "data" / "output"
 
 sys.path.insert(0, str(BASE_DIR / "scripts"))
 from build_full_profile import PIPELINE_STEPS, USERNAME_RE  # noqa: E402
-from build_monthly_snapshot import build_snapshot, current_month  # noqa: E402
+from build_monthly_snapshot import build_snapshot, current_month, current_week_start  # noqa: E402
 
 POLL_INTERVAL_SECONDS = 3
 
@@ -407,27 +407,49 @@ def write_generation_log(
     )
 
 
+# Gel hebdomadaire (décision du 23/11/2026) : à partir de ce mois, l'instantané du mois est
+# rafraîchi à la première visite de chaque semaine (lundi, heure de Paris) ; le classement du mois
+# lit donc la dernière semaine où la personne est venue. Sans visite, l'instantané précédent reste.
+# Avant ce mois, règle d'origine : figé à la première génération du mois.
+WEEKLY_FREEZE_FROM_MONTH = "2026-12"
+
+
 def freeze_monthly_snapshot(conn: psycopg.Connection, job: dict[str, Any], username: str) -> None:
-    """Gèle un monthly_snapshot pour le mois en cours, la première fois qu'un
-    profil est généré ce mois-ci (Hall of Fame brief, section 3.2 : "whichever
-    values were true the first time someone showed up this month are the
-    values that count"). ON CONFLICT DO NOTHING sur la PK (month, username) :
-    les visites suivantes du même mois ne recalculent jamais un snapshot déjà
-    gelé, exactement comme le faisait l'ancienne version fichier
-    (build_monthly_snapshot.main : "already exists — returning it unchanged").
+    """Gèle l'instantané Hall of Fame du mois en cours (monthly_snapshot).
+
+    Première visite du mois : création. Visites suivantes : à partir de
+    WEEKLY_FREEZE_FROM_MONTH, l'instantané est remplacé une fois par semaine, à la
+    première génération de la semaine ; les autres générations de la semaine n'y
+    touchent pas. first_seen_at (« Membre depuis », départage) et le choix
+    opted_in ne changent jamais. Avant ce mois : ON CONFLICT DO NOTHING, comme
+    avant le 23/11/2026.
 
     build_snapshot() lit les mêmes fichiers data/output/{username}_*.json que
     finalize_success() vient de lire pour profile_cache : le pipeline venant
     de réussir, ils sont garantis présents.
     """
     month = current_month()
+    week = current_week_start()
     snapshot = build_snapshot(username, month)
+    on_conflict = (
+        """DO UPDATE SET
+            display_username      = EXCLUDED.display_username,
+            metrics_snapshot      = EXCLUDED.metrics_snapshot,
+            continent_consumption = EXCLUDED.continent_consumption,
+            continent_films       = EXCLUDED.continent_films,
+            week_start            = EXCLUDED.week_start,
+            refreshed_at          = now()
+        WHERE monthly_snapshot.week_start IS NULL OR monthly_snapshot.week_start < EXCLUDED.week_start"""
+        if month >= WEEKLY_FREEZE_FROM_MONTH
+        else "DO NOTHING"
+    )
     conn.execute(
-        """
+        f"""
         INSERT INTO monthly_snapshot
-            (month, username, display_username, first_seen_at, metrics_snapshot, continent_consumption, continent_films)
-        VALUES (%s, %s, %s, %s, %s, %s, %s)
-        ON CONFLICT (month, username) DO NOTHING
+            (month, username, display_username, first_seen_at, metrics_snapshot, continent_consumption,
+             continent_films, week_start, refreshed_at)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, now())
+        ON CONFLICT (month, username) {on_conflict}
         """,
         (
             month,
@@ -437,6 +459,7 @@ def freeze_monthly_snapshot(conn: psycopg.Connection, job: dict[str, Any], usern
             Jsonb(snapshot["metrics_snapshot"]),
             Jsonb(snapshot["continent_consumption"]),
             Jsonb(snapshot["continent_films"]),
+            week,
         ),
     )
 

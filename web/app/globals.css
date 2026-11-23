@@ -4405,7 +4405,8 @@ h1 {
   right: 0;
   bottom: 0;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  /* Chaque onglet au moins aussi large que son libellé, le reste partagé à parts égales (23/11/2026). */
+  grid-template-columns: repeat(5, minmax(min-content, 1fr));
   gap: 6px;
   padding: 6px 10px calc(8px + env(safe-area-inset-bottom));
   border-top: 1px solid var(--theme-border-tint);
@@ -4425,6 +4426,28 @@ h1 {
   color: var(--muted);
   font-size: 11px;
   font-weight: 500;
+}
+
+/* Libellé sur une seule ligne, centré sous l'icône (23/11/2026) : sur un téléphone de 375 px, les
+   colonnes égales faisaient 66 px alors que « Mon Wrapped » en mesure 73 (76 en gras) : il passait sur
+   deux lignes alignées à gauche. */
+.navBarLabel {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+@media (max-width: 360px) {
+  .navBar {
+    gap: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .navBarTab {
+    font-size: 10px;
+  }
 }
 
 .navBarTab:hover {
